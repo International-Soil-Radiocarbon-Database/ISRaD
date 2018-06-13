@@ -18,7 +18,7 @@ feature_row:
     url: "/database/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/structure_new.png
+  - image_path: /assets/images/template_screenshot
     alt: "100% free"
     title: "Contribute"
     excerpt: "ISRaD template file, template information and user guide, and ISRaD data quality control webtool user gude"
