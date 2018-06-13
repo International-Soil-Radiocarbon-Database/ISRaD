@@ -27,7 +27,7 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
   }
 
   cat("         Thank you for contributing to the ISRaD database! \n")
-  cat("                Please review the QAQC report below: \n")
+  cat("                Please review the quality control report below: \n")
   cat(rep("-", 30),"\n\n")
 
   cat("\nFile:", basename(file), "\n")
