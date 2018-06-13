@@ -1,7 +1,7 @@
 # main links
 main:
    - title: "About"
-     url: /_pages/about.md
+     url: /about/
    - title: "Data"
      url: /_pages/data.md
    - title: "Contribute"
