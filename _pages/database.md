@@ -14,7 +14,7 @@ header:
 
 ## Information about data currently in database
 
-Coming soon: Link to Current data (summary statistics and structure)_
+Coming soon: Link to Current data (summary statistics and structure)
 
 Coming soon: Visualization
 
