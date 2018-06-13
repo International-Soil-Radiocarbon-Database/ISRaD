@@ -5,7 +5,7 @@ header:
   overlay_image: /assets/images/soil.jpg
   cta_label: "<i class='fas fa-download'></i> Install Now"
   cta_url: "/docs/quick-start-guide/"
-  caption: 'International Soil Radiocarbon Database'
+caption: 'International Soil Radiocarbon Database'
 feature_row:
   - image_path: /assets/images/structure_new.png
     alt: "About"
