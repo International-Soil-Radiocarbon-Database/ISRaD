@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /_pages/
+permalink: /database/
 header:
   overlay_image: /assets/images/soil.jpg
   caption: 'Data'

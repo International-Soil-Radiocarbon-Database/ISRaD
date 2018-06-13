@@ -3,6 +3,6 @@ main:
    - title: "About"
      url: /about/
    - title: "Data"
-     url: /_pages/data.md
+     url: /database/
    - title: "Contribute"
-     url: /_pages/contribute.md
+     url: /contribute/
