@@ -33,7 +33,7 @@ Please direct any questions, comments, or suggestions regarding the ISRaD Templa
 
 ## Using ISRaD online quality control tool
 
-1. [Go to the online tool](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) 
+1. <a href="https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/", target="_blank"> Open the online tool</a>
 1. Upload your file
 1. Run check
 1. If the upload and check was successful, an ISRaD quality control report file will be generated for download.
