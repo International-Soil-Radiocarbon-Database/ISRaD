@@ -2,7 +2,7 @@
 main:
    - title: "About"
      url: /about/
-   - title: "Data"
+   - title: "Database"
      url: /database/
    - title: "Contribute"
      url: /contribute/
