@@ -10,6 +10,11 @@ header:
 
 Write description
 
+<figure>
+	<a href="https://www.usgs.gov/"><img src="/assets/images/USGS.jpg"></a>
+</figure>
+
+
 ![](/assets/images/USGS.jpg)
 ![](/assets/images/PowellCenter.jpeg)
 ![](/assets/images/MPI-BGC_logo_EN.png)
