@@ -11,7 +11,7 @@ header:
 Write description
 
 <figure>
-	<a href="/assets/images/USGS.jpg"><img src="/assets/images/USGS.jpg"></a>
+	<img src="/assets/images/USGS.jpg">
 </figure>
 
 
