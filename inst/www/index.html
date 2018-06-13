@@ -35,7 +35,7 @@
         }, function(session2){
             mysession=session2;
             $("#download").text("Download QA/QC report");
-         $("#printlink").attr("href", mysession.getLoc() + "files/Data_QAQC_report.txt")
+         $("#printlink").attr("href", mysession.getLoc() + "files/ISRaD_quality_control_report.txt")
             session2.getConsole(function(outtxt){
                 $("#output").text(outtxt);
            });
