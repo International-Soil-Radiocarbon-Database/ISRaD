@@ -1,9 +1,9 @@
 ---
 layout: splash
 permalink: /
+title: 'International Soil Radiocarbon Database'
 header:
   overlay_image: /assets/images/soil.jpg
-  caption: 'International Soil Radiocarbon Database'
 feature_row:
   - image_path: /assets/images/structure_new.png
     alt: "About"
