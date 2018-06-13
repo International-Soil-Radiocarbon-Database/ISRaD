@@ -12,7 +12,6 @@ Write description
 
 <figure class="half">
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/PowellCenter.jpg">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/USGS.png">
 </figure>
 
 <figure class="half">
