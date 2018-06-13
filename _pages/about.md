@@ -10,14 +10,10 @@ header:
 
 Write description
 
-<figure>
+<figure class="half">
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/USGS.jpg">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/MPI-BGC_logo_EN.png">
 </figure>
-
-
-![](/assets/images/USGS.jpg)
-![](/assets/images/PowellCenter.jpeg)
-![](/assets/images/MPI-BGC_logo_EN.png)
 
 ## Community
 
