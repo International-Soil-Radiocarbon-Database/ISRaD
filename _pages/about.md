@@ -10,15 +10,15 @@ header:
 
 Write description
 
-![](assets/images/USGS.jpg)
-![](assets/images/PowellCenter.jpeg)
-![](assets/images/MPI-BGC_logo_EN.png)
+![](/assets/images/USGS.jpg)
+![](/assets/images/PowellCenter.jpeg)
+![](/assets/images/MPI-BGC_logo_EN.png)
 
 ## Community
 
 Collaborations with other databases
 
-![](assets/images/iscn_logo.jpeg)
+![](/assets/images/iscn_logo.jpeg)
 
 ## Publications
 
@@ -36,7 +36,7 @@ Currently, these are:
 
 * Corey Lawrence
 
-#### Contributors
+### Contributors
 Contributors are individuals who contribute data and code for the database. 
 Given the history of this project, main contributors have been:
 
@@ -48,7 +48,7 @@ Given the history of this project, main contributors have been:
 * Alison Hoyt
 * Jeffrey Beem-Miller
 
-#### Maintainers
+### Maintainers
 Maintainers are in charge of the integrity of the code. Currently, they are:
 
 * Grey Monroe
