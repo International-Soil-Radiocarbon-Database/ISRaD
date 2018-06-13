@@ -5,7 +5,7 @@ title: 'International Soil Radiocarbon Database'
 header:
   overlay_image: /assets/images/soil.jpg
 feature_row:
-  - image_path: /assets/images/structure_new.png
+  - image_path: /assets/images/About.png
     alt: "About"
     title: "About"
     excerpt: "ISRad history, community, publications, terms of use, steering committee and contact information"
@@ -18,7 +18,7 @@ feature_row:
     url: "/database/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/template_screenshot
+  - image_path: /assets/images/template_screenshot.png
     alt: "100% free"
     title: "Contribute"
     excerpt: "ISRaD template file, template information and user guide, and ISRaD data quality control webtool user gude"
