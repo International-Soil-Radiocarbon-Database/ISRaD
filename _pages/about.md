@@ -52,8 +52,8 @@ Given the history of this project, main contributors have been:
 * Corey Lawrence
 * Powell-Center group
 * Susan Trumbore
-* Jennifer Harden?
-* Christine Hatte?
+* Jennifer Harden
+* Christine Hatte
 * Alison Hoyt
 * Jeffrey Beem-Miller
 
