@@ -8,8 +8,6 @@ header:
 
 ## History
 
-Write description
-
 <figure class="half">
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/PowellCenter.jpg">
 </figure>
