@@ -11,7 +11,7 @@ header:
 Write description
 
 <figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/PowellCenter.jpeg">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/PowellCenter.jpg">
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/MPI-BGC_logo_EN.png">
 </figure>
 
