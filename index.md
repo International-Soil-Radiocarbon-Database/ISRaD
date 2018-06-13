@@ -18,7 +18,7 @@ feature_row:
     url: "/database/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/template_screenshot.png
+  - image_path: /assets/images/Contribute.png
     alt: "100% free"
     title: "Contribute"
     excerpt: "ISRaD template file, template information and user guide, and ISRaD data quality control webtool user gude"
@@ -30,7 +30,7 @@ feature_row:
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
-=======
+
 
 
 
