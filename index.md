@@ -8,7 +8,7 @@ feature_row:
   - image_path: /assets/images/About.png
     alt: "About"
     title: "About"
-    excerpt: "ISRad history, community, publications, terms of use, steering committee and contact information"
+    excerpt: "ISRaD history, community, publications, terms of use, steering committee and contact information"
     url: "/about/"
     btn_class: "btn--primary" 
     btn_label: "Learn More"
