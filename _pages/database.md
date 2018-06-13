@@ -8,7 +8,9 @@ header:
 
 ## Data Structure
 
-![](/assets/images/structure_new.png)
+<figure>
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/structure_new.png">
+</figure>
 
 ## Information about data currently in database
 
