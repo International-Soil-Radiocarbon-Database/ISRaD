@@ -11,20 +11,20 @@ feature_row:
     alt: "About"
     title: "About"
     excerpt: "ISRad history, community, publications, terms of use, steering committee and contact information"
-    url: "/docs/configuration/"
+    url: "/_pages/about.md"
     btn_class: "btn--primary" 
     btn_label: "Learn More"
   - image_path: /assets/images/structure_new.png
     title: "Data"
     excerpt: "ISRaD data structure, current data summary, and latest database release"
-    url: "/docs/layouts/"
+    url: "/_pages/about.md/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
   - image_path: /assets/images/mm-free-feature.png
     alt: "100% free"
     title: "Contribute"
     excerpt: "ISRaD template file, template information and user guide, and ISRaD data quality control webtool user gude"
-    url: "/docs/license/"
+    url: "/_pages/contribute.md"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 ---
