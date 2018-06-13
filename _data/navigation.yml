@@ -4,5 +4,5 @@ main:
      url: /_pages/about.md
    - title: "Data"
      url: /_pages/data.md
-   - title: "Sample Collections"
+   - title: "Contribute"
      url: /_pages/contribute.md
