@@ -54,4 +54,8 @@ Maintainers are in charge of the integrity of the code. Currently, they are:
 * Grey Monroe
 * Carlos Sierra
 
+## Contact 
+
+info.israd@gmail.com
+
 
