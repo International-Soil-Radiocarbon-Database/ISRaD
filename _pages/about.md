@@ -19,7 +19,10 @@ Write description
 
 Collaborations with other databases
 
-![](/assets/images/iscn_logo.jpeg)
+<figure class="half">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/iscn_logo.jpeg">
+</figure>
+
 
 ## Publications
 
