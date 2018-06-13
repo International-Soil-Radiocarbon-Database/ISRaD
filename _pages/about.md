@@ -11,7 +11,7 @@ header:
 Write description
 
 <figure>
-	<img src="/assets/images/USGS.jpg">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/USGS.jpg">
 </figure>
 
 
