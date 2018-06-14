@@ -18,7 +18,7 @@ Coming soon: Link to Current data (summary statistics and structure)
 
 Coming soon: Visualization
 
-<embed src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/plots/mtcars.html" style="width:500px; height: 300px;">
+<iframe src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/plots/mtcars.html"></iframe>
 
 ## Database download
 
