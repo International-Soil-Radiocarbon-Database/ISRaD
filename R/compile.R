@@ -52,6 +52,9 @@ requireNamespace("openxlsx")
     }
   }
 
+
+# QAQC and compile datafiles -------------------------------------------------------
+
 data_files<-list.files(dataset_directory, full.names = T)
 data_files<-data_files[grep("xlsx", data_files)]
 
@@ -88,14 +91,17 @@ for(d in 1:length(data_files)){
   working_database[]<-lapply(working_database, type.convert)
   soilcarbon_database<-working_database
 
+# Return database file, logs, and reports ---------------------------------
+
+
+  if (write_out==T){
+  write.csv(soilcarbon_database, paste0(dataset_directory, "ISRaD.csv"))
+  }
+
   if (write_report==T){
     sink(type="message")
     sink()
     cat("\n Compilation report saved to", outfile,"\n")
-  }
-
-  if (write_out==T){
-  write.csv(soilcarbon_database, paste0(dataset_directory, "ISRaD.csv"))
   }
 
 }
