@@ -33,8 +33,6 @@ By contributing to ISRaD you are joining an international community of researche
 
 ## Using ISRaD online quality control tool
 
-<embed src="https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/" style="width:500px; height: 300px;">
-
 1. <a href="https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/" target="_blank"> Open the online tool</a>
 1. Upload your file
 1. Run check
