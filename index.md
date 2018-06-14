@@ -1,7 +1,10 @@
 ---
 layout: splash
 permalink: /
-title: 'International Soil Radiocarbon Database'
+title: 'International 
+Soil 
+Radiocarbon 
+Database'
 header:
   overlay_image: /assets/images/soil.jpg
 feature_row:
