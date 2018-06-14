@@ -19,7 +19,7 @@ Coming soon: Link to Current data (summary statistics and structure)
 
 Coming soon: Visualization
 
-<embed src="http://rpubs.com/greymonroe/mtcars">
+<embed src="http://rpubs.com/greymonroe/mtcars" style="width:500px; height: 300px;">
 
 ## Database download
 
