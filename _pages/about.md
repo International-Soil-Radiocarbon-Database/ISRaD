@@ -36,7 +36,11 @@ Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbo
 
 ## Terms of Use
 
-The ISRaD database is currently under development: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>. If you are interested in contributing to the development of the ISRadD R Package or site, please contact info.israd@gmail.com or make a pull request to our github repo. To contribute data, please visit the Contribute page. 
+The ISRaD database is currently under development: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>. 
+
+If you are interested in contributing to the development of the ISRadD R Package or site, please contact info.israd@gmail.com or make a pull request to our github repo. 
+
+To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute</a> page. 
 
 Please report issues by posting to <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues </a>. 
 
@@ -67,9 +71,4 @@ Maintainers are in charge of the integrity of the code. Currently, they are:
 ## Contact 
 
 Please direct and comments, concerns and suggestions to info.israd@gmail.com.
-
-If you are interested in contributing to the development of the ISRadD R Package or site, please contact info.israd@gmail.com or make a pull request to our github repo. 
-
-To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute <\a> page. 
-
 
