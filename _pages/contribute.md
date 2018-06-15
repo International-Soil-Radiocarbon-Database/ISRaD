@@ -11,7 +11,7 @@ By contributing to ISRaD you are joining an international community of researche
 
 ## How to contribute
 
-1. Download ISRaD Template File 
+1. Download and fill out ISRaD Template File 
 1. Test your data file using ISRaD online quality control tool 
 1. Submit to ISRaD
 
