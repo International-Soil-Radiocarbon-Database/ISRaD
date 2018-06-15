@@ -67,10 +67,6 @@ requireNamespace("openxlsx")
     tab_info<-template_info[[tab]]
     vocab<-tab_info[!is.na(tab_info$Vocab),]
 
-    if("numeric" %in% vocab$Variable_class){
-      cat("\n\tWARNING controlled vocab found for numeric variable:",   vocab$Column_Name[vocab$Variable_class=="numeric"])
-    }
-
     which.nonnum <- function(x) {
       badNum <- is.na(suppressWarnings(as.numeric(as.character(x))))
       which(badNum & !is.na(x))
@@ -87,21 +83,21 @@ requireNamespace("openxlsx")
 
 # QAQC and compile data files -------------------------------------------------------
 
-data_files<-list.files(dataset_directory, full.names = T)
-data_files<-data_files[grep("xlsx", data_files)]
-
 template<-lapply(template, function(x) x[-c(1,2),])
 template_flat<-Reduce(function(...) merge(..., all=T), template)
-
 flat_template_columns<-colnames(template_flat)
 
 working_database<-template_flat %>% mutate_all(as.character)
 ISRaD_database<-lapply(template[1:8], function(x) x[-c(1,2),])
 ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
-
 cat("\n\nCompiling data files in", dataset_directory)
 cat("\n", rep("-", 30),"\n")
+
+data_files<-list.files(dataset_directory, full.names = T)
+data_files<-data_files[grep("xlsx", data_files)]
+
+entry_stats<-data.frame()
 
 for(d in 1:length(data_files)){
   cat("\n\n",d, "checking", basename(data_files[d]),"...")
@@ -113,6 +109,10 @@ for(d in 1:length(data_files)){
 
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
+
+   data_stats<-bind_cols(data.frame(entry_name=char_data$metadata$entry_name, doi=char_data$metadata$doi), as.data.frame(lapply(char_data, nrow)))
+   data_stats<- data_stats %>% mutate_all(as.character)
+   entry_stats<-bind_rows(entry_stats, data_stats)
 
     flat_data<-char_data %>%
     Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
@@ -149,12 +149,14 @@ for(d in 1:length(data_files)){
     }
   }
 
-  write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD.xlsx"))
+  write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD_list.xlsx"))
+
+  write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
 
   cat("\n", rep("-", 20))
 
   if (write_out==T){
-  write.csv(soilcarbon_database, paste0(dataset_directory, "database/ISRaD.csv"))
+  write.csv(soilcarbon_database, paste0(dataset_directory, "database/ISRaD_flat.csv"))
   }
 
   if (write_report==T){

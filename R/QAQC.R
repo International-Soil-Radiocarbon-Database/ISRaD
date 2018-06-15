@@ -68,7 +68,7 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
     names(data)<-getSheetNames(file)[1:8]
     }
 
-  if (!all(getSheetNames(file) == names(template))){
+  if (!all(getSheetNames(file) %in% names(template))){
     cat("\tWARNING:  tabs in data file do not match accepted templates. Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute");error<-error+1
 
     if (writeQCreport==T){
