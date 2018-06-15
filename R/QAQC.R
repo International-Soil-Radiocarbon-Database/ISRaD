@@ -12,6 +12,13 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
 
   ##### setup #####
 
+  requireNamespace("openxlsx")
+  requireNamespace("data.tree")
+  requireNamespace("dplyr")
+  requireNamespace("tidyr")
+
+
+
   #start error count at 0
   error<-0
   #start note count at 0
@@ -27,10 +34,11 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
   }
 
   cat("         Thank you for contributing to the ISRaD database! \n")
-  cat("                Please review the quality control report below: \n")
+  cat("         Please review this quality control report. \n")
   cat(rep("-", 30),"\n\n")
 
-  cat("\nFile:", basename(file), "\n")
+  cat("\nFile:", basename(file))
+  cat("\nTime:", as.character(Sys.time()), "\n")
 
   ##### check file extension #####
   cat("\n\nChecking file type...")
@@ -40,7 +48,7 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
 
   ##### check template #####
 
-  cat("\n\nChecking file format compatability with ISRaD templates...")
+  cat("\n\nChecking file format compatibility with ISRaD templates...")
 
   # get tabs for data and current template files from R package on github
   template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
@@ -52,7 +60,7 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
   names(template_info)<-getSheetNames(template_info_file)
 
 
-  if (all(getSheetNames(file) == names(template))){
+  if (all(getSheetNames(file) %in% names(template))){
     cat("\n Template format detected: ", basename(template_file))
     cat("\n Template info file to be used for QAQC: ", basename(template_info_file))
 
@@ -61,13 +69,12 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
     }
 
   if (!all(getSheetNames(file) == names(template))){
-    cat("\tWARNING:  tabs in data file do not match accepted templates. Visit https://powellcenter-soilcarbon.github.io/soilcarbon/ for up to date template");error<-error+1
+    cat("\tWARNING:  tabs in data file do not match accepted templates. Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute");error<-error+1
 
     if (writeQCreport==T){
       sink(type="message")
       sink()
     }
-    cat("file")
     data<-NULL
     attributes(data)$error<-1
     return(data)
@@ -238,11 +245,73 @@ for (t in 1:length(names(data))){
 
   cat("\n", rep("-", 20))
   if(error==0){
-    cat("\nPASSED! Congratulations!")
+    cat("\nPASSED. Nice work!")
   } else {
     cat("\n", error, "WARNINGS need to be fixed\n")
   }
-  cat("\nPlease email Grey at greymonroe@gmail.com with and feedback or suggestions")
+  cat("\n\n", rep("-", 20))
+
+
+# summary statistics ------------------------------------------------------
+
+  cat("\n\nIt might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.\n")
+  cat("\nSummary statistics...\n")
+
+  for (t in 1:length(names(data))){
+    tab<-names(data)[t]
+    data_tab<-data[[tab]]
+    cat("\n",tab,"tab...")
+    cat(nrow(data_tab), "observations")
+    if (nrow(data_tab)>0){
+    col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
+    col_counts<-col_counts[col_counts>0]
+    for(c in 1:length(col_counts)){
+      cat("\n   ", names(col_counts[c]),":", col_counts[c])
+
+     }
+    }
+  }
+
+
+cat("\n", rep("-", 20))
+
+
+# data.tree ---------------------------------------------------------------
+
+  cat("\n\nHierarchy of data...\n")
+  cat("\nMerging data into flattened structure...\n")
+
+  flat_data <- lapply(data, function(x) x %>% mutate_all(as.character))
+
+  flat_data<-flat_data %>%
+    Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
+
+  not_na<-flat_data %>% select(c(entry_name, site_name, pro_name, plot_name, lyr_name, frc_name))
+  not_na<-not_na %>% select_if(~sum(!is.na(.)) > 0)
+
+
+  flat_data$entry_name<-paste0(flat_data$entry_name, " (entry_name)")
+  flat_data$site_name<-paste0(flat_data$site_name, " (site_name)")
+  flat_data$pro_name<-paste0(flat_data$pro_name, " (pro_name)")
+  flat_data$plot_name<-paste0(flat_data$plot_name, " (plot_name)")
+  flat_data$lyr_name<-paste0(flat_data$lyr_name, " (lyr_name)")
+  flat_data$frc_name<-paste0(flat_data$frc_name, " (frc_name)")
+
+  not_na<-flat_data %>% select(colnames(not_na))
+  not_na<-not_na %>% unite(sep="/")
+  not_na<-not_na[,1]
+  flat_data$pathString <-  not_na
+  structure <- as.Node(flat_data)
+
+  cat("\n\n")
+
+  print(structure, limit = NULL)
+
+
+
+  cat("\n\nPlease email info.israd@gmail.com with concerns or suggestions")
+  cat("\nIf you think there is a error in the functioning of this code please post to
+      \nhttps://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues\n")
 
   ##### Close #####
 if (writeQCreport==T){

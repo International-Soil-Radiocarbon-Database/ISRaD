@@ -14,11 +14,14 @@
 compile <- function(dataset_directory, write_report=F, write_out=F){
 
 
+# setup -------------------------------------------------------------------
+
+
 requireNamespace("stringi")
 requireNamespace("openxlsx")
 
   if (write_report==T){
-  outfile<-paste0(dataset_directory, "ISRaD_log.txt")
+  outfile<-paste0(dataset_directory, "database/ISRaD_log.txt")
   reportfile<-file(outfile)
   sink(reportfile)
   sink(reportfile, type = c("message"))
@@ -29,7 +32,7 @@ requireNamespace("openxlsx")
   cat("\n",rep("-", 15),"\n")
 
 
-# Check template and info -------------------------------------------------
+# Check template and info compatability -------------------------------------------------
 
   cat("\nChecking compatibility between ISRaD template and info file...")
 
@@ -53,38 +56,74 @@ requireNamespace("openxlsx")
   }
 
 
-# QAQC and compile datafiles -------------------------------------------------------
+# Check template_info vocab syntax ----------------------------------------
+  cat("\nChecking template info file controlled vocab syntax and values...")
+
+  for (t in 1:length(template_info)){
+
+    tab<-names(template_info)[t]
+    cat("\n",tab,"...")
+
+    tab_info<-template_info[[tab]]
+    vocab<-tab_info[!is.na(tab_info$Vocab),]
+
+    if("numeric" %in% vocab$Variable_class){
+      cat("\n\tWARNING controlled vocab found for numeric variable:",   vocab$Column_Name[vocab$Variable_class=="numeric"])
+    }
+
+    which.nonnum <- function(x) {
+      badNum <- is.na(suppressWarnings(as.numeric(as.character(x))))
+      which(badNum & !is.na(x))
+    }
+
+    if(length(which.nonnum(tab_info$Min))>0) {
+      cat("\n\tWARNING non-numeric values in Min column")
+    }
+    if(length(which.nonnum(tab_info$Max))>0) {
+      cat("\n\tWARNING non-numeric values in Max column")
+    }
+
+  }
+
+# QAQC and compile data files -------------------------------------------------------
 
 data_files<-list.files(dataset_directory, full.names = T)
 data_files<-data_files[grep("xlsx", data_files)]
 
-template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
-template<-lapply(getSheetNames(template_file)[1:8], function(s) read.xlsx(template_file , sheet=s))
+template<-lapply(template, function(x) x[-c(1,2),])
 template_flat<-Reduce(function(...) merge(..., all=T), template)
 
 flat_template_columns<-colnames(template_flat)
 
-working_database<-template_flat
+working_database<-template_flat %>% mutate_all(as.character)
+ISRaD_database<-lapply(template[1:8], function(x) x[-c(1,2),])
+ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
+
 
 cat("\n\nCompiling data files in", dataset_directory)
 cat("\n", rep("-", 30),"\n")
 
 for(d in 1:length(data_files)){
-  cat("\n\nchecking", basename(data_files[d]),"...")
+  cat("\n\n",d, "checking", basename(data_files[d]),"...")
   soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = T)
   if (attributes(soilcarbon_data)$error>0) {
     cat("failed QAQC. Check report in QAQC folder.")
-    next
+    #next
+  } else cat("passed")
+
+
+   char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
+
+    flat_data<-char_data %>%
+    Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
+    working_database<-bind_rows(working_database, flat_data)
+
+  for (t in 1:length(char_data)){
+    tab<-colnames(char_data)[t]
+    data_tab<-char_data[[t]]
+    ISRaD_database[[t]]<-bind_rows(ISRaD_database[[t]], data_tab)
   }
-  cat("passed")
 
-  flat_data<-Reduce(function(...) merge(..., all=T), soilcarbon_data)
-  flat_data[] <- lapply(flat_data, as.character)
-  flat_data[, setdiff(flat_template_columns, colnames(flat_data))]<-NA
-  setdiff(colnames(working_database), colnames(flat_data))
-  setdiff(colnames(flat_data), colnames(working_database))
-
-  working_database<-rbind(working_database, flat_data)
 }
 
   working_database[]<-lapply(working_database, function(x) stri_trans_general(x, "latin-ascii"))
@@ -93,9 +132,29 @@ for(d in 1:length(data_files)){
 
 # Return database file, logs, and reports ---------------------------------
 
+  cat("\nSummary statistics...\n")
+
+  for (t in 1:length(names(ISRaD_database))){
+    tab<-names(ISRaD_database)[t]
+    data_tab<-ISRaD_database[[tab]]
+    cat("\n",tab,"tab...")
+    cat(nrow(data_tab), "observations")
+    if (nrow(data_tab)>0){
+      col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
+      col_counts<-col_counts[col_counts>0]
+      for(c in 1:length(col_counts)){
+        cat("\n   ", names(col_counts[c]),":", col_counts[c])
+
+      }
+    }
+  }
+
+  write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD.xlsx"))
+
+  cat("\n", rep("-", 20))
 
   if (write_out==T){
-  write.csv(soilcarbon_database, paste0(dataset_directory, "ISRaD.csv"))
+  write.csv(soilcarbon_database, paste0(dataset_directory, "database/ISRaD.csv"))
   }
 
   if (write_report==T){
