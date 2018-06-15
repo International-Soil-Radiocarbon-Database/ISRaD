@@ -235,7 +235,7 @@ for (t in 1:length(names(data))){
 
     #check for non-numeric values where required
     numeric_columns<-template_info[[tab]]$Column_Name[template_info[[tab]]$Variable_class=="numeric"]
-    non_numeric_columns<-sapply(numeric_columns, function(c) !is.numeric(data[[tab]][[c]]) & !is.logical(data[[tab]][[c]]))
+    non_numeric_columns<-sapply(numeric_columns, function(c) c %in% colnames(data[[tab]]) & !is.numeric(data[[tab]][[c]]) & !is.logical(data[[tab]][[c]]))
     if (T %in% non_numeric_columns){
       cat("\n\tWARNING: non-numeric values detected in these columns:", numeric_columns[non_numeric_columns]);error<-error+1
     }
