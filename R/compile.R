@@ -9,6 +9,8 @@
 #' @import devtools
 #' @import stringi
 #' @import openxlsx
+#' @import dplyr
+#' @import tidyr
 #'
 
 compile <- function(dataset_directory, write_report=F, write_out=F){
@@ -19,6 +21,8 @@ compile <- function(dataset_directory, write_report=F, write_out=F){
 
 requireNamespace("stringi")
 requireNamespace("openxlsx")
+requireNamespace("dplyr")
+requireNamespace("tidyr")
 
   if (write_report==T){
   outfile<-paste0(dataset_directory, "database/ISRaD_log.txt")
