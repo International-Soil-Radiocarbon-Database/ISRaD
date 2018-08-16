@@ -39,6 +39,7 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
 
   cat("         Thank you for contributing to the ISRaD database! \n")
   cat("         Please review this quality control report. \n")
+  cat("         Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/ for more information. \n")
   cat(rep("-", 30),"\n\n")
 
   cat("\nFile:", basename(file))
