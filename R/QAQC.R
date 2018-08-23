@@ -48,7 +48,7 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
   ##### check file extension #####
   cat("\n\nChecking file type...")
   if(!grep(".xlsx", file)==1){
-    cat("\tWARNING: ", file, " is not the corrent file type (shoukd have '.xlsx' extension)");error<-error+1
+    cat("\tWARNING: ", file, " is not the corrent file type (should have '.xlsx' extension)");error<-error+1
   }
 
   ##### check template #####
