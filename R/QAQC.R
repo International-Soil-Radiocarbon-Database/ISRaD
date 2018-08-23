@@ -64,17 +64,8 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
   template_info<-lapply(getSheetNames(template_info_file), function(s) read.xlsx(template_info_file , sheet=s))
   names(template_info)<-getSheetNames(template_info_file)
 
-
-  if (all(getSheetNames(file) %in% names(template))){
-    cat("\n Template format detected: ", basename(template_file))
-    cat("\n Template info file to be used for QAQC: ", basename(template_info_file))
-
-    data<-lapply(getSheetNames(file)[1:8], function(s) read.xlsx(file , sheet=s))
-    names(data)<-getSheetNames(file)[1:8]
-    }
-
-  if (!all(getSheetNames(file) %in% names(template))){
-    cat("\tWARNING:  tabs in data file do not match accepted templates. Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute");error<-error+1
+  if (!all(getSheetNames(file) %in% names(template)) | !all(names(template) %in% getSheetNames(file))){
+    cat("\tWARNING:  tabs in data file do not match accepted templates. Please use current template. Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute");error<-error+1
 
     if (writeQCreport==T){
       sink(type="message")
@@ -84,7 +75,15 @@ QAQC <- function(file, writeQCreport=F, outfile=NULL){
     attributes(data)$error<-1
     return(data)
     stop("tabs in data file do not match accepted templates")
-     }
+  }
+
+  if (all(getSheetNames(file) %in% names(template))){
+    cat("\n Template format detected: ", basename(template_file))
+    cat("\n Template info file to be used for QAQC: ", basename(template_info_file))
+
+    data<-lapply(getSheetNames(file)[1:8], function(s) read.xlsx(file , sheet=s))
+    names(data)<-getSheetNames(file)[1:8]
+    }
 
   ##### check for description rows #####
 
