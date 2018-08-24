@@ -26,19 +26,16 @@ compile <- function(dataset_directory, write_report=F, write_out=F){
 
   if (write_report==T){
   outfile<-paste0(dataset_directory, "database/ISRaD_log.txt")
-  reportfile<-file(outfile)
-  sink(reportfile)
-  sink(reportfile, type = c("message"))
-  }
+  } else outfile==""
 
-  cat("ISRaD Compilation Log \n")
-  cat("\n", as.character(Sys.time()))
-  cat("\n",rep("-", 15),"\n")
+  cat("ISRaD Compilation Log \n", file=outfile, append = T)
+  cat("\n", as.character(Sys.time()), file=outfile, append = T)
+  cat("\n",rep("-", 15),"\n", file=outfile, append = T)
 
 
 # Check template and info compatability -------------------------------------------------
 
-  cat("\nChecking compatibility between ISRaD template and info file...")
+  cat("\nChecking compatibility between ISRaD template and info file...", file=outfile, append = T)
 
   template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
   template<-lapply(getSheetNames(template_file), function(s) read.xlsx(template_file , sheet=s))
@@ -50,23 +47,23 @@ compile <- function(dataset_directory, write_report=F, write_out=F){
 
   for (t in 1:8){
     tab<-names(template)[t]
-    cat("\n",tab,"...")
+    cat("\n",tab,"...", file=outfile, append = T)
     if(F %in% c(template_info[[tab]]$Column_Name %in% colnames(template[[tab]]))) {
-      cat("\n\tWARNING column names unique to template:",   setdiff(template_info[[tab]]$Column_Name, colnames(template[[tab]])))
+      cat("\n\tWARNING column names unique to template:",   setdiff(template_info[[tab]]$Column_Name, colnames(template[[tab]])), file=outfile, append = T)
     }
     if(F %in% c(colnames(template[[tab]]) %in% template_info[[tab]]$Column_Name)) {
-      cat("\n\tWARNING column names unique to info file:",   setdiff(colnames(template[[tab]]),template_info[[tab]]$Column_Name))
+      cat("\n\tWARNING column names unique to info file:",   setdiff(colnames(template[[tab]]),template_info[[tab]]$Column_Name), file=outfile, append = T)
     }
   }
 
 
 # Check template_info vocab syntax ----------------------------------------
-  cat("\nChecking template info file controlled vocab syntax and values...")
+  cat("\nChecking template info file controlled vocab syntax and values...", file=outfile, append = T)
 
   for (t in 1:length(template_info)){
 
     tab<-names(template_info)[t]
-    cat("\n",tab,"...")
+    cat("\n",tab,"...", file=outfile, append = T)
 
     tab_info<-template_info[[tab]]
     vocab<-tab_info[!is.na(tab_info$Vocab),]
@@ -77,10 +74,10 @@ compile <- function(dataset_directory, write_report=F, write_out=F){
     }
 
     if(length(which.nonnum(tab_info$Min))>0) {
-      cat("\n\tWARNING non-numeric values in Min column")
+      cat("\n\tWARNING non-numeric values in Min column", file=outfile, append = T)
     }
     if(length(which.nonnum(tab_info$Max))>0) {
-      cat("\n\tWARNING non-numeric values in Max column")
+      cat("\n\tWARNING non-numeric values in Max column", file=outfile, append = T)
     }
 
   }
@@ -95,8 +92,8 @@ working_database<-template_flat %>% mutate_all(as.character)
 ISRaD_database<-lapply(template[1:8], function(x) x[-c(1,2),])
 ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
-cat("\n\nCompiling data files in", dataset_directory)
-cat("\n", rep("-", 30),"\n")
+cat("\n\nCompiling data files in", dataset_directory, file=outfile, append = T)
+cat("\n", rep("-", 30),"\n", file=outfile, append = T)
 
 data_files<-list.files(dataset_directory, full.names = T)
 data_files<-data_files[grep("xlsx", data_files)]
@@ -104,12 +101,12 @@ data_files<-data_files[grep("xlsx", data_files)]
 entry_stats<-data.frame()
 
 for(d in 1:length(data_files)){
-  cat("\n\n",d, "checking", basename(data_files[d]),"...")
+  cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = T)
   soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = T)
   if (attributes(soilcarbon_data)$error>0) {
-    cat("failed QAQC. Check report in QAQC folder.")
+    cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = T)
     #next
-  } else cat("passed")
+  } else cat("passed", file=outfile, append = T)
 
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
@@ -136,18 +133,18 @@ for(d in 1:length(data_files)){
 
 # Return database file, logs, and reports ---------------------------------
 
-  cat("\nSummary statistics...\n")
+  cat("\nSummary statistics...\n", file=outfile, append = T)
 
   for (t in 1:length(names(ISRaD_database))){
     tab<-names(ISRaD_database)[t]
     data_tab<-ISRaD_database[[tab]]
-    cat("\n",tab,"tab...")
-    cat(nrow(data_tab), "observations")
+    cat("\n",tab,"tab...", file=outfile, append = T)
+    cat(nrow(data_tab), "observations", file=outfile, append = T)
     if (nrow(data_tab)>0){
       col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
       col_counts<-col_counts[col_counts>0]
       for(c in 1:length(col_counts)){
-        cat("\n   ", names(col_counts[c]),":", col_counts[c])
+        cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
 
       }
     }
@@ -157,16 +154,12 @@ for(d in 1:length(data_files)){
 
   write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
 
-  cat("\n", rep("-", 20))
+  cat("\n", rep("-", 20), file=outfile, append = T)
 
   if (write_out==T){
   write.csv(soilcarbon_database, paste0(dataset_directory, "database/ISRaD_flat.csv"))
   }
 
-  if (write_report==T){
-    sink(type="message")
-    sink()
-    cat("\n Compilation report saved to", outfile,"\n")
-  }
+    cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
 
 }

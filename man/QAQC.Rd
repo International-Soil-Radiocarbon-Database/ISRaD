@@ -4,7 +4,7 @@
 \alias{QAQC}
 \title{QAQC}
 \usage{
-QAQC(file, writeQCreport = F, outfile = NULL)
+QAQC(file, writeQCreport = F, outfile = "")
 }
 \arguments{
 \item{file}{directory to data file}
