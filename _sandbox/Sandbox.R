@@ -13,4 +13,4 @@ sink()
 
 write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD_list.xlsx"))
 
-compile(dataset_directory = "~/Desktop/Data/", write_report = T, write_out = T)
+compiled<-compile(dataset_directory = "~/Desktop/Data/", write_report = T, write_out = T, return="flat")

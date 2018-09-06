@@ -4,7 +4,8 @@
 \alias{compile}
 \title{compile}
 \usage{
-compile(dataset_directory, write_report = F, write_out = F)
+compile(dataset_directory, write_report = F, write_out = F,
+  return = NULL)
 }
 \arguments{
 \item{dataset_directory}{directory where compeleted and QC passed soilcarbon datasets are stored}
@@ -12,6 +13,8 @@ compile(dataset_directory, write_report = F, write_out = F)
 \item{write_report}{T or F whether or not to write a log file of the compilation}
 
 \item{write_out}{T or F whether or not to write the compiled database file as csv in dataset_directory}
+
+\item{return}{parameter for whether compile function should return object to R environment. Default is NULL. Acceptable values are "flat" or "list" depending on the format you want to have the database returned in.}
 }
 \description{
 adds dataset to soilcarbon database
