@@ -162,4 +162,5 @@ for(d in 1:length(data_files)){
 
     cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
 
+  return(ISRaD_database)
 }
