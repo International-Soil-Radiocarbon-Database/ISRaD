@@ -5,6 +5,7 @@
 #' @param dataset_directory directory where compeleted and QC passed soilcarbon datasets are stored
 #' @param write_report T or F whether or not to write a log file of the compilation
 #' @param write_out T or F whether or not to write the compiled database file as csv in dataset_directory
+#' @param return parameter for whether compile function should return object to R environment. Default is NULL. Acceptable values are "flat" or "list" depending on the format you want to have the database returned in.
 #' @export
 #' @import devtools
 #' @import stringi
@@ -13,7 +14,7 @@
 #' @import tidyr
 #'
 
-compile <- function(dataset_directory, write_report=F, write_out=F){
+compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL){
 
 
 # setup -------------------------------------------------------------------
@@ -162,5 +163,12 @@ for(d in 1:length(data_files)){
 
     cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
 
+    if(return=="list"){
   return(ISRaD_database)
+    }
+    if(return=="flat"){
+      return(soilcarbon_database)
+    }
+
+
 }
