@@ -255,7 +255,7 @@ for (t in 1:length(names(data))){
         max<-as.numeric(tab_info$Max[tab_info$Column_Name == column])
         min<-as.numeric(tab_info$Min[tab_info$Column_Name == column])
         toobig<-data[[tab]][,column]>max
-        toosmall<-which(data[[tab]][,column]<min)
+        toosmall<-data[[tab]][,column]<min
         if(sum(toobig, na.rm=T)>0) {
           cat("\n\tWARNING values greater than accepted max in", column, "column: rows", which(toobig), file=outfile, append = T); error<-error+1
         }
