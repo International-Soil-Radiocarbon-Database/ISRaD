@@ -117,4 +117,11 @@ for (r in 1:length(treatS1$Reference)){
   write.xlsx(data_template, paste0("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", gsub(" ", "",gsub(",","_", gsub("\\.","", ref))), ".xlsx"))
 }
 
+# save doi_numbers
+data_files<-list.files("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", full.names = F)
+data_files<-data_files[grep("xlsx", data_files)]
+data_files<-gsub(".xlsx","",data_files)
+
+write.csv(data.frame(entry_name=data_files, doi=""),"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/dois.csv")
+
 
