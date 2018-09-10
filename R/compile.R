@@ -72,7 +72,7 @@ compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL)
     vocab_columns<-vocab_columns[-grep("name", vocab_columns)]
     vocab_columns_in_template_cv<-sapply(vocab_columns, function(x) x %in% colnames(template_vocab))
     if(F %in% vocab_columns_in_template_cv) {
-      cat("\n\tWARNING controlled voacb column from template info not found in controlled voacb tab of template:", vocab_columns[!vocab_columns_in_template_cv], file=outfile, append = T)
+      cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:", vocab_columns[!vocab_columns_in_template_cv], file=outfile, append = T)
     }
 
     if(length(vocab_columns)>0) {
@@ -82,9 +82,10 @@ compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL)
         column<-vocab_columns[v]
         vocab_info<-template_info_tab$Vocab[template_info_tab$Column_Name==column]
         vocab_info<-strsplit(vocab_info, ",")
+        vocab_info<-sapply(vocab_info, trimws)
         vocab_info %in% template_vocab[,column]
 
-        cat("\n\tWARNING controlled voacb column from template info do not match controlled voacb tab of template for:", column, file=outfile, append = T)
+        cat("\n\tWARNING controlled vocab column from template info do not match controlled vocab tab of template for:", column, file=outfile, append = T)
       }
       }
     }
