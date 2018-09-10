@@ -229,7 +229,7 @@ for (t in 1:length(names(data))){
   }
 
   ##### check numeric values #####
-  cat("\n\nChecking numeric variable columns for innappropriate values...", file=outfile, append = T)
+  cat("\n\nChecking numeric variable columns for inappropriate values...", file=outfile, append = T)
 
   which.nonnum <- function(x) {
     badNum <- is.na(suppressWarnings(as.numeric(as.character(x))))

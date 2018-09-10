@@ -29,7 +29,7 @@ compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL)
   outfile<-paste0(dataset_directory, "database/ISRaD_log.txt")
   } else outfile==""
 
-  cat("ISRaD Compilation Log \n", file=outfile, append = T)
+  cat("ISRaD Compilation Log \n", file=outfile)
   cat("\n", as.character(Sys.time()), file=outfile, append = T)
   cat("\n",rep("-", 15),"\n", file=outfile, append = T)
 
@@ -57,6 +57,38 @@ compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL)
     }
   }
 
+  cat("\nChecking controlled vocab between ISRaD template and info file...", file=outfile, append = T)
+
+
+  for (t in 1:8){
+    tab<-names(template_info)[t]
+    cat("\n",tab,"...", file=outfile, append = T)
+
+    template_info_tab<-template_info[[tab]]
+    template_vocab<-template$`controlled vocabulary`
+    colnames(template_vocab)<-template_vocab[1,]
+    template_vocab<-template_vocab[c(-1,-2),]
+    vocab_columns<-template_info_tab$Column_Name[template_info_tab$Variable_class=="character" & !is.na(template_info_tab$Vocab)]
+    vocab_columns<-vocab_columns[-grep("name", vocab_columns)]
+    vocab_columns_in_template_cv<-sapply(vocab_columns, function(x) x %in% colnames(template_vocab))
+    if(F %in% vocab_columns_in_template_cv) {
+      cat("\n\tWARNING controlled voacb column from template info not found in controlled voacb tab of template:", vocab_columns[!vocab_columns_in_template_cv], file=outfile, append = T)
+    }
+
+    if(length(vocab_columns)>0) {
+      vocab_columns<-vocab_columns[vocab_columns_in_template_cv]
+      if(length(vocab_columns)>0) {
+      for (v in 1:length(vocab_columns)){
+        column<-vocab_columns[v]
+        vocab_info<-template_info_tab$Vocab[template_info_tab$Column_Name==column]
+        vocab_info<-strsplit(vocab_info, ",")
+        vocab_info %in% template_vocab[,column]
+
+        cat("\n\tWARNING controlled voacb column from template info do not match controlled voacb tab of template for:", column, file=outfile, append = T)
+      }
+      }
+    }
+  }
 
 # Check template_info vocab syntax ----------------------------------------
   cat("\nChecking template info file controlled vocab syntax and values...", file=outfile, append = T)
