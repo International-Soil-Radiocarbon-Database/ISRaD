@@ -166,7 +166,7 @@ for(d in 1:length(data_files)){
   soilcarbon_database<-working_database
 
 # Return database file, logs, and reports ---------------------------------
-
+  cat("\n\n-------------\n", file=outfile, append = T)
   cat("\nSummary statistics...\n", file=outfile, append = T)
 
   for (t in 1:length(names(ISRaD_database))){
