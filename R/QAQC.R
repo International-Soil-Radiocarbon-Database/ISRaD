@@ -257,11 +257,11 @@ for (t in 1:length(names(data))){
         toobig<-data[[tab]][,column]>max
         toosmall<-which(data[[tab]][,column]<min)
         if(sum(toobig, na.rm=T)>0) {
-          cat("\n\tWARNING values greater than accepted max in", column, "column: rows", toobig, file=outfile, append = T); error<-error+1
+          cat("\n\tWARNING values greater than accepted max in", column, "column: rows", which(toobig), file=outfile, append = T); error<-error+1
         }
 
         if(sum(toosmall, na.rm=T)>0) {
-          cat("\n\tWARNING values smaller than accepted min in", column, "column: rows", toosmall, file=outfile, append = T); error<-error+1
+          cat("\n\tWARNING values smaller than accepted min in", column, "column: rows", which(toosmall), file=outfile, append = T); error<-error+1
         }
 
       }
