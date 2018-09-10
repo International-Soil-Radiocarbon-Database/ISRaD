@@ -83,10 +83,10 @@ compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL)
         vocab_info<-template_info_tab$Vocab[template_info_tab$Column_Name==column]
         vocab_info<-strsplit(vocab_info, ",")
         vocab_info<-sapply(vocab_info, trimws)
-        vocab_info %in% template_vocab[,column]
-
+        if(!all(vocab_info %in% template_vocab[,column])){
         cat("\n\tWARNING controlled vocab column from template info do not match controlled vocab tab of template for:", column, file=outfile, append = T)
-      }
+        }
+           }
       }
     }
   }
