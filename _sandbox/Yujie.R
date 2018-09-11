@@ -165,5 +165,12 @@ for (d in 1:length(dataset_names)){
 
 }
 
+# save doi_numbers
+data_files<-list.files("~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/converted/", full.names = F)
+data_files<-data_files[grep("xlsx", data_files)]
+data_files<-gsub(".xlsx","",data_files)
+
+write.csv(data.frame(entry_name=data_files),"~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/entries.csv")
+
 
 

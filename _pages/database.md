@@ -13,6 +13,11 @@ htmlwidgets: TRUE
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/structure_new.png">
 </figure>
 
+## In progress
+Visit this google doc to see the status of different datasets. 
+[List](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit?usp=sharing)
+
+
 ## Information about data currently in database
 
 |    | entry_name         | doi                                     | metadata | site | profile | flux | layer | interstitial | fraction | incubation |
