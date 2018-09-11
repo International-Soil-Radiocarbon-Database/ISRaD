@@ -8,6 +8,8 @@ fileS1<-"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1.xlsx"
 fileS2<-"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S2.xlsx"
 fileS3<-"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S3.xlsx"
 
+write.table(unique(treatS3$Dated.material), "~/Dropbox/USGS/ISRaD_data/Compilations/Treat/Dated_material_unique.txt")
+
 treatS1<-read.xlsx(fileS1,startRow = 422, colNames = T, check.names = T)
 treatS2<-read.xlsx(fileS2,startRow = 629, colNames = T, check.names = T)
 colnames(treatS1)[26]<-"ID"
