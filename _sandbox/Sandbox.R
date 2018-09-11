@@ -1,15 +1,14 @@
 library(devtools)
 install_github("International-Soil-Radiocarbon-Database/ISRaD", ref = "v0.0.1")
-library(ISRaD)
+
 install("../ISRaD/")
-
-
-
+library(ISRaD)
 
 document()
+check()
 
-file="~/Desktop/Data/Angst_unpub.xlsx"
-out<-QAQC(file, writeQCreport = T)
+file="~/Desktop/Berg_2004.xlsx"
+out<-QAQC(file, writeQCreport = F)
 
 sink(type="message")
 sink()

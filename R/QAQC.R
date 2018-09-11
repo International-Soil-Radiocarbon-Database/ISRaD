@@ -138,9 +138,10 @@ for (t in 1:length(names(data))){
 
   missing_values<-sapply(required_colnames, function(c) NA %in% data[[tab]][[c]])
   T %in% unlist(missing_values)
+  which_missing_values<-unlist(sapply(required_colnames[missing_values], function(c) unlist(which(is.na(data[[tab]][[c]])))))
 
   if (T %in% unlist(missing_values)) {
-    cat("\n\tWARNING: missing values where required:", required_colnames[missing_values], file=outfile, append = T);error<-error+1
+    cat("\n\tWARNING: missing values where required:", required_colnames[missing_values], "(rows:",which_missing_values,")", file=outfile, append = T);error<-error+1
   }
 }
 
