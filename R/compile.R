@@ -25,6 +25,10 @@ compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL)
   requireNamespace("dplyr")
   requireNamespace("tidyr")
 
+  dir.create(file.path(dataset_directory, "QAQC"), showWarnings = FALSE)
+  dir.create(file.path(dataset_directory, "database"), showWarnings = FALSE)
+
+
   if (write_report==T){
   outfile<-paste0(dataset_directory, "database/ISRaD_log.txt")
   } else outfile==""
