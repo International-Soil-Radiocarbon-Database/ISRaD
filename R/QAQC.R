@@ -141,7 +141,7 @@ for (t in 1:length(names(data))){
   which_missing_values<-unlist(sapply(required_colnames[missing_values], function(c) unlist(which(is.na(data[[tab]][[c]])))))
 
   if (T %in% unlist(missing_values)) {
-    cat("\n\tWARNING: missing values where required:", required_colnames[missing_values], "(rows:",which_missing_values,")", file=outfile, append = T);error<-error+1
+    cat("\n\tWARNING: missing values where required:", required_colnames[missing_values], "(rows:",which_missing_values+3,")", file=outfile, append = T);error<-error+1
   }
 }
 
@@ -258,11 +258,11 @@ for (t in 1:length(names(data))){
         toobig<-data[[tab]][,column]>max
         toosmall<-data[[tab]][,column]<min
         if(sum(toobig, na.rm=T)>0) {
-          cat("\n\tWARNING values greater than accepted max in", column, "column: rows", which(toobig), file=outfile, append = T); error<-error+1
+          cat("\n\tWARNING values greater than accepted max in", column, "column (rows", which(toobig)+3, ")", file=outfile, append = T); error<-error+1
         }
 
         if(sum(toosmall, na.rm=T)>0) {
-          cat("\n\tWARNING values smaller than accepted min in", column, "column: rows", which(toosmall), file=outfile, append = T); error<-error+1
+          cat("\n\tWARNING values smaller than accepted min in", column, "column (rows", which(toosmall)+3, ")", file=outfile, append = T); error<-error+1
         }
 
       }
