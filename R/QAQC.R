@@ -119,6 +119,7 @@ if(length(emptytabs)>0){
 
   ##### check doi --------------------------------------------------------
   dois<-data$metadata$doi
+if(length(dois)<2){if(is.na(dois)) dois<-""}
 for (d in 1:length(dois)){
   if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
     cat("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
