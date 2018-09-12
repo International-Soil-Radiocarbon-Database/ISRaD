@@ -73,5 +73,6 @@ Visit this google doc to see the status of different datasets.
 </figure>
 ## Database download
 
-Coming soon
+Current release
+[ISRaD v0.0.01](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.0.1.zip)
 
