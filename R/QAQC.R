@@ -85,7 +85,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   ##### check for description rows #####
 
   if(!(all(lapply(data, function(x) x[1,1])=="Entry/Dataset Name") & all(lapply(data, function(x) x[2,1])=="Author_year"))){
-    cat("\tWARNING:  Description rows in data file not detected. The first two rows of your data file should be the description rows as found in the template file.", file=outfile, append = T);error<-error+1
+    cat("\n\tWARNING:  Description rows in data file not detected. The first two rows of your data file should be the description rows as found in the template file.", file=outfile, append = T);error<-error+1
   }
 
   # trim description/empty rows

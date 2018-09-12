@@ -15,9 +15,10 @@ sink()
 
 write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD_list.xlsx"))
 
-compiled<-compile(dataset_directory = "~/Dropbox/USGS/ISRaD_data/Data/", write_report = T, write_out = T, return="flat")
+compiled<-compile(dataset_directory = "~/Desktop/Data/", write_report = T, write_out = T, return="flat")
 
 compiled<-compile(dataset_directory = "~/Dropbox/USGS/ISRaD_data/Compile_Wed/", write_report = T, write_out = T, return="flat")
 
+out<-QAQC("~/Dropbox/USGS/ISRaD_data/Compile_Wed/database/ISRaD_list.xlsx", writeQCreport = F)
 
 

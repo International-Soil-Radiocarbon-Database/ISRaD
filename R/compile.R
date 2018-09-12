@@ -122,8 +122,8 @@ compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL)
 
 # QAQC and compile data files -------------------------------------------------------
 
-template<-lapply(template, function(x) x[-c(1,2),])
-template_flat<-Reduce(function(...) merge(..., all=T), template)
+template_nohead<-lapply(template, function(x) x[-c(1,2),])
+template_flat<-Reduce(function(...) merge(..., all=T), template_nohead)
 flat_template_columns<-colnames(template_flat)
 
 working_database<-template_flat %>% mutate_all(as.character)
@@ -143,7 +143,7 @@ for(d in 1:length(data_files)){
   soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = T)
   if (attributes(soilcarbon_data)$error>0) {
     cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = T)
-    #next
+    next
   } else cat("passed", file=outfile, append = T)
 
 
@@ -188,7 +188,20 @@ for(d in 1:length(data_files)){
     }
   }
 
+  ISRaD_database$metadata<-rbind(template$metadata,ISRaD_database$metadata)
+  ISRaD_database$site<-rbind(template$site,ISRaD_database$site)
+  ISRaD_database$profile<-rbind(template$profile,ISRaD_database$profile)
+  ISRaD_database$flux<-rbind(template$flux,ISRaD_database$flux)
+  ISRaD_database$layer<-rbind(template$layer,ISRaD_database$layer)
+  ISRaD_database$interstitial<-rbind(template$interstitial,ISRaD_database$interstitial)
+  ISRaD_database$fraction<-rbind(template$fraction,ISRaD_database$fraction)
+  ISRaD_database$incubation<-rbind(template$incubation,ISRaD_database$incubation)
+  ISRaD_database$`controlled vocabulary`<-template$`controlled vocabulary`
+
+
+
   write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD_list.xlsx"))
+  QAQC(paste0(dataset_directory, "database/ISRaD_list.xlsx"), writeQCreport = T, outfile = paste0(dataset_directory, "database/QAQC_ISRaD_list.txt"))
 
   write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
 
