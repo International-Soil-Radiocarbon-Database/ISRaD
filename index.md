@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: 'International Soil Radiocarbon Database'
+title: <span style="color:blue">some *This is Blue italic.* text</span> International Soil Radiocarbon Database
 header:
   overlay_image: /assets/images/soil.jpg
 feature_row:
