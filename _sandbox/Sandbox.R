@@ -7,7 +7,7 @@ library(ISRaD)
 document()
 check()
 
-file="~/Desktop/Berg_2004.xlsx"
+file="~/Dropbox/USGS/14Cdatabase/MPI-BGC Completed templates/Updated 30-08-2018/Gaudinski_2001.xlsx"
 out<-QAQC(file, writeQCreport = F)
 
 sink(type="message")
@@ -19,6 +19,5 @@ compiled<-compile(dataset_directory = "~/Desktop/Data/", write_report = T, write
 
 compiled<-compile(dataset_directory = "~/Dropbox/USGS/ISRaD_data/Compile_Wed/", write_report = T, write_out = T, return="flat")
 
-out<-QAQC("~/Dropbox/USGS/ISRaD_data/Compile_Wed/database/ISRaD_list.xlsx", writeQCreport = F)
 
 

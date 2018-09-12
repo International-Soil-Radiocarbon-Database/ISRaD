@@ -338,34 +338,34 @@ cat("\n", rep("-", 20), file=outfile, append = T)
 
 # data.tree ---------------------------------------------------------------
 
-  cat("\n\nHierarchy of data...\n", file=outfile, append = T)
-  cat("\nMerging data into flattened structure...\n", file=outfile, append = T)
-
-  flat_data <- lapply(data, function(x) x %>% mutate_all(as.character))
-
-  flat_data<-flat_data %>%
-    Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
-
-  not_na<-flat_data %>% select(c(entry_name, site_name, pro_name, plot_name, lyr_name, frc_name))
-  not_na<-not_na %>% select_if(~sum(!is.na(.)) > 0)
-
-
-  flat_data$entry_name<-paste0(flat_data$entry_name, " (entry_name)")
-  flat_data$site_name<-paste0(flat_data$site_name, " (site_name)")
-  flat_data$pro_name<-paste0(flat_data$pro_name, " (pro_name)")
-  flat_data$plot_name<-paste0(flat_data$plot_name, " (plot_name)")
-  flat_data$lyr_name<-paste0(flat_data$lyr_name, " (lyr_name)")
-  flat_data$frc_name<-paste0(flat_data$frc_name, " (frc_name)")
-
-  not_na<-flat_data %>% select(colnames(not_na))
-  not_na<-not_na %>% unite(sep="/")
-  not_na<-not_na[,1]
-  flat_data$pathString <-  not_na
-  structure <- as.Node(flat_data)
+  # cat("\n\nHierarchy of data...\n", file=outfile, append = T)
+  # cat("\nMerging data into flattened structure...\n", file=outfile, append = T)
+  #
+  # flat_data <- lapply(data, function(x) x %>% mutate_all(as.character))
+  #
+  # flat_data<-flat_data %>%
+  #   Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
+  #
+  # not_na<-flat_data %>% select(c(entry_name, site_name, pro_name, plot_name, lyr_name, frc_name))
+  # not_na<-not_na %>% select_if(~sum(!is.na(.)) > 0)
+  #
+  #
+  # flat_data$entry_name<-paste0(flat_data$entry_name, " (entry_name)")
+  # flat_data$site_name<-paste0(flat_data$site_name, " (site_name)")
+  # flat_data$pro_name<-paste0(flat_data$pro_name, " (pro_name)")
+  # flat_data$plot_name<-paste0(flat_data$plot_name, " (plot_name)")
+  # flat_data$lyr_name<-paste0(flat_data$lyr_name, " (lyr_name)")
+  # flat_data$frc_name<-paste0(flat_data$frc_name, " (frc_name)")
+  #
+  # not_na<-flat_data %>% select(colnames(not_na))
+  # not_na<-not_na %>% unite(sep="/")
+  # not_na<-not_na[,1]
+  # flat_data$pathString <-  not_na
+  # structure <- as.Node(flat_data)
 
   cat("\n\n", file=outfile, append = T)
-  printed<-print(structure, limit=NULL)
-  sapply(printed$levelName, function(x) cat("\n", x, file=outfile, append = T))
+  #printed<-print(structure, limit=NULL)
+  #sapply(printed$levelName, function(x) cat("\n", x, file=outfile, append = T))
 
   cat("\n\nPlease email info.israd@gmail.com with concerns or suggestions", file=outfile, append = T)
   cat("\nIf you think there is a error in the functioning of this code please post to
