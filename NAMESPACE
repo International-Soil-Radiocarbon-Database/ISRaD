@@ -3,6 +3,7 @@
 export(QAQC)
 export(compilations)
 export(compile)
+import(RCurl)
 import(data.tree)
 import(devtools)
 import(dplyr)

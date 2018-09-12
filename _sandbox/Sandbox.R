@@ -1,5 +1,5 @@
 library(devtools)
-install_github("International-Soil-Radiocarbon-Database/ISRaD", ref = "v0.0.1")
+#install_github("International-Soil-Radiocarbon-Database/ISRaD", ref = "v0.0.1")
 
 install("../ISRaD/")
 library(ISRaD)
@@ -7,8 +7,9 @@ library(ISRaD)
 document()
 check()
 
-file="~/Dropbox/USGS/14Cdatabase/MPI-BGC Completed templates/Updated 30-08-2018/Gaudinski_2001.xlsx"
-out<-QAQC(file, writeQCreport = F)
+file="~/Desktop/Baisden_2002.xlsx"
+out<-QAQC(file, writeQCreport = T)
+out
 
 sink(type="message")
 sink()
@@ -19,5 +20,4 @@ compiled<-compile(dataset_directory = "~/Desktop/Data/", write_report = T, write
 
 compiled<-compile(dataset_directory = "~/Dropbox/USGS/ISRaD_data/Compile_Wed/", write_report = T, write_out = T, return="flat")
 
-
-
+RCurl::url.exists(paste0("https://www.doi.org/","10.1016/j.agrformet.2011.09.015"))

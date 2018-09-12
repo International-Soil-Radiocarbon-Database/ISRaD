@@ -35,4 +35,8 @@ What files it creates:
 
 ## How to subset the database
 
+## How to visualize the database
+
+
+
 

@@ -9,6 +9,7 @@
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr
+#' @import RCurl
 #' @export
 
 
@@ -20,6 +21,8 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   requireNamespace("data.tree")
   requireNamespace("dplyr")
   requireNamespace("tidyr")
+  requireNamespace("RCurl")
+
 
 
 
@@ -112,6 +115,15 @@ if(length(emptytabs)>0){
   cat("\n\tNOTE: empty tabs detected (", emptytabs,")", file=outfile, append = T)
   note<-note+1
   }
+
+
+  ##### check doi --------------------------------------------------------
+  dois<-data$metadata$doi
+for (d in 1:length(dois)){
+  if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
+    cat("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
+  }
+}
 
   ##### check for extra or misnamed columns ####
 cat("\n\nChecking for misspelled column names...", file=outfile, append = T)
