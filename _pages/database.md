@@ -21,7 +21,7 @@ Visit this google doc to see the status of different datasets.
 ## Information about data currently in database
 
 <figure>
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/pages/assets/images/data_summary.png">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/data_summary.png">
 </figure>
 
 ## Database download 
