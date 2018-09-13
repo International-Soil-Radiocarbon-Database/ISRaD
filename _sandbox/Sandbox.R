@@ -1,5 +1,5 @@
 library(devtools)
-#install_github("International-Soil-Radiocarbon-Database/ISRaD", ref = "v0.0.1")
+install_github("International-Soil-Radiocarbon-Database/ISRaD")
 
 install("../ISRaD/")
 library(ISRaD)

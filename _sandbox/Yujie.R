@@ -53,7 +53,8 @@ Yujie_dataset_clean$Layer_top_norm<-Yujie_dataset_clean$Layer_top_norm
 
 Yujie_soilcarbon<-list(metadata=data.frame(entry_name=Yujie_dataset_sources$pc_dataset_name,
                                            doi=Yujie_dataset_sources$doi,
-                                           curator_name=rep("Yujie He", nrow(Yujie_dataset_sources))),
+                                           curator_name=rep("Yujie He", nrow(Yujie_dataset_sources)),
+                                           bibliographical_reference=refs(Yujie_dataset_sources$doi, style="apa", out="citation")),
                        site=data.frame(entry_name=Yujie_dataset_sites$pc_dataset_name,
                                        site_name=Yujie_dataset_sites$Site,
                                        site_lat=Yujie_dataset_sites$Lat,
@@ -70,7 +71,8 @@ Yujie_soilcarbon<-list(metadata=data.frame(entry_name=Yujie_dataset_sources$pc_d
                                           pro_slope=Yujie_dataset_profiles$Slope,
                                           pro_slope_shape=Yujie_dataset_profiles$SlopePosition,
                                           pro_aspect=Yujie_dataset_profiles$Aspect,
-                                          pro_veg_note=Yujie_dataset_profiles$VegTypeCodeStr_Local),
+                                          pro_veg_note=apply(Yujie_dataset_profiles[, c("VegTypeCodeStr_Local", "VegLocal","VegType_Species")], 1, paste, collapse=";"),
+                                          pro_land_cover=Yujie_dataset_profiles$VegTypeCodeStr_Local),
                        layer=data.frame(entry_name=Yujie_dataset_clean$pc_dataset_name,
                                         site_name=Yujie_dataset_clean$Site,
                                         pro_name=Yujie_dataset_clean$profile_name,
@@ -122,9 +124,47 @@ Yujie_data_nofraction<-Yujie_soilcarbon[-5]
 
   setdiff(colnames(flat_data), colnames(template_flat))
 
+  flat_data$curator_organization<-"ISRaD"
+  flat_data$curator_email<-"info.israd@gmail.com"
+  flat_data$modification_date_d<-format(as.Date(Sys.Date(),format="%Y-%m-%d"), "%d")
+  flat_data$modification_date_m<-format(as.Date(Sys.Date(),format="%Y-%m-%d"), "%m")
+  flat_data$modification_date_y<-format(as.Date(Sys.Date(),format="%Y-%m-%d"), "%Y")
+  flat_data$contact_name<-"Yujie He"
+  flat_data$contact_email<-"yujiehe.pu@gmail.com"
+  flat_data$compilation_doi<- "10.1126/science.aad4273"
+  flat_data$pro_treatment<-"control"
+  flat_data$lyr_fraction_modern<-as.character(flat_data$lyr_fraction_modern)
+
+  lyr_fraction_modern_percent<-unlist(sapply(flat_data$lyr_fraction_modern, function(x) {
+    if(is.na(x)){return(F)
+    } else {
+      if(x=="modern") {return(F)
+    } else {
+      x<-as.numeric(x)
+      if (x < 5) { return(F)
+      } else {return(T)}
+    }
+  }
+    }))
+
+  flat_data$lyr_fraction_modern[lyr_fraction_modern_percent]<-as.numeric(flat_data$lyr_fraction_modern[lyr_fraction_modern_percent])/100
+  flat_data$lyr_fraction_modern_sigma[lyr_fraction_modern_percent]<-as.numeric(flat_data$lyr_fraction_modern_sigma[lyr_fraction_modern_percent])/100
+
+
+  land_cover<-read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/vegetation_class_code.xlsx")
+  flat_data$pro_land_cover<-land_cover$Controlled[match(flat_data$pro_land_cover, land_cover$VegTypeCodeStr_Local)]
+summary(flat_data$pro_land_cover)
+
+
+ #bibs<-refs(unique(flat_data$doi), style="apa", out="citation")
+ #write.table(bibs, "~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/refs.txt")
+
 Yujie_database<-flat_data
 Yujie_database[]<-lapply(Yujie_database, function(x) stringi::stri_trans_general(as.character(x), "latin-ascii"))
 Yujie_database[]<-lapply(Yujie_database, type.convert)
+
+
+
 
 
 dataset_names<-unique(Yujie_database$entry_name)
@@ -158,6 +198,9 @@ for (d in 1:length(dataset_names)){
   #incubation
   dataset_object$incubation<-template$incubation
 
+  #controlled_vocabulary
+  dataset_object$`controlled vocabulary`<-template$`controlled vocabulary`
+
 
   directory="~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/converted/"
 
@@ -165,12 +208,13 @@ for (d in 1:length(dataset_names)){
 
 }
 
-# save doi_numbers
-data_files<-list.files("~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/converted/", full.names = F)
-data_files<-data_files[grep("xlsx", data_files)]
-data_files<-gsub(".xlsx","",data_files)
 
-write.csv(data.frame(entry_name=data_files),"~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/entries.csv")
+# # save doi_numbers
+# data_files<-list.files("~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/converted/", full.names = F)
+# data_files<-data_files[grep("xlsx", data_files)]
+# data_files<-gsub(".xlsx","",data_files)
+#
+# write.csv(data.frame(entry_name=data_files),"~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/entries.csv")
 
 
 
