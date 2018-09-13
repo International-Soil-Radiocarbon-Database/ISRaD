@@ -22,7 +22,6 @@ Visit this google doc to see the status of different datasets.
 
 v0.1.0
 Database objects 
-[csv](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_Data/database/ISRaD_flat.csv)
 [excel](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_Data/database/ISRaD_list.xlsx)
 
 
