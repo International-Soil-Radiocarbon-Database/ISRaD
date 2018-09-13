@@ -5,8 +5,6 @@
 
 
 File: Berg_2004.xlsx
-Time: 2018-09-13 14:42:49 
-
 
 Checking file type...
 

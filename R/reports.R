@@ -13,8 +13,8 @@
 reports<-function(database=ISRaD_data, report){
   
   
-  library(dplyr)
-  library(tidyr)
+  requireNamespace("dplyr")
+  requireNamespace("tidyr")
   
   if(report=="entry_stats"){
     

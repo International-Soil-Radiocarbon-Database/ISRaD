@@ -43,7 +43,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   cat(rep("-", 30),"\n\n", file=outfile, append = T)
 
   cat("\nFile:", basename(file), file=outfile, append = T)
-  cat("\nTime:", as.character(Sys.time()), "\n", file=outfile, append = T)
+  #cat("\nTime:", as.character(Sys.time()), "\n", file=outfile, append = T)
 
   ##### check file extension #####
   cat("\n\nChecking file type...", file=outfile, append = T)

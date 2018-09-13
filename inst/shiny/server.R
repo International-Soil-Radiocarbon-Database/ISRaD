@@ -1,5 +1,6 @@
 
 library(ggplot2)
+library(dplyr)
 
 shinyServer(function(input, output, session) {
   options(shiny.maxRequestSize=30*1024^2)

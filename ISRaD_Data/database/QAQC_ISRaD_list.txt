@@ -5,7 +5,7 @@
 
 
 File: ISRaD_list.xlsx
-Time: 2018-09-13 14:47:59 
+Time: 2018-09-13 16:32:06 
 
 
 Checking file type...
@@ -74,52 +74,52 @@ It might be useful to manually review the summary statistics and graphical repre
 
 Summary statistics...
 
- metadata tab...67 observations
-    entry_name : 67
-    doi : 67
+ metadata tab...68 observations
+    entry_name : 68
+    doi : 68
     compilation_doi : 5
-    curator_name : 67
-    curator_organization : 67
-    curator_email : 67
-    modification_date_y : 67
-    modification_date_m : 67
-    modification_date_d : 67
-    contact_name : 67
-    contact_email : 67
+    curator_name : 68
+    curator_organization : 68
+    curator_email : 68
+    modification_date_y : 68
+    modification_date_m : 68
+    modification_date_d : 68
+    contact_name : 68
+    contact_email : 68
     contact_orcid_id : 23
-    bibliographical_reference : 67
+    bibliographical_reference : 68
     metadata_note : 27
     associated_datasets : 11
- site tab...189 observations
-    entry_name : 189
-    site_name : 189
-    site_lat : 189
-    site_long : 189
+ site tab...190 observations
+    entry_name : 190
+    site_name : 190
+    site_lat : 190
+    site_long : 190
     site_datum : 81
-    site_elevation : 157
-    site_note : 99
- profile tab...834 observations
-    entry_name : 834
-    site_name : 834
+    site_elevation : 158
+    site_note : 100
+ profile tab...836 observations
+    entry_name : 836
+    site_name : 836
     plot_name : 330
-    pro_name : 834
+    pro_name : 836
     pro_note : 236
     pro_lat : 119
     pro_long : 119
-    pro_treatment : 834
-    pro_treatment_note : 209
+    pro_treatment : 836
+    pro_treatment_note : 211
     pro_comp : 81
     pro_reps : 164
-    pro_MAT : 533
-    pro_MAP : 635
-    pro_soil_taxon : 614
-    pro_soil_series : 184
+    pro_MAT : 535
+    pro_MAP : 637
+    pro_soil_taxon : 616
+    pro_soil_series : 186
     pro_soil_taxon_sys : 379
     pro_soil_age : 37
     pro_MAST : 131
     pro_MASWC : 44
-    pro_land_cover : 761
-    pro_veg_note : 586
+    pro_land_cover : 763
+    pro_veg_note : 588
     pro_bedrock_depth : 60
     pro_depth_water : 55
     pro_thaw_depth : 75
@@ -129,7 +129,7 @@ Summary statistics...
     pro_2d_position : 75
     pro_aspect : 23
     pro_aspect_deg : 16
-    pro_slope : 172
+    pro_slope : 174
     pro_slope_shape : 76
     pro_drainage_class : 128
     pro_soc : 74
@@ -168,26 +168,26 @@ Summary statistics...
     flx_14c_sigma : 110
     flx_14c_sd : 17
     flx_fraction_modern : 20
- layer tab...2300 observations
-    entry_name : 2300
-    site_name : 2300
-    pro_name : 2300
-    lyr_name : 2300
-    lyr_obs_date_y : 2300
-    lyr_obs_date_m : 1494
-    lyr_obs_date_d : 1342
+ layer tab...2306 observations
+    entry_name : 2306
+    site_name : 2306
+    pro_name : 2306
+    lyr_name : 2306
+    lyr_obs_date_y : 2306
+    lyr_obs_date_m : 1500
+    lyr_obs_date_d : 1348
     lyr_non_bulk : 719
     lyr_all_org_neg : 185
-    lyr_top : 2300
-    lyr_bot : 2300
+    lyr_top : 2306
+    lyr_bot : 2306
     lyr_hzn : 1036
     lyr_comp : 141
     lyr_note : 653
     lyr_color : 118
     lyr_burn_ev : 5
-    lyr_bd_samp : 370
+    lyr_bd_samp : 376
     lyr_bd_tot : 629
-    lyr_bd_notes : 337
+    lyr_bd_notes : 343
     lyr_sand_tot_psa : 462
     lyr_silt_tot_psa : 474
     lyr_clay_tot_psa : 588
@@ -197,8 +197,8 @@ Summary statistics...
     lyr_bet_surface_area : 92
     lyr_ph_cacl : 105
     lyr_ph_h2o : 190
-    lyr_ph : 361
-    lyr_ph_method : 239
+    lyr_ph : 365
+    lyr_ph_method : 243
     lyr_cat_exch : 12
     lyr_base_sum : 24
     lyr_cec_sum : 239
@@ -210,11 +210,11 @@ Summary statistics...
     lyr_bs : 115
     lyr_c_inorg : 155
     lyr_c_org : 561
-    lyr_c_tot : 1032
-    lyr_soc : 726
+    lyr_c_tot : 1038
+    lyr_soc : 732
     lyr_soc_sigma : 120
-    lyr_n_tot : 802
-    lyr_c_to_n : 579
+    lyr_n_tot : 808
+    lyr_c_to_n : 585
     lyr_loi : 16
     lyr_15n : 485
     lyr_13c : 1009

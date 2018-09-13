@@ -5,8 +5,6 @@
 
 
 File: Baisden_2002.xlsx
-Time: 2018-09-13 14:42:44 
-
 
 Checking file type...
 
