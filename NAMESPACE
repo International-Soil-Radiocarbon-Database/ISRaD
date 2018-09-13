@@ -3,6 +3,7 @@
 export(QAQC)
 export(compilations)
 export(compile)
+export(reports)
 import(RCurl)
 import(data.tree)
 import(devtools)

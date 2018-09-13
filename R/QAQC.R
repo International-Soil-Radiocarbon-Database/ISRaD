@@ -118,6 +118,7 @@ if(length(emptytabs)>0){
 
 
   ##### check doi --------------------------------------------------------
+cat("\n\nChecking dataset doi...", file=outfile, append = T)
   dois<-data$metadata$doi
 if(length(dois)<2){if(is.na(dois)) dois<-""}
 for (d in 1:length(dois)){
