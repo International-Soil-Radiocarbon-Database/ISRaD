@@ -1,54 +1,82 @@
-#' compile
+#' Compile ISRaD data product
 #'
-#' adds dataset to soilcarbon database
+#' Construct data products to the International Soil Radiocarbon Database.
 #'
-#' @param dataset_directory directory where compeleted and QC passed soilcarbon datasets are stored
-#' @param write_report T or F whether or not to write a log file of the compilation
-#' @param write_out T or F whether or not to write the compiled database file as csv in dataset_directory
-#' @param return parameter for whether compile function should return object to R environment. Default is NULL. Acceptable values are "flat" or "list" depending on the format you want to have the database returned in.
+#' @param dataset_directory string defining directory where compeleted and 
+#' QC passed soilcarbon datasets are stored
+#' @param write_report boolean flag to write a log file of the 
+#' compilation (FALSE will dump output to console). File will be in the specified
+#' in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
+#' there of this name it will be overwritten.
+#' @param write_out boolean flag to write the compiled database file as csv 
+#' in dataset_directory (FALSE will not generate ouput file but will return)
+#' @param return_type a string that defines return object. 
+#' Default is "none". 
+#' Acceptable values are "flat" or "list" depending on the format you want to 
+#' have the database returned in.
+#' 
 #' @export
+#' 
 #' @import devtools
 #' @import stringi
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr
+#' @import assertthat
 #'
 
-compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL){
-
-
-# setup -------------------------------------------------------------------
-
-
+compile <- function(dataset_directory, 
+                    write_report=FALSE, write_out=FALSE, 
+                    return_type=c('none', 'list', 'flat')[1]){
+  #Libraries used
   requireNamespace("stringi")
+  requireNamespace("assertthat")
   requireNamespace("openxlsx")
   requireNamespace("dplyr")
   requireNamespace("tidyr")
+  
+  # Check inputs
+  assertthat::assert_that(dir.exists(dataset_directory))
+  assertthat::assert_that(is.logical(write_report))
+  assertthat::assert_that(is.logical(write_out))
+  assertthat::assert_that(is.character(return_type))
+ 
+  #Create directories
+  if(! dir.exists(file.path(dataset_directory, "QAQC"))){
+    dir.create(file.path(dataset_directory, "QAQC")) #Creates folder for QAQC reports
+  }
+  if(! dir.exists(file.path(dataset_directory, "database"))){
+    dir.create(file.path(dataset_directory, "database")) #creates folder for final output dump
+  }
+  
+  #Set output file
+  outputfile <- ""
+  if(write_report==TRUE){
+    outfile <- file.path(dataset_directory, "database/ISRaD_log.txt")
+  }
 
-  dir.create(file.path(dataset_directory, "QAQC"), showWarnings = FALSE)
-  dir.create(file.path(dataset_directory, "database"), showWarnings = FALSE)
-
-
-  if (write_report==T){
-  outfile<-paste0(dataset_directory, "database/ISRaD_log.txt")
-  } else outfile==""
-
-  cat("ISRaD Compilation Log \n", file=outfile)
-  cat("\n", as.character(Sys.time()), file=outfile, append = T)
-  cat("\n",rep("-", 15),"\n", file=outfile, append = T)
+  #Start writing in the output file
+  cat("ISRaD Compilation Log \n",
+      "\n", as.character(Sys.time()),
+      "\n",rep("-", 15),"\n", file=outfile)
 
 
 # Check template and info compatability -------------------------------------------------
 
-  cat("\nChecking compatibility between ISRaD template and info file...", file=outfile, append = T)
+  cat("\nChecking compatibility between ISRaD template and info file...", 
+      file=outfile, append = TRUE)
 
-  template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
-  template<-lapply(getSheetNames(template_file), function(s) read.xlsx(template_file , sheet=s))
-  names(template)<-getSheetNames(template_file)
+  template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", 
+                               package = "ISRaD")
+  template <- lapply(getSheetNames(template_file), 
+                     function(s){read.xlsx(template_file , sheet=s)})
+  names(template) <- getSheetNames(template_file)
 
-  template_info_file<-system.file("extdata", "ISRaD_Template_Info.xlsx", package = "ISRaD")
-  template_info<-lapply(getSheetNames(template_info_file), function(s) read.xlsx(template_info_file , sheet=s))
-  names(template_info)<-getSheetNames(template_info_file)
+  template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx", 
+                                  package = "ISRaD")
+  template_info <- lapply(getSheetNames(template_info_file), 
+                          function(s) read.xlsx(template_info_file , sheet=s))
+  names(template_info) <- getSheetNames(template_info_file)
 
   for (t in 1:8){
     tab<-names(template)[t]
@@ -213,10 +241,10 @@ for(d in 1:length(data_files)){
 
     cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
 
-    if(return=="list"){
+    if(return_type=="list"){
   return(ISRaD_database)
     }
-    if(return=="flat"){
+    if(return_type=="flat"){
       return(soilcarbon_database)
     }
 
