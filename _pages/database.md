@@ -18,8 +18,15 @@ htmlwidgets: TRUE
 Visit this google doc to see the status of different datasets. 
 [List](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit?usp=sharing)
 
+## Database download (raw database)
 
-## Database download (raw R Package for advanced users)
+v0.1.0
+Database objects 
+[csv](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_Data/database/ISRaD_flat.csv)
+[excel](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_Data/database/ISRaD_list.xlsx)
+
+
+## Database R Package download (raw R Package for advanced users)
 
 Current R-Package release
 [Entire ISRaD R Package v0.1.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.1.0.zip)
