@@ -6,7 +6,7 @@ header:
   overlay_image: /assets/images/soil.jpg
 htmlwidgets: TRUE
 --- 
-## [Database user manual](/manual)
+## [Database user manual](/user_manual.html)
 
 ## Data Structure
 
