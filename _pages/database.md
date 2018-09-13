@@ -6,6 +6,7 @@ header:
   overlay_image: /assets/images/soil.jpg
 htmlwidgets: TRUE
 --- 
+## [Database user manual](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/pages/manual.html)
 
 ## Data Structure
 
@@ -18,13 +19,7 @@ Visit this google doc to see the status of different datasets.
 [List](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit?usp=sharing)
 
 
-## Information about data currently in database
-
-<figure>
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/data_summary.png">
-</figure>
-
-## Database download 
+## Database download (raw R Package for advanced users)
 
 Current R-Package release
 [Entire ISRaD R Package v0.1.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.1.0.zip)
