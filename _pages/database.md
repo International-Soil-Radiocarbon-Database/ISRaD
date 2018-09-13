@@ -25,6 +25,9 @@ Visit this google doc to see the status of different datasets.
 </figure>
 ## Database download
 
-Current release
-[ISRaD v0.0.01](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.0.1.zip)
+Current R-Package release
+[Entire ISRaD R Package v0.1.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.1.0.zip)
+
+Previous releases
+[ISRaD v0.0.1](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.0.1.zip)
 
