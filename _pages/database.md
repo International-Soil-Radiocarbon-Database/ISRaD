@@ -6,7 +6,7 @@ header:
   overlay_image: /assets/images/soil.jpg
 htmlwidgets: TRUE
 --- 
-## [Database user manual](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/_pages/user_manual.html)
+## [Database user manual](/_pages/user_manual.html)
 
 ## Data Structure
 
