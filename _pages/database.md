@@ -23,7 +23,8 @@ Visit this google doc to see the status of different datasets.
 <figure>
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/pages/assets/images/data_summary.png">
 </figure>
-## Database download
+
+## Database download 
 
 Current R-Package release
 [Entire ISRaD R Package v0.1.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.1.0.zip)
