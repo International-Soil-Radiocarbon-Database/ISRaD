@@ -51,7 +51,7 @@ compile <- function(dataset_directory,
   }
   
   #Set output file
-  outputfile <- ""
+  outfile <- ""
   if(write_report){
     outfile <- file.path(dataset_directory, "database/ISRaD_log.txt")
   }
@@ -129,13 +129,13 @@ compile <- function(dataset_directory,
                     TemplateInInfo = list(unlist(Template_Vocab) %in% 
                                             unlist(Info_Vocab)))
       
-    if(any(unlist(template_info_vocab$InfoInTemplate))){
+    if(!any(unlist(template_info_vocab$InfoInTemplate))){
       cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:", 
           unlist(template_info_vocab$Info_Vocab)[!unlist(template_info_vocab$InfoInTemplate)], 
           file=outfile, append = TRUE)
     }
 
-    if(any(unlist(template_info_vocab$TemplateInInfo))){
+    if(!any(unlist(template_info_vocab$TemplateInInfo))){
       cat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:", 
           unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)], 
           file=outfile, append = TRUE)
@@ -145,12 +145,12 @@ compile <- function(dataset_directory,
     template_info_num <- template_info[[tab]] %>% #pull the sheet in the info
       dplyr::filter(Variable_class == 'numeric')
     
-    if(!(is.numeric(template_info_num$Max) ! is.na(template_info_num$Max) )){
+    if(! is.numeric(type.convert(template_info_num$Max))){
       cat("\n\tWARNING non-numeric values in Max column", 
           file=outfile, append = TRUE)
     }
     
-    if(!(is.numeric(template_info_num$Min) ! is.na(template_info_num$Min) )){
+    if(! is.numeric(type.convert(template_info_num$Min))){
       cat("\n\tWARNING non-numeric values in Min column", 
           file=outfile, append = TRUE)
     }
