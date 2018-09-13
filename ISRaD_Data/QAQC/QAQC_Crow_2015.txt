@@ -4,8 +4,8 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Gentsch_2018.xlsx
-Time: 2018-09-13 14:03:29 
+File: Crow_2015.xlsx
+Time: 2018-09-13 14:03:06 
 
 
 Checking file type...
@@ -15,7 +15,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( flux interstitial )
+	NOTE: empty tabs detected ( flux interstitial incubation )
 
 Checking dataset doi...
 
@@ -88,100 +88,64 @@ Summary statistics...
     contact_email : 1
     contact_orcid_id : 1
     bibliographical_reference : 1
-    metadata_note : 1
- site tab...4 observations
-    entry_name : 4
-    site_name : 4
-    site_lat : 4
-    site_long : 4
-    site_datum : 4
-    site_elevation : 4
- profile tab...24 observations
-    entry_name : 24
-    site_name : 24
-    pro_name : 24
-    pro_lat : 24
-    pro_long : 24
-    pro_treatment : 24
-    pro_soil_series : 24
-    pro_soil_taxon_sys : 24
-    pro_land_cover : 24
-    pro_veg_note : 24
-    pro_thaw_depth : 24
+ site tab...1 observations
+    entry_name : 1
+    site_name : 1
+    site_lat : 1
+    site_long : 1
+    site_datum : 1
+ profile tab...3 observations
+    entry_name : 3
+    site_name : 3
+    pro_name : 3
+    pro_treatment : 3
+    pro_comp : 3
+    pro_soil_taxon : 3
+    pro_soil_series : 3
+    pro_land_cover : 3
+    pro_veg_note : 2
+    pro_parent_material : 3
+    pro_parent_chem : 3
  flux tab...0 observations
- layer tab...120 observations
-    entry_name : 120
-    site_name : 120
-    pro_name : 120
-    lyr_name : 120
-    lyr_obs_date_y : 120
-    lyr_obs_date_m : 120
-    lyr_obs_date_d : 120
-    lyr_non_bulk : 120
-    lyr_top : 120
-    lyr_bot : 120
-    lyr_hzn : 120
-    lyr_note : 120
-    lyr_sand_tot_psa : 98
-    lyr_silt_tot_psa : 98
-    lyr_clay_tot_psa : 98
-    lyr_ph : 119
-    lyr_ph_method : 119
-    lyr_c_org : 120
-    lyr_n_tot : 120
-    lyr_c_to_n : 120
-    lyr_15n : 117
-    lyr_13c : 118
-    lyr_rc_lab : 28
-    lyr_rc_year : 27
-    lyr_14c : 27
-    lyr_fraction_modern : 27
-    lyr_fe_py : 95
-    lyr_al_py : 95
-    lyr_fe_ox : 110
-    lyr_al_ox : 110
-    lyr_fe_dith : 112
-    lyr_al_dith : 112
+ layer tab...3 observations
+    entry_name : 3
+    site_name : 3
+    pro_name : 3
+    lyr_name : 3
+    lyr_obs_date_y : 3
+    lyr_obs_date_m : 3
+    lyr_top : 3
+    lyr_bot : 3
+    lyr_hzn : 3
+    lyr_note : 3
+    lyr_c_tot : 1
+    lyr_n_tot : 1
+    lyr_c_to_n : 1
+    lyr_13c : 1
+    lyr_rc_lab : 1
+    lyr_14c : 1
  interstitial tab...0 observations
- fraction tab...194 observations
-    entry_name : 194
-    site_name : 194
-    pro_name : 194
-    lyr_name : 194
-    frc_name : 194
-    frc_input : 194
-    frc_property : 194
-    frc_scheme : 194
-    frc_scheme_units : 194
-    frc_lower : 194
-    frc_upper : 194
-    frc_agent : 194
-    frc_note : 3
-    frc_c_org : 193
-    frc_n_tot : 193
-    frc_15n : 139
-    frc_13c : 193
-    frc_rc_lab : 36
-    frc_rc_year : 23
-    frc_14c : 39
-    frc_frc_modern : 39
- incubation tab...331 observations
-    entry_name : 331
-    site_name : 331
-    pro_name : 331
-    lyr_name : 331
-    frc_name : 94
-    inc_type : 331
-    inc_duration : 331
-    inc_duration_type : 331
-    inc_temp : 331
-    inc_moisture_type : 331
-    inc_moisture : 331
-    inc_flux : 331
-    inc_flux_units : 331
-    inc_rc_lab : 34
-    inc_rc_year : 34
-    inc_fraction_modern : 34
+ fraction tab...29 observations
+    entry_name : 29
+    site_name : 29
+    pro_name : 29
+    lyr_name : 29
+    frc_name : 29
+    frc_input : 29
+    frc_property : 29
+    frc_scheme : 29
+    frc_scheme_units : 29
+    frc_lower : 29
+    frc_upper : 29
+    frc_agent : 29
+    frc_note : 15
+    frc_mass_perc : 19
+    frc_c_tot : 19
+    frc_n_tot : 19
+    frc_c_to_n : 19
+    frc_13c : 29
+    frc_14c : 29
+ incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
 
