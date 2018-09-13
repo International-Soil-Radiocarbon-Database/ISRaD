@@ -1,0 +1,444 @@
+ISRaD Compilation Log 
+
+ 2018-09-13 14:42:41
+ - - - - - - - - - - - - - - - 
+
+Checking compatibility between ISRaD template and info file...
+ metadata ...
+ site ...
+ profile ...
+ flux ...
+ layer ...
+ interstitial ...
+ fraction ...
+ incubation ...
+Checking controlled vocab between ISRaD template and info file...
+ general info ...
+ metadata ...
+ site ...
+ profile ...
+ flux ...
+ layer ...
+ interstitial ...
+ fraction ...
+Checking template info file controlled vocab syntax and values...
+ general info ...
+ metadata ...
+ site ...
+ profile ...
+ flux ...
+ layer ...
+ interstitial ...
+ fraction ...
+ incubation ...
+
+Compiling data files in ~/github/ISRaD/ISRaD_Data/
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+ 1 checking Atarashi-Andoh_2012.xlsx ...passed
+
+ 2 checking Baisden_2002.xlsx ...passed
+
+ 3 checking Berg_2004.xlsx ...passed
+
+ 4 checking Berhe_2012.xlsx ...passed
+
+ 5 checking Binkley_1999.xlsx ...failed QAQC. Check report in QAQC folder.
+
+ 6 checking Carbone_2008.xlsx ...passed
+
+ 7 checking Carbone_2011.xlsx ...passed
+
+ 8 checking Carbone_2016.xlsx ...passed
+
+ 9 checking Chorover_2004.xlsx ...passed
+
+ 10 checking Crews_1995.xlsx ...passed
+
+ 11 checking Crow_2015.xlsx ...passed
+
+ 12 checking Cusack_2010.xlsx ...passed
+
+ 13 checking Cusack_2012.xlsx ...passed
+
+ 14 checking Cusack_2013.xlsx ...passed
+
+ 15 checking Czimczik_2010.xlsx ...passed
+
+ 16 checking Dejardins_1994.xlsx ...passed
+
+ 17 checking Doetterl_2012.xlsx ...passed
+
+ 18 checking Doetterl_2015.xlsx ...passed
+
+ 19 checking DorrandMunnich_1980_1986.xlsx ...passed
+
+ 20 checking Dutta_2006.xlsx ...passed
+
+ 21 checking Ewing_2006.xlsx ...passed
+
+ 22 checking Fernandez_1993.xlsx ...passed
+
+ 23 checking Fierer_2005.xlsx ...passed
+
+ 24 checking Gaudinski_2001.xlsx ...passed
+
+ 25 checking Gentsch_2018.xlsx ...passed
+
+ 26 checking Harden_2002.xlsx ...passed
+
+ 27 checking Hardie_2009.xlsx ...passed
+
+ 28 checking Hardie_2011.xlsx ...passed
+
+ 29 checking Harrison_1993.xlsx ...passed
+
+ 30 checking Hatton_2012.xlsx ...passed
+
+ 31 checking Hicks-Pries_2012.xlsx ...passed
+
+ 32 checking Hicks-Pries_2013.xlsx ...passed
+
+ 33 checking Hicks-Pries_2015.xlsx ...passed
+
+ 34 checking Hicks-Pries_2017.xlsx ...passed
+
+ 35 checking Hsieh_1996.xlsx ...passed
+
+ 36 checking Karhu_2010.xlsx ...passed
+
+ 37 checking Khomo_2017.xlsx ...passed
+
+ 38 checking Lavoie_2011.xlsx ...passed
+
+ 39 checking Lawrence_2015.xlsx ...passed
+
+ 40 checking Leith_2014.xlsx ...passed
+
+ 41 checking Lemke_2006.xlsx ...passed
+
+ 42 checking Li_2010.xlsx ...passed
+
+ 43 checking Lupascu_2018.xlsx ...passed
+
+ 44 checking Lybrand_2017.xlsx ...passed
+
+ 45 checking Marin-Spiotta_2008.xlsx ...passed
+
+ 46 checking Marin-Spiotta_2011.xlsx ...passed
+
+ 47 checking Meyer_2012.xlsx ...passed
+
+ 48 checking Monreal_1997.xlsx ...passed
+
+ 49 checking Morris_unpub.xlsx ...passed
+
+ 50 checking Mueller_2014.xlsx ...passed
+
+ 51 checking Muhr_2009.xlsx ...passed
+
+ 52 checking Nagy_2017.xlsx ...passed
+
+ 53 checking Nowinski_2009.xlsx ...passed
+
+ 54 checking Nowinski_2010.xlsx ...passed
+
+ 55 checking Posada_2011.xlsx ...passed
+
+ 56 checking Schimel_2011.xlsx ...passed
+
+ 57 checking Schulze_2011.xlsx ...passed
+
+ 58 checking Schuur_2001.xlsx ...passed
+
+ 59 checking Schuur_2006.xlsx ...passed
+
+ 60 checking Shaw_2004.xlsx ...passed
+
+ 61 checking Sierra_2012.xlsx ...passed
+
+ 62 checking Taylor_2015.xlsx ...passed
+
+ 63 checking Trumbore_1996.xlsx ...passed
+
+ 64 checking Vaughn_2014.xlsx ...passed
+
+ 65 checking Waldrop_2012.xlsx ...passed
+
+ 66 checking Wang_2000.xlsx ...passed
+
+ 67 checking Wunderlich_2012.xlsx ...passed
+
+-------------
+
+Summary statistics...
+
+ metadata tab...67 observations
+    entry_name : 67
+    doi : 67
+    compilation_doi : 5
+    curator_name : 67
+    curator_organization : 67
+    curator_email : 67
+    modification_date_y : 67
+    modification_date_m : 67
+    modification_date_d : 67
+    contact_name : 67
+    contact_email : 67
+    contact_orcid_id : 23
+    bibliographical_reference : 67
+    metadata_note : 27
+    associated_datasets : 11
+ site tab...189 observations
+    entry_name : 189
+    site_name : 189
+    site_lat : 189
+    site_long : 189
+    site_datum : 81
+    site_elevation : 157
+    site_note : 99
+ profile tab...834 observations
+    entry_name : 834
+    site_name : 834
+    plot_name : 330
+    pro_name : 834
+    pro_note : 236
+    pro_lat : 119
+    pro_long : 119
+    pro_treatment : 834
+    pro_treatment_note : 209
+    pro_comp : 81
+    pro_reps : 164
+    pro_MAT : 533
+    pro_MAP : 635
+    pro_soil_taxon : 614
+    pro_soil_series : 184
+    pro_soil_taxon_sys : 379
+    pro_soil_age : 37
+    pro_MAST : 131
+    pro_MASWC : 44
+    pro_land_cover : 761
+    pro_veg_note : 586
+    pro_bedrock_depth : 60
+    pro_depth_water : 55
+    pro_thaw_depth : 75
+    pro_parent_material : 454
+    pro_parent_chem : 197
+    pro_parent_material_notes : 424
+    pro_2d_position : 75
+    pro_aspect : 23
+    pro_aspect_deg : 16
+    pro_slope : 172
+    pro_slope_shape : 76
+    pro_drainage_class : 128
+    pro_soc : 74
+    pro_soc_sigma : 32
+    pro_soc_depth : 76
+ flux tab...1824 observations
+    entry_name : 1824
+    site_name : 1824
+    plot_name : 1526
+    pro_name : 1824
+    flx_obs_date_y : 1824
+    flx_obs_date_m : 1817
+    flx_obs_date_d : 1805
+    flx_pathway : 1534
+    flx_pathway_note : 190
+    flx_analyte : 1583
+    flx_ecosystem_component : 1581
+    flx_method : 1790
+    flx_method_note : 1252
+    flx_storage_method : 227
+    flx_duration : 165
+    flx_duration_units : 165
+    flx_keeling_plot : 5
+    flx_atm_correction : 37
+    flx_source_temp : 841
+    flx_source_H2O : 307
+    flx_rate : 190
+    flx_rate_sd : 983
+    flx_rate_units : 1090
+    flx_13c : 387
+    flx_13c_sd : 25
+    flx_rc_lab : 420
+    flx_rc_lab_number : 147
+    flx_rc_year : 232
+    flx_14c : 816
+    flx_14c_sigma : 110
+    flx_14c_sd : 17
+    flx_fraction_modern : 20
+ layer tab...2300 observations
+    entry_name : 2300
+    site_name : 2300
+    pro_name : 2300
+    lyr_name : 2300
+    lyr_obs_date_y : 2300
+    lyr_obs_date_m : 1494
+    lyr_obs_date_d : 1342
+    lyr_non_bulk : 719
+    lyr_all_org_neg : 185
+    lyr_top : 2300
+    lyr_bot : 2300
+    lyr_hzn : 1036
+    lyr_comp : 141
+    lyr_note : 653
+    lyr_color : 118
+    lyr_burn_ev : 5
+    lyr_bd_samp : 370
+    lyr_bd_tot : 629
+    lyr_bd_notes : 337
+    lyr_sand_tot_psa : 462
+    lyr_silt_tot_psa : 474
+    lyr_clay_tot_psa : 588
+    lyr_coarse_tot : 351
+    lyr_coarse_size_thresh : 328
+    lyr_texture_class : 79
+    lyr_bet_surface_area : 92
+    lyr_ph_cacl : 105
+    lyr_ph_h2o : 190
+    lyr_ph : 361
+    lyr_ph_method : 239
+    lyr_cat_exch : 12
+    lyr_base_sum : 24
+    lyr_cec_sum : 239
+    lyr_ca_exch : 121
+    lyr_na_exch : 51
+    lyr_mg_exch : 105
+    lyr_k_exch : 111
+    lyr_ecec : 48
+    lyr_bs : 115
+    lyr_c_inorg : 155
+    lyr_c_org : 561
+    lyr_c_tot : 1032
+    lyr_soc : 726
+    lyr_soc_sigma : 120
+    lyr_n_tot : 802
+    lyr_c_to_n : 579
+    lyr_loi : 16
+    lyr_15n : 485
+    lyr_13c : 1009
+    lyr_rc_lab : 333
+    lyr_rc_lab_number : 184
+    lyr_rc_year : 303
+    lyr_14c : 615
+    lyr_14c_sigma : 358
+    lyr_14c_sd : 16
+    lyr_fraction_modern : 288
+    lyr_fraction_modern_sigma : 235
+    lyr_fraction_modern_sd : 7
+    lyr_mbc_method : 1
+    lyr_reported_mbc : 1
+    lyr_p_method : 6
+    lyr_fe_py : 263
+    lyr_al_py : 263
+    lyr_c_py : 62
+    lyr_py_notes : 10
+    lyr_fe_ox : 379
+    lyr_al_ox : 379
+    lyr_si_ox : 82
+    lyr_ox_notes : 10
+    lyr_fe_dith : 362
+    lyr_al_dith : 278
+    lyr_dith_notes : 10
+    lyr_quartz : 89
+    lyr_alkali_feldspar : 53
+    lyr_plag_feldspar : 53
+    lyr_mica_chlorite : 89
+    lyr_pyroxine : 53
+    lyr_kaol_halloy : 89
+    lyr_smect_vermic : 89
+    lyr_fe_oxides : 89
+    lyr_calcite_dolomite : 36
+ interstitial tab...182 observations
+    entry_name : 182
+    site_name : 182
+    pro_name : 182
+    ist_obs_date_y : 182
+    ist_obs_date_m : 147
+    ist_obs_date_d : 147
+    ist_depth : 182
+    ist_phase : 182
+    ist_analyte : 182
+    ist_method : 93
+    ist_storage_method : 147
+    ist_time_dur : 58
+    ist_concentration : 42
+    ist_concentration_units : 42
+    ist_13c : 124
+    ist_13c_sd : 67
+    ist_rc_lab : 154
+    ist_rc_lab_number : 99
+    ist_rc_year : 62
+    ist_14c : 143
+    ist_14c_sigma : 98
+    ist_fraction_modern : 25
+ fraction tab...1693 observations
+    entry_name : 1693
+    site_name : 1693
+    pro_name : 1693
+    lyr_name : 1693
+    frc_name : 1693
+    frc_input : 1693
+    frc_property : 1477
+    frc_scheme : 1693
+    frc_scheme_units : 1693
+    frc_lower : 1693
+    frc_upper : 1693
+    frc_agent : 1693
+    frc_scheme_conc : 36
+    frc_comp : 117
+    frc_note : 422
+    frc_mass_perc : 528
+    frc_obs_date_y : 141
+    frc_obs_date_m : 141
+    frc_obs_date_d : 141
+    frc_c_perc : 409
+    frc_c_tot : 540
+    frc_c_org : 616
+    frc_n_tot : 716
+    frc_c_to_n : 449
+    frc_15n : 450
+    frc_13c : 991
+    frc_rc_lab : 388
+    frc_rc_lab_number : 45
+    frc_rc_year : 634
+    frc_14c : 778
+    frc_14c_sigma : 224
+    frc_14c_sd : 39
+    frc_frc_modern : 136
+    frc_frc_modern_sigma : 46
+    frc_frc_modern_sd : 3
+    frc_mbc_method : 3
+    frc_reported_mbc : 3
+ incubation tab...1561 observations
+    entry_name : 1561
+    site_name : 1561
+    pro_name : 1561
+    lyr_name : 1561
+    frc_name : 151
+    inc_type : 1561
+    inc_note : 624
+    inc_obs_date_y : 550
+    inc_obs_date_m : 485
+    inc_obs_date_d : 413
+    inc_duration : 906
+    inc_duration_type : 959
+    inc_temp : 1031
+    inc_moisture_type : 953
+    inc_moisture : 624
+    inc_moisture_units : 222
+    inc_C_respired : 98
+    inc_flux : 699
+    inc_flux_units : 547
+    inc_13c : 756
+    inc_13c_sd : 75
+    inc_rc_lab : 706
+    inc_rc_lab_number : 317
+    inc_rc_year : 594
+    inc_14c : 904
+    inc_14c_sigma : 486
+    inc_14c_sd : 27
+    inc_fraction_modern : 419
+    inc_fraction_modern_sigma : 344
+ - - - - - - - - - - - - - - - - - - - -

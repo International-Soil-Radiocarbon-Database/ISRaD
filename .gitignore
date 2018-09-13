@@ -2,7 +2,6 @@
 .DS_Store
 
 ##ignore R files
-*.Rproj
 .Rproj.user
 .Rhistory
 .RData
