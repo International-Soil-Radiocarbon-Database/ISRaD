@@ -1,5 +1,3 @@
-
-
 ---
 title: "ISRaD user manual"
 author: "Grey Monroe"
