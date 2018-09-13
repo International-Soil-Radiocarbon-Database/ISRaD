@@ -1,137 +1,173 @@
-#' compile
+#' Compile ISRaD data product
 #'
-#' adds dataset to soilcarbon database
+#' Construct data products to the International Soil Radiocarbon Database.
 #'
-#' @param dataset_directory directory where compeleted and QC passed soilcarbon datasets are stored
-#' @param write_report T or F whether or not to write a log file of the compilation
-#' @param write_out T or F whether or not to write the compiled database file as csv in dataset_directory
-#' @param return parameter for whether compile function should return object to R environment. Default is NULL. Acceptable values are "flat" or "list" depending on the format you want to have the database returned in.
+#' @param dataset_directory string defining directory where compeleted and 
+#' QC passed soilcarbon datasets are stored
+#' @param write_report boolean flag to write a log file of the 
+#' compilation (FALSE will dump output to console). File will be in the specified
+#' in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
+#' there of this name it will be overwritten.
+#' @param write_out boolean flag to write the compiled database file as csv 
+#' in dataset_directory (FALSE will not generate ouput file but will return)
+#' @param return_type a string that defines return object. 
+#' Default is "none". 
+#' Acceptable values are "flat" or "list" depending on the format you want to 
+#' have the database returned in.
+#' 
 #' @export
+#' 
 #' @import devtools
+#' @import dplyr
 #' @import stringi
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr
+#' @import assertthat
 #'
 
-compile <- function(dataset_directory, write_report=F, write_out=F, return=NULL){
-
-
-# setup -------------------------------------------------------------------
-
-
+compile <- function(dataset_directory, 
+                    write_report=FALSE, write_out=FALSE, 
+                    return_type=c('none', 'list', 'flat')[1]){
+  #Libraries used
   requireNamespace("stringi")
+  requireNamespace("assertthat")
   requireNamespace("openxlsx")
   requireNamespace("dplyr")
   requireNamespace("tidyr")
+  
+  # Check inputs
+  assertthat::assert_that(dir.exists(dataset_directory))
+  assertthat::assert_that(is.logical(write_report))
+  assertthat::assert_that(is.logical(write_out))
+  assertthat::assert_that(is.character(return_type))
+ 
+  #Create directories
+  if(! dir.exists(file.path(dataset_directory, "QAQC"))){
+    dir.create(file.path(dataset_directory, "QAQC")) #Creates folder for QAQC reports
+  }
+  if(! dir.exists(file.path(dataset_directory, "database"))){
+    dir.create(file.path(dataset_directory, "database")) #creates folder for final output dump
+  }
+  
+  #Set output file
+  outputfile <- ""
+  if(write_report){
+    outfile <- file.path(dataset_directory, "database/ISRaD_log.txt")
+  }
 
-  dir.create(file.path(dataset_directory, "QAQC"), showWarnings = FALSE)
-  dir.create(file.path(dataset_directory, "database"), showWarnings = FALSE)
-
-
-  if (write_report==T){
-  outfile<-paste0(dataset_directory, "database/ISRaD_log.txt")
-  } else outfile==""
-
-  cat("ISRaD Compilation Log \n", file=outfile)
-  cat("\n", as.character(Sys.time()), file=outfile, append = T)
-  cat("\n",rep("-", 15),"\n", file=outfile, append = T)
+  #Start writing in the output file
+  cat("ISRaD Compilation Log \n",
+      "\n", as.character(Sys.time()),
+      "\n",rep("-", 15),"\n", file=outfile)
 
 
 # Check template and info compatability -------------------------------------------------
 
-  cat("\nChecking compatibility between ISRaD template and info file...", file=outfile, append = T)
+  cat("\nChecking compatibility between ISRaD template and info file...", 
+      file=outfile, append = TRUE)
 
-  template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
-  template<-lapply(getSheetNames(template_file), function(s) read.xlsx(template_file , sheet=s))
-  names(template)<-getSheetNames(template_file)
+  # Get the tables stored in the templet sheets
+  template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", 
+                               package = "ISRaD")
+  template <- lapply(setNames(nm=openxlsx::getSheetNames(template_file)), 
+                     function(s){openxlsx::read.xlsx(template_file, 
+                                                     sheet=s)})
 
-  template_info_file<-system.file("extdata", "ISRaD_Template_Info.xlsx", package = "ISRaD")
-  template_info<-lapply(getSheetNames(template_info_file), function(s) read.xlsx(template_info_file , sheet=s))
-  names(template_info)<-getSheetNames(template_info_file)
+  template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx", 
+                                  package = "ISRaD")
+  template_info <- lapply(setNames(nm=openxlsx::getSheetNames(template_info_file)), 
+                          function(s){
+                            openxlsx::read.xlsx(template_info_file , sheet=s)
+                            })
 
-  for (t in 1:8){
-    tab<-names(template)[t]
-    cat("\n",tab,"...", file=outfile, append = T)
-    if(F %in% c(template_info[[tab]]$Column_Name %in% colnames(template[[tab]]))) {
-      cat("\n\tWARNING column names unique to template:",   setdiff(template_info[[tab]]$Column_Name, colnames(template[[tab]])), file=outfile, append = T)
+  # check that column names in the info and template files match
+  for (tab in names(template)[1:8]){
+    cat("\n",tab,"...", file=outfile, append = TRUE)
+    if(any(! (template_info[[tab]]$Column_Name %in% colnames(template[[tab]])))) {
+      cat("\n\tWARNING column names unique to template:",   
+          setdiff(template_info[[tab]]$Column_Name, colnames(template[[tab]])),
+          file=outfile, append = TRUE)
     }
-    if(F %in% c(colnames(template[[tab]]) %in% template_info[[tab]]$Column_Name)) {
-      cat("\n\tWARNING column names unique to info file:",   setdiff(colnames(template[[tab]]),template_info[[tab]]$Column_Name), file=outfile, append = T)
-    }
-  }
-
-  cat("\nChecking controlled vocab between ISRaD template and info file...", file=outfile, append = T)
-
-
-  for (t in 1:8){
-    tab<-names(template_info)[t]
-    cat("\n",tab,"...", file=outfile, append = T)
-
-    template_info_tab<-template_info[[tab]]
-    template_vocab<-template$`controlled vocabulary`
-    colnames(template_vocab)<-template_vocab[1,]
-    template_vocab<-template_vocab[c(-1,-2),]
-    vocab_columns<-template_info_tab$Column_Name[template_info_tab$Variable_class=="character" & !is.na(template_info_tab$Vocab)]
-    vocab_columns<-vocab_columns[-grep("name", vocab_columns)]
-    vocab_columns_in_template_cv<-sapply(vocab_columns, function(x) x %in% colnames(template_vocab))
-    if(F %in% vocab_columns_in_template_cv) {
-      cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:", vocab_columns[!vocab_columns_in_template_cv], file=outfile, append = T)
-    }
-
-    if(length(vocab_columns)>0) {
-      vocab_columns<-vocab_columns[vocab_columns_in_template_cv]
-      if(length(vocab_columns)>0) {
-      for (v in 1:length(vocab_columns)){
-        column<-vocab_columns[v]
-        vocab_info<-template_info_tab$Vocab[template_info_tab$Column_Name==column]
-        vocab_info<-strsplit(vocab_info, ",")
-        vocab_info<-sapply(vocab_info, trimws)
-        if(!all(vocab_info %in% template_vocab[,column])){
-        cat("\n\tWARNING controlled vocab column from template info do not match controlled vocab tab of template for:", column, file=outfile, append = T)
-        }
-           }
-      }
+    if(any(! (colnames(template[[tab]]) %in% template_info[[tab]]$Column_Name))) {
+      cat("\n\tWARNING column names unique to info file:",   
+          setdiff(colnames(template[[tab]]),template_info[[tab]]$Column_Name), 
+          file=outfile, append = TRUE)
     }
   }
 
-# Check template_info vocab syntax ----------------------------------------
-  cat("\nChecking template info file controlled vocab syntax and values...", file=outfile, append = T)
+  cat("\nChecking controlled vocab between ISRaD template and info file...", 
+      file=outfile, append = T)
 
-  for (t in 1:length(template_info)){
+  ##Strip out the extra header
+  template_vocab <- template$`controlled vocabulary`#pull the control vocab in template
+  colnames(template_vocab)<-template_vocab[1,] #rename the columns
+  template_vocab<-template_vocab[c(-1,-2),] 
+  
+  ##Crunch the vocabe in the template
+  template_vocab <- template_vocab %>%
+    tidyr::gather(key='Column_Name', value='Template_Vocab', na.rm=TRUE) %>%
+    dplyr::filter(Template_Vocab != '<NA>') %>%
+    dplyr::group_by(Column_Name) %>%
+    dplyr::summarize(Template_Vocab = list(Template_Vocab))
+  
+  sheetNames <- lapply(template_info, names)
+  #for each sheet that has a Variable_class defined
+  for (tab in names(sheetNames)[unlist(lapply(sheetNames, 
+                                function(x){ any('Variable_class' %in% x)}))]){
+    cat("\n",tab,"...", file=outfile, append = TRUE)
 
-    tab<-names(template_info)[t]
-    cat("\n",tab,"...", file=outfile, append = T)
-
-    tab_info<-template_info[[tab]]
-    vocab<-tab_info[!is.na(tab_info$Vocab),]
-
-    which.nonnum <- function(x) {
-      badNum <- is.na(suppressWarnings(as.numeric(as.character(x))))
-      which(badNum & !is.na(x))
+    template_info_vocab <- template_info[[tab]] %>% #pull the sheet in the info
+      dplyr::filter(Variable_class == 'character', #filter the variable class
+                    !is.na(Vocab), #ignore ones with non-sepcific vocabs
+                    ! grepl("name", Column_Name)) %>% #also ignore name columns
+      group_by(Column_Name) %>%
+      mutate(Info_Vocab=(strsplit(Vocab, split=', '))) %>%
+      dplyr::left_join(template_vocab, by="Column_Name") %>%
+      dplyr::mutate(InfoInTemplate = list(unlist(Info_Vocab) %in% 
+                                            unlist(Template_Vocab)),
+                    TemplateInInfo = list(unlist(Template_Vocab) %in% 
+                                            unlist(Info_Vocab)))
+      
+    if(any(unlist(template_info_vocab$InfoInTemplate))){
+      cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:", 
+          unlist(template_info_vocab$Info_Vocab)[!unlist(template_info_vocab$InfoInTemplate)], 
+          file=outfile, append = TRUE)
     }
 
-    if(length(which.nonnum(tab_info$Min))>0) {
-      cat("\n\tWARNING non-numeric values in Min column", file=outfile, append = T)
+    if(any(unlist(template_info_vocab$TemplateInInfo))){
+      cat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:", 
+          unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)], 
+          file=outfile, append = TRUE)
     }
-    if(length(which.nonnum(tab_info$Max))>0) {
-      cat("\n\tWARNING non-numeric values in Max column", file=outfile, append = T)
+    
+    ##Check that the min/max are strictly numeric or NA-------------------
+    template_info_num <- template_info[[tab]] %>% #pull the sheet in the info
+      dplyr::filter(Variable_class == 'numeric')
+    
+    if(!(is.numeric(template_info_num$Max) ! is.na(template_info_num$Max) )){
+      cat("\n\tWARNING non-numeric values in Max column", 
+          file=outfile, append = TRUE)
     }
-
+    
+    if(!(is.numeric(template_info_num$Min) ! is.na(template_info_num$Min) )){
+      cat("\n\tWARNING non-numeric values in Min column", 
+          file=outfile, append = TRUE)
+    }
   }
 
 # QAQC and compile data files -------------------------------------------------------
 
-template_nohead<-lapply(template, function(x) x[-c(1,2),])
-template_flat<-Reduce(function(...) merge(..., all=T), template_nohead)
-flat_template_columns<-colnames(template_flat)
+template_nohead <- lapply(template, function(x) x[-c(1,2),])
+template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
+flat_template_columns <- colnames(template_flat)
 
-working_database<-template_flat %>% mutate_all(as.character)
-ISRaD_database<-lapply(template[1:8], function(x) x[-c(1,2),])
+working_database <- template_flat %>% mutate_all(as.character)
+ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
 ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
-cat("\n\nCompiling data files in", dataset_directory, file=outfile, append = T)
-cat("\n", rep("-", 30),"\n", file=outfile, append = T)
+cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
+    file=outfile, append = T)
 
 data_files<-list.files(dataset_directory, full.names = T)
 data_files<-data_files[grep("xlsx", data_files)]
@@ -213,10 +249,10 @@ for(d in 1:length(data_files)){
 
     cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
 
-    if(return=="list"){
+    if(return_type=="list"){
   return(ISRaD_database)
     }
-    if(return=="flat"){
+    if(return_type=="flat"){
       return(soilcarbon_database)
     }
 
