@@ -10,7 +10,7 @@ htmlwidgets: TRUE
 ## Data Structure
 
 <figure>
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/structure_new.png">
+	<img src="/assets/images/structure_new.png">
 </figure>
 
 ## In progress
