@@ -2,20 +2,28 @@
 % Please edit documentation in R/compile.R
 \name{compile}
 \alias{compile}
-\title{compile}
+\title{Compile ISRaD data product}
 \usage{
-compile(dataset_directory, write_report = F, write_out = F,
-  return = NULL)
+compile(dataset_directory, write_report = FALSE, write_out = FALSE,
+  return_type = c("none", "list", "flat")[1])
 }
 \arguments{
-\item{dataset_directory}{directory where compeleted and QC passed soilcarbon datasets are stored}
+\item{dataset_directory}{string defining directory where compeleted and 
+QC passed soilcarbon datasets are stored}
 
-\item{write_report}{T or F whether or not to write a log file of the compilation}
+\item{write_report}{boolean flag to write a log file of the 
+compilation (FALSE will dump output to console). File will be in the specified
+in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
+there of this name it will be overwritten.}
 
-\item{write_out}{T or F whether or not to write the compiled database file as csv in dataset_directory}
+\item{write_out}{boolean flag to write the compiled database file as csv 
+in dataset_directory (FALSE will not generate ouput file but will return)}
 
-\item{return}{parameter for whether compile function should return object to R environment. Default is NULL. Acceptable values are "flat" or "list" depending on the format you want to have the database returned in.}
+\item{return_type}{a string that defines return object. 
+Default is "none". 
+Acceptable values are "flat" or "list" depending on the format you want to 
+have the database returned in.}
 }
 \description{
-adds dataset to soilcarbon database
+Construct data products to the International Soil Radiocarbon Database.
 }

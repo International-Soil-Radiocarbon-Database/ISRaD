@@ -44,7 +44,12 @@ shinyServer(function(input, output, session) {
     #                 col_facet_var="p_MAP",
     #                 row_facet_var="p_MAT")
     #unlist(variables) %in% colnames(soilcarbon_database)
-    soilcarbon_database<-read.csv("~/Dropbox/USGS/ISRaD_data/Compile_Wed/database/ISRaD_flat.csv")
+    soilcarbon_database<-ISRaD_data
+    soilcarbon_database <- lapply(soilcarbon_database, function(x) x %>% mutate_all(as.character))
+    soilcarbon_database<-soilcarbon_database %>%
+      Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
+    soilcarbon_database[]<-lapply(soilcarbon_database, type.convert)
+
     plot_data<-na.omit(soilcarbon_database[,unlist(variables)])
     plot_data$facet_cut<-""
     plot_data$facet_cut2<-""
