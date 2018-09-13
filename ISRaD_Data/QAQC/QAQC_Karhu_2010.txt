@@ -5,7 +5,7 @@
 
 
 File: Karhu_2010.xlsx
-Time: 2018-09-13 14:04:01 
+Time: 2018-09-13 14:46:04 
 
 
 Checking file type...

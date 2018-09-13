@@ -5,7 +5,7 @@
 
 
 File: Khomo_2017.xlsx
-Time: 2018-09-13 14:04:04 
+Time: 2018-09-13 14:46:08 
 
 
 Checking file type...
@@ -78,6 +78,7 @@ Summary statistics...
  metadata tab...1 observations
     entry_name : 1
     doi : 1
+    compilation_doi : 1
     curator_name : 1
     curator_organization : 1
     curator_email : 1

@@ -149,9 +149,9 @@ for(d in 1:length(data_files)){
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
 
-   data_stats<-bind_cols(data.frame(entry_name=char_data$metadata$entry_name, doi=char_data$metadata$doi), as.data.frame(lapply(char_data, nrow)))
-   data_stats<- data_stats %>% mutate_all(as.character)
-   entry_stats<-bind_rows(entry_stats, data_stats)
+   #data_stats<-bind_cols(data.frame(entry_name=char_data$metadata$entry_name, doi=char_data$metadata$doi), as.data.frame(lapply(char_data, nrow)))
+   #data_stats<- data_stats %>% mutate_all(as.character)
+   #entry_stats<-bind_rows(entry_stats, data_stats)
 
     flat_data<-char_data %>%
     Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
@@ -203,7 +203,7 @@ for(d in 1:length(data_files)){
   write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD_list.xlsx"))
   QAQC(paste0(dataset_directory, "database/ISRaD_list.xlsx"), writeQCreport = T, outfile = paste0(dataset_directory, "database/QAQC_ISRaD_list.txt"))
 
-  write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
+  #write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
 
   cat("\n", rep("-", 20), file=outfile, append = T)
 
