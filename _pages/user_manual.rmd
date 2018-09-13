@@ -3,6 +3,7 @@ title: "ISRaD user manual"
 author: "Grey Monroe"
 date: "9/11/2018"
 output: html_document
+permalink: /manual/
 ---
 
 ## How to install the database
