@@ -158,16 +158,16 @@ compile <- function(dataset_directory,
 
 # QAQC and compile data files -------------------------------------------------------
 
-template_nohead<-lapply(template, function(x) x[-c(1,2),])
-template_flat<-Reduce(function(...) merge(..., all=T), template_nohead)
-flat_template_columns<-colnames(template_flat)
+template_nohead <- lapply(template, function(x) x[-c(1,2),])
+template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
+flat_template_columns <- colnames(template_flat)
 
-working_database<-template_flat %>% mutate_all(as.character)
-ISRaD_database<-lapply(template[1:8], function(x) x[-c(1,2),])
+working_database <- template_flat %>% mutate_all(as.character)
+ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
 ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
-cat("\n\nCompiling data files in", dataset_directory, file=outfile, append = T)
-cat("\n", rep("-", 30),"\n", file=outfile, append = T)
+cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
+    file=outfile, append = T)
 
 data_files<-list.files(dataset_directory, full.names = T)
 data_files<-data_files[grep("xlsx", data_files)]
