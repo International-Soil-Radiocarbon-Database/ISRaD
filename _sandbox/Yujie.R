@@ -53,8 +53,8 @@ Yujie_dataset_clean$Layer_top_norm<-Yujie_dataset_clean$Layer_top_norm
 
 Yujie_soilcarbon<-list(metadata=data.frame(entry_name=Yujie_dataset_sources$pc_dataset_name,
                                            doi=Yujie_dataset_sources$doi,
-                                           curator_name=rep("Yujie He", nrow(Yujie_dataset_sources)),
-                                           bibliographical_reference=refs(Yujie_dataset_sources$doi, style="apa", out="citation")),
+                                           curator_name=rep("Yujie He", nrow(Yujie_dataset_sources))),
+                                           #bibliographical_reference=refs(Yujie_dataset_sources$doi, style="apa", out="citation")),
                        site=data.frame(entry_name=Yujie_dataset_sites$pc_dataset_name,
                                        site_name=Yujie_dataset_sites$Site,
                                        site_lat=Yujie_dataset_sites$Lat,
@@ -141,14 +141,14 @@ Yujie_data_nofraction<-Yujie_soilcarbon[-5]
       if(x=="modern") {return(F)
     } else {
       x<-as.numeric(x)
-      if (x < 5) { return(F)
+      if (x <5) { return(F)
       } else {return(T)}
     }
   }
     }))
-
-  flat_data$lyr_fraction_modern[lyr_fraction_modern_percent]<-as.numeric(flat_data$lyr_fraction_modern[lyr_fraction_modern_percent])/100
-  flat_data$lyr_fraction_modern_sigma[lyr_fraction_modern_percent]<-as.numeric(flat_data$lyr_fraction_modern_sigma[lyr_fraction_modern_percent])/100
+  
+  flat_data$lyr_fraction_modern[which(lyr_fraction_modern_percent)]<-as.numeric(flat_data$lyr_fraction_modern[lyr_fraction_modern_percent])/100
+  flat_data$lyr_fraction_modern_sigma[which(lyr_fraction_modern_percent)]<-as.numeric(flat_data$lyr_fraction_modern_sigma[lyr_fraction_modern_percent])/100
 
 
   land_cover<-read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/vegetation_class_code.xlsx")

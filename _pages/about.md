@@ -11,11 +11,11 @@ header:
 ISRaD has been developed in collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry.
 
 <figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/PowellCenter.jpg">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg">
 </figure>
 
 <figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/MPI-BGC_logo_EN.png">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png">
 </figure>
 
 
@@ -24,7 +24,7 @@ ISRaD has been developed in collaboration between the U.S. Geological Survey Pow
 Collaborations with other databases
 
 <figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/assets/images/iscn_logo.jpeg">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/iscn_logo.jpeg">
 </figure>
 
 
