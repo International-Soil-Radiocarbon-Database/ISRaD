@@ -1,7 +1,7 @@
 ---
 title: "ISRaD user manual"
-author: "Grey Monroe"
-date: "9/11/2018"
+author: "Corey Lawrence and Grey Monroe"
+date: "9/14/2018"
 output: html_document
 permalink: /manual/
 ---
