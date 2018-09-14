@@ -203,7 +203,7 @@ for (d in 1:length(dataset_names)){
 
   directory="~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/converted/"
 
-  write.xlsx(dataset_object, file = paste0(directory, dataset_names[d], ".xlsx"))
+  write.xlsx(dataset_object, file = gsub(" ", "", paste0(directory, dataset_names[d], ".xlsx")))
 
 }
 
