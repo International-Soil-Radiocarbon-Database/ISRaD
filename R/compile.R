@@ -175,8 +175,8 @@ data_files<-data_files[grep("xlsx", data_files)]
 entry_stats<-data.frame()
 
 for(d in 1:length(data_files)){
-  cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = T)
-  soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = T)
+  cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
+  soilcarbon_data<- ISRaD::QAQC(file = data_files[d], writeQCreport = TRUE)
   if (attributes(soilcarbon_data)$error>0) {
     cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = T)
     next
@@ -201,7 +201,8 @@ for(d in 1:length(data_files)){
 
 }
 
-  working_database[]<-lapply(working_database, function(x) stri_trans_general(x, "latin-ascii"))
+  working_database[]<-lapply(working_database, function(x) 
+    stringi::stri_trans_general(x, "latin-ascii"))
   working_database[]<-lapply(working_database, type.convert)
   soilcarbon_database<-working_database
 
@@ -236,7 +237,7 @@ for(d in 1:length(data_files)){
 
 
 
-  write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD_list.xlsx"))
+  openxlsx::write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD_list.xlsx"))
   QAQC(paste0(dataset_directory, "database/ISRaD_list.xlsx"), writeQCreport = T, outfile = paste0(dataset_directory, "database/QAQC_ISRaD_list.txt"))
 
   #write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
