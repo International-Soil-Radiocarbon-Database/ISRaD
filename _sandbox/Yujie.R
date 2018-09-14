@@ -153,7 +153,6 @@ Yujie_data_nofraction<-Yujie_soilcarbon[-5]
 
   land_cover<-read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Yujie/vegetation_class_code.xlsx")
   flat_data$pro_land_cover<-land_cover$Controlled[match(flat_data$pro_land_cover, land_cover$VegTypeCodeStr_Local)]
-summary(flat_data$pro_land_cover)
 
 
  #bibs<-refs(unique(flat_data$doi), style="apa", out="citation")
