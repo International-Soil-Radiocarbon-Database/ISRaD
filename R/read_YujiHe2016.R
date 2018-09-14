@@ -119,7 +119,16 @@ read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yuji
                     function(x){openxlsx::read.xlsx(
                       "~/Dropbox/ISRaD_data/Compilations/Yujie/ISRaD_Master_Template.xlsx",
                       sheet=x) %>% mutate_all(as.character)}) 
-               
+           
+  #Deal with templet versions nicely
+  template_version <- 0
+  if('template_version' %in% names(templet$metadata)){
+    templet_version <- templet$metadata$template_version[3]
+    templet$metadata <- templet$metadata[1:2,]
+  }
+  ans$metadata$templet_version <- templet_version
+  
+  ##pull the studies appart for curation
   #currentEntry <- ans$metadata$entry_name[1]
   for(currentEntry in as.character(ans$metadata$entry_name)){
     sliceEntry <- templet
