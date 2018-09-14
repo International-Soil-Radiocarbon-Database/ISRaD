@@ -158,12 +158,19 @@ compile <- function(dataset_directory,
 
 # QAQC and compile data files -------------------------------------------------------
 
+
 template_nohead <- lapply(template, function(x) x[-c(1,2),])
+template_nohead$metadata<-template_nohead$metadata[-1,]
+
+### FLAT ISSUE
+# remove 
 template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
 flat_template_columns <- colnames(template_flat)
+###
 
 working_database <- template_flat %>% mutate_all(as.character)
 ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
+ISRaD_database$metadata<-ISRaD_database$metadata[-1,]
 ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
 cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
@@ -172,7 +179,7 @@ cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
 data_files<-list.files(dataset_directory, full.names = T)
 data_files<-data_files[grep("xlsx", data_files)]
 
-entry_stats<-data.frame()
+ # remove entry_stats<-data.frame()
 
 for(d in 1:length(data_files)){
   cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = T)
