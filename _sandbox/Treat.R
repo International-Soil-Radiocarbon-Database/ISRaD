@@ -15,6 +15,7 @@ treatS2<-read.xlsx(fileS2,startRow = 629, colNames = T, check.names = T)
 colnames(treatS1)[26]<-"ID"
 treatS3<-read.xlsx(fileS3,startRow = 221, colNames = T, check.names = T)
 
+#### may be not needed
 # merge treat files
 treat<- full_join(treatS1, treatS2)
 treat<- full_join(treat, treatS3)
@@ -22,9 +23,9 @@ treat<- full_join(treat, treatS3)
 
 # extract individual references
 # save as
+####
 
-
-
+# read in template file from ISRaD Package
 template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
 template<-lapply(getSheetNames(template_file), function(s) read.xlsx(template_file , sheet=s))
 names(template)<-getSheetNames(template_file)
@@ -44,7 +45,8 @@ for (r in 1:length(treatS1$Reference)){
   data_template$metadata$curator_organization<-"USGS"
   data_template$metadata$metadata_note<-"Treat et al 2016 compliation"
   data_template$metadata$bibliographical_reference<-paste(unlist(unique(treat1_ref$X30)), collapse = ";")
-  data_template$metadata<-bind_rows(template$metadata, data_template$metadata)
+  data_template$metadata$template_version<-template$metadata$template_version[3]
+  data_template$metadata<-bind_rows(template$metadata[c(1,2),], data_template$metadata)
 
   #site
   data_template$site$entry_name<-treat2_ref$Reference
@@ -116,9 +118,10 @@ for (r in 1:length(treatS1$Reference)){
   #`controlled vocabulary`
   data_template$`controlled vocabulary`<-template$`controlled vocabulary`
 
-  write.xlsx(data_template, paste0("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", gsub(" ", "",gsub(",","_", gsub("\\.","", ref))), ".xlsx"))
+  write.xlsx(data_template, paste0("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", gsub("etal","",gsub(" ", "",gsub(",","_", gsub("\\.","", ref)))), ".xlsx"))
 }
 
+# probably unnecessary
 # save doi_numbers
 data_files<-list.files("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", full.names = F)
 data_files<-data_files[grep("xlsx", data_files)]
