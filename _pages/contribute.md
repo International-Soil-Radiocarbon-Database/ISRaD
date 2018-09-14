@@ -17,8 +17,8 @@ By contributing to ISRaD you are joining an international community of researche
 
 ## Using ISRaD template
 
-1. [Download ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) 
-1. [Download ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx)
+1. [Download ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/inst/extdata/ISRaD_Master_Template.xlsx) 
+1. [Download ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/inst/extdata/ISRaD_Template_Info.xlsx)
 1. Fill out ISRaD Template File with your data. 
 * Do not delete the top two description rows. 
 * Be sure to follow requirements and controlled values/vocab found in the ISRaD Template Information File. 
