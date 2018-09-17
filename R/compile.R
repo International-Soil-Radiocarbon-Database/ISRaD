@@ -63,101 +63,16 @@ compile <- function(dataset_directory,
 
 
 # Check template and info compatability -------------------------------------------------
-
-  cat("\nChecking compatibility between ISRaD template and info file...", 
-      file=outfile, append = TRUE)
-
+  checkTempletFiles(outfile)
+  
+# QAQC and compile data files -------------------------------------------------------
   # Get the tables stored in the templet sheets
   template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", 
                                package = "ISRaD")
   template <- lapply(setNames(nm=openxlsx::getSheetNames(template_file)), 
                      function(s){openxlsx::read.xlsx(template_file, 
                                                      sheet=s)})
-
-  template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx", 
-                                  package = "ISRaD")
-  template_info <- lapply(setNames(nm=openxlsx::getSheetNames(template_info_file)), 
-                          function(s){
-                            openxlsx::read.xlsx(template_info_file , sheet=s)
-                            })
-
-  # check that column names in the info and template files match
-  for (tab in names(template)[1:8]){
-    cat("\n",tab,"...", file=outfile, append = TRUE)
-    if(any(! (template_info[[tab]]$Column_Name %in% colnames(template[[tab]])))) {
-      cat("\n\tWARNING column names unique to template:",   
-          setdiff(template_info[[tab]]$Column_Name, colnames(template[[tab]])),
-          file=outfile, append = TRUE)
-    }
-    if(any(! (colnames(template[[tab]]) %in% template_info[[tab]]$Column_Name))) {
-      cat("\n\tWARNING column names unique to info file:",   
-          setdiff(colnames(template[[tab]]),template_info[[tab]]$Column_Name), 
-          file=outfile, append = TRUE)
-    }
-  }
-
-  cat("\nChecking controlled vocab between ISRaD template and info file...", 
-      file=outfile, append = T)
-
-  ##Strip out the extra header
-  template_vocab <- template$`controlled vocabulary`#pull the control vocab in template
-  colnames(template_vocab)<-template_vocab[1,] #rename the columns
-  template_vocab<-template_vocab[c(-1,-2),] 
   
-  ##Crunch the vocabe in the template
-  template_vocab <- template_vocab %>%
-    tidyr::gather(key='Column_Name', value='Template_Vocab', na.rm=TRUE) %>%
-    dplyr::filter(Template_Vocab != '<NA>') %>%
-    dplyr::group_by(Column_Name) %>%
-    dplyr::summarize(Template_Vocab = list(Template_Vocab))
-  
-  sheetNames <- lapply(template_info, names)
-  #for each sheet that has a Variable_class defined
-  for (tab in names(sheetNames)[unlist(lapply(sheetNames, 
-                                function(x){ any('Variable_class' %in% x)}))]){
-    cat("\n",tab,"...", file=outfile, append = TRUE)
-
-    template_info_vocab <- template_info[[tab]] %>% #pull the sheet in the info
-      dplyr::filter(Variable_class == 'character', #filter the variable class
-                    !is.na(Vocab), #ignore ones with non-sepcific vocabs
-                    ! grepl("name", Column_Name)) %>% #also ignore name columns
-      group_by(Column_Name) %>%
-      mutate(Info_Vocab=(strsplit(Vocab, split=', '))) %>%
-      dplyr::left_join(template_vocab, by="Column_Name") %>%
-      dplyr::mutate(InfoInTemplate = list(unlist(Info_Vocab) %in% 
-                                            unlist(Template_Vocab)),
-                    TemplateInInfo = list(unlist(Template_Vocab) %in% 
-                                            unlist(Info_Vocab)))
-      
-    if(!any(unlist(template_info_vocab$InfoInTemplate))){
-      cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:", 
-          unlist(template_info_vocab$Info_Vocab)[!unlist(template_info_vocab$InfoInTemplate)], 
-          file=outfile, append = TRUE)
-    }
-
-    if(!any(unlist(template_info_vocab$TemplateInInfo))){
-      cat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:", 
-          unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)], 
-          file=outfile, append = TRUE)
-    }
-    
-    ##Check that the min/max are strictly numeric or NA-------------------
-    template_info_num <- template_info[[tab]] %>% #pull the sheet in the info
-      dplyr::filter(Variable_class == 'numeric')
-    
-    if(! is.numeric(type.convert(template_info_num$Max))){
-      cat("\n\tWARNING non-numeric values in Max column", 
-          file=outfile, append = TRUE)
-    }
-    
-    if(! is.numeric(type.convert(template_info_num$Min))){
-      cat("\n\tWARNING non-numeric values in Min column", 
-          file=outfile, append = TRUE)
-    }
-  }
-
-# QAQC and compile data files -------------------------------------------------------
-
 template_nohead <- lapply(template, function(x) x[-c(1,2),])
 template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
 flat_template_columns <- colnames(template_flat)
