@@ -6,3 +6,5 @@ main:
      url: /database/
    - title: "Contribute"
      url: /contribute/
+   - title: "Credits"
+     url: /credits/

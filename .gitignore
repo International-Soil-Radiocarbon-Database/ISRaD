@@ -1,5 +1,6 @@
 
-/*.DS_Store #ignore mac files
+.DS_Store #ignore mac files
+.DS_Store?
 
 #R files
 .Rproj.user
