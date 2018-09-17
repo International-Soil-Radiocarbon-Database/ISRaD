@@ -6,11 +6,11 @@
 #'
 #' @return ISRaD complient file structure with only columns that overlap with orginal data
 #'
+#' @importFrom rcrossref cr_citation
 #' @examples
 read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yujie/raw/Yujie_dataset2.csv"){
   requireNamespace('tidyverse')
-  library(tidyverse)
-  library(RCurl)
+  #library(tidyverse)
   
   
   Yujie_dataset <- read.csv(Yujie_file, na.strings = c("","NA"), 
@@ -33,7 +33,7 @@ read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yuji
                               VegType_Species, sep=";")) %>%
     rename(entry_name=pc_dataset_name, 
            site_lat=Lat, 
-           site_lon=Lon, 
+           site_long=Lon, 
            site_elevation=Elevation,
            pro_name=profile_name,
            pro_MAT=MAT_original,
@@ -80,6 +80,7 @@ read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yuji
   
   ans <- list(metadata=Yujie_dataset %>%
                 select(entry_name, doi) %>% unique() %>%
+                group_by(entry_name) %>%
                 mutate(curator_name="Yujie He",
                        curator_organization = "ISRaD",
                        curator_email = "info.israd@gmail.com",
@@ -96,12 +97,18 @@ read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yuji
               layer=Yujie_dataset %>%
                 select(entry_name, site_name, pro_name, starts_with('lyr_')) %>% unique())
   
+  ##Fill in bib with doi citations from rcrossref
+  temp <- rcrossref::cr_cn(ans$metadata$doi, format='text', raw=TRUE)
+  ans$metadata$bibliographical_reference <- unlist(lapply(temp, function(x){
+    return(dplyr::if_else(is.null(x), 'NA', x))
+  }))
+  
   ##drop 'modern' notation from faction modern
   #ans$layer$lyr_fraction_modern <- as.numeric(ans$layer$lyr_fraction_modern)
     
   ##convert the land cover vocab
   land_cover <- openxlsx::read.xlsx(
-    "~/Dropbox/ISRaD_data/Compilations/Yujie/vegetation_class_code.xlsx")
+    "~/Dropbox/ISRaD_data/Compilations/Yujie/info/vegetation_class_code.xlsx")
   
   ans$profile$pro_land_cover <- setNames(land_cover$Controlled,
                             land_cover$VegTypeCodeStr_Local)[ans$profile$pro_land_cover]
