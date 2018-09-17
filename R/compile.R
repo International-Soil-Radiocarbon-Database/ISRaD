@@ -76,7 +76,7 @@ compile <- function(dataset_directory,
   template_nohead <- lapply(template, function(x) x[-c(1,2),])
   template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
   flat_template_columns <- colnames(template_flat)
-  
+
   working_database <- template_flat %>% mutate_all(as.character)
   ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
   ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
@@ -117,7 +117,8 @@ compile <- function(dataset_directory,
 
 }
 
-  working_database[]<-lapply(working_database, function(x) stri_trans_general(x, "latin-ascii"))
+  working_database[]<-lapply(working_database, function(x) 
+    stringi::stri_trans_general(x, "latin-ascii"))
   working_database[]<-lapply(working_database, type.convert)
   soilcarbon_database<-working_database
 

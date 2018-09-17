@@ -56,6 +56,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
 
   # get tabs for data and current template files from R package on github
   template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
+
   template<-lapply(openxlsx::getSheetNames(template_file), 
                    function(s) openxlsx::read.xlsx(template_file , sheet=s))
   names(template)<-openxlsx::getSheetNames(template_file)
@@ -80,6 +81,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   }
 
   if (all(openxlsx::getSheetNames(file) %in% names(template))){
+
     cat("\n Template format detected: ", basename(template_file), 
         file=outfile, append = TRUE)
     cat("\n Template info file to be used for QAQC: ", 
@@ -124,6 +126,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   
 
   ##### check doi --------------------------------------------------------
+
   cat("\n\nChecking dataset doi...", file=outfile, append = T)
   if(any(unlist(lapply(as.character(data$metadata$doi), 
                        function(x) is.null(rcrossref::cr_agency(x)))) &
