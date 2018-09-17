@@ -21,7 +21,6 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   requireNamespace("data.tree")
   requireNamespace("dplyr")
   requireNamespace("tidyr")
-  requireNamespace("RCurl")
 
   #start error count at 0
   error <- 0
@@ -127,11 +126,11 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
 
   ##### check doi --------------------------------------------------------
 
-  cat("\n\nChecking dataset doi...", file=outfile, append = T)
-  if(any(unlist(lapply(as.character(data$metadata$doi), 
-                       function(x) is.null(rcrossref::cr_agency(x)))) &
-         as.character(data$metadata$doi) != "israd")){
-    cat("\n\tWARNING: doi not valid", file=outfile, append = T)
+  cat("\n\nChecking dataset doi...", file=outfile, append = TRUE)
+  if(any(unlist(lapply(rcrossref::cr_agency(as.character(data$metadata$doi)), is.null)) &
+         (!is.character(data$metadata$doi) |
+         as.character(data$metadata$doi) != "israd"))){
+    cat("\n\tWARNING: doi not valid", file=outfile, append = TRUE)
     error <- error + 1
   }
 
