@@ -133,7 +133,7 @@ read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yuji
     templet_version <- templet$metadata$template_version[3]
     templet$metadata <- templet$metadata[1:2,]
   }
-  ans$metadata$templet_version <- templet_version
+  ans$metadata$template_version <- templet_version
   
   ##pull the studies appart for curation
   #currentEntry <- ans$metadata$entry_name[1]
