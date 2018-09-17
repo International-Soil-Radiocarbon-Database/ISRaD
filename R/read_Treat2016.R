@@ -10,6 +10,8 @@
 #' @examples
 read_Treat2016 <- function(dowloadDir = 'temp'){
   
+  ##pangaear::pg_data(doi = '10.1594/PANGAEA.863689')
+  
   #download.file(https://doi.org/10.1594/PANGAEA.863689, file.path(downloadDir,
   #                                                                ))
   #  Convert Treat
