@@ -9,7 +9,7 @@
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr
-#' @import RCurl
+#' @importFrom rcrossref cr_agency
 #' @export
 
 
@@ -23,17 +23,16 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   requireNamespace("tidyr")
   requireNamespace("RCurl")
 
-
-
-
   #start error count at 0
-  error<-0
+  error <- 0
   #start note count at 0
-  note<-0
+  note <- 0
 
-  if (writeQCreport==T){
+  if (writeQCreport){
     if (outfile==""){
-      outfile<-paste0(dirname(file), "/QAQC/QAQC_", gsub("\\.xlsx", ".txt", basename(file)))
+      outfile <- file.path(dirname(file), 
+                         file.path("QAQC", 
+                                   paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(file)))))
     }
   }
 
@@ -57,17 +56,20 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
 
   # get tabs for data and current template files from R package on github
   template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
-  template<-lapply(getSheetNames(template_file), function(s) read.xlsx(template_file , sheet=s))
-  names(template)<-getSheetNames(template_file)
+  template<-lapply(openxlsx::getSheetNames(template_file), 
+                   function(s) openxlsx::read.xlsx(template_file , sheet=s))
+  names(template)<-openxlsx::getSheetNames(template_file)
 
-  template_info_file<-system.file("extdata", "ISRaD_Template_Info.xlsx", package = "ISRaD")
-  template_info<-lapply(getSheetNames(template_info_file), function(s) read.xlsx(template_info_file , sheet=s))
-  names(template_info)<-getSheetNames(template_info_file)
+  template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx", package = "ISRaD")
+  template_info <- lapply(openxlsx::getSheetNames(template_info_file), 
+                        function(s) openxlsx::read.xlsx(template_info_file , sheet=s))
+  names(template_info) <- openxlsx::getSheetNames(template_info_file)
 
-  if (!all(getSheetNames(file) %in% names(template)) | !all(names(template) %in% getSheetNames(file))){
+  if (!all(openxlsx::getSheetNames(file) %in% names(template)) |
+      !all(names(template) %in% openxlsx::getSheetNames(file))){
     cat("\tWARNING:  tabs in data file do not match accepted templates. Please use current template. Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute", file=outfile, append = T);error<-error+1
 
-    if (writeQCreport==T){
+    if (writeQCreport==TRUE){
       sink(type="message")
       sink()
     }
@@ -77,17 +79,21 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
     stop("tabs in data file do not match accepted templates")
   }
 
-  if (all(getSheetNames(file) %in% names(template))){
-    cat("\n Template format detected: ", basename(template_file), file=outfile, append = T)
-    cat("\n Template info file to be used for QAQC: ", basename(template_info_file), file=outfile, append = T)
+  if (all(openxlsx::getSheetNames(file) %in% names(template))){
+    cat("\n Template format detected: ", basename(template_file), 
+        file=outfile, append = TRUE)
+    cat("\n Template info file to be used for QAQC: ", 
+        basename(template_info_file), file=outfile, append = T)
 
-    data<-lapply(getSheetNames(file)[1:8], function(s) read.xlsx(file , sheet=s))
-    names(data)<-getSheetNames(file)[1:8]
+    data<-lapply(openxlsx::getSheetNames(file)[1:8], 
+                 function(s) openxlsx::read.xlsx(file , sheet=s))
+    names(data)<-openxlsx::getSheetNames(file)[1:8]
     }
 
   ##### check for description rows #####
 
-  if(!(all(lapply(data, function(x) x[1,1])=="Entry/Dataset Name") & all(lapply(data, function(x) x[2,1])=="Author_year"))){
+  if(!(all(lapply(data, function(x) x[1,1])=="Entry/Dataset Name") & 
+       all(lapply(data, function(x) x[2,1])=="Author_year"))){
     cat("\n\tWARNING:  Description rows in data file not detected. The first two rows of your data file should be the description rows as found in the template file.", file=outfile, append = T);error<-error+1
   }
 
@@ -108,24 +114,23 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   data<-lapply(data, as.data.frame)
 
   ##### check for empty tabs ####
-cat("\n\nChecking for empty tabs...", file=outfile, append = T)
-emptytabs<-names(data)[unlist(lapply(data, function(x) all(is.na(x))))]
-
-if(length(emptytabs)>0){
-  cat("\n\tNOTE: empty tabs detected (", emptytabs,")", file=outfile, append = T)
-  note<-note+1
+  cat("\n\nChecking for empty tabs...", file=outfile, append = T)
+  emptytabs<-names(data)[unlist(lapply(data, function(x) all(is.na(x))))]
+  
+  if(length(emptytabs)>0){
+    cat("\n\tNOTE: empty tabs detected (", emptytabs,")", file=outfile, append = T)
+    note<-note+1
   }
-
+  
 
   ##### check doi --------------------------------------------------------
-cat("\n\nChecking dataset doi...", file=outfile, append = T)
-  dois<-data$metadata$doi
-if(length(dois)<2){if(is.na(dois)) dois<-""}
-for (d in 1:length(dois)){
-  if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
-    cat("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
+  cat("\n\nChecking dataset doi...", file=outfile, append = T)
+  if(any(unlist(lapply(as.character(data$metadata$doi), 
+                       function(x) is.null(rcrossref::cr_agency(x)))) &
+         as.character(data$metadata$doi) != "israd")){
+    cat("\n\tWARNING: doi not valid", file=outfile, append = T)
+    error <- error + 1
   }
-}
 
   ##### check for extra or misnamed columns ####
 cat("\n\nChecking for misspelled column names...", file=outfile, append = T)

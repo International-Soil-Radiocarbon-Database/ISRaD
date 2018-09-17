@@ -53,7 +53,7 @@ compile <- function(dataset_directory,
   #Set output file
   outfile <- ""
   if(write_report){
-    outfile <- file.path(dataset_directory, "database/ISRaD_log.txt")
+    outfile <- file.path(dataset_directory, "database", "ISRaD_log.txt")
   }
 
   #Start writing in the output file
@@ -73,30 +73,31 @@ compile <- function(dataset_directory,
                      function(s){openxlsx::read.xlsx(template_file, 
                                                      sheet=s)})
   
-template_nohead <- lapply(template, function(x) x[-c(1,2),])
-template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
-flat_template_columns <- colnames(template_flat)
+  template_nohead <- lapply(template, function(x) x[-c(1,2),])
+  template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
+  flat_template_columns <- colnames(template_flat)
+  
+  working_database <- template_flat %>% mutate_all(as.character)
+  ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
+  ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
+  
+  cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
+      file=outfile, append = TRUE)
 
-working_database <- template_flat %>% mutate_all(as.character)
-ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
-ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
+  data_files<-list.files(dataset_directory, full.names = TRUE)
+  data_files<-data_files[grep("xlsx", data_files)]
 
-cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
-    file=outfile, append = T)
+  entry_stats<-data.frame()
 
-data_files<-list.files(dataset_directory, full.names = T)
-data_files<-data_files[grep("xlsx", data_files)]
-
-entry_stats<-data.frame()
-
-for(d in 1:length(data_files)){
-  cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = T)
-  soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = T)
-  if (attributes(soilcarbon_data)$error>0) {
-    cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = T)
-    next
-  } else cat("passed", file=outfile, append = T)
-
+  for(d in 1:length(data_files)){
+    cat("\n\n",d, "checking", basename(data_files[d]),"...", 
+        file=outfile, append = TRUE)
+    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE)
+    if (attributes(soilcarbon_data)$error>0) {
+      cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
+      next
+    } else cat("passed", file=outfile, append = TRUE)
+    
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
 
@@ -151,15 +152,17 @@ for(d in 1:length(data_files)){
 
 
 
-  write.xlsx(ISRaD_database, file = paste0(dataset_directory, "database/ISRaD_list.xlsx"))
-  QAQC(paste0(dataset_directory, "database/ISRaD_list.xlsx"), writeQCreport = T, outfile = paste0(dataset_directory, "database/QAQC_ISRaD_list.txt"))
+  write.xlsx(ISRaD_database, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
+  QAQC(file.path(dataset_directory, "database", "ISRaD_list.xlsx"), 
+       writeQCreport = TRUE, 
+       outfile = file.path(dataset_directory, "database", "QAQC_ISRaD_list.txt"))
 
   #write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
 
-  cat("\n", rep("-", 20), file=outfile, append = T)
+  cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
-  if (write_out==T){
-  write.csv(soilcarbon_database, paste0(dataset_directory, "database/ISRaD_flat.csv"))
+  if (write_out==TRUE){
+    write.csv(soilcarbon_database, file.path(dataset_directory, "database", "ISRaD_flat.csv"))
   }
 
     cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
