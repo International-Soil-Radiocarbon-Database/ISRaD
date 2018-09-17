@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /Credits/
+permalink: /credits/
 title: Credits
 header:
   overlay_image: /assets/images/soil.jpg
