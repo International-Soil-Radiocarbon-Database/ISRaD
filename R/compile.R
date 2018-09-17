@@ -153,7 +153,7 @@ compile <- function(dataset_directory,
 
 
 
-  write.xlsx(ISRaD_database, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
+  openxlsx::write.xlsx(ISRaD_database, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
   QAQC(file.path(dataset_directory, "database", "ISRaD_list.xlsx"), 
        writeQCreport = TRUE, 
        outfile = file.path(dataset_directory, "database", "QAQC_ISRaD_list.txt"))
