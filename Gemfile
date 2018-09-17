@@ -1,2 +1,10 @@
 source "https://rubygems.org"
-gemspec
+gem 'jekyll-watch'
+gem 'rouge'
+gem 'rb-fsevent'
+gem 'rb-inotify'
+gem 'jekyll-paginate'
+gem 'jekyll-sitemap'
+gem 'jekyll-gist'
+gem 'jekyll-feed'
+gem 'jemoji'

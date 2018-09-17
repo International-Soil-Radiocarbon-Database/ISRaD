@@ -6,3 +6,7 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Folders
+_site/
+.sass-cache/
