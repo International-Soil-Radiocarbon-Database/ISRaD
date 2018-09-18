@@ -39,7 +39,7 @@ read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yuji
            pro_MAT=MAT_original,
            pro_MAP=MAP_original,
            pro_soil_age=Soil_Age,
-           pro_soil_taxon=SoilOrder_LEN_USDA,
+           pro_soil_taxon=SoilOrder_LEN_USDA_original,
            pro_parent_material_notes=ParentMaterial,
            pro_slope=Slope,
            pro_slope_shape=SlopePosition,
@@ -56,10 +56,10 @@ read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yuji
            lyr_14c_sigma=D14C_err,
            lyr_fraction_modern=FractionModern,
            lyr_fraction_modern_sigma=FractionModern_sigma,
-           lyr_bd_tot=BulkDensity,
+           lyr_bd_tot=BulkDensity_original,
            lyr_bet_surface_area=SpecificSurfaceArea,
            lyr_ph_h2o=PH_H2O,
-           lyr_c_tot=pct_C,
+           lyr_c_tot=pct_C_original,
            lyr_n_tot=pct_N,
            lyr_c_to_n=CN,
            lyr_sand_tot_psa=sand_pct,
@@ -87,13 +87,15 @@ read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yuji
                        modification_date_d = format(as.Date(Sys.Date(),format="%Y-%m-%d"), "%d"),
                        modification_date_m = format(as.Date(Sys.Date(),format="%Y-%m-%d"), "%m"),
                        modification_date_y = format(as.Date(Sys.Date(),format="%Y-%m-%d"), "%Y"),
+                       contact_name = "Yujie He",
                        contact_email = "yujiehe.pu@gmail.com",
                        compilation_doi = "10.1126/science.aad4273"),
               site=Yujie_dataset %>% 
                 select(entry_name, starts_with('site_')) %>% unique(),
               profile=Yujie_dataset %>%
                 select(entry_name, site_name, starts_with('pro_')) %>% unique() %>%
-                mutate(pro_treatment = "control"),
+                mutate(pro_treatment = "control",
+                       pro_soil_taxon_sys = "USDA"),
               layer=Yujie_dataset %>%
                 select(entry_name, site_name, pro_name, starts_with('lyr_')) %>% unique())
   
