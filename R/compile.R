@@ -141,19 +141,20 @@ compile <- function(dataset_directory,
     }
   }
 
-  ISRaD_database$metadata<-rbind(template$metadata,ISRaD_database$metadata)
-  ISRaD_database$site<-rbind(template$site,ISRaD_database$site)
-  ISRaD_database$profile<-rbind(template$profile,ISRaD_database$profile)
-  ISRaD_database$flux<-rbind(template$flux,ISRaD_database$flux)
-  ISRaD_database$layer<-rbind(template$layer,ISRaD_database$layer)
-  ISRaD_database$interstitial<-rbind(template$interstitial,ISRaD_database$interstitial)
-  ISRaD_database$fraction<-rbind(template$fraction,ISRaD_database$fraction)
-  ISRaD_database$incubation<-rbind(template$incubation,ISRaD_database$incubation)
-  ISRaD_database$`controlled vocabulary`<-template$`controlled vocabulary`
+  ISRaD_database_excel<-list()
+  ISRaD_database_excel$metadata<-rbind(template$metadata,ISRaD_database$metadata)
+  ISRaD_database_excel$site<-rbind(template$site,ISRaD_database$site)
+  ISRaD_database_excel$profile<-rbind(template$profile,ISRaD_database$profile)
+  ISRaD_database_excel$flux<-rbind(template$flux,ISRaD_database$flux)
+  ISRaD_database_excel$layer<-rbind(template$layer,ISRaD_database$layer)
+  ISRaD_database_excel$interstitial<-rbind(template$interstitial,ISRaD_database$interstitial)
+  ISRaD_database_excel$fraction<-rbind(template$fraction,ISRaD_database$fraction)
+  ISRaD_database_excel$incubation<-rbind(template$incubation,ISRaD_database$incubation)
+  ISRaD_database_excel$`controlled vocabulary`<-template$`controlled vocabulary`
 
 
 
-  openxlsx::write.xlsx(ISRaD_database, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
+  openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
   QAQC(file.path(dataset_directory, "database", "ISRaD_list.xlsx"), 
        writeQCreport = TRUE, 
        outfile = file.path(dataset_directory, "database", "QAQC_ISRaD_list.txt"))
