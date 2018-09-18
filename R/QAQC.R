@@ -83,7 +83,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
 
     data<-lapply(getSheetNames(file)[1:8], function(s) read.xlsx(file , sheet=s))
     names(data)<-getSheetNames(file)[1:8]
-    }
+  }
 
   ##### check for description rows #####
 
@@ -108,140 +108,323 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   data<-lapply(data, as.data.frame)
 
   ##### check for empty tabs ####
-cat("\n\nChecking for empty tabs...", file=outfile, append = T)
-emptytabs<-names(data)[unlist(lapply(data, function(x) all(is.na(x))))]
+  cat("\n\nChecking for empty tabs...", file=outfile, append = T)
+  emptytabs<-names(data)[unlist(lapply(data, function(x) all(is.na(x))))]
 
-if(length(emptytabs)>0){
-  cat("\n\tNOTE: empty tabs detected (", emptytabs,")", file=outfile, append = T)
-  note<-note+1
+  if(length(emptytabs)>0){
+    cat("\n\tNOTE: empty tabs detected (", emptytabs,")", file=outfile, append = T)
+    note<-note+1
   }
 
 
   ##### check doi --------------------------------------------------------
-cat("\n\nChecking dataset doi...", file=outfile, append = T)
+  cat("\n\nChecking dataset doi...", file=outfile, append = T)
   dois<-data$metadata$doi
-if(length(dois)<2){if(is.na(dois)) dois<-""}
-for (d in 1:length(dois)){
-  if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
-    cat("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
+  if(length(dois)<2){if(is.na(dois)) dois<-""}
+  for (d in 1:length(dois)){
+    if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
+      cat("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
+    }
   }
-}
 
   ##### check for extra or misnamed columns ####
-cat("\n\nChecking for misspelled column names...", file=outfile, append = T)
-for (t in 1:length(names(data))){
-  tab<-names(data)[t]
-  cat("\n",tab,"tab...", file=outfile, append = T)
-  data_colnames<-colnames(data[[tab]])
-  template_colnames<-colnames(template[[tab]])
+  cat("\n\nChecking for misspelled column names...", file=outfile, append = T)
+  for (t in 1:length(names(data))){
+    tab<-names(data)[t]
+    cat("\n",tab,"tab...", file=outfile, append = T)
+    data_colnames<-colnames(data[[tab]])
+    template_colnames<-colnames(template[[tab]])
 
-  #compare column names in data to template column names
-  notintemplate<-setdiff(data_colnames, template_colnames)
-  if (length(notintemplate>0)) {
-    cat("\n\tWARNING: column name mismatch template:", notintemplate, file=outfile, append = T);error<-error+1
+    #compare column names in data to template column names
+    notintemplate<-setdiff(data_colnames, template_colnames)
+    if (length(notintemplate>0)) {
+      cat("\n\tWARNING: column name mismatch template:", notintemplate, file=outfile, append = T);error<-error+1
+    }
   }
-}
 
   ##### check for missing values in required columns ####
-cat("\n\nChecking for missing values in required columns...", file=outfile, append = T)
-for (t in 1:length(names(data))){
-  tab<-names(data)[t]
-  cat("\n",tab,"tab...", file=outfile, append = T)
-  required_colnames<-template_info[[tab]]$Column_Name[template_info[[tab]]$Required=="Yes"]
-  template_info[["flux"]]$Column_Name
+  cat("\n\nChecking for missing values in required columns...", file=outfile, append = T)
+  for (t in 1:length(names(data))){
+    tab<-names(data)[t]
+    cat("\n",tab,"tab...", file=outfile, append = T)
+    required_colnames<-template_info[[tab]]$Column_Name[template_info[[tab]]$Required=="Yes"]
+    template_info[["flux"]]$Column_Name
 
-  missing_values<-sapply(required_colnames, function(c) NA %in% data[[tab]][[c]])
-  T %in% unlist(missing_values)
-  which_missing_values<-unlist(sapply(required_colnames[missing_values], function(c) unlist(which(is.na(data[[tab]][[c]])))))
+    missing_values<-sapply(required_colnames, function(c) NA %in% data[[tab]][[c]])
+    T %in% unlist(missing_values)
+    which_missing_values<-unlist(sapply(required_colnames[missing_values], function(c) unlist(which(is.na(data[[tab]][[c]])))))
 
-  if (T %in% unlist(missing_values)) {
-    cat("\n\tWARNING: missing values where required:", required_colnames[missing_values], "(rows:",which_missing_values+3,")", file=outfile, append = T);error<-error+1
+    if (T %in% unlist(missing_values)) {
+      cat("\n\tWARNING: missing values where required:", required_colnames[missing_values], "(rows:",which_missing_values+3,")", file=outfile, append = T);error<-error+1
+    }
   }
-}
 
   ##### check levels #####
   cat("\n\nChecking that level names match between tabs...", file=outfile, append = T)
 
   # check site tab #
   cat("\n site tab...", file=outfile, append = T)
-  if(!all(data$site$entry_name %in% data$metadata$entry_name)){
-    cat("\tWARNING: 'entry_name' mismatch between 'site' and 'metadata' tabs", file=outfile, append = T);error<-error+1
+  mismatch <- c() #Entry name
+  for (t in 1:length(data$site$entry_name)){
+    item_name <- as.character(data$site$entry_name)[t]
+    if (!(item_name %in% data$metadata$entry_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'entry_name' mismatch between 'site' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
 
   # check profile tab #
   cat("\n profile tab...", file=outfile, append = T)
-  if(!all(data$profile$entry_name %in% data$metadata$entry_name)){
-    cat("\n\tWARNING: 'entry_name' mismatch between 'profile' and 'metadata' tabs", file=outfile, append = T);error<-error+1
+  mismatch <- c() #Entry name
+  for (t in 1:length(data$profile$entry_name)){
+    item_name <- as.character(data$profile$entry_name)[t]
+    if (!(item_name %in% data$metadata$entry_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
-  if(!all(data$profile$site_name %in% data$site$site_name)){
-    cat("\n\tWARNING: 'site_name' mismatch between 'profile' and 'site' tabs", file=outfile, append = T);error<-error+1
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'entry_name' mismatch between 'profile' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  mismatch <- c() #Site name
+  for (t in 1:length(data$profile$site_name)){
+    item_name <- as.character(data$profile$site_name)[t]
+    if (!(item_name %in% data$site$site_name)){
+      mismatch <- c(mismatch, t)
+    }
+  }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'site_name' mismatch between 'profile' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
   }
 
   # check flux tab #
   cat("\n flux tab...", file=outfile, append = T)
-  if(!all(data$flux$entry_name %in% data$metadata$entry_name)){
-    cat("\n\tWARNING: 'entry_name' mismatch between 'flux' and 'metadata' tabs", file=outfile, append = T);error<-error+1
+  if (length(data$flux$entry_name)>0){
+  mismatch <- c() #Entry name
+  for (t in 1:length(data$flux$entry_name)){
+    item_name <- as.character(data$flux$entry_name)[t]
+    if (!(item_name %in% data$metadata$entry_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
-  if(!all(data$flux$site_name %in% data$site$site_name)){
-    cat("\n\tWARNING: 'site_name' mismatch between 'flux' and 'site' tabs", file=outfile, append = T);error<-error+1
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'entry_name' mismatch between 'flux' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
   }
-  if(!all(data$flux$pro_name %in% data$profile$pro_name)){
-    cat("\n\tWARNING: 'pro_name' mismatch between 'flux' and 'profile' tabs", file=outfile, append = T);error<-error+1
+
+  mismatch <- c() #Site name
+  for (t in 1:length(data$flux$site_name)){
+    item_name <- as.character(data$flux$site_name)[t]
+    if (!(item_name %in% data$site$site_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'site_name' mismatch between 'flux' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  mismatch <- c() #Profile name
+  for (t in 1:length(data$flux$pro_name)){
+    item_name <- as.character(data$flux$pro_name)[t]
+    if (!(item_name %in% data$profile$pro_name)){
+      mismatch <- c(mismatch, t)
+    }
+  }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'profile_name' mismatch between 'flux' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }
+  }
+
 
   # check layer tab #
   cat("\n layer tab...", file=outfile, append = T)
-  if(!all(data$layer$entry_name %in% data$metadata$entry_name)){
-    cat("\n\tWARNING: 'entry_name' mismatch between 'layer' and 'metadata' tabs", file=outfile, append = T);error<-error+1
+  if (length(data$layer$entry_name)>0){
+  mismatch <- c() #Entry name
+  for (t in 1:length(data$layer$entry_name)){
+    item_name <- as.character(data$layer$entry_name)[t]
+    if (!(item_name %in% data$metadata$entry_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
-  if(!all(data$layer$site_name %in% data$site$site_name)){
-    cat("\n\tWARNING: 'site_name' mismatch between 'layer' and 'site' tabs", file=outfile, append = T);error<-error+1
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'entry_name' mismatch between 'layer' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
   }
-  if(!all(data$layer$pro_name %in% data$profile$pro_name)){
-    cat("\n\tWARNING: 'pro_name' mismatch between 'layer' and 'profile' tabs", file=outfile, append = T);error<-error+1
+
+  mismatch <- c() #Site name
+  for (t in 1:length(data$layer$site_name)){
+    item_name <- as.character(data$layer$site_name)[t]
+    if (!(item_name %in% data$site$site_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'site_name' mismatch between 'layer' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  mismatch <- c() #Profile name
+  for (t in 1:length(data$layer$pro_name)){
+    item_name <- as.character(data$layer$pro_name)[t]
+    if (!(item_name %in% data$profile$pro_name)){
+      mismatch <- c(mismatch, t)
+    }
+  }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'profile_name' mismatch between 'layer' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }}
+
 
   # check interstitial tab #
   cat("\n interstitial tab...", file=outfile, append = T)
-  if(!all(data$interstitial$entry_name %in% data$metadata$entry_name)){
-    cat("\n\tWARNING: 'entry_name' mismatch between 'interstitial' and 'metadata' tabs", file=outfile, append = T);error<-error+1
+  if (length(data$interstitial$entry_name)>0){
+  mismatch <- c() #Entry name
+  for (t in 1:length(data$interstitial$entry_name)){
+    item_name <- as.character(data$interstitial$entry_name)[t]
+    if (!(item_name %in% data$metadata$entry_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
-  if(!all(data$interstitial$site_name %in% data$site$site_name)){
-    cat("\n\tWARNING: 'site_name' mismatch between 'interstitial' and 'site' tabs", file=outfile, append = T);error<-error+1
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'entry_name' mismatch between 'interstitial' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
   }
-  if(!all(data$interstitial$pro_name %in% data$profile$pro_name)){
-    cat("\n\tWARNING: 'pro_name' mismatch between 'interstitial' and 'profile' tabs", file=outfile, append = T);error<-error+1
+
+  mismatch <- c() #Site name
+  for (t in 1:length(data$interstitial$site_name)){
+    item_name <- as.character(data$interstitial$site_name)[t]
+    if (!(item_name %in% data$site$site_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'site_name' mismatch between 'interstitial' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  mismatch <- c() #Profile name
+  for (t in 1:length(data$interstitial$pro_name)){
+    item_name <- as.character(data$interstitial$pro_name)[t]
+    if (!(item_name %in% data$profile$pro_name)){
+      mismatch <- c(mismatch, t)
+    }
+  }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'profile_name' mismatch between 'interstitial' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }}
 
   # check fraction tab #
   cat("\n fraction tab...", file=outfile, append = T)
-  if(!all(data$fraction$entry_name %in% data$metadata$entry_name)){
-    cat("\n\tWARNING: 'entry_name' mismatch between 'fraction' and 'metadata' tabs", file=outfile, append = T);error<-error+1
+  if (length(data$fraction$entry_name)>0){
+  mismatch <- c() #Entry name
+  for (t in 1:length(data$fraction$entry_name)){
+    item_name <- as.character(data$fraction$entry_name)[t]
+    if (!(item_name %in% data$metadata$entry_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
-  if(!all(data$fraction$site_name %in% data$site$site_name)){
-    cat("\n\tWARNING: 'site_name' mismatch between 'fraction' and 'site' tabs", file=outfile, append = T);error<-error+1
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'entry_name' mismatch between 'fraction' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
   }
-  if(!all(data$fraction$pro_name %in% data$profile$pro_name)){
-    cat("\n\tWARNING: 'pro_name' mismatch between 'fraction' and 'profile' tabs", file=outfile, append = T);error<-error+1
+
+  mismatch <- c() #Site name
+  for (t in 1:length(data$fraction$site_name)){
+    item_name <- as.character(data$fraction$site_name)[t]
+    if (!(item_name %in% data$site$site_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
-  if(!all(data$fraction$lyr_name %in% data$layer$lyr_name)){
-    cat("\n\tWARNING: 'lyr_name' mismatch between 'fraction' and 'layer' tabs", file=outfile, append = T);error<-error+1
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'site_name' mismatch between 'fraction' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
   }
+
+  mismatch <- c() #Profile name
+  for (t in 1:length(data$fraction$pro_name)){
+    item_name <- as.character(data$fraction$pro_name)[t]
+    if (!(item_name %in% data$profile$pro_name)){
+      mismatch <- c(mismatch, t)
+    }
+  }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'profile_name' mismatch between 'fraction' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  mismatch <- c() #Layer name
+  for (t in 1:length(data$fraction$lyr_name)){
+    item_name <- as.character(data$fraction$lyr_name)[t]
+    if (!(item_name %in% data$layer$lyr_name)){
+      mismatch <- c(mismatch, t)
+    }
+  }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'lyr_name' mismatch between 'fraction' and 'layer' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }}
+
 
   # check incubation tab #
   cat("\n incubation tab...", file=outfile, append = T)
-  if(!all(data$incubation$entry_name %in% data$metadata$entry_name)){
-    cat("\n\tWARNING: 'entry_name' mismatch between 'incubation' and 'metadata' tabs", file=outfile, append = T);error<-error+1
+  if (length(data$incubation$entry_name)>0){
+  mismatch <- c() #Entry name
+  for (t in 1:length(data$incubation$entry_name)){
+    item_name <- as.character(data$incubation$entry_name)[t]
+    if (!(item_name %in% data$metadata$entry_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
-  if(!all(data$incubation$site_name %in% data$site$site_name)){
-    cat("\n\tWARNING: 'site_name' mismatch between 'incubation' and 'site' tabs", file=outfile, append = T);error<-error+1
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'entry_name' mismatch between 'incubation' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
   }
-  if(!all(data$incubation$pro_name %in% data$profile$pro_name)){
-    cat("\n\tWARNING: 'pro_name' mismatch between 'incubation' and 'profile' tabs", file=outfile, append = T);error<-error+1
+
+  mismatch <- c() #Site name
+  for (t in 1:length(data$incubation$site_name)){
+    item_name <- as.character(data$incubation$site_name)[t]
+    if (!(item_name %in% data$site$site_name)){
+      mismatch <- c(mismatch, t)
+    }
   }
-  if(!all(data$incubation$lyr_name %in% data$layer$lyr_name)){
-    cat("\n\tWARNING: 'lyr_name' mismatch between 'incubation' and 'layer' tabs", file=outfile, append = T);error<-error+1
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'site_name' mismatch between 'incubation' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
   }
+
+  mismatch <- c() #Profile name
+  for (t in 1:length(data$incubation$pro_name)){
+    item_name <- as.character(data$incubation$pro_name)[t]
+    if (!(item_name %in% data$profile$pro_name)){
+      mismatch <- c(mismatch, t)
+    }
+  }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'profile_name' mismatch between 'incubation' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  mismatch <- c() #Layer name
+  for (t in 1:length(data$incubation$lyr_name)){
+    item_name <- as.character(data$incubation$lyr_name)[t]
+    if (!(item_name %in% data$profile$pro_name)){
+      mismatch <- c(mismatch, t)
+    }
+  }
+  if (length(mismatch) > 0){
+    cat("\n\tWARNING: 'profile_name' mismatch between 'incubation' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    error <- error+1
+  }}
 
   ##### check numeric values #####
   cat("\n\nChecking numeric variable columns for inappropriate values...", file=outfile, append = T)
@@ -303,7 +486,7 @@ for (t in 1:length(names(data))){
       controlled_vocab<-tab_info$Vocab[tab_info$Column_Name == column]
       controlled_vocab<-unlist(strsplit(controlled_vocab, ","))
       controlled_vocab<-sapply(controlled_vocab, trimws)
-     if(controlled_vocab[1]=="must match across levels") next
+      if(controlled_vocab[1]=="must match across levels") next
       vocab_check<-sapply(data[[tab]][,column], function(x) x %in% c(controlled_vocab, NA))
       if(F %in% vocab_check){
         cat("\n\tWARNING: unacceptable values detected in the", column, "column:", unique(as.character(data[[tab]][,column][!vocab_check])), file=outfile, append = T); error<-error+1
@@ -326,7 +509,7 @@ for (t in 1:length(names(data))){
   cat("\n\n", rep("-", 20), file=outfile, append = T)
 
 
-# summary statistics ------------------------------------------------------
+  # summary statistics ------------------------------------------------------
 
   cat("\n\nIt might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.\n", file=outfile, append = T)
   cat("\nSummary statistics...\n", file=outfile, append = T)
@@ -337,20 +520,20 @@ for (t in 1:length(names(data))){
     cat("\n",tab,"tab...", file=outfile, append = T)
     cat(nrow(data_tab), "observations", file=outfile, append = T)
     if (nrow(data_tab)>0){
-    col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
-    col_counts<-col_counts[col_counts>0]
-    for(c in 1:length(col_counts)){
-      cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
+      col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
+      col_counts<-col_counts[col_counts>0]
+      for(c in 1:length(col_counts)){
+        cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
 
-     }
+      }
     }
   }
 
 
-cat("\n", rep("-", 20), file=outfile, append = T)
+  cat("\n", rep("-", 20), file=outfile, append = T)
 
 
-# data.tree ---------------------------------------------------------------
+  # data.tree ---------------------------------------------------------------
 
   # cat("\n\nHierarchy of data...\n", file=outfile, append = T)
   # cat("\nMerging data into flattened structure...\n", file=outfile, append = T)
@@ -385,9 +568,8 @@ cat("\n", rep("-", 20), file=outfile, append = T)
   cat("\nIf you think there is a error in the functioning of this code please post to
       \nhttps://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues\n", file=outfile, append = T)
 
-attributes(data)$error<-error
+  attributes(data)$error<-error
 
-return(data)
+  return(data)
 
 }
-
