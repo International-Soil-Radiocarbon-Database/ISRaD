@@ -48,7 +48,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   ##### check file extension #####
   cat("\n\nChecking file type...", file=outfile, append = T)
   if(!grep(".xlsx", file)==1){
-    cat("\tWARNING: ", file, " is not the corrent file type (should have '.xlsx' extension)", file=outfile, append = T);error<-error+1
+    cat("\tWARNING: ", file, " is not the current file type (should have '.xlsx' extension)", file=outfile, append = T);error<-error+1
   }
 
   ##### check template #####
@@ -168,7 +168,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$site$entry_name)){
     item_name <- as.character(data$site$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -183,7 +183,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$profile$entry_name)){
     item_name <- as.character(data$profile$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -195,7 +195,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$profile$site_name)){
     item_name <- as.character(data$profile$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -210,7 +210,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$flux$entry_name)){
     item_name <- as.character(data$flux$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -222,7 +222,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$flux$site_name)){
     item_name <- as.character(data$flux$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -234,7 +234,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$flux$pro_name)){
     item_name <- as.character(data$flux$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -251,7 +251,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$layer$entry_name)){
     item_name <- as.character(data$layer$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -263,7 +263,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$layer$site_name)){
     item_name <- as.character(data$layer$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -275,7 +275,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$layer$pro_name)){
     item_name <- as.character(data$layer$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -291,7 +291,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$interstitial$entry_name)){
     item_name <- as.character(data$interstitial$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -303,7 +303,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$interstitial$site_name)){
     item_name <- as.character(data$interstitial$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -315,7 +315,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$interstitial$pro_name)){
     item_name <- as.character(data$interstitial$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -326,11 +326,12 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   # check fraction tab #
   cat("\n fraction tab...", file=outfile, append = T)
   if (length(data$fraction$entry_name)>0){
+
   mismatch <- c() #Entry name
   for (t in 1:length(data$fraction$entry_name)){
     item_name <- as.character(data$fraction$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -342,7 +343,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$fraction$site_name)){
     item_name <- as.character(data$fraction$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -354,7 +355,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$fraction$pro_name)){
     item_name <- as.character(data$fraction$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -366,7 +367,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$fraction$lyr_name)){
     item_name <- as.character(data$fraction$lyr_name)[t]
     if (!(item_name %in% data$layer$lyr_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -382,7 +383,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$incubation$entry_name)){
     item_name <- as.character(data$incubation$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -394,7 +395,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$incubation$site_name)){
     item_name <- as.character(data$incubation$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -406,7 +407,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$incubation$pro_name)){
     item_name <- as.character(data$incubation$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
@@ -418,7 +419,7 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   for (t in 1:length(data$incubation$lyr_name)){
     item_name <- as.character(data$incubation$lyr_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
-      mismatch <- c(mismatch, t)
+      mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
