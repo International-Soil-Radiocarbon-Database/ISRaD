@@ -418,12 +418,12 @@ QAQC <- function(file, writeQCreport=F, outfile=""){
   mismatch <- c() #Layer name
   for (t in 1:length(data$incubation$lyr_name)){
     item_name <- as.character(data$incubation$lyr_name)[t]
-    if (!(item_name %in% data$profile$lyr_name)){
+    if (!(item_name %in% data$layer$lyr_name)){
       mismatch <- c(mismatch, t+3)
     }
   }
   if (length(mismatch) > 0){
-    cat("\n\tWARNING: 'lyr_name' mismatch between 'incubation' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    cat("\n\tWARNING: 'lyr_name' mismatch between 'incubation' and 'layer' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }}
 
