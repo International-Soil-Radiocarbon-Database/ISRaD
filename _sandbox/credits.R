@@ -1,4 +1,4 @@
-#devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD")
+devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD")
 
 library(ISRaD)
 library(rcrossref)
