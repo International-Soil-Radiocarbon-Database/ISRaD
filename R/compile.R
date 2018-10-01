@@ -2,21 +2,21 @@
 #'
 #' Construct data products to the International Soil Radiocarbon Database.
 #'
-#' @param dataset_directory string defining directory where compeleted and 
+#' @param dataset_directory string defining directory where compeleted and
 #' QC passed soilcarbon datasets are stored
-#' @param write_report boolean flag to write a log file of the 
+#' @param write_report boolean flag to write a log file of the
 #' compilation (FALSE will dump output to console). File will be in the specified
 #' in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
 #' there of this name it will be overwritten.
-#' @param write_out boolean flag to write the compiled database file as csv 
+#' @param write_out boolean flag to write the compiled database file as csv
 #' in dataset_directory (FALSE will not generate ouput file but will return)
-#' @param return_type a string that defines return object. 
-#' Default is "none". 
-#' Acceptable values are "flat" or "list" depending on the format you want to 
+#' @param return_type a string that defines return object.
+#' Default is "none".
+#' Acceptable values are "flat" or "list" depending on the format you want to
 #' have the database returned in.
-#' 
+#'
 #' @export
-#' 
+#'
 #' @import devtools
 #' @import dplyr
 #' @import stringi
@@ -26,8 +26,8 @@
 #' @import assertthat
 #'
 
-compile <- function(dataset_directory, 
-                    write_report=FALSE, write_out=FALSE, 
+compile <- function(dataset_directory,
+                    write_report=FALSE, write_out=FALSE,
                     return_type=c('none', 'list', 'flat')[1]){
   #Libraries used
   requireNamespace("stringi")
@@ -35,13 +35,13 @@ compile <- function(dataset_directory,
   requireNamespace("openxlsx")
   requireNamespace("dplyr")
   requireNamespace("tidyr")
-  
+
   # Check inputs
   assertthat::assert_that(dir.exists(dataset_directory))
   assertthat::assert_that(is.logical(write_report))
   assertthat::assert_that(is.logical(write_out))
   assertthat::assert_that(is.character(return_type))
- 
+
   #Create directories
   if(! dir.exists(file.path(dataset_directory, "QAQC"))){
     dir.create(file.path(dataset_directory, "QAQC")) #Creates folder for QAQC reports
@@ -49,7 +49,7 @@ compile <- function(dataset_directory,
   if(! dir.exists(file.path(dataset_directory, "database"))){
     dir.create(file.path(dataset_directory, "database")) #creates folder for final output dump
   }
-  
+
   #Set output file
   outfile <- ""
   if(write_report){
@@ -64,15 +64,15 @@ compile <- function(dataset_directory,
 
 # Check template and info compatability -------------------------------------------------
   checkTempletFiles(outfile)
-  
+
 # QAQC and compile data files -------------------------------------------------------
   # Get the tables stored in the templet sheets
-  template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", 
+  template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx",
                                package = "ISRaD")
-  template <- lapply(setNames(nm=openxlsx::getSheetNames(template_file)), 
-                     function(s){openxlsx::read.xlsx(template_file, 
+  template <- lapply(setNames(nm=openxlsx::getSheetNames(template_file)),
+                     function(s){openxlsx::read.xlsx(template_file,
                                                      sheet=s)})
-  
+
   template_nohead <- lapply(template, function(x) x[-c(1,2),])
   template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
   flat_template_columns <- colnames(template_flat)
@@ -80,7 +80,7 @@ compile <- function(dataset_directory,
   working_database <- template_flat %>% mutate_all(as.character)
   ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
   ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
-  
+
   cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
       file=outfile, append = TRUE)
 
@@ -90,14 +90,14 @@ compile <- function(dataset_directory,
   entry_stats<-data.frame()
 
   for(d in 1:length(data_files)){
-    cat("\n\n",d, "checking", basename(data_files[d]),"...", 
+    cat("\n\n",d, "checking", basename(data_files[d]),"...",
         file=outfile, append = TRUE)
     soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE)
     if (attributes(soilcarbon_data)$error>0) {
       cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
       next
     } else cat("passed", file=outfile, append = TRUE)
-    
+
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
 
@@ -117,7 +117,7 @@ compile <- function(dataset_directory,
 
 }
 
-  working_database[]<-lapply(working_database, function(x) 
+  working_database[]<-lapply(working_database, function(x)
     stringi::stri_trans_general(x, "latin-ascii"))
   working_database[]<-lapply(working_database, type.convert)
   soilcarbon_database<-working_database
@@ -155,9 +155,9 @@ compile <- function(dataset_directory,
 
 
   openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
-  QAQC(file.path(dataset_directory, "database", "ISRaD_list.xlsx"), 
-       writeQCreport = TRUE, 
-       outfile = file.path(dataset_directory, "database", "QAQC_ISRaD_list.txt"))
+  #QAQC(file.path(dataset_directory, "database", "ISRaD_list.xlsx"),
+  #     writeQCreport = TRUE,
+  #     outfile = file.path(dataset_directory, "database", "QAQC_ISRaD_list.txt"))
 
   #write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
 
