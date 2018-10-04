@@ -5,8 +5,6 @@
 
 
 File: Sierra_2012.xlsx
-Time: 2018-09-13 16:31:34 
-
 
 Checking file type...
 
@@ -116,6 +114,7 @@ Summary statistics...
     site_name : 175
     plot_name : 163
     pro_name : 175
+    flx_name : 175
     flx_obs_date_y : 175
     flx_obs_date_m : 175
     flx_obs_date_d : 175
@@ -132,7 +131,6 @@ Summary statistics...
     lyr_obs_date_y : 70
     lyr_obs_date_m : 70
     lyr_obs_date_d : 70
-    lyr_non_bulk : 70
     lyr_top : 70
     lyr_bot : 70
     lyr_hzn : 70
@@ -143,6 +141,7 @@ Summary statistics...
     site_name : 70
     pro_name : 70
     lyr_name : 70
+    inc_name : 70
     inc_type : 70
     inc_duration_type : 70
     inc_rc_lab : 70

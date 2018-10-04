@@ -5,8 +5,6 @@
 
 
 File: Vaughn_2014.xlsx
-Time: 2018-09-13 16:31:43 
-
 
 Checking file type...
 
@@ -114,7 +112,6 @@ Summary statistics...
     lyr_obs_date_y : 62
     lyr_obs_date_m : 62
     lyr_obs_date_d : 62
-    lyr_non_bulk : 62
     lyr_top : 62
     lyr_bot : 62
  interstitial tab...0 observations
@@ -124,6 +121,7 @@ Summary statistics...
     site_name : 88
     pro_name : 88
     lyr_name : 88
+    inc_name : 88
     inc_type : 88
     inc_obs_date_y : 88
     inc_obs_date_m : 88

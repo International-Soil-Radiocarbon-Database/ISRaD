@@ -5,8 +5,6 @@
 
 
 File: Posada_2011.xlsx
-Time: 2018-09-13 16:31:13 
-
 
 Checking file type...
 
@@ -116,7 +114,6 @@ Summary statistics...
     lyr_obs_date_y : 42
     lyr_obs_date_m : 42
     lyr_obs_date_d : 42
-    lyr_non_bulk : 42
     lyr_top : 42
     lyr_bot : 42
     lyr_13c : 42
@@ -129,6 +126,7 @@ Summary statistics...
     site_name : 42
     pro_name : 42
     lyr_name : 42
+    inc_name : 42
     inc_type : 42
     inc_obs_date_y : 38
     inc_obs_date_m : 38

@@ -5,8 +5,6 @@
 
 
 File: Wang_2000.xlsx
-Time: 2018-09-13 16:31:49 
-
 
 Checking file type...
 
@@ -113,6 +111,7 @@ Summary statistics...
     entry_name : 171
     site_name : 171
     pro_name : 171
+    flx_name : 171
     flx_obs_date_y : 171
     flx_obs_date_m : 171
     flx_obs_date_d : 171

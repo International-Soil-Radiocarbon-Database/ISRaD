@@ -5,8 +5,6 @@
 
 
 File: Morris_unpub.xlsx
-Time: 2018-09-13 16:30:52 
-
 
 Checking file type...
 
@@ -130,6 +128,7 @@ Summary statistics...
     site_name : 26
     pro_name : 26
     lyr_name : 26
+    inc_name : 26
     inc_type : 26
     inc_note : 18
     inc_duration : 26

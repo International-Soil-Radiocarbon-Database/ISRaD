@@ -5,8 +5,6 @@
 
 
 File: Fierer_2005.xlsx
-Time: 2018-09-13 16:29:21 
-
 
 Checking file type...
 
@@ -119,6 +117,7 @@ Summary statistics...
     entry_name : 10
     site_name : 10
     pro_name : 10
+    flx_name : 10
     flx_obs_date_y : 10
     flx_obs_date_m : 10
     flx_obs_date_d : 10
@@ -143,7 +142,6 @@ Summary statistics...
     lyr_obs_date_y : 42
     lyr_obs_date_m : 42
     lyr_obs_date_d : 42
-    lyr_non_bulk : 4
     lyr_top : 42
     lyr_bot : 42
     lyr_bd_samp : 40
@@ -162,6 +160,7 @@ Summary statistics...
     entry_name : 29
     site_name : 29
     pro_name : 29
+    ist_name : 29
     ist_obs_date_y : 29
     ist_obs_date_m : 29
     ist_obs_date_d : 29

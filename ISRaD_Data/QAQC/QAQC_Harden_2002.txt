@@ -5,8 +5,6 @@
 
 
 File: Harden_2002.xlsx
-Time: 2018-09-13 16:29:32 
-
 
 Checking file type...
 
@@ -117,6 +115,7 @@ Summary statistics...
     site_name : 29
     plot_name : 29
     pro_name : 29
+    flx_name : 29
     flx_obs_date_y : 29
     flx_obs_date_m : 29
     flx_obs_date_d : 29
@@ -139,7 +138,6 @@ Summary statistics...
     lyr_obs_date_y : 190
     lyr_obs_date_m : 174
     lyr_obs_date_d : 174
-    lyr_non_bulk : 15
     lyr_top : 190
     lyr_bot : 190
     lyr_hzn : 61
@@ -168,6 +166,7 @@ Summary statistics...
     site_name : 15
     pro_name : 15
     lyr_name : 15
+    inc_name : 15
     inc_type : 15
     inc_note : 15
     inc_temp : 15

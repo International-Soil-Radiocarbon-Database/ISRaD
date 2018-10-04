@@ -5,8 +5,6 @@
 
 
 File: Nagy_2017.xlsx
-Time: 2018-09-13 16:31:02 
-
 
 Checking file type...
 
@@ -150,6 +148,7 @@ Summary statistics...
     site_name : 205
     pro_name : 205
     lyr_name : 205
+    inc_name : 205
     inc_type : 205
     inc_note : 205
     inc_obs_date_y : 21

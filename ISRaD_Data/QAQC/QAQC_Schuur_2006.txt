@@ -5,8 +5,6 @@
 
 
 File: Schuur_2006.xlsx
-Time: 2018-09-13 16:31:27 
-
 
 Checking file type...
 
@@ -99,6 +97,7 @@ Summary statistics...
     entry_name : 10
     site_name : 10
     pro_name : 10
+    pro_note : 3
     pro_treatment : 10
     pro_comp : 10
     pro_reps : 7
@@ -110,6 +109,7 @@ Summary statistics...
     entry_name : 5
     site_name : 5
     pro_name : 5
+    flx_name : 5
     flx_obs_date_y : 5
     flx_obs_date_m : 5
     flx_obs_date_d : 5
@@ -138,7 +138,6 @@ Summary statistics...
     lyr_obs_date_y : 13
     lyr_obs_date_m : 13
     lyr_obs_date_d : 13
-    lyr_non_bulk : 7
     lyr_top : 13
     lyr_bot : 13
     lyr_note : 13
@@ -151,7 +150,7 @@ Summary statistics...
     site_name : 7
     pro_name : 7
     lyr_name : 7
-    frc_name : 7
+    inc_name : 7
     inc_type : 7
     inc_note : 7
     inc_obs_date_y : 7

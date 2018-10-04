@@ -5,8 +5,6 @@
 
 
 File: Harrison_1993.xlsx
-Time: 2018-09-13 16:29:40 
-
 
 Checking file type...
 
@@ -113,7 +111,6 @@ Summary statistics...
     pro_name : 4
     lyr_name : 4
     lyr_obs_date_y : 4
-    lyr_non_bulk : 4
     lyr_top : 4
     lyr_bot : 4
     lyr_fraction_modern : 1

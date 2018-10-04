@@ -5,8 +5,6 @@
 
 
 File: Taylor_2015.xlsx
-Time: 2018-09-13 16:31:36 
-
 
 Checking file type...
 
@@ -116,6 +114,7 @@ Summary statistics...
     site_name : 24
     plot_name : 24
     pro_name : 24
+    flx_name : 24
     flx_obs_date_y : 24
     flx_obs_date_m : 24
     flx_obs_date_d : 24
@@ -127,7 +126,6 @@ Summary statistics...
     lyr_obs_date_y : 51
     lyr_obs_date_m : 51
     lyr_obs_date_d : 51
-    lyr_non_bulk : 51
     lyr_top : 51
     lyr_bot : 51
     lyr_note : 45
@@ -151,6 +149,7 @@ Summary statistics...
     pro_name : 62
     lyr_name : 62
     frc_name : 26
+    inc_name : 62
     inc_type : 62
     inc_13c : 56
     inc_rc_lab_number : 62

@@ -5,8 +5,6 @@
 
 
 File: Muhr_2009.xlsx
-Time: 2018-09-13 16:30:57 
-
 
 Checking file type...
 
@@ -115,6 +113,7 @@ Summary statistics...
     entry_name : 6
     site_name : 6
     pro_name : 6
+    flx_name : 6
     flx_obs_date_y : 6
     flx_obs_date_m : 6
     flx_obs_date_d : 6
@@ -138,7 +137,6 @@ Summary statistics...
     lyr_obs_date_y : 6
     lyr_obs_date_m : 6
     lyr_obs_date_d : 6
-    lyr_non_bulk : 6
     lyr_top : 6
     lyr_bot : 6
     lyr_hzn : 6
@@ -150,6 +148,7 @@ Summary statistics...
     site_name : 9
     pro_name : 9
     lyr_name : 9
+    inc_name : 9
     inc_type : 9
     inc_obs_date_y : 9
     inc_obs_date_m : 9

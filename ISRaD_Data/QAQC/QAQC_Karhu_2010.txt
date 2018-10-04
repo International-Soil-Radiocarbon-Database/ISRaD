@@ -5,8 +5,6 @@
 
 
 File: Karhu_2010.xlsx
-Time: 2018-09-13 16:30:09 
-
 
 Checking file type...
 
@@ -118,7 +116,6 @@ Summary statistics...
     pro_name : 6
     lyr_name : 6
     lyr_obs_date_y : 6
-    lyr_non_bulk : 6
     lyr_top : 6
     lyr_bot : 6
     lyr_soc : 6
@@ -143,6 +140,7 @@ Summary statistics...
     site_name : 12
     pro_name : 12
     lyr_name : 12
+    inc_name : 12
     inc_type : 12
     inc_duration : 12
     inc_duration_type : 12

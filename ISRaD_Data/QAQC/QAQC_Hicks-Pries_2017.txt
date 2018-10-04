@@ -5,8 +5,6 @@
 
 
 File: Hicks-Pries_2017.xlsx
-Time: 2018-09-13 16:29:57 
-
 
 Checking file type...
 
@@ -117,6 +115,7 @@ Summary statistics...
     site_name : 820
     plot_name : 820
     pro_name : 820
+    flx_name : 820
     flx_obs_date_y : 820
     flx_obs_date_m : 820
     flx_obs_date_d : 820

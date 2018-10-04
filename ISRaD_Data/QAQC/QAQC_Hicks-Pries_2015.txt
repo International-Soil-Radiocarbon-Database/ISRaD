@@ -5,8 +5,6 @@
 
 
 File: Hicks-Pries_2015.xlsx
-Time: 2018-09-13 16:29:52 
-
 
 Checking file type...
 
@@ -119,7 +117,6 @@ Summary statistics...
     lyr_name : 41
     lyr_obs_date_y : 41
     lyr_obs_date_m : 41
-    lyr_non_bulk : 41
     lyr_all_org_neg : 41
     lyr_top : 41
     lyr_bot : 41
@@ -133,6 +130,7 @@ Summary statistics...
     site_name : 41
     pro_name : 41
     lyr_name : 41
+    inc_name : 41
     inc_type : 41
     inc_note : 41
     inc_obs_date_y : 41

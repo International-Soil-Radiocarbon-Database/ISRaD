@@ -5,8 +5,6 @@
 
 
 File: Nowinski_2010.xlsx
-Time: 2018-09-13 16:31:10 
-
 
 Checking file type...
 
@@ -114,7 +112,6 @@ Summary statistics...
     lyr_obs_date_y : 23
     lyr_obs_date_m : 23
     lyr_obs_date_d : 23
-    lyr_non_bulk : 23
     lyr_top : 23
     lyr_bot : 23
     lyr_hzn : 23
@@ -126,6 +123,7 @@ Summary statistics...
     site_name : 23
     pro_name : 23
     lyr_name : 23
+    inc_name : 23
     inc_type : 23
     inc_note : 8
     inc_duration : 23
