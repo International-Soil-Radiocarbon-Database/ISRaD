@@ -12,7 +12,7 @@ For earlier versions, visit our website.
 
 ```{r eval=FALSE}
 install.packages("devtools")
-install_github("International-Soil-Radiocarbon-Database/ISRaD", ref = "v0.1.0")
+install_github("International-Soil-Radiocarbon-Database/ISRaD")
 library(ISRaD)
 ```
 Once installed, the **ISRaD** package provides the pre-compiled version of database associated with the most current data release. These data are formated as a list called `ISRaD_data`. 
