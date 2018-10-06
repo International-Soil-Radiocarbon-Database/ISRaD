@@ -216,7 +216,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   mismatch.rows <- anti_join(data$profile, data$site, by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$profile,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    cat("\n\tWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind, ")", file=outfile, append = T)
+    cat("\n\tWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -264,7 +264,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   mismatch.rows <- anti_join(data$flux, data$site, by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$flux,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    cat("\n\tWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind, ")", file=outfile, append = T)
+    cat("\n\tWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -311,7 +311,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   mismatch.rows <- anti_join(data$layer, data$profile, by=c("entry_name","site_name","pro_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    cat("\n\tWARNING: Name combination mismatch between 'layer' and 'profile' tabs. ( row/s:", row.ind, ")", file=outfile, append = T)
+    cat("\n\tWARNING: Name combination mismatch between 'layer' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -358,7 +358,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   mismatch.rows <- anti_join(data$interstitial, data$profile, by=c("entry_name","site_name","pro_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$interstitial,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    cat("\n\tWARNING: Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind, ")", file=outfile, append = T)
+    cat("\n\tWARNING: Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -417,7 +417,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   mismatch.rows <- anti_join(data$fraction, data$layer, by=c("entry_name","site_name","pro_name","lyr_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$fraction,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    cat("\n\tWARNING: Name combination mismatch between 'fraction' and 'layer' tabs. ( row/s:", row.ind, ")", file=outfile, append = T)
+    cat("\n\tWARNING: Name combination mismatch between 'fraction' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -476,7 +476,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   mismatch.rows <- anti_join(data$incubation, data$layer, by=c("entry_name","site_name","pro_name","lyr_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    cat("\n\tWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind, ")", file=outfile, append = T)
+    cat("\n\tWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
