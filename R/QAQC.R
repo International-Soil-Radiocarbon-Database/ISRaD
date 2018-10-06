@@ -170,7 +170,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
         x <- as.data.frame(matrix(x, nrow = 1))
     cx <- do.call("paste", c(x[, , drop = FALSE], sep = "\r"))
     ct <- do.call("paste", c(table[, , drop = FALSE], sep = "\r"))
-    matches <- match(cx, ct, nomatch = nomatch)+3
+    match(cx, ct, nomatch = nomatch)+3
   }
 
   # check site tab #
