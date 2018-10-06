@@ -13,7 +13,7 @@
 #' @export
 
 
-QAQC <- function(file, writeQCreport=F, outfile=""){
+QAQC_temp <- function(file, writeQCreport=F, outfile=""){
 
   ##### setup #####
 
