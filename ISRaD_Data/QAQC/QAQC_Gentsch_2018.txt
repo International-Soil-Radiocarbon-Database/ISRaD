@@ -163,8 +163,8 @@ Summary statistics...
     frc_15n : 80
     frc_13c : 81
     frc_14c : 43
-    frc_frc_modern : 43
-    frc_frc_modern_sigma : 31
+    frc_fraction_modern : 43
+    frc_fraction_modern_sigma : 31
     frc_mbc_method : 94
     frc_reported_mbc : 86
     frc_fe_py : 94

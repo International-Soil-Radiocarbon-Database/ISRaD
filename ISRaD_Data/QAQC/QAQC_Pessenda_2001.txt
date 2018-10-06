@@ -133,8 +133,8 @@ Summary statistics...
     frc_obs_date_y : 26
     frc_14c : 14
     frc_14c_sigma : 14
-    frc_frc_modern : 26
-    frc_frc_modern_sigma : 14
+    frc_fraction_modern : 26
+    frc_fraction_modern_sigma : 14
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

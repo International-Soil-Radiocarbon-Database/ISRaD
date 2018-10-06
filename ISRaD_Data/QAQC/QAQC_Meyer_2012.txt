@@ -131,7 +131,7 @@ Summary statistics...
     frc_agent : 30
     frc_c_perc : 24
     frc_rc_year : 30
-    frc_frc_modern : 30
+    frc_fraction_modern : 30
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

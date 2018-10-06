@@ -131,8 +131,8 @@ Summary statistics...
     frc_upper : 30
     frc_agent : 30
     frc_obs_date_y : 30
-    frc_frc_modern : 18
-    frc_frc_modern_sigma : 18
+    frc_fraction_modern : 18
+    frc_fraction_modern_sigma : 18
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

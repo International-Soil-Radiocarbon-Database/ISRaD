@@ -140,8 +140,8 @@ Summary statistics...
     frc_13c : 8
     frc_rc_lab : 9
     frc_rc_year : 9
-    frc_frc_modern : 9
-    frc_frc_modern_sigma : 9
+    frc_fraction_modern : 9
+    frc_fraction_modern_sigma : 9
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

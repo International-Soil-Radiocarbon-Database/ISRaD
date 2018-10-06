@@ -134,7 +134,7 @@ Summary statistics...
     frc_lower : 8
     frc_upper : 8
     frc_agent : 8
-    frc_frc_modern : 8
+    frc_fraction_modern : 8
  incubation tab...12 observations
     entry_name : 12
     site_name : 12

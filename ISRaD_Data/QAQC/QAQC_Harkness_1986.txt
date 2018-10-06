@@ -130,7 +130,7 @@ Summary statistics...
     frc_upper : 38
     frc_agent : 38
     frc_scheme_conc : 31
-    frc_frc_modern : 38
+    frc_fraction_modern : 38
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

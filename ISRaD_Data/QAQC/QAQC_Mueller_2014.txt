@@ -149,8 +149,8 @@ Summary statistics...
     frc_c_to_n : 7
     frc_13c : 9
     frc_rc_lab : 3
-    frc_frc_modern : 3
-    frc_frc_modern_sd : 3
+    frc_fraction_modern : 3
+    frc_fraction_modern_sd : 3
     frc_mbc_method : 3
     frc_reported_mbc : 3
  incubation tab...16 observations

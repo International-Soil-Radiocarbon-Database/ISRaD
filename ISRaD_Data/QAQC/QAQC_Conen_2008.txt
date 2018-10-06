@@ -139,7 +139,7 @@ Summary statistics...
     frc_c_to_n : 26
     frc_15n : 26
     frc_rc_lab : 26
-    frc_frc_modern : 26
+    frc_fraction_modern : 26
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

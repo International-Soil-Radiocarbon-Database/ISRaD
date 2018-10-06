@@ -136,8 +136,8 @@ Summary statistics...
     frc_13c : 54
     frc_rc_lab : 54
     frc_rc_lab_number : 3
-    frc_frc_modern : 54
-    frc_frc_modern_sigma : 36
+    frc_fraction_modern : 54
+    frc_fraction_modern_sigma : 36
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
