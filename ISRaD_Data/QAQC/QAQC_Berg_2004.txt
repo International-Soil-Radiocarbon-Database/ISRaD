@@ -111,6 +111,7 @@ Summary statistics...
     entry_name : 5
     site_name : 5
     pro_name : 5
+    flx_name : 5
     flx_obs_date_y : 5
     flx_pathway : 5
     flx_analyte : 5

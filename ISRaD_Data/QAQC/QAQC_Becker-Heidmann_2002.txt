@@ -4,9 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: DorrandMunnich_1980_1986.xlsx
-Time: 2018-09-13 16:28:58 
-
+File: Becker-Heidmann_2002.xlsx
 
 Checking file type...
 
@@ -15,7 +13,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( interstitial fraction incubation )
+	NOTE: empty tabs detected ( flux interstitial fraction incubation )
 
 Checking dataset doi...
 
@@ -75,50 +73,50 @@ It might be useful to manually review the summary statistics and graphical repre
 
 Summary statistics...
 
- metadata tab...2 observations
-    entry_name : 2
-    doi : 2
-    curator_name : 2
-    curator_organization : 2
-    curator_email : 2
-    modification_date_y : 2
-    modification_date_m : 2
-    modification_date_d : 2
-    contact_name : 2
-    contact_email : 2
-    bibliographical_reference : 2
+ metadata tab...1 observations
+    entry_name : 1
+    doi : 1
+    compilation_doi : 1
+    curator_name : 1
+    curator_organization : 1
+    curator_email : 1
+    modification_date_y : 1
+    modification_date_m : 1
+    modification_date_d : 1
+    contact_name : 1
+    contact_email : 1
+    bibliographical_reference : 1
+    template_version : 1
  site tab...3 observations
     entry_name : 3
     site_name : 3
     site_lat : 3
     site_long : 3
- profile tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    pro_treatment : 2
- flux tab...6 observations
-    entry_name : 6
-    site_name : 6
-    pro_name : 6
-    flx_obs_date_y : 6
-    flx_obs_date_m : 6
-    flx_obs_date_d : 6
-    flx_13c : 6
-    flx_rc_year : 6
-    flx_14c : 6
-    flx_14c_sd : 6
- layer tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    lyr_name : 2
-    lyr_obs_date_y : 2
-    lyr_top : 2
-    lyr_bot : 2
-    lyr_13c : 2
-    lyr_rc_year : 2
-    lyr_14c : 2
+    site_elevation : 3
+ profile tab...3 observations
+    entry_name : 3
+    site_name : 3
+    pro_name : 3
+    pro_treatment : 3
+    pro_MAT : 3
+    pro_MAP : 3
+    pro_soil_taxon : 3
+    pro_soil_taxon_sys : 3
+    pro_land_cover : 3
+    pro_veg_note : 3
+ flux tab...0 observations
+ layer tab...199 observations
+    entry_name : 199
+    site_name : 199
+    pro_name : 199
+    lyr_name : 199
+    lyr_obs_date_y : 199
+    lyr_top : 199
+    lyr_bot : 199
+    lyr_hzn : 199
+    lyr_c_tot : 199
+    lyr_14c : 191
+    lyr_fraction_modern : 191
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...0 observations

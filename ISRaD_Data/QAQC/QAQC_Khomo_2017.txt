@@ -5,8 +5,6 @@
 
 
 File: Khomo_2017.xlsx
-Time: 2018-09-13 16:30:14 
-
 
 Checking file type...
 
@@ -105,18 +103,18 @@ Summary statistics...
     pro_parent_chem : 13
     pro_parent_material_notes : 13
  flux tab...0 observations
- layer tab...151 observations
-    entry_name : 151
-    site_name : 151
-    pro_name : 151
-    lyr_name : 151
-    lyr_obs_date_y : 151
-    lyr_obs_date_m : 68
-    lyr_obs_date_d : 68
-    lyr_top : 151
-    lyr_bot : 151
-    lyr_hzn : 104
-    lyr_note : 68
+ layer tab...107 observations
+    entry_name : 107
+    site_name : 107
+    pro_name : 107
+    lyr_name : 107
+    lyr_obs_date_y : 107
+    lyr_obs_date_m : 24
+    lyr_obs_date_d : 24
+    lyr_top : 107
+    lyr_bot : 107
+    lyr_hzn : 83
+    lyr_note : 24
     lyr_color : 83
     lyr_bd_tot : 83
     lyr_bd_notes : 83
@@ -168,6 +166,7 @@ Summary statistics...
     site_name : 68
     pro_name : 68
     lyr_name : 68
+    inc_name : 68
     inc_type : 68
     inc_note : 68
     inc_obs_date_y : 68

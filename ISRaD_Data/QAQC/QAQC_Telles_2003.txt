@@ -5,8 +5,6 @@
 
 
 File: Telles_2003.xlsx
-Time: 2018-09-13 14:15:32 
-
 
 Checking file type...
 
@@ -86,42 +84,60 @@ Summary statistics...
     modification_date_d : 1
     contact_name : 1
     contact_email : 1
+    contact_orcid_id : 1
     bibliographical_reference : 1
- site tab...4 observations
+    metadata_note : 1
+    associated_datasets : 1
+ site tab...2 observations
+    entry_name : 2
+    site_name : 2
+    site_lat : 2
+    site_long : 2
+    site_datum : 2
+    site_elevation : 2
+    site_note : 2
+ profile tab...4 observations
     entry_name : 4
     site_name : 4
-    site_lat : 4
-    site_long : 4
-    site_elevation : 4
- profile tab...5 observations
-    entry_name : 5
-    site_name : 5
-    pro_name : 5
-    pro_treatment : 5
-    pro_MAT : 5
-    pro_MAP : 5
-    pro_soil_taxon : 5
-    pro_land_cover : 5
-    pro_veg_note : 5
+    plot_name : 4
+    pro_name : 4
+    pro_note : 4
+    pro_treatment : 4
+    pro_MAT : 4
+    pro_MAP : 4
+    pro_soil_taxon : 4
+    pro_soil_age : 4
+    pro_land_cover : 4
+    pro_bedrock_depth : 4
+    pro_depth_water : 4
+    pro_parent_material : 4
+    pro_parent_chem : 4
+    pro_parent_material_notes : 4
+    pro_2d_position : 4
+    pro_drainage_class : 4
  flux tab...0 observations
- layer tab...36 observations
-    entry_name : 36
-    site_name : 36
-    pro_name : 36
-    lyr_name : 36
-    lyr_obs_date_y : 36
-    lyr_top : 36
-    lyr_bot : 36
-    lyr_bd_tot : 36
-    lyr_sand_tot_psa : 3
-    lyr_silt_tot_psa : 3
-    lyr_clay_tot_psa : 3
-    lyr_c_tot : 36
+ layer tab...38 observations
+    entry_name : 38
+    site_name : 38
+    pro_name : 38
+    lyr_name : 38
+    lyr_obs_date_y : 38
+    lyr_obs_date_m : 38
+    lyr_obs_date_d : 38
+    lyr_top : 38
+    lyr_bot : 38
+    lyr_hzn : 2
+    lyr_bd_samp : 6
+    lyr_bd_tot : 6
+    lyr_c_inorg : 36
+    lyr_c_org : 36
     lyr_n_tot : 6
-    lyr_c_to_n : 1
-    lyr_13c : 36
-    lyr_14c : 36
-    lyr_14c_sigma : 36
+    lyr_13c : 30
+    lyr_rc_lab : 38
+    lyr_rc_lab_number : 38
+    lyr_rc_year : 38
+    lyr_14c : 38
+    lyr_14c_sigma : 38
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...0 observations

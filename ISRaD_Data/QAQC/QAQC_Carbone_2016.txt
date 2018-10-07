@@ -5,8 +5,6 @@
 
 
 File: Carbone_2016.xlsx
-Time: 2018-09-13 16:28:20 
-
 
 Checking file type...
 
@@ -114,7 +112,6 @@ Summary statistics...
     lyr_name : 5
     lyr_obs_date_y : 5
     lyr_obs_date_m : 5
-    lyr_non_bulk : 5
     lyr_all_org_neg : 5
     lyr_top : 5
     lyr_bot : 5
@@ -127,6 +124,7 @@ Summary statistics...
     site_name : 5
     pro_name : 5
     lyr_name : 5
+    inc_name : 5
     inc_type : 5
     inc_note : 5
     inc_duration : 5

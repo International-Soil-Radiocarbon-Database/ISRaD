@@ -5,8 +5,6 @@
 
 
 File: Nowinski_2009.xlsx
-Time: 2018-09-13 16:31:05 
-
 
 Checking file type...
 
@@ -154,6 +152,7 @@ Summary statistics...
     site_name : 54
     pro_name : 54
     lyr_name : 54
+    inc_name : 54
     inc_type : 54
     inc_13c : 53
     inc_rc_lab : 53

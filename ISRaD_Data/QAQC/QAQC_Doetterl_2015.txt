@@ -5,8 +5,6 @@
 
 
 File: Doetterl_2015.xlsx
-Time: 2018-09-13 16:28:56 
-
 
 Checking file type...
 
@@ -117,7 +115,6 @@ Summary statistics...
     pro_name : 24
     lyr_name : 24
     lyr_obs_date_y : 24
-    lyr_non_bulk : 24
     lyr_top : 24
     lyr_bot : 24
     lyr_sand_tot_psa : 24
@@ -132,6 +129,7 @@ Summary statistics...
     site_name : 24
     pro_name : 24
     lyr_name : 24
+    inc_name : 24
     inc_type : 24
     inc_note : 24
     inc_duration : 24

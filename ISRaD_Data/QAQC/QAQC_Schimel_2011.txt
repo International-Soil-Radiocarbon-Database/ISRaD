@@ -5,8 +5,6 @@
 
 
 File: Schimel_2011.xlsx
-Time: 2018-09-13 16:31:16 
-
 
 Checking file type...
 
@@ -113,7 +111,6 @@ Summary statistics...
     lyr_name : 2
     lyr_obs_date_y : 2
     lyr_obs_date_m : 2
-    lyr_non_bulk : 2
     lyr_top : 2
     lyr_bot : 2
     lyr_hzn : 2
@@ -127,6 +124,7 @@ Summary statistics...
     site_name : 4
     pro_name : 4
     lyr_name : 4
+    inc_name : 4
     inc_type : 4
     inc_note : 4
     inc_duration : 4

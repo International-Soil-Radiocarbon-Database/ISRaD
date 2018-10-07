@@ -5,8 +5,6 @@
 
 
 File: Czimczik_2010.xlsx
-Time: 2018-09-13 16:28:45 
-
 
 Checking file type...
 
@@ -104,7 +102,7 @@ Summary statistics...
     pro_MAP : 16
     pro_soil_taxon : 16
     pro_soil_taxon_sys : 16
-    pro_land_cover : 14
+    pro_land_cover : 16
     pro_veg_note : 6
     pro_thaw_depth : 5
     pro_aspect_deg : 5
@@ -114,6 +112,7 @@ Summary statistics...
     entry_name : 12
     site_name : 12
     pro_name : 12
+    flx_name : 12
     flx_obs_date_y : 12
     flx_obs_date_m : 12
     flx_pathway : 12
@@ -130,7 +129,6 @@ Summary statistics...
     lyr_name : 35
     lyr_obs_date_y : 35
     lyr_obs_date_m : 35
-    lyr_non_bulk : 26
     lyr_top : 35
     lyr_bot : 35
     lyr_bd_samp : 12
@@ -150,6 +148,7 @@ Summary statistics...
     entry_name : 35
     site_name : 35
     pro_name : 35
+    ist_name : 35
     ist_obs_date_y : 35
     ist_depth : 35
     ist_phase : 35
@@ -174,6 +173,7 @@ Summary statistics...
     site_name : 26
     pro_name : 26
     lyr_name : 26
+    inc_name : 26
     inc_type : 26
     inc_note : 26
     inc_duration : 26

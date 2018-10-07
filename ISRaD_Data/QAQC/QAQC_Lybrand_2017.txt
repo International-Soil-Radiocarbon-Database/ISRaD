@@ -5,8 +5,6 @@
 
 
 File: Lybrand_2017.xlsx
-Time: 2018-09-13 16:30:36 
-
 
 Checking file type...
 
@@ -144,8 +142,8 @@ Summary statistics...
     frc_14c : 48
     frc_14c_sigma : 39
     frc_14c_sd : 9
-    frc_frc_modern : 37
-    frc_frc_modern_sigma : 37
+    frc_fraction_modern : 37
+    frc_fraction_modern_sigma : 37
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

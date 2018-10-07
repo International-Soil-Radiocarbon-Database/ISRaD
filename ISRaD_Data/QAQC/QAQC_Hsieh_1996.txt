@@ -5,8 +5,6 @@
 
 
 File: Hsieh_1996.xlsx
-Time: 2018-09-13 16:30:02 
-
 
 Checking file type...
 
@@ -133,6 +131,7 @@ Summary statistics...
     site_name : 2
     pro_name : 2
     lyr_name : 2
+    inc_name : 2
     inc_type : 2
     inc_note : 2
     inc_obs_date_y : 2

@@ -5,8 +5,6 @@
 
 
 File: Meyer_2012.xlsx
-Time: 2018-09-13 16:30:48 
-
 
 Checking file type...
 
@@ -133,7 +131,7 @@ Summary statistics...
     frc_agent : 30
     frc_c_perc : 24
     frc_rc_year : 30
-    frc_frc_modern : 30
+    frc_fraction_modern : 30
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
