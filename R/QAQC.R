@@ -281,12 +281,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$flux %>% group_by(entry_name, site_name, flx_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates)>0){
-    row.ind <- rowmatch(duplicates[,1:3],data$incubation[,1:3])
-    cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-    error <- error+1
-  }
+  ## need to add if statement to account for templates w/o flx_name col
+  # duplicates <- data$flux %>% group_by(entry_name, site_name, flx_name) %>% summarize(n=n()) %>% filter(n>1)
+  # if(length(duplicates)>0){
+  #   row.ind <- rowmatch(duplicates[,1:3],data$incubation[,1:3])
+  #   cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+  #   error <- error+1
+  # }
 
 
   # check layer tab #
@@ -389,12 +390,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$interstitial %>% group_by(entry_name, site_name, pro_name, ist_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates)>0){
-    row.ind <- rowmatch(duplicates[,1:4],data$incubation[,1:4])
-    cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-    error <- error+1
-  }
+  ## need to add if statement to account for templates w/o flx_name col
+  # duplicates <- data$interstitial %>% group_by(entry_name, site_name, pro_name, ist_name) %>% summarize(n=n()) %>% filter(n>1)
+  # if(length(duplicates)>0){
+  #   row.ind <- rowmatch(duplicates[,1:4],data$incubation[,1:4])
+  #   cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+  #   error <- error+1
+  # }
 
   # check fraction tab #
   cat("\n fraction tab...", file=outfile, append = T)
@@ -526,12 +528,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$incubation %>% group_by(entry_name, site_name, pro_name, lyr_name, inc_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates)>0){
-    row.ind <- rowmatch(duplicates[,1:5],data$incubation[,1:5])
-    cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-    error <- error+1
-  }
+  ## need to add if statement to account for templates w/o inc_name col
+  # duplicates <- data$incubation %>% group_by(entry_name, site_name, pro_name, lyr_name, inc_name) %>% summarize(n=n()) %>% filter(n>1)
+  # if(length(duplicates)>0){
+  #   row.ind <- rowmatch(duplicates[,1:5],data$incubation[,1:5])
+  #   cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+  #   error <- error+1
+  # }
 
 
   ##### check numeric values #####
