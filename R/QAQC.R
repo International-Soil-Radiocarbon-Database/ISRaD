@@ -456,11 +456,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  mismatch.frc <- match(setdiff(data$fraction$frc_input, c(data$layer$lyr_name, data$fraction$frc_name)),data$fraction$frc_input)
-  if(length(mismatch.frc)>0){
-    cat("\n\tWARNING: frc_input not found. ( row/s:", mismatch.frc+3, ")", file=outfile, append = T)
-    error <- error+1
-  }
+  ## needs work
+  # mismatch.frc <- match(setdiff(data$fraction$frc_input, c(data$layer$lyr_name, data$fraction$frc_name)),data$fraction$frc_input)
+  # if(length(mismatch.frc)>0){
+  #   cat("\n\tWARNING: frc_input not found. ( row/s:", mismatch.frc+3, ")", file=outfile, append = T)
+  #   error <- error+1
+  # }
 
   # duplicates <- data$fraction %>% group_by(entry_name, site_name, pro_name, lyr_name, frc_name) %>% summarize(n=n()) %>% filter(n>1)
   # if(length(duplicates)>0){
