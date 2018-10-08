@@ -108,19 +108,19 @@ Summary statistics...
     pro_veg_note : 24
     pro_thaw_depth : 24
  flux tab...0 observations
- layer tab...129 observations
-    entry_name : 129
-    site_name : 129
-    pro_name : 129
-    lyr_name : 129
-    lyr_obs_date_y : 129
-    lyr_obs_date_m : 129
-    lyr_obs_date_d : 129
-    lyr_all_org_neg : 129
-    lyr_top : 129
-    lyr_bot : 129
-    lyr_hzn : 129
-    lyr_note : 129
+ layer tab...128 observations
+    entry_name : 128
+    site_name : 128
+    pro_name : 128
+    lyr_name : 128
+    lyr_obs_date_y : 128
+    lyr_obs_date_m : 128
+    lyr_obs_date_d : 128
+    lyr_all_org_neg : 128
+    lyr_top : 128
+    lyr_bot : 128
+    lyr_hzn : 128
+    lyr_note : 128
     lyr_sand_tot_psa : 98
     lyr_silt_tot_psa : 98
     lyr_clay_tot_psa : 98
@@ -144,35 +144,35 @@ Summary statistics...
     lyr_fe_dith : 112
     lyr_al_dith : 112
  interstitial tab...0 observations
- fraction tab...119 observations
-    entry_name : 119
-    site_name : 119
-    pro_name : 119
-    lyr_name : 119
-    frc_name : 119
-    frc_input : 119
-    frc_property : 119
-    frc_scheme : 119
-    frc_scheme_units : 119
-    frc_lower : 119
-    frc_upper : 119
-    frc_agent : 119
-    frc_note : 2
-    frc_c_org : 106
-    frc_n_tot : 92
-    frc_15n : 80
-    frc_13c : 81
-    frc_14c : 43
-    frc_fraction_modern : 43
-    frc_fraction_modern_sigma : 31
-    frc_mbc_method : 94
-    frc_reported_mbc : 86
-    frc_fe_py : 94
-    frc_al_py : 94
-    frc_fe_ox : 86
-    frc_al_ox : 86
-    frc_fe_dith : 86
-    frc_al_dith : 86
+ fraction tab...72 observations
+    entry_name : 72
+    site_name : 72
+    pro_name : 72
+    lyr_name : 72
+    frc_name : 72
+    frc_input : 72
+    frc_property : 72
+    frc_scheme : 72
+    frc_scheme_units : 72
+    frc_lower : 72
+    frc_upper : 72
+    frc_agent : 72
+    frc_note : 1
+    frc_c_org : 59
+    frc_n_tot : 52
+    frc_15n : 46
+    frc_13c : 46
+    frc_14c : 31
+    frc_fraction_modern : 31
+    frc_fraction_modern_sigma : 19
+    frc_mbc_method : 47
+    frc_reported_mbc : 43
+    frc_fe_py : 47
+    frc_al_py : 47
+    frc_fe_ox : 43
+    frc_al_ox : 43
+    frc_fe_dith : 43
+    frc_al_dith : 43
  incubation tab...334 observations
     entry_name : 334
     site_name : 334

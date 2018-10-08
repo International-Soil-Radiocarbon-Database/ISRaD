@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2018-10-08 18:21:28 
+ 2018-10-08 16:45:51 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -416,20 +416,20 @@ Summary statistics...
     flx_14c_sigma : 137
     flx_14c_sd : 17
     flx_fraction_modern : 20
- layer tab...4777 observations
-    entry_name : 4777
-    site_name : 4777
-    pro_name : 4777
-    lyr_name : 4777
-    lyr_obs_date_y : 4777
-    lyr_obs_date_m : 1916
-    lyr_obs_date_d : 1714
-    lyr_all_org_neg : 323
-    lyr_top : 4777
-    lyr_bot : 4777
-    lyr_hzn : 2314
+ layer tab...4776 observations
+    entry_name : 4776
+    site_name : 4776
+    pro_name : 4776
+    lyr_name : 4776
+    lyr_obs_date_y : 4776
+    lyr_obs_date_m : 1915
+    lyr_obs_date_d : 1713
+    lyr_all_org_neg : 322
+    lyr_top : 4776
+    lyr_bot : 4776
+    lyr_hzn : 2313
     lyr_comp : 170
-    lyr_note : 705
+    lyr_note : 704
     lyr_color : 179
     lyr_burn_ev : 66
     lyr_bd_samp : 1225
@@ -525,22 +525,22 @@ Summary statistics...
     ist_14c_sigma : 132
     ist_14c_sd : 11
     ist_fraction_modern : 25
- fraction tab...2040 observations
-    entry_name : 2040
-    site_name : 2040
-    pro_name : 2040
-    lyr_name : 2040
-    frc_name : 2040
-    frc_input : 2040
-    frc_property : 1771
-    frc_scheme : 2040
-    frc_scheme_units : 2040
-    frc_lower : 2040
-    frc_upper : 2040
-    frc_agent : 2040
-    frc_scheme_conc : 127
+ fraction tab...1991 observations
+    entry_name : 1991
+    site_name : 1991
+    pro_name : 1991
+    lyr_name : 1991
+    frc_name : 1991
+    frc_input : 1991
+    frc_property : 1722
+    frc_scheme : 1991
+    frc_scheme_units : 1991
+    frc_lower : 1991
+    frc_upper : 1991
+    frc_agent : 1991
+    frc_scheme_conc : 125
     frc_comp : 117
-    frc_note : 487
+    frc_note : 486
     frc_mass_perc : 584
     frc_obs_date_y : 205
     frc_obs_date_m : 141
@@ -548,29 +548,29 @@ Summary statistics...
     frc_bet_surface_area : 21
     frc_c_perc : 472
     frc_c_tot : 637
-    frc_c_org : 620
+    frc_c_org : 573
     frc_c_inorg : 3
-    frc_n_tot : 670
+    frc_n_tot : 630
     frc_c_to_n : 542
-    frc_15n : 445
-    frc_13c : 969
+    frc_15n : 411
+    frc_13c : 934
     frc_rc_lab : 510
     frc_rc_lab_number : 73
     frc_rc_year : 707
-    frc_14c : 959
+    frc_14c : 947
     frc_14c_sigma : 250
     frc_14c_sd : 39
-    frc_fraction_modern : 311
-    frc_fraction_modern_sigma : 154
+    frc_fraction_modern : 299
+    frc_fraction_modern_sigma : 142
     frc_fraction_modern_sd : 3
-    frc_mbc_method : 97
-    frc_reported_mbc : 89
-    frc_fe_py : 94
-    frc_al_py : 94
-    frc_fe_ox : 86
-    frc_al_ox : 86
-    frc_fe_dith : 86
-    frc_al_dith : 86
+    frc_mbc_method : 50
+    frc_reported_mbc : 46
+    frc_fe_py : 47
+    frc_al_py : 47
+    frc_fe_ox : 43
+    frc_al_ox : 43
+    frc_fe_dith : 43
+    frc_al_dith : 43
  incubation tab...1624 observations
     entry_name : 1624
     site_name : 1624
