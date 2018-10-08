@@ -132,7 +132,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
   } else {
     cat("\n\nNot checking dataset doi because 'checkdoi==F'...", file=outfile, append = T)
-    
+
   }
 
   ##### check for extra or misnamed columns ####
@@ -368,6 +368,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
+  duplicates <- data$profile %>% group_by(entry_name, site_name, pro_name) %>% summarize(n=n()) %>% filter(n>1)
+  if(length(duplicates))>0){
+    row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
+    cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
   # check fraction tab #
   cat("\n fraction tab...", file=outfile, append = T)
   if (length(data$fraction$entry_name)>0){
@@ -427,6 +434,18 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
+  mismatch.frc <- match(setdiff(data$fraction$frc_input, c(data$layer$lyr_name, data$fraction$frc_name)),data$fraction$frc_input)
+  if(length(mismatch.frc)>0){
+    cat("\n\tWARNING: frc_input not found. ( row/s:", mismatch.frc+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  duplicates <- data$fraction %>% group_by(entry_name, site_name, pro_name, lyr_name, frc_name) %>% summarize(n=n()) %>% filter(n>1)
+  if(length(duplicates))>0){
+    row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
+    cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
   # check incubation tab #
   cat("\n incubation tab...", file=outfile, append = T)
@@ -483,6 +502,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  duplicates <- data$incubation %>% group_by(entry_name, site_name, pro_name, lyr_name, inc_name) %>% summarize(n=n()) %>% filter(n>1)
+  if(length(duplicates))>0){
+    row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
+    cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
