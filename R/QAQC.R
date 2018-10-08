@@ -225,6 +225,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
+  
+  duplicates <- data$flux %>% group_by(entry_name, site_name, pro_name) %>% summarize(n=n()) %>% filter(n>1)
+  if(length(duplicates))>0){
+    row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
+    cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
 
   # check flux tab #
@@ -271,6 +278,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$flux,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  duplicates <- data$flux %>% group_by(entry_name, site_name, flx_name) %>% summarize(n=n()) %>% filter(n>1)
+  if(length(duplicates))>0){
+    row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
+    cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -321,6 +335,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
+  duplicates <- data$layer %>% group_by(entry_name, site_name, pro_name, lyr_name) %>% summarize(n=n()) %>% filter(n>1)
+  if(length(duplicates))>0){
+    row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
+    cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
 
   # check interstitial tab #
   cat("\n interstitial tab...", file=outfile, append = T)
@@ -368,10 +389,10 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$profile %>% group_by(entry_name, site_name, pro_name) %>% summarize(n=n()) %>% filter(n>1)
+  duplicates <- data$interstitial %>% group_by(entry_name, site_name, pro_name, ist_name) %>% summarize(n=n()) %>% filter(n>1)
   if(length(duplicates))>0){
     row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
-    cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
