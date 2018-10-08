@@ -5,8 +5,6 @@
 
 
 File: Schulze_2011.xlsx
-Time: 2018-09-13 16:31:19 
-
 
 Checking file type...
 
@@ -116,6 +114,7 @@ Summary statistics...
     site_name : 34
     plot_name : 34
     pro_name : 34
+    flx_name : 34
     flx_obs_date_y : 34
     flx_obs_date_m : 34
     flx_obs_date_d : 34
@@ -135,6 +134,7 @@ Summary statistics...
     entry_name : 20
     site_name : 20
     pro_name : 20
+    ist_name : 20
     ist_obs_date_y : 20
     ist_obs_date_m : 20
     ist_obs_date_d : 20

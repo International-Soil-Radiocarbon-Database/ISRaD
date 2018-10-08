@@ -5,8 +5,6 @@
 
 
 File: Lavoie_2011.xlsx
-Time: 2018-09-13 16:30:16 
-
 
 Checking file type...
 
@@ -119,7 +117,6 @@ Summary statistics...
     lyr_obs_date_y : 7
     lyr_obs_date_m : 7
     lyr_obs_date_d : 7
-    lyr_non_bulk : 7
     lyr_all_org_neg : 7
     lyr_top : 7
     lyr_bot : 7
@@ -137,6 +134,7 @@ Summary statistics...
     site_name : 14
     pro_name : 14
     lyr_name : 14
+    inc_name : 14
     inc_type : 14
     inc_duration : 14
     inc_duration_type : 14

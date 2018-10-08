@@ -5,8 +5,6 @@
 
 
 File: Waldrop_2012.xlsx
-Time: 2018-09-13 16:31:47 
-
 
 Checking file type...
 
@@ -113,7 +111,6 @@ Summary statistics...
     lyr_name : 29
     lyr_obs_date_y : 29
     lyr_obs_date_m : 29
-    lyr_non_bulk : 29
     lyr_all_org_neg : 6
     lyr_top : 29
     lyr_bot : 29
@@ -128,6 +125,7 @@ Summary statistics...
     site_name : 41
     pro_name : 41
     lyr_name : 41
+    inc_name : 41
     inc_type : 41
     inc_obs_date_y : 41
     inc_obs_date_m : 41

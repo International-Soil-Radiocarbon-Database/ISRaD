@@ -5,8 +5,6 @@
 
 
 File: Cusack_2010.xlsx
-Time: 2018-09-13 16:28:33 
-
 
 Checking file type...
 
@@ -115,7 +113,6 @@ Summary statistics...
     lyr_obs_date_y : 17
     lyr_obs_date_m : 17
     lyr_obs_date_d : 17
-    lyr_non_bulk : 17
     lyr_top : 17
     lyr_bot : 17
  interstitial tab...0 observations
@@ -125,6 +122,7 @@ Summary statistics...
     site_name : 53
     pro_name : 53
     lyr_name : 53
+    inc_name : 53
     inc_type : 53
     inc_note : 53
     inc_obs_date_y : 53

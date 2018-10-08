@@ -92,7 +92,7 @@ compile <- function(dataset_directory,
   for(d in 1:length(data_files)){
     cat("\n\n",d, "checking", basename(data_files[d]),"...",
         file=outfile, append = TRUE)
-    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE)
+    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE)
     if (attributes(soilcarbon_data)$error>0) {
       cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
       next

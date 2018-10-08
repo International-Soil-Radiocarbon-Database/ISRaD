@@ -5,8 +5,6 @@
 
 
 File: Lemke_2006.xlsx
-Time: 2018-09-13 16:30:27 
-
 
 Checking file type...
 
@@ -113,6 +111,7 @@ Summary statistics...
     site_name : 8
     plot_name : 8
     pro_name : 8
+    flx_name : 8
     flx_obs_date_y : 8
     flx_obs_date_m : 8
     flx_obs_date_d : 8
@@ -134,7 +133,6 @@ Summary statistics...
     lyr_obs_date_y : 25
     lyr_obs_date_m : 25
     lyr_obs_date_d : 25
-    lyr_non_bulk : 2
     lyr_top : 25
     lyr_bot : 25
     lyr_hzn : 23
@@ -149,6 +147,7 @@ Summary statistics...
     entry_name : 2
     site_name : 2
     pro_name : 2
+    ist_name : 2
     ist_obs_date_y : 2
     ist_obs_date_m : 2
     ist_obs_date_d : 2
@@ -184,6 +183,7 @@ Summary statistics...
     site_name : 7
     pro_name : 7
     lyr_name : 7
+    inc_name : 7
     inc_type : 7
     inc_note : 5
     inc_obs_date_y : 5

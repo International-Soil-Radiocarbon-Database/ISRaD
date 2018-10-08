@@ -5,8 +5,6 @@
 
 
 File: Gaudinski_2001.xlsx
-Time: 2018-09-13 16:29:24 
-
 
 Checking file type...
 
@@ -112,6 +110,7 @@ Summary statistics...
     site_name : 97
     plot_name : 97
     pro_name : 97
+    flx_name : 97
     flx_obs_date_y : 97
     flx_obs_date_m : 97
     flx_obs_date_d : 97
@@ -134,7 +133,6 @@ Summary statistics...
     pro_name : 49
     lyr_name : 49
     lyr_obs_date_y : 49
-    lyr_non_bulk : 16
     lyr_top : 49
     lyr_bot : 49
     lyr_hzn : 49
@@ -154,6 +152,7 @@ Summary statistics...
     entry_name : 33
     site_name : 33
     pro_name : 33
+    ist_name : 33
     ist_obs_date_y : 33
     ist_obs_date_m : 33
     ist_obs_date_d : 33
@@ -197,6 +196,7 @@ Summary statistics...
     site_name : 16
     pro_name : 16
     lyr_name : 16
+    inc_name : 16
     inc_type : 16
     inc_obs_date_y : 16
     inc_obs_date_m : 16

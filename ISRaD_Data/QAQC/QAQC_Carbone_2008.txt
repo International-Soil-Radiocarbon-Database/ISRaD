@@ -5,8 +5,6 @@
 
 
 File: Carbone_2008.xlsx
-Time: 2018-09-13 16:28:13 
-
 
 Checking file type...
 
@@ -124,6 +122,7 @@ Summary statistics...
     site_name : 3
     pro_name : 3
     lyr_name : 3
+    inc_name : 3
     inc_type : 3
     inc_note : 3
     inc_obs_date_y : 3

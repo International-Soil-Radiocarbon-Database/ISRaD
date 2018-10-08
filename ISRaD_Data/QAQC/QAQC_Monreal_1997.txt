@@ -5,8 +5,6 @@
 
 
 File: Monreal_1997.xlsx
-Time: 2018-09-13 16:30:50 
-
 
 Checking file type...
 

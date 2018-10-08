@@ -5,8 +5,6 @@
 
 
 File: Lupascu_2018.xlsx
-Time: 2018-09-13 16:30:31 
-
 
 Checking file type...
 
@@ -111,6 +109,7 @@ Summary statistics...
     entry_name : 20
     site_name : 20
     pro_name : 20
+    flx_name : 20
     flx_obs_date_y : 20
     flx_obs_date_m : 20
     flx_obs_date_d : 20
@@ -146,6 +145,7 @@ Summary statistics...
     entry_name : 25
     site_name : 25
     pro_name : 25
+    ist_name : 25
     ist_obs_date_y : 25
     ist_obs_date_m : 25
     ist_obs_date_d : 25

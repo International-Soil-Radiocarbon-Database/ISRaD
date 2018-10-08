@@ -5,8 +5,6 @@
 
 
 File: Wunderlich_2012.xlsx
-Time: 2018-09-13 16:31:54 
-
 
 Checking file type...
 
@@ -118,6 +116,7 @@ Summary statistics...
     site_name : 103
     plot_name : 90
     pro_name : 103
+    flx_name : 103
     flx_obs_date_y : 103
     flx_obs_date_m : 103
     flx_obs_date_d : 103
@@ -136,7 +135,6 @@ Summary statistics...
     lyr_obs_date_y : 30
     lyr_obs_date_m : 30
     lyr_obs_date_d : 15
-    lyr_non_bulk : 30
     lyr_top : 30
     lyr_bot : 30
  interstitial tab...0 observations
@@ -146,6 +144,7 @@ Summary statistics...
     site_name : 26
     pro_name : 26
     lyr_name : 26
+    inc_name : 26
     inc_type : 26
     inc_obs_date_y : 26
     inc_obs_date_m : 26

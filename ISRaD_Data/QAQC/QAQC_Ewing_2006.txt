@@ -5,8 +5,6 @@
 
 
 File: Ewing_2006.xlsx
-Time: 2018-09-13 16:29:14 
-
 
 Checking file type...
 
@@ -113,6 +111,7 @@ Summary statistics...
     entry_name : 2
     site_name : 2
     pro_name : 2
+    flx_name : 2
     flx_obs_date_y : 2
     flx_pathway : 2
     flx_analyte : 2
@@ -124,7 +123,6 @@ Summary statistics...
     pro_name : 4
     lyr_name : 4
     lyr_obs_date_y : 4
-    lyr_non_bulk : 4
     lyr_top : 4
     lyr_bot : 4
     lyr_hzn : 4
@@ -137,6 +135,7 @@ Summary statistics...
     site_name : 8
     pro_name : 8
     lyr_name : 8
+    inc_name : 8
     inc_type : 8
     inc_note : 8
     inc_duration : 8
