@@ -226,12 +226,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$flux %>% group_by(entry_name, site_name, pro_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates)>0){
-    row.ind <- rowmatch(duplicates[,1:3],data$incubation[,1:3])
-    cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-    error <- error+1
-  }
+  ## not working for now
+  # duplicates <- data$flux %>% group_by(entry_name, site_name, pro_name) %>% summarize(n=n()) %>% filter(n>1)
+  # if(length(duplicates)>0){
+  #   row.ind <- rowmatch(duplicates[,1:3],data$incubation[,1:3])
+  #   cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+  #   error <- error+1
+  # }
 
 
   # check flux tab #
@@ -336,12 +337,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$layer %>% group_by(entry_name, site_name, pro_name, lyr_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates)>0){
-    row.ind <- rowmatch(duplicates[,1:4],data$incubation[,1:4])
-    cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-    error <- error+1
-  }
+  ## not working for now
+  # duplicates <- data$layer %>% group_by(entry_name, site_name, pro_name, lyr_name) %>% summarize(n=n()) %>% filter(n>1)
+  # if(length(duplicates)>0){
+  #   row.ind <- rowmatch(duplicates[,1:4],data$incubation[,1:4])
+  #   cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+  #   error <- error+1
+  # }
 
 
   # check interstitial tab #
@@ -390,7 +392,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  ## need to add if statement to account for templates w/o flx_name col
+  ## need to add if statement to account for templates w/o ist_name col
   # duplicates <- data$interstitial %>% group_by(entry_name, site_name, pro_name, ist_name) %>% summarize(n=n()) %>% filter(n>1)
   # if(length(duplicates)>0){
   #   row.ind <- rowmatch(duplicates[,1:4],data$incubation[,1:4])
@@ -463,12 +465,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$fraction %>% group_by(entry_name, site_name, pro_name, lyr_name, frc_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates)>0){
-    row.ind <- rowmatch(duplicates[,1:5],data$incubation[,1:5])
-    cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-    error <- error+1
-  }
+  ## not working for now
+  # duplicates <- data$fraction %>% group_by(entry_name, site_name, pro_name, lyr_name, frc_name) %>% summarize(n=n()) %>% filter(n>1)
+  # if(length(duplicates)>0){
+  #   row.ind <- rowmatch(duplicates[,1:5],data$incubation[,1:5])
+  #   cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+  #   error <- error+1
+  # }
 
   # check incubation tab #
   cat("\n incubation tab...", file=outfile, append = T)
