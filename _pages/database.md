@@ -20,7 +20,7 @@ Visit this google doc to see the status of different datasets.
 
 ## Database download (raw database)
 
-v0.1.0
+v0.2.0
 Database objects 
 [excel](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_Data/database/ISRaD_list.xlsx)
 
@@ -28,8 +28,9 @@ Database objects
 ## Database R Package download (raw R Package for advanced users)
 
 Current R-Package release
-[Entire ISRaD R Package v0.1.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.1.0.zip)
+[Entire ISRaD R Package v0.2.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.2.0.zip)
 
 Previous releases
+[Entire ISRaD R Package v0.1.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.1.0.zip)
 [ISRaD v0.0.1](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.0.1.zip)
 
