@@ -225,9 +225,9 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
-  
+
   duplicates <- data$flux %>% group_by(entry_name, site_name, pro_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates))>0){
+  if(length(duplicates)>0){
     row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
     cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
@@ -282,7 +282,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   duplicates <- data$flux %>% group_by(entry_name, site_name, flx_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates))>0){
+  if(length(duplicates)>0){
     row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
     cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
@@ -336,7 +336,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   duplicates <- data$layer %>% group_by(entry_name, site_name, pro_name, lyr_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates))>0){
+  if(length(duplicates)>0){
     row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
     cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
@@ -390,7 +390,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   duplicates <- data$interstitial %>% group_by(entry_name, site_name, pro_name, ist_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates))>0){
+  if(length(duplicates)>0){
     row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
     cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
@@ -462,7 +462,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   duplicates <- data$fraction %>% group_by(entry_name, site_name, pro_name, lyr_name, frc_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates))>0){
+  if(length(duplicates)>0){
     row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
     cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
@@ -527,7 +527,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   duplicates <- data$incubation %>% group_by(entry_name, site_name, pro_name, lyr_name, inc_name) %>% summarize(n=n()) %>% filter(n>1)
-  if(length(duplicates))>0){
+  if(length(duplicates)>0){
     row.ind <- rowmatch(duplicates,1:5],data$incubation[,1:5])
     cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
