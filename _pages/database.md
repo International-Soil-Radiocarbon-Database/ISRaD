@@ -10,12 +10,6 @@ htmlwidgets: TRUE
 ## User manuals
 ### [Old user manual (out of date)](/user_manual.html)
 
-### [Exploring fractions user manual](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/vignettes/exploreFractions.Rmd)
-
-<a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/vignettes/exploreFractions.Rmd" download target="_blank">Exploring fractions user manual</a>
-
-
-
 ## Data Structure
 
 <figure>
