@@ -6,7 +6,12 @@ header:
   overlay_image: /assets/images/soil.jpg
 htmlwidgets: TRUE
 --- 
-## [Database user manual](/user_manual.html)
+
+## User manuals
+# [Old user manual (out of date)](/user_manual.html)
+
+# [Exploring fractions user manual](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/vignettes/exploreFractions.Rmd)
+
 
 ## Data Structure
 
