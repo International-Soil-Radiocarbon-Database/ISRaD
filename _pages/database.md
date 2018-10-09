@@ -12,7 +12,7 @@ htmlwidgets: TRUE
 
 ### [Exploring fractions user manual](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/vignettes/exploreFractions.Rmd)
 
-<a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/vignettes/exploreFractions.Rmd" download>Exploring fractions user manual</a>
+<a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/vignettes/exploreFractions.Rmd" download target="_blank">Exploring fractions user manual</a>
 
 
 
