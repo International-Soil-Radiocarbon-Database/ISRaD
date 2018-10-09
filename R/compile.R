@@ -74,12 +74,12 @@ compile <- function(dataset_directory,
                      function(s){openxlsx::read.xlsx(template_file,
                                                      sheet=s)})
 
-  template_nohead <- lapply(template, function(x) x[-c(1,2),])
+  template_nohead <- lapply(template, function(x) x[-c(1,2,3),])
   template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
   flat_template_columns <- colnames(template_flat)
 
   working_database <- template_flat %>% mutate_all(as.character)
-  ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
+  ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2,3),])
   ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
   cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
@@ -149,7 +149,7 @@ compile <- function(dataset_directory,
   }
 
   ISRaD_database_excel<-list()
-  ISRaD_database_excel$metadata<-rbind(template$metadata,ISRaD_database$metadata)
+  ISRaD_database_excel$metadata<-rbind(template$metadata[-3,],ISRaD_database$metadata)
   ISRaD_database_excel$site<-rbind(template$site,ISRaD_database$site)
   ISRaD_database_excel$profile<-rbind(template$profile,ISRaD_database$profile)
   ISRaD_database_excel$flux<-rbind(template$flux,ISRaD_database$flux)
