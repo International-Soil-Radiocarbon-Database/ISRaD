@@ -30,5 +30,10 @@ reports<-function(database=ISRaD_data, report){
       out<-entry_stats
     }
   }
+  
+  if(report=="flattened"){
+    
+    
+  }
   return(out)
 }

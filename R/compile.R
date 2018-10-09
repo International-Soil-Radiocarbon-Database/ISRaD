@@ -117,10 +117,16 @@ compile <- function(dataset_directory,
 
 }
 
+  
   working_database[]<-lapply(working_database, function(x)
     stringi::stri_trans_general(x, "latin-ascii"))
   working_database[]<-lapply(working_database, type.convert)
   soilcarbon_database<-working_database
+  
+  #convert data to correct data type
+  ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, as.character))
+  ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, type.convert))
+  ISRaD_database<-lapply(ISRaD_database, as.data.frame)
 
 # Return database file, logs, and reports ---------------------------------
   cat("\n\n-------------\n", file=outfile, append = T)

@@ -627,7 +627,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   cat("\n\nPlease email info.israd@gmail.com with concerns or suggestions", file=outfile, append = T)
   cat("\nIf you think there is a error in the functioning of this code please post to
       \nhttps://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues\n", file=outfile, append = T)
-
+ 
   attributes(data)$error<-error
 
   if(dataReport==T){
