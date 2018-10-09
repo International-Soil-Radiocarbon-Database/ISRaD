@@ -14,6 +14,7 @@
 #' Default is "none".
 #' Acceptable values are "flat" or "list" depending on the format you want to
 #' have the database returned in.
+#' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
 #'
 #' @export
 #'
@@ -28,7 +29,7 @@
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
-                    return_type=c('none', 'list', 'flat')[1]){
+                    return_type=c('none', 'list', 'flat')[1], checkdoi=F){
   #Libraries used
   requireNamespace("stringi")
   requireNamespace("assertthat")
@@ -92,7 +93,7 @@ compile <- function(dataset_directory,
   for(d in 1:length(data_files)){
     cat("\n\n",d, "checking", basename(data_files[d]),"...",
         file=outfile, append = TRUE)
-    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE)
+    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi=checkdoi)
     if (attributes(soilcarbon_data)$error>0) {
       cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
       next

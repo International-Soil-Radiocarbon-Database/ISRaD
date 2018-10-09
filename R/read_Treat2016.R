@@ -7,7 +7,7 @@
 #'
 #' @return
 #'
-#' @examples
+
 read_Treat2016 <- function(dowloadDir = 'temp'){
   
   ##pangaear::pg_data(doi = '10.1594/PANGAEA.863689')
