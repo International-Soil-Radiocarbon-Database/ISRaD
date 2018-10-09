@@ -15,7 +15,7 @@
 #   }
 #   data[[i]]<-tab
 #   data[[i]]<-data[[i]][rowSums(is.na(data[[i]])) != ncol(data[[i]]),]
-#   
+# 
 # }
 # 
 # data<-lapply(data, function(x) lapply(x, as.character))

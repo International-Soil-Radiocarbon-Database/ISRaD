@@ -44,21 +44,23 @@ shinyServer(function(input, output, session) {
     )
     variables[which(variables=="NULL")]<-NULL
 
-    variables<-list(y_var="NULL",
-                 x_var="lyr_bot",
-                 size_var="NULL",
-                     col_var="NULL",
-                    col_facet_var="NULL",
-                   row_facet_var="NULL")
-    variables[which(variables=="NULL")]<-NULL
+    # uncomment below for troubleshooting
+    # variables<-list(y_var="lyr_top",
+    #              x_var="lyr_bot",
+    #              size_var="NULL",
+    #                  col_var="NULL",
+    #                 col_facet_var="NULL",
+    #                row_facet_var="NULL")
+    # variables[which(variables=="NULL")]<-NULL
 
 
     plot_data<-na.omit(data.frame(soilcarbon_database[,unlist(variables)]))
-    colnames(plot_data)<-variables
+    colnames(plot_data)<-unique(variables)
     plot_data$facet_cut<-""
     plot_data$facet_cut2<-""
     col_facet_thresh<-NA
     row_facet_thresh<-NA
+
     
 
     if ((input$col_facet_thresh != "" & !is.null(variables$col_facet_var))){
