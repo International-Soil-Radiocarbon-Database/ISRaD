@@ -11,18 +11,18 @@
 #'
 
 reports<-function(database=ISRaD_data, report){
-  
-  
+
+
   requireNamespace("dplyr")
   requireNamespace("tidyr")
-  
+
   if(report=="entry_stats"){
-    
+
     entry_stats<-data.frame()
-    
+
     for(entry in unique(ISRaD_data$metadata$entry_name)){
       ISRaD_data_entry<-lapply(ISRaD_data, function(x) x %>% filter(entry_name==entry) %>% mutate_all(as.character))
-      
+
       data_stats<-bind_cols(data.frame(entry_name=ISRaD_data_entry$metadata$entry_name, doi=ISRaD_data_entry$metadata$doi), as.data.frame(lapply(ISRaD_data_entry, nrow)))
       data_stats<- data_stats %>% mutate_all(as.character)
       entry_stats<-bind_rows(entry_stats, data_stats)
@@ -30,10 +30,19 @@ reports<-function(database=ISRaD_data, report){
       out<-entry_stats
     }
   }
-  
+
   if(report=="flattened"){
-    
-    
+
+
+  }
+
+  if(report=="fraction"){
+  out <- x$metadata %>% 
+    full_join(x$site) %>%
+    full_join(x$profile) %>%
+    right_join(x$layer) %>%
+    right_join(x$fraction)
+  }
   }
   return(out)
 }
