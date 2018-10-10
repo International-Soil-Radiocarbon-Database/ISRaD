@@ -226,12 +226,11 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  # duplicates <- data$flux %>% group_by(entry_name, site_name, pro_name) %>% summarize(n=n()) %>% filter(n>1)
-  # if(length(duplicates)>0){
-  #   row.ind <- rowmatch(duplicates[,1:3],data$incubation[,1:3])
-  #   cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-  #   error <- error+1
-  # }
+  duplicates <- data$profile %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
 
   # check flux tab #
@@ -281,13 +280,11 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  ## need to add if statement to account for templates w/o flx_name col
-  # duplicates <- data$flux %>% group_by(entry_name, site_name, flx_name) %>% summarize(n=n()) %>% filter(n>1)
-  # if(length(duplicates)>0){
-  #   row.ind <- rowmatch(duplicates[,1:3],data$incubation[,1:3])
-  #   cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-  #   error <- error+1
-  # }
+  duplicates <- data$flux %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
 
   # check layer tab #
@@ -336,12 +333,11 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  # duplicates <- data$layer %>% group_by(entry_name, site_name, pro_name, lyr_name) %>% summarize(n=n()) %>% filter(n>1)
-  # if(length(duplicates)>0){
-  #   row.ind <- rowmatch(duplicates[,1:4],data$incubation[,1:4])
-  #   cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-  #   error <- error+1
-  # }
+  duplicates <- data$layer %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
   # check interstitial tab #
   cat("\n interstitial tab...", file=outfile, append = T)
@@ -389,13 +385,11 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  ## need to add if statement to account for templates w/o ist_name col
-  # duplicates <- data$interstitial %>% group_by(entry_name, site_name, pro_name, ist_name) %>% summarize(n=n()) %>% filter(n>1)
-  # if(length(duplicates)>0){
-  #   row.ind <- rowmatch(duplicates[,1:4],data$incubation[,1:4])
-  #   cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-  #   error <- error+1
-  # }
+  duplicates <- data$interstitial %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
   # check fraction tab #
   cat("\n fraction tab...", file=outfile, append = T)
@@ -463,12 +457,11 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   #   error <- error+1
   # }
 
-  # duplicates <- data$fraction %>% group_by(entry_name, site_name, pro_name, lyr_name, frc_name) %>% summarize(n=n()) %>% filter(n>1)
-  # if(length(duplicates)>0){
-  #   row.ind <- rowmatch(duplicates[,1:5],data$incubation[,1:5])
-  #   cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-  #   error <- error+1
-  # }
+  duplicates <- data$fraction %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
   # check incubation tab #
   cat("\n incubation tab...", file=outfile, append = T)
@@ -528,13 +521,11 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  ## need to add if statement to account for templates w/o inc_name col
-  # duplicates <- data$incubation %>% group_by(entry_name, site_name, pro_name, lyr_name, inc_name) %>% summarize(n=n()) %>% filter(n>1)
-  # if(length(duplicates)>0){
-  #   row.ind <- rowmatch(duplicates[,1:5],data$incubation[,1:5])
-  #   cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", row.ind+3, ")", file=outfile, append = T)
-  #   error <- error+1
-  # }
+  duplicates <- data$incubation %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
 
   ##### check numeric values #####
@@ -677,7 +668,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   cat("\n\nPlease email info.israd@gmail.com with concerns or suggestions", file=outfile, append = T)
   cat("\nIf you think there is a error in the functioning of this code please post to
       \nhttps://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues\n", file=outfile, append = T)
- 
+
   attributes(data)$error<-error
 
   if(dataReport==T){
