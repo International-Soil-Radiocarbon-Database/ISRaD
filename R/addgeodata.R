@@ -16,8 +16,6 @@ addgeodata<-function(database=ISRaD_data, geodata_directory, geodata="worldclim"
   if( geodata=="worldclim"){
   bio<-getData("worldclim", var='bio', res=2.5, path=geodata_directory)
   database$site$site_world_clim_map<-raster::extract(bio$bio12, cbind(database$site$site_long, database$site$site_lat))
-  database$site$site_world_clim_mat<-raster::extract(bio$bio1, cbind(database$site$site_long, database$site$site_lat))
-  
   database$profile$pro_world_clim_map<-raster::extract(bio$bio12, cbind(database$profile$pro_long, database$profile$pro_lat))
   database$profile$pro_world_clim_mat<-raster::extract(bio$bio1, cbind(database$profile$pro_long, database$profile$pro_lat))
 }
