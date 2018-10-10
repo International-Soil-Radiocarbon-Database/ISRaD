@@ -37,11 +37,11 @@ reports<-function(database=ISRaD_data, report){
   }
 
   if(report=="fraction"){
-  out <- x$metadata %>%
-    full_join(x$site) %>%
-    full_join(x$profile) %>%
-    right_join(x$layer) %>%
-    right_join(x$fraction)
+  out <- ISRaD_data$metadata %>%
+    full_join(ISRaD_data$site) %>%
+    full_join(ISRaD_data$profile) %>%
+    right_join(ISRaD_data$layer) %>%
+    right_join(ISRaD_data$fraction)
   }
   return(out)
 }
