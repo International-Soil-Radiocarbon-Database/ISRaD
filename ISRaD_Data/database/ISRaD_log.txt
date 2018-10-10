@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2018-10-08 17:26:08 
+ 2018-10-10 08:58:14 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -22,7 +22,7 @@ Checking controlled vocab between ISRaD template and info file...
  fraction ...
  incubation ...
 
-Compiling data files in /Users/jeff/ISRaD/ISRaD_Data 
+Compiling data files in ~/github/ISRaD/ISRaD_Data/ 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
@@ -320,7 +320,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_Data
 
 Summary statistics...
 
- metadata tab...147 observations
+ metadata tab...146 observations
     entry_name : 146
     doi : 146
     compilation_doi : 71
@@ -336,7 +336,7 @@ Summary statistics...
     bibliographical_reference : 146
     metadata_note : 37
     associated_datasets : 16
-    template_version : 67
+    template_version : 66
  site tab...390 observations
     entry_name : 390
     site_name : 390

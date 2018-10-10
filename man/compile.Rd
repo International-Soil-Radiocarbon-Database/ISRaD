@@ -5,7 +5,7 @@
 \title{Compile ISRaD data product}
 \usage{
 compile(dataset_directory, write_report = FALSE, write_out = FALSE,
-  return_type = c("none", "list", "flat")[1])
+  return_type = c("none", "list", "flat")[1], checkdoi = F)
 }
 \arguments{
 \item{dataset_directory}{string defining directory where compeleted and
@@ -23,6 +23,8 @@ in dataset_directory (FALSE will not generate ouput file but will return)}
 Default is "none".
 Acceptable values are "flat" or "list" depending on the format you want to
 have the database returned in.}
+
+\item{checkdoi}{set to F if you do not want the QAQC check to validate doi numbers}
 }
 \description{
 Construct data products to the International Soil Radiocarbon Database.

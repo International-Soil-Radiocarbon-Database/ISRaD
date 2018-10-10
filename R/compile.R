@@ -171,7 +171,7 @@ compile <- function(dataset_directory,
   cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
   if (write_out==TRUE){
-    write.csv(soilcarbon_database, file.path(dataset_directory, "database", "ISRaD_flat.csv"))
+    #write.csv(soilcarbon_database, file.path(dataset_directory, "database", "ISRaD_flat.csv"))
   }
 
     cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
