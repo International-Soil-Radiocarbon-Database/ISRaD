@@ -12,7 +12,7 @@
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr
-#' @import RCurl
+#' @importFrom RCurl url.exists
 #' @export
 
 

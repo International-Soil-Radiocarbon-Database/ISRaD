@@ -3,7 +3,7 @@
 #' generate reports of ISRaD data
 #'
 #' @param database ISRaD data object. Default is ISRaD_data which comes with the package.
-#' @param report Parameter to define which type of report you want. Options are, "entry_stats"...
+#' @param report Parameter to define which type of report you want. Options are, "entry_stats", "flattened", "fraction"...
 #' @export
 #' @import dplyr
 #' @import tidyr
@@ -37,11 +37,11 @@ reports<-function(database=ISRaD_data, report){
   }
 
   if(report=="fraction"){
-  out <- ISRaD_data$metadata %>%
-    full_join(ISRaD_data$site) %>%
-    full_join(ISRaD_data$profile) %>%
-    right_join(ISRaD_data$layer) %>%
-    right_join(ISRaD_data$fraction)
+  out <- database$metadata %>%
+    full_join(database$site) %>%
+    full_join(database$profile) %>%
+    right_join(database$layer) %>%
+    right_join(database$fraction)
   }
   return(out)
 }
