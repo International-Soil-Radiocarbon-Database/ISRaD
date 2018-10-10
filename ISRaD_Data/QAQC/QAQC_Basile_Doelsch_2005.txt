@@ -40,7 +40,6 @@ Checking for missing values in required columns...
 Checking that level names match between tabs...
  site tab...
  profile tab...
-	WARNING: Duplicate profile row identified. ( row/s: 5 )
  flux tab...
  layer tab...
  interstitial tab...
@@ -66,8 +65,7 @@ Checking controlled vocab...
  fraction tab...
  incubation tab...
  - - - - - - - - - - - - - - - - - - - -
- 1 WARNINGS need to be fixed
-
+PASSED. Nice work!
 
  - - - - - - - - - - - - - - - - - - - -
 
@@ -95,19 +93,19 @@ Summary statistics...
     site_lat : 1
     site_long : 1
     site_elevation : 1
- profile tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    pro_treatment : 2
-    pro_MAT : 2
-    pro_MAP : 2
-    pro_soil_taxon : 2
-    pro_soil_taxon_sys : 2
+ profile tab...1 observations
+    entry_name : 1
+    site_name : 1
+    pro_name : 1
+    pro_treatment : 1
+    pro_MAT : 1
+    pro_MAP : 1
+    pro_soil_taxon : 1
+    pro_soil_taxon_sys : 1
     pro_soil_age : 1
-    pro_land_cover : 2
-    pro_veg_note : 2
-    pro_parent_material_notes : 2
+    pro_land_cover : 1
+    pro_veg_note : 1
+    pro_parent_material_notes : 1
  flux tab...0 observations
  layer tab...12 observations
     entry_name : 12

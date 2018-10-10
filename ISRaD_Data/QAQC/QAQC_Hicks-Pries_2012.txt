@@ -42,7 +42,6 @@ Checking that level names match between tabs...
  profile tab...
  flux tab...
  layer tab...
-	WARNING: Duplicate layer row identified. ( row/s: 189 191 192 )
  interstitial tab...
  fraction tab...
  incubation tab...
@@ -66,8 +65,7 @@ Checking controlled vocab...
  fraction tab...
  incubation tab...
  - - - - - - - - - - - - - - - - - - - -
- 1 WARNINGS need to be fixed
-
+PASSED. Nice work!
 
  - - - - - - - - - - - - - - - - - - - -
 
@@ -114,17 +112,17 @@ Summary statistics...
     pro_parent_material : 18
     pro_parent_material_notes : 18
  flux tab...0 observations
- layer tab...194 observations
-    entry_name : 194
-    site_name : 194
-    pro_name : 194
-    lyr_name : 194
-    lyr_obs_date_y : 194
-    lyr_obs_date_m : 194
-    lyr_obs_date_d : 194
+ layer tab...191 observations
+    entry_name : 191
+    site_name : 191
+    pro_name : 191
+    lyr_name : 191
+    lyr_obs_date_y : 191
+    lyr_obs_date_m : 191
+    lyr_obs_date_d : 191
     lyr_all_org_neg : 5
-    lyr_top : 194
-    lyr_bot : 194
+    lyr_top : 191
+    lyr_bot : 191
     lyr_hzn : 153
     lyr_bd_tot : 153
     lyr_c_tot : 153
@@ -132,8 +130,8 @@ Summary statistics...
     lyr_n_tot : 153
     lyr_15n : 153
     lyr_13c : 178
-    lyr_14c : 41
-    lyr_14c_sigma : 41
+    lyr_14c : 38
+    lyr_14c_sigma : 38
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...0 observations

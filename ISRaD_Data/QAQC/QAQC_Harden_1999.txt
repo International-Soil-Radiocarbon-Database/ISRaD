@@ -42,7 +42,6 @@ Checking that level names match between tabs...
  profile tab...
  flux tab...
  layer tab...
-	WARNING: Duplicate layer row identified. ( row/s: 11 12 13 14 15 16 17 54 55 56 57 58 59 60 61 79 80 81 82 83 84 85 86 105 106 110 111 112 113 114 115 116 117 118 119 120 121 122 123 132 133 134 135 139 140 141 142 143 144 145 146 147 148 149 150 151 152 171 172 173 174 175 176 177 178 179 180 )
  interstitial tab...
  fraction tab...
  incubation tab...
@@ -66,8 +65,7 @@ Checking controlled vocab...
  fraction tab...
  incubation tab...
  - - - - - - - - - - - - - - - - - - - -
- 1 WARNINGS need to be fixed
-
+PASSED. Nice work!
 
  - - - - - - - - - - - - - - - - - - - -
 
@@ -96,15 +94,15 @@ Summary statistics...
     site_lat : 3
     site_long : 3
     site_elevation : 3
- profile tab...20 observations
-    entry_name : 20
-    site_name : 20
-    pro_name : 20
-    pro_treatment : 20
-    pro_land_cover : 20
-    pro_veg_note : 20
-    pro_parent_material : 20
-    pro_2d_position : 19
+ profile tab...31 observations
+    entry_name : 31
+    site_name : 31
+    pro_name : 31
+    pro_treatment : 31
+    pro_land_cover : 31
+    pro_veg_note : 31
+    pro_parent_material : 31
+    pro_2d_position : 28
  flux tab...0 observations
  layer tab...191 observations
     entry_name : 191
