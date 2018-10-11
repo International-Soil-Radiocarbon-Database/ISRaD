@@ -9,7 +9,7 @@ htmlwidgets: TRUE
 
 ## User manuals
 ### [Old user manual (out of date)](/user_manual.html)
-### [Old user manual (out of date)](/test.nb.html)
+### [wtf](/test.nb.html)
 
 ## Data Structure
 
