@@ -9,7 +9,7 @@ reports(database = ISRaD_data, report)
 \arguments{
 \item{database}{ISRaD data object. Default is ISRaD_data which comes with the package.}
 
-\item{report}{Parameter to define which type of report you want. Options are, "entry_stats"...}
+\item{report}{Parameter to define which type of report you want. Options are, "entry_stats", "flattened", "fraction"...}
 }
 \description{
 generate reports of ISRaD data
