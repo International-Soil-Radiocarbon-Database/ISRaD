@@ -193,6 +193,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
+  duplicates <- data$site %>% select(entry_name, site_name, site_lat, site_long) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate site row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
   # check profile tab #
   cat("\n profile tab...", file=outfile, append = T)
   mismatch <- c() #Entry name
