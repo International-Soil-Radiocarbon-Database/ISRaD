@@ -8,7 +8,7 @@
 #' @importFrom raster getData
 #' @export
 
-addgeodata<-function(database=ISRaD_data, geodata_directory, geodata="worldclim"){
+addgeodata<-function(database=ISRaD_data, geodata_directory){
 
   #database = ISRaD_data; geodata  = "worldclim"; geodata_directory = "~/Dropbox/USGS/ISRaD_data/geospatial_datasets/"
   requireNamespace("raster")
