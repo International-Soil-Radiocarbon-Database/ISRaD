@@ -14,6 +14,7 @@
 #' Default is "none".
 #' Acceptable values are "flat" or "list" depending on the format you want to
 #' have the database returned in.
+#' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
 #'
 #' @export
 #'
@@ -28,7 +29,7 @@
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
-                    return_type=c('none', 'list', 'flat')[1]){
+                    return_type=c('none', 'list', 'flat')[1], checkdoi=F){
   #Libraries used
   requireNamespace("stringi")
   requireNamespace("assertthat")
@@ -73,12 +74,12 @@ compile <- function(dataset_directory,
                      function(s){openxlsx::read.xlsx(template_file,
                                                      sheet=s)})
 
-  template_nohead <- lapply(template, function(x) x[-c(1,2),])
+  template_nohead <- lapply(template, function(x) x[-c(1,2,3),])
   template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
   flat_template_columns <- colnames(template_flat)
 
   working_database <- template_flat %>% mutate_all(as.character)
-  ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2),])
+  ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2,3),])
   ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
   cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
@@ -92,7 +93,7 @@ compile <- function(dataset_directory,
   for(d in 1:length(data_files)){
     cat("\n\n",d, "checking", basename(data_files[d]),"...",
         file=outfile, append = TRUE)
-    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE)
+    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi=checkdoi)
     if (attributes(soilcarbon_data)$error>0) {
       cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
       next
@@ -117,10 +118,16 @@ compile <- function(dataset_directory,
 
 }
 
+  
   working_database[]<-lapply(working_database, function(x)
     stringi::stri_trans_general(x, "latin-ascii"))
   working_database[]<-lapply(working_database, type.convert)
   soilcarbon_database<-working_database
+  
+  #convert data to correct data type
+  ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, as.character))
+  ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, type.convert))
+  ISRaD_database<-lapply(ISRaD_database, as.data.frame)
 
 # Return database file, logs, and reports ---------------------------------
   cat("\n\n-------------\n", file=outfile, append = T)
@@ -142,7 +149,7 @@ compile <- function(dataset_directory,
   }
 
   ISRaD_database_excel<-list()
-  ISRaD_database_excel$metadata<-rbind(template$metadata,ISRaD_database$metadata)
+  ISRaD_database_excel$metadata<-rbind(template$metadata[-3,],ISRaD_database$metadata)
   ISRaD_database_excel$site<-rbind(template$site,ISRaD_database$site)
   ISRaD_database_excel$profile<-rbind(template$profile,ISRaD_database$profile)
   ISRaD_database_excel$flux<-rbind(template$flux,ISRaD_database$flux)
@@ -164,7 +171,7 @@ compile <- function(dataset_directory,
   cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
   if (write_out==TRUE){
-    write.csv(soilcarbon_database, file.path(dataset_directory, "database", "ISRaD_flat.csv"))
+    #write.csv(soilcarbon_database, file.path(dataset_directory, "database", "ISRaD_flat.csv"))
   }
 
     cat("\n Compilation report saved to", outfile,"\n", file="", append = T)

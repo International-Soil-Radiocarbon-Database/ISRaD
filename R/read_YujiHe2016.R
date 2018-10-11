@@ -7,7 +7,7 @@
 #' @return ISRaD complient file structure with only columns that overlap with orginal data
 #'
 #' @importFrom rcrossref cr_citation
-#' @examples
+
 read_YujiHe2016 <- function(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yujie/raw/Yujie_dataset2.csv"){
   requireNamespace('tidyverse')
   #library(tidyverse)

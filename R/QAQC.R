@@ -7,15 +7,16 @@
 #' @param outfile filename of the output file if writeQCreport=TRUE. Default is NULL, and the outfile will be written to the directory where the dataset is stored, and named by the dataset being checked.
 #' @param summaryStats prints summary statistics. Default is TRUE
 #' @param dataReport prints list structure of database. Default is FALSE
+#' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
 #' @import data.tree
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr
-#' @import RCurl
+#' @importFrom RCurl url.exists
 #' @export
 
 
-QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F){
+QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F, checkdoi=T){
 
   ##### setup #####
 
@@ -120,6 +121,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
 
 
   ##### check doi --------------------------------------------------------
+  if (checkdoi==T){
   cat("\n\nChecking dataset doi...", file=outfile, append = T)
   dois<-data$metadata$doi
   if(length(dois)<2){if(is.na(dois)) dois<-""}
@@ -127,6 +129,10 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
       cat("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
     }
+  }
+  } else {
+    cat("\n\nNot checking dataset doi because 'checkdoi==F'...", file=outfile, append = T)
+
   }
 
   ##### check for extra or misnamed columns ####
@@ -220,6 +226,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
+  duplicates <- data$profile %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
 
   # check flux tab #
   cat("\n flux tab...", file=outfile, append = T)
@@ -265,6 +277,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$flux,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  duplicates <- data$flux %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -315,6 +333,11 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
+  duplicates <- data$layer %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
   # check interstitial tab #
   cat("\n interstitial tab...", file=outfile, append = T)
@@ -359,6 +382,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$interstitial,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  duplicates <- data$interstitial %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -421,6 +450,18 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
+  ## needs work
+  # mismatch.frc <- match(setdiff(data$fraction$frc_input, c(data$layer$lyr_name, data$fraction$frc_name)),data$fraction$frc_input)
+  # if(length(mismatch.frc)>0){
+  #   cat("\n\tWARNING: frc_input not found. ( row/s:", mismatch.frc+3, ")", file=outfile, append = T)
+  #   error <- error+1
+  # }
+
+  duplicates <- data$fraction %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
 
   # check incubation tab #
   cat("\n incubation tab...", file=outfile, append = T)
@@ -477,6 +518,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    error <- error+1
+  }
+
+  duplicates <- data$incubation %>% select(ends_with("name")) %>% duplicated() %>% which()
+  if(length(duplicates)>0){
+    cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
