@@ -8,7 +8,20 @@
 #' @export
 
 ISRaD.extra.fill_dates<-function(database){
-  
-  
-  return(database)
+
+  frc_date_fill <- function(x) {
+  x$fraction$frc_obs_date_y <- ifelse(is.na(x$fraction$frc_obs_date_y),
+                                     x$layer$lyr_obs_date_y,
+                                     x$fraction$frc_obs_date_y)
+  return(x)
+}
+inc_date_fill <- function(x) {
+  x$incubation$inc_obs_date_y <- ifelse(is.na(x$incubation$inc_obs_date_y),
+                                      x$layer$lyr_obs_date_y,
+                                      x$incubation$inc_obs_date_y)
+  return(x)
+}
+out <- frc_date_fill(database)
+out <- inc_date_fill(out)
+return(out)
 }
