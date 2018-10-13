@@ -8,7 +8,11 @@
 #' @export
 
 ISRaD.extra.fill_coords<-function(database){
-  
-  
+  database$profile$pro_lat <- ifelse(is.na(database$profile$pro_lat),
+                              database$site$site_lat,
+                              database$profile$pro_lat)
+  database$profile$pro_long <- ifelse(is.na(database$profile$pro_long),
+                              database$site$site_long,
+                              database$profile$pro_long)
   return(database)
 }
