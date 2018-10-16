@@ -232,7 +232,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$profile %>% select(ends_with("name")) %>% duplicated() %>% which()
+  duplicates <- data$profile %>% select(entry_name, site_name, pro_name) %>% duplicated() %>% which()
   if(length(duplicates)>0){
     cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
@@ -286,7 +286,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$flux %>% select(ends_with("name")) %>% duplicated() %>% which()
+  duplicates <- data$flux %>% select(entry_name, site_name, pro_name, flx_name) %>% duplicated() %>% which()
   if(length(duplicates)>0){
     cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
