@@ -12,7 +12,7 @@ ISRaD.extra.fill_14c<- function(database) {
   # function to calculate delta 14C from fraction modern and obs year if not reported
   calc_14c <- function(df, d14c, obs_date_y, fraction_modern) {
     lambda <- 8267
-    ix <- which(is.na(df$d14c) & !is.na(df$fraction_modern))
+    ix <- which(is.na(df[,d14c]) & !is.na(df[,fraction_modern]))
     df[ix, d14c] <- (df[ix, fraction_modern] * exp(1/lambda*(1950-df[ix, obs_date_y])) - 1 )*1000
     return(df)
   }
