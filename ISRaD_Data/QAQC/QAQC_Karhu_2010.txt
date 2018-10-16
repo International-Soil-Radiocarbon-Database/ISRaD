@@ -45,7 +45,6 @@ Checking that level names match between tabs...
  interstitial tab...
  fraction tab...
  incubation tab...
-	WARNING: Duplicate incubation row identified. ( row/s: 10 11 12 13 14 15 )
 
 Checking numeric variable columns for inappropriate values...
  metadata tab...
@@ -66,8 +65,7 @@ Checking controlled vocab...
  fraction tab...
  incubation tab...
  - - - - - - - - - - - - - - - - - - - -
- 1 WARNINGS need to be fixed
-
+PASSED. Nice work!
 
  - - - - - - - - - - - - - - - - - - - -
 
@@ -88,14 +86,14 @@ Summary statistics...
     contact_email : 1
     bibliographical_reference : 1
     metadata_note : 1
- site tab...2 observations
-    entry_name : 2
-    site_name : 2
-    site_lat : 2
-    site_long : 2
-    site_datum : 2
-    site_elevation : 2
-    site_note : 2
+ site tab...1 observations
+    entry_name : 1
+    site_name : 1
+    site_lat : 1
+    site_long : 1
+    site_datum : 1
+    site_elevation : 1
+    site_note : 1
  profile tab...2 observations
     entry_name : 2
     site_name : 2
