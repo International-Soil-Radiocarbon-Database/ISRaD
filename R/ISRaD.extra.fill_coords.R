@@ -7,12 +7,15 @@
 #' @references any references of literature or datasets relevant to understand the function. (remove this entire line if there are no references)
 #' @export
 
+#' @import dplyr
+
 ISRaD.extra.fill_coords<-function(database){
-  database$profile$pro_lat <- ifelse(is.na(database$profile$pro_lat),
-                              database$site$site_lat,
+  sit.pro <- dplyr::left_join(database$profile, database$site)
+  database$profile$pro_lat <- ifelse(is.na(sit.pro$pro_lat),
+                              sit.pro$site_lat,
                               database$profile$pro_lat)
-  database$profile$pro_long <- ifelse(is.na(database$profile$pro_long),
-                              database$site$site_long,
+  database$profile$pro_long <- ifelse(is.na(sit.pro$pro_long),
+                              sit.pro$site_long,
                               database$profile$pro_long)
   return(database)
 }
