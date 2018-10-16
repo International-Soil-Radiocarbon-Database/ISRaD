@@ -10,14 +10,9 @@
 #' @import dplyr
 
 ISRaD.extra.fill_coords<-function(database){
-  sit.pro <- dplyr::left_join(database$profile, database$site)
-  sit.pro$pro_lat <- ifelse(is.na(sit.pro$pro_lat),
-                            sit.pro$site_lat,
-                            sit.pro$pro_lat)
-  sit.pro$pro_long <- ifelse(is.na(sit.pro$pro_long),
-                            sit.pro$site_long,
-                            sit.pro$pro_long)
-  database$profile$pro_lat <- sit.pro$pro_lat
-  database$profile$pro_long <- sit.pro$pro_long
+  ix <- which(is.na(database$profile$pro_lat))
+  iix <- match(database$profile[ix,"site_name"], database$site[,"site_name"])
+  database$profile[ix,"pro_lat"] <- database$site[iix,"site_lat"]
+  database$profile[ix,"pro_long"] <- database$site[iix,"site_long"]
   return(database)
 }
