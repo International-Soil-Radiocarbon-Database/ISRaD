@@ -2,7 +2,7 @@
 #'
 #' @description Fills fraction modern values if missing and delta 14C is reported
 #' @param database ISRaD dataset object.
-#' @details: If using column names for parameters they must be in quotes, e.g. to calculate lyr_fraction_modern, use: ISRaD.extra.fill_fm(ISRaD_data, "lyr_14c", "lyr_obs_date_y", "lyr_fraction_modern"). Warning: xxx_obs_date_y columns must be filled for this to work!
+#' @details: Warning: xxx_obs_date_y columns must be filled for this to work!
 #' @author: J. Beem-Miller & A. Hoyt
 #' @references: Stuiver and Polach, 1977
 #' @export
