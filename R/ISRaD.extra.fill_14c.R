@@ -1,15 +1,13 @@
 #' ISRaD.extra.fill_14c
 #'
-#' @description brief summary description of function
+#' @description: Fills delta 14C if not reported and fraction modern and
 #' @param database ISRaD dataset object.
-#' @details very detailed description of function, especially if it involves the creation of new columns
-#' @author your name
-#' @references any references of literature or datasets relevant to understand the function. (remove this entire line if there are no references)
+#' @details:  If using column names for parameters they must be in quotes, e.g. to calculate lyr_14c, use: ISRaD.extra.fill_14c(ISRaD_data, "lyr_14c", "lyr_obs_date_y", "lyr_fraction_modern"). Warning: xxx_obs_date_y columns must be filled for this to work!
+#' @author: J. Beem-Miller & A. Hoyt
+#' @references: Stuiver and Polach, 1977
 #' @export
 
 ISRaD.extra.fill_14c<- function(database) {
-
-  # WARNING! xxx_obs_date_y columns must be filled for this to work!
 
   # function to calculate delta 14C from fraction modern and obs year if not reported
   calc_14c <- function(df, d14c, obs_date_y, fraction_modern) {
