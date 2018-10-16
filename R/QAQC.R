@@ -193,7 +193,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$site %>% select(site_lat, site_long) %>% duplicated() %>% which()
+  duplicates <- data$site %>% select(entry_name, site_lat, site_long) %>% duplicated() %>% which()
   if(length(duplicates)>0){
     cat("\n\tWARNING: Duplicate site coordinates identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
