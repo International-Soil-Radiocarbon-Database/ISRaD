@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Dorr_1980_1986.xlsx
+File: Dorr_1986.xlsx
 
 Checking file type...
 
@@ -13,7 +13,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( interstitial fraction incubation )
+	NOTE: empty tabs detected ( flux interstitial fraction incubation )
 
 Not checking dataset doi because 'checkdoi==F'...
 
@@ -73,42 +73,29 @@ It might be useful to manually review the summary statistics and graphical repre
 
 Summary statistics...
 
- metadata tab...2 observations
-    entry_name : 2
-    doi : 2
-    curator_name : 2
-    curator_organization : 2
-    curator_email : 2
-    modification_date_y : 2
-    modification_date_m : 2
-    modification_date_d : 2
-    contact_name : 2
-    contact_email : 2
-    bibliographical_reference : 2
- site tab...3 observations
-    entry_name : 3
-    site_name : 3
-    site_lat : 3
-    site_long : 3
- profile tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    pro_treatment : 2
- flux tab...6 observations
-    entry_name : 6
-    site_name : 6
-    pro_name : 6
-    flx_name : 6
-    flx_obs_date_y : 6
-    flx_obs_date_m : 6
-    flx_obs_date_d : 6
-    flx_pathway_note : 1
-    flx_analyte : 6
-    flx_13c : 6
-    flx_rc_year : 6
-    flx_14c : 6
-    flx_14c_sd : 6
+ metadata tab...1 observations
+    entry_name : 1
+    doi : 1
+    curator_name : 1
+    curator_organization : 1
+    curator_email : 1
+    modification_date_y : 1
+    modification_date_m : 1
+    modification_date_d : 1
+    contact_name : 1
+    contact_email : 1
+    bibliographical_reference : 1
+ site tab...1 observations
+    entry_name : 1
+    site_name : 1
+    site_lat : 1
+    site_long : 1
+ profile tab...1 observations
+    entry_name : 1
+    site_name : 1
+    pro_name : 1
+    pro_treatment : 1
+ flux tab...0 observations
  layer tab...2 observations
     entry_name : 2
     site_name : 2
