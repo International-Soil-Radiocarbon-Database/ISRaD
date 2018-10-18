@@ -287,7 +287,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
 
-  if("flx_name" %in% colnames(data)) {
+  if("flx_name" %in% colnames(data$flux)) {
       duplicates <- data$flux %>% select("entry_name","site_name","pro_name","flx_name") %>% duplicated() %>% which()
       if(length(duplicates)>0){
       cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
