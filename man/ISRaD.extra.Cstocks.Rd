@@ -10,14 +10,14 @@ ISRaD.extra.Cstocks(database)
 \item{database}{ISRaD dataset object.}
 }
 \description{
-brief summary description of function
+Calculates soil organic carbon stock
 }
 \details{
-very detailed description of function, especially if it involves the creation of new columns
+Function first fills bulk density and organic carbon concentration. SOC stocks can only be calculated if organic carbon concentration and bulk density data are available. SOC stock calculation is for the fine earth fraction (<2mm).
 }
 \references{
 any references of literature or datasets relevant to understand the function. (remove this entire line if there are no references)
 }
 \author{
-your name
+J. Beem-Miller
 }

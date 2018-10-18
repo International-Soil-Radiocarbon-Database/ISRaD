@@ -4,7 +4,7 @@
 \alias{ISRaD.extra.geospatial.climate}
 \title{ISRaD.extra.geospatial.climate}
 \usage{
-ISRaD.extra.geospatial.climate(database = ISRaD_data, geodata_directory)
+ISRaD.extra.geospatial.climate(database, geodata_directory)
 }
 \arguments{
 \item{database}{ISRaD dataset object.}
@@ -40,6 +40,8 @@ BIO16 = Precipitation of Wettest Quarter,
 BIO17 = Precipitation of Driest Quarter,
 BIO18 = Precipitation of Warmest Quarter,
 BIO19 = Precipitation of Coldest Quarter
+
+All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on site lat and long
 }
 \references{
 http://www.worldclim.org/

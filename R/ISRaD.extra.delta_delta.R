@@ -15,8 +15,8 @@ ISRaD.extra.delta_delta<-function(database){
 
     yrs=seq(1966,2009.5,by=1/4) # Series of years by quarters
 
-    NHZone2=bind.C14curves(prebomb=IntCal13,postbomb=Hua2013$NHZone2,time.scale="AD")
-    nhz2=spline(Hua2013$NHZone2[,c(1,4)],xout=yrs) #Spline interpolation of the NH_Zone 2 dataset at a quarterly basis
+    NHZone2=bind.C14curves(prebomb=SoilR::IntCal13,postbomb=SoilR::Hua2013$NHZone2,time.scale="AD")
+    nhz2=spline(SoilR::Hua2013$NHZone2[,c(1,4)],xout=yrs) #Spline interpolation of the NH_Zone 2 dataset at a quarterly basis
     nhz2=ts((nhz2$y-1)*1000,start=1966,freq=4) #Transformation into a time-series object
     m.nhz2=ets(nhz2) #Fits an exponential smoothing state space model to the time series
     f2.nhz2=forecast(m.nhz2,h=11*4) #Uses the fitted model to forecast 11 years into the future
@@ -27,8 +27,8 @@ ISRaD.extra.delta_delta<-function(database){
     NHZone2$year <- ceiling(NHZone2$Year) # rounds fractional years to year
 
     #Forecast bomb curve in SH
-    SHZone12=bind.C14curves(prebomb=IntCal13,postbomb=Hua2013$SHZone12,time.scale="AD")
-    shz2=spline(Hua2013$SHZone12[,c(1,4)],xout=yrs) #Spline interpolation of the SH_Zone12 dataset at a quaterly basis
+    SHZone12=bind.C14curves(prebomb=SoilR::IntCal13,postbomb=SoilR::Hua2013$SHZone12,time.scale="AD")
+    shz2=spline(SoilR::Hua2013$SHZone12[,c(1,4)],xout=yrs) #Spline interpolation of the SH_Zone12 dataset at a quaterly basis
     shz2=ts((shz2$y-1)*1000,start=1966,freq=4) #Transformation into a time-series object
     m.shz2=ets(shz2) #Fits an exponential smoothing state space model to the time series
     f2.shz2=forecast(m.shz2,h=11*4) #Uses the fitted model to forecast 11 years into the future

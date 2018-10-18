@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2018-10-16 12:27:11 
+ 2018-10-18 18:38:53 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -347,28 +347,29 @@ Summary statistics...
     site_datum : 94
     site_elevation : 331
     site_note : 125
- profile tab...1210 observations
-    entry_name : 1210
-    site_name : 1210
-    plot_name : 392
-    pro_name : 1210
+ profile tab...1213 observations
+    entry_name : 1213
+    site_name : 1213
+    plot_name : 395
+    pro_name : 1213
     pro_note : 295
     pro_lat : 130
     pro_long : 130
     pro_elevation : 34
-    pro_treatment : 1210
-    pro_treatment_note : 220
+    pro_treatment : 1213
+    pro_treatment_note : 222
     pro_comp : 101
     pro_reps : 177
     pro_MAT : 659
     pro_MAP : 771
-    pro_soil_series : 194
-    pro_soil_taxon : 843
-    pro_soil_taxon_sys : 564
+    pro_usda_soil_order : 39
+    pro_soil_series : 197
+    pro_soil_taxon : 846
+    pro_soil_taxon_sys : 567
     pro_soil_age : 90
     pro_MAST : 133
     pro_MASWC : 44
-    pro_land_cover : 1119
+    pro_land_cover : 1122
     pro_veg_note : 908
     pro_bedrock_depth : 101
     pro_depth_water : 83
@@ -376,10 +377,10 @@ Summary statistics...
     pro_parent_material : 564
     pro_parent_chem : 246
     pro_parent_material_notes : 543
-    pro_2d_position : 131
+    pro_2d_position : 134
     pro_aspect : 35
     pro_aspect_deg : 32
-    pro_slope : 214
+    pro_slope : 217
     pro_slope_shape : 88
     pro_drainage_class : 168
     pro_soc : 86
@@ -419,24 +420,24 @@ Summary statistics...
     flx_14c_sigma : 137
     flx_14c_sd : 17
     flx_fraction_modern : 20
- layer tab...4758 observations
-    entry_name : 4758
-    site_name : 4758
-    pro_name : 4758
-    lyr_name : 4758
-    lyr_obs_date_y : 4758
-    lyr_obs_date_m : 1912
-    lyr_obs_date_d : 1710
+ layer tab...4771 observations
+    entry_name : 4771
+    site_name : 4771
+    pro_name : 4771
+    lyr_name : 4771
+    lyr_obs_date_y : 4771
+    lyr_obs_date_m : 1929
+    lyr_obs_date_d : 1727
     lyr_all_org_neg : 322
-    lyr_top : 4758
-    lyr_bot : 4758
-    lyr_hzn : 2313
-    lyr_comp : 155
-    lyr_note : 704
+    lyr_top : 4771
+    lyr_bot : 4771
+    lyr_hzn : 2315
+    lyr_comp : 173
+    lyr_note : 726
     lyr_color : 179
     lyr_burn_ev : 51
     lyr_bd_samp : 1225
-    lyr_bd_tot : 955
+    lyr_bd_tot : 959
     lyr_bd_notes : 392
     lyr_sand_tot_psa : 793
     lyr_silt_tot_psa : 805
@@ -460,19 +461,19 @@ Summary statistics...
     lyr_bs : 128
     lyr_c_inorg : 357
     lyr_c_org : 870
-    lyr_c_tot : 2703
+    lyr_c_tot : 2729
     lyr_soc : 832
     lyr_soc_sigma : 125
-    lyr_n_tot : 1352
-    lyr_c_to_n : 743
+    lyr_n_tot : 1356
+    lyr_c_to_n : 747
     lyr_loi : 41
     lyr_15n : 816
-    lyr_13c : 1673
+    lyr_13c : 1677
     lyr_rc_lab : 677
     lyr_rc_lab_number : 313
     lyr_rc_year : 469
-    lyr_14c : 1999
-    lyr_14c_sigma : 961
+    lyr_14c : 2029
+    lyr_14c_sigma : 991
     lyr_14c_sd : 16
     lyr_fraction_modern : 1738
     lyr_fraction_modern_sigma : 1019

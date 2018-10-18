@@ -10,14 +10,14 @@ ISRaD.extra.fill_fm(database)
 \item{database}{ISRaD dataset object.}
 }
 \description{
-brief summary description of function
+Fills fraction modern values if missing and delta 14C is reported
 }
 \details{
-very detailed description of function, especially if it involves the creation of new columns
+: Warning: xxx_obs_date_y columns must be filled for this to work!
 }
 \references{
-any references of literature or datasets relevant to understand the function. (remove this entire line if there are no references)
+: Stuiver and Polach, 1977
 }
 \author{
-your name
+: J. Beem-Miller & A. Hoyt
 }

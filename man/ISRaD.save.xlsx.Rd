@@ -4,10 +4,12 @@
 \alias{ISRaD.save.xlsx}
 \title{ISRaD.save.xlsx}
 \usage{
-ISRaD.save.xlsx(database, outfile)
+ISRaD.save.xlsx(database, template_file, outfile)
 }
 \arguments{
 \item{database}{ISRaD dataset object.}
+
+\item{template_file}{path and name of template file to use.}
 
 \item{outfile}{path and name to save the excel file}
 }
@@ -15,5 +17,5 @@ ISRaD.save.xlsx(database, outfile)
 saves data object as xlsx file in ISRaD template format
 }
 \author{
-your name
+J Grey Monroe
 }

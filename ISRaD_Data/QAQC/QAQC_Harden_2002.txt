@@ -94,22 +94,23 @@ Summary statistics...
     site_long : 2
     site_elevation : 2
     site_note : 2
- profile tab...36 observations
-    entry_name : 36
-    site_name : 36
-    plot_name : 36
-    pro_name : 36
+ profile tab...39 observations
+    entry_name : 39
+    site_name : 39
+    plot_name : 39
+    pro_name : 39
     pro_note : 7
-    pro_treatment : 36
-    pro_treatment_note : 18
+    pro_treatment : 39
+    pro_treatment_note : 20
     pro_comp : 2
     pro_reps : 2
-    pro_soil_taxon : 36
-    pro_soil_series : 36
-    pro_soil_taxon_sys : 36
-    pro_land_cover : 36
-    pro_2d_position : 36
-    pro_slope : 13
+    pro_usda_soil_order : 39
+    pro_soil_taxon : 39
+    pro_soil_series : 39
+    pro_soil_taxon_sys : 39
+    pro_land_cover : 39
+    pro_2d_position : 39
+    pro_slope : 16
  flux tab...29 observations
     entry_name : 29
     site_name : 29
@@ -130,33 +131,35 @@ Summary statistics...
     flx_rc_lab_number : 16
     flx_14c : 16
     flx_14c_sigma : 16
- layer tab...190 observations
-    entry_name : 190
-    site_name : 190
-    pro_name : 190
-    lyr_name : 190
-    lyr_obs_date_y : 190
-    lyr_obs_date_m : 174
-    lyr_obs_date_d : 174
-    lyr_top : 190
-    lyr_bot : 190
-    lyr_hzn : 61
-    lyr_note : 16
-    lyr_bd_tot : 165
+ layer tab...203 observations
+    entry_name : 203
+    site_name : 203
+    pro_name : 203
+    lyr_name : 203
+    lyr_obs_date_y : 203
+    lyr_obs_date_m : 191
+    lyr_obs_date_d : 191
+    lyr_top : 203
+    lyr_bot : 203
+    lyr_hzn : 63
+    lyr_comp : 18
+    lyr_note : 38
+    lyr_bd_tot : 169
     lyr_bd_notes : 149
     lyr_sand_tot_psa : 24
     lyr_silt_tot_psa : 24
     lyr_clay_tot_psa : 24
     lyr_c_inorg : 146
     lyr_c_org : 144
-    lyr_c_tot : 165
+    lyr_c_tot : 191
     lyr_soc : 149
-    lyr_n_tot : 149
+    lyr_n_tot : 153
+    lyr_c_to_n : 4
     lyr_15n : 149
-    lyr_13c : 165
+    lyr_13c : 169
     lyr_rc_lab_number : 12
-    lyr_14c : 50
-    lyr_14c_sigma : 50
+    lyr_14c : 80
+    lyr_14c_sigma : 80
     lyr_fraction_modern : 42
     lyr_fraction_modern_sigma : 34
  interstitial tab...0 observations
