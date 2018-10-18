@@ -286,11 +286,20 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$flux %>% select(entry_name, site_name, pro_name, flx_name) %>% duplicated() %>% which()
-  if(length(duplicates)>0){
-    cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
-    error <- error+1
-  }
+
+  if("flx_name" %in% colnames(data)) {
+      duplicates <- data$flux %>% select("entry_name","site_name","pro_name","flx_name") %>% duplicated() %>% which()
+      if(length(duplicates)>0){
+      cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+      error <- error+1
+      }
+    } else {
+        duplicates <- data$flux %>% select("entry_name","site_name","pro_name") %>% duplicated() %>% which()
+        if(length(duplicates)>0){
+          cat("\n\tWARNING: Duplicate flux row identified. Add 'flx_name' column w/ unique identifiers. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+          error <- error+1
+      }
+    }
 
 
   # check layer tab #
