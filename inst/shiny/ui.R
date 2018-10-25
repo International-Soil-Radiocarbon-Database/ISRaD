@@ -6,7 +6,7 @@ shinyUI(fluidPage(
   theme = "bootstrap_simplex.css",
 
   # Application title
-  headerPanel("ISRaD v0.1.0"),
+  headerPanel("ISRaD"),
 
   sidebarPanel(
                    radioButtons("presets", label = h3("Preset plots:"),

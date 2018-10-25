@@ -15,7 +15,7 @@ Checking file format compatibility with ISRaD templates...
 Checking for empty tabs...
 	NOTE: empty tabs detected ( flux interstitial fraction incubation )
 
-Checking dataset doi...
+Not checking dataset doi because 'checkdoi==F'...
 
 Checking for misspelled column names...
  metadata tab...
@@ -114,28 +114,26 @@ Summary statistics...
     pro_soc : 12
     pro_soc_depth : 12
  flux tab...0 observations
- layer tab...61 observations
-    entry_name : 61
-    site_name : 61
-    pro_name : 61
-    lyr_name : 61
-    lyr_obs_date_y : 61
-    lyr_top : 61
-    lyr_bot : 61
+ layer tab...46 observations
+    entry_name : 46
+    site_name : 46
+    pro_name : 46
+    lyr_name : 46
+    lyr_obs_date_y : 46
+    lyr_top : 46
+    lyr_bot : 46
     lyr_hzn : 46
-    lyr_comp : 15
     lyr_color : 45
-    lyr_burn_ev : 61
+    lyr_burn_ev : 46
     lyr_bd_samp : 46
     lyr_bd_notes : 46
     lyr_sand_tot_psa : 46
     lyr_silt_tot_psa : 46
-    lyr_clay_tot_psa : 61
+    lyr_clay_tot_psa : 46
     lyr_coarse_tot : 46
     lyr_coarse_size_thresh : 46
-    lyr_bet_surface_area : 15
     lyr_ph_cacl : 46
-    lyr_ph_h2o : 61
+    lyr_ph_h2o : 46
     lyr_ph : 46
     lyr_ph_method : 46
     lyr_ca_exch : 44
@@ -147,29 +145,13 @@ Summary statistics...
     lyr_n_tot : 46
     lyr_c_to_n : 46
     lyr_13c : 46
-    lyr_rc_lab : 15
-    lyr_rc_lab_number : 15
-    lyr_rc_year : 15
-    lyr_14c : 15
-    lyr_14c_sigma : 15
-    lyr_fraction_modern : 15
-    lyr_fraction_modern_sigma : 15
-    lyr_fe_py : 61
-    lyr_al_py : 61
+    lyr_fe_py : 46
+    lyr_al_py : 46
     lyr_c_py : 46
     lyr_fe_ox : 46
     lyr_al_ox : 46
     lyr_fe_dith : 46
     lyr_al_dith : 46
-    lyr_quartz : 15
-    lyr_alkali_feldspar : 13
-    lyr_plag_feldspar : 4
-    lyr_mica_chlorite : 9
-    lyr_olivine : 4
-    lyr_kaol_halloy : 11
-    lyr_smect_vermic : 6
-    lyr_fe_oxides : 6
-    lyr_zeolite : 6
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...0 observations

@@ -7,153 +7,232 @@
 #'
 #' @return
 #'
-#' @examples
+
 read_Treat2016 <- function(dowloadDir = 'temp'){
   
-  ##pangaear::pg_data(doi = '10.1594/PANGAEA.863689')
+
+# setup -------------------------------------------------------------------
+
   
-  #download.file(https://doi.org/10.1594/PANGAEA.863689, file.path(downloadDir,
-  #                                                                ))
-  #  Convert Treat
-  
+  require(pangaear)
   require(openxlsx)
   require(dplyr)
   require(tidyr)
-  
-  fileS1<-"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1.xlsx"
-  fileS2<-"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S2.xlsx"
-  fileS3<-"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S3.xlsx"
-  
-  write.table(unique(treatS3$Dated.material), "~/Dropbox/USGS/ISRaD_data/Compilations/Treat/Dated_material_unique.txt")
-  
-  treatS1<-read.xlsx(fileS1,startRow = 422, colNames = T, check.names = T)
-  treatS2<-read.xlsx(fileS2,startRow = 629, colNames = T, check.names = T)
-  colnames(treatS1)[26]<-"ID"
-  treatS3<-read.xlsx(fileS3,startRow = 221, colNames = T, check.names = T)
-  
-  #### may be not needed
-  # merge treat files
-  treat<- full_join(treatS1, treatS2)
-  treat<- full_join(treat, treatS3)
-  # convert to flattened template
-  
-  # extract individual references
-  # save as
-  ####
   
   # read in template file from ISRaD Package
   template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
   template<-lapply(getSheetNames(template_file), function(s) read.xlsx(template_file , sheet=s))
   names(template)<-getSheetNames(template_file)
+  template<-lapply(template, function(x) x %>% mutate_all(as.character))
+
+
+# S2 ----------------------------------------------------------------------
+
+  treatS2<-pangaear::pg_data(doi = '10.1594/PANGAEA.863695')[[1]]$data
   
-  for (r in 1:length(treatS1$Reference)){
-    ref<-treatS1$Reference[r]
-    treat1_ref<-treatS1 %>% filter(Reference==ref)
-    treat2_ref<-treatS2 %>% filter(Reference==ref)
-    treat3_ref<-treatS3 %>% filter(Reference==ref)
-    
-    data_template<-list()
-    #metadata
-    data_template$metadata$entry_name<-ref
-    data_template$metadata$doi<-"unknown"
-    data_template$metadata$curator_name<-"Claire Treat"
-    data_template$metadata$curator_email<-"cctreat@gmail.com"
-    data_template$metadata$curator_organization<-"USGS"
-    data_template$metadata$metadata_note<-"Treat et al 2016 compliation"
-    data_template$metadata$bibliographical_reference<-paste(unlist(unique(treat1_ref$X30)), collapse = ";")
-    data_template$metadata$template_version<-template$metadata$template_version[3]
-    data_template$metadata<-bind_rows(template$metadata[c(1,2),], data_template$metadata)
-    
-    #site
-    data_template$site$entry_name<-treat2_ref$Reference
-    data_template$site$site_name<- treat2_ref$Site
-    data_template$site$site_lat<- treat2_ref$Latitude
-    data_template$site$site_long<- treat2_ref$Longitude
-    data_template$site$site_elevation<- treat2_ref$Height..m.
-    data_template$site<-data.frame(data_template$site)
-    data_template$site<-  data_template$site[!duplicated(data_template$site),]
-    data_template$site[]<-lapply(data_template$site, as.character)
-    data_template$site<-bind_rows(template$site, data_template$site)
-    
-    #profile
-    data_template$profile$entry_name<-treat2_ref$Reference
-    data_template$profile$site_name<- treat2_ref$Site
-    data_template$profile$pro_name<- treat2_ref$ID
-    data_template$profile$pro_lat<- treat2_ref$Latitude
-    data_template$profile$pro_long<- treat2_ref$Longitude
-    data_template$profile<-data.frame(data_template$profile)
-    data_template$profile<-  data_template$profile[!duplicated(data_template$profile),]
-    data_template$profile[]<-lapply(data_template$profile, as.character)
-    data_template$profile<-bind_rows(template$profile, data_template$profile)
-    
-    #flux
-    data_template$flux<-template$flux
-    
-    #layer
-    treat3_ref$layer_name<-paste(treat3_ref$ID, as.numeric((as.factor(treat3_ref$Depth..m.))), sep="-radlayer")
-    treat3_ref$layer_bot<-treat3_ref$Depth..m.
-    treat3_ref$Samp.thick..cm.[is.na(treat3_ref$Samp.thick..cm.)]<-0
-    treat3_ref$layer_top<-treat3_ref$Depth..m.-treat3_ref$Samp.thick..cm./100
-    
-    treat2_ref$layer_name<-paste(treat2_ref$ID, as.numeric((as.factor(paste(treat2_ref$Depth.top..m., treat2_ref$Depth.top..m.)))), sep="-layer")
-    treat2_ref$layer_bot<-treat2_ref$Depth.bot..m.
-    treat2_ref$layer_top<-treat2_ref$Depth.top..m.
-    
-    treat_ref_layers<-bind_rows(treat3_ref, treat2_ref)
-    # data_treat <- full_join(tableS1, tableS2) %>% 
-    #          full_join(tableS3) %>%
-    ##seperate bulk vs fract
-    #          inner_join(fractionKeyTable) %>%
-    #          mutate(frationKeyColumn = recode(1=frc_13c, 2=lyr_13c))
-    #          spread(key=factionKeyColumn, value=fractionDataColumn)
-    #
-    # data_template$layer <- treat_ref_laysers %>%
-    #   select(Reference, Site, ID, layer_name, layer_bot, layer_top) %>%
-    #   rename(entry_name=Reference,
-    #          site_name=Site)...
-    
-    
-    data_template$layer$entry_name<-treat_ref_layers$Reference
-    data_template$layer$site_name<- treat_ref_layers$Site
-    data_template$layer$pro_name<- treat_ref_layers$ID
-    data_template$layer$lyr_name<-treat_ref_layers$layer_name
-    data_template$layer$lyr_bot<- treat_ref_layers$layer_bot
-    data_template$layer$lyr_top<- treat_ref_layers$layer_top
-    data_template$layer$lyr_bd_samp<-treat_ref_layers$DBD..g.cm..3.
-    data_template$layer$lyr_loi<-treat_ref_layers$LOI....
-    data_template$layer$lyr_c_tot<-treat_ref_layers$TC....
-    data_template$layer$lyr_n_tot<-treat_ref_layers$TN....
-    data_template$layer$lyr_note<-treat_ref_layers$Lithology
-    data_template$layer$lyr_hzn<-treat_ref_layers$Peat
-    data_template$layer$lyr_rc_lab_number<-treat_ref_layers$Lab.label
-    data_template$layer$lyr_14c<-treat_ref_layers$Age.dated..ka.
-    data_template$layer$lyr_14c_sd<-treat_ref_layers$Age.std.e..Â..
-    
-    data_template$layer<-data.frame(data_template$layer)
-    data_template$layer<-  data_template$layer[!duplicated(data_template$layer),]
-    data_template$layer[]<-lapply(data_template$layer, as.character)
-    data_template$layer<-bind_rows(template$layer, data_template$layer)
-    
-    #interstitial
-    data_template$interstitial<-template$interstitial
-    
-    #fraction
-    data_template$fraction<-template$fraction
-    
-    #incubation
-    data_template$incubation<-template$incubation
-    
-    #`controlled vocabulary`
-    data_template$`controlled vocabulary`<-template$`controlled vocabulary`
-    
-    write.xlsx(data_template, paste0("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", gsub("etal","",gsub(" ", "",gsub(",","_", gsub("\\.","", ref)))), ".xlsx"))
-  }
+  data_template<-list()
+  #metadata
+  data_template$metadata<-data.frame(
+    entry_name=treatS2$Reference,
+    doi="unknown",
+    compilation_doi="10.1594/PANGAEA.863689",
+    curator_name="Claire Treat",
+    curator_email="cctreat@gmail.com",
+    curator_organization="USGS",
+    metadata_note="Treat et al 2016 compliation",
+    modification_date_y=format(Sys.Date(),"%yyyy"),
+    modification_date_m=format(Sys.Date(),"%m"),
+    modification_date_d=format(Sys.Date(),"%d"),
+    bibliographical_reference=treatS2$Reference,
+    template_version=template$metadata$template_version[3]
+  )
   
-  # probably unnecessary
-  # save doi_numbers
-  data_files<-list.files("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", full.names = F)
-  data_files<-data_files[grep("xlsx", data_files)]
-  data_files<-gsub(".xlsx","",data_files)
+  data_template$metadata[]<-lapply(data_template$metadata, as.character)
+  data_template$metadata=bind_rows(template$metadata[c(1,2),], data_template$metadata)
+  data_template$metadata=data_template$metadata[which(!duplicated(data_template$metadata)),]
   
-  write.csv(data.frame(entry_name=data_files, doi=""),"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/dois.csv")
+  #site
+  data_template$site<-data.frame(
+    entry_name=treatS2$Reference,
+    site_name= treatS2$Site,
+    site_lat= treatS2$Latitude,
+    site_long= treatS2$Longitude,
+    site_elevation= treatS2$`Height [m]`
+  )
+  data_template$site[]<-lapply(data_template$site, as.character)
+  data_template$site=bind_rows(template$site[c(1,2),], data_template$site)
+  data_template$site=data_template$site[which(!duplicated(data_template$site)),]
+  
+  #profile
+  data_template$profile<-data.frame(
+   entry_name=treatS2$Reference,
+   site_name= treatS2$Site,
+   pro_name=treatS2$ID,
+   pro_lat= treatS2$Latitude,
+   pro_long= treatS2$Longitude
+  )
+  
+  data_template$profile[]<-lapply(data_template$profile, as.character)
+  data_template$profile=bind_rows(template$profile[c(1,2),], data_template$profile)
+  data_template$profile=data_template$profile[which(!duplicated(data_template$profile)),]
+  
+  #flux
+  data_template$flux<-template$flux
+  
+  #layer
+  data_template$layer<-data.frame(
+    entry_name=treatS2$Reference,
+    site_name= treatS2$Site,
+    pro_name=treatS2$ID,
+    lyr_name=paste(treatS2$ID, as.numeric((as.factor(paste(treatS2$`Depth bot [m]`, treatS2$`Depth top [m]`)))), sep="-layer"),
+    lyr_bot=treatS2$`Depth bot [m]` *100,
+    lyr_top=treatS2$`Depth top [m]` *100,
+    lyr_bd_samp=treatS2$`DBD [g/cm**3]`,
+    lyr_loi= treatS2$`LOI [%]`,
+    lyr_c_tot=treatS2$`TC [%]`,
+    lyr_n_tot=treatS2$`TN [%]`,
+    lyr_note=treatS2$Lithology,
+    lyr_hzn=treatS2$Peat
+  )
+  
+  data_template$layer[]<-lapply(data_template$layer, as.character)
+  data_template$layer=bind_rows(template$layer[c(1,2),], data_template$layer)
+  data_template$profile=data_template$layer[which(!duplicated(data_template$layer)),]
+  
+  #interstitial
+  data_template$interstitial<-template$interstitial
+  
+  #fraction
+  data_template$fraction<-template$fraction
+  
+  #incubation
+  data_template$incubation<-template$incubation
+  
+  #`controlled vocabulary`
+  data_template$`controlled vocabulary`<-template$`controlled vocabulary`
+  
+  write.xlsx(data_template, "~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/S2converted_to_template.xlsx")
+  
+# S3 ----------------------------------------------------------------------
+
+  treatS3<-pangaear::pg_data(doi = '10.1594/PANGAEA.863692')[[1]]$data
+
+  data_template<-list()
+  #metadata
+  data_template$metadata<-data.frame(
+    entry_name=treatS3$Reference,
+    doi="unknown",
+    compilation_doi="10.1594/PANGAEA.863689",
+    curator_name="Claire Treat",
+    curator_email="cctreat@gmail.com",
+    curator_organization="USGS",
+    metadata_note="Treat et al 2016 compliation",
+    modification_date_y=format(Sys.Date(),"%yyyy"),
+    modification_date_m=format(Sys.Date(),"%m"),
+    modification_date_d=format(Sys.Date(),"%d"),
+    bibliographical_reference=treatS3$Reference,
+    template_version=template$metadata$template_version[3]
+  )
+  
+  data_template$metadata[]<-lapply(data_template$metadata, as.character)
+  data_template$metadata=bind_rows(template$metadata[c(1,2),], data_template$metadata)
+  data_template$metadata=data_template$metadata[which(!duplicated(data_template$metadata)),]
+  
+  #site
+  data_template$site<-data.frame(
+    entry_name=treatS3$Reference,
+    site_name= treatS3$Site,
+    site_lat= treatS3$Latitude,
+    site_long= treatS3$Longitude,
+    site_elevation= treatS3$`Height [m]`
+  )
+  data_template$site[]<-lapply(data_template$site, as.character)
+  data_template$site=bind_rows(template$site[c(1,2),], data_template$site)
+  data_template$site=data_template$site[which(!duplicated(data_template$site)),]
+  
+  #profile
+  data_template$profile<-data.frame(
+    entry_name=treatS3$Reference,
+    site_name= treatS3$Site,
+    pro_name=treatS3$ID,
+    pro_lat= treatS3$Latitude,
+    pro_long= treatS3$Longitude
+  )
+  
+  data_template$profile[]<-lapply(data_template$profile, as.character)
+  data_template$profile=bind_rows(template$profile[c(1,2),], data_template$profile)
+  data_template$profile=data_template$profile[which(!duplicated(data_template$profile)),]
+  
+  #flux
+  data_template$flux<-template$flux
+  
+  #layer
+  
+  treatS3$lyr_bot <- treatS3$`Depth [m]`*100
+  treatS3$`Samp thick [cm]`[is.na(treatS3$`Samp thick [cm]`)]<-0
+  treatS3$lyr_top <- treatS3$lyr_bot + treatS3$`Samp thick [cm]`
+  
+  layer_fraction_key<-read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/Dated_material_unique_matching.xlsx")
+  layer_materials<-layer_fraction_key %>% select(material, key) %>% filter(key==1)
+  fraction_materials<-layer_fraction_key %>% select(material, key) %>% filter(key==2)
+  
+  treatS3_layers<-treatS3 %>% filter(`Dated material` %in% layer_materials$material)
+  treatS3_layers$lyr_name<-paste(treatS3_layers$ID, as.numeric((as.factor(paste(treatS3_layers$`Depth [m]`)))), sep="-rad_layer")
+  treatS3_layers$lyr_rc_lab_number<-treatS3_layers$`Lab label`
+  treatS3_layers$lyr_14c<-treatS3_layers$`Age dated [ka]`
+  treatS3_layers$lyr_14c_sd<-treatS3_layers$`Age std e [±]`  
+  
+  treatS3_fractions<-treatS3 %>% filter(`Dated material` %in% fraction_materials$material)
+  treatS3_fractions$lyr_name<-paste(treatS3_fractions$ID, as.numeric((as.factor(paste(treatS3_fractions$`Depth [m]`)))), sep="-rad_dummy_layer")
+  
+  treatS3_fractions$lyr_rc_lab_number<-NA
+  treatS3_fractions$lyr_14c<-NA
+  treatS3_fractions$lyr_14c_sd<-NA
+  
+  
+  data_template$layer<-data.frame(
+    entry_name=c(treatS3_layers$Reference,treatS3_fractions$Reference),
+    site_name= c(treatS3_layers$Site,treatS3_fractions$Site),
+    pro_name=c(treatS3_layers$ID,treatS3_fractions$ID),
+    lyr_name=c(treatS3_layers$lyr_name,treatS3_fractions$lyr_name),
+    lyr_top=c(treatS3_layers$lyr_top,treatS3_fractions$lyr_top),
+    lyr_bot=c(treatS3_layers$lyr_bot,treatS3_fractions$lyr_bot),
+    lyr_rc_lab_number=c(treatS3_layers$lyr_rc_lab_number,treatS3_fractions$lyr_rc_lab_number),
+    lyr_14c=c(treatS3_layers$lyr_14c,treatS3_fractions$lyr_14c),
+    lyr_14c_sd=c(treatS3_layers$lyr_14c_sd,treatS3_fractions$lyr_14c_sd)
+  )
+  
+  data_template$layer[]<-lapply(data_template$layer, as.character)
+  data_template$layer=bind_rows(template$layer[c(1,2),], data_template$layer)
+  data_template$layer=data_template$layer[which(!duplicated(data_template$layer)),]
+
+  
+  #interstitial
+  data_template$interstitial<-template$interstitial
+  
+  #fraction
+  data_template$fraction<-data.frame(
+    entry_name=treatS3_fractions$Reference,
+    site_name= treatS3_fractions$Site,
+    pro_name=treatS3_fractions$ID,
+    lyr_name=treatS3_fractions$lyr_name,
+    frc_name=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated material`),
+    frc_rc_lab_number=treatS3_fractions$`Lab label`,
+    frc_14c=treatS3_fractions$`Age dated [ka]`,
+    frc_14c_sd=treatS3_fractions$`Age std e [±]` 
+  )
+  
+  data_template$fraction[]<-lapply(data_template$fraction, as.character)
+  data_template$fraction=bind_rows(template$fraction[c(1,2),], data_template$fraction)
+  data_template$fraction=data_template$fraction[which(!duplicated(data_template$fraction)),]
+  
+  #incubation
+  data_template$incubation<-template$incubation
+  
+  #`controlled vocabulary`
+  data_template$`controlled vocabulary`<-template$`controlled vocabulary`
+  
+  write.xlsx(data_template, "~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/S3converted_to_template.xlsx")
+  
+
 }
