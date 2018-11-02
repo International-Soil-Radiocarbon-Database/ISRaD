@@ -4,7 +4,7 @@ Version: 0.0.1.0000
 Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: R (>= 3.3.0)
-Imports: openxlsx, devtools, stringi, data.tree, dplyr, tidyr, RCurl, ggplot2, shiny, assertthat, rcrossref, forecast, SoilR
+Imports: openxlsx, devtools, stringi, data.tree, raster, dplyr, tidyr, RCurl, ggplot2, shiny, assertthat, rcrossref, forecast, SoilR
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
