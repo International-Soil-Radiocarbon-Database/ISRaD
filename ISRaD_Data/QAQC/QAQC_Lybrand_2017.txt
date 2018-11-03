@@ -99,6 +99,7 @@ Summary statistics...
     pro_treatment : 9
     pro_MAT : 9
     pro_MAP : 9
+    pro_usda_soil_order : 9
     pro_veg_note : 9
  flux tab...0 observations
  layer tab...16 observations
@@ -133,7 +134,7 @@ Summary statistics...
     frc_agent : 48
     frc_comp : 9
     frc_note : 16
-    frc_c_perc : 9
+    frc_c_perc : 45
     frc_c_tot : 9
     frc_c_to_n : 9
     frc_13c : 46

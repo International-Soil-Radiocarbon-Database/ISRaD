@@ -86,6 +86,7 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
+    metadata_note : 1
     template_version : 1
  site tab...2 observations
     entry_name : 2
@@ -103,6 +104,7 @@ Summary statistics...
     pro_reps : 4
     pro_MAT : 10
     pro_MAP : 10
+    pro_usda_soil_order : 13
     pro_land_cover : 13
     pro_parent_material_notes : 13
  flux tab...0 observations
@@ -135,6 +137,7 @@ Summary statistics...
     frc_lower : 26
     frc_upper : 26
     frc_agent : 26
+    frc_c_perc : 26
     frc_c_org : 26
     frc_c_to_n : 26
     frc_15n : 26

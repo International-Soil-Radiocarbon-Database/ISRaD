@@ -86,6 +86,7 @@ Summary statistics...
     contact_email : 1
     contact_orcid_id : 1
     bibliographical_reference : 1
+    metadata_note : 1
  site tab...1 observations
     entry_name : 1
     site_name : 1
@@ -138,6 +139,7 @@ Summary statistics...
     frc_agent : 29
     frc_note : 15
     frc_mass_perc : 19
+    frc_c_perc : 19
     frc_c_tot : 19
     frc_n_tot : 19
     frc_c_to_n : 19

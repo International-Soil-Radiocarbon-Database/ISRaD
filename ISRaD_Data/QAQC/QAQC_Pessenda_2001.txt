@@ -98,6 +98,7 @@ Summary statistics...
     site_name : 8
     pro_name : 8
     pro_treatment : 8
+    pro_usda_soil_order : 7
     pro_soil_taxon : 7
     pro_land_cover : 8
     pro_veg_note : 8

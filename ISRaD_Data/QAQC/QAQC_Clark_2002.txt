@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Baisden_2002.xlsx
+File: Clark_2002.xlsx
 
 Checking file type...
 
@@ -86,68 +86,83 @@ Summary statistics...
     contact_email : 1
     contact_orcid_id : 1
     bibliographical_reference : 1
- site tab...4 observations
-    entry_name : 4
-    site_name : 4
-    site_lat : 4
-    site_long : 4
-    site_datum : 4
-    site_note : 1
- profile tab...8 observations
-    entry_name : 8
-    site_name : 8
-    pro_name : 8
-    pro_note : 8
-    pro_treatment : 8
-    pro_soil_taxon : 8
-    pro_soil_series : 8
-    pro_land_cover : 8
-    pro_veg_note : 8
-    pro_parent_material : 8
-    pro_parent_chem : 8
-    pro_parent_material_notes : 8
-    pro_2d_position : 8
-    pro_slope : 8
-    pro_slope_shape : 8
-    pro_drainage_class : 8
-    pro_soc : 8
-    pro_soc_sigma : 8
+    metadata_note : 1
+    template_version : 1
+ site tab...1 observations
+    entry_name : 1
+    site_name : 1
+    site_lat : 1
+    site_long : 1
+    site_elevation : 1
+ profile tab...1 observations
+    entry_name : 1
+    site_name : 1
+    pro_name : 1
+    pro_lat : 1
+    pro_long : 1
+    pro_elevation : 1
+    pro_treatment : 1
+    pro_reps : 1
+    pro_MAT : 1
+    pro_MAP : 1
+    pro_usda_soil_order : 1
+    pro_soil_series : 1
+    pro_soil_taxon : 1
+    pro_soil_taxon_sys : 1
+    pro_land_cover : 1
+    pro_veg_note : 1
+    pro_parent_material : 1
+    pro_parent_chem : 1
+    pro_parent_material_notes : 1
+    pro_2d_position : 1
+    pro_aspect : 1
+    pro_aspect_deg : 1
+    pro_slope : 1
+    pro_slope_shape : 1
+    pro_drainage_class : 1
  flux tab...0 observations
- layer tab...25 observations
-    entry_name : 25
-    site_name : 25
-    pro_name : 25
-    lyr_name : 25
-    lyr_obs_date_y : 25
-    lyr_top : 25
-    lyr_bot : 25
-    lyr_hzn : 12
-    lyr_bd_samp : 17
-    lyr_clay_tot_psa : 12
-    lyr_texture_class : 12
-    lyr_ph_cacl : 11
-    lyr_soc : 25
-    lyr_soc_sigma : 25
-    lyr_14c : 16
-    lyr_14c_sigma : 16
+ layer tab...9 observations
+    entry_name : 9
+    site_name : 9
+    pro_name : 9
+    lyr_name : 9
+    lyr_obs_date_y : 9
+    lyr_obs_date_m : 9
+    lyr_obs_date_d : 9
+    lyr_top : 9
+    lyr_bot : 9
+    lyr_note : 5
+    lyr_color : 6
+    lyr_bd_tot : 8
+    lyr_texture_class : 9
+    lyr_c_org : 9
+    lyr_rc_year : 9
+    lyr_fraction_modern : 3
+    lyr_fraction_modern_sigma : 3
  interstitial tab...0 observations
- fraction tab...90 observations
-    entry_name : 90
-    site_name : 90
-    pro_name : 90
-    lyr_name : 90
-    frc_name : 90
-    frc_input : 90
-    frc_property : 90
-    frc_scheme : 90
-    frc_scheme_units : 90
-    frc_lower : 90
-    frc_upper : 90
-    frc_agent : 90
-    frc_c_perc : 90
-    frc_rc_year : 61
-    frc_14c : 61
-    frc_14c_sigma : 61
+ fraction tab...27 observations
+    entry_name : 27
+    site_name : 27
+    pro_name : 27
+    lyr_name : 27
+    frc_name : 27
+    frc_input : 27
+    frc_property : 27
+    frc_scheme : 27
+    frc_scheme_units : 27
+    frc_lower : 27
+    frc_upper : 27
+    frc_agent : 27
+    frc_mass_perc : 27
+    frc_obs_date_y : 27
+    frc_c_perc : 27
+    frc_c_org : 26
+    frc_n_tot : 26
+    frc_rc_year : 27
+    frc_14c : 8
+    frc_14c_sigma : 8
+    frc_fraction_modern : 14
+    frc_fraction_modern_sigma : 14
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

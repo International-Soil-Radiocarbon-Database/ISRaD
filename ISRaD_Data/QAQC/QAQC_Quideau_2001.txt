@@ -102,6 +102,7 @@ Summary statistics...
     pro_comp : 2
     pro_MAT : 2
     pro_MAP : 2
+    pro_usda_soil_order : 2
     pro_veg_note : 2
     pro_parent_material : 2
     pro_parent_chem : 2

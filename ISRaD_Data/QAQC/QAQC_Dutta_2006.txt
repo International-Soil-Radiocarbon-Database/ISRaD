@@ -139,6 +139,7 @@ Summary statistics...
     frc_upper : 24
     frc_agent : 24
     frc_note : 12
+    frc_c_perc : 18
     frc_c_tot : 24
     frc_n_tot : 18
     frc_15n : 18
