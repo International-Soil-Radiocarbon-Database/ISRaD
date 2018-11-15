@@ -193,7 +193,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$site %>% select(.data$site_lat, .data$site_long) %>% duplicated() %>% which()
+  duplicates <- data$site %>% select(.data$entry_name, .data$site_lat, .data$site_long) %>% duplicated() %>% which()
   if(length(duplicates)>0){
     cat("\n\tWARNING: Duplicate site coordinates identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
@@ -282,8 +282,8 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: 'profile_name' mismatch between 'flux' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
-  
-  
+
+
   mismatch.rows <- anti_join(as.data.frame(lapply(data$flux, as.character), stringsAsFactors = F), as.data.frame(lapply(data$site, as.character), stringsAsFactors = F), by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$flux,ends_with("name")),select(mismatch.rows, ends_with("name")))))
@@ -411,7 +411,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
   }
-  
+
   # check fraction tab #
   cat("\n fraction tab...", file=outfile, append = T)
   if (length(data$fraction$entry_name)>0){
