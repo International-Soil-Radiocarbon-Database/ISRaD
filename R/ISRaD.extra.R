@@ -5,7 +5,7 @@
 #' @param geodata_directory directory where geospatial data is found
 #' @export
 
-ISRaD.extra<-function(database=ISRaD_data, geodata_directory){
+ISRaD.extra<-function(database, geodata_directory){
 
   database<-ISRaD.extra.fill_dates(database)
   database<-ISRaD.extra.fill_14c(database)

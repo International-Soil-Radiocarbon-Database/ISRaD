@@ -32,8 +32,6 @@
 #' @author J. Grey Monroe, Alison Hoyt
 #' @return An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.
 #' @references http://www.worldclim.org/
-#' @importFrom raster extract
-#' @importFrom raster getData
 #' 
 
 ISRaD.extra.geospatial.climate<-function(database, geodata_directory) {

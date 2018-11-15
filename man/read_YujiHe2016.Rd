@@ -4,8 +4,7 @@
 \alias{read_YujiHe2016}
 \title{Read He 2016}
 \usage{
-
-  read_YujiHe2016(Yujie_file = "~/Dropbox/ISRaD_data/Compilations/Yujie/raw/Yujie_dataset2.csv")
+read_YujiHe2016(Yujie_file = NULL)
 }
 \arguments{
 \item{Yujie_file}{The raw csv data}

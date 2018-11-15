@@ -1,3 +1,4 @@
+inst/doc
 ##ignore mac files
 .DS_Store
 
@@ -7,7 +8,6 @@
 .RData
 .Ruserdata
 ISRaD.Rproj
-
 # Folders
 _site/
 .sass-cache/

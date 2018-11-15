@@ -107,7 +107,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   data<-lapply(data, function(x) lapply(x, as.character))
-  data<-lapply(data, function(x) lapply(x, type.convert))
+  data<-lapply(data, function(x) lapply(x, utils::type.convert))
   data<-lapply(data, as.data.frame)
 
   ##### check for empty tabs ####
@@ -193,12 +193,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$site %>% select(site_lat, site_long) %>% duplicated() %>% which()
+  duplicates <- data$site %>% select(.data$site_lat, .data$site_long) %>% duplicated() %>% which()
   if(length(duplicates)>0){
     cat("\n\tWARNING: Duplicate site coordinates identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
-  duplicates <- data$site %>% select(entry_name, site_name) %>% duplicated() %>% which()
+  duplicates <- data$site %>% select(.data$entry_name, .data$site_name) %>% duplicated() %>% which()
   if(length(duplicates)>0){
     cat("\n\tWARNING: Duplicate site names identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
@@ -237,7 +237,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  duplicates <- data$profile %>% select(entry_name, site_name, pro_name) %>% duplicated() %>% which()
+  duplicates <- data$profile %>% select(.data$entry_name, .data$site_name, .data$pro_name) %>% duplicated() %>% which()
   if(length(duplicates)>0){
     cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1

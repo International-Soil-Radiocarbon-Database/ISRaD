@@ -7,10 +7,10 @@
 read_Treat2016(dowloadDir = "temp")
 }
 \arguments{
-\item{dowloadDir}{}
+\item{dowloadDir}{directory where data files will be downloaded}
 }
 \value{
-
+writes out files for individual data objects
 }
 \description{
 Currently doesn't work and is under development

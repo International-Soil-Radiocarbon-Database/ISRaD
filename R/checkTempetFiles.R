@@ -19,13 +19,13 @@ checkTempletFiles <- function(outfile=''){
   # Get the tables stored in the templet sheets
   template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", 
                                package = "ISRaD")
-  template <- lapply(setNames(nm=openxlsx::getSheetNames(template_file)), 
+  template <- lapply(stats::setNames(nm=openxlsx::getSheetNames(template_file)), 
                      function(s){openxlsx::read.xlsx(template_file, 
                                                      sheet=s)})
   
   template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx", 
                                     package = "ISRaD")
-  template_info <- lapply(setNames(nm=openxlsx::getSheetNames(template_info_file)), 
+  template_info <- lapply(stats::setNames(nm=openxlsx::getSheetNames(template_info_file)), 
                           function(s){
                             openxlsx::read.xlsx(template_info_file , sheet=s)
                           })
@@ -56,9 +56,9 @@ checkTempletFiles <- function(outfile=''){
   ##Crunch the vocabe in the template
   template_vocab <- template_vocab %>%
     tidyr::gather(key='Column_Name', value='Template_Vocab', na.rm=TRUE) %>%
-    dplyr::filter(Template_Vocab != '<NA>') %>%
-    dplyr::group_by(Column_Name) %>%
-    dplyr::summarize(Template_Vocab = list(Template_Vocab))
+    dplyr::filter(.data$Template_Vocab != '<NA>') %>%
+    dplyr::group_by(.data$Column_Name) %>%
+    dplyr::summarize(Template_Vocab = list(.data$Template_Vocab))
   
   sheetNames <- lapply(template_info, names)
   #for each sheet that has a Variable_class defined
@@ -67,16 +67,16 @@ checkTempletFiles <- function(outfile=''){
     cat("\n",tab,"...", file=outfile, append = TRUE)
     
     template_info_vocab <- template_info[[tab]] %>% #pull the sheet in the info
-      dplyr::filter(Variable_class == 'character', #filter the variable class
-                    !is.na(Vocab), #ignore ones with non-sepcific vocabs
-                    ! grepl("name", Column_Name)) %>% #also ignore name columns
-      group_by(Column_Name) %>%
-      mutate(Info_Vocab=(strsplit(Vocab, split=', '))) %>%
+      dplyr::filter(.data$Variable_class == 'character', #filter the variable class
+                    !is.na(.data$Vocab), #ignore ones with non-sepcific vocabs
+                    ! grepl("name", .data$Column_Name)) %>% #also ignore name columns
+      group_by(.data$Column_Name) %>%
+      mutate(Info_Vocab=(strsplit(.data$Vocab, split=', '))) %>%
       dplyr::left_join(template_vocab, by="Column_Name") %>%
-      dplyr::mutate(InfoInTemplate = list(unlist(Info_Vocab) %in% 
-                                            unlist(Template_Vocab)),
-                    TemplateInInfo = list(unlist(Template_Vocab) %in% 
-                                            unlist(Info_Vocab)))
+      dplyr::mutate(InfoInTemplate = list(unlist(.data$Info_Vocab) %in% 
+                                            unlist(.data$Template_Vocab)),
+                    TemplateInInfo = list(unlist(.data$Template_Vocab) %in% 
+                                            unlist(.data$Info_Vocab)))
     
     if(!any(unlist(template_info_vocab$InfoInTemplate))){
       cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:", 
@@ -92,14 +92,14 @@ checkTempletFiles <- function(outfile=''){
     
     ##Check that the min/max are strictly numeric or NA-------------------
     template_info_num <- template_info[[tab]] %>% #pull the sheet in the info
-      dplyr::filter(Variable_class == 'numeric')
+      dplyr::filter(.data$Variable_class == 'numeric')
     
-    if(! is.numeric(type.convert(template_info_num$Max))){
+    if(! is.numeric(utils::type.convert(template_info_num$Max))){
       cat("\n\tWARNING non-numeric values in Max column", 
           file=outfile, append = TRUE)
     }
     
-    if(! is.numeric(type.convert(template_info_num$Min))){
+    if(! is.numeric(utils::type.convert(template_info_num$Min))){
       cat("\n\tWARNING non-numeric values in Min column", 
           file=outfile, append = TRUE)
     }

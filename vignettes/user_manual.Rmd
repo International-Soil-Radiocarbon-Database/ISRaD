@@ -2,7 +2,11 @@
 title: "ISRaD user manual"
 author: "Grey Monroe"
 date: "9/11/2018"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{ISRaD user manual}
+  %\usepackage[UTF-8]{inputenc}
 ---
 
 ## How to install the database
@@ -11,7 +15,7 @@ for older versions, visit our website.
 
 ```{r eval=FALSE}
 install.packages("devtools")
-install_github("International-Soil-Radiocarbon-Database/ISRaD", ref = "v0.0.1")
+install_github("International-Soil-Radiocarbon-Database/ISRaD", ref = "dev")
 library(ISRaD)
 ```
 
