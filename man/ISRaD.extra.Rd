@@ -4,7 +4,7 @@
 \alias{ISRaD.extra}
 \title{ISRaD.extra}
 \usage{
-ISRaD.extra(database = ISRaD_data, geodata_directory)
+ISRaD.extra(database, geodata_directory)
 }
 \arguments{
 \item{database}{soilcarbon dataset object}

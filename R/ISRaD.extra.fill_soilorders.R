@@ -8,7 +8,7 @@
 
 ISRaD.extra.fill_soilorders<-function(database){
 
-  database$profile$pro_usda_soil_order <- revalue(database$profile$pro_soil_taxon,
+  database$profile$pro_usda_soil_order <- plyr::revalue(database$profile$pro_soil_taxon,
                                               c("Abruptic Luvisol" = "Andisols",
                                                 "acidic Albic Luvisol" = "Alfisols",
                                                 "Acrisol (Humic)" = "Ultisols",

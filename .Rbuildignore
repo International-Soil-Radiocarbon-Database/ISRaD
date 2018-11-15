@@ -17,3 +17,6 @@
 ^package\.json$
 ^staticman\.yml$
 ^ISRaD_Data$
+^Contributing
+^ISRaD.pdf
+^ISRaD_data_in_progress

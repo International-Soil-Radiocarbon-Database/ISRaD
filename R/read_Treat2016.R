@@ -1,23 +1,21 @@
-
 #' Read in data for Treat 2016. 
 #' 
 #' Currently doesn't work and is under development
 #'
-#' @param dowloadDir 
-#'
-#' @return
-#'
+#' @param dowloadDir directory where data files will be downloaded
+#' @return writes out files for individual data objects
+#' @import pangaear
+
 
 read_Treat2016 <- function(dowloadDir = 'temp'){
-  
 
 # setup -------------------------------------------------------------------
 
   
-  require(pangaear)
-  require(openxlsx)
-  require(dplyr)
-  require(tidyr)
+  requireNamespace("pangaear")
+  requireNamespace("openxlsx")
+  requireNamespace("dplyr")
+  requireNamespace("tidyr")
   
   # read in template file from ISRaD Package
   template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
@@ -173,16 +171,17 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   treatS3$lyr_top <- treatS3$lyr_bot + treatS3$`Samp thick [cm]`
   
   layer_fraction_key<-read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/Dated_material_unique_matching.xlsx")
-  layer_materials<-layer_fraction_key %>% select(material, key) %>% filter(key==1)
-  fraction_materials<-layer_fraction_key %>% select(material, key) %>% filter(key==2)
+  layer_materials<-layer_fraction_key %>% select(.data$material, .data$key) %>% filter(.data$key==1)
+  fraction_materials<-layer_fraction_key %>% select(.data$material, .data$key) %>% filter(.data$key==2)
   
-  treatS3_layers<-treatS3 %>% filter(`Dated material` %in% layer_materials$material)
+
+  treatS3_layers<-treatS3 %>% filter(.data$`Dated material` %in% layer_materials$material)
   treatS3_layers$lyr_name<-paste(treatS3_layers$ID, as.numeric((as.factor(paste(treatS3_layers$`Depth [m]`)))), sep="-rad_layer")
   treatS3_layers$lyr_rc_lab_number<-treatS3_layers$`Lab label`
   treatS3_layers$lyr_14c<-treatS3_layers$`Age dated [ka]`
-  treatS3_layers$lyr_14c_sd<-treatS3_layers$`Age std e [±]`  
+  treatS3_layers$lyr_14c_sd<-treatS3_layers[,15] #cant use column name because it contains non-ASCII character
   
-  treatS3_fractions<-treatS3 %>% filter(`Dated material` %in% fraction_materials$material)
+  treatS3_fractions<-treatS3 %>% filter(.data$`Dated material` %in% fraction_materials$material)
   treatS3_fractions$lyr_name<-paste(treatS3_fractions$ID, as.numeric((as.factor(paste(treatS3_fractions$`Depth [m]`)))), sep="-rad_dummy_layer")
   
   treatS3_fractions$lyr_rc_lab_number<-NA
@@ -219,7 +218,7 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     frc_name=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated material`),
     frc_rc_lab_number=treatS3_fractions$`Lab label`,
     frc_14c=treatS3_fractions$`Age dated [ka]`,
-    frc_14c_sd=treatS3_fractions$`Age std e [±]` 
+    frc_14c_sd=treatS3_fractions[,15] #cant use column name because it contains non-ASCII character 
   )
   
   data_template$fraction[]<-lapply(data_template$fraction, as.character)

@@ -19,24 +19,20 @@
 #' @export
 #'
 #' @import devtools
-#' @import dplyr
 #' @import stringi
 #' @import openxlsx
-#' @import dplyr
-#' @import tidyr
 #' @import assertthat
-#'
+#' @import tidyverse
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
-                    return_type=c('none', 'list', 'flat')[1], checkdoi=F){
+                    return_type=c('none', 'list', 'flat')[2], checkdoi=F){
   #Libraries used
   requireNamespace("stringi")
   requireNamespace("assertthat")
   requireNamespace("openxlsx")
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
-
+  requireNamespace("tidyverse")
+  
   # Check inputs
   assertthat::assert_that(dir.exists(dataset_directory))
   assertthat::assert_that(is.logical(write_report))
@@ -70,7 +66,7 @@ compile <- function(dataset_directory,
   # Get the tables stored in the templet sheets
   template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx",
                                package = "ISRaD")
-  template <- lapply(setNames(nm=openxlsx::getSheetNames(template_file)),
+  template <- lapply(stats::setNames(nm=openxlsx::getSheetNames(template_file)),
                      function(s){openxlsx::read.xlsx(template_file,
                                                      sheet=s)})
 
@@ -106,9 +102,7 @@ compile <- function(dataset_directory,
    #data_stats<- data_stats %>% mutate_all(as.character)
    #entry_stats<-bind_rows(entry_stats, data_stats)
 
-    flat_data<-char_data %>%
-    Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
-    working_database<-bind_rows(working_database, flat_data)
+    
 
   for (t in 1:length(char_data)){
     tab<-colnames(char_data)[t]
@@ -121,12 +115,12 @@ compile <- function(dataset_directory,
   
   working_database[]<-lapply(working_database, function(x)
     stringi::stri_trans_general(x, "latin-ascii"))
-  working_database[]<-lapply(working_database, type.convert)
+  working_database[]<-lapply(working_database, utils::type.convert)
   soilcarbon_database<-working_database
   
   #convert data to correct data type
   ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, as.character))
-  ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, type.convert))
+  ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, utils::type.convert))
   ISRaD_database<-lapply(ISRaD_database, as.data.frame)
 
 # Return database file, logs, and reports ---------------------------------
