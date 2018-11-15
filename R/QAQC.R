@@ -230,7 +230,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     error <- error+1
   }
 
-  mismatch.rows <- anti_join(data$profile, data$site, by=c("entry_name","site_name"))
+  mismatch.rows <- anti_join(as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), as.data.frame(lapply(data$site, as.character), stringsAsFactors = F), by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$profile,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
@@ -282,9 +282,9 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: 'profile_name' mismatch between 'flux' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
-  }
-
-  mismatch.rows <- anti_join(data$flux, data$site, by=c("entry_name","site_name"))
+  
+  
+  mismatch.rows <- anti_join(as.data.frame(lapply(data$flux, as.character), stringsAsFactors = F), as.data.frame(lapply(data$site, as.character), stringsAsFactors = F), by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$flux,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
@@ -305,7 +305,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
           error <- error+1
       }
     }
-
+  }
 
   # check layer tab #
   cat("\n layer tab...", file=outfile, append = T)
@@ -344,9 +344,9 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if (length(mismatch) > 0){
     cat("\n\tWARNING: 'profile_name' mismatch between 'layer' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
-  }}
+  }
 
-  mismatch.rows <- anti_join(data$layer, data$profile, by=c("entry_name","site_name","pro_name"))
+  mismatch.rows <- anti_join(as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'layer' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
@@ -358,7 +358,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
-
+}
   # check interstitial tab #
   cat("\n interstitial tab...", file=outfile, append = T)
   if (length(data$interstitial$entry_name)>0){
@@ -396,9 +396,9 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if (length(mismatch) > 0){
     cat("\n\tWARNING: 'profile_name' mismatch between 'interstitial' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
-  }}
+  }
 
-  mismatch.rows <- anti_join(data$interstitial, data$profile, by=c("entry_name","site_name","pro_name"))
+  mismatch.rows <- anti_join(as.data.frame(lapply(data$interstitial, as.character), stringsAsFactors = F), as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$interstitial,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
@@ -410,7 +410,8 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
-
+  }
+  
   # check fraction tab #
   cat("\n fraction tab...", file=outfile, append = T)
   if (length(data$fraction$entry_name)>0){
@@ -461,9 +462,9 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if (length(mismatch) > 0){
     cat("\n\tWARNING: 'lyr_name' mismatch between 'fraction' and 'layer' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
-  }}
+  }
 
-  mismatch.rows <- anti_join(data$fraction, data$layer, by=c("entry_name","site_name","pro_name","lyr_name"))
+  mismatch.rows <- anti_join(as.data.frame(lapply(data$fraction, as.character), stringsAsFactors = F), as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name","lyr_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$fraction,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'fraction' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
@@ -482,7 +483,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
-
+  }
   # check incubation tab #
   cat("\n incubation tab...", file=outfile, append = T)
   if (length(data$incubation$entry_name)>0){
@@ -532,9 +533,9 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if (length(mismatch) > 0){
     cat("\n\tWARNING: 'lyr_name' mismatch between 'incubation' and 'layer' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
-  }}
+  }
 
-  mismatch.rows <- anti_join(data$incubation, data$layer, by=c("entry_name","site_name","pro_name","lyr_name"))
+  mismatch.rows <- anti_join(as.data.frame(lapply(data$incubation, as.character), stringsAsFactors = F), as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name","lyr_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
     cat("\n\tWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
@@ -546,7 +547,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
-
+}
 
   ##### check numeric values #####
   cat("\n\nChecking numeric variable columns for inappropriate values...", file=outfile, append = T)
@@ -654,36 +655,9 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n", rep("-", 20), file=outfile, append = T)
 
 
-  # data.tree ---------------------------------------------------------------
-
-  # cat("\n\nHierarchy of data...\n", file=outfile, append = T)
-  # cat("\nMerging data into flattened structure...\n", file=outfile, append = T)
-  #
-  # flat_data <- lapply(data, function(x) x %>% mutate_all(as.character))
-  #
-  # flat_data<-flat_data %>%
-  #   Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
-  #
-  # not_na<-flat_data %>% select(c(entry_name, site_name, pro_name, plot_name, lyr_name, frc_name))
-  # not_na<-not_na %>% select_if(~sum(!is.na(.)) > 0)
-  #
-  #
-  # flat_data$entry_name<-paste0(flat_data$entry_name, " (entry_name)")
-  # flat_data$site_name<-paste0(flat_data$site_name, " (site_name)")
-  # flat_data$pro_name<-paste0(flat_data$pro_name, " (pro_name)")
-  # flat_data$plot_name<-paste0(flat_data$plot_name, " (plot_name)")
-  # flat_data$lyr_name<-paste0(flat_data$lyr_name, " (lyr_name)")
-  # flat_data$frc_name<-paste0(flat_data$frc_name, " (frc_name)")
-  #
-  # not_na<-flat_data %>% select(colnames(not_na))
-  # not_na<-not_na %>% unite(sep="/")
-  # not_na<-not_na[,1]
-  # flat_data$pathString <-  not_na
-  # structure <- as.Node(flat_data)
 
     cat("\n\n", file=outfile, append = T)
-  #printed<-print(structure, limit=NULL)
-  #sapply(printed$levelName, function(x) cat("\n", x, file=outfile, append = T))
+
   }
   cat("\n\nPlease email info.israd@gmail.com with concerns or suggestions", file=outfile, append = T)
   cat("\nIf you think there is a error in the functioning of this code please post to

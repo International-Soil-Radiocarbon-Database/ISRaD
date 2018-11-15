@@ -12,7 +12,7 @@
 #' in dataset_directory (FALSE will not generate ouput file but will return)
 #' @param return_type a string that defines return object.
 #' Default is "none".
-#' Acceptable values are "flat" or "list" depending on the format you want to
+#' Acceptable values are "none" or "list" depending on the format you want to
 #' have the database returned in.
 #' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
 #'
@@ -26,7 +26,7 @@
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
-                    return_type=c('none', 'list', 'flat')[2], checkdoi=F){
+                    return_type=c('none', 'list')[2], checkdoi=F){
   #Libraries used
   requireNamespace("stringi")
   requireNamespace("assertthat")
@@ -70,11 +70,8 @@ compile <- function(dataset_directory,
                      function(s){openxlsx::read.xlsx(template_file,
                                                      sheet=s)})
 
-  template_nohead <- lapply(template, function(x) x[-c(1,2,3),])
-  template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
-  flat_template_columns <- colnames(template_flat)
 
-  working_database <- template_flat %>% mutate_all(as.character)
+
   ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2,3),])
   ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
@@ -98,12 +95,6 @@ compile <- function(dataset_directory,
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
 
-   #data_stats<-bind_cols(data.frame(entry_name=char_data$metadata$entry_name, doi=char_data$metadata$doi), as.data.frame(lapply(char_data, nrow)))
-   #data_stats<- data_stats %>% mutate_all(as.character)
-   #entry_stats<-bind_rows(entry_stats, data_stats)
-
-    
-
   for (t in 1:length(char_data)){
     tab<-colnames(char_data)[t]
     data_tab<-char_data[[t]]
@@ -112,11 +103,6 @@ compile <- function(dataset_directory,
 
 }
 
-  
-  working_database[]<-lapply(working_database, function(x)
-    stringi::stri_trans_general(x, "latin-ascii"))
-  working_database[]<-lapply(working_database, utils::type.convert)
-  soilcarbon_database<-working_database
   
   #convert data to correct data type
   ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, as.character))
@@ -156,19 +142,11 @@ compile <- function(dataset_directory,
 
 
   openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
-  #QAQC(file.path(dataset_directory, "database", "ISRaD_list.xlsx"),
-  #     writeQCreport = TRUE,
-  #     outfile = file.path(dataset_directory, "database", "QAQC_ISRaD_list.txt"))
-
-  #write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
-
+  
   cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
-  if (write_out==TRUE){
-    #write.csv(soilcarbon_database, file.path(dataset_directory, "database", "ISRaD_flat.csv"))
-  }
-
-    cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
+if(write_report==T){ 
+  cat("\n Compilation report saved to", outfile,"\n", file="", append = T) }
 
     if(return_type=="list"){
   return(ISRaD_database)
