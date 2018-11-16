@@ -11,8 +11,8 @@
 
 ISRaD.extra.flatten<-function(database, table){
   g.flat <- as.data.frame(lapply(database$metadata, as.character), stringsAsFactors=F) %>%
-    full_join(as.data.frame(lapply(database$site, as.character), stringsAsFactors=F),by="entry_name") %>%
-    full_join(as.data.frame(lapply(database$profile, as.character), stringsAsFactors=F),by=c("entry_name","site_name"))
+    right_join(as.data.frame(lapply(database$site, as.character), stringsAsFactors=F),by="entry_name") %>%
+    right_join(as.data.frame(lapply(database$profile, as.character), stringsAsFactors=F),by=c("entry_name","site_name"))
   g.frc <- g.flat %>% right_join(as.data.frame(lapply(database$fraction, as.character), stringsAsFactors=F),
                                  by=c("entry_name","site_name","pro_name"))
   g.inc <- g.flat %>% right_join(as.data.frame(lapply(database$incubation, as.character), stringsAsFactors=F),
