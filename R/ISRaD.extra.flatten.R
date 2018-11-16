@@ -17,17 +17,18 @@ ISRaD.extra.flatten<-function(database, table){
                                  by=c("entry_name","site_name","pro_name"))
   g.inc <- g.flat %>% right_join(as.data.frame(lapply(database$incubation, as.character), stringsAsFactors=F),
                                  by=c("entry_name","site_name","pro_name"))
-  g.lyr <- g.flat %>% right_join(as.data.frame(lapply(database$fraction, as.character), stringsAsFactors=F),
+  g.lyr <- g.flat %>% right_join(as.data.frame(lapply(database$layer, as.character), stringsAsFactors=F),
                                  by=c("entry_name","site_name","pro_name"))
   g.flx <- g.flat %>% right_join(as.data.frame(lapply(database$flux, as.character), stringsAsFactors=F),
                                  by=c("entry_name","site_name","pro_name"))
   g.ist <- g.flat %>% right_join(as.data.frame(lapply(database$interstitial, as.character), stringsAsFactors=F),
                                  by=c("entry_name","site_name","pro_name"))
   if(table == "fraction") {
-    ISRaD_flat <- g.lyr %>% left_join(g.frc, by=c("entry_name","site_name","pro_name","lyr_name"))
-  } else {
+    ISRaD_flat <- g.lyr %>% right_join(g.frc, by=c("entry_name","site_name","pro_name","lyr_name"))
+    ISRaD_flat
+    } else {
     if(table == "incubation") {
-      ISRaD_flat <- g.lyr %>% left_join(g.inc, by=c("entry_name","site_name","pro_name","lyr_name"))
+      ISRaD_flat <- g.lyr %>% right_join(g.inc, by=c("entry_name","site_name","pro_name","lyr_name"))
     } else {
       if(table == "layer") {
         ISRaD_flat <- g.lyr
@@ -38,9 +39,10 @@ ISRaD.extra.flatten<-function(database, table){
           if(table == "interstitial") {
             ISRaD_flat <- g.ist
           }
-          return(ISRaD_flat)
         }
       }
     }
-  }
+    }
+  ISRaD_flat <- type.convert(ISRaD_flat)
+  return(ISRaD_flat)
 }
