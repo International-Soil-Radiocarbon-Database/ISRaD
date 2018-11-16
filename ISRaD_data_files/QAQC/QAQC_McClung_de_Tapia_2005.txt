@@ -15,9 +15,9 @@ Checking file format compatibility with ISRaD templates...
 Checking for empty tabs...
 	NOTE: empty tabs detected ( flux interstitial fraction incubation )
 
-Not checking dataset doi because 'checkdoi==F'...
+Checking dataset doi...
 
-Checking for misspelled column names...
+Checking for extra or misspelled column names...
  metadata tab...
  site tab...
  profile tab...
@@ -87,16 +87,19 @@ Summary statistics...
     contact_email : 1
     bibliographical_reference : 1
     template_version : 1
- site tab...18 observations
-    entry_name : 18
-    site_name : 18
-    site_lat : 18
-    site_long : 18
-    site_elevation : 18
+ site tab...13 observations
+    entry_name : 13
+    site_name : 13
+    site_lat : 13
+    site_long : 13
+    site_elevation : 13
  profile tab...18 observations
     entry_name : 18
     site_name : 18
     pro_name : 18
+    pro_lat : 18
+    pro_long : 18
+    pro_elevation : 18
     pro_treatment : 18
     pro_land_cover : 18
     pro_veg_note : 18

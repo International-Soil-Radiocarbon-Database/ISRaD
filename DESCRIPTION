@@ -1,10 +1,10 @@
 Package: ISRaD
 Title: What the Package Does (one line, title case)
-Version: 0.0.1.0000
+Version: 0.0.2.0000
 Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
 Depends: R (>= 3.3.0)
-Imports: openxlsx, devtools, stringi, data.tree, raster, dplyr, plyr, tidyr, RCurl, ggplot2, shiny, assertthat, rcrossref, forecast, SoilR, pangaear, tidyverse, maps
+Imports: openxlsx, devtools, stringi, data.tree, raster, dplyr, plyr, tidyr, RCurl, ggplot2, shiny, assertthat, rcrossref, forecast, SoilR, pangaear, tidyverse, maps, usethis
 License: GPL-2
 Encoding: UTF-8
 LazyData: true

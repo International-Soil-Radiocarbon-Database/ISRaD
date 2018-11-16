@@ -15,9 +15,9 @@ Checking file format compatibility with ISRaD templates...
 Checking for empty tabs...
 	NOTE: empty tabs detected ( flux interstitial )
 
-Not checking dataset doi because 'checkdoi==F'...
+Checking dataset doi...
 
-Checking for misspelled column names...
+Checking for extra or misspelled column names...
  metadata tab...
  site tab...
  profile tab...
@@ -96,13 +96,17 @@ Summary statistics...
     entry_name : 16
     site_name : 16
     pro_name : 16
-    pro_lat : 13
-    pro_long : 13
+    pro_lat : 16
+    pro_long : 16
     pro_treatment : 16
-    pro_usda_soil_order : 15
-    pro_parent_material : 13
-    pro_parent_chem : 13
-    pro_parent_material_notes : 13
+    pro_MAT : 15
+    pro_MAP : 15
+    pro_soil_taxon : 14
+    pro_soil_taxon_sys : 15
+    pro_parent_material : 16
+    pro_parent_chem : 16
+    pro_parent_material_notes : 16
+    pro_2d_position : 14
  flux tab...0 observations
  layer tab...107 observations
     entry_name : 107
@@ -157,8 +161,9 @@ Summary statistics...
     frc_lower : 169
     frc_upper : 169
     frc_agent : 169
-    frc_mass_perc : 50
-    frc_c_org : 142
+    frc_mass_perc : 68
+    frc_c_perc : 64
+    frc_c_org : 144
     frc_13c : 102
     frc_rc_year : 142
     frc_14c : 142

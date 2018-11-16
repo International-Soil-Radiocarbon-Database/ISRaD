@@ -7,4 +7,4 @@
 #'  structure of the ISRaD data master template. Additional columns have been added and certain 
 #'  variables have been filled in when possible.
 
-"ISRaD_data_filled"
+"ISRaD_extra"

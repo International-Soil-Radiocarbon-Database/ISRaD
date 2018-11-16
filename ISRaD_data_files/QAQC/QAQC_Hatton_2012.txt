@@ -15,9 +15,9 @@ Checking file format compatibility with ISRaD templates...
 Checking for empty tabs...
 	NOTE: empty tabs detected ( flux interstitial incubation )
 
-Not checking dataset doi because 'checkdoi==F'...
+Checking dataset doi...
 
-Checking for misspelled column names...
+Checking for extra or misspelled column names...
  metadata tab...
  site tab...
  profile tab...
@@ -114,6 +114,9 @@ Summary statistics...
     lyr_bot : 4
     lyr_hzn : 4
     lyr_note : 4
+    lyr_c_org : 4
+    lyr_n_tot : 4
+    lyr_c_to_n : 4
  interstitial tab...0 observations
  fraction tab...28 observations
     entry_name : 28
@@ -129,8 +132,21 @@ Summary statistics...
     frc_upper : 28
     frc_agent : 28
     frc_mass_perc : 28
-    frc_c_tot : 28
+    frc_c_perc : 28
+    frc_c_org : 28
     frc_n_tot : 28
+    frc_c_to_n : 28
+    frc_15n : 14
+    frc_13c : 14
+    frc_fe_ox : 13
+    frc_al_ox : 13
+    frc_fe_dith : 13
+    frc_quartz : 14
+    frc_alkali_feldspar : 7
+    frc_mica_chlorite : 2
+    frc_amphibole : 2
+    frc_kaol_halloy : 5
+    frc_smect_vermic : 7
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
