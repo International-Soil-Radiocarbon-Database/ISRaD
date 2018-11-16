@@ -14,19 +14,26 @@
 
 ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   
-  ISRaD_directory="~/github/"
-  ISRaD_Data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_Data"), write_report = T, write_out = T, return_type = "list", checkdoi = T)
-  # reviewed<-menu(c("Yes", "No"), title="Have you reviewed the compilation report file?")
-  # if (reviewed==2){
-  #   stop("You cannot build the ISRaD database without reviewing the compilation report file...")
-  # }
+  ISRaD_Data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files"), write_report = T, write_out = T, return_type = "list", checkdoi = T)
+  
+  reviewed<-menu(c("Yes", "No"), title="Have you reviewed the compilation report file? (ISRaD_Data/database/ISRaD_log.txt)")
+  if (reviewed==2){
+    stop("You cannot build the ISRaD database without reviewing the compilation report file...")
+  }
+  
+  for(t in names(ISRaD_Data_compiled)){
+    nrow(ISRaD_Data_compiled[[t]])-nrow(ISRaD_data[[t])
+    
+  }
+  
   
   ISRaD_Extra_compiled<-ISRaD.extra(database=ISRaD_Data_compiled, geodata_directory = geodata_directory)
  
+  
+  
   #test...
   #summary...
   #update DESCRIPTION version
-  
   
   ISRaD_Data<-ISRaD_Data_compiled
   devtools::use_data(ISRaD_Data, pkg = ISRaD_directory, overwrite = T)
@@ -38,5 +45,10 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   check(pkg=ISRaD_directory, manual = T, cran = T)
 
   #reminder to restart R
-  
 }
+
+ISRaD_directory="~/github/ISRaD/"
+
+ISRaD.build
+
+ISRaD_Extra_compiled<-ISRaD.extra(database=ISRaD_data, geodata_directory = geodata_directory)

@@ -1,0 +1,86 @@
+ISRaD Compilation Log 
+ 
+ 2018-11-16 14:47:32 
+ - - - - - - - - - - - - - - - 
+
+Checking compatibility between ISRaD template and info file...
+ metadata ...
+ site ...
+ profile ...
+ flux ...
+ layer ...
+ interstitial ...
+ fraction ...
+ incubation ...
+Checking controlled vocab between ISRaD template and info file...
+ site ...
+ profile ...
+ flux ...
+ layer ...
+ interstitial ...
+ fraction ...
+ incubation ...
+
+Compiling data files in ~/github/ISRaD//ISRaD_data_files 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+ 1 checking Angelli_2002.xlsx ...passed
+
+ 2 checking Atarashi-Andoh_2012.xlsx ...passed
+
+ 3 checking Baisden_2002.xlsx ...passed
+
+ 4 checking Baisden_2007.xlsx ...passed
+
+ 5 checking Baisden_2013.xlsx ...passed
+
+ 6 checking Basile_Doelsch_2005.xlsx ...passed
+
+ 7 checking Becker-Heidmann_1986.xlsx ...passed
+
+ 8 checking Becker-Heidmann_1989.xlsx ...passed
+
+ 9 checking Becker-Heidmann_2002.xlsx ...passed
+
+ 10 checking Berg_2004.xlsx ...passed
+
+ 11 checking Berhe_2012.xlsx ...passed
+
+ 12 checking Biedenbender_2004.xlsx ...passed
+
+ 13 checking Binkley_1999.xlsx ...passed
+
+ 14 checking Bol_1996.xlsx ...passed
+
+ 15 checking Bol_2003.xlsx ...passed
+
+ 16 checking Butman_2007.xlsx ...passed
+
+ 17 checking Caner_2001.xlsx ...passed
+
+ 18 checking Carbone_2008.xlsx ...passed
+
+ 19 checking Carbone_2011.xlsx ...passed
+
+ 20 checking Carbone_2016.xlsx ...passed
+
+ 21 checking Castanha_2012.xlsx ...passed
+
+ 22 checking Chabbi_2009.xlsx ...passed
+
+ 23 checking Chen_2002.xlsx ...passed
+
+ 24 checking Chiti_2009.xlsx ...passed
+
+ 25 checking Chiti_2010.xlsx ...passed
+
+ 26 checking Chorover_2004.xlsx ...passed
+
+ 27 checking Clark_2002.xlsx ...passed
+
+ 28 checking Conen_2008.xlsx ...passed
+
+ 29 checking Crews_1995.xlsx ...passed
+
+ 30 checking Crow_2015.xlsx ...
