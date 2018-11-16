@@ -8,7 +8,7 @@ permalink: /manual/
 
 ## How to install the database
 Current version is v0.1
-For earlier versions, visit our website.
+For earlier versions, or the development version, visit our website.
 
 ```{r eval=FALSE}
 install.packages("devtools")
