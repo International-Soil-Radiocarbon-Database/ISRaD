@@ -10,7 +10,8 @@
 #'
 #'
 
-reports<-function(database=NULL, report){
+reports<-function(database=NULL, report)
+  {
 
   requireNamespace("dplyr")
   requireNamespace("tidyr")
@@ -42,5 +43,7 @@ reports<-function(database=NULL, report){
     right_join(database$layer) %>%
     right_join(database$fraction)
   }
+  
   return(out)
+  
 }

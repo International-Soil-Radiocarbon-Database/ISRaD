@@ -124,11 +124,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if (checkdoi==T){
   cat("\n\nChecking dataset doi...", file=outfile, append = T)
   dois<-data$metadata$doi
-  if(length(dois)<2){if(is.na(dois)) dois<-""}
+  if(is.na(dois)) dois<-""
+  if(length(dois)<2){
   for (d in 1:length(dois)){
     if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
       cat("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
     }
+  }
   }
   } else {
     cat("\n\nNot checking dataset doi because 'checkdoi==F'...", file=outfile, append = T)
