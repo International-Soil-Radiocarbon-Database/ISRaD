@@ -2,10 +2,10 @@
 #'
 #' @description extracts values from various geospatial climate datasets and adds to ISRaD_data object to create ISRaD_data_extra.
 #' @param database ISRaD dataset object.
-#' @param geodata_directory directory where geospatial climate datasets are found. 
+#' @param geodata_directory directory where geospatial climate datasets are found.
 #' @export
 #' @details variables that are added
-#' 
+#'
 #' New columns:
 #' BIO1 = Annual Mean Temperature,
 #' BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
@@ -26,31 +26,29 @@
 #' BIO17 = Precipitation of Driest Quarter,
 #' BIO18 = Precipitation of Warmest Quarter,
 #' BIO19 = Precipitation of Coldest Quarter
-#' 
+#'
 #' All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on site lat and long
-#' 
+#'
 #' @author J. Grey Monroe, Alison Hoyt
 #' @return An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.
 #' @references http://www.worldclim.org/
-#' @importFrom raster extract
-#' @importFrom raster getData
-#' 
+#'
 
 ISRaD.extra.geospatial.climate<-function(database, geodata_directory) {
-  
+
   requireNamespace("raster")
-  
+
   cat("\nextracting bioclim variables (http://www.worldclim.org/bioclim for details)...")
   bio<-raster::getData("worldclim", var='bio', res=2.5, path= geodata_directory)
   bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
-  colnames(bio_extracted)<-paste("pro_",  colnames(bio_extracted), sep="_")
+  colnames(bio_extracted)<-paste("pro",  colnames(bio_extracted), sep="_")
   database$profile<-cbind(database$profile, bio_extracted)
-  
+
   # for other datasets that arent downloaded automatically...
   #if(file is found){
  # run and extract and cbind to database in approporate tab...
  # } else cat("X file not found")
-  
+
   return(database)
-  
+
 }

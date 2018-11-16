@@ -99,6 +99,7 @@ Summary statistics...
     pro_name : 16
     pro_treatment : 16
     pro_reps : 16
+    pro_usda_soil_order : 16
     pro_land_cover : 16
     pro_veg_note : 16
  flux tab...0 observations

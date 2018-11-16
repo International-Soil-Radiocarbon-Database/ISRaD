@@ -13,7 +13,6 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( layer interstitial fraction incubation )
 
 Not checking dataset doi because 'checkdoi==F'...
 
@@ -94,22 +93,24 @@ Summary statistics...
     site_datum : 1
     site_elevation : 1
     site_note : 1
- profile tab...51 observations
-    entry_name : 51
-    site_name : 51
+ profile tab...54 observations
+    entry_name : 54
+    site_name : 54
     plot_name : 42
-    pro_name : 51
-    pro_treatment : 51
+    pro_name : 54
+    pro_treatment : 54
     pro_treatment_note : 24
-    pro_MAT : 51
-    pro_MAP : 51
-    pro_soil_taxon : 51
-    pro_soil_taxon_sys : 51
-    pro_land_cover : 51
-    pro_veg_note : 51
-    pro_parent_material : 51
-    pro_parent_chem : 51
-    pro_parent_material_notes : 51
+    pro_MAT : 54
+    pro_MAP : 54
+    pro_soil_taxon : 54
+    pro_soil_taxon_sys : 54
+    pro_land_cover : 54
+    pro_veg_note : 54
+    pro_parent_material : 54
+    pro_parent_chem : 54
+    pro_parent_material_notes : 54
+    pro_soc : 3
+    pro_soc_depth : 3
  flux tab...820 observations
     entry_name : 820
     site_name : 820
@@ -128,10 +129,100 @@ Summary statistics...
     flx_source_H2O : 307
     flx_rate_sd : 820
     flx_rate_units : 820
- layer tab...0 observations
- interstitial tab...0 observations
- fraction tab...0 observations
- incubation tab...0 observations
+ layer tab...58 observations
+    entry_name : 58
+    site_name : 58
+    pro_name : 58
+    lyr_name : 58
+    lyr_obs_date_y : 58
+    lyr_obs_date_m : 58
+    lyr_obs_date_d : 58
+    lyr_top : 58
+    lyr_bot : 58
+    lyr_hzn : 50
+    lyr_color : 17
+    lyr_bd_samp : 17
+    lyr_bd_notes : 1
+    lyr_ph : 33
+    lyr_ph_method : 33
+    lyr_c_tot : 33
+    lyr_n_tot : 33
+    lyr_c_to_n : 33
+    lyr_15n : 33
+    lyr_13c : 33
+    lyr_rc_lab : 9
+    lyr_rc_year : 9
+    lyr_14c : 9
+    lyr_fe_py : 30
+    lyr_al_py : 30
+    lyr_py_notes : 30
+    lyr_fe_hy : 30
+    lyr_al_hy : 30
+    lyr_hy_notes : 30
+    lyr_fe_dith : 30
+    lyr_al_dith : 30
+    lyr_dith_notes : 30
+ interstitial tab...18 observations
+    entry_name : 18
+    site_name : 18
+    pro_name : 18
+    ist_name : 18
+    ist_obs_date_y : 18
+    ist_obs_date_m : 18
+    ist_obs_date_d : 18
+    ist_depth : 18
+    ist_phase : 18
+    ist_analyte : 18
+    ist_method : 18
+    ist_storage_method : 18
+    ist_time_dur : 18
+    ist_rc_lab : 18
+    ist_rc_lab_number : 18
+    ist_rc_year : 18
+    ist_fraction_modern : 18
+ fraction tab...27 observations
+    entry_name : 27
+    site_name : 27
+    pro_name : 27
+    lyr_name : 27
+    frc_name : 27
+    frc_input : 27
+    frc_property : 27
+    frc_scheme : 27
+    frc_scheme_units : 27
+    frc_lower : 27
+    frc_upper : 27
+    frc_agent : 27
+    frc_note : 9
+    frc_mass_perc : 27
+    frc_obs_date_y : 27
+    frc_obs_date_m : 27
+    frc_obs_date_d : 27
+    frc_c_perc : 27
+    frc_c_tot : 27
+    frc_13c : 27
+    frc_rc_lab : 18
+    frc_rc_year : 18
+    frc_14c : 18
+ incubation tab...8 observations
+    entry_name : 8
+    site_name : 8
+    pro_name : 8
+    lyr_name : 8
+    inc_type : 8
+    inc_note : 8
+    inc_obs_date_y : 8
+    inc_obs_date_m : 8
+    inc_obs_date_d : 8
+    inc_duration : 8
+    inc_duration_type : 8
+    inc_temp : 8
+    inc_moisture_type : 8
+    inc_13c : 8
+    inc_rc_lab : 8
+    inc_rc_year : 8
+    inc_14c : 8
+    inc_fraction_modern : 8
  - - - - - - - - - - - - - - - - - - - -
 
 

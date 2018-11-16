@@ -99,6 +99,7 @@ Summary statistics...
     pro_lat : 13
     pro_long : 13
     pro_treatment : 16
+    pro_usda_soil_order : 15
     pro_parent_material : 13
     pro_parent_chem : 13
     pro_parent_material_notes : 13

@@ -13,7 +13,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( interstitial fraction )
+	NOTE: empty tabs detected ( interstitial )
 
 Not checking dataset doi because 'checkdoi==F'...
 
@@ -131,39 +131,69 @@ Summary statistics...
     flx_rc_lab_number : 16
     flx_14c : 16
     flx_14c_sigma : 16
- layer tab...203 observations
-    entry_name : 203
-    site_name : 203
-    pro_name : 203
-    lyr_name : 203
-    lyr_obs_date_y : 203
+ layer tab...206 observations
+    entry_name : 206
+    site_name : 206
+    pro_name : 206
+    lyr_name : 206
+    lyr_obs_date_y : 206
     lyr_obs_date_m : 191
     lyr_obs_date_d : 191
-    lyr_top : 203
-    lyr_bot : 203
+    lyr_top : 206
+    lyr_bot : 206
     lyr_hzn : 63
     lyr_comp : 18
     lyr_note : 38
-    lyr_bd_tot : 169
+    lyr_color : 2
+    lyr_bd_tot : 172
     lyr_bd_notes : 149
     lyr_sand_tot_psa : 24
     lyr_silt_tot_psa : 24
     lyr_clay_tot_psa : 24
     lyr_c_inorg : 146
-    lyr_c_org : 144
-    lyr_c_tot : 191
+    lyr_c_org : 147
+    lyr_c_tot : 194
     lyr_soc : 149
-    lyr_n_tot : 153
+    lyr_n_tot : 156
     lyr_c_to_n : 4
     lyr_15n : 149
-    lyr_13c : 169
+    lyr_13c : 172
+    lyr_rc_lab : 3
     lyr_rc_lab_number : 12
-    lyr_14c : 80
+    lyr_rc_year : 3
+    lyr_14c : 83
     lyr_14c_sigma : 80
-    lyr_fraction_modern : 42
+    lyr_fraction_modern : 45
     lyr_fraction_modern_sigma : 34
  interstitial tab...0 observations
- fraction tab...0 observations
+ fraction tab...24 observations
+    entry_name : 24
+    site_name : 24
+    pro_name : 24
+    lyr_name : 24
+    frc_name : 24
+    frc_input : 24
+    frc_property : 24
+    frc_scheme : 24
+    frc_scheme_units : 24
+    frc_lower : 24
+    frc_upper : 24
+    frc_agent : 24
+    frc_comp : 9
+    frc_note : 8
+    frc_mass_perc : 24
+    frc_obs_date_y : 24
+    frc_c_perc : 24
+    frc_c_org : 20
+    frc_n_tot : 20
+    frc_13c : 16
+    frc_rc_lab : 18
+    frc_rc_lab_number : 18
+    frc_rc_year : 18
+    frc_14c : 18
+    frc_14c_sigma : 18
+    frc_fraction_modern : 17
+    frc_fraction_modern_sigma : 17
  incubation tab...15 observations
     entry_name : 15
     site_name : 15

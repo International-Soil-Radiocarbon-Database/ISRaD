@@ -98,7 +98,9 @@ Summary statistics...
     entry_name : 31
     site_name : 31
     pro_name : 31
+    pro_note : 31
     pro_treatment : 31
+    pro_usda_soil_order : 31
     pro_land_cover : 31
     pro_veg_note : 31
     pro_parent_material : 31

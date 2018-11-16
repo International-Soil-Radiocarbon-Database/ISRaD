@@ -144,6 +144,7 @@ Summary statistics...
     frc_lower : 90
     frc_upper : 90
     frc_agent : 90
+    frc_c_perc : 90
     frc_rc_year : 61
     frc_14c : 61
     frc_14c_sigma : 61

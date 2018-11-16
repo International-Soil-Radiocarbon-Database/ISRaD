@@ -1,0 +1,174 @@
+         Thank you for contributing to the ISRaD database! 
+         Please review this quality control report. 
+         Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/ for more information. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+File: Clark_2002.xlsx
+
+Checking file type...
+
+Checking file format compatibility with ISRaD templates...
+ Template format detected:  ISRaD_Master_Template.xlsx
+ Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
+
+Checking for empty tabs...
+	NOTE: empty tabs detected ( flux interstitial incubation )
+
+Not checking dataset doi because 'checkdoi==F'...
+
+Checking for misspelled column names...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking for missing values in required columns...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking that level names match between tabs...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking numeric variable columns for inappropriate values...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking controlled vocab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+ - - - - - - - - - - - - - - - - - - - -
+PASSED. Nice work!
+
+ - - - - - - - - - - - - - - - - - - - -
+
+It might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.
+
+Summary statistics...
+
+ metadata tab...1 observations
+    entry_name : 1
+    doi : 1
+    curator_name : 1
+    curator_organization : 1
+    curator_email : 1
+    modification_date_y : 1
+    modification_date_m : 1
+    modification_date_d : 1
+    contact_name : 1
+    contact_email : 1
+    contact_orcid_id : 1
+    bibliographical_reference : 1
+    metadata_note : 1
+    template_version : 1
+ site tab...1 observations
+    entry_name : 1
+    site_name : 1
+    site_lat : 1
+    site_long : 1
+    site_elevation : 1
+ profile tab...1 observations
+    entry_name : 1
+    site_name : 1
+    pro_name : 1
+    pro_lat : 1
+    pro_long : 1
+    pro_elevation : 1
+    pro_treatment : 1
+    pro_reps : 1
+    pro_MAT : 1
+    pro_MAP : 1
+    pro_usda_soil_order : 1
+    pro_soil_series : 1
+    pro_soil_taxon : 1
+    pro_soil_taxon_sys : 1
+    pro_land_cover : 1
+    pro_veg_note : 1
+    pro_parent_material : 1
+    pro_parent_chem : 1
+    pro_parent_material_notes : 1
+    pro_2d_position : 1
+    pro_aspect : 1
+    pro_aspect_deg : 1
+    pro_slope : 1
+    pro_slope_shape : 1
+    pro_drainage_class : 1
+ flux tab...0 observations
+ layer tab...9 observations
+    entry_name : 9
+    site_name : 9
+    pro_name : 9
+    lyr_name : 9
+    lyr_obs_date_y : 9
+    lyr_obs_date_m : 9
+    lyr_obs_date_d : 9
+    lyr_top : 9
+    lyr_bot : 9
+    lyr_note : 5
+    lyr_color : 6
+    lyr_bd_tot : 8
+    lyr_texture_class : 9
+    lyr_c_org : 9
+    lyr_rc_year : 9
+    lyr_fraction_modern : 3
+    lyr_fraction_modern_sigma : 3
+ interstitial tab...0 observations
+ fraction tab...27 observations
+    entry_name : 27
+    site_name : 27
+    pro_name : 27
+    lyr_name : 27
+    frc_name : 27
+    frc_input : 27
+    frc_property : 27
+    frc_scheme : 27
+    frc_scheme_units : 27
+    frc_lower : 27
+    frc_upper : 27
+    frc_agent : 27
+    frc_mass_perc : 27
+    frc_obs_date_y : 27
+    frc_c_perc : 27
+    frc_c_org : 26
+    frc_n_tot : 26
+    frc_rc_year : 27
+    frc_14c : 8
+    frc_14c_sigma : 8
+    frc_fraction_modern : 14
+    frc_fraction_modern_sigma : 14
+ incubation tab...0 observations
+ - - - - - - - - - - - - - - - - - - - -
+
+
+
+Please email info.israd@gmail.com with concerns or suggestions
+If you think there is a error in the functioning of this code please post to
+      
+https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

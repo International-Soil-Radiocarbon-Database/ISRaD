@@ -2,30 +2,23 @@
 title: "Exploring Fractions"
 author: "Alison Hoyt"
 date: "October 5, 2018"
-output: pdf_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 
 ```{r echo=FALSE, warning = FALSE, message = FALSE}
 # #Load relevant packages
 library(tidyverse)
-# library(readxl)
-# library(SoilDataR)
-# 
-library(devtools)
-install_github('International-Soil-Radiocarbon-Database/ISRaD', ref = "dev", force = T)
+#library(devtools)
+#install_github('International-Soil-Radiocarbon-Database/ISRaD', ref = "dev", force = T)
 library(ISRaD)
 library(ggplot2)
-# 
-# #mapping librarys to help with global/regional plots
-# library(ggmap)
 library(maps)
-# library(mapdata)
-# library(fiftystater)
 
-
-
-#knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
@@ -41,7 +34,7 @@ frc_data <- ISRaD_data$fraction %>% as_tibble() %>% #Start with fraction data
   left_join(ISRaD_data$metadata) #Join to metadata
 
 #Take a look at it:
-View(frc_data)
+head(frc_data)
 
 
 
@@ -213,18 +206,3 @@ points(inc.site$site_long, inc.site$site_lat, col=2, pch=19)
 
 ```
 
-
-
-
-
-
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
