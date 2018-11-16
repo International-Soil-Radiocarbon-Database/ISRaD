@@ -151,9 +151,7 @@ if(write_report==T){
     if(return_type=="list"){
   return(ISRaD_database)
     }
-    if(return_type=="flat"){
-      return(soilcarbon_database)
-    }
+
 
 
 }

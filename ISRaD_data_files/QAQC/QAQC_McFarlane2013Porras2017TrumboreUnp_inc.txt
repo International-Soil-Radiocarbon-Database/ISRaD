@@ -1,0 +1,213 @@
+         Thank you for contributing to the ISRaD database! 
+         Please review this quality control report. 
+         Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/ for more information. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+File: McFarlane2013Porras2017TrumboreUnp_inc.xlsx
+
+Checking file type...
+
+Checking file format compatibility with ISRaD templates...
+ Template format detected:  ISRaD_Master_Template.xlsx
+ Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
+
+Checking for empty tabs...
+	NOTE: empty tabs detected ( flux interstitial )
+
+Checking dataset doi...
+
+Checking for extra or misspelled column names...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking for missing values in required columns...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking that level names match between tabs...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking numeric variable columns for inappropriate values...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking controlled vocab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+ - - - - - - - - - - - - - - - - - - - -
+PASSED. Nice work!
+
+ - - - - - - - - - - - - - - - - - - - -
+
+It might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.
+
+Summary statistics...
+
+ metadata tab...3 observations
+    entry_name : 3
+    doi : 3
+    curator_name : 3
+    curator_organization : 3
+    curator_email : 3
+    modification_date_y : 3
+    modification_date_m : 3
+    modification_date_d : 3
+    contact_name : 3
+    contact_email : 3
+    contact_orcid_id : 3
+    bibliographical_reference : 3
+    metadata_note : 3
+    associated_datasets : 3
+    template_version : 1
+ site tab...10 observations
+    entry_name : 10
+    site_name : 10
+    site_lat : 10
+    site_long : 10
+    site_elevation : 10
+    site_note : 10
+ profile tab...86 observations
+    entry_name : 86
+    site_name : 86
+    plot_name : 86
+    pro_name : 86
+    pro_note : 86
+    pro_lat : 86
+    pro_long : 86
+    pro_treatment : 86
+    pro_MAT : 81
+    pro_MAP : 81
+    pro_usda_soil_order : 86
+    pro_soil_series : 86
+    pro_soil_taxon : 86
+    pro_soil_taxon_sys : 86
+    pro_MAST : 86
+    pro_MASWC : 86
+    pro_land_cover : 86
+    pro_veg_note : 86
+    pro_parent_material_notes : 86
+    pro_drainage_class : 86
+    pro_soc : 25
+    pro_soc_depth : 25
+ flux tab...0 observations
+ layer tab...278 observations
+    entry_name : 278
+    site_name : 278
+    pro_name : 278
+    lyr_name : 278
+    lyr_obs_date_y : 278
+    lyr_obs_date_m : 240
+    lyr_top : 278
+    lyr_bot : 278
+    lyr_hzn : 135
+    lyr_note : 138
+    lyr_bd_samp : 220
+    lyr_bd_notes : 231
+    lyr_sand_tot_psa : 50
+    lyr_silt_tot_psa : 50
+    lyr_clay_tot_psa : 50
+    lyr_texture_class : 50
+    lyr_ph_cacl : 50
+    lyr_ph_h2o : 50
+    lyr_c_inorg : 36
+    lyr_c_tot : 216
+    lyr_soc : 194
+    lyr_13c : 69
+    lyr_rc_lab : 193
+    lyr_rc_lab_number : 193
+    lyr_rc_year : 193
+    lyr_14c : 192
+    lyr_14c_sigma : 192
+    lyr_fraction_modern : 192
+    lyr_fraction_modern_sigma : 192
+ interstitial tab...0 observations
+ fraction tab...150 observations
+    entry_name : 150
+    site_name : 150
+    pro_name : 150
+    lyr_name : 150
+    frc_name : 150
+    frc_input : 150
+    frc_property : 150
+    frc_scheme : 150
+    frc_scheme_units : 150
+    frc_lower : 150
+    frc_upper : 150
+    frc_agent : 150
+    frc_mass_perc : 150
+    frc_c_perc : 150
+    frc_c_tot : 149
+    frc_n_tot : 149
+    frc_c_to_n : 149
+    frc_13c : 146
+    frc_rc_lab : 150
+    frc_rc_lab_number : 150
+    frc_rc_year : 150
+    frc_14c : 150
+    frc_14c_sigma : 150
+    frc_fraction_modern : 150
+    frc_fraction_modern_sigma : 150
+    frc_fe_py : 40
+    frc_al_py : 40
+    frc_py_notes : 40
+    frc_fe_ox : 40
+    frc_al_ox : 40
+    frc_ox_notes : 40
+ incubation tab...38 observations
+    entry_name : 38
+    site_name : 38
+    pro_name : 38
+    lyr_name : 38
+    frc_name : 38
+    inc_type : 38
+    inc_obs_date_y : 34
+    inc_obs_date_m : 34
+    inc_obs_date_d : 34
+    inc_duration : 13
+    inc_duration_type : 38
+    inc_flux : 17
+    inc_flux_units : 17
+    inc_13c : 32
+    inc_rc_lab : 34
+    inc_rc_lab_number : 32
+    inc_rc_year : 34
+    inc_14c : 34
+    inc_14c_sigma : 24
+ - - - - - - - - - - - - - - - - - - - -
+
+
+
+Please email info.israd@gmail.com with concerns or suggestions
+If you think there is a error in the functioning of this code please post to
+      
+https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

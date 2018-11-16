@@ -136,7 +136,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   ##### check for extra or misnamed columns ####
-  cat("\n\nChecking for misspelled column names...", file=outfile, append = T)
+  cat("\n\nChecking for extra or misspelled column names...", file=outfile, append = T)
   for (t in 1:length(names(data))){
     tab<-names(data)[t]
     cat("\n",tab,"tab...", file=outfile, append = T)

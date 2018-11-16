@@ -15,3 +15,9 @@ writes out files for individual data objects
 \description{
 Currently doesn't work and is under development
 }
+\examples{
+\dontrun{
+read_Treat2016()
+compile("~/Dropbox/USGS/ISRaD_Data/Compilations/Treat/converted/")
+}
+}
