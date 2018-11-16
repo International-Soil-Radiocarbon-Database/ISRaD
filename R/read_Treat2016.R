@@ -5,6 +5,11 @@
 #' @param dowloadDir directory where data files will be downloaded
 #' @return writes out files for individual data objects
 #' @import pangaear
+#' @examples 
+#' \dontrun{
+#' read_Treat2016()
+#' compile("~/Dropbox/USGS/ISRaD_Data/Compilations/Treat/converted/")
+#' }
 
 
 read_Treat2016 <- function(dowloadDir = 'temp'){
@@ -34,6 +39,8 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     entry_name=treatS2$Reference,
     doi="unknown",
     compilation_doi="10.1594/PANGAEA.863689",
+    contact_name = "Alison Hoyt",
+    contact_email= "ahoyt@bgc-jena.mpg.de",
     curator_name="Claire Treat",
     curator_email="cctreat@gmail.com",
     curator_organization="USGS",
@@ -65,6 +72,7 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   data_template$profile<-data.frame(
    entry_name=treatS2$Reference,
    site_name= treatS2$Site,
+   pro_treatment="control",
    pro_name=treatS2$ID,
    pro_lat= treatS2$Latitude,
    pro_long= treatS2$Longitude
@@ -78,6 +86,10 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   data_template$flux<-template$flux
   
   #layer
+  
+  #need to use the S1 file for getting observation year
+  treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1.xlsx", startRow=422)
+
   data_template$layer<-data.frame(
     entry_name=treatS2$Reference,
     site_name= treatS2$Site,
@@ -93,9 +105,11 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     lyr_hzn=treatS2$Peat
   )
   
+  data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
+  
   data_template$layer[]<-lapply(data_template$layer, as.character)
   data_template$layer=bind_rows(template$layer[c(1,2),], data_template$layer)
-  data_template$profile=data_template$layer[which(!duplicated(data_template$layer)),]
+  data_template$layer=data_template$layer[which(!duplicated(data_template$layer)),]
   
   #interstitial
   data_template$interstitial<-template$interstitial
@@ -121,6 +135,8 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     entry_name=treatS3$Reference,
     doi="unknown",
     compilation_doi="10.1594/PANGAEA.863689",
+    contact_name = "Alison Hoyt",
+    contact_email= "ahoyt@bgc-jena.mpg.de",
     curator_name="Claire Treat",
     curator_email="cctreat@gmail.com",
     curator_organization="USGS",
@@ -153,6 +169,7 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     entry_name=treatS3$Reference,
     site_name= treatS3$Site,
     pro_name=treatS3$ID,
+    pro_treatment="control",
     pro_lat= treatS3$Latitude,
     pro_long= treatS3$Longitude
   )
@@ -179,7 +196,7 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   treatS3_layers$lyr_name<-paste(treatS3_layers$ID, as.numeric((as.factor(paste(treatS3_layers$`Depth [m]`)))), sep="-rad_layer")
   treatS3_layers$lyr_rc_lab_number<-treatS3_layers$`Lab label`
   treatS3_layers$lyr_14c<-treatS3_layers$`Age dated [ka]`
-  treatS3_layers$lyr_14c_sd<-treatS3_layers[,15] #cant use column name because it contains non-ASCII character
+  treatS3_layers$lyr_14c_sd=as.data.frame(treatS3_layers)[,15] #cant use column name because it contains non-ASCII character
   
   treatS3_fractions<-treatS3 %>% filter(.data$`Dated material` %in% fraction_materials$material)
   treatS3_fractions$lyr_name<-paste(treatS3_fractions$ID, as.numeric((as.factor(paste(treatS3_fractions$`Depth [m]`)))), sep="-rad_dummy_layer")
@@ -201,6 +218,11 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     lyr_14c_sd=c(treatS3_layers$lyr_14c_sd,treatS3_fractions$lyr_14c_sd)
   )
   
+  #need to use the S1 file for getting observation year
+  treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1.xlsx", startRow=422)
+  data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
+  
+  
   data_template$layer[]<-lapply(data_template$layer, as.character)
   data_template$layer=bind_rows(template$layer[c(1,2),], data_template$layer)
   data_template$layer=data_template$layer[which(!duplicated(data_template$layer)),]
@@ -218,7 +240,7 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     frc_name=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated material`),
     frc_rc_lab_number=treatS3_fractions$`Lab label`,
     frc_14c=treatS3_fractions$`Age dated [ka]`,
-    frc_14c_sd=treatS3_fractions[,15] #cant use column name because it contains non-ASCII character 
+    frc_14c_sd=as.data.frame(treatS3_fractions)[,15] #cant use column name because it contains non-ASCII character 
   )
   
   data_template$fraction[]<-lapply(data_template$fraction, as.character)
@@ -233,5 +255,36 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   
   write.xlsx(data_template, "~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/S3converted_to_template.xlsx")
   
+  
+  # merge 2 and 3
+  
+  S2converted_file<-"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/S2converted_to_template.xlsx"
+  S2converted<-lapply(getSheetNames(S2converted_file), function(s) read.xlsx(S2converted_file , sheet=s))
+  names(S2converted)<-getSheetNames(S2converted_file)
+  S2converted<-lapply(S2converted, function(x) x %>% mutate_all(as.character))
+  
+  S3converted_file<-"~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/S3converted_to_template.xlsx"
+  S3converted<-lapply(getSheetNames(S3converted_file), function(s) read.xlsx(S3converted_file , sheet=s))
+  names(S3converted)<-getSheetNames(S3converted_file)
+  S3converted<-lapply(S3converted, function(x) x %>% mutate_all(as.character))
+  
+  treatmerged<-lapply(names(S2converted), function(x) full_join(S2converted[[x]], S3converted[[x]]))
+  names(treatmerged)<-names(S2converted)
 
+  for(ref in unique(treatmerged$metadata$entry_name)[c(-1,-2)]){
+    #ref<-unique(treatmerged$metadata$entry_name)[3]
+    ref_data<-lapply(treatmerged[-9], function(x) filter(x, .data$entry_name==ref ))
+    
+    for(tab in names(ref_data)){
+      ref_data[[tab]]<-rbind(template[[tab]][c(1,2),], ref_data[[tab]])
+      
+    }
+    
+    ref_data$`controlled vocabulary` <- template$`controlled vocabulary`
+    
+    write.xlsx(ref_data, file = paste0("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", ref, ".xlsx"))
+  }
+  
 }
+
+
