@@ -15,6 +15,12 @@ By contributing to ISRaD you are joining an international community of researche
 1. Contribute code and example scripts 
 1. Report problems and ideas for improvement
 
+## Key Links
+
+1. [ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) 
+1. [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx)
+1. [Online QAQC Tool](https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/)
+
 ## How to Add Data
 
 1. Download and fill out ISRaD Template File 
