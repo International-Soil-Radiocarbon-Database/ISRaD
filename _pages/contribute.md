@@ -9,7 +9,13 @@ header:
 Thank you for your interest in contributing data to ISRaD!
 By contributing to ISRaD you are joining an international community of researchers and ensuring that your data has a lasting impact.
 
-## How to contribute
+## Ways to Contribute
+
+1. Add data
+1. Contribute code and example scripts 
+1. Report problems and ideas for improvement
+
+## How to Add Data
 
 1. Download and fill out ISRaD Template File 
 1. Test your data file using ISRaD online quality control tool 
