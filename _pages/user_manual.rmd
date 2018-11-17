@@ -1,31 +1,123 @@
 ---
 title: "ISRaD user manual"
-author: "Corey Lawrence and Grey Monroe"
-date: "9/14/2018"
+author: "Alison Hoyt, Grey Monroe & Corey Lawrence"
+date: "11/17/2018"
 output: html_document
 permalink: /manual/
 ---
 
+## Working with the database in R
+The ISRaD R package offers:  
+1) **ISRaD_data**: The complete collection of data, reported from publications, compiled in one place  
+2) **ISRaD_extra**: An augmented dataset, with useful global variables and radiocarbon calculations completed for you  
+3) **Tools**: Options to compile your own dataset to compare to ISRaD, and functions to work with the data  
+
 ## How to install the database
-Current version is v0.1
-For earlier versions, or the development version, visit our website.
-
+####Official Release:
 ```{r eval=FALSE}
+# COMING SOON!!!
+```
+
+####Latest development version:
+```{r eval = FALSE}
+
+# 1) Install and load the 'devtools' and 'rcrossref' packages
+# 'devtools' allows you to install the ISRaD package in its "beta"/development form
+# 'rcrossref' is used by our QAQC tool, but sometimes ISRaD won't install without it
 install.packages("devtools")
-install_github("International-Soil-Radiocarbon-Database/ISRaD")
-library(ISRaD)
+library(devtools) 
+install.packages("rcrossref")
+library("rcrossref")
+
+# 2) Install package 'ISRaD' from the development branch of our github repository:
+devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD", ref="dev")
+library(ISRaD) # load the package
+
+
 ```
-Once installed, the **ISRaD** package provides the pre-compiled version of database associated with the most current data release. These data are formated as a list called `ISRaD_data`. 
-
-Summary statistics for `ISRaD_data` can be output with the `reports` function. 
-
+####Some other useful packages for working with the data:
+Tidyverse and dplyr (part of tidyverse) are useful packages for exploration of ISRaD data. This is a [helpful cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf).
 ```{r eval=FALSE}
-reports(ISRaD_data, report="entry_stats")
+#Tidyverse and dplyr (part of tidyverse) are useful packages for exploration of ISRaD data. 
+#A helpful cheatsheet is available here: https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf
+library(tidyverse)
 ```
-At present, there is only one report type available (i.e. `entry_stats`) but several additional reports are currently being developed and advanced users may submit thier own report functions for inclusion in the base package.
+
 
 ## Structure of data
-`ISRaD_data` is a list comprised of 8 data.frames (`metadata`, `site`, `profile`, `flux`, `layer`, `interstitial`, `fraction`, and `incubation`), which correspond to the template data tables. 
+Once installed, the ISRaD package provides the pre-compiled version of database associated with the most current data release. These data are formated as a list called `ISRaD_data`. `ISRaD_data` is a list comprised of 8 data.frames (`metadata`, `site`, `profile`, `flux`, `layer`, `interstitial`, `fraction`, and `incubation`), which correspond to the template data tables. 'ISRaD_extra' follows the same structure. Here is a [conceptual overview of the data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/).
+
+
+```{r eval=FALSE}
+
+#Check to make sure the package is loaded by looking for the database object "ISRaD_data"
+data(package="ISRaD") # should open a new tab
+
+#View a single table (e.g. Site, Profile, Layer, etc):
+#This will show you all the sites compiled in the database
+View(ISRaD_data$Site)
+
+```
+
+## Creating Your Own Data Frame of Interest
+Ready to start your analysis? You can create your own data frame using the join function.  
+Here we join the fraction data with relevant data from other layers of the hierarchy:
+
+```{r eval=FALSE}
+
+#Merge fraction data with all upstream data in an object called "frc_data"
+frc_data <- ISRaD_extra$fraction %>% #Start with fraction data
+  left_join(ISRaD_extra$layer) %>% #Join to layer data
+  left_join(ISRaD_extra$profile) %>% #Join to profile data
+  left_join(ISRaD_extra$site) %>% #Join to site data
+  left_join(ISRaD_extra$metadata) #Join to metadata
+
+#Take a look at it:
+View(frc_data)
+
+```
+  
+Or join with a more limited set of information: 
+
+```{r eval=FALSE}
+
+#Merge flux data with site information only
+flx_data <- ISRaD_data$flux %>% #Start with flux data
+  left_join(ISRaD_data$site) %>% #Join to site data
+
+#Take a look at it:
+View(flx_data)
+
+```
+
+Alternatively, you can use the function `flatten` to create a data frame with all relevant layers of the hierarchy. You can create a flat data frame with data from the `flux`, `layer`, `interstitial`, `fraction` or `incubation` tables. You can flatten data from `ISRaD_data`, `ISRaD_extra`, or your own compiled data with a similar structure. 
+
+```{r eval=FALSE}
+
+#Use flatten function to create a data frame with layer data and all higher levels of the hierarchy
+lyr_data <- flatten(ISRaD_data, 'layer')
+
+#Take a look at it:
+View(lyr_data)
+
+```
+
+## Filtering the Data & Summary Statistics 
+```{r eval=FALSE }
+frc_data %>%
+  filter(lyr_bot < 20) %>%
+  group_by(pro_land_cover) %>%
+  summarise(num_data_points = n(),
+            mean_frc_14c = mean(frc_14c, na.rm=TRUE))
+
+```
+
+
+## Simple visualization of the data
+Quick and simple visualization is possible by calling a Shiny app.
+```{r eval=FALSE }
+ISRaD.shiny()
+```
 
 ## How to compile user data locally
 Some users may wish to compile thier own data locally in order view it in the context of the larger database. *(note: that this operation is not the same as submitting your data for ingest)*
@@ -63,8 +155,3 @@ library(tidyverse)
 ```
 to be continued...
 
-## Simple visualization of the data
-Quick and simple visualization is possible by calling a Shiny app.
-```{r eval=FALSE }
-ISRaD.shiny()
-```
