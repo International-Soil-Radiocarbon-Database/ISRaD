@@ -8,21 +8,18 @@ header:
 ## What is ISRaD?
 ISRaD is a open community repository for soil radiocarbon data.  
 Our goals are:
-	To improve the use of radiocarbon as a constraint for understanding the soil carbon cycle
-	To provide a place for researchers to contribute their soil radiocarbon data once their paper is published
-	To produce tools to make the repository useful 
 
-## History
+	* To improve the use of radiocarbon as a constraint for understanding the soil carbon cycle
+	
+	* To provide a place for researchers to contribute their soil radiocarbon data once their paper is published
+	
+	* To produce tools to make the repository useful 
 
-ISRaD has been developed in collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry.
+ISRaD has been developed as a collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry.
 
-<figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg">
-</figure>
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg" width="200">|
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="200">
 
-<figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png">
-</figure>
 
 
 ## Publications
@@ -68,10 +65,10 @@ Maintainers are in charge of the integrity of the code. Currently, they are:
 
 ## Community
 
-Collaborations with other databases
+Data from ISRaD will be regularly ingested into the International Soil Carbon Network
 
 <figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/iscn_logo.jpeg">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/iscn_logo.jpeg" width="200">
 </figure>
 
 
