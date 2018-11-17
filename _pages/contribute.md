@@ -23,11 +23,27 @@ By contributing to ISRaD you are joining an international community of researche
 
 ## How to Add Data
 
-1. Download and fill out ISRaD Template File 
-1. Test your data file using ISRaD online quality control tool 
-1. Submit to ISRaD
+1. Read key information
+2. Download and fill out ISRaD Template File 
+3. Test your data file using ISRaD online quality control tool 
+4. Submit to ISRaD
 
-## Using ISRaD template
+## 1. Getting started and key information:
+
+* **Template** – This is a structured spreadsheet for data entry. Download it [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx)
+* **Hierarchy** – The [ISRaD data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/) is hierarchical. Each level of the hierarchy is represented by a tab in the template spreadsheet
+* **Original vs derived data** – ISRaD aggregates original data. In most cases, derived values and calculations are not stored within ISRaD
+* **Required Fields** – These are indicated in red. Other fields are optional - enter those relevant to your dataset
+* **Controlled vocabulary** – We use this to standardize the data entry process. These are captured with dropdown menus, and are also listed on the “controlled vocabulary” tab
+* **Defining Site vs Profile (vs Plot)** – Use Site & Profile tabs to capture the spatial structure of your data. Samples collected in a similar location (within approx. 5km of each other) should be grouped under the same “Site” designation. More detailed sampling locations should be listed as “Profiles”. Each site must have a unique set of coordinates for the general location. Profiles can also have more specific coordinates (optional). 
+* **Depth Convention** – Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the “lyr_all_org_neg” column to flag this.
+* **Peatlands** – If depths are reported from the peat surface, use the “lyr_all_org_neg” column to flag this. Macrofossil data should be entered on the fraction tab. 
+* **Control/Treatment** – Please designate if this data is from a manipulation experiment (e.g. fertilizer application, warming study, etc). Naturally burned areas and agricultural sites are considered “Control” unless additionally manipulated.
+Coordinates – Follow this convention. Don’t forget the negatives! Unsure? Try plotting your coordinates in google maps to make sure they are not in the ocean
+* **Naming Convention & Unique Names** – You can choose any names for your sites, profiles, etc. Names can repeat, but each sequence of names “Site-Profile-Layer” must be unique. (Eg: “HarvardForest/Profile1/AHorizon” and “HarvardForest/Profile2/AHorizon” are acceptable combinations, although “0-10cm” is a repeated layer name.)
+
+
+## 2. Using ISRaD template
 
 1. [Download ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) 
 1. [Download ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx)
@@ -43,7 +59,7 @@ By contributing to ISRaD you are joining an international community of researche
 
 *Please direct any questions, comments, or suggestions regarding the ISRaD Template File or ISRaD Template Information File to info.israd@gmail.com.*
 
-## Using ISRaD online quality control tool
+## 3. Using ISRaD online quality control tool
 
 1. <a href="https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/" target="_blank"> Open the online tool</a>
 1. Upload your file
@@ -57,7 +73,7 @@ By contributing to ISRaD you are joining an international community of researche
 
 *Please direct any questions, comments, or suggestions regarding the ISRaD online quality control tool to info.israd@gmail.com.*
 
-## Submitting your ISRaD Data File
+## 4. Submitting your ISRaD Data File
 
 Email to info.israd@gmail.com:
 1. Your ISRaD Data File (Required)
