@@ -11,9 +11,9 @@ By contributing to ISRaD you are joining an international community of researche
 
 ## Ways to Contribute
 
-1. Add data
-1. Contribute code and example scripts 
-1. Report problems and ideas for improvement
+1. Add data (see below)
+1. Contribute code and example scripts. Visit our [Github development page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD)
+1. [Post an issue](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) to report problems or ideas for improvement
 
 ## Key Links
 
@@ -39,8 +39,8 @@ By contributing to ISRaD you are joining an international community of researche
 * **Depth Convention** – Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the “lyr_all_org_neg” column to flag this.
 * **Peatlands** – If depths are reported from the peat surface, use the “lyr_all_org_neg” column to flag this. Macrofossil data should be entered on the fraction tab. 
 * **Control/Treatment** – Please designate if this data is from a manipulation experiment (e.g. fertilizer application, warming study, etc). Naturally burned areas and agricultural sites are considered “Control” unless additionally manipulated.
-Coordinates – Follow this convention. Don’t forget the negatives! Unsure? Try plotting your coordinates in google maps to make sure they are not in the ocean
-* **Naming Convention & Unique Names** – You can choose any names for your sites, profiles, etc. Names can repeat, but each sequence of names “Site-Profile-Layer” must be unique. (Eg: “HarvardForest/Profile1/AHorizon” and “HarvardForest/Profile2/AHorizon” are acceptable combinations, although “0-10cm” is a repeated layer name.)
+* **Coordinates** – Follow [this convention](https://en.wikipedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg). Don’t forget the negatives! Unsure? [Test your coordinates](https://www.google.com/maps/) to make sure they are not in the ocean
+* **Naming Convention & Unique Names** – You can choose any names for your sites, profiles, etc. Names can repeat, but each sequence of names “Site/Profile/Layer/etc” must be unique. (e.g. “HarvardForest/Profile1/AHorizon” and “HarvardForest/Profile2/AHorizon” are acceptable combinations, although “0-10cm” is a repeated layer name.)
 
 
 ## 2. Using ISRaD template
