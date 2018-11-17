@@ -1,6 +1,6 @@
 #' Check ISRaD Templet files
 #' 
-#' Check that the Templet information file and the templet file match appropreately.
+#' Check that the Templet information file and the templet file match appropriately.
 #'
 #' @param outfile file to dump the output report. Defaults to an empty string that will print
 #' to standard output.

@@ -175,7 +175,7 @@ frc_data_small %>%
 
 ```
 
-### Spread data into multipe columns - Compare fractions from same layer
+### Spread data into multiple columns - Compare fractions from same layer
 ```{r echo=TRUE, warning = FALSE, message = FALSE}
 
 #Create new columns for each of the fractions
