@@ -31,7 +31,7 @@ The main features include:
 	* Amount and isotoptic signature of CO2 produced during **Incubations** 
 	
 ## Credits (up to date list of datasets currently in ISRaD on github)
-[Credits](src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/credits.md")
+[Credits](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/credits.md)
 
 
 ## In progress
