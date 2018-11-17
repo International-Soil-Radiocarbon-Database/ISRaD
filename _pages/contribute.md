@@ -21,14 +21,24 @@ By contributing to ISRaD you are joining an international community of researche
 1. [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx)
 1. [Online QAQC Tool](https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/)
 
-## How to Add Data
+## How to Add Data:
 
+1. Check existing data
 1. Read key information
-2. Download and fill out ISRaD Template File 
-3. Test your data file using ISRaD online quality control tool 
-4. Submit to ISRaD
+1. Download and fill out ISRaD Template File 
+1. Test your data file using ISRaD online quality control tool 
+1. Submit to ISRaD
 
-## 1. Getting started and key information:
+## 1. Check existing data
+
+Adding new data is great! We also welcome additions, improvements & corrections to existing datasets which are already included in ISRaD. Some in progress datasets could use your help too. Find the status of your dataset before you start:
+* **Up-to-date list**: Check out the [latest list](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit#gid=1750356077) of compiled studies
+* **Complete files**: View and download [individual complete template spreadsheets](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/ISRaD_data_files)
+* **In progress files**: View and download [individual in-progress template spreadsheets](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/ISRaD_data_files_in_progress)
+* **Wishlist**: [List of studies](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit#gid=1009481555) you'd like to see added
+* Currently working to add or update a template? Add your name to [this list](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit#gid=1750356077) to avoid duplicated efforts
+
+## 2. Getting started and key information:
 
 * **Template** – This is a structured spreadsheet for data entry. Download it [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx)
 * **Hierarchy** – The [ISRaD data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/) is hierarchical. Each level of the hierarchy is represented by a tab in the template spreadsheet
@@ -43,7 +53,7 @@ By contributing to ISRaD you are joining an international community of researche
 * **Naming Convention & Unique Names** – You can choose any names for your sites, profiles, etc. Names can repeat, but each sequence of names “Site/Profile/Layer/etc” must be unique. (e.g. “HarvardForest/Profile1/AHorizon” and “HarvardForest/Profile2/AHorizon” are acceptable combinations, although “0-10cm” is a repeated layer name.)
 
 
-## 2. Using ISRaD template
+## 3. Using ISRaD template
 
 1. [Download ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) 
 1. [Download ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx)
@@ -59,7 +69,7 @@ By contributing to ISRaD you are joining an international community of researche
 
 *Please direct any questions, comments, or suggestions regarding the ISRaD Template File or ISRaD Template Information File to info.israd@gmail.com.*
 
-## 3. Using ISRaD online quality control tool
+## 4. Using ISRaD online quality control tool
 
 1. <a href="https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/" target="_blank"> Open the online tool</a>
 1. Upload your file
@@ -73,7 +83,7 @@ By contributing to ISRaD you are joining an international community of researche
 
 *Please direct any questions, comments, or suggestions regarding the ISRaD online quality control tool to info.israd@gmail.com.*
 
-## 4. Submitting your ISRaD Data File
+## 5. Submitting your ISRaD Data File
 
 Email to info.israd@gmail.com:
 1. Your ISRaD Data File (Required)
