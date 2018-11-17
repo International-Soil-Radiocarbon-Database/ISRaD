@@ -1,11 +1,3 @@
----
-layout: splash
-permalink: /credits/
-title: Credits
-header:
-  overlay_image: /assets/images/soil.jpg
----
- 
 ## Main compilations
 ISRaD has been built based on two main compilations:
  

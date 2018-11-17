@@ -87,20 +87,20 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
 # Flattened data objects --------------------------------------------------
 
   cat("\tUpdating flattened data objects...\n")
-  for(t in c("flux","layer","interstitial","incubation","fraction")){
-    flattened_data<-ISRaD.flatten(database=ISRaD_data, table = "flux")
-    cat("writing ISRaD_data_flat_", t, ".csv"," ...\n", sep = "")
-    utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_data_flat_", t, ".csv"))
-    flattened_extra<-ISRaD.flatten(database=ISRaD_extra, table = "flux")
-    cat("writing ISRaD_extra_flat_", t, ".csv"," ...\n", sep = "")
-    utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_extra_flat_", t, ".csv"))
+  for(tab in c("flux","layer","interstitial","incubation","fraction")){
+    flattened_data<-ISRaD.flatten(database=ISRaD_data, table = tab)
+    cat("writing ISRaD_data_flat_", tab, ".csv"," ...\n", sep = "")
+    utils::write.csv(flattened_data, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_data_flat_", tab, ".csv"))
+    flattened_extra<-ISRaD.flatten(database=ISRaD_extra, table = tab)
+    cat("writing ISRaD_extra_flat_", tab, ".csv"," ...\n", sep = "")
+    utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_extra_flat_", tab, ".csv"))
 
   }
   
 
 # update references -------------------------------------------------------
 
-  if(removed_entries != "none" & new_entries !="none") {
+  #if(removed_entries != "none" & new_entries !="none") {
   cat("\nUpdating credits.md page...this takes about 5 min")
   
   dois=as.character(ISRaD_data$metadata$doi)
@@ -115,14 +115,6 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   he_ref=rcrossref::cr_cn(he_doi,format="text", style="apa")
   mathieu_ref=rcrossref::cr_cn(mathieu_doi,format="text", style="apa")
   
-  # Yaml front matter
-  front="---"
-  f1="layout: splash"
-  f2="permalink: /credits/"
-  f3="title: Credits"
-  f4="header:"
-  f5="  overlay_image: /assets/images/soil.jpg"
-  
   # Body
   h1="## Main compilations"
   p1="ISRaD has been built based on two main compilations:"
@@ -132,11 +124,10 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   p2=paste("Currently, there are", n, "entries in ISRaD, which are from the following publications:")
   
   # Print markdown file for website
-  cat(c(front, f1, f2, f3, f4, f5, front, " ",
-        h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
-        h2, p2, " ", paste("* ",a)), sep="\n", file="ISRaD_data_files/credits.md")
+  cat(c(h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
+        h2, p2, " ", paste("* ",a)), sep="\n", file="ISRaD_data_files/database/credits.md")
 
-  }
+  #}
   
 # document and check ------------------------------------------------------
 
