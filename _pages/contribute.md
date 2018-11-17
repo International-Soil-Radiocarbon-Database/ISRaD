@@ -20,6 +20,7 @@ By contributing to ISRaD you are joining an international community of researche
 1. [ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) 
 1. [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx)
 1. [Online QAQC Tool](https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/)
+1. Contact: info.israd@gmail.com
 
 ## How to Add Data:
 
@@ -53,21 +54,19 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 * **Naming Convention & Unique Names** – You can choose any names for your sites, profiles, etc. Names can repeat, but each sequence of names “Site/Profile/Layer/etc” must be unique. (e.g. “HarvardForest/Profile1/AHorizon” and “HarvardForest/Profile2/AHorizon” are acceptable combinations, although “0-10cm” is a repeated layer name.)
 
 
-## 3. Using ISRaD template
+## 3. Fill out ISRaD template
 
-1. [Download ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) 
-1. [Download ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx)
-1. Fill out ISRaD Template File with your data. 
+1. Fill out [ISRaD template file](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) with your data.  
+1. Consult the [ISRaD template information file](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx) as you work, for column definitions, units, and controlled vocabulary.
+1. Reminders & conventions: 
+* Name your file: "author_year.xlsx"
 * Do not delete the top two description rows. 
-* Be sure to follow requirements and controlled values/vocab found in the ISRaD Template Information File. 
-1. Your file is now an ISRaD Data File. Name it with this convention "author_year.xlsx".
-1. Look at your ISRaD Data File...
-* Do names match between tabs in your ISRaD Data File? (ie. Are all of the values from "site_name" column in the "Fraction" tab found in the "Site" tab)
-* Does your ISRaD Data File contain values in all of the required columns? (see ISRaD Template Information File)
-* Have you adhered to the controlled values/vocab for relevant columns? (see ISRaD Template Information File)
-1. If the answer to these questions is yes, you're ready to check your ISRaD Data File using the ISRaD online quality control tool.
+* Follow requirements and controlled values/vocab in the ISRaD Template Information File. 
+1. Look at your file...
+* Do names match between tabs? (e.g. any "site_name" referenced is listed in "Site" tab)
+* Did you fill in required columns (red) and use controlled vocabulary?
+* If yes, you're ready to use the ISRaD online quality control tool.
 
-*Please direct any questions, comments, or suggestions regarding the ISRaD Template File or ISRaD Template Information File to info.israd@gmail.com.*
 
 ## 4. Using ISRaD online quality control tool
 
@@ -92,4 +91,10 @@ Email to info.israd@gmail.com:
 1. Your data will be manually reviewed by a volunteer expert. Feel free to include information and details, or comments and concerns, in your email that you think will be useful. 
 1. It is also very valuable for review process and addressing any future issues if you submit the original data tables (ie. supplemental table files from publication, or simply saying "We extracted data from Table 1, Table S3.") used to create ISRaD Data File when possible.  
 1. You will get an email once your submission has been accepted for inclusion in ISRaD. Nice work!
+
+## Feedback? 
+We welcome your suggestions. Please use our [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) to report problems, post comments or suggest ideas for improvement of the ISRaD template file, ISRaD template information file, or online QAQC tool. No special permissions are required to post, although you do need to create a Github account if you don't have one already.
+
+You can also email us at *info.israd@gmail.com* and we will do our best to get back to you.
+
 
