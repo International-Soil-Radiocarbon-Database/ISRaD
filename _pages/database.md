@@ -30,6 +30,10 @@ The main features include:
 	* **Fractions** of organic matter extracted by a range of methods
 	* Amount and isotoptic signature of CO2 produced during **Incubations** 
 	
+## Credits (up to date list of datasets currently in ISRaD on github)
+[Credits](src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/credits.md")
+
+
 ## In progress
 Visit this google doc to see the status of different datasets. 
 [List](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit?usp=sharing)
