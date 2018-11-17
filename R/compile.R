@@ -18,8 +18,6 @@
 #'
 #' @export
 #'
-#' @import devtools
-#' @import stringi
 #' @import openxlsx
 #' @import assertthat
 #' @import tidyverse
@@ -28,7 +26,6 @@ compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
                     return_type=c('none', 'list')[2], checkdoi=F){
   #Libraries used
-  requireNamespace("stringi")
   requireNamespace("assertthat")
   requireNamespace("openxlsx")
   requireNamespace("tidyverse")

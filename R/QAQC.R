@@ -8,7 +8,6 @@
 #' @param summaryStats prints summary statistics. Default is TRUE
 #' @param dataReport prints list structure of database. Default is FALSE
 #' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
-#' @import data.tree
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr
@@ -21,7 +20,6 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   ##### setup #####
 
   requireNamespace("openxlsx")
-  requireNamespace("data.tree")
   requireNamespace("dplyr")
   requireNamespace("tidyr")
   requireNamespace("RCurl")
