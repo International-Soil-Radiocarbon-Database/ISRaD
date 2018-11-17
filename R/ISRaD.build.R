@@ -1,4 +1,4 @@
-#' ISRaD.build builds the database and updates objects in R pacakge
+#' ISRaD.build builds the database and updates objects in R package
 #' 
 #' Wrapper function that combines tools for rapid deployment of R package data objects. 
 #' Meant to be used by the maintainers/developers of ISRaD
