@@ -16,6 +16,10 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   
   setwd(ISRaD_directory)
   
+  cat("Installing local version of ISRaD...")
+  devtools::install("../ISRaD")
+  library(ISRaD)
+
   cat("Compiling the data files in",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
   cat("You must review the compilation report log file when complete... \n\n")
   ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files"), write_report = T, write_out = T, return_type = "list", checkdoi = F)

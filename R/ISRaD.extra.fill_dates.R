@@ -3,7 +3,6 @@
 #' @description Fills frc_obs_date_y and inc_obs_date_y columns from lyr_obs_date_y if not reported.
 #' @param database ISRaD dataset object.
 #' @details This function must be run prior to the ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta for the layer and fraction tables.
-#' @references
 #' @export
 #' @return returns ISRaD_data object with filled obs_date_y columns
 

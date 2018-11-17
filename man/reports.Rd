@@ -4,12 +4,12 @@
 \alias{reports}
 \title{reports}
 \usage{
-reports(database = NULL, report)
+reports(database = NULL, report = "entry_stats")
 }
 \arguments{
 \item{database}{ISRaD data object}
 
-\item{report}{Parameter to define which type of report you want. Options are, "entry_stats", "flattened", "fraction"...}
+\item{report}{Parameter to define which type of report you want. The default (and only option currently) is "entry_stats".}
 }
 \description{
 generate reports of ISRaD data

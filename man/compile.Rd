@@ -8,7 +8,7 @@ compile(dataset_directory, write_report = FALSE, write_out = FALSE,
   return_type = c("none", "list")[2], checkdoi = F)
 }
 \arguments{
-\item{dataset_directory}{string defining directory where compeleted and
+\item{dataset_directory}{string defining directory where completed and
 QC passed soilcarbon datasets are stored}
 
 \item{write_report}{boolean flag to write a log file of the
@@ -16,7 +16,7 @@ compilation (FALSE will dump output to console). File will be in the specified
 in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
 there of this name it will be overwritten.}
 
-\item{write_out}{boolean flag to write the compiled database file as csv
+\item{write_out}{boolean flag to write the compiled database file as .csv
 in dataset_directory (FALSE will not generate output file but will return)}
 
 \item{return_type}{a string that defines return object.

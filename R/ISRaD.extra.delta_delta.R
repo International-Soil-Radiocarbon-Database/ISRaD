@@ -7,9 +7,7 @@
 #' @references: Hua et al., 2013; Sierra et al., 2014
 #' @export
 #' @return returns ISRaD_data object with new delta delta columns in relevant tables
-#' @import SoilR
-#' @import forecast
-#' @import dplyr
+
 
 ISRaD.extra.delta_delta<-function(database){
 
@@ -19,11 +17,11 @@ requireNamespace("dplyr")
 
     yrs=seq(1966,2009.5,by=1/4) # Series of years by quarters
 
-    NHZone2=bind.C14curves(prebomb=SoilR::IntCal13,postbomb=SoilR::Hua2013$NHZone2,time.scale="AD")
+    NHZone2=SoilR::bind.C14curves(prebomb=SoilR::IntCal13,postbomb=SoilR::Hua2013$NHZone2,time.scale="AD")
     nhz2=stats::spline(SoilR::Hua2013$NHZone2[,c(1,4)],xout=yrs) #Spline interpolation of the NH_Zone 2 dataset at a quarterly basis
     nhz2=stats::ts((nhz2$y-1)*1000,start=1966,freq=4) #Transformation into a time-series object
-    m.nhz2=ets(nhz2) #Fits an exponential smoothing state space model to the time series
-    f2.nhz2=forecast(m.nhz2,h=11*4) #Uses the fitted model to forecast 11 years into the future
+    m.nhz2=forecast::ets(nhz2) #Fits an exponential smoothing state space model to the time series
+    f2.nhz2=forecast::forecast(m.nhz2,h=11*4) #Uses the fitted model to forecast 11 years into the future
     bombcurve.nhz2=NHZone2[NHZone2[,1]>=500,1:2]
     NHZone2=data.frame(Year=c(bombcurve.nhz2[-dim(bombcurve.nhz2)[1],1],
                               seq(stats::tsp(f2.nhz2$mean)[1],stats::tsp(f2.nhz2$mean)[2], by=1/stats::tsp(f2.nhz2$mean)[3])),
@@ -31,11 +29,11 @@ requireNamespace("dplyr")
     NHZone2$year <- ceiling(NHZone2$Year) # rounds fractional years to year
 
     #Forecast bomb curve in SH
-    SHZone12=bind.C14curves(prebomb=SoilR::IntCal13,postbomb=SoilR::Hua2013$SHZone12,time.scale="AD")
+    SHZone12=SoilR::bind.C14curves(prebomb=SoilR::IntCal13,postbomb=SoilR::Hua2013$SHZone12,time.scale="AD")
     shz2=stats::spline(SoilR::Hua2013$SHZone12[,c(1,4)],xout=yrs) #Spline interpolation of the SH_Zone12 dataset at a quaterly basis
     shz2=stats::ts((shz2$y-1)*1000,start=1966,freq=4) #Transformation into a time-series object
-    m.shz2=ets(shz2) #Fits an exponential smoothing state space model to the time series
-    f2.shz2=forecast(m.shz2,h=11*4) #Uses the fitted model to forecast 11 years into the future
+    m.shz2=forecast::ets(shz2) #Fits an exponential smoothing state space model to the time series
+    f2.shz2=forecast::forecast(m.shz2,h=11*4) #Uses the fitted model to forecast 11 years into the future
     bombcurve.shz2=SHZone12[SHZone12[,1]>=500,1:2]
     SHZone12=data.frame(Year=c(bombcurve.shz2[-dim(bombcurve.shz2)[1],1],
                                seq(stats::tsp(f2.shz2$mean)[1],stats::tsp(f2.shz2$mean)[2], by=1/stats::tsp(f2.shz2$mean)[3])),

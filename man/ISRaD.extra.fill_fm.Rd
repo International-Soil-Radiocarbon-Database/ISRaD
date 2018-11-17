@@ -9,8 +9,11 @@ ISRaD.extra.fill_fm(database)
 \arguments{
 \item{database}{ISRaD dataset object.}
 }
+\value{
+returns ISRaD_data object with filled fraction modern columns
+}
 \description{
-Fills fraction modern values if missing and delta 14C is reported
+Fills fraction modern from delta 14C if fraction modern not reported.
 }
 \details{
 : Warning: xxx_obs_date_y columns must be filled for this to work!

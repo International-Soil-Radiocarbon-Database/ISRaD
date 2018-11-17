@@ -2,11 +2,8 @@
 #'
 #' @description Fills profile coordinates from site coordinates if profile coordinates not reported.
 #' @param database ISRaD dataset object.
-#' @details
 #' @author J. Beem-Miller
-#' @references
 #' @export
-#' @import
 #' @return returns ISRaD_data object with filled profile coordinates
 
 ISRaD.extra.fill_coords<-function(database){

@@ -7,7 +7,6 @@
 #' @author: J. Beem-Miller
 #' @references:
 #' @export
-#' @import dplyr
 #' @return returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),ncol(profile),...,ncol(table))
 
 ISRaD.extra.flatten<-function(database, table){

@@ -10,7 +10,7 @@ read_YujiHe2016(Yujie_file = NULL)
 \item{Yujie_file}{The raw csv data}
 }
 \value{
-ISRaD complient file structure with only columns that overlap with orginal data
+ISRaD compliant file structure with only columns that overlap with original data
 }
 \description{
 Read in the data from Yuji He's 2016 Science paper as a raw csv file

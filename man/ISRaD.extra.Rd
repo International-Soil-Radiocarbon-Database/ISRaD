@@ -11,6 +11,12 @@ ISRaD.extra(database, geodata_directory)
 
 \item{geodata_directory}{directory where geospatial data is found}
 }
+\value{
+returns new ISRaD_extra object with derived, transformed, and filled columns
+}
 \description{
-fills in transformed data, or empty NA values where possible, and adds geospatial data to soilcarbon database object
+Fills in transformed and geospatial data where possible, generatating an enhanced version of ISRaD.
+}
+\details{
+Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks frmo entered data, and fills soil taxonomy, and climatic data from
 }

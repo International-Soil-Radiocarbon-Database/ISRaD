@@ -9,9 +9,14 @@ ISRaD.extra.fill_soilorders(database)
 \arguments{
 \item{database}{ISRaD dataset object.}
 }
+\value{
+returns ISRaD_data object with filled pro_usda_soil_order column
+}
 \description{
-extracts values from various geospatial climate datasets and adds to ISRaD_data object to create ISRaD_data_extra.
+Fills pro_usda_soil_order field from pro_soil_taxon field.
 }
 \details{
-backfills pro_usda_soil_order based on USDA classificiations
+This function is a static conversion script written at the Fall 2018 Powell Center workshop and therefore performance is not guaranteed for new entries.
+
+Back fills pro_usda_soil_order based on USDA classifications
 }
