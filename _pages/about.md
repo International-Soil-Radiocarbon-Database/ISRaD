@@ -5,6 +5,12 @@ title: "About ISRaD"
 header:
   overlay_image: /assets/images/soil.jpg
 ---
+## What is ISRaD?
+ISRaD is a open community repository for soil radiocarbon data.  
+Our goals are:
+	To improve the use of radiocarbon as a constraint for understanding the soil carbon cycle
+	To provide a place for researchers to contribute their soil radiocarbon data once their paper is published
+	To produce tools to make the repository useful 
 
 ## History
 
@@ -19,20 +25,12 @@ ISRaD has been developed in collaboration between the U.S. Geological Survey Pow
 </figure>
 
 
-## Community
-
-Collaborations with other databases
-
-<figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/iscn_logo.jpeg">
-</figure>
-
-
 ## Publications
-
-He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 355(6306), 1419–1424. <a href="http://doi.org/10.1126/science.aad4273">http://doi.org/10.1126/science.aad4273</a>
+ISRaD builds on data summarized by two publication.  It fixes a number of issues and adds new data.
 
 Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles. Global Change Biology, 21(11), 4278–4292. <a href="http://doi.org/10.1111/gcb.13012">http://doi.org/10.1111/gcb.13012</a>
+
+He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 355(6306), 1419–1424. <a href="http://doi.org/10.1126/science.aad4273">http://doi.org/10.1126/science.aad4273</a>
 
 ## Terms of Use
 
@@ -67,6 +65,15 @@ Maintainers are in charge of the integrity of the code. Currently, they are:
 
 * Grey Monroe
 * Carlos Sierra
+
+## Community
+
+Collaborations with other databases
+
+<figure class="half">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/iscn_logo.jpeg">
+</figure>
+
 
 ## Contact 
 
