@@ -17,7 +17,7 @@ in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
 there of this name it will be overwritten.}
 
 \item{write_out}{boolean flag to write the compiled database file as csv
-in dataset_directory (FALSE will not generate ouput file but will return)}
+in dataset_directory (FALSE will not generate output file but will return)}
 
 \item{return_type}{a string that defines return object.
 Default is "none".

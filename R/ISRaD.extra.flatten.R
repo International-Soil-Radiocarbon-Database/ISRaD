@@ -2,8 +2,13 @@
 #'
 #' @description: Joins tables in ISRaD based on linking variables and returns "flat" dataframes
 #' @param database ISRaD dataset object: e.g. ISRaD_data, or ISRaD_extra
+<<<<<<< HEAD
 #' @param table ISRaD table of interest ("flux", "layer", "interstitial", "fraction", "incubation"). Must be entered with "".
 #' @details: ISRaD.extra.flatten generates flat files (2 dimensional matrices) for user specfied ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
+=======
+#' @param table ISRaD table of interest (flux, layer, interstitial, fraction, incubation)
+#' @details: ISRaD.extra.flatten generates flat files for user specified ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
+>>>>>>> 0bba8dbf2e30a30148aef355b4de84c988cd6fae
 #' @author: J. Beem-Miller
 #' @references:
 #' @export

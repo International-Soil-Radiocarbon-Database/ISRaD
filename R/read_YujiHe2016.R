@@ -4,7 +4,7 @@
 #'
 #' @param Yujie_file The raw csv data
 #'
-#' @return ISRaD complient file structure with only columns that overlap with orginal data
+#' @return ISRaD compliant file structure with only columns that overlap with original data
 #'
 #' @importFrom rcrossref cr_citation
 

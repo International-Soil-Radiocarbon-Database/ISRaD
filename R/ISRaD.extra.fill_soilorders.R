@@ -3,9 +3,14 @@
 #' @description Fills pro_usda_soil_order field from pro_soil_taxon field.
 #' @param database ISRaD dataset object.
 #' @export
+<<<<<<< HEAD
 #' @details This function is a static conversion script written at the Fall 2018 Powell Center workshop and therefore performance is not guaranteed for new entries.
 #' @import plyr
 #' @return returns ISRaD_data object with filled pro_usda_soil_order column
+=======
+#' @details
+#' Back fills pro_usda_soil_order based on USDA classifications
+>>>>>>> 0bba8dbf2e30a30148aef355b4de84c988cd6fae
 
 ISRaD.extra.fill_soilorders<-function(database){
 
