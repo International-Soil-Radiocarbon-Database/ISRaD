@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2018-11-17 13:45:00 
+ 2018-11-17 14:55:28 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...

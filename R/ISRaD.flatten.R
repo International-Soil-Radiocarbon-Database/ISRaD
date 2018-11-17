@@ -1,4 +1,4 @@
-#' ISRaD.extra.flatten
+#' ISRaD.flatten
 #'
 #' @description: Joins tables in ISRaD based on linking variables and returns "flat" dataframes
 #' @param database ISRaD dataset object: e.g. ISRaD_data, or ISRaD_extra
@@ -9,7 +9,7 @@
 #' @export
 #' @return returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),ncol(profile),...,ncol(table))
 
-ISRaD.extra.flatten<-function(database, table){
+ISRaD.flatten<-function(database, table){
 
 requireNamespace("dplyr")
 
