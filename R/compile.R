@@ -2,41 +2,34 @@
 #'
 #' Construct data products to the International Soil Radiocarbon Database.
 #'
-#' @param dataset_directory string defining directory where compeleted and
+#' @param dataset_directory string defining directory where completed and
 #' QC passed soilcarbon datasets are stored
 #' @param write_report boolean flag to write a log file of the
 #' compilation (FALSE will dump output to console). File will be in the specified
 #' in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
 #' there of this name it will be overwritten.
-#' @param write_out boolean flag to write the compiled database file as csv
-#' in dataset_directory (FALSE will not generate ouput file but will return)
+#' @param write_out boolean flag to write the compiled database file as .csv
+#' in dataset_directory (FALSE will not generate output file but will return)
 #' @param return_type a string that defines return object.
 #' Default is "none".
-#' Acceptable values are "flat" or "list" depending on the format you want to
+#' Acceptable values are "none" or "list" depending on the format you want to
 #' have the database returned in.
 #' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
 #'
 #' @export
 #'
-#' @import devtools
-#' @import dplyr
-#' @import stringi
 #' @import openxlsx
-#' @import dplyr
-#' @import tidyr
 #' @import assertthat
-#'
+#' @import tidyverse
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
-                    return_type=c('none', 'list', 'flat')[1], checkdoi=F){
+                    return_type=c('none', 'list')[2], checkdoi=F){
   #Libraries used
-  requireNamespace("stringi")
   requireNamespace("assertthat")
   requireNamespace("openxlsx")
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
-
+  requireNamespace("tidyverse")
+  
   # Check inputs
   assertthat::assert_that(dir.exists(dataset_directory))
   assertthat::assert_that(is.logical(write_report))
@@ -70,15 +63,12 @@ compile <- function(dataset_directory,
   # Get the tables stored in the templet sheets
   template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx",
                                package = "ISRaD")
-  template <- lapply(setNames(nm=openxlsx::getSheetNames(template_file)),
+  template <- lapply(stats::setNames(nm=openxlsx::getSheetNames(template_file)),
                      function(s){openxlsx::read.xlsx(template_file,
                                                      sheet=s)})
 
-  template_nohead <- lapply(template, function(x) x[-c(1,2,3),])
-  template_flat <- Reduce(function(...) merge(..., all=TRUE), template_nohead)
-  flat_template_columns <- colnames(template_flat)
 
-  working_database <- template_flat %>% mutate_all(as.character)
+
   ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2,3),])
   ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
@@ -102,14 +92,6 @@ compile <- function(dataset_directory,
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
 
-   #data_stats<-bind_cols(data.frame(entry_name=char_data$metadata$entry_name, doi=char_data$metadata$doi), as.data.frame(lapply(char_data, nrow)))
-   #data_stats<- data_stats %>% mutate_all(as.character)
-   #entry_stats<-bind_rows(entry_stats, data_stats)
-
-    flat_data<-char_data %>%
-    Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
-    working_database<-bind_rows(working_database, flat_data)
-
   for (t in 1:length(char_data)){
     tab<-colnames(char_data)[t]
     data_tab<-char_data[[t]]
@@ -119,14 +101,9 @@ compile <- function(dataset_directory,
 }
 
   
-  working_database[]<-lapply(working_database, function(x)
-    stringi::stri_trans_general(x, "latin-ascii"))
-  working_database[]<-lapply(working_database, type.convert)
-  soilcarbon_database<-working_database
-  
   #convert data to correct data type
   ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, as.character))
-  ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, type.convert))
+  ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, utils::type.convert))
   ISRaD_database<-lapply(ISRaD_database, as.data.frame)
 
 # Return database file, logs, and reports ---------------------------------
@@ -162,26 +139,16 @@ compile <- function(dataset_directory,
 
 
   openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
-  #QAQC(file.path(dataset_directory, "database", "ISRaD_list.xlsx"),
-  #     writeQCreport = TRUE,
-  #     outfile = file.path(dataset_directory, "database", "QAQC_ISRaD_list.txt"))
-
-  #write.csv(entry_stats, paste0(dataset_directory, "database/ISRaD_summary.csv"))
-
+  
   cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
-  if (write_out==TRUE){
-    #write.csv(soilcarbon_database, file.path(dataset_directory, "database", "ISRaD_flat.csv"))
-  }
-
-    cat("\n Compilation report saved to", outfile,"\n", file="", append = T)
+if(write_report==T){ 
+  cat("\n Compilation report saved to", outfile,"\n", file="", append = T) }
 
     if(return_type=="list"){
   return(ISRaD_database)
     }
-    if(return_type=="flat"){
-      return(soilcarbon_database)
-    }
+
 
 
 }

@@ -1,11 +1,13 @@
 #' ISRaD.extra
 #'
-#' fills in transformed data, or empty NA values where possible, and adds geospatial data to soilcarbon database object
+#' @description Fills in transformed and geospatial data where possible, generatating an enhanced version of ISRaD.
 #' @param database soilcarbon dataset object
 #' @param geodata_directory directory where geospatial data is found
+#' @details Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks frmo entered data, and fills soil taxonomy, and climatic data from
 #' @export
+#' @return returns new ISRaD_extra object with derived, transformed, and filled columns
 
-ISRaD.extra<-function(database=ISRaD_data, geodata_directory){
+ISRaD.extra<-function(database, geodata_directory){
 
   database<-ISRaD.extra.fill_dates(database)
   database<-ISRaD.extra.fill_14c(database)

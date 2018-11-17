@@ -14,7 +14,7 @@ to standard output.}
 returns NULL
 }
 \description{
-Check that the Templet information file and the templet file match appropreately.
+Check that the Templet information file and the templet file match appropriately.
 }
 \examples{
 \dontrun{

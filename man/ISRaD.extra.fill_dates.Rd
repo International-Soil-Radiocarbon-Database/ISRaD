@@ -9,15 +9,12 @@ ISRaD.extra.fill_dates(database)
 \arguments{
 \item{database}{ISRaD dataset object.}
 }
+\value{
+returns ISRaD_data object with filled obs_date_y columns
+}
 \description{
-brief summary description of function
+Fills frc_obs_date_y and inc_obs_date_y columns from lyr_obs_date_y if not reported.
 }
 \details{
-very detailed description of function, especially if it involves the creation of new columns
-}
-\references{
-any references of literature or datasets relevant to understand the function. (remove this entire line if there are no references)
-}
-\author{
-your name
+This function must be run prior to the ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta for the layer and fraction tables.
 }

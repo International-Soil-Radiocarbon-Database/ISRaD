@@ -9,14 +9,14 @@ ISRaD.extra.Cstocks(database)
 \arguments{
 \item{database}{ISRaD dataset object.}
 }
+\value{
+returns ISRaD_data object with filled columns
+}
 \description{
 Calculates soil organic carbon stock
 }
 \details{
-Function first fills bulk density and organic carbon concentration. SOC stocks can only be calculated if organic carbon concentration and bulk density data are available. SOC stock calculation is for the fine earth fraction (<2mm).
-}
-\references{
-any references of literature or datasets relevant to understand the function. (remove this entire line if there are no references)
+Function first fills lyr_bd_samp and lyr_c_org. SOC stocks can only be calculated if organic carbon concentration and bulk density data are available. SOC stocks are then calculated for the fine earth fraction (<2mm).
 }
 \author{
 J. Beem-Miller
