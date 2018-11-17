@@ -59,13 +59,13 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 1. Fill out [ISRaD template file](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) with your data.  
 1. Consult the [ISRaD template information file](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx) as you work, for column definitions, units, and controlled vocabulary.
 1. Reminders & conventions: 
-  * Name your file: "author_year.xlsx"
-  * Do not delete the top two description rows. 
-  * Follow requirements and controlled values/vocab in the ISRaD Template Information File. 
+   * Name your file: "author_year.xlsx"
+   * Do not delete the top two description rows. 
+   * Follow requirements and controlled values/vocab in the ISRaD Template Information File. 
 1. Look at your file...
-  * Do names match between tabs? (e.g. any "site_name" referenced is listed in "Site" tab)
-  * Did you fill in required columns (red) and use controlled vocabulary?
-  * If yes, you're ready to use the ISRaD online quality control tool.
+   * Do names match between tabs? (e.g. any "site_name" referenced is listed in "Site" tab)
+   * Did you fill in required columns (red) and use controlled vocabulary?
+   * If yes, you're ready to use the ISRaD online quality control tool.
 
 
 ## 4. Using ISRaD online quality control tool
