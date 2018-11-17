@@ -83,6 +83,3 @@ Email to info.israd@gmail.com:
 1. It is also very valuable for review process and addressing any future issues if you submit the original data tables (ie. supplemental table files from publication, or simply saying "We extracted data from Table 1, Table S3.") used to create ISRaD Data File when possible.  
 1. You will get an email once your submission has been accepted for inclusion in ISRaD. Nice work!
 
-
-## Add columns
-1. [Vignette](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/dev/vignettes/Untitled.nb.hmtl)
