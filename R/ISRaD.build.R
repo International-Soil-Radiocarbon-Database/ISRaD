@@ -18,9 +18,9 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   
   cat("Compiling the data files in",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
   cat("You must review the compilation report log file when complete... \n\n")
-  ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files"), write_report = T, write_out = T, return_type = "list", checkdoi = T)
+  ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
   
-  reviewed<-utils::menu(c("Yes", "No"), title="Have you reviewed the compilation report log file? (ISRaD_data_files/database/ISRaD_log.txt)")
+  reviewed<-utils::menu(c("Yes", "No"), title="Have you reviewed the compilation report log file? (ISRaD_data_files/database/ISRaD_log.txt). I would suggest using the git commit preview window in R to see changes.")
   if (reviewed==2){
     stop("You cannot build the ISRaD database without reviewing the compilation report log file...")
   }
@@ -64,8 +64,8 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   
   cat("\tUpdating documentation and running check()...\n")
   
-  document(pkg = ISRaD_directory)
-  check(pkg=ISRaD_directory, manual = T, cran = T)
+  devtools::document(pkg = ISRaD_directory)
+  devtools::check(pkg=ISRaD_directory, manual = T, cran = T)
   
   errors<-1
   while(errors==1){
@@ -74,7 +74,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
     cat("Ok, please fix the issues and confim below when you are ready to run the check again...\n")
     ready<-utils::menu(c("Yes", "No"), title="Are you ready to run the check again?")
     if (ready==1){
-    check(pkg=ISRaD_directory, manual = T, cran = T)
+      devtools::check(pkg=ISRaD_directory, manual = T, cran = T)
    }
   }
   }

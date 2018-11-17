@@ -2,14 +2,14 @@
 #'
 #' Construct data products to the International Soil Radiocarbon Database.
 #'
-#' @param dataset_directory string defining directory where compeleted and
+#' @param dataset_directory string defining directory where completed and
 #' QC passed soilcarbon datasets are stored
 #' @param write_report boolean flag to write a log file of the
 #' compilation (FALSE will dump output to console). File will be in the specified
 #' in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
 #' there of this name it will be overwritten.
-#' @param write_out boolean flag to write the compiled database file as csv
-#' in dataset_directory (FALSE will not generate ouput file but will return)
+#' @param write_out boolean flag to write the compiled database file as .csv
+#' in dataset_directory (FALSE will not generate output file but will return)
 #' @param return_type a string that defines return object.
 #' Default is "none".
 #' Acceptable values are "none" or "list" depending on the format you want to
@@ -18,8 +18,6 @@
 #'
 #' @export
 #'
-#' @import devtools
-#' @import stringi
 #' @import openxlsx
 #' @import assertthat
 #' @import tidyverse
@@ -28,7 +26,6 @@ compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
                     return_type=c('none', 'list')[2], checkdoi=F){
   #Libraries used
-  requireNamespace("stringi")
   requireNamespace("assertthat")
   requireNamespace("openxlsx")
   requireNamespace("tidyverse")

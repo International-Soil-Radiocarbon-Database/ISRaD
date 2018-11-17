@@ -4,7 +4,7 @@
 #' @param database ISRaD dataset object.
 #' @export
 #' @details
-#' backfills pro_usda_soil_order based on USDA classificiations
+#' Back fills pro_usda_soil_order based on USDA classifications
 
 ISRaD.extra.fill_soilorders<-function(database){
 

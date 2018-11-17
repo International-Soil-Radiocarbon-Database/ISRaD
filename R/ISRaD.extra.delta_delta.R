@@ -2,7 +2,7 @@
 #'
 #' @description: Calculates the difference between sample delta 14C and the atmosphere for the year of collection
 #' @param database ISRaD dataset object.
-#' @details: Creates new column for delta delta value. Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords fxs). Calls SoilR for atmospheric data. Atmospheric data are corrected for the mean northern or southern hemisphere value.
+#' @details: Creates new column for delta delta value. Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). Calls SoilR for atmospheric data. Atmospheric data are corrected for the mean northern or southern hemisphere value.
 #' @author: J. Beem-Miller and C. Hicks-Pries
 #' @references: Hua et al., 2013; Sierra et al., 2014
 #' @export

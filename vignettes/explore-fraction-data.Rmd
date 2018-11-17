@@ -4,7 +4,7 @@ author: "Alison Hoyt"
 date: "October 5, 2018"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Exploring Fractions}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -17,7 +17,6 @@ library(tidyverse)
 #install_github('International-Soil-Radiocarbon-Database/ISRaD', ref = "dev", force = T)
 library(ISRaD)
 library(ggplot2)
-library(maps)
 
 ```
 
@@ -176,7 +175,7 @@ frc_data_small %>%
 
 ```
 
-### Spread data into multipe columns - Compare fractions from same layer
+### Spread data into multiple columns - Compare fractions from same layer
 ```{r echo=TRUE, warning = FALSE, message = FALSE}
 
 #Create new columns for each of the fractions
@@ -188,21 +187,4 @@ frc_data_small %>%
 ```
 
 
-## Make some maps of where the data is located
-```{r echo=TRUE, warning = FALSE, message = FALSE}
-
-# Map sites that have fraction data:
-map('world')
-points(frc_data$site_long, frc_data$site_lat, col=2, pch=19)
-
-
-#Map sites that have incubation data:
-inc.site <- ISRaD_data$incubation %>%
-  left_join(ISRaD_data$site) %>%
-  filter(is.na(inc_14c) != 1) #filters for data with 14C only
-  
-map('world')
-points(inc.site$site_long, inc.site$site_lat, col=2, pch=19)
-
-```
 
