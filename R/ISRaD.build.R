@@ -14,8 +14,6 @@
 
 ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   
-  setwd(ISRaD_directory)
-
 # Install local ISRaD -----------------------------------------------------
 
   
@@ -50,6 +48,15 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   for(t in names(ISRaD_data_compiled)){
     cat("\t\t", nrow(ISRaD_data_compiled[[t]])-nrow(ISRaD_data[[t]]), "rows were added to the", t, "table.\n")
   }
+  
+  new_entries<-setdiff(ISRaD_data_compiled$metadata$entry_name,ISRaD_data$metadata$entry_name)
+  if(length(new_entries)==0) new_entries <- "none"
+  cat("\t\t New entry_name values added to the data:", new_entries, "\n")
+  
+  removed_entries<-setdiff(ISRaD_data$metadata$entry_name, ISRaD_data_compiled$metadata$entry_name)
+  if(length(removed_entries)==0) removed_entries <- "none"
+  cat("\t\t entry_name values removed from the data:", new_entries, "\n")
+  
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")
   if (reviewed==2){
   stop("You cannot replace the ISRaD_data object with a faulty data object...")
@@ -61,7 +68,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
 
   cat("\tChecking the number of new rows in the compiled ISRaD_extra object...\n")
   for(t in names(ISRaD_extra_compiled)){
-    cat("\t\t", nrow(ISRaD_extra_compiled[[t]])-nrow(ISRaD_extra[[t]]), "rows were added to the", t, "table.\n")
+    cat("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), "ncol were added to the", t, "table.\n")
   }
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")
   if (reviewed==2){
@@ -91,6 +98,46 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   }
   
 
+# update references -------------------------------------------------------
+
+  if(removed_entries != "none" & new_entries !="none") {
+  cat("\nUpdating credits.md page...this takes about 5 min")
+  
+  dois=as.character(ISRaD_data$metadata$doi)
+  cleandois=dois[dois[]!="israd"]
+  
+  he_doi="10.1126/science.aad4273"
+  mathieu_doi="10.1111/gcb.13012"
+  
+  # References from clean dois
+  a=sapply(cleandois[-c(1,67)],FUN=rcrossref::cr_cn, format="text", style="apa", USE.NAMES = FALSE)
+  
+  he_ref=rcrossref::cr_cn(he_doi,format="text", style="apa")
+  mathieu_ref=rcrossref::cr_cn(mathieu_doi,format="text", style="apa")
+  
+  # Yaml front matter
+  front="---"
+  f1="layout: splash"
+  f2="permalink: /credits/"
+  f3="title: Credits"
+  f4="header:"
+  f5="  overlay_image: /assets/images/soil.jpg"
+  
+  # Body
+  h1="## Main compilations"
+  p1="ISRaD has been built based on two main compilations:"
+  
+  h2="## Studies within ISRaD"
+  n=length(cleandois)
+  p2=paste("Currently, there are", n, "entries in ISRaD, which are from the following publications:")
+  
+  # Print markdown file for website
+  cat(c(front, f1, f2, f3, f4, f5, front, " ",
+        h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
+        h2, p2, " ", paste("* ",a)), sep="\n", file="ISRaD_data_files/credits.md")
+
+  }
+  
 # document and check ------------------------------------------------------
 
   cat("\tUpdating documentation and running check()...\n")
@@ -110,6 +157,11 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   }
   }
   
+
+  system(paste0("rm ", getwd(), "/ISRaD.pdf"))
+  system(paste(shQuote(file.path(R.home("bin"), "R")),
+               "CMD", "Rd2pdf", shQuote(getwd())))
+
   reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github?")
   if (reviewed==1){
     cat("Ok, the DESCRIPTION file is being updated with a new version...\n")

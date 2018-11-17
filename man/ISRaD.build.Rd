@@ -2,7 +2,7 @@
 % Please edit documentation in R/ISRaD.build.R
 \name{ISRaD.build}
 \alias{ISRaD.build}
-\title{ISRaD.build builds the database and updates objects in R pacakge}
+\title{ISRaD.build builds the database and updates objects in R package}
 \usage{
 ISRaD.build(ISRaD_directory = getwd(), geodata_directory)
 }
