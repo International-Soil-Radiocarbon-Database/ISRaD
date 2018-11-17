@@ -2,14 +2,18 @@
 #'
 #' @description: Joins tables in ISRaD based on linking variables and returns "flat" dataframes
 #' @param database ISRaD dataset object: e.g. ISRaD_data, or ISRaD_extra
-#' @param table ISRaD table of interest (flux, layer, interstitial, fraction, incubation)
-#' @details: ISRaD.extra.flatten generates flat files for user specfied ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
+#' @param table ISRaD table of interest ("flux", "layer", "interstitial", "fraction", "incubation"). Must be entered with "".
+#' @details: ISRaD.extra.flatten generates flat files (2 dimensional matrices) for user specfied ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
 #' @author: J. Beem-Miller
 #' @references:
 #' @export
 #' @import dplyr
+#' @return returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),ncol(profile),...,ncol(table))
 
 ISRaD.extra.flatten<-function(database, table){
+
+requireNamespace("dplyr")
+
   g.flat <- as.data.frame(lapply(database$metadata, as.character), stringsAsFactors=F) %>%
     right_join(as.data.frame(lapply(database$site, as.character), stringsAsFactors=F),by="entry_name") %>%
     right_join(as.data.frame(lapply(database$profile, as.character), stringsAsFactors=F),by=c("entry_name","site_name"))

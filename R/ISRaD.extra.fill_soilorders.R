@@ -1,12 +1,15 @@
 #' ISRaD.extra.fill_soilorders
 #'
-#' @description extracts values from various geospatial climate datasets and adds to ISRaD_data object to create ISRaD_data_extra.
+#' @description Fills pro_usda_soil_order field from pro_soil_taxon field.
 #' @param database ISRaD dataset object.
 #' @export
-#' @details
-#' backfills pro_usda_soil_order based on USDA classificiations
+#' @details This function is a static conversion script written at the Fall 2018 Powell Center workshop and therefore performance is not guaranteed for new entries.
+#' @import plyr
+#' @return returns ISRaD_data object with filled pro_usda_soil_order column
 
 ISRaD.extra.fill_soilorders<-function(database){
+
+  requireNamespace("plyr")
 
   database$profile$pro_usda_soil_order <- plyr::revalue(database$profile$pro_soil_taxon,
                                               c("Abruptic Luvisol" = "Andisols",
