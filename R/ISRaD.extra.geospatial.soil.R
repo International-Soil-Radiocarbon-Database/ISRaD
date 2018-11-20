@@ -260,7 +260,6 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_directory) {
   #####
   #Delete ISRaD_pro object
   rm(ISRAD_pro)
-  #rm(ISRaD_extra)
 
   ### Reset working directory ###
   setwd(current_wd)
