@@ -6,7 +6,7 @@
 #' @details Uses site and profile latitude and longitute to extract soil classifications and characteristics from .tif geospatial files acquired from ISRIC (https://www.isric.org/explore/soilgrids).
 #' Currently includes USDA soil classifications and soil organic carbon to 100 cm, with new columns added at profile level for SOC at surface (0cm), 5, 15, 30, 60, and 100 cm depth. Points that are very near water bodies tend to produce NA values due to grid cell classification as water (which contains no data).
 #' All data are currently from 250 m grid cells.
-#' @author Shane Stoner sstoner@bgc-jena.mpg.de
+#' @author Shane Stoner, Jeff Beem-Miller
 #' @references Hengl, T., Mendes de Jesus, J., Heuvelink, G. B.M., Ruiperez Gonzalez, M., Kilibarda, M. et al. (2017) SoilGrids250m: global gridded soil information based on Machine Learning. PLoS ONE 12(2): e0169748. doi:10.1371/journal.pone.0169748.
 #' Hengl T, de Jesus JM, MacMillan RA, Batjes NH, Heuvelink GBM, et al. (2014) SoilGrids1km — Global Soil Information Based on Automated Mapping. PLoS ONE 9(8): e105992. doi:10.1371/journal.pone.0105992.
 #' Shangguan, W., Hengl, T., de Jesus, J. M., Yuan, H. and Dai, Y. (2016), Mapping the global depth to bedrock for land surface modeling. J. Adv. Model. Earth Syst. doi:10.1002/2016MS000686.
