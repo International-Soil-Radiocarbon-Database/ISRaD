@@ -1,7 +1,7 @@
 # main links
 main:
    - title: "About"
-     url: /index/
+     url: /
    - title: "Database"
      url: /database/
    - title: "R Package"
