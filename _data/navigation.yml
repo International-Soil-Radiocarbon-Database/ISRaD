@@ -4,6 +4,8 @@ main:
      url: /about/
    - title: "Database"
      url: /database/
+   - title: "R Package"
+     url: /rpackage/
    - title: "Contribute"
      url: /contribute/
    - title: "Credits"
