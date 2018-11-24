@@ -18,6 +18,12 @@ feature_row:
     url: "/database/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
+  - image_path: /assets/images/structure_new.png
+    title: "R Package"
+    excerpt: "Interact with database within the ISRaD package"
+    url: "/rpackage/"
+    btn_class: "btn--primary"
+    btn_label: "Learn More"
   - image_path: /assets/images/Contribute.png
     alt: "100% free"
     title: "Contribute"
