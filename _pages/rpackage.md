@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /contribute/
+permalink: /rpackage/
 title: "ISRaD R Package"
 header:
   overlay_image: /assets/images/soil.jpg
