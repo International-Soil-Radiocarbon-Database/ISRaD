@@ -88,7 +88,7 @@ Email to info.israd@gmail.com:
 1. Your ISRaD Data File (Required)
 1. ISRaD quality control report with no WARNINGS (Required)
 1. If data is from previously published work, include publication link or pdf. 
-1. Your data will be manually reviewed by a volunteer expert. Feel free to include information and details, or comments and concerns, in your email that you think will be useful. 
+1. Your data will be manually reviewed by a volunteer expert. Feel free to include information and details, or comments and concerns, in your email that you think will be useful. Let us know if this is a new template, or if you have made updates to an existing template.
 1. It is also very valuable for review process and addressing any future issues if you submit the original data tables (ie. supplemental table files from publication, or simply saying "We extracted data from Table 1, Table S3.") used to create ISRaD Data File when possible.  
 1. You will get an email once your submission has been accepted for inclusion in ISRaD. Nice work!
 
