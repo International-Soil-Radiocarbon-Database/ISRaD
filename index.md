@@ -5,20 +5,13 @@ title: <span style="color:orange">**I**</span>nternational <span style="color:or
 header:
   overlay_image: /assets/images/soil.jpg
 feature_row:
-  - image_path: /assets/images/About.png
-    alt: "About"
-    title: "About"
-    excerpt: "ISRaD history, community, publications, terms of use, steering committee and contact information"
-    url: "/about/"
-    btn_class: "btn--primary" 
-    btn_label: "Learn More"
   - image_path: /assets/images/structure_new.png
     title: "Database"
     excerpt: "ISRaD data structure, current data summary, and latest database release"
     url: "/database/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-  - image_path: /assets/images/structure_new.png
+  - image_path: /assets/images/About.png
     title: "R Package"
     excerpt: "Interact with database within the ISRaD package"
     url: "/rpackage/"
