@@ -33,7 +33,7 @@ By contributing to ISRaD you are joining an international community of researche
 ## 1. Check existing data
 
 Adding new data is great! We also welcome additions, improvements & corrections to existing datasets which are already included in ISRaD. Some in progress datasets could use your help too. Find the status of your dataset before you start:
-* **Up-to-date list**: Check out the [latest list](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/credits.md) of compiled studies in the development version of ISRaD
+* **Up-to-date list**: Check out the [latest list](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/credits.md) of compiled studies in the development version of ISRaD
 * **Complete files**: View and download [individual complete template spreadsheets](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/ISRaD_data_files)
 * **In progress files**: View and download [individual in-progress template spreadsheets](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/ISRaD_data_files_in_progress)
 * **Wishlist**: [List of studies](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit#gid=1009481555) you'd like to see added
