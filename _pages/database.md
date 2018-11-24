@@ -43,11 +43,19 @@ There are various options to access the ISRaD database:
 *   The full hierarchical database is available in a single compiled .xlsx template (below)
 *   Flattened versions of subsets of the database are available as .csv files (below)
 
-## Data download (raw database)
+## Data Files (links to latest development versions)
+### Hierarchical data:
+*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_list.xlsx)
+ full hierarchical database compiled in a single .xlsx template 
+### Flattened data:
+*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data_flat_layer.csv) **Layer data** and associated information (Layer, Profile, Site, Metadata)
+*   Download **Flux data** and associated information as .csv (Flux, Profile, Site, Metadata)
+*   Interstitial data and associated information (Interstitial, Profile, Site, Metadata)
+*   Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata) 
+*   Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
 
-v0.2.0
-Database objects 
-[excel](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_Data/database/ISRaD_list.xlsx)
+### Flattened *"ISRaD_extra"* data:
+
 
 
 ## Database R Package download (raw R Package for advanced users)
