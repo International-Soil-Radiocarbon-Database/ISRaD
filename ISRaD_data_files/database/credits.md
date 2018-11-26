@@ -5,7 +5,7 @@ ISRaD has been built based on two main compilations:
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
  
 ## Studies within ISRaD
-Currently, there are 159 entries in ISRaD, which are from the following publications:
+Currently, there are 160 entries in ISRaD, which are from the following publications:
  
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
 *  Baisden, W. T., Amundson, R., Cook, A. C., & Brenner, D. L. (2002). Turnover and storage of C and N in five density fractions from California annual grassland surface soils. Global Biogeochemical Cycles, 16(4), 64–1–64–16. doi:10.1029/2001gb001822
@@ -111,7 +111,7 @@ Currently, there are 159 entries in ISRaD, which are from the following publicat
 *  Monreal, C. M., Schulten, H.-R., & Kodama, H. (1997). Age, turnover and molecular diversity of soil organic matter in aggregates of a Gleysol. Canadian Journal of Soil Science, 77(3), 379–388. doi:10.4141/s95-064
 *  Mueller, C. W., Gutsch, M., Kothieringer, K., Leifeld, J., Rethemeyer, J., Brueggemann, N., & Kögel-Knabner, I. (2014). Bioavailability and isotopic composition of CO2 released from incubated soil organic matter fractions. Soil Biology and Biochemistry, 69, 168–178. doi:10.1016/j.soilbio.2013.11.006
 *  Muhr, J., & Borken, W. (2009). Delayed recovery of soil respiration after wetting of dry soil further reduces C losses from a Norway spruce forest soil. Journal of Geophysical Research, 114(G4). doi:10.1029/2009jg000998
-*  NULL
+*  Nagy, R. C., Porder, S., Brando, P., Davidson, E., Figueira, A. M. e S., Neill, C., … Trumbore, S. (2017). <i>Soil Carbon Dynamics In Soybean Cropland And Forests In Mato Grosso, Brazil</i> [Data set]. Zenodo. https://doi.org/10.5281/zenodo.1127667
 *  Nowinski, N. S., Trumbore, S. E., Jimenez, G., & Fenn, M. E. (2009). Alteration of belowground carbon dynamics by nitrogen addition in southern California mixed conifer forests. Journal of Geophysical Research: Biogeosciences, 114(G2), n/a–n/a. doi:10.1029/2008jg000801
 *  Nowinski, N. S., Taneva, L., Trumbore, S. E., & Welker, J. M. (2010). Decomposition of old organic matter as a result of deeper active layers in a snow depth manipulation experiment. Oecologia, 163(3), 785–792. doi:10.1007/s00442-009-1556-x
 *  O’DONNELL, J. A., HARDEN, J. W., McGUIRE, A. D., KANEVSKIY, M. Z., JORGENSON, M. T., & XU, X. (2010). The effect of fire and permafrost interactions on soil carbon accumulation in an upland black spruce ecosystem of interior Alaska: implications for post-thaw carbon loss. Global Change Biology, 17(3), 1461–1474. doi:10.1111/j.1365-2486.2010.02358.x
@@ -147,6 +147,7 @@ Currently, there are 159 entries in ISRaD, which are from the following publicat
 *  Tonneijck, F. H., van der Plicht, J., Jansen, B., Verstraten, J. M., & Hooghiemstra, H. (2006). Radiocarbon Dating of Soil Organic Matter Fractions in Andosols in Northern Ecuador. Radiocarbon, 48(03), 337–353. doi:10.1017/s0033822200038790
 *  Torn, M. S., Lapenis, A. G., Timofeev, A., Fischer, M. L., Babikov, B. V., & Harden, J. W. (2002). Organic carbon and carbon isotopes in modern and 100-year-old-soil archives of the Russian steppe. Global Change Biology, 8(10), 941–953. doi:10.1046/j.1365-2486.2002.00477.x
 *  Torn, M. S., Vitousek, P. M., & Trumbore, S. E. (2005). The Influence of Nutrient Availability on Soil Organic Matter Turnover Estimated by Incubations and Radiocarbon Modeling. Ecosystems, 8(4), 352–372. doi:10.1007/s10021-004-0259-8
+*  Trumbore, S. E. (1993). Comparison of carbon dynamics in tropical and temperate soils using radiocarbon measurements. Global Biogeochemical Cycles, 7(2), 275–290. doi:10.1029/93gb00468
 *  Trumbore, S. E., Davidson, E. A., Barbosa de Camargo, P., Nepstad, D. C., & Martinelli, L. A. (1995). Belowground cycling of carbon in forests and pastures of eastern Amazonia. Global Biogeochemical Cycles, 9(4), 515–528. doi:10.1029/95gb02148
 *  De Camargo, P. B., Trumbore, S. E., Martinelli, L. A., Davidson, E. A., Nepstad, D. C., & Victoria, R. L. (1999). Soil carbon dynamics in regrowing forest of eastern Amazonia. Global Change Biology, 5(6), 693–702. doi:10.1046/j.1365-2486.1999.00259.x
 *  TELLES, E. D. C., DE CAMARGO, P. B., MARTINELLI, L. A., TRUMBORE, S. E., DA COSTA, E. S., SANTOS, J., … MARKEWITZ, D. (2011). LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil. ORNL Distributed Active Archive Center. https://doi.org/10.3334/ornldaac/1025
@@ -156,7 +157,7 @@ Currently, there are 159 entries in ISRaD, which are from the following publicat
 *  Van Dam, D., van Breemen, N., & Veldkamp, E. (1997). Biogeochemistry, 39(3), 343–375. doi:10.1023/a:1005880031579
 *  Van der Voort, T. S., Hagedorn, F., McIntyre, C., Zell, C., Walthert, L., Schleppi, P., … Eglinton, T. I. (2016). Variability in &lt;sup&gt;14&lt;/sup&gt;C contents of soil organic matter at the plot and  regional scale across climatic and geologic gradients. Biogeosciences, 13(11), 3427–3439. doi:10.5194/bg-13-3427-2016
 *  Van Mourik, J. M., Nierop, K. G. J., & Vandenberghe, D. A. G. (2010). Radiocarbon and optically stimulated luminescence dating based chronology of a polycyclic driftsand sequence at Weerterbergen (SE Netherlands). CATENA, 80(3), 170–181. doi:10.1016/j.catena.2009.11.004
-*  NULL
+*  Vaughn, L., Torn, M., Porras, R., Curtis, B., &amp; Chafe, O. (2018). <i>Radiocarbon in Ecosystem Respiration and Soil Pore-Space CO2 with Surface Gas Flux, Air Temperature, and Soil Temperature and Moisture, Barrow, Alaska, 2012-2014</i> [Data set]. Next Generation Ecosystems Experiment - Arctic, Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (US); https://doi.org/10.5440/1364062
 *  Wagai, R., Kajiura, M., Asano, M., & Hiradate, S. (2015). Nature of soil organo-mineral assemblage examined by sequential density fractionation with and without sonication: Is allophanic soil different? Geoderma, 241-242, 295–305. doi:10.1016/j.geoderma.2014.11.028
 *  Waldrop, M. P., Harden, J. W., Turetsky, M. R., Petersen, D. G., McGuire, A. D., Briones, M. J. I., … Pruett, L. E. (2012). Bacterial and enchytraeid abundance accelerate soil carbon turnover along a lowland vegetation gradient in interior Alaska. Soil Biology and Biochemistry, 50, 188–198. doi:10.1016/j.soilbio.2012.02.032
 *  Wang, Y., Amundson, R., & Trumbore, S. (1996). Radiocarbon Dating of Soil Organic Matter. Quaternary Research, 45(03), 282–288. doi:10.1006/qres.1996.0029
