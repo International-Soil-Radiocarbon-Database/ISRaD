@@ -26,13 +26,13 @@ The main features include:
 	* **Fractions** of organic matter extracted by a range of methods
 	* Amount and isotoptic signature of CO<sub>2</sub> produced during **Incubations** 
 	
-## Credits (up to date list of datasets currently in ISRaD on github)
-[Credits](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/credits.md)
+## Current ISRaD Data
+### List of datasets in ISRaD (development version):
+Complete list [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/credits.md)
 
 
-## In progress
-Visit this google doc to see the status of different datasets. 
-[List](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit?usp=sharing)
+### In progress datasets:
+Visit [this google doc](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit?usp=sharing) to see the status of different datasets 
 
 ## Using ISRaD Data
 There are various options to access the ISRaD database: 
@@ -63,10 +63,4 @@ The links below download the latest development version of the ISRaD database
 
 ## Database R Package download (raw R Package for advanced users)
 
-Current R-Package release
-[Entire ISRaD R Package v0.2.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.2.0.zip)
-
-Previous releases
-[Entire ISRaD R Package v0.1.0](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.1.0.zip)
-[ISRaD v0.0.1](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/archive/v0.0.1.zip)
-
+Learn more [here](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/)
