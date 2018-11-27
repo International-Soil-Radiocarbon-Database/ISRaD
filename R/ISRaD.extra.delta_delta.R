@@ -1,10 +1,10 @@
 #' ISRaD.extra.delta_delta
 #'
-#' @description: Calculates the difference between sample delta 14C and the atmosphere for the year of collection
+#' @description Calculates the difference between sample delta 14C and the atmosphere for the year of collection
 #' @param database ISRaD dataset object.
-#' @details: Creates new column for delta delta value. Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords fxs). Calls SoilR for atmospheric data (Hua et al. 2013). Atmospheric data are corrected for the northern hemisphere zone 2 or southern hemisphere zones 1+2, depending on profile coordinates.
-#' @author: J. Beem-Miller and C. Hicks-Pries
-#' @references: Hua et al., 2013; Sierra et al., 2014
+#' @details Creates new column for delta delta value. Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords fxs). Calls SoilR for atmospheric d14C data (Hua et al. 2013). Atmospheric data are corrected for the northern hemisphere zone 2 or southern hemisphere zones 1+2, depending on profile coordinates.
+#' @author J. Beem-Miller and C. Hicks-Pries
+#' @references Hua et al., 2013; Sierra et al., 2014
 #' @export
 #' @return returns ISRaD_data object with new delta delta columns in relevant tables
 
@@ -45,7 +45,7 @@ requireNamespace("dplyr")
                                 d14C.s = tapply(SHZone12$Delta14C, SHZone12$year, FUN=mean))
 
     calc_atm14c <- function(df, obs_date_y) {
-      df.pro <- dplyr::left_join(df, database$profile, by=c("entry_name","site_name","pro_name"))
+      df.pro <- dplyr::left_join(as.data.frame(lapply(df, as.character), stringsAsFactors=F), as.data.frame(lapply(database$profile, as.character), stringsAsFactors=F), by=c("entry_name","site_name","pro_name"))
       df.pro.n <- df.pro[which(df.pro$pro_lat>0),]
       df.pro.s <- df.pro[which(df.pro$pro_lat<0),]
       df.pro.n$atm14C <- atm14C.annual[match(df.pro.n[,obs_date_y],atm14C.annual$year),"d14C.n"] #generates index of rows and selects column in dataframe
