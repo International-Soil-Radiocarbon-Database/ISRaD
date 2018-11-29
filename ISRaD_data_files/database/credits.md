@@ -5,7 +5,7 @@ ISRaD has been built based on two main compilations:
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
  
 ## Studies within ISRaD
-Currently, there are 160 entries in ISRaD, which are from the following publications:
+Currently, there are 161 entries in ISRaD, which are from the following publications:
  
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
 *  Baisden, W. T., Amundson, R., Cook, A. C., & Brenner, D. L. (2002). Turnover and storage of C and N in five density fractions from California annual grassland surface soils. Global Biogeochemical Cycles, 16(4), 64–1–64–16. doi:10.1029/2001gb001822
@@ -154,6 +154,7 @@ Currently, there are 160 entries in ISRaD, which are from the following publicat
 *  Trumbore, S. E., Chadwick, O. A., & Amundson, R. (1996). Rapid Exchange Between Soil Carbon and Atmospheric Carbon Dioxide Driven by Temperature Change. Science, 272(5260), 393–396. doi:10.1126/science.272.5260.393
 *  Koarashi, J., Hockaday, W. C., Masiello, C. A., & Trumbore, S. E. (2012). Dynamics of decadally cycling carbon in subsurface soils. Journal of Geophysical Research: Biogeosciences, 117(G3), n/a–n/a. doi:10.1029/2012jg002034
 *  Marzaioli, F., Lubritto, C., Galdo, I. D., D’Onofrio, A., Cotrufo, M. F., & Terrasi, F. (2010). Comparison of different soil organic matter fractionation methodologies: Evidences from ultrasensitive 14C measurements. Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms, 268(7-8), 1062–1066. doi:10.1016/j.nimb.2009.10.098
+*  Trumbore, S. E., Bubier, J. L., Harden, J. W., & Crill, P. M. (1999). Carbon cycling in boreal wetlands: A comparison of three approaches. Journal of Geophysical Research: Atmospheres, 104(D22), 27673–27682. doi:10.1029/1999jd900433
 *  Van Dam, D., van Breemen, N., & Veldkamp, E. (1997). Biogeochemistry, 39(3), 343–375. doi:10.1023/a:1005880031579
 *  Van der Voort, T. S., Hagedorn, F., McIntyre, C., Zell, C., Walthert, L., Schleppi, P., … Eglinton, T. I. (2016). Variability in &lt;sup&gt;14&lt;/sup&gt;C contents of soil organic matter at the plot and  regional scale across climatic and geologic gradients. Biogeosciences, 13(11), 3427–3439. doi:10.5194/bg-13-3427-2016
 *  Van Mourik, J. M., Nierop, K. G. J., & Vandenberghe, D. A. G. (2010). Radiocarbon and optically stimulated luminescence dating based chronology of a polycyclic driftsand sequence at Weerterbergen (SE Netherlands). CATENA, 80(3), 170–181. doi:10.1016/j.catena.2009.11.004
