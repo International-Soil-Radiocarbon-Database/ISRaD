@@ -5,6 +5,7 @@
 #' @details Function first fills lyr_bd_samp and lyr_c_org. SOC stocks can only be calculated if organic carbon concentration and bulk density data are available. SOC stocks are then calculated for the fine earth fraction (<2mm).
 #' @author J. Beem-Miller
 #' @return returns ISRaD_data object with filled columns
+#' @export
 
 ISRaD.extra.Cstocks<-function(database){
   # make single BD value from BD sample and BD total
