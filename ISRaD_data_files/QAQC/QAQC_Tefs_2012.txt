@@ -92,13 +92,17 @@ Summary statistics...
     site_name : 1
     site_lat : 1
     site_long : 1
+    site_datum : 1
     site_elevation : 1
  profile tab...2 observations
     entry_name : 2
     site_name : 2
     pro_name : 2
     pro_treatment : 2
+    pro_MAT : 2
     pro_soil_taxon_sys : 2
+    pro_MAST : 2
+    pro_MASWC : 2
     pro_land_cover : 2
     pro_veg_note : 2
  flux tab...0 observations
@@ -111,8 +115,9 @@ Summary statistics...
     lyr_top : 14
     lyr_bot : 14
     lyr_bd_samp : 14
-    lyr_soc : 12
-    lyr_14c : 14
+    lyr_soc : 14
+    lyr_soc_sigma : 14
+    lyr_c_to_n : 14
     lyr_fraction_modern : 14
  interstitial tab...0 observations
  fraction tab...0 observations
