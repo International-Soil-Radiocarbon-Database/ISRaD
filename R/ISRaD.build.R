@@ -26,7 +26,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   
   cat("Compiling the data files in",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
   cat("You must review the compilation report log file when complete... \n\n")
-  ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
+  ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files/"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
  
   cat("\nISRaD_data.xlsx saved to", paste0(ISRaD_directory,"/ISRaD_data_files/database\n\n"))
 

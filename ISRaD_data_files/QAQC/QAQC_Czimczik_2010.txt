@@ -103,7 +103,7 @@ Summary statistics...
     pro_soil_taxon : 16
     pro_soil_taxon_sys : 16
     pro_land_cover : 16
-    pro_veg_note : 6
+    pro_veg_note : 16
     pro_thaw_depth : 5
     pro_aspect_deg : 5
     pro_slope : 5
