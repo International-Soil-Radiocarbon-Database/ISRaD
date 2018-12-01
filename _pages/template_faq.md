@@ -107,20 +107,37 @@ where F<sub>m</sub> is fraction modern.
 </details>
 
 
+<details><summary>  
+<b> Additional Data </b>
+</summary><p>
 
-<details>
-<summary>  
-<i> 
-  Metadata
-</i>
+ * **_The paper contains some auxiliary data (e.g. species composition, mineralogy etc.) that I don´t know how to enter or don't have time to do enter. What should I do?_** 
+   Mention this in *metadata_note* field so that one day someone can come back to this. If you are interested in learning how to enter it, contact *info.israd@gmail.com*, or post a question on the [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
 
-</summary>
-<p>
-1. Templates
-2. Templates
-3. Templates 
+ 
+
 </p>
 </details>
+
+
+
+
+<details><summary>  
+<b> Missing Data </b>
+</summary><p>
+
+ * **_The authors don't report the coordinates. What should I do?_** 
+    You can digitize the coordinates from the figure, or find the site location on Google maps or similar. Please use the *metadata_note* field to indicate this. (e.g. “Cordinates were extracted from figures” or "Coordinates were estimated from site descriptions")
+
+ * **_What should I do if the date of observation was not reported in the paper?_** 
+   If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 2 years from the year of publication and note in the *lyr_note* field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
+
+
+</p>
+</details>
+
+
+
 
 
 ### Incubations
