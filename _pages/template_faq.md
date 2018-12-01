@@ -14,10 +14,11 @@ Filling out a template can be confusing! This page provides detailed information
 <b> Radiocarbon Units </b>
 </summary>
 
-<ul>
-   <li><b><i>What units are accepted?</b></i>
-   ISRaD accepts fraction modern and  Δ<sup>14</sup>C radiocarbon units. Only fill in the data reported in the paper. Unit conversions are included in "ISRaD_extra"</li>
- </ul>
+<p>
+
+   * **_What units are accepted?_** 
+   ISRaD accepts fraction modern and  Δ<sup>14</sup>C radiocarbon units. Only fill in the data reported in the paper. Unit conversions are included in "ISRaD_extra"
+ 
    * **_This paper only reports radiocarbon ages in years. What do I do?_** 
    If the data is reported as a *calibrated date*, it cannot be included in ISRaD. *Uncalibrated* radiocarbon ages can be converted to fraction modern values (see below).
    
@@ -37,7 +38,8 @@ where F<sub>m</sub> is fraction modern.
   
    * **_The radiocarbon age is stated as  “Modern” but no other data is provided. What do I do?_**
   Leave the field blank and add a note that data is available but has to be mined for. Do *not* enter a fraction modern value of 1! This is misleading during data analysis!
-
+  
+</p>  
 
 </details>
 
