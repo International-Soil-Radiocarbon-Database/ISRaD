@@ -83,6 +83,26 @@ where F<sub>m</sub> is fraction modern.
 
 
 
+
+
+<details><summary>  
+<b> Depth Conventions </b>
+</summary><p>
+
+ * **_Where is zero?_** 
+ Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the “lyr_all_org_neg” column to flag this.
+ 
+ * **_What is the "lyr_all_org_neg" column for?_** 
+ This column is used to flag studies where depths are reported from the soil surface, if the depth of the mineral-organic interface is unknown. For example, this is frequently the case in peatlands.
+ 
+ * **_The study does not report the bottom of the layer for the deepest layer. What should I do?_** 
+ Write "Inf" as infinity in the lyr_bot field.
+
+</p>
+</details>
+
+
+
 <details>
 <summary>  
 <i> 
