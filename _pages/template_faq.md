@@ -48,6 +48,28 @@ where F<sub>m</sub> is fraction modern.
 </details>
 
 
+
+<details><summary>  
+<b> Updating templates from He et al. (2016) compilation </b>
+</summary><p>
+
+ * **_Why does this template look different?_** 
+   These templates were automatically generated, and do not have the header formatting. You can copy-paste the values to the master template to continue working. This will also give you access to the drop down menus for controlled vocabulary.
+   
+ * **_Paper does not mention bulk density, but old template automatically generated from Yujie He’s compilation gives bulk density for few samples measured by radiocarbon. Should I keep them in the template?_**
+ No. In some cases bulk density values were generated for studies that originally did not report them. ISRaD aims to report original data only.
+
+ * **_These names don't match the paper. What do I do?_** 
+  In many cases, site, profile and layer names were automatically generated. Please feel free to update them to match those found in the paper. 
+  
+ * **_The paper has additional fraction, flux, or incubation data, not reported in the current template. What should I do with it?_** 
+   If you have time, please add it! Otherwise, please make a note of the availability of additional datasets within the paper in the *metadata_note* field.
+
+</p>
+</details>
+
+
+
 <details>
 <summary>  
 <i> 
