@@ -2,8 +2,7 @@ Filling out a template can be confusing! This page provides detailed information
 
 ### General FAQ
 
-<details>
-<summary>  
+<details><summary>  
 <b> Radiocarbon Units </b>
 </summary><p>
 
@@ -23,25 +22,23 @@ where F<sub>m</sub> is fraction modern.
    * **_Paper reports radiocarbon age and δ<sup>14</sup>C, what should I fill into the template?_**
    Convert radiocarbon age to Fraction modern using age= -8033*ln(F<sub>m</sub>) and ignore δ<sup>14</sup>C values. Be sure to mark down the year of observation which is important for the conversion of Fm to Δ<sup>14</sup>C.
 
-
-
-
 </p>
 </details>
 
 
-<details>
-<summary>  
-<i> 
-  Data or Coordinates from Figures
-</i>
 
-</summary>
-<p>
-*   Is it ok to digitize data/coordinates from a figure/map?
-*   Is there any rule on how many decimal places are reasonable to enter when data are digitized from a plot? 
-2. Templates
-3. Templates 
+<details><summary>  
+<b> Data or Coordinates from Figures </b>
+</summary><p>
+
+ * **_Is it ok to digitize data/coordinates from a figure/map?_** 
+   Yes, but please note it (see below). While the raw data from the author or supplementary information is preferable, digitized data is also welcome in ISRaD.
+ * **_Should I mention somewhere in the template that the data (e.g., GPS coordinates and others) were obtained from figures?_**
+ Yes, use the *metadata_note* field. Say for example “GPS coordinates and variables x,y and z were extracted from figures”.
+
+ * **_Is there any rule on how many decimal places are reasonable to enter when data are digitized from a plot?_** 
+   No, use your best guess about the appropriate number of decimal places based on expected precision of plot digitization and/or data acquisition.
+
 </p>
 </details>
 
