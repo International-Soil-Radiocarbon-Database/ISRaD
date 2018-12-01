@@ -6,7 +6,7 @@ header:
   overlay_image: /assets/images/soil.jpg
 ---
 
-Filling out a template can be confusing! This page provides detailed information and examples for each tab of the template. Click to see full details.
+Filling out a template can be confusing! This page provides detailed information and examples for each tab of the template. Please click to see full details.
 
 ### General FAQ
 
