@@ -1,4 +1,4 @@
-Filling out a template can be confusing! This page provides detailed information and examples for each tab of the template.
+Filling out a template can be confusing! This page provides detailed information and examples for each tab of the template. Click to see full details.
 
 ### General FAQ
 
@@ -145,6 +145,19 @@ where F<sub>m</sub> is fraction modern.
 The issue is also discussed [here](https://www.researchgate.net/post/How_to_convert_FAO_soil_class_into_USDA_soil_class).
 Finally, if you feel uncomfortable with this conversion, mention this in the email submitting your template, and an expert reviewer can double check this field for you.
 (https://www.researchgate.net/post/How_to_convert_FAO_soil_class_into_USDA_soil_class)
+
+
+</p>
+</details>
+
+
+
+<details><summary>  
+<b> Organic Matter Content </b>
+</summary><p>
+
+ * **_The paper reports organic matter content instead of organic carbon %, what should I do?_** 
+ Convert to organic carbon using OC=OM/1.724 and mention this in the *lyr_note* or other relevant field.
 
 
 </p>
