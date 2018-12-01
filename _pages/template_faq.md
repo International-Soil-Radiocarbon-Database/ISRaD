@@ -70,6 +70,19 @@ where F<sub>m</sub> is fraction modern.
 
 
 
+<details><summary>  
+<b> Metadata </b>
+</summary><p>
+
+ * **_The source study does not have a DOI, what should I do?_** 
+ You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+
+
+</p>
+</details>
+
+
+
 <details>
 <summary>  
 <i> 
