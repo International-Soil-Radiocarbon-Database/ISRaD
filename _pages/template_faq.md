@@ -8,20 +8,6 @@ header:
 
 Filling out a template can be confusing! This page provides detailed information and examples for each tab of the template. Please click to see full details.
 
-## collapsible markdown?
-
-<details><summary>CLICK ME</summary>
-<p>
-
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
-```
-
-</p>
-</details>
-
 ### General FAQ
 
 <details><summary>  
