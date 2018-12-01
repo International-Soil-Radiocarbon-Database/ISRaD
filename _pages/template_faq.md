@@ -12,7 +12,9 @@ Filling out a template can be confusing! This page provides detailed information
 
 <details><summary>  
 <b> Radiocarbon Units </b>
-</summary><p>
+</summary>
+  
+<p>
 
    * **_What units are accepted?_** 
    ISRaD accepts fraction modern and  Δ<sup>14</sup>C radiocarbon units. Only fill in the data reported in the paper. Unit conversions are included in "ISRaD_extra"
@@ -37,9 +39,6 @@ where F<sub>m</sub> is fraction modern.
    * **_The radiocarbon age is stated as  “Modern” but no other data is provided. What do I do?_**
   Leave the field blank and add a note that data is available but has to be mined for. Do *not* enter a fraction modern value of 1! This is misleading during data analysis!
 
-
-
-
 </p>
 </details>
 
@@ -47,7 +46,9 @@ where F<sub>m</sub> is fraction modern.
 
 <details><summary>  
 <b> Data or Coordinates from Figures </b>
-</summary><p>
+</summary>
+  
+<p>
 
  * **_Is it ok to digitize data/coordinates from a figure/map?_** 
    Yes, but please note it (see below). While the raw data from the author or supplementary information is preferable, digitized data is also welcome in ISRaD.
@@ -64,7 +65,9 @@ where F<sub>m</sub> is fraction modern.
 
 <details><summary>  
 <b> Updating templates from He et al. (2016) compilation </b>
-</summary><p>
+</summary>
+  
+<p>
 
  * **_Why does this template look different?_** 
    These templates were automatically generated, and do not have the header formatting. You can copy-paste the values to the master template to continue working. This will also give you access to the drop down menus for controlled vocabulary.
@@ -85,7 +88,9 @@ where F<sub>m</sub> is fraction modern.
 
 <details><summary>  
 <b> Metadata </b>
-</summary><p>
+</summary>
+  
+<p>
 
  * **_The source study does not have a DOI, what should I do?_** 
  You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
@@ -100,7 +105,9 @@ where F<sub>m</sub> is fraction modern.
 
 <details><summary>  
 <b> Depth Conventions </b>
-</summary><p>
+</summary>
+  
+<p>
 
  * **_Where is zero?_** 
  Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the “lyr_all_org_neg” column to flag this.
@@ -117,7 +124,9 @@ where F<sub>m</sub> is fraction modern.
 
 <details><summary>  
 <b> Additional Data </b>
-</summary><p>
+</summary>
+
+<p>
 
  * **_The paper contains some auxiliary data (e.g. species composition, mineralogy etc.) that I don´t know how to enter or don't have time to do enter. What should I do?_** 
    Mention this in *metadata_note* field so that one day someone can come back to this. If you are interested in learning how to enter it, contact *info.israd@gmail.com*, or post a question on the [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
@@ -130,7 +139,9 @@ where F<sub>m</sub> is fraction modern.
 
 <details><summary>  
 <b> Missing Data </b>
-</summary><p>
+</summary>
+
+<p>
 
  * **_The authors don't report the coordinates. What should I do?_** 
     You can digitize the coordinates from the figure, or find the site location on Google maps or similar. Please use the *metadata_note* field to indicate this. (e.g. “Cordinates were extracted from figures” or "Coordinates were estimated from site descriptions")
@@ -145,7 +156,9 @@ where F<sub>m</sub> is fraction modern.
 
 <details><summary>  
 <b> Soil Order </b>
-</summary><p>
+</summary>
+
+<p>
 
  * **_How do I convert WRB soil classification to USDA, to obtain a USDA soil order?_** 
  FAO, USDA and other soil classification systems are not readily interchangeable, so this can be tricky. These tables can help:
@@ -162,7 +175,9 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 
 <details><summary>  
 <b> Organic Matter Content </b>
-</summary><p>
+</summary>
+
+<p>
 
  * **_The paper reports organic matter content instead of organic carbon %, what should I do?_** 
  Convert to organic carbon using OC=OM/1.724 and mention this in the *lyr_note* or other relevant field.
