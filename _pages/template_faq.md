@@ -25,6 +25,11 @@ where F<sub>m</sub> is fraction modern.
    * **_Paper reports only δ<sup>14</sup>C and δ<sup>13</sup>C, what should I fill into the template?_**
   Calculate Δ<sup>14</sup>C using the following formula: 
   Δ<sup>14</sup>C = δ<sup>14</sup>C - (2*δ<sup>13</sup>C +50)(1 + δ<sup>14</sup>C / 1000)
+  
+   * **_The radiocarbon age is stated as  “Modern” but no other data is provided. What do I do?_**
+  Leave the field blank and add a note that data is available but has to be mined for. Do *not* enter a fraction modern value of 1! This is misleading during data analysis!
+
+
 
 
 </p>
