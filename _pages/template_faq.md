@@ -6,15 +6,14 @@ header:
   overlay_image: /assets/images/soil.jpg
 ---
 
-Filling out a template can be confusing! This page provides detailed information and examples for each tab of the template. Please click to see full details.
+Filling out a template can be confusing! This page provides detailed information and examples for each tab of the template. Click to see full details.
 
 ### General FAQ
 
 <details><summary>  
 <b> Radiocarbon Units </b>
 </summary>
-  
-<p>
+
 
    * **_What units are accepted?_** 
    ISRaD accepts fraction modern and  Δ<sup>14</sup>C radiocarbon units. Only fill in the data reported in the paper. Unit conversions are included in "ISRaD_extra"
@@ -39,7 +38,6 @@ where F<sub>m</sub> is fraction modern.
    * **_The radiocarbon age is stated as  “Modern” but no other data is provided. What do I do?_**
   Leave the field blank and add a note that data is available but has to be mined for. Do *not* enter a fraction modern value of 1! This is misleading during data analysis!
 
-</p>
 </details>
 
 
