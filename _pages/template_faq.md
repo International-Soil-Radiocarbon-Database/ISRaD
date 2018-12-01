@@ -7,6 +7,7 @@ header:
 ---
 
 <div markdown="1">
+
 Filling out a template can be confusing! This page provides detailed information and examples for each tab of the template. Please click to see full details.
 
 ### General FAQ
@@ -362,7 +363,6 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 3. Templates 
 </p>
 </details>
-</div>
 
 </summary>
 <p>
@@ -371,3 +371,5 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 3. Templates 
 </p>
 </details>
+
+</div>
