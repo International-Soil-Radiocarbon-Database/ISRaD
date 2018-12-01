@@ -187,42 +187,92 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 
 ### Fractions
 
-<details>
-<summary>
-<i> 
-  General information
-</i>
+<details><summary>  
+<b> General Information </b>
+</summary><p>
+  
+ * **_The source study does not have a DOI, what should I do?_** 
+ You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
 
-</summary>
-<p>
-1. Templates
-2. Templates
-3. Templates 
+</p>
+</details>
+
+
+<details><summary>  
+<b> Density Separation </b>
+</summary><p>
+  
+**A heavy liquid is used to float off organics, thereby separating them from mineral material. This can be done with or without disruption of aggregates by sonicating or shaking.** 
+ 
+ 
+ Example template: [Swanston_2005](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Swanston_2005.xlsx)
+
 </p>
 </details>
 
 
 
-<details>
-<summary>
-<i> 
-  Density Fractionation
-</i>
+<details><summary>  
+<b> Sequential Density Separation </b>
+</summary><p>
+  
+ * **_The source study does not have a DOI, what should I do?_** 
+ You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
 
-</summary>
-<p>
-1. Templates
-2. Templates
-3. Templates 
 </p>
 </details>
 
 
-<details>
-<summary>
-<i> 
-  Size Fractionation
-</i>
+
+<details><summary>  
+<b> Particle Size Separation </b>
+</summary><p>
+  
+ * **_The source study does not have a DOI, what should I do?_** 
+ You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+
+</p>
+</details>
+
+
+
+<details><summary>  
+<b> Aggregate fractionation </b>
+</summary><p>
+  
+ * **_The source study does not have a DOI, what should I do?_** 
+ You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+
+</p>
+</details>
+
+
+
+
+<details><summary>  
+<b> Other Fractionation Schemes </b>
+</summary><p>
+  
+ * **_The source study does not have a DOI, what should I do?_** 
+ You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+
+</p>
+</details>
+
+
+
+<details><summary>  
+<b> Dummy Fractions </b>
+</summary><p>
+  
+ * **_The source study does not have a DOI, what should I do?_** 
+ You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+
+</p>
+</details>
+
+
+
   
 ### Fluxes
 
