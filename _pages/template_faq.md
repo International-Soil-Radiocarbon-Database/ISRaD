@@ -283,8 +283,20 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 <b> Dummy Fractions </b>
 </summary><p>
   
- * **_The source study does not have a DOI, what should I do?_** 
- You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+ **"Dummy fractions" are placeholder rows in the fraction tab. In some cases, they may be needed to convey the full complexity of the fractionation scheme.** Not sure if you need to create a dummy fraction? Check out these examples: 
+ 
+ **(a) All mass accounted for:** Here, all the fractions in level 2 are unique and add up to level 1 – no dummy fraction needed.
+ 
+ <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_a.png" width="650">   
+
+ **(b) Well-known schemes:** Here, all the fractions in level 2 and 3 are unique add up to level 1 – if the “Golchin” density fractionation were not common knowledge, you’d probably want a dummy fraction, but we don’t need one because the 3 fraction density separation is simple and all the end users should have knowledge of it.
+ 
+  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_b.png" width="500"> 
+ 
+**(c) Intermediate-fractions:** Here, the silt and clay fraction from level 3 needs to be distinguished from the silt and clay fraction from level 2 in a way that lets the end user know what each fraction was derived from. No measurements were made on the 53-250 um aggregate fraction (red circle) prior to further fractionation, so we need a dummy fraction to represent what the level 3 fractions came from.
+
+ <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_c.png" width="500">   
+
 
 </p>
 </details>
