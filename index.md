@@ -26,11 +26,6 @@ feature_row:
     btn_label: "Learn More"
 ---
 
-{% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
-
-
 ## What is ISRaD?
 ISRaD is a open community repository for soil radiocarbon data.  
 Our goals are:
