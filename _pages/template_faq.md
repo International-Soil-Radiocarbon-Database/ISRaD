@@ -323,21 +323,13 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 ### Fluxes
 
 <details><summary>
-<i>Helpful info here</i>
-</summary><p> . 
+<i> Helpful info here </i>
+</summary><p>  
   
-1. Templates . 
-2. Templates . 
-3. Templates . 
+1. Templates  
+2. Templates  
+3. Templates   
   
-</p>
-</details>
-
-</summary>
-<p>
-1. Templates
-2. Templates
-3. Templates 
 </p>
 </details>
 
@@ -358,11 +350,4 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 </p>
 </details>
 
-</summary>
-<p>
-1. Templates
-2. Templates
-3. Templates 
-</p>
-</details>
 
