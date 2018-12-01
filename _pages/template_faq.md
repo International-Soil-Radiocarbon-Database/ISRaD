@@ -21,6 +21,11 @@ where F<sub>m</sub> is fraction modern.
 
    * **_Paper reports radiocarbon age and δ<sup>14</sup>C, what should I fill into the template?_**
    Convert radiocarbon age to Fraction modern using age= -8033*ln(F<sub>m</sub>) and ignore δ<sup>14</sup>C values. Be sure to mark down the year of observation which is important for the conversion of Fm to Δ<sup>14</sup>C.
+   
+   * **_Paper reports only δ<sup>14</sup>C and δ<sup>13</sup>C, what should I fill into the template?_**
+  Calculate Δ<sup>14</sup>C using the following formula: 
+  Δ<sup>14</sup>C = δ<sup>14</sup>C - (2*δ<sup>13</sup>C +50)(1 + δ<sup>14</sup>C / 1000)
+
 
 </p>
 </details>
