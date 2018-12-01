@@ -202,6 +202,8 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 <b> Density Separation </b>
 </summary><p>
   
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg" width="200">|  
+  
 **A heavy liquid is used to float off organics, thereby separating them from mineral material. This can be done with or without disruption of aggregates by sonicating or shaking.** 
  
  
