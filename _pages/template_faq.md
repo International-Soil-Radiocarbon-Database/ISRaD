@@ -114,8 +114,6 @@ where F<sub>m</sub> is fraction modern.
  * **_The paper contains some auxiliary data (e.g. species composition, mineralogy etc.) that I don´t know how to enter or don't have time to do enter. What should I do?_** 
    Mention this in *metadata_note* field so that one day someone can come back to this. If you are interested in learning how to enter it, contact *info.israd@gmail.com*, or post a question on the [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
 
- 
-
 </p>
 </details>
 
@@ -132,9 +130,26 @@ where F<sub>m</sub> is fraction modern.
  * **_What should I do if the date of observation was not reported in the paper?_** 
    If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 2 years from the year of publication and note in the *lyr_note* field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
 
+</p>
+</details>
+
+
+
+<details><summary>  
+<b> Soil Order </b>
+</summary><p>
+
+ * **_How do I convert WRB soil classification to USDA, to obtain a USDA soil order?_** 
+ FAO, USDA and other soil classification systems are not readily interchangeable, so this can be tricky. These tables can help:
+(1) [FAO_USDA.pdf](https://www.researchgate.net/profile/Csaba_Csuzdi/post/How_to_convert_FAO_soil_class_into_USDA_soil_class/attachment/59d62fd079197b807798df0e/AS%3A359920387018752%401462823115202/download/FAO_USDA.pdf).  (2) [soil system conversion.pdf](https://www.researchgate.net/profile/Csaba_Csuzdi/post/How_to_convert_FAO_soil_class_into_USDA_soil_class/attachment/59d62fd079197b807798df10/AS%3A359920387018756%401462823115460/download/soil+system+conversion.pdf). 
+The issue is also discussed [here](https://www.researchgate.net/post/How_to_convert_FAO_soil_class_into_USDA_soil_class).
+Finally, if you feel uncomfortable with this conversion, mention this in the email submitting your template, and an expert reviewer can double check this field for you.
+(https://www.researchgate.net/post/How_to_convert_FAO_soil_class_into_USDA_soil_class)
+
 
 </p>
 </details>
+
 
 
 
