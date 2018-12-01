@@ -1,7 +1,7 @@
 ---
 layout: splash
-permalink: /contribute/
-title: "Contribute to ISRaD"
+permalink: /template_faq/
+title: "Template FAQ"
 header:
   overlay_image: /assets/images/soil.jpg
 ---
