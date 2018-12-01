@@ -212,7 +212,7 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 
  **A heavy liquid is used to float off organics, thereby separating them from mineral material. This can be done with or without disruption of aggregates by sonicating or shaking.**   
       
-<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/density_separation_diagram.png" width="400">    
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/density_separation_diagram.png" width="375">    
 
  Example template: [Swanston_2005](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Swanston_2005.xlsx)
 
@@ -225,8 +225,11 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 <b> Sequential Density Separation </b>
 </summary><p>
   
- * **_The source study does not have a DOI, what should I do?_** 
- You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+**A heavy liquid is used to float off organics, thereby separating them from mineral material. The mineral material is then further partitioned into fractions of increasing density using heavy liquids.**   
+      
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/sequential_density_separation_diagram.png" width="700">    
+
+Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Sollins_2009.xlsx)
 
 </p>
 </details>
@@ -237,8 +240,11 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 <b> Particle Size Separation </b>
 </summary><p>
   
- * **_The source study does not have a DOI, what should I do?_** 
- You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+**Wet sieving is used to separate soils into common particle size classes: sand, silt, clay.**   
+      
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/particle_size_separation_diagram.png" width="450">    
+
+ Example template: [Desjardines_1994](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Dejardins_1994.xlsx)
 
 </p>
 </details>
@@ -249,9 +255,12 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 <b> Aggregate fractionation </b>
 </summary><p>
   
- * **_The source study does not have a DOI, what should I do?_** 
- You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+**Wet sieving is used to separate aggregates by size and/or strength. Silt+clay sized fractions may be additionally isolated.**   
+      
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/aggregate_fractionation_diagram.png" width="550">    
 
+ Example template: [Monreal_1997](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Monreal_1997.xlsx)
+ 
 </p>
 </details>
 
