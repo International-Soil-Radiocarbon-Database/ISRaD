@@ -20,7 +20,7 @@ reports<-function(database=NULL, report="entry_stats")
 
     entry_stats<-data.frame()
 
-    for(entry in unique(database$metadatza$entry_name)){
+    for(entry in unique(database$metadata$entry_name)){
       ISRaD_data_entry<-lapply(database, function(x) x %>% filter(.data$entry_name==entry) %>% mutate_all(as.character))
 
       data_stats<-bind_cols(data.frame(entry_name=ISRaD_data_entry$metadata$entry_name, doi=ISRaD_data_entry$metadata$doi), as.data.frame(lapply(ISRaD_data_entry, nrow)))
