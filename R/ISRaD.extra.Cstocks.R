@@ -12,7 +12,7 @@ ISRaD.extra.Cstocks<-function(database){
     ix <- which(!is.na(database$layer$lyr_bd_tot) & is.na(database$layer$lyr_coarse_tot))
     database$layer[ix,"lyr_coarse_tot"] <- 0
     ix <- which(is.na(database$layer$lyr_bd_samp) & !is.na(database$layer$lyr_bd_tot))
-    database$layer[ix,"lyr_bd_samp"] <- database$layer[ix,"lyr_bd_tot"]-(database$layer[ix,"lyr_bd_tot"]*database$layer[ix,"lyr_coarse_tot"])
+    database$layer[ix,"lyr_bd_samp"] <-  database$layer[ix,"lyr_bd_tot"] * (1 - (database$layer[ix,"lyr_coarse_tot"] / 100))
   # define missing c_inorg data as c_inorg=0
     database$layer$lyr_c_inorg <- ifelse(is.na(database$layer$lyr_c_inorg), 0, database$layer$lyr_c_inorg)
   # replace missing c_org w/ c_tot, accounting for c_inorg
@@ -22,9 +22,9 @@ ISRaD.extra.Cstocks<-function(database){
     database$layer[iix,"lyr_c_org"] <- database$layer[iix,"lyr_c_tot"]-database$layer[iix,"lyr_c_inorg"] # replace w/ c_tot-c_inorg
   # fill OC with SOC stocks if BD data present
     ix <- which(is.na(database$layer$lyr_c_org) & !is.na(database$layer$lyr_soc) & !is.na(database$layer$lyr_bd_samp))
-    database$layer[ix,"lyr_c_org"] <- database$layer[ix,"lyr_soc"]/database$layer[ix,"lyr_bd_tot"]/(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"])*100
+    database$layer[ix,"lyr_c_org"] <- database$layer[ix,"lyr_soc"]/database$layer[ix,"lyr_bd_samp"]/(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"])*100
   # fill lyr_soc if BD and lyr_c_org present
-    ix <- which(is.na(database$layer$lyr_soc) & !is.na(database$layer$lyr_bd_tot) & !is.na(database$layer$lyr_c_org))
-    database$layer[ix,"lyr_soc"] <- (database$layer[ix,"lyr_c_org"]/100)*database$layer[ix,"lyr_bd_tot"]*(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"])
+    ix <- which(is.na(database$layer$lyr_soc) & !is.na(database$layer$lyr_bd_samp) & !is.na(database$layer$lyr_c_org))
+    database$layer[ix,"lyr_soc"] <- (database$layer[ix,"lyr_c_org"]/100)*database$layer[ix,"lyr_bd_samp"]*(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"])
   return(database)
 }
