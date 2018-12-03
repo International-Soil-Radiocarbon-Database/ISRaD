@@ -110,7 +110,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   mathieu_doi="10.1111/gcb.13012"
   
   # References from clean dois
-  a=sapply(cleandois[-c(1,67)],FUN=rcrossref::cr_cn, format="text", style="apa", USE.NAMES = FALSE)
+  a=sapply(cleandois,FUN=rcrossref::cr_cn, format="text", style="apa", USE.NAMES = FALSE)
   
   he_ref=rcrossref::cr_cn(he_doi,format="text", style="apa")
   mathieu_ref=rcrossref::cr_cn(mathieu_doi,format="text", style="apa")
