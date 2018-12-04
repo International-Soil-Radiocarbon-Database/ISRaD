@@ -12,15 +12,14 @@ Our goals are:
 * To provide a place for researchers to contribute their soil radiocarbon data once their paper is published
 * To produce tools to make the repository useful 
 
-ISRaD has been developed as a collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry.
+ISRaD has been developed as a collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry, with support from U.S. Department of Agriculture.
 
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg" width="200">|
-<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="200">
-
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="300">
 
 
 ## Publications
-ISRaD builds on data summarized by two publication.  It fixes a number of issues and adds new data.
+ISRaD builds on previously published compilcations of soil radiocarbon measurements but also includes data ingested from individual studies not captured by those prior efforts. The following compilation studies served as our starting point for data ingestion, however, we fixed a number of errors, added missing data, and populated DOI numbers for all original source studies. Please also see the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/credits/">Credits</a> page for a full list of all original data sources included in the current version of ISRaD.
 
 Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles. Global Change Biology, 21(11), 4278–4292. <a href="http://doi.org/10.1111/gcb.13012">http://doi.org/10.1111/gcb.13012</a>
 
@@ -65,7 +64,7 @@ Maintainers are in charge of the integrity of the code. Currently, they are:
 Data from ISRaD will be regularly ingested into the International Soil Carbon Network
 
 <figure class="half">
-	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/iscn_logo.jpeg" width="200">
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/iscn_logo.jpeg" width="100">
 </figure>
 
 
