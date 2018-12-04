@@ -2,6 +2,7 @@
 
 export(ISRaD.build)
 export(ISRaD.extra)
+export(ISRaD.extra.Cstocks)
 export(ISRaD.extra.delta_delta)
 export(ISRaD.extra.fill_14c)
 export(ISRaD.extra.fill_coords)
