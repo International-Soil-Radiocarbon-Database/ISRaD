@@ -22,7 +22,7 @@ By contributing to ISRaD you are joining an international community of researche
 1. [Online QAQC Tool](https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/)
 1. Contact: info.israd@gmail.com
 
-## How to Add Data:
+## How to Add Data to ISRaD:
 
 1. Check existing data
 1. Read key information
@@ -30,16 +30,16 @@ By contributing to ISRaD you are joining an international community of researche
 1. Test your data file using ISRaD online quality control tool 
 1. Submit to ISRaD
 
-## 1. Check existing data
+## 1. Explore existing data sources
 
 Adding new data is great! We also welcome additions, improvements & corrections to existing datasets which are already included in ISRaD. Some in progress datasets could use your help too. Find the status of your dataset before you start:
 * **Up-to-date list**: Check out the [latest list](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/credits.md) of compiled studies in the development version of ISRaD
-* **Complete files**: View and download [individual complete template spreadsheets](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/ISRaD_data_files)
-* **In progress files**: View and download [individual in-progress template spreadsheets](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/ISRaD_data_files_in_progress)
+* **Complete entries**: View and download [individual complete template spreadsheets](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/ISRaD_data_files)
+* **In progress entries**: View and download [individual in-progress template spreadsheets](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/ISRaD_data_files_in_progress)
 * **Wishlist**: [List of studies](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit#gid=1009481555) you'd like to see added
 * Currently working to add or update a template? Add your name to [this list](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit#gid=1750356077) to avoid duplicated efforts
 
-## 2. Getting started and key information:
+## 2. Getting started and key information for entering or working with ISRaD
 
 * **Template** – This is a structured spreadsheet for data entry. Download it [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx)
 * **Hierarchy** – The [ISRaD data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/) is hierarchical. Each level of the hierarchy is represented by a tab in the template spreadsheet
