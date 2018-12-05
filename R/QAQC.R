@@ -358,7 +358,16 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
+
+  lyr_depth_err <- which(data$layer$lyr_bot < data$layer$lyr_top)
+  if(length(lyr_depth_err > 0)){
+    cat(cat("\n\tWARNING: lyr_bot < lyr_top. ( row/s:", lyr_depth_err+3, ")", file=outfile, append = T))
+    error <- error+1
+  }
 }
+
+
+
   # check interstitial tab #
   cat("\n interstitial tab...", file=outfile, append = T)
   if (length(data$interstitial$entry_name)>0){
