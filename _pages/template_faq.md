@@ -184,14 +184,19 @@ A fractionation procedure where wet sieving is used to separate aggregates by si
  * **_What are dummy fractions and when are they needed_**   
  "Dummy fractions" are placeholder rows in the fraction tab. There are two reasons that dummy fractions might be required: (1) To represent a mass of material generated from a fractionation procedure but that is unaccounted for in measurements or the reporting of data. In other words, we want to be able to sum our mass of material back to 100% of the bulk value. Sometimes a fraction of the sample mass is calculated by difference rather than measured directly. In that case, we should create a dummy fraction to account for that mass, which was not physcially isolated. (2) To allow for reconstruction of a complex fractionation procedure that cannot be reconstructed without the use of a dummy layer. Not sure if you need to create a dummy fraction? Check out these examples: 
  
- _(a) All mass accounted for:_ Here, all the fractions in level 2 are unique and add up to level 1 – no dummy fraction needed.
+ **(a) All mass accounted for.** 
+ Here, all the fractions in level 2 are unique and add up to level 1 – no dummy fraction needed.
  
- <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_a.png" width="650">   
- _(b) Well-known schemes:_ Here, all the fractions in level 2 and 3 are unique add up to level 1 – if the “Golchin” density fractionation were not common knowledge, you’d probably want a dummy fraction, but we don’t need one because the 3 fraction density separation is simple and all the end users should have knowledge of it.
+ <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_a.png" width="650"> 
+ 
+ 
+ **(b) Well-known schemes.** 
+ Here, all the fractions in level 2 and 3 are unique and add up to level 1. If the “Golchin” density fractionation were not common knowledge, you’d probably want a dummy fraction, but we don’t need one because the 3 fraction density separation is simple and all the end users should have knowledge of it.
  
  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_b.png" width="500"> 
  
-_(c) Intermediate-fractions:_ Here, the silt and clay fraction from level 3 needs to be distinguished from the silt and clay fraction from level 2 in a way that lets the end user know what each fraction was derived from. No measurements were made on the 53-250 um aggregate fraction (red circle) prior to further fractionation, so we need a dummy fraction to represent what the level 3 fractions came from.
+**(c) Intermediate-fractions.** 
+Here, the silt and clay fraction from level 3 needs to be distinguished from the silt and clay fraction from level 2 in a way that lets the end user know what each fraction was derived from. No measurements were made on the 53-250 um aggregate fraction (red circle) prior to further fractionation, so we need a dummy fraction to represent what the level 3 fractions came from.
 
  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_c.png" width="500">   
 </p></details>
