@@ -12,19 +12,15 @@ Filling out a template can be confusing! This page provides detailed information
 
 <details><summary>  
 <b> Metadata </b>
-</summary>
+</summary><p>
   
-<p>
- * **_The source study does not have a DOI, what should I do?_** 
+* **_The source study does not have a DOI, what should I do?_** 
 If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. If you take this approach please fill in “israd” into the `doi` field in metadata tab. Also note that data from this entry will not be compiled in the R-package data objects until a DOI is added.
-</p>
-</details>
+</p></details>
 
 <details><summary>  
 <b> Soil Order </b>
-</summary>
-
-<p>
+</summary><p>
 
  * **_How do I convert WRB soil classification to USDA, to obtain a USDA soil order?_** 
  FAO, USDA and other soil classification systems are not readily interchangeable, so this can be tricky. These tables can help:
