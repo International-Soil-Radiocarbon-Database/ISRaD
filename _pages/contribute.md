@@ -93,7 +93,11 @@ Email to info.israd@gmail.com:
 1. You will get an email once your submission has been accepted for inclusion in ISRaD. Nice work!
 
 ## Feedback? Questions?
-We welcome your suggestions. Please use our [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) to report problems, post comments or suggest ideas for improvement of the ISRaD template file, ISRaD template information file, or online QAQC tool. No special permissions are required to post, although you do need to create a Github account if you don't have one already.
+We welcome and encourage your questions and/or suggestions. 
+
+If you have questions pertaining to template entry, please start by reviewing our [Frequenty Asked Questions (FAQ)](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/edit/gh-pages/_pages/faq.md) page. 
+
+If you can't find an answer to your question in the FAQ, you have a speicific suggestion for improvement, or there is a problem you would like to report, please post an issue in our [Github issues ](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) page. No special permissions are required to post, although you do need to create a Github account if you don't have one already.
 
 You can also email us at *info.israd@gmail.com* and we will do our best to get back to you.
 
