@@ -15,11 +15,11 @@ reports<-function(database=NULL, report="count_data")
   
   requireNamespace("dplyr")
   requireNamespace("tidyr")
+  requireNamespace("ggplot2")
   requireNamespace("ggmap")
   requireNamespace("mapdata")
-  requireNamespace("ggplot2")
   requireNamespace("sp")
-  
+
   if(report=="entry_stats"){
     
     entry_stats<-data.frame()
@@ -48,8 +48,19 @@ reports<-function(database=NULL, report="count_data")
     return(count_data)
   }
   
+  if(report=="frc_data"){  
+    frc_data <- database$fraction %>% as_tibble() %>% #Start with fraction data
+      left_join(database$layer) %>% #Join to layer data
+      left_join(database$profile) %>% #Join to profile data
+      left_join(database$site) %>% #Join to site data
+      left_join(database$metadata) #Join to metadata
+    frc_scheme_sum<-count(frc_data, frc_scheme)
+    frc_property_sum<-count(frc_data, frc_property)
+    return(list(frc_scheme_sum,frc_property_sum))
+  }
 
 if(report=="site_map"){
+  
   latlon<-database$site[,3:4]
   world<-map_data("world")
   
@@ -63,5 +74,3 @@ if(report=="site_map"){
   return(site_map)
   }
 }
-
-
