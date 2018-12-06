@@ -15,7 +15,7 @@ Filling out a template can be confusing! This page provides detailed information
 </summary><p>
   
 * **_The source study does not have a DOI, what should I do?_** 
-If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. If you take this approach please fill in “israd” into the `doi` field in metadata tab. Also note that data from this entry will not be compiled in the R-package data objects until a DOI is added.
+If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. If you take this approach please fill in “israd” into the **_doi_** field in metadata tab. Also note that data from this entry will not be compiled in the R-package data objects until a DOI is added.
 </p></details>
 
 <details><summary>  
@@ -36,7 +36,7 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 </summary><p>
 
  * **_The paper reports organic matter content instead of organic carbon %, what should I do?_** 
- Convert to organic carbon using OC=OM/1.724 and mention this in the *lyr_note* or other relevant field.
+ Convert to organic carbon using OC=OM/1.724 and mention this in the **_lyr_note_** or other relevant field.
 </p></details>
 
 <details><summary>  
@@ -44,11 +44,11 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 </summary><p>
 
  * **_Is it ok to digitize data/coordinates from a figure/map?_** 
-   Yes, but please note it (see below). While the raw data from the author or supplementary information is preferable, digitized data is also welcome in ISRaD.
+Yes, but please make a note of it (see below). While the raw data from the author or supplementary information is preferable, digitized data is also welcome in ISRaD.
  * **_Should I mention somewhere in the template that the data (e.g., GPS coordinates and others) were obtained from figures?_**
- Yes, use the `metadata_note` field. Say for example “GPS coordinates and variables x,y and z were extracted from figures”.
+ Yes, use the **_metadata_note_** field. Say for example “GPS coordinates and variables x,y and z were extracted from figures”.
  * **_Is there any rule on how many decimal places are reasonable to enter when data are digitized from a plot?_** 
-   No, use your best guess about the appropriate number of decimal places based on expected precision of plot digitization and/or data acquisition.
+No, use your best guess about the appropriate number of decimal places based on expected precision of plot digitization and/or data acquisition.
 </p></details>
 
 <details><summary>  
@@ -56,13 +56,13 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 </summary><p>
 
  * **_Where is zero with regard to the ISRaD depth convention?_** 
- Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the `lyr_all_org_neg` column to flag this. 
+ Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the **_lyr_all_org_neg_** column to flag this. 
  * **_What is the "lyr_all_org_neg" column for?_** 
  This column is used to flag studies where depths are reported from the soil surface, if the depth of the mineral-organic interface is unknown. For example, this is frequently the case in peatlands.
  * **_The study does not report the bottom of the layer for the deepest layer. What should I do?_** 
- Write "Inf" as infinity in the `lyr_bot` field.
+ Write "Inf" as infinity in the **_lyr_bot_** field.
  * **_What do I do if there are some analyses for a composite of multiple layer samples (different depth interval) and some data for each of the layers? E.g. some analyses were made on each of layers 0-5 and 5-10 cm and some other were made on a composite 0-10 cm?_**
-In this case, you should create a new "composite" layer with a depth range of 0 to 10 cm. Additionally, it is critical that you denote this layer as a composite by marking "y" in the `lyr_composite` field.
+In this case, you should create a new "composite" layer with a depth range of 0 to 10 cm. Additionally, it is critical that you denote this layer as a composite by marking "y" in the **_lyr_composite_** field.
 </p></details>
 
 <details><summary>  
@@ -74,15 +74,15 @@ In this case, you should create a new "composite" layer with a depth range of 0 
  * **_This paper only reports radiocarbon ages in years. What do I do?_** 
    If the data is reported as a *calibrated date*, it cannot be included in ISRaD. *Uncalibrated* radiocarbon ages can be converted to fraction modern values (see below).  
  * **_How do I convert radiocarbon age (in years BP) into Fraction modern units?_**
-   radiocarbon age = -8033*ln(F<sub>m</sub>). Some additional information on radiocarbon units and calucations is available [here](http://www.whoi.edu/nosams/radiocarbon-data-calculations)  
+   radiocarbon `age = -8033 * ln (F<sub>m</sub>)`. Some additional information on radiocarbon units and calucations is available [here](http://www.whoi.edu/nosams/radiocarbon-data-calculations)  
 * **_How do I convert standard deviation in radiocarbon age (in years BP) into standard deviation in Fraction modern?_**
-  Use the following formula (Stenström et al., 2011): error_F<sub>m</sub> = F<sub>m</sub> * error<sub>age</sub> / 8033 , 
+  Use the following formula (Stenström et al., 2011): `error_F<sub>m</sub> = F<sub>m</sub> * error<sub>age</sub> / 8033`, 
 where F<sub>m</sub> is fraction modern.   
  * **_Paper reports radiocarbon age and δ<sup>14</sup>C, what should I fill into the template?_**
-   Convert radiocarbon age to Fraction modern using age= -8033*ln(F<sub>m</sub>) and ignore δ<sup>14</sup>C values. Be sure to mark down the year of observation which is important for the conversion of Fm to Δ<sup>14</sup>C.  
+   Convert radiocarbon age to Fraction modern using `age = -8033 * ln (F<sub>m</sub>)` and ignore δ<sup>14</sup>C values. Be sure to mark down the year of observation which is important for the conversion of Fm to Δ<sup>14</sup>C.  
  * **_Paper reports only δ<sup>14</sup>C and δ<sup>13</sup>C, what should I fill into the template?_**
   Calculate Δ<sup>14</sup>C using the following formula: 
-  Δ<sup>14</sup>C = δ<sup>14</sup>C - (2*δ<sup>13</sup>C +50)(1 + δ<sup>14</sup>C / 1000)    
+  `Δ<sup>14</sup>C = δ<sup>14</sup>C - (2*δ<sup>13</sup>C +50)(1 + δ<sup>14</sup>C / 1000)`    
  * **_The radiocarbon age is stated as  “Modern” but no other data is provided. What do I do?_**
   Leave the field blank and add a note that data is available but has to be mined for. Do *not* enter a fraction modern value of 1! This is misleading during data analysis!   
 </p></details>
@@ -92,7 +92,7 @@ where F<sub>m</sub> is fraction modern.
 </summary><p>
 
  * **_The paper contains some auxiliary data (e.g. species composition, mineralogy etc.) that I don´t know how to enter or don't have time to do enter. What should I do?_** 
-   Mention this in the `metadata_note` field so that one day someone can come back to this. If you are interested in learning how to enter it, contact *info.israd@gmail.com*, or post a question on the [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
+   Mention this in the **_metadata_note_** field so that one day someone can come back to this. If you are interested in learning how to enter it, contact *info.israd@gmail.com*, or post a question on the [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
 
 </p></details>
 
@@ -101,9 +101,9 @@ where F<sub>m</sub> is fraction modern.
 </summary><p>
 
  * **_The authors don't report the coordinates. What should I do?_** 
-    You can digitize the coordinates from the figure, or find the site location on Google maps or similar. Please use the `metadata_note` field to indicate this. (e.g. “Cordinates were extracted from figures” or "Coordinates were estimated from site descriptions")
+    You can digitize the coordinates from the figure, or find the site location on Google maps or similar. Please use the **_metadata_note_** field to indicate this. (e.g. “Cordinates were extracted from figures” or "Coordinates were estimated from site descriptions")
  * **_What should I do if the date of observation was not reported in the paper?_** 
-   If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 3 years from the year of publication and note in the `lyr_note` field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
+   If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 3 years from the year of publication and note in the **_lyr_note_** field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
 
 </p>
 </details>
@@ -229,17 +229,20 @@ _(c) Intermediate-fractions:_ Here, the silt and clay fraction from level 3 need
 
 ### Special Cases
 <details><summary>  
-<b> Updating templates from He et al. (2016) compilation </b>
+<b> Updating templates that have been autofilled from past compilations </b>
 </summary><p>
+ 
+ * **_What are autofilled templates and why should I care?_** 
+Some of the entries in ISRaD were automatically generated during a batch ingestion of data from previous data compilations. For example, a large number of entries were ingested from the data synthesized for the He et al., 2016 publication, which itself utilized synthesized data from Mathieu et al. 2015. The ISRaD data ingestion process automattically partitions data contained in these compilations into separate files based on the original source. This allows users to more easily access these descrete datasets in order to add additional data that was excluded during the preceeding synthesis efforts and to double check that data was entered correctly. We encourage uses familiar with the origial source material (e.g.,  you are an author of a study that was included in a past synthesis that ISRaD has ingested) to download these entries and confirm that the original data has been correctly entered. 
   
- * **_Why does this template look different?_** 
+ * **_Why do these templates look different?_** 
    These templates were automatically generated, and do not have the header formatting. You can copy-paste the values to the master template to continue working. This will also give you access to the drop down menus for controlled vocabulary.
- * **_The source paper does not mention bulk density, but an older version template automatically generated from Yujie He’s compilation gives bulk density for few samples measured by radiocarbon. Should I keep them in the template?_**
+ * **_The source paper does not mention bulk density, but an older version template automatically generated from the compilation gives bulk density for few samples measured by radiocarbon. Should I keep them in the template?_**
  No. In some cases bulk density values were generated for studies that originally did not report them. ISRaD aims to report original data only.
  * **_The names in the template don't match the paper. What do I do?_** 
   In many cases, site, profile and layer names were automatically generated. Please feel free to update them to match those found in the paper. 
  * **_The paper has additional fraction, flux, or incubation data, not reported in the current template. What should I do with it?_** 
-   If you have time, please add it! Otherwise, please make a note of the availability of additional datasets within the paper in the *metadata_note* field.
+   If you have time, please add it! Otherwise, please make a note of the availability of additional datasets within the paper in the **_metadata_note_** field.
 </p>
 </details>
 
