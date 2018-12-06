@@ -5,7 +5,7 @@ ISRaD has been built based on two main compilations:
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
  
 ## Studies within ISRaD
-Currently, there are 164 entries in ISRaD, which are from the following publications:
+Currently, there are 162 entries in ISRaD, which are from the following publications:
  
 *  Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The dynamics of organic matter in rock fragments in soil investigated by 14C dating and measurements of 13C. European Journal of Soil Science, 53(1), 147–159. doi:10.1046/j.1365-2389.2002.00432.x
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
@@ -123,7 +123,6 @@ Currently, there are 164 entries in ISRaD, which are from the following publicat
 *  Pérez, T., Garcia-Montiel, D., Trumbore, S., Tyler, S., Camargo, P. de, Moreira, M., … Cerri, C. (2006). NITROUS OXIDE NITRIFICATION AND DENITRIFICATION15N ENRICHMENT FACTORS FROM AMAZON FOREST SOILS. Ecological Applications, 16(6), 2153–2167. doi:10.1890/1051-0761(2006)016[2153:nonadn]2.0.co;2
 *  Pessenda, L. C. R., Valencia, E. P. E., Camargo, P. B., Telles, E. C. C., Martinelli, L. A., Cerri, C. C., … Rozanski, K. (1996). Natural Radiocarbon Measurements in Brazilian Soils Developed on Basic Rocks. Radiocarbon, 38(02), 203–208. doi:10.1017/s0033822200017574
 *  Pessenda, L. C. R., Gouveia, S. E. M., & Aravena, R. (2001). Radiocarbon Dating of Total Soil Organic Matter and Humin Fraction and Its Comparison with 14C Ages of Fossil Charcoal. Radiocarbon, 43(2B), 595–601. doi:10.1017/s0033822200041242
-*  Phillips, C. L., McFarlane, K. J., Risk, D., & Desai, A. R. (2013). Biological and physical influences on soil &lt;sup&gt;14&lt;/sup&gt;CO&lt;sub&gt;2&lt;/sub&gt; seasonal dynamics in a temperate hardwood forest. Biogeosciences, 10(12), 7999–8012. doi:10.5194/bg-10-7999-2013
 *  Posada, J. M., & Schuur, E. A. G. (2011). Relationships among precipitation regime, nutrient availability, and carbon turnover in tropical rain forests. Oecologia, 165(3), 783–795. doi:10.1007/s00442-010-1881-0
 *  Quideau, S. A., Chadwick, O. A., Trumbore, S. E., Johnson-Maynard, J. L., Graham, R. C., & Anderson, M. A. (2001). Vegetation control on soil organic matter dynamics. Organic Geochemistry, 32(2), 247–252. doi:10.1016/s0146-6380(00)00171-6
 *  Resh, S. C., Binkley, D., & Parrotta, J. A. (2002). Greater Soil Carbon Sequestration under Nitrogen-fixing Trees Compared with Eucalyptus Species. Ecosystems, 5(3), 217–231. doi:10.1007/s10021-001-0067-3
@@ -159,7 +158,6 @@ Currently, there are 164 entries in ISRaD, which are from the following publicat
 *  Trumbore, S. E., Chadwick, O. A., & Amundson, R. (1996). Rapid Exchange Between Soil Carbon and Atmospheric Carbon Dioxide Driven by Temperature Change. Science, 272(5260), 393–396. doi:10.1126/science.272.5260.393
 *  Koarashi, J., Hockaday, W. C., Masiello, C. A., & Trumbore, S. E. (2012). Dynamics of decadally cycling carbon in subsurface soils. Journal of Geophysical Research: Biogeosciences, 117(G3), n/a–n/a. doi:10.1029/2012jg002034
 *  Marzaioli, F., Lubritto, C., Galdo, I. D., D’Onofrio, A., Cotrufo, M. F., & Terrasi, F. (2010). Comparison of different soil organic matter fractionation methodologies: Evidences from ultrasensitive 14C measurements. Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms, 268(7-8), 1062–1066. doi:10.1016/j.nimb.2009.10.098
-*  Trumbore, S. E., Bubier, J. L., Harden, J. W., & Crill, P. M. (1999). Carbon cycling in boreal wetlands: A comparison of three approaches. Journal of Geophysical Research: Atmospheres, 104(D22), 27673–27682. doi:10.1029/1999jd900433
 *  Van Dam, D., van Breemen, N., & Veldkamp, E. (1997). Biogeochemistry, 39(3), 343–375. doi:10.1023/a:1005880031579
 *  Van der Voort, T. S., Hagedorn, F., McIntyre, C., Zell, C., Walthert, L., Schleppi, P., … Eglinton, T. I. (2016). Variability in &lt;sup&gt;14&lt;/sup&gt;C contents of soil organic matter at the plot and  regional scale across climatic and geologic gradients. Biogeosciences, 13(11), 3427–3439. doi:10.5194/bg-13-3427-2016
 *  Van Mourik, J. M., Nierop, K. G. J., & Vandenberghe, D. A. G. (2010). Radiocarbon and optically stimulated luminescence dating based chronology of a polycyclic driftsand sequence at Weerterbergen (SE Netherlands). CATENA, 80(3), 170–181. doi:10.1016/j.catena.2009.11.004
