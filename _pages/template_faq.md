@@ -41,8 +41,7 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 
 <details><summary>  
 <b> Data or Coordinates from Figures </b>
-</summary>
-<p>
+</summary><p>
 
  * **_Is it ok to digitize data/coordinates from a figure/map?_** 
    Yes, but please note it (see below). While the raw data from the author or supplementary information is preferable, digitized data is also welcome in ISRaD.
@@ -50,9 +49,7 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
  Yes, use the `metadata_note` field. Say for example “GPS coordinates and variables x,y and z were extracted from figures”.
  * **_Is there any rule on how many decimal places are reasonable to enter when data are digitized from a plot?_** 
    No, use your best guess about the appropriate number of decimal places based on expected precision of plot digitization and/or data acquisition.
-
-</p>
-</details>
+</p></details>
 
 <details><summary>  
 <b> Depth Conventions </b>
@@ -66,17 +63,14 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
  Write "Inf" as infinity in the `lyr_bot` field.
  * **_What do I do if there are some analyses for a composite of multiple layer samples (different depth interval) and some data for each of the layers? E.g. some analyses were made on each of layers 0-5 and 5-10 cm and some other were made on a composite 0-10 cm?_**
 In this case, you should create a new "composite" layer with a depth range of 0 to 10 cm. Additionally, it is critical that you denote this layer as a composite by marking "y" in the `lyr_composite` field.
-
-</p>
-</details>
+</p></details>
 
 <details><summary>  
 <b> Radiocarbon Units </b>
-</summary>
-<p>
+</summary><p> 
   
  * **_What radiocarbon units are accepted?_** 
-   ISRaD accepts fraction modern and  Δ<sup>14</sup>C radiocarbon units. Only fill in the data reported in the paper. Unit conversions are included in "ISRaD_extra"  
+   ISRaD accepts fraction modern and  Δ<sup>14</sup>C radiocarbon units. Only fill in the data reported in the paper. Unit conversions perfomed separately and included in *ISRaD_extra* data object, which is part of the ISRaD [R-package].   
  * **_This paper only reports radiocarbon ages in years. What do I do?_** 
    If the data is reported as a *calibrated date*, it cannot be included in ISRaD. *Uncalibrated* radiocarbon ages can be converted to fraction modern values (see below).  
  * **_How do I convert radiocarbon age (in years BP) into Fraction modern units?_**
@@ -91,42 +85,28 @@ where F<sub>m</sub> is fraction modern.
   Δ<sup>14</sup>C = δ<sup>14</sup>C - (2*δ<sup>13</sup>C +50)(1 + δ<sup>14</sup>C / 1000)    
  * **_The radiocarbon age is stated as  “Modern” but no other data is provided. What do I do?_**
   Leave the field blank and add a note that data is available but has to be mined for. Do *not* enter a fraction modern value of 1! This is misleading during data analysis!   
-  
-  </p>
-</details>
-
+</p></details>
 
 <details><summary>  
 <b> Additional Data </b>
-</summary>
-
-<p>
+</summary><p>
 
  * **_The paper contains some auxiliary data (e.g. species composition, mineralogy etc.) that I don´t know how to enter or don't have time to do enter. What should I do?_** 
-   Mention this in *metadata_note* field so that one day someone can come back to this. If you are interested in learning how to enter it, contact *info.israd@gmail.com*, or post a question on the [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
+   Mention this in the `metadata_note` field so that one day someone can come back to this. If you are interested in learning how to enter it, contact *info.israd@gmail.com*, or post a question on the [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
 
-</p>
-</details>
-
+</p></details>
 
 <details><summary>  
 <b> Missing Data </b>
-</summary>
-
-<p>
+</summary><p>
 
  * **_The authors don't report the coordinates. What should I do?_** 
-    You can digitize the coordinates from the figure, or find the site location on Google maps or similar. Please use the *metadata_note* field to indicate this. (e.g. “Cordinates were extracted from figures” or "Coordinates were estimated from site descriptions")
+    You can digitize the coordinates from the figure, or find the site location on Google maps or similar. Please use the `metadata_note` field to indicate this. (e.g. “Cordinates were extracted from figures” or "Coordinates were estimated from site descriptions")
  * **_What should I do if the date of observation was not reported in the paper?_** 
-   If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 3 years from the year of publication and note in the *lyr_note* field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
+   If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 3 years from the year of publication and note in the `lyr_note` field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
 
 </p>
 </details>
-
-
-
-
-
 
 
 ### Incubations
@@ -151,80 +131,70 @@ where F<sub>m</sub> is fraction modern.
 <details><summary>  
 <b> Density Separation </b>
 </summary><p>
-
- **A heavy liquid is used to float off organics, thereby separating them from mineral material. This can be done with or without disruption of aggregates by sonicating or shaking.**   
+  
+ * **_What is a density separation?_** 
+ A physical fractionation scheme where heavy liquid is used to float off organics, thereby separating them from mineral material. This can be done with or without disruption of aggregates by sonicating or shaking.   
       
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/density_separation_diagram.png" width="375">    
 
- Example template: [Swanston_2005](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Swanston_2005.xlsx)
+Example template: [Swanston_2005](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Swanston_2005.xlsx)
 </p></details>
-
 
 <details><summary>  
 <b> Sequential Density Separation </b>
 </summary><p>
   
-**A heavy liquid is used to float off the "light-fraction" organics, thereby separating them from mineral material. In some cases, the residual "heavy" material is then sonicated to disrupt aggregates and the resulting additional light fraction, often called "occluded light-fraction" is then collected. Finally, the remaining mineral material is collected or further partitioned into fractions of increasing density using heavy liquids. **   
+ * **_What is a sequential density separation?_**  
+A heavy liquid is used to float off the "light-fraction" organics, thereby separating them from mineral material. The remaining mineral material is then further partitioned into series of fractions isolated by incrementally increasing the density of the heavy liquid used for the separation.  
       
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/sequential_density_separation_diagram.png" width="700">    
 
 Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Sollins_2009.xlsx)
-
-</p>
-</details>
-
+</p></details>
 
 <details><summary>  
 <b> Particle Size Separation </b>
 </summary><p>
   
-**Wet sieving is used to separate soils into common particle size classes: sand, silt, clay.**   
+* **_What is particle size separation?_**   
+A physcial fractionation method where wet- or dry-sieving is used to separate soils into common particle size classes: sand, silt, clay.   
       
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/particle_size_separation_diagram.png" width="450">    
 
  Example template: [Desjardines_1994](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Dejardins_1994.xlsx)
-
-</p>
-</details>
-
+</p></details>
 
 <details><summary>  
 <b> Aggregate fractionation </b>
 </summary><p>
   
-**Wet sieving is used to separate aggregates by size and/or strength. Silt+clay sized fractions may be additionally isolated.**   
+ * **_What is aggregate fractionation?_**   
+A fractionation procedure where wet sieving is used to separate aggregates by size and/or strength. Silt+clay sized fractions may be additionally isolated.   
       
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/aggregate_fractionation_diagram.png" width="550">    
 
  Example template: [Monreal_1997](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Monreal_1997.xlsx)
  
-</p>
-</details>
-
+</p></details>
 
 <details><summary>  
 <b> Dummy Fractions </b>
 </summary><p>
   
- **"Dummy fractions" are placeholder rows in the fraction tab. There are two reasons that dummy fractions might be required: (1) To represent a mass of material generated from a fractionation procedure but that is unaccounted for in measurements or the reporting of data. In other words, we want to be able to sum our mass of material back to 100% of the bulk value. Sometimes a fraction of the sample mass is calculated by difference rather than measured directly. In that case, we should create a dummy fraction to account for that mass, which was not physcially isolated. (2) To allow for reconstruction of a complex fractionation procedure that cannot be reconstructed without the use of a dummy layer. ** Not sure if you need to create a dummy fraction? Check out these examples: 
+ * **_What are dummy fractions and when are they needed_**   
+ "Dummy fractions" are placeholder rows in the fraction tab. There are two reasons that dummy fractions might be required: (1) To represent a mass of material generated from a fractionation procedure but that is unaccounted for in measurements or the reporting of data. In other words, we want to be able to sum our mass of material back to 100% of the bulk value. Sometimes a fraction of the sample mass is calculated by difference rather than measured directly. In that case, we should create a dummy fraction to account for that mass, which was not physcially isolated. (2) To allow for reconstruction of a complex fractionation procedure that cannot be reconstructed without the use of a dummy layer. Not sure if you need to create a dummy fraction? Check out these examples: 
  
- **(a) All mass accounted for:** Here, all the fractions in level 2 are unique and add up to level 1 – no dummy fraction needed.
+ _(a) All mass accounted for:_ Here, all the fractions in level 2 are unique and add up to level 1 – no dummy fraction needed.
  
  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_a.png" width="650">   
-
- **(b) Well-known schemes:** Here, all the fractions in level 2 and 3 are unique add up to level 1 – if the “Golchin” density fractionation were not common knowledge, you’d probably want a dummy fraction, but we don’t need one because the 3 fraction density separation is simple and all the end users should have knowledge of it.
+ _(b) Well-known schemes:_ Here, all the fractions in level 2 and 3 are unique add up to level 1 – if the “Golchin” density fractionation were not common knowledge, you’d probably want a dummy fraction, but we don’t need one because the 3 fraction density separation is simple and all the end users should have knowledge of it.
  
-  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_b.png" width="500"> 
+ <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_b.png" width="500"> 
  
-**(c) Intermediate-fractions:** Here, the silt and clay fraction from level 3 needs to be distinguished from the silt and clay fraction from level 2 in a way that lets the end user know what each fraction was derived from. No measurements were made on the 53-250 um aggregate fraction (red circle) prior to further fractionation, so we need a dummy fraction to represent what the level 3 fractions came from.
+_(c) Intermediate-fractions:_ Here, the silt and clay fraction from level 3 needs to be distinguished from the silt and clay fraction from level 2 in a way that lets the end user know what each fraction was derived from. No measurements were made on the 53-250 um aggregate fraction (red circle) prior to further fractionation, so we need a dummy fraction to represent what the level 3 fractions came from.
 
  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_c.png" width="500">   
-
-
-</p>
-</details>
-
-
+</p></details>
 
   
 ### Fluxes
@@ -260,9 +230,8 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 ### Special Cases
 <details><summary>  
 <b> Updating templates from He et al. (2016) compilation </b>
-</summary>
+</summary><p>
   
-<p>
  * **_Why does this template look different?_** 
    These templates were automatically generated, and do not have the header formatting. You can copy-paste the values to the master template to continue working. This will also give you access to the drop down menus for controlled vocabulary.
  * **_The source paper does not mention bulk density, but an older version template automatically generated from Yujie He’s compilation gives bulk density for few samples measured by radiocarbon. Should I keep them in the template?_**
