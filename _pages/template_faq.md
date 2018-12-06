@@ -63,13 +63,10 @@ where F<sub>m</sub> is fraction modern.
 
  * **_Why does this template look different?_** 
    These templates were automatically generated, and do not have the header formatting. You can copy-paste the values to the master template to continue working. This will also give you access to the drop down menus for controlled vocabulary.
-   
  * **_The source paper does not mention bulk density, but an older version template automatically generated from Yujie He’s compilation gives bulk density for few samples measured by radiocarbon. Should I keep them in the template?_**
  No. In some cases bulk density values were generated for studies that originally did not report them. ISRaD aims to report original data only.
-
  * **_The names in the template don't match the paper. What do I do?_** 
   In many cases, site, profile and layer names were automatically generated. Please feel free to update them to match those found in the paper. 
-  
  * **_The paper has additional fraction, flux, or incubation data, not reported in the current template. What should I do with it?_** 
    If you have time, please add it! Otherwise, please make a note of the availability of additional datasets within the paper in the *metadata_note* field.
 
@@ -102,14 +99,11 @@ If the data are unpublished but you expect them to be published in the future (t
 <p>
 
  * **_Where is zero with regard to the ISRaD depth convention?_** 
- Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the `lyr_all_org_neg` column to flag this.
- 
+ Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the `lyr_all_org_neg` column to flag this. 
  * **_What is the "lyr_all_org_neg" column for?_** 
  This column is used to flag studies where depths are reported from the soil surface, if the depth of the mineral-organic interface is unknown. For example, this is frequently the case in peatlands.
- 
  * **_The study does not report the bottom of the layer for the deepest layer. What should I do?_** 
  Write "Inf" as infinity in the `lyr_bot` field.
- 
  * **_What do I do if there are some analyses for a composite of multiple layer samples (different depth interval) and some data for each of the layers? E.g. some analyses were made on each of layers 0-5 and 5-10 cm and some other were made on a composite 0-10 cm?_**
 In this case, you should create a new "composite" layer with a depth range of 0 to 10 cm. Additionally, it is critical that you denote this layer as a composite by marking "y" in the `lyr_composite` field.
 
@@ -140,7 +134,6 @@ In this case, you should create a new "composite" layer with a depth range of 0 
 
  * **_The authors don't report the coordinates. What should I do?_** 
     You can digitize the coordinates from the figure, or find the site location on Google maps or similar. Please use the *metadata_note* field to indicate this. (e.g. “Cordinates were extracted from figures” or "Coordinates were estimated from site descriptions")
-
  * **_What should I do if the date of observation was not reported in the paper?_** 
    If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 3 years from the year of publication and note in the *lyr_note* field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
 
