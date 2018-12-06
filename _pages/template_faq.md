@@ -199,11 +199,6 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 ### Fractions
 
 <details><summary>  
-<b> General Information </b>
-</summary><p>
-  
- 
-<details><summary>  
 <b> Density Separation </b>
 </summary><p>
 
@@ -217,12 +212,11 @@ Finally, if you feel uncomfortable with this conversion, mention this in the ema
 </details>
 
 
-
 <details><summary>  
 <b> Sequential Density Separation </b>
 </summary><p>
   
-**A heavy liquid is used to float off organics, thereby separating them from mineral material. The mineral material is then further partitioned into fractions of increasing density using heavy liquids.**   
+**A heavy liquid is used to float off the "light-fraction" organics, thereby separating them from mineral material. In some cases, the residual "heavy" material is then sonicated to disrupt aggregates and the resulting additional light fraction, often called "occluded light-fraction" is then collected. Finally, the remaining mineral material is collected or further partitioned into fractions of increasing density using heavy liquids. **   
       
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/sequential_density_separation_diagram.png" width="700">    
 
@@ -230,7 +224,6 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 
 </p>
 </details>
-
 
 
 <details><summary>  
@@ -247,7 +240,6 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 </details>
 
 
-
 <details><summary>  
 <b> Aggregate fractionation </b>
 </summary><p>
@@ -262,14 +254,11 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 </details>
 
 
-
-
 <details><summary>  
 <b> Other Fractionation Schemes </b>
 </summary><p>
   
- * **_The source study does not have a DOI, what should I do?_** 
- You have two options: (1) If the data are unpublished but you expect them to be published in the future (thus obtaining DOI), you can submit the template without DOI and then later submit a correction of the template with DOI. Fill in “israd” into the “doi” field in metadata tab. (2) If data are unpublished and you do not expect them to be published in the future, you can encourage authors to obtain a DOI for their data using Pangea, Zenodo, or Dataverse or ask your institution´s library for help.
+
 
 </p>
 </details>
@@ -280,7 +269,7 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 <b> Dummy Fractions </b>
 </summary><p>
   
- **"Dummy fractions" are placeholder rows in the fraction tab. In some cases, they may be needed to convey the full complexity of the fractionation scheme.** Not sure if you need to create a dummy fraction? Check out these examples: 
+ **"Dummy fractions" are placeholder rows in the fraction tab. There are two reasons that dummy fractions might be required: (1) To represent a mass of material generated from a fractionation procedure but that is unaccounted for in measurements or the reporting of data. In other words, we want to be able to sum our mass of material back to 100% of the bulk value. Sometimes a fraction of the sample mass is calculated by difference rather than measured directly. In that case, we should create a dummy fraction to account for that mass, which was not physcially isolated. (2) To allow for reconstruction of a complex fractionation procedure that cannot be reconstructed without the use of a dummy layer. ** Not sure if you need to create a dummy fraction? Check out these examples: 
  
  **(a) All mass accounted for:** Here, all the fractions in level 2 are unique and add up to level 1 – no dummy fraction needed.
  
