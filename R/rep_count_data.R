@@ -9,7 +9,6 @@ rep_count_data<-function(database=NULL){
   requireNamespace("dplyr")
   requireNamespace("tidyr")
 
-  count_data<-data.frame()
   entry<-mutate_all(database$metadata,as.character) %>% summarise(entries = n_distinct(entry_name))
   site<-mutate_all(database$site,as.character) %>% summarise(sites = n_distinct(site_name))
   profile<-mutate_all(database$profile,as.character) %>% summarise(profiles = n_distinct(pro_name))
@@ -17,6 +16,6 @@ rep_count_data<-function(database=NULL){
   fraction<-mutate_all(database$fraction,as.character) %>% summarise(fractions = n())
   incubation<-mutate_all(database$incubation,as.character) %>% summarise(incubations = n())
   interstitial<-mutate_all(database$interstitial,as.character) %>% summarise(interstitial = n())
-  count_data<-cbind(entry, site, profile, layer, fraction, incubation, interstitial)
-  return(count_data)
+  count_data<-c(entry, site, profile, layer, fraction, incubation, interstitial)
+  return(tbl_df(count_data))
 }
