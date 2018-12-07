@@ -1,0 +1,190 @@
+---
+title: "Exploring Fractions"
+author: "Alison Hoyt"
+date: "October 5, 2018"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Exploring Fractions}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r echo=FALSE, warning = FALSE, message = FALSE}
+# #Load relevant packages
+library(tidyverse)
+#library(devtools)
+#install_github('International-Soil-Radiocarbon-Database/ISRaD', ref = "dev", force = T)
+library(ISRaD)
+library(ggplot2)
+
+```
+
+
+
+## Join Fraction Data to relevant data from other levels of the hierarchy
+```{r echo=TRUE, warning = FALSE, message = FALSE, results="hide"}
+
+#Create flat data to work with:
+frc_data <- ISRaD_data$fraction %>% as_tibble() %>% #Start with fraction data
+  left_join(ISRaD_data$layer) %>% #Join to layer data
+  left_join(ISRaD_data$profile) %>% #Join to profile data
+  left_join(ISRaD_data$site) %>% #Join to site data
+  left_join(ISRaD_data$metadata) #Join to metadata
+
+#Take a look at it:
+head(frc_data)
+
+
+
+
+```
+
+
+
+
+## Fill in missing delta 14C values from fraction modern
+```{r echo=TRUE, warning = FALSE, message = FALSE, results="hide"}
+
+#Example of how to add a new column to your data frame or tibble:
+#note will add the column temporarily, but won't save it unless you assign it to an R object
+frc_data %>% 
+  dplyr::mutate(frc_pmC = frc_fraction_modern*100) 
+
+#First fill in observation year across levels
+#Add a column using mutate
+#Use if_else(is.na, true statement, false statement) to check for missing values
+frc_data <- frc_data %>%
+  dplyr::mutate(frc_obs_date_y =  if_else(is.na(frc_obs_date_y), lyr_obs_date_y, frc_obs_date_y)) 
+  
+  
+#Then calculate delta 14C from fraction modern
+#delta14C=[fraction_modern*exp(lambda*(1950-Yc))-1]*1000
+#Where lambda is 1/(true mean-life) of radiocarbon = 1/8267 = 0.00012097
+#Yc is year of collection.
+lambda <- .00012097
+
+#Fill in lyr_14c using fraction modern
+#First calculate the values
+lyr_14c_from_fraction_modern <- (frc_data$lyr_fraction_modern * exp(lambda*(1950-frc_data$lyr_obs_date_y)) - 1 )*1000
+#Then fill in NA values
+frc_data <- frc_data %>%
+  dplyr::mutate(lyr_14c = if_else(is.na(lyr_14c), lyr_14c_from_fraction_modern, lyr_14c))
+
+#Repeat for layers:
+frc_14c_from_fraction_modern <- (frc_data$frc_fraction_modern * exp(lambda*(1950-frc_data$frc_obs_date_y)) - 1 )*1000
+frc_data <- frc_data %>%
+  dplyr::mutate(frc_14c = if_else(is.na(frc_14c), frc_14c_from_fraction_modern, frc_14c))
+
+
+```
+
+
+
+
+
+## Working with a reduced dataset - filter and summarise
+```{r echo=TRUE, warning = FALSE, message = FALSE}
+
+
+#Select more limited data columns to work with:
+frc_data_small <- frc_data %>%
+  select(ends_with("name"), ends_with("obs_date_y"), ends_with("_14c"), lyr_top, lyr_bot, "frc_input", "frc_property", "frc_scheme", "frc_agent", "pro_land_cover","pro_parent_material", "pro_MAT") %>%
+  unique() #note: unique reduces from 1712 to 1665. what type of entries would we be removing here?
+
+
+#Group and look at summary statistics by land cover 
+frc_data_small %>%
+  group_by(pro_land_cover) %>%
+  summarise(num_data_points = n(),
+            mean_frc_14c = mean(frc_14c, na.rm=TRUE))
+
+
+#Same, but only soil above 20cm
+frc_data_small %>%
+  filter(lyr_bot < 20) %>%
+  group_by(pro_land_cover) %>%
+  summarise(num_data_points = n(),
+            mean_frc_14c = mean(frc_14c, na.rm=TRUE))
+
+#Check out number and mean values for different fractions
+frc_data_small %>%
+  group_by(frc_scheme, frc_property) %>%
+  summarise(num = n(),
+            mean_frc_14c = mean(frc_14c, na.rm=TRUE))
+
+#Check out number and mean values for different fractions, additionally check out differences based on parent material
+frc_data_small %>%
+  group_by(frc_scheme, frc_property, pro_parent_material) %>%
+  summarise(num = n(),
+            mean_frc_14c = mean(frc_14c, na.rm=TRUE))
+
+#Check out number of observations for different fractionation schemes & agents
+frc_data_small %>%
+  group_by(frc_scheme, frc_agent) %>%
+  summarise(num = n(),
+            mean_frc_14c = mean(frc_14c, na.rm=TRUE))
+
+
+
+
+```
+
+## Plotting - Plot density fractions in different ways
+```{r echo=TRUE, warning = FALSE, message = FALSE}
+
+
+
+frc_data_small %>%
+  filter(frc_scheme == "Density") %>%
+  ggplot( aes(x=frc_property, y = frc_14c)) +
+  geom_boxplot()+
+  facet_wrap(~pro_parent_material)
+
+frc_data_small %>%
+  filter(frc_scheme == "Density") %>%
+  ggplot( aes(x=frc_property, y = frc_14c)) +
+  geom_boxplot()+
+  facet_wrap(~pro_land_cover)
+
+frc_data_small %>%
+  filter(frc_scheme == "Density") %>%
+  ggplot( aes(x=pro_parent_material, y = frc_14c)) +
+  geom_boxplot()+
+  facet_wrap(~frc_property)
+
+frc_data_small %>%
+  filter(frc_scheme == "Density") %>%
+  ggplot( aes(x=pro_land_cover, y = frc_14c)) +
+  geom_boxplot()+
+  facet_wrap(~frc_property)
+
+#How much of a role does site level variability play?
+#Let's look only at heavy fraction above 20cm
+frc_data_small %>%
+  filter(frc_property == "heavy" & lyr_bot < 20) %>%
+  ggplot(aes(x= site_name, y = frc_14c, color = pro_land_cover)) +
+  geom_boxplot()
+
+#Heavy fraction above 20cm vs temperature
+frc_data_small %>%
+  filter(frc_property == "heavy" & lyr_bot < 20) %>%
+  ggplot(aes(x= pro_MAT, y = frc_14c, color = pro_land_cover)) +
+  geom_point()
+
+
+```
+
+### Spread data into multiple columns - Compare fractions from same layer
+```{r echo=TRUE, warning = FALSE, message = FALSE}
+
+#Create new columns for each of the fractions
+frc_data_small %>%
+  spread(frc_property, frc_14c, fill = NA) %>% #new columns created on values in frc_property, filled with frc_14c values
+  ggplot(aes(x= heavy, y = lyr_14c, color = pro_parent_material)) +
+  geom_point()
+
+```
+
+
+

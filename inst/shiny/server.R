@@ -25,6 +25,12 @@ shinyServer(function(input, output, session) {
       updateSelectInput(session, "row_facet_var", selected = "NULL")
     }
   })
+  
+  soilcarbon_database<-ISRaD_data
+  soilcarbon_database <- lapply(soilcarbon_database, function(x) x %>% mutate_all(as.character))
+  soilcarbon_database<-soilcarbon_database %>%
+    Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
+  soilcarbon_database[]<-lapply(soilcarbon_database, type.convert)
 
   output$plot <- renderPlot({
 
@@ -38,24 +44,24 @@ shinyServer(function(input, output, session) {
     )
     variables[which(variables=="NULL")]<-NULL
 
-    # variables<-list(y_var="layer_bot",
-    #                 x_var="bd_tot",
-    #                 size_var="NULL",
-    #                 col_var="p_MAT",
-    #                 col_facet_var="p_MAP",
-    #                 row_facet_var="p_MAT")
-    #unlist(variables) %in% colnames(soilcarbon_database)
-    soilcarbon_database<-ISRaD_data
-    soilcarbon_database <- lapply(soilcarbon_database, function(x) x %>% mutate_all(as.character))
-    soilcarbon_database<-soilcarbon_database %>%
-      Reduce(function(dtf1,dtf2) full_join(dtf1,dtf2), .)
-    soilcarbon_database[]<-lapply(soilcarbon_database, type.convert)
+    # uncomment below for troubleshooting
+    # variables<-list(y_var="lyr_top",
+    #              x_var="lyr_bot",
+    #              size_var="NULL",
+    #                  col_var="NULL",
+    #                 col_facet_var="NULL",
+    #                row_facet_var="NULL")
+    # variables[which(variables=="NULL")]<-NULL
 
-    plot_data<-na.omit(soilcarbon_database[,unlist(variables)])
+
+    plot_data<-na.omit(data.frame(soilcarbon_database[,unlist(variables)]))
+    colnames(plot_data)<-unique(variables)
     plot_data$facet_cut<-""
     plot_data$facet_cut2<-""
     col_facet_thresh<-NA
     row_facet_thresh<-NA
+
+    
 
     if ((input$col_facet_thresh != "" & !is.null(variables$col_facet_var))){
       col_facet_thresh<-as.numeric(input$col_facet_thresh)
@@ -72,10 +78,9 @@ shinyServer(function(input, output, session) {
     }
 
     if(is.null(variables$y_var)){
-      p<-ggplot(plot_data, aes_string(x=variables$x_var,  col=variables$col_var))+
+      p<-ggplot(plot_data, aes_string(x=variables$x_var))+
         geom_histogram(bins = 30)+
         facet_grid(facet_cut2~facet_cut)+
-        scale_colour_gradient(low="dodgerblue", high="orange")+
         theme_light(base_size = 16)+
         theme(strip.background = element_blank())+
         theme(strip.text = element_text(colour = 'black'))

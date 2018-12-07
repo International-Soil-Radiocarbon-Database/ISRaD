@@ -4,12 +4,12 @@
 \alias{reports}
 \title{reports}
 \usage{
-reports(database = ISRaD_data, report)
+reports(database = NULL, report = "count_data")
 }
 \arguments{
-\item{database}{ISRaD data object. Default is ISRaD_data which comes with the package.}
+\item{database}{ISRaD data object}
 
-\item{report}{Parameter to define which type of report you want. Options are, "entry_stats"...}
+\item{report}{Parameter to define which type of report you want. The default is "count_data" other options include "entry_stats" and "site_map".}
 }
 \description{
 generate reports of ISRaD data
