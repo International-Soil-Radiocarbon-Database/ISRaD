@@ -16,6 +16,6 @@ rep_count_data<-function(database=NULL){
   fraction<-mutate_all(database$fraction,as.character) %>% summarise(fractions = n())
   incubation<-mutate_all(database$incubation,as.character) %>% summarise(incubations = n())
   interstitial<-mutate_all(database$interstitial,as.character) %>% summarise(interstitial = n())
-  count_data<-c(entry, site, profile, layer, fraction, incubation, interstitials)
+  count_data<-c(entry, site, profile, layer, fraction, incubation, interstitial)
   return(tbl_df(count_data))
 }
