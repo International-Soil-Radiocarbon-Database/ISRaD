@@ -5,7 +5,7 @@ ISRaD has been built based on two main compilations:
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
  
 ## Studies within ISRaD
-Currently, there are 171 entries in ISRaD, which are from the following publications:
+Currently, there are 174 entries in ISRaD, which are from the following publications:
  
 *  Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The dynamics of organic matter in rock fragments in soil investigated by 14C dating and measurements of 13C. European Journal of Soil Science, 53(1), 147–159. doi:10.1046/j.1365-2389.2002.00432.x
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
@@ -20,6 +20,7 @@ Currently, there are 171 entries in ISRaD, which are from the following publicat
 *  Berhe, A. A., Harden, J. W., Torn, M. S., Kleber, M., Burton, S. D., & Harte, J. (2012). Persistence of soil organic matter in eroding versus depositional landform positions. Journal of Geophysical Research: Biogeosciences, 117(G2), n/a–n/a. doi:10.1029/2011jg001790
 *  Biedenbender, S. H., McClaran, M. P., Quade, J., & Weltz, M. A. (2004). Landscape patterns of vegetation change indicated by soil carbon isotope composition. Geoderma, 119(1-2), 69–83. doi:10.1016/s0016-7061(03)00234-9
 *  Binkley, D., & Resh, S. C. (1999). Rapid Changes in Soils Following Eucalyptus Afforestation in Hawaii. Soil Science Society of America Journal, 63(1), 222. doi:10.2136/sssaj1999.03615995006300010032x
+*  Bird, M., Santruckova, H., Lloyd, J., & Lawson, E. (2002). The isotopic composition of soil organic carbon on a north-south transect in western Canada. European Journal of Soil Science, 53(3), 393–403. doi:10.1046/j.1365-2389.2002.00444.x
 *  BOL, R., HUANG, Y., MERIDITH, J. A., EGLINTON, G., HARKNESS, D. D., & INESON, P. (1996). The 14C age and residence time of organic matter and its lipid constituents in a stagnohumic gley soil. European Journal of Soil Science, 47(2), 215–222. doi:10.1111/j.1365-2389.1996.tb01392.x
 *  Bol, R., Bolger, T., Cully, R., & Little, D. (2003). Recalcitrant soil organic materials mineralize more efficiently at higher temperatures. Journal of Plant Nutrition and Soil Science, 166(3), 300–307. doi:10.1002/jpln.200390047
 *  Butman, D., Raymond, P., Oh, N.-H., & Mull, K. (2007). Quantity, 14C age and lability of desorbed soil organic carbon in fresh water and seawater. Organic Geochemistry, 38(9), 1547–1557. doi:10.1016/j.orggeochem.2007.05.011
@@ -96,6 +97,7 @@ Currently, there are 171 entries in ISRaD, which are from the following publicat
 *  Lavoie, M., Mack, M. C., & Schuur, E. A. G. (2011). Effects of elevated nitrogen and temperature on carbon and nitrogen dynamics in Alaskan arctic and boreal soils. Journal of Geophysical Research, 116(G3). doi:10.1029/2010jg001629
 *  Lawrence, C. R., Harden, J. W., Xu, X., Schulz, M. S., & Trumbore, S. E. (2015). Long-term controls on soil organic carbon with depth and time: A case study from the Cowlitz River Chronosequence, WA USA. Geoderma, 247-248, 73–87. doi:10.1016/j.geoderma.2015.02.005
 *  Leavitt, S. W., Follett, R. F., Kimble, J. M., & Pruessner, E. G. (2007). Radiocarbon and d13C depth profiles of soil organic carbon in the U.S. Great Plains: A possible spatial record of paleoenvironment and paleovegetation. Quaternary International, 162-163, 21–34. doi:10.1016/j.quaint.2006.10.033
+*  LEIFELD, J., ZIMMERMANN, M., FUHRER, J., & CONEN, F. (2009). Storage and turnover of carbon in grassland soils along an elevation gradient in the Swiss Alps. Global Change Biology, 15(3), 668–679. doi:10.1111/j.1365-2486.2008.01782.x
 *  Leith, F. I., Garnett, M. H., Dinsmore, K. J., Billett, M. F., & Heal, K. V. (2014). Source and age of dissolved and gaseous carbon in a peatland–riparian–stream continuum: a dual isotope (14C and d13C) analysis. Biogeochemistry, 119(1-3), 415–433. doi:10.1007/s10533-014-9977-y
 *  Li, Y., & Mathews, B. W. (2010). Effect of conversion of sugarcane plantation to forest and pasture on soil carbon in Hawaii. Plant and Soil, 335(1-2), 245–253. doi:10.1007/s11104-010-0412-4
 *  Liu, W., Moriizumi, J., Yamazawa, H., & Iida, T. (2006). Depth profiles of radiocarbon and carbon isotopic compositions of organic matter and CO2 in a forest soil. Journal of Environmental Radioactivity, 90(3), 210–223. doi:10.1016/j.jenvrad.2006.07.003
@@ -127,6 +129,7 @@ Currently, there are 171 entries in ISRaD, which are from the following publicat
 *  Pessenda, L. C. R., Gouveia, S. E. M., & Aravena, R. (2001). Radiocarbon Dating of Total Soil Organic Matter and Humin Fraction and Its Comparison with 14C Ages of Fossil Charcoal. Radiocarbon, 43(2B), 595–601. doi:10.1017/s0033822200041242
 *  Posada, J. M., & Schuur, E. A. G. (2011). Relationships among precipitation regime, nutrient availability, and carbon turnover in tropical rain forests. Oecologia, 165(3), 783–795. doi:10.1007/s00442-010-1881-0
 *  Quideau, S. A., Chadwick, O. A., Trumbore, S. E., Johnson-Maynard, J. L., Graham, R. C., & Anderson, M. A. (2001). Vegetation control on soil organic matter dynamics. Organic Geochemistry, 32(2), 247–252. doi:10.1016/s0146-6380(00)00171-6
+*  Rabbi, S. M. F., Hua, Q., Daniel, H., Lockwood, P. V., Wilson, B. R., & Young, I. M. (2013). Mean Residence Time of Soil Organic Carbon in Aggregates Under Contrasting Land Uses Based on Radiocarbon Measurements. Radiocarbon, 55(01), 127–139. doi:10.2458/azu_js_rc.v55i1.16179
 *  Rasmussen, C., Torn, M. S., & Southard, R. J. (2005). Mineral Assemblage and Aggregates Control Carbon Dynamics in a California Conifer Forest. Soil Science Society of America Journal, 69(6), 1711. doi:10.2136/sssaj2005.0040
 *  Rasmussen, C., & White, D. A. (2010). Vegetation Effects on Soil Organic Carbon Quality in an Arid Hyperthermic Ecosystem. Soil Science, 175(9), 438–446. doi:10.1097/ss.0b013e3181f38400
 *  Rasmussen, C., Throckmorton, H., Liles, G., Heckman, K., Meding, S., & Horwath, W. (2018). Controls on Soil Organic Carbon Partitioning and Stabilization in the California Sierra Nevada. Soil Systems, 2(3), 41. doi:10.3390/soilsystems2030041
