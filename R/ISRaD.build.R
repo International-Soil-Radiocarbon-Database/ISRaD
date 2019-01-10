@@ -127,6 +127,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_directory){
   cat(c(h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
         h2, p2, " ", paste("* ",a)), sep="\n", file="ISRaD_data_files/database/credits.md")
 
+  
   #}
   
 # document and check ------------------------------------------------------

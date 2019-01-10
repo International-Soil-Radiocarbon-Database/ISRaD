@@ -13,14 +13,14 @@ ISRaD.extra.delta_delta(database)
 returns ISRaD_data object with new delta delta columns in relevant tables
 }
 \description{
-: Calculates the difference between sample delta 14C and the atmosphere for the year of collection
+Calculates the difference between sample delta 14C and the atmosphere for the year of collection
 }
 \details{
-: Creates new column for delta delta value. Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords fxs). Calls SoilR for atmospheric data (Hua et al. 2013). Atmospheric data are corrected for the northern hemisphere zone 2 or southern hemisphere zones 1+2, depending on profile coordinates.
+Creates new column for delta delta value. Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords fxs). Calls SoilR for atmospheric d14C data (Hua et al. 2013). Atmospheric data are corrected for the northern hemisphere zone 2 or southern hemisphere zones 1+2, depending on profile coordinates.
 }
 \references{
-: Hua et al., 2013; Sierra et al., 2014
+Hua et al., 2013; Sierra et al., 2014
 }
 \author{
-: J. Beem-Miller and C. Hicks-Pries
+J. Beem-Miller and C. Hicks-Pries
 }
