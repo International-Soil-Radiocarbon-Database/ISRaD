@@ -27,7 +27,7 @@ The main features include:
 	* Amount and isotoptic signature of CO<sub>2</sub> produced during **Incubations** 
 
 ### Detailed database structure:
-Overview of variables included in the database can be found [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/gh-pages/_pages/database_structure.md).
+Overview of variables included in the database can be found [here](https://international-soil-radiocarbon-database.github.io/ISRaD/database_structure/).
 
 ## Current ISRaD Data
 ### List of datasets in ISRaD (development version):
