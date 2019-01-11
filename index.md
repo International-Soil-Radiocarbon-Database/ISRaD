@@ -36,7 +36,7 @@ Our goals are:
 ISRaD has been developed as a collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry.
 <p align="center">
   <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg" width="400">|
-  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="400">
+  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="700">
  </p>
 <p align="center">
   <a class="twitter-timeline" data-height="400" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by  soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
