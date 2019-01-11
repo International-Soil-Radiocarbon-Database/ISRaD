@@ -58,6 +58,7 @@ Given the history of this project, main contributors have been:
 * Christine Hatte
 * Alison Hoyt
 * Jeffrey Beem-Miller
+* Grey Monroe
 
 ### Maintainers
 Maintainers are in charge of the integrity of the code. Currently, they are:
