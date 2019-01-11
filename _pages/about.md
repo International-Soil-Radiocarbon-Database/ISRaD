@@ -17,8 +17,10 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
 <p align="center">
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg" width="200">|
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="400">
-	<a class="twitter-timeline" data-width="500" data-height="200" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
+
+<a class="twitter-timeline" data-width="500" data-height="200" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ## Publications
 ISRaD builds on previously published compilcations of soil radiocarbon measurements but also includes data ingested from individual studies not captured by those prior efforts. The following compilation studies served as our starting point for data ingestion: 
