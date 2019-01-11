@@ -44,7 +44,7 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
 
 ## Contact 
 
-Please direct and comments, concerns and suggestions to info.israd@gmail.com.
+Please direct comments, concerns and suggestions to info.israd@gmail.com.
 
 
 
