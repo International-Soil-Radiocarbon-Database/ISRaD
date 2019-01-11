@@ -5,6 +5,7 @@
 #' @import dplyr
 #' @import tidyr
 #' @import ggplot2
+#' @import ggmap
 #'
 rep_site_map<-function(database=NULL){
   # 

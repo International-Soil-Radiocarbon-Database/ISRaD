@@ -9,10 +9,10 @@
 #' Back fills pro_usda_soil_order based on USDA classifications
 
 ISRaD.extra.fill_soilorders<-function(database){
-  
-  requireNamespace("plyr")
-  
-  database$profile$pro_usda_soil_order <- plyr::revalue(database$profile$pro_soil_taxon, c("Abruptic Luvisol" = "Andisols",
+
+  requireNamespace("dplyr")
+
+  database$profile$pro_usda_soil_order <- dplyr::recode(database$profile$pro_soil_taxon, "Abruptic Luvisol" = "Andisols",
                                                                                            "acidic Albic Luvisol" = "Alfisols",
                                                                                            "Acrisol (Humic)" = "Ultisols",
                                                                                            "Acrudoxic Fulvudands" = "Andisols",
@@ -22,7 +22,7 @@ ISRaD.extra.fill_soilorders<-function(database){
                                                                                            "And" = "Andisols",
                                                                                            "Andic Dystrudept" = "Inceptisols",
                                                                                            "Andic Humitropept" = "Inceptisols",
-                                                                                           "Andisol" = "Andisols", 
+                                                                                           "Andisol" = "Andisols",
                                                                                            "Andisol (Hapludand) "= "Andisols",
                                                                                            "Andosol" = "Andisols",
                                                                                            "Aquic Hapludand" = "Andisols",
@@ -152,7 +152,7 @@ ISRaD.extra.fill_soilorders<-function(database){
                                                                                            "Vertisol; Argillic Pelludert" = "Vertisols",
                                                                                            "very-fine, mixed, active, frigid Aquic Glossudalfs" = "Alfisols",
                                                                                            "Xerumberpt" = "Inceptisols",
-                                                                                           "Xerumbrepts" = "Inceptisols"), warn_missing = F)
-  
+                                                                                           "Xerumbrepts" = "Inceptisols", .default = NA_character_)
+
   return(database)
 }
