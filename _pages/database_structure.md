@@ -6,7 +6,10 @@ header:
   overlay_image: /assets/images/soil.jpg
 ---
      
-This is the overview of variables included in the database, sorted by the hierarchy level:
+Below is the overview of variables included in the database, sorted by the hierarchy level (updated on 10 January 2019).
+<br>
+<br>
+For up to date overview that includes changes to database structure made since 10 January 2019 see the [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx).
 
 <details><summary>  
 <b> Metadata </b>
