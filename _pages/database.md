@@ -25,7 +25,10 @@ The main features include:
 * **Layer** is where bulk information about each sampled depth in the soil profile is summarized. Other properties that can be found within each layer include:
 	* **Fractions** of organic matter extracted by a range of methods
 	* Amount and isotoptic signature of CO<sub>2</sub> produced during **Incubations** 
-	
+
+### Detailed database structure:
+Overview of variables included in the database can be found [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/database_structure.md).
+
 ## Current ISRaD Data
 ### List of datasets in ISRaD (development version):
 * Complete list [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/credits.md)
