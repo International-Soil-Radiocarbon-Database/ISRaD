@@ -61,6 +61,19 @@ Maintainers are in charge of the integrity of the code. Currently, they are:
 * Grey Monroe
 * Carlos Sierra
 
+### Expert Reviewers
+Expert reviewers review all data submitted to ISRaD. Currently, they are:
+
+* Sophie von Fromm
+* Jeff Beem-Miller
+* Kate Heckman
+* Olga Vinduskova
+* Gavin McNicol
+* Karis MacFarlane
+* Alison Hoyt
+* Shane Stoner
+* Corey Lawrence
+
 ## Community
 
 Data from ISRaD will be regularly ingested into the International Soil Carbon Network
