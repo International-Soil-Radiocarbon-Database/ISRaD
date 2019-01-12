@@ -104,6 +104,14 @@ where F<sub>m</sub> is fraction modern.
     You can digitize the coordinates from the figure, or find the site location on Google maps or similar. Please use the **_metadata_note_** field to indicate this. (e.g. “Cordinates were extracted from figures” or "Coordinates were estimated from site descriptions")
  * **_What should I do if the date of observation was not reported in the paper?_** 
    If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 3 years from the year of publication and note in the **_lyr_note_** field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
+ 
+ * **_Do I have to fill in all the columns in the template?_**
+   No, only some columns are required. The required columns are indicated in the [Template Information File] (https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx) (by “yes” in the “Required” column) and also using red font in the template. Although we encourage you to fill out as many fields as possible, it is perfectly ok if many columns are left empty and some columns are only partly filled in. Please leave the fields with missing data empty (i.e., do not fill in zeros or NAs).
+
+* **_Can I delete or hide columns in the template (e.g., because I do not plan to fill them in and they are distracting me) or change order of columns in the template?_**
+  Yes, deleting non-required columns (i.e., those not indicated in red) or changing order of any of the columns is fine and will not cause the template to fail QAQC. 
+
+ 
 
 </p>
 </details>
@@ -251,3 +259,4 @@ Some of the entries in ISRaD were automatically generated during a batch ingesti
 </p>
 </details>
 
+<p> If you have a question that is not answered here, please feel free to reach out to us! The best way is to post your question or comment on the [GitHub issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues). For this you need to [create an account on GitHub](https://github.com/join?source=experiment-header-dropdowns-home) if you don't have one but it is easy (and free). You can also send us an e-mail to israd@gmail.com or contact us on [Twitter](https://twitter.com/soilradiocarbon). </p>
