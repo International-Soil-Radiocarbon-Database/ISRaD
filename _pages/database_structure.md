@@ -6,21 +6,17 @@ header:
   overlay_image: /assets/images/soil.jpg
 ---
      
-Below is the overview of variables included in the database, sorted by the hierarchy level (updated on 10 January 2019).
-<br>
-<br>
-For up to date overview that includes changes to database structure made since 10 January 2019 see the [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx).
 
+For up to date overview of variables included in the database see the [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx).
+
+<!---
 <details><summary>  
 <b> Metadata </b>
 </summary><p>
-
-
-
-| Column_Name               | Required | Variable_Name                              | Units/Info                                                   | Description                                                  | Controlled_Vocab/Values  |      |      |
-| ------------------------- | -------- | ------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------ | ---- | ---- |
-| entry_name                | Yes      | Dataset (entry) Name                       | author_year                                                  | Standardized dataset name: "first author_ publication year." Synthesis studies  should report multiple entries for each dataset in the synthesis. | must match across levels |      |      |
-| doi                       | Yes      | Digital Object Identifier (DOI)            | do not use "http://doi.org" prefix                           | Digital Object Identifier. Please look this number up at journal webpage even if it is not reported in PDF. Alphanumeric string only. Do not include "http://doi.org" |                          |      |      |
+| Column_Name  | Required | Variable_Name   | Units/Info  | Description | Controlled_Vocab/Values  | 
+| -----------  | -------- | --------------- | ----------- | ----------- | ------------------------ | 
+| entry_name  | Yes      | Dataset (entry) Name  | author_year | Standardized dataset name: "first author_ publication year." Synthesis studies  should report multiple entries for each dataset in the synthesis. | must match across levels |
+| doi  | Yes      | Digital Object Identifier (DOI)            | do not use "http://doi.org" prefix                           | Digital Object Identifier. Please look this number up at journal webpage even if it is not reported in PDF. Alphanumeric string only. Do not include "http://doi.org" |                          |      |      |
 | compilation_doi           | No       | DOI of Published Compiliation              | do not use "http://doi.org" prefix                           | Digital Object Identifier. Please look this number up at journal webpage even if it is not reported in PDF. Alphanumeric string only. Do not include "http://doi.org" |                          |      |      |
 | curator_name              | Yes      | Curator Name                               | Your name (person entering data)                             | Name of person completing template or, in the case of synthesis efforts, the author of the synthesis. |                          |      |      |
 | curator_organization      | Yes      | Curator Organization                       | Your organization                                            | Professional affiliation                                     |                          |      |      |
@@ -36,16 +32,10 @@ For up to date overview that includes changes to database structure made since 1
 | associated_datasets       | No       | Datasets associated with the primary entry | author_year; … ; author_year                                 | List any associated datasets that may report the same data contained in the primary entry |                          |      |      |
 | template_version          | No       | Template version date                      | yyyymmddhh                                                   | DO NOT EDIT (year, month, day, hour of template version (UTC); column hidden) |                          |      |      |
 | israd_version             | No       | ISRaD version date                         | yyyymmddhh                                                   | DO NOT EDIT (year, month, day, hour of template version (UTC); column hidden; automatically filled in by israd.build function) |                          |      |      |
-
 </p></details>
-
 <details><summary>  
 <b> Site </b>
 </summary><p>
-
-
-
-
 | Column_Name    | Required | Variable_Name            | Units/Info       | Description                                                  | Variable_class | Min  | Max  | Vocab                                              |
 | -------------- | -------- | ------------------------ | ---------------- | ------------------------------------------------------------ | -------------- | ---- | ---- | -------------------------------------------------- |
 | entry_name     | Yes      | Dataset (entry) Name     | author_year      | Standardized dataset name: "first author_ publication   year." Synthesis studies  should   report multiple entries for each dataset in the synthesis. Values must match   across levels. | character      |      |      | must match across levels                           |
@@ -55,16 +45,10 @@ For up to date overview that includes changes to database structure made since 1
 | site_datum     | No       | Latitude/Longitude Datum | (lat/long datum) | Latitude/Longitude datum against which Latitude and Longitude   are reported. Default = WGS84 | character      |      |      | AGD84, ED50, ETRS89, GRS80,   NAD83, OSGB36, WGS84 |
 | site_elevation | No       | Elevation                | m                | The elevation at the site as determined by topo map, GPS,   altimeter, etc. Contributed value is assumed accurate within several meters   regardless of method used. | numeric        | -413 | 8900 |                                                    |
 | site_note      | No       | Site Notes               | notes            | Various notes on and descriptions of the site other than C   flux, climate, photo or vegetation. May include local names for physiographic   features, which may or may not appear on USGS Topographic Quadrangles. | character      |      |      |                                                    |
-
-
 </p></details>
-
-
 <details><summary>  
 <b> Profile </b>
 </summary><p>
-
-
 | Column_Name               | Required | Variable_Name                                                | Units/info           | Description                                                  | Variable_class | Min  | Max   | Vocab                                                        |
 | ------------------------- | -------- | ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ | -------------- | ---- | ----- | ------------------------------------------------------------ |
 | entry_name                | Yes      | Dataset (entry) Name                                         | author_year          | Standardized dataset name: "first author_ publication   year." Synthesis studies  should   report multiple entries for each dataset in the synthesis. | character      |      |       | must match across levels                                     |
@@ -106,14 +90,10 @@ For up to date overview that includes changes to database structure made since 1
 | pro_soc_sigma             | No       | Reported Profile Soil Organic   Carbon Stock Standard Deviation | g cm-2               | The standard deviation of the site, cluster, profile, or   layer-level calculated soil organic carbon stock. (For layer soil organic   carbon stocks, this may be based on analytical or sampling replicates of %C   or bulk density measurements). | numeric        | 0    | inf   |                                                              |
 | pro_soc_depth             | No       | Reported Profile Soil Organic   Carbon Stock Depth           | cm                   | The depth to which profiles were sampled to quantify the mean   site, cluster, or profile calculated soil organic carbon stocks. | numeric        | 0    | inf   |                                                              |
 |                           |          |                                                              |                      |                                                              |                |      |       |                                                              |
-
 </p></details>
-
-
 <details><summary>  
 <b> Flux </b>
 </summary><p>
-
 | Column_Name               | Required | Variable_Name                     | Units/info     | Description                                                                                                                                                                                                                             | Variable_class | Min   | Max  | Vocab                                                                                 | 
 |---------------------------|----------|-----------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------|------|---------------------------------------------------------------------------------------| 
 | entry_name                | Yes      | Dataset (entry) Name              | author_year    | Standardized dataset name: "first author_ publication year." Synthesis studies  should report multiple entries for each dataset in the synthesis.                                                                                       | character      |       |      | must match across levels                                                              | 
@@ -155,17 +135,10 @@ For up to date overview that includes changes to database structure made since 1
 | flx_fraction_modern       | No       | Flux Fraction Modern              | proportion     | Deviation of the sample from modern. Modern is defined as 95% of the radiocarbon concentration (in AD 1950) of NBS Oxalic Acid standard, 13C-corrected.                                                                                 | numeric        | 0     | 1.8  |                                                                                       | 
 | flx_fraction_modern_sigma | No       | Flux Fraction Modern Sigma        | numeric        | Flux Fraction Modern standard deviation as reported by the AMS facility as analytical error estimate                                                                                                                                    | numeric        | 0     |      |                                                                                       | 
 | flx_fraction_modern_sd    | No       | Flux Fraction Modern SD           | proportion     | Flux Fraction Modern sample standard deviation; use only if FM of replicates reported as a mean value                                                                                                                                   | numeric        | 0     |      |                                                                                       | 
-
-
-
-
 </p></details>
-
-
 <details><summary>  
 <b> Layer </b>
 </summary><p>
-
 | Column_Name               | Required | Variable_Name                                                | Units/Info                      | Description                                                  | Variable_class | Min   | Max   | Vocab                                                        |
 | ------------------------- | -------- | ------------------------------------------------------------ | ------------------------------- | ------------------------------------------------------------ | -------------- | ----- | ----- | ------------------------------------------------------------ |
 | entry_name                | Yes      | Dataset (entry) Name                                         | author_year                     | Standardized dataset name: "first author_ publication   year." Synthesis studies  should   report multiple entries for each dataset in the synthesis. | character      |       |       | must match across levels                                     |
@@ -268,13 +241,10 @@ For up to date overview that includes changes to database structure made since 1
 | lyr_ferrihydrite          | No       | Ferrihydrite Abundance                                       | % or 101/102/102 for "+/++/+++" | Quantitative or qualitative    mineral abundance. When quantitative measurements are reported, use %.   Otherwise, qualitative measurements use the 101/102/103   as equivalent to "+/++/+++" notation | numeric        | 0     | 103   |                                                              |
 | lyr_calcite_dolomite      | No       | Calcite + Dolomite Abundance                                 | % or 101/102/102 for "+/++/+++" | Quantitative or qualitative    mineral abundance. When quantitative measurements are reported, use %.   Otherwise, qualitative measurements use the 101/102/103   as equivalent to "+/++/+++" notation | numeric        | 0     | 103   |                                                              |
 | lyr_zeolite               | No       | zeolite Abundance                                            | % or 101/102/102 for "+/++/+++" | Quantitative or qualitative    mineral abundance. When quantitative measurements are reported, use %.   Otherwise, qualitative measurements use the 101/102/103   as equivalent to "+/++/+++" notation | numeric        | 0     | 103   |                                                              |
-
 </p></details>
-
 <details><summary>  
 <b> Interstitial </b>
 </summary><p>
-
 | Column_Name               | Required | Variable_Name                             | Units/Info           | Description                                                                                                                                       | Variable_class | Min   | Max  | Vocab                                                          | 
 |---------------------------|----------|-------------------------------------------|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------|------|----------------------------------------------------------------| 
 | entry_name                | Yes      | Dataset (entry) Name                      | author_year          | Standardized dataset name: "first author_ publication year." Synthesis studies  should report multiple entries for each dataset in the synthesis. | character      |       |      | must match across levels                                       | 
@@ -308,14 +278,10 @@ For up to date overview that includes changes to database structure made since 1
 | ist_fraction_modern       | No       | Interstitial Fraction Modern              | proportion           | see flux tab for description                                                                                                                      | numeric        | 0     | 1.8  |                                                                | 
 | ist_fraction_modern_sigma | No       | Interstitial Fraction Modern Sigma        | numeric              | see flux tab for description                                                                                                                      | numeric        | 0     |      |                                                                | 
 | ist_fraction_modern_sd    | No       | Interstitial Fraction Modern SD           | proportion           | see flux tab for description                                                                                                                      | numeric        | 0     |      |                                                                | 
-
-
 </p></details>
-
 <details><summary>  
 <b> Fraction </b>
 </summary><p>
-
 | Column_Name               | Required | Variable_Name                                                | Units/Info                              | Description                                                  | Variable_class | Min   | Max  | Vocab                                                        |
 | ------------------------- | -------- | ------------------------------------------------------------ | --------------------------------------- | ------------------------------------------------------------ | -------------- | ----- | ---- | ------------------------------------------------------------ |
 | entry_name                | Yes      | Dataset (entry) Name                                         | author_year                             | Standardized dataset name: "first author_ publication   year." Synthesis studies  should   report multiple entries for each dataset in the synthesis. | character      |       |      | must match across levels                                     |
@@ -393,13 +359,10 @@ For up to date overview that includes changes to database structure made since 1
 | frc_imog_alloph           | No       | Imogolite + Allophane                                        | %                                       | Quantitative or qualitative    mineral abundance. When quantitative measurements are reported, use %.   Otherwise, qualitative measurements use the 101/102/103   as equivalent to "+/++/+++" notation | numeric        | 0     | 103  |                                                              |
 | frc_ferrihydrite          | No       | Ferrihydrite Abundance                                       | %                                       | Quantitative or qualitative    mineral abundance. When quantitative measurements are reported, use %.   Otherwise, qualitative measurements use the 101/102/103   as equivalent to "+/++/+++" notation | numeric        | 0     | 103  |                                                              |
 | frc_zeolite               | No       | Zeolite Abundance                                            | %                                       | Quantitative or qualitative    mineral abundance. When quantitative measurements are reported, use %.   Otherwise, qualitative measurements use the 101/102/103   as equivalent to "+/++/+++" notation | numeric        | 0     | 103  |                                                              |
-
 </p></details>
-
 <details><summary>  
 <b> Incubation </b>
 </summary><p>
-
 | Column_Name               | Required | Variable_Name                           | Units/Info           | Description                                                  | Variable_class | Min   | Max  | Vocab                                                        |
 | ------------------------- | -------- | --------------------------------------- | -------------------- | ------------------------------------------------------------ | -------------- | ----- | ---- | ------------------------------------------------------------ |
 | entry_name                | Yes      | Dataset (entry) Name                    | author_year          | Standardized dataset name: "first author_ publication   year." Synthesis studies  should   report multiple entries for each dataset in the synthesis. | character      |       |      | must match across levels                                     |
@@ -433,5 +396,5 @@ For up to date overview that includes changes to database structure made since 1
 | inc_fraction_modern       | No       | Incubation Fraction Modern              | proportion           | see flux tab for description                                 | numeric        | 0     | 1.8  |                                                              |
 | inc_fraction_modern_sigma | No       | Incubation Fraction Modern Sigma        | numeric              | see flux tab for description                                 | numeric        | 0     |      |                                                              |
 | inc_fraction_modern_sd    | No       | Incubation Fraction Modern SD           | proportion           | see flux tab for description                                 | numeric        | 0     |      |                                                              |
-
 </p></details>
+-->
