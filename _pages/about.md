@@ -19,7 +19,6 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="400">
 </p>
 
-<a class="twitter-timeline" data-width="500" data-height="200" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ## Publications
@@ -91,4 +90,8 @@ Data from ISRaD will be regularly ingested into the International Soil Carbon Ne
 ## Contact 
 
 Please direct and comments, concerns and suggestions to info.israd@gmail.com.
+
+<p align="center">
+	<a class="twitter-timeline" data-height="500" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
 
