@@ -5,7 +5,7 @@
 #' @param geodata_directory directory where geospatial climate datasets are found.
 #' @export
 #' @details Adds new climate fields BIO1-BIO19:
-#' 
+#'
 #' BIO1 = Annual Mean Temperature,
 #' BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
 #' BIO3 = Isothermality (BIO2/BIO7) (* 100),
