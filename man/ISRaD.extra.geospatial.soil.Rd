@@ -25,5 +25,5 @@ Hengl T, de Jesus JM, MacMillan RA, Batjes NH, Heuvelink GBM, et al. (2014) Soil
 Shangguan, W., Hengl, T., de Jesus, J. M., Yuan, H. and Dai, Y. (2016), Mapping the global depth to bedrock for land surface modeling. J. Adv. Model. Earth Syst. doi:10.1002/2016MS000686.
 }
 \author{
-Shane Stoner sstoner@bgc-jena.mpg.de
+Shane Stoner, Jeff Beem-Miller
 }

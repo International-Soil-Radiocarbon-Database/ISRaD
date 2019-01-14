@@ -135,6 +135,7 @@ Summary statistics...
     lyr_soc : 11
     lyr_c_to_n : 11
     lyr_13c : 11
+    lyr_14c : 6
     lyr_fe_py : 11
     lyr_al_py : 11
     lyr_c_py : 11
@@ -160,6 +161,7 @@ Summary statistics...
     frc_comp : 18
     frc_mass_perc : 18
     frc_obs_date_y : 18
+    frc_c_perc : 18
     frc_c_org : 18
     frc_c_to_n : 18
     frc_13c : 18
