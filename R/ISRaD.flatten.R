@@ -27,11 +27,10 @@ requireNamespace("dplyr")
   g.ist <- g.flat %>% right_join(as.data.frame(lapply(database$interstitial, as.character), stringsAsFactors=F),
                                  by=c("entry_name","site_name","pro_name"))
   if(table == "fraction") {
-    ISRaD_flat <- g.lyr %>% right_join(g.frc, by=c("entry_name","site_name","pro_name","lyr_name"))
-    ISRaD_flat
+    ISRaD_flat <- g.frc
     } else {
     if(table == "incubation") {
-      ISRaD_flat <- g.lyr %>% right_join(g.inc, by=c("entry_name","site_name","pro_name","lyr_name"))
+      ISRaD_flat <- g.inc
     } else {
       if(table == "layer") {
         ISRaD_flat <- g.lyr
