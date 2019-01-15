@@ -4,7 +4,8 @@
 \alias{ISRaD.build}
 \title{ISRaD.build builds the database and updates objects in R package}
 \usage{
-ISRaD.build(ISRaD_directory = getwd(), geodata_directory)
+ISRaD.build(ISRaD_directory = getwd(), geodata_clim_directory,
+  geodata_soil_directory)
 }
 \arguments{
 \item{ISRaD_directory}{directory where the ISRaD package is found}
@@ -15,7 +16,7 @@ ISRaD.build(ISRaD_directory = getwd(), geodata_directory)
 runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
 }
 \description{
-Wrapper function that combines tools for rapid deployment of R package data objects. 
+Wrapper function that combines tools for rapid deployment of R package data objects.
 Meant to be used by the maintainers/developers of ISRaD
 }
 \examples{
