@@ -10,7 +10,9 @@ ISRaD.build(ISRaD_directory = getwd(), geodata_clim_directory,
 \arguments{
 \item{ISRaD_directory}{directory where the ISRaD package is found}
 
-\item{geodata_directory}{directory where geospatial climate datasets are found. Necessary to create ISRaD_Extra}
+\item{geodata_clim_directory}{directory where geospatial climate datasets are found. Necessary to create ISRaD_Extra}
+
+\item{geodata_soil_directory}{directory where geospatial soil datasets are found. Necessary to create ISRaD_Extra}
 }
 \value{
 runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
