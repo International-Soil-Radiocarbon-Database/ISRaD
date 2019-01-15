@@ -2,7 +2,7 @@
 #'
 #' @description Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
 #' @param database ISRaD dataset object.
-#' @param geodata_directory directory where geospatial climate datasets are found.
+#' @param geodata_clim_directory directory where geospatial climate datasets are found.
 #' @export
 #' @details Adds new climate fields BIO1-BIO19:
 #'
@@ -33,12 +33,12 @@
 #' @references http://www.worldclim.org/
 #'
 
-ISRaD.extra.geospatial.climate<-function(database, geodata_directory) {
+ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory) {
 
   requireNamespace("raster")
 
   cat("\nextracting bioclim variables (http://www.worldclim.org/bioclim for details)...")
-  bio<-raster::getData("worldclim", var='bio', res=2.5, path= geodata_directory)
+  bio<-raster::getData("worldclim", var='bio', res=2.5, path= geodata_clim_directory)
   bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
   colnames(bio_extracted)<-paste("pro",  colnames(bio_extracted), sep="_")
   database$profile<-cbind(database$profile, bio_extracted)
