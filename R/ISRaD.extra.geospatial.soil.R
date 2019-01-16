@@ -60,7 +60,7 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   #Create key for adding soil names to raster
   #Will need to be moved to "ISRaD Geospatial Data folder"
-  USDA_key_path = base::paste(ISRIC_folder, 'USDA_taxon_key.csv', sep = '')
+  USDA_key_path = base::paste(geodata_soil_directory, 'USDA_taxon_key.csv', sep = '')
   USDA_key = utils::read.csv(USDA_key_path, header = T)
   #Add FID column
   USDA_key$FID <- seq(length(USDA_key$ION))
