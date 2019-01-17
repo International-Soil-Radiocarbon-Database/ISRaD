@@ -18,8 +18,8 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
 # Install local ISRaD -----------------------------------------------------
 
 
-  #cat("Installing local version of ISRaD...")
-  #devtools::install("../ISRaD")
+  cat("Installing local version of ISRaD...")
+  devtools::install("../ISRaD")
   library(ISRaD)
 
 
