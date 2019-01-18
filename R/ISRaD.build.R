@@ -10,7 +10,8 @@
 #' @export
 #' @examples
 #' \dontrun{
-#' ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_soil_datasets", geodata_clim_directory="~/geospatial_soil_datasets")
+#' ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_soil_datasets", 
+#'   geodata_clim_directory="~/geospatial_soil_datasets")
 #' }
 
 ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_soil_directory){
@@ -18,8 +19,8 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
 # Install local ISRaD -----------------------------------------------------
 
 
-  #cat("Installing local version of ISRaD...")
-  #devtools::install("../ISRaD")
+  cat("Installing local version of ISRaD...")
+  devtools::install("../ISRaD")
   library(ISRaD)
 
 
@@ -84,7 +85,12 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
   usethis::use_data(ISRaD_extra, overwrite = T)
   cat("ISRaD_extra has been updated...\n\n")
 
+  
+# Save ISRaD extra object as Excel file --------------------------------------------------
 
+  openxlsx::write.xlsx(ISRaD_extra, file = file.path(ISRaD_directory, "ISRaD_data_files/database", "ISRaD_extra_list.xlsx"))
+
+  
 # Flattened data objects --------------------------------------------------
 
   cat("\tUpdating flattened data objects...\n")
