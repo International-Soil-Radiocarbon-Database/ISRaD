@@ -23,6 +23,7 @@ Meant to be used by the maintainers/developers of ISRaD
 }
 \examples{
 \dontrun{
-ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_directory="~/geospatial_datasets")
+ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_soil_datasets", 
+  geodata_clim_directory="~/geospatial_soil_datasets")
 }
 }

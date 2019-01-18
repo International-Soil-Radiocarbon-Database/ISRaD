@@ -4,12 +4,12 @@
 \alias{ISRaD.extra.geospatial.climate}
 \title{ISRaD.extra.geospatial.climate}
 \usage{
-ISRaD.extra.geospatial.climate(database, geodata_directory)
+ISRaD.extra.geospatial.climate(database, geodata_clim_directory)
 }
 \arguments{
 \item{database}{ISRaD dataset object.}
 
-\item{geodata_directory}{directory where geospatial climate datasets are found.}
+\item{geodata_clim_directory}{directory where geospatial climate datasets are found.}
 }
 \value{
 An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.

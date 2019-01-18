@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2019-01-14 21:04:56 
+ 2019-01-17 19:06:12 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -24,7 +24,7 @@ Checking controlled vocab between ISRaD template and info file...
  fraction ...
  incubation ...
 
-Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files/ 
+Compiling data files in /Users/alkalifly/Documents/ISRaD/ISRaD_data_files/ 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
@@ -591,6 +591,10 @@ Summary statistics...
     lyr_fe_oxides : 95
     lyr_calcite_dolomite : 36
     lyr_zeolite : 6
+    lyr_bd_samp_fill_extra : 2
+    lyr_c_org_fill_extra : 5
+    lyr_14c_fill_extra : 10
+    lyr_fill_notes_extra : 10
  interstitial tab...353 observations
     entry_name : 353
     site_name : 353
