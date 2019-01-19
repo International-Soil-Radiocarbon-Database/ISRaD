@@ -53,7 +53,7 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 * **Control/Treatment** – Please designate if this data is from a manipulation experiment (e.g. fertilizer application, warming study, etc). Naturally burned areas and agricultural sites are considered “Control” unless additionally manipulated.
 * **Coordinates** – Follow [this convention](https://en.wikipedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg). Don’t forget the negatives! Unsure? [Test your coordinates](https://www.google.com/maps/) to make sure they are not in the ocean
 * **Naming Convention & Unique Names** – You can choose any names for your sites, profiles, etc. Names can repeat, but each sequence of names “Site/Profile/Layer/etc” must be unique. (e.g. “HarvardForest/Profile1/AHorizon” and “HarvardForest/Profile2/AHorizon” are acceptable combinations, although “0-10cm” is a repeated layer name.)
-
+* **Lots of other things** – Please review the "Contributing to the database" section of our [Frequenty Asked Questions (FAQ)](https://international-soil-radiocarbon-database.github.io/ISRaD/template_faq/) page.
 
 ## 3. Fill out ISRaD template
 
