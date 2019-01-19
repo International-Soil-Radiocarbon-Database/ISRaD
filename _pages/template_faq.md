@@ -129,11 +129,37 @@ where F<sub>m</sub> is fraction modern.
 </p></details>
 
 <details><summary>  
+<b> Vegetation and Land Cover </b>
+</summary><p>
+
+ * **_Why are there so many columns related to land cover and vegetation?_** 
+   In order to accommodate a range of classification schemes, we consider multiple categories of land cover and vegetation information. The combination of one or more categories (described below) along with the latitude allows the end user to classify profiles into more general or more specific categories. In addition, we encourage you to include as much detail as possible about land cover and vegetation in the Profile Vegetation Notes column.
+ * **_What is Land Cover Type?_**
+   This is the general land cover category; the options are bare, cultivated, forest, rangeland/grassland, shrubland, urban, wetland, and tundra. In some cases, this may be the only vegetation column that you will be able to fill in. This column is optional, and may be left blank if the land cover type is truly unknown, but users are asked to make sure this column is filled in.
+ * **_What is Forest or Shrubland Phenology?_**
+   Forest and shrubland vegetation types may or may not lose their leaves on an annual cycle. If trees or shrubs retain their leaves all year, either because the local climate allows year-round growth, or because trees are adapted to never lose leaves (e.g., most conifers), then they should be categorized as evergreen. Trees or shrubs that lose leaves annually should be categorized as deciduous. If a forest contains an equal amount of both types, it may be categorized as mixed. This column should be left blank for land cover types other than forest and shrubland, or if the phenology is truly unknown.
+ * **_What is Forest Leaf Morphology?_**
+   Forests may be caregorized as broadleaf, needleleaf, or mixed. Note that this is independent of phenology. This column should be left blank for land cover types other than forest, or if the leaf type is truly unknown.
+ * **_What is Photosynthetic Pathway?_**
+   This is the metabolic pathway employed by the local vegetation for photosynthesis. This is mainly applicable to grasses, which may use either the C3 or C4 pathway, and we expect this column will be left blank for all other land cover types. We also include the CAM pathway, in the unlikely event that a profile is best characterized with this type of vegetation. This column should be left blank if the photosynthetic pathway is unknown.
+ * **_What should I put in the Profile Vegetation Notes?_**
+   Please include as much detailed information as you are able about the local land cover conditions and vegetation. For example, species names, spatial distribution, and evidence of disturbance, could all prove valuable in future analyses, and we encourage you to provide as much detail as possible.
+ * **_What if the land cover and vegetation information is the same for all of the profiles at a single site?_**
+   Please copy/paste or use Excel's "fill handle" to enter the information into each of the profiles. Because each profile CAN have it's own vegetation characteristics, we want to have this information at the profile level, even if it's just the same thing over and over for each profile at the site.
+   
+   
+         
+
+</p></details>
+
+<details><summary>  
 <b> Additional Data </b>
 </summary><p>
 
+
  * **_The paper contains some auxiliary data (e.g. species composition, mineralogy etc.) that I don´t know how to enter or don't have time to do enter. What should I do?_** <br>
    Mention this in the **_metadata_note_** field so that one day someone can come back to this. If you are interested in learning how to enter it, post a question on the [Github issues page](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) or contact *info.israd@gmail.com*.
+
 
 </p></details>
 

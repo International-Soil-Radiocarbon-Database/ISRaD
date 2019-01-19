@@ -39,7 +39,7 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
   <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="500">
  </p>
 <p align="center">
-  <a class="twitter-timeline" data-height="400" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by  soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a class="twitter-timeline" data-height="900" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by  soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 
 ## Contact 
