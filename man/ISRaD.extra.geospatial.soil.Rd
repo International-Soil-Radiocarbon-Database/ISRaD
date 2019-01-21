@@ -4,15 +4,15 @@
 \alias{ISRaD.extra.geospatial.soil}
 \title{ISRaD.extra.geospatial.soil}
 \usage{
-ISRaD.extra.geospatial.soil(database, geodata_directory)
+ISRaD.extra.geospatial.soil(database, geodata_soil_directory)
 }
 \arguments{
 \item{database}{ISRaD dataset object.}
 
-\item{geodata_directory}{directory where geospatial soil datasets are found, or to which can be downloaded.}
+\item{geodata_soil_directory}{directory where geospatial soil datasets are found, or to which the files can be downloaded.}
 }
 \description{
-Function to download and extract soil data from ISRIC spatial data products. WARNING: downloads large data files (>15 GB total)
+Function to download and extract soil data from ISRIC spatial data products. WARNING: downloads (if necessary) large data files (>15 GB total)
 }
 \details{
 Uses site and profile latitude and longitute to extract soil classifications and characteristics from .tif geospatial files acquired from ISRIC (https://www.isric.org/explore/soilgrids).

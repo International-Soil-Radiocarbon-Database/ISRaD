@@ -4,12 +4,14 @@
 \alias{ISRaD.extra}
 \title{ISRaD.extra}
 \usage{
-ISRaD.extra(database, geodata_directory)
+ISRaD.extra(database, geodata_clim_directory, geodata_soil_directory)
 }
 \arguments{
 \item{database}{soilcarbon dataset object}
 
-\item{geodata_directory}{directory where geospatial data is found}
+\item{geodata_clim_directory}{directory where geospatial climate data are found}
+
+\item{geodata_soil_directory}{directory where geospatial soil data are found}
 }
 \value{
 returns new ISRaD_extra object with derived, transformed, and filled columns
