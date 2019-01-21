@@ -5,7 +5,7 @@ ISRaD has been built based on two main compilations:
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
  
 ## Studies within ISRaD
-Currently, there are 177 entries in ISRaD, which are from the following publications:
+Currently, there are 178 entries in ISRaD, which are from the following publications:
  
 *  Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The dynamics of organic matter in rock fragments in soil investigated by 14C dating and measurements of 13C. European Journal of Soil Science, 53(1), 147–159. doi:10.1046/j.1365-2389.2002.00432.x
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
@@ -151,6 +151,7 @@ Currently, there are 177 entries in ISRaD, which are from the following publicat
 *  Shaw, D., Franklin, J., Bible, K., Klopatek, J., Freeman, E., Greene, S., & Parker, G. (2004). Ecological Setting of the Wind River Old-growth Forest. Ecosystems, 7(5). doi:10.1007/s10021-004-0135-6
 *  Shen, C., Yi, W., Sun, Y., Xing, C., Yang, Y., Yuan, C., … Liu, T. (2001). Distribution of 14C and 13C in Forest Soils of the Dinghushan Biosphere Reserve. Radiocarbon, 43(2B), 671–678. doi:10.1017/s0033822200041321
 *  Sierra, C. A., Trumbore, S. E., Davidson, E. A., Frey, S. D., Savage, K. E., & Hopkins, F. M. (2012). Predicting decadal trends and transient responses of radiocarbon storage and fluxes in a temperate forest soil. Biogeosciences, 9(8), 3013–3028. doi:10.5194/bg-9-3013-2012
+*  Sollins, P., Swanston, C., Kleber, M., Filley, T., Kramer, M., Crow, S., … Bowden, R. (2006). Organic C and N stabilization in a forest soil: Evidence from sequential density fractionation. Soil Biology and Biochemistry, 38(11), 3313–3324. doi:10.1016/j.soilbio.2006.04.014
 *  Sollins, P., Kramer, M. G., Swanston, C., Lajtha, K., Filley, T., Aufdenkampe, A. K., … Bowden, R. D. (2009). Sequential density fractionation across soils of contrasting mineralogy: evidence for both microbial- and mineral-controlled soil organic matter stabilization. Biogeochemistry, 96(1-3), 209–231. doi:10.1007/s10533-009-9359-z
 *  Stephan, S., Berrier, J., De Petre, A. A., Jeanson, C., Kooistra, M. J., Scharpenseel, H. W., & Schiffmann, H. (1983). Characterization of in situ organic matter constituents in vertisols from Argentina, using submicroscopic and cytochemical methods — first report. Geoderma, 30(1-4), 21–34. doi:10.1016/0016-7061(83)90054-x
 *  Stout, J. D., & Goh, K. M. (1980). The Use of Radiocarbon to Measure the Effects of Earthworms On Soil Development. Radiocarbon, 22(03), 892–896. doi:10.1017/s0033822200010298
