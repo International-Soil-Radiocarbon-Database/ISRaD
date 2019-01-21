@@ -158,6 +158,8 @@ Summary statistics...
     frc_upper : 72
     frc_agent : 72
     frc_note : 1
+    frc_c_perc : 69
+    frc_c_tot : 69
     frc_c_org : 59
     frc_n_tot : 52
     frc_15n : 46
@@ -166,13 +168,13 @@ Summary statistics...
     frc_fraction_modern : 31
     frc_fraction_modern_sigma : 19
     frc_mbc_method : 47
-    frc_reported_mbc : 43
+    frc_reported_mbc : 47
     frc_fe_py : 47
     frc_al_py : 47
-    frc_fe_ox : 43
-    frc_al_ox : 43
-    frc_fe_dith : 43
-    frc_al_dith : 43
+    frc_fe_ox : 47
+    frc_al_ox : 47
+    frc_fe_dith : 47
+    frc_al_dith : 47
  incubation tab...334 observations
     entry_name : 334
     site_name : 334
