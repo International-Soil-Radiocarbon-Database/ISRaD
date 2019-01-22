@@ -8,4 +8,5 @@ install_github("International-Soil-Radiocarbon-Database/ISRaD", ref="dev")
 ```
 
 Visit our site for more information:
+www.soilradiocarbon.org
 https://international-soil-radiocarbon-database.github.io/ISRaD/
