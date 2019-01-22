@@ -2,7 +2,7 @@
 #'
 #' @description Function to download and extract soil data from ISRIC spatial data products. WARNING: downloads large data files (>15 GB total)
 #' @param database ISRaD dataset object.
-#' @param geodata_directory directory where geospatial soil datasets are found, or to which can be downloaded.
+#' @param geodata_soil_directory directory where geospatial soil datasets are found, or to which can be downloaded.
 #' @details Uses site and profile latitude and longitute to extract soil classifications and characteristics from .tif geospatial files acquired from ISRIC (https://www.isric.org/explore/soilgrids).
 #' Currently includes USDA soil classifications and soil organic carbon to 100 cm, with new columns added at profile level for SOC at surface (0cm), 5, 15, 30, 60, and 100 cm depth. Points that are very near water bodies tend to produce NA values due to grid cell classification as water (which contains no data).
 #' All data are currently from 250 m grid cells.
@@ -20,18 +20,17 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
   if (!is.list(ISRaD_extra)) {
     ISRaD_extra <- ISRaD::ISRaD.extra.fill_coords(database)
   }
-  requireNamespace("raster")
-  requireNamespace("rgdal")
-  requireNamespace("RCurl")
-
-  library(RCurl)
-  library(raster)
-  library(rgdal)
 
   current_wd <- base::getwd()
 
   ## FTP ISRIC Downloads ##
-  #Requires local folder for downloading large (>3 GB) spatial .tif files#
+  #Requires local folder for downloading large (>3 GB) spatial .tif files
+  #Checking and appending last '/ ' to path name, if necessary
+  pathlength <- nchar(geodata_soil_directory)
+
+  if(substr(geodata_soil_directory, pathlength-0,pathlength) != '/'){
+    geodata_soil_directory <-paste(geodata_soil_directory, '/', sep='')
+  }
 
   base::setwd(geodata_soil_directory)
 
@@ -48,7 +47,7 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_USDA_250m = "soilgrids_USDA_250m.tif"
 
-  USDA_250m.name <- filenames[grep(filenames, pattern=glob2rx("TAXOUSDA_250m.tif$"))]
+  USDA_250m.name <- filenames[grep(filenames, pattern=utils::glob2rx("TAXOUSDA_250m.tif$"))]
 
   if(!base::file.exists(savefile_USDA_250m)) {
     try(utils::download.file(paste(sg.ftp, USDA_250m.name, sep=""), savefile_USDA_250m))
@@ -78,7 +77,7 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   #Check for profiles with NA after raster extraction
   ISRIC_NA.df <- ISRAD_pro[is.na(ISRAD_pro$pro_USDA_ISRIC_250m),]
-  ISRIC_NA.list <- list(base::unique(USDA_250m_bad.df$entry_name))
+  #ISRIC_NA.list <- list(base::unique(USDA_250m_bad.df$entry_name))
 
   #Add column to ISRaD_extra object
   ISRaD_extra$profile$pro_ISRIC_USDA_250m <- ISRAD_pro$pro_USDA_ISRIC_250m
@@ -99,16 +98,16 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_0cm = "soilgrids_ORC_0cm.tif"
 
-  ORC_0cm.name <- filenames[grep(filenames, pattern=glob2rx("ORCDRC_M_sl1_250m.tif$"))]
+  ORC_0cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl1_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_0cm)) {
-    try(download.file(paste(sg.ftp, ORC_0cm.name, sep=""), savefile_ORC_0cm))
+    try(utils::download.file(paste(sg.ftp, ORC_0cm.name, sep=""), savefile_ORC_0cm))
     base::print('Downloading ORC 0cm raster...')
   }
 
   #Load .tif into R as raster
-  ORC_0cm_raster = raster("soilgrids_ORC_0cm.tif")
+  ORC_0cm_raster = raster::raster("soilgrids_ORC_0cm.tif")
 
   #Extract site and/or profile point values from raster
   ISRAD_pro$pro_ISRIC_ORC_0cm <- raster::extract(ORC_0cm_raster, ISRAD_coords)
@@ -123,16 +122,16 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_5cm = "soilgrids_ORC_5cm.tif"
 
-  ORC_5cm.name <- filenames[grep(filenames, pattern=glob2rx("ORCDRC_M_sl2_250m.tif$"))]
+  ORC_5cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl2_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_5cm)) {
-    try(download.file(paste(sg.ftp, ORC_5cm.name, sep=""), savefile_ORC_5cm))
+    try(utils::download.file(paste(sg.ftp, ORC_5cm.name, sep=""), savefile_ORC_5cm))
     base::print('Downloading ORC 5cm raster...')
   }
 
   #Load .tif into R as raster
-  ORC_5cm_raster = raster("soilgrids_ORC_5cm.tif")
+  ORC_5cm_raster = raster::raster("soilgrids_ORC_5cm.tif")
 
   #Extract site and/or profile point values from raster
   ISRAD_pro$pro_ISRIC_ORC_5cm <- raster::extract(ORC_5cm_raster, ISRAD_coords)
@@ -147,16 +146,16 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_15cm = "soilgrids_ORC_15cm.tif"
 
-  ORC_15cm.name <- filenames[grep(filenames, pattern=glob2rx("ORCDRC_M_sl3_250m.tif$"))]
+  ORC_15cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl3_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_15cm)) {
-    try(download.file(paste(sg.ftp, ORC_15cm.name, sep=""), savefile_ORC_15cm))
+    try(utils::download.file(paste(sg.ftp, ORC_15cm.name, sep=""), savefile_ORC_15cm))
     base::print('Downloading ORC 15cm raster...')
   }
 
   #Load .tif into R as raster
-  ORC_15cm_raster = raster("soilgrids_ORC_15cm.tif")
+  ORC_15cm_raster = raster::raster("soilgrids_ORC_15cm.tif")
 
   #Extract site and/or profile point values from raster
   ISRAD_pro$pro_ISRIC_ORC_15cm <- raster::extract(ORC_15cm_raster, ISRAD_coords)
@@ -171,16 +170,16 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_30cm = "soilgrids_ORC_30cm.tif"
 
-  ORC_30cm.name <- filenames[grep(filenames, pattern=glob2rx("ORCDRC_M_sl4_250m.tif$"))]
+  ORC_30cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl4_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_30cm)) {
-    try(download.file(paste(sg.ftp, ORC_30cm.name, sep=""), savefile_ORC_30cm))
+    try(utils::download.file(paste(sg.ftp, ORC_30cm.name, sep=""), savefile_ORC_30cm))
     base::print('Downloading ORC 30cm raster...')
   }
 
   #Load .tif into R as raster
-  ORC_30cm_raster = raster("soilgrids_ORC_30cm.tif")
+  ORC_30cm_raster = raster::raster("soilgrids_ORC_30cm.tif")
 
   #Extract site and/or profile point values from raster
   ISRAD_pro$pro_ISRIC_ORC_30cm <- raster::extract(ORC_30cm_raster, ISRAD_coords)
@@ -195,16 +194,16 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_60cm = "soilgrids_ORC_60cm.tif"
 
-  ORC_60cm.name <- filenames[grep(filenames, pattern=glob2rx("ORCDRC_M_sl5_250m.tif$"))]
+  ORC_60cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl5_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_60cm)) {
-    try(download.file(paste(sg.ftp, ORC_60cm.name, sep=""), savefile_ORC_60cm))
+    try(utils::download.file(paste(sg.ftp, ORC_60cm.name, sep=""), savefile_ORC_60cm))
     base::print('Downloading ORC 60cm raster...')
   }
 
   #Load .tif into R as raster
-  ORC_60cm_raster = raster("soilgrids_ORC_60cm.tif")
+  ORC_60cm_raster = raster::raster("soilgrids_ORC_60cm.tif")
 
   #Extract site and/or profile point values from raster
   ISRAD_pro$pro_ISRIC_ORC_60cm <- raster::extract(ORC_60cm_raster, ISRAD_coords)
@@ -218,16 +217,16 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
   ## 250m resolution
   savefile_ORC_100cm = "soilgrids_ORC_100cm.tif"
 
-  ORC_100cm.name <- filenames[grep(filenames, pattern=glob2rx("ORCDRC_M_sl6_250m.tif$"))]
+  ORC_100cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl6_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_100cm)) {
-    try(download.file(paste(sg.ftp, ORC_100cm.name, sep=""), savefile_ORC_100cm))
+    try(utils::download.file(paste(sg.ftp, ORC_100cm.name, sep=""), savefile_ORC_100cm))
     base::print('Downloading ORC 100cm raster...')
   }
 
   #Load .tif into R as raster
-  ORC_100cm_raster = raster("soilgrids_ORC_100cm.tif")
+  ORC_100cm_raster = raster::raster("soilgrids_ORC_100cm.tif")
 
   #Extract site and/or profile point values from raster
   ISRAD_pro$pro_ISRIC_ORC_100cm <- raster::extract(ORC_100cm_raster, ISRAD_coords)
