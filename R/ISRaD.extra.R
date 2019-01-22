@@ -18,7 +18,7 @@ ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory){
   database<-ISRaD.extra.Cstocks(database)
   database<-ISRaD.extra.fill_expert(database)
   database<-ISRaD.extra.geospatial.climate(database, geodata_clim_directory=geodata_clim_directory)
-  # database<-ISRaD.extra.geospatial.soil(database, geodata_soil_directory=geodata_soil_directory)
+  database<-ISRaD.extra.geospatial.soil(database, geodata_soil_directory=geodata_soil_directory)
 
   ISRaD_data_filled <- database
 
