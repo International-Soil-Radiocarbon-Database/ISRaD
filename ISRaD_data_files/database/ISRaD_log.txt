@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2019-01-21 14:02:50 
+ 2019-01-21 12:27:04 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -24,7 +24,7 @@ Checking controlled vocab between ISRaD template and info file...
  fraction ...
  incubation ...
 
-Compiling data files in D:/ISRaD/ISRaD_data_files/ 
+Compiling data files in /Users/greymonroe/github/ISRaD/ISRaD_data_files/ 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
