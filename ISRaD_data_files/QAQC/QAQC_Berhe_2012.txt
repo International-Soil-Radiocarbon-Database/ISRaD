@@ -98,10 +98,13 @@ Summary statistics...
     pro_name : 18
     pro_treatment : 18
     pro_comp : 4
+    pro_MAT : 18
+    pro_MAP : 18
     pro_soil_taxon : 18
     pro_land_cover : 18
     pro_veg_note : 18
     pro_parent_material : 18
+    pro_2d_position : 18
  flux tab...0 observations
  layer tab...126 observations
     entry_name : 126

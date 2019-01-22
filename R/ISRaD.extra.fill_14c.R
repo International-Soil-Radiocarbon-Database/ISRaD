@@ -1,11 +1,12 @@
 #' ISRaD.extra.fill_14c
 #'
-#' @description: Fills delta 14C if not reported and fraction modern and
+#' @description: Fills delta 14C from fraction modern if delta 14C not reported.
 #' @param database ISRaD dataset object.
 #' @details: Warning: xxx_obs_date_y columns must be filled for this to work!
 #' @author: J. Beem-Miller & A. Hoyt
 #' @references: Stuiver and Polach, 1977
 #' @export
+#' @return returns ISRaD_data object with filled delta 14C columns
 
 ISRaD.extra.fill_14c<- function(database) {
 

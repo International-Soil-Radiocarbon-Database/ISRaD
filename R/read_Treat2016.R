@@ -5,11 +5,6 @@
 #' @param dowloadDir directory where data files will be downloaded
 #' @return writes out files for individual data objects
 #' @import pangaear
-#' @examples 
-#' \dontrun{
-#' read_Treat2016()
-#' compile("~/Dropbox/USGS/ISRaD_Data/Compilations/Treat/converted/")
-#' }
 
 
 read_Treat2016 <- function(dowloadDir = 'temp'){

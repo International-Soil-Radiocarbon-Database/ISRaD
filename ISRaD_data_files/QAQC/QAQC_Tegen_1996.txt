@@ -1,0 +1,168 @@
+         Thank you for contributing to the ISRaD database! 
+         Please review this quality control report. 
+         Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/ for more information. 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+File: Tegen_1996.xlsx
+
+Checking file type...
+
+Checking file format compatibility with ISRaD templates...
+ Template format detected:  ISRaD_Master_Template.xlsx
+ Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
+
+Checking for empty tabs...
+	NOTE: empty tabs detected ( flux incubation )
+
+Not checking dataset doi because 'checkdoi==F'...
+
+Checking for extra or misspelled column names...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking for missing values in required columns...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking that level names match between tabs...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking numeric variable columns for inappropriate values...
+ metadata tab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+
+Checking controlled vocab...
+ site tab...
+ profile tab...
+ flux tab...
+ layer tab...
+ interstitial tab...
+ fraction tab...
+ incubation tab...
+ - - - - - - - - - - - - - - - - - - - -
+PASSED. Nice work!
+
+ - - - - - - - - - - - - - - - - - - - -
+
+It might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.
+
+Summary statistics...
+
+ metadata tab...1 observations
+    entry_name : 1
+    doi : 1
+    compilation_doi : 1
+    curator_name : 1
+    curator_organization : 1
+    curator_email : 1
+    modification_date_y : 1
+    modification_date_m : 1
+    modification_date_d : 1
+    contact_name : 1
+    contact_email : 1
+    bibliographical_reference : 1
+    template_version : 1
+ site tab...7 observations
+    entry_name : 7
+    site_name : 7
+    site_lat : 7
+    site_long : 7
+ profile tab...11 observations
+    entry_name : 11
+    site_name : 11
+    pro_name : 11
+    pro_note : 4
+    pro_lat : 11
+    pro_long : 11
+    pro_treatment : 11
+    pro_soil_taxon : 10
+    pro_land_cover : 10
+    pro_veg_note : 10
+ flux tab...0 observations
+ layer tab...20 observations
+    entry_name : 20
+    site_name : 20
+    pro_name : 20
+    lyr_name : 20
+    lyr_obs_date_y : 20
+    lyr_obs_date_m : 20
+    lyr_top : 20
+    lyr_bot : 20
+    lyr_bd_samp : 20
+    lyr_bd_samp_fill_extra : 2
+    lyr_c_org_fill_extra : 5
+    lyr_14c_fill_extra : 10
+    lyr_fill_notes_extra : 10
+ interstitial tab...22 observations
+    entry_name : 22
+    site_name : 22
+    pro_name : 22
+    ist_name : 22
+    ist_obs_date_y : 22
+    ist_obs_date_m : 18
+    ist_depth : 22
+    ist_phase : 22
+    ist_analyte : 22
+    ist_method : 18
+    ist_concentration : 22
+    ist_concentration_units : 22
+    ist_13c : 22
+    ist_13c_sd : 18
+    ist_rc_lab : 22
+    ist_rc_year : 4
+    ist_14c : 22
+    ist_14c_sigma : 22
+ fraction tab...20 observations
+    entry_name : 20
+    site_name : 20
+    pro_name : 20
+    lyr_name : 20
+    frc_name : 20
+    frc_input : 20
+    frc_property : 20
+    frc_scheme : 20
+    frc_scheme_units : 20
+    frc_lower : 20
+    frc_upper : 20
+    frc_agent : 20
+    frc_scheme_conc : 20
+    frc_obs_date_y : 20
+    frc_obs_date_m : 20
+    frc_c_org : 20
+    frc_13c : 20
+    frc_14c : 20
+    frc_14c_sigma : 20
+ incubation tab...0 observations
+ - - - - - - - - - - - - - - - - - - - -
+
+
+
+Please email info.israd@gmail.com with concerns or suggestions
+If you think there is a error in the functioning of this code please post to
+      
+https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

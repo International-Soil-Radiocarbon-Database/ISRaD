@@ -9,8 +9,11 @@ ISRaD.extra.fill_14c(database)
 \arguments{
 \item{database}{ISRaD dataset object.}
 }
+\value{
+returns ISRaD_data object with filled delta 14C columns
+}
 \description{
-: Fills delta 14C if not reported and fraction modern and
+: Fills delta 14C from fraction modern if delta 14C not reported.
 }
 \details{
 : Warning: xxx_obs_date_y columns must be filled for this to work!

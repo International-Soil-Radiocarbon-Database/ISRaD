@@ -1,10 +1,10 @@
 Package: ISRaD
 Title: Tools and Data for the International Soil Radiocarbon Database
-Version: 0.1.0
-Authors@R: c(person("Alison", "Hoyt", email = "ahoyt@bgc-jena.mpg.de", role = c("aut")), person("Jeffrey", "Beem-Miller", email = "jbeem@bgc-jena.mpg.de", role = c("aut")),person("J. Grey", "Monroe", email = "greymonroe@gmail.com", role = c("aut", "cre")))
+Version: 0.1.0.918
+Authors@R: c(person("Alison", "Hoyt", email = "ahoyt@bgc-jena.mpg.de", role = c("aut")), person("Jeffrey", "Beem-Miller", email = "jbeem@bgc-jena.mpg.de", role = c("aut")),person("Shane", "Stoner", email = "sstoner@bgc-jena.mpg.de", role = c("aut")), person("J. Grey", "Monroe", email = "greymonroe@gmail.com", role = c("aut", "cre")))
 Description: This is the central location for data and tools for the development, maintenance, analysis, and deployment of the International Soil Radiocarbon Database. This database and package have been developed in collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute. 
 Depends: R (>= 3.3.0)
-Imports: shiny, openxlsx, devtools, raster, dplyr, plyr, tidyr, RCurl, ggplot2, assertthat, rcrossref, forecast, SoilR, pangaear, tidyverse, usethis
+Imports: shiny, openxlsx, devtools, raster, dplyr, plyr, tidyr, RCurl, ggplot2, ggmap, assertthat, rcrossref, forecast, SoilR, pangaear, tidyverse, usethis
 License: GPL-2
 Encoding: UTF-8
 LazyData: true

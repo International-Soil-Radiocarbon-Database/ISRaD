@@ -85,6 +85,7 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
+    associated_datasets : 1
  site tab...1 observations
     entry_name : 1
     site_name : 1
@@ -95,6 +96,8 @@ Summary statistics...
     site_name : 1
     pro_name : 1
     pro_treatment : 1
+    pro_land_cover : 1
+    pro_parent_material_notes : 1
  flux tab...6 observations
     entry_name : 6
     site_name : 6
@@ -103,8 +106,11 @@ Summary statistics...
     flx_obs_date_y : 6
     flx_obs_date_m : 6
     flx_obs_date_d : 6
-    flx_pathway_note : 1
+    flx_pathway : 6
     flx_analyte : 6
+    flx_method_note : 6
+    flx_duration : 6
+    flx_duration_units : 6
     flx_13c : 6
     flx_rc_year : 6
     flx_14c : 6

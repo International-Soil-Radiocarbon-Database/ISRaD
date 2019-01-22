@@ -9,15 +9,12 @@ ISRaD.extra.fill_coords(database)
 \arguments{
 \item{database}{ISRaD dataset object.}
 }
+\value{
+returns ISRaD_data object with filled profile coordinates
+}
 \description{
-brief summary description of function
-}
-\details{
-very detailed description of function, especially if it involves the creation of new columns
-}
-\references{
-any references of literature or datasets relevant to understand the function. (remove this entire line if there are no references)
+Fills profile coordinates from site coordinates if profile coordinates not reported.
 }
 \author{
-your name
+J. Beem-Miller
 }

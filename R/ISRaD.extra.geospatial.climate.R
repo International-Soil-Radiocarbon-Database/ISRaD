@@ -1,12 +1,11 @@
 #' ISRaD.extra.geospatial.climate
 #'
-#' @description extracts values from various geospatial climate datasets and adds to ISRaD_data object to create ISRaD_data_extra.
+#' @description Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
 #' @param database ISRaD dataset object.
-#' @param geodata_directory directory where geospatial climate datasets are found.
+#' @param geodata_clim_directory directory where geospatial climate datasets are found.
 #' @export
-#' @details variables that are added
+#' @details Adds new climate fields BIO1-BIO19:
 #'
-#' New columns:
 #' BIO1 = Annual Mean Temperature,
 #' BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
 #' BIO3 = Isothermality (BIO2/BIO7) (* 100),
@@ -34,20 +33,15 @@
 #' @references http://www.worldclim.org/
 #'
 
-ISRaD.extra.geospatial.climate<-function(database, geodata_directory) {
+ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory) {
 
   requireNamespace("raster")
 
   cat("\nextracting bioclim variables (http://www.worldclim.org/bioclim for details)...")
-  bio<-raster::getData("worldclim", var='bio', res=2.5, path= geodata_directory)
+  bio<-raster::getData("worldclim", var='bio', res=2.5, path= geodata_clim_directory)
   bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
   colnames(bio_extracted)<-paste("pro",  colnames(bio_extracted), sep="_")
   database$profile<-cbind(database$profile, bio_extracted)
-
-  # for other datasets that arent downloaded automatically...
-  #if(file is found){
- # run and extract and cbind to database in approporate tab...
- # } else cat("X file not found")
 
   return(database)
 

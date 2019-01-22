@@ -1,13 +1,10 @@
 #' ISRaD.extra.fill_coords
 #'
-#' @description brief summary description of function
+#' @description Fills profile coordinates from site coordinates if profile coordinates not reported.
 #' @param database ISRaD dataset object.
-#' @details very detailed description of function, especially if it involves the creation of new columns
-#' @author your name
-#' @references any references of literature or datasets relevant to understand the function. (remove this entire line if there are no references)
+#' @author J. Beem-Miller
 #' @export
-
-#' @import dplyr
+#' @return returns ISRaD_data object with filled profile coordinates
 
 ISRaD.extra.fill_coords<-function(database){
   ix <- which(is.na(database$profile$pro_lat))

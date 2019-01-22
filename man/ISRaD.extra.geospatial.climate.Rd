@@ -4,23 +4,22 @@
 \alias{ISRaD.extra.geospatial.climate}
 \title{ISRaD.extra.geospatial.climate}
 \usage{
-ISRaD.extra.geospatial.climate(database, geodata_directory)
+ISRaD.extra.geospatial.climate(database, geodata_clim_directory)
 }
 \arguments{
 \item{database}{ISRaD dataset object.}
 
-\item{geodata_directory}{directory where geospatial climate datasets are found.}
+\item{geodata_clim_directory}{directory where geospatial climate datasets are found.}
 }
 \value{
 An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.
 }
 \description{
-extracts values from various geospatial climate datasets and adds to ISRaD_data object to create ISRaD_data_extra.
+Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
 }
 \details{
-variables that are added
+Adds new climate fields BIO1-BIO19:
 
-New columns:
 BIO1 = Annual Mean Temperature,
 BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
 BIO3 = Isothermality (BIO2/BIO7) (* 100),
