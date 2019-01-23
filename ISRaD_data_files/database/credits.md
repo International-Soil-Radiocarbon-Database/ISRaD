@@ -5,7 +5,7 @@ ISRaD has been built based on two main compilations:
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
  
 ## Studies within ISRaD
-Currently, there are 179 entries in ISRaD, which are from the following publications:
+Currently, there are 180 entries in ISRaD, which are from the following publications:
  
 *  Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The dynamics of organic matter in rock fragments in soil investigated by 14C dating and measurements of 13C. European Journal of Soil Science, 53(1), 147–159. doi:10.1046/j.1365-2389.2002.00432.x
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
@@ -128,6 +128,7 @@ Currently, there are 179 entries in ISRaD, which are from the following publicat
 *  Pérez, T., Garcia-Montiel, D., Trumbore, S., Tyler, S., Camargo, P. de, Moreira, M., … Cerri, C. (2006). NITROUS OXIDE NITRIFICATION AND DENITRIFICATION15N ENRICHMENT FACTORS FROM AMAZON FOREST SOILS. Ecological Applications, 16(6), 2153–2167. doi:10.1890/1051-0761(2006)016[2153:nonadn]2.0.co;2
 *  Pessenda, L. C. R., Valencia, E. P. E., Camargo, P. B., Telles, E. C. C., Martinelli, L. A., Cerri, C. C., … Rozanski, K. (1996). Natural Radiocarbon Measurements in Brazilian Soils Developed on Basic Rocks. Radiocarbon, 38(02), 203–208. doi:10.1017/s0033822200017574
 *  Pessenda, L. C. R., Gouveia, S. E. M., & Aravena, R. (2001). Radiocarbon Dating of Total Soil Organic Matter and Humin Fraction and Its Comparison with 14C Ages of Fossil Charcoal. Radiocarbon, 43(2B), 595–601. doi:10.1017/s0033822200041242
+*  Phillips, C. L., McFarlane, K. J., Risk, D., & Desai, A. R. (2013). Biological and physical influences on soil &lt;sup&gt;14&lt;/sup&gt;CO&lt;sub&gt;2&lt;/sub&gt; seasonal dynamics in a temperate hardwood forest. Biogeosciences, 10(12), 7999–8012. doi:10.5194/bg-10-7999-2013
 *  Posada, J. M., & Schuur, E. A. G. (2011). Relationships among precipitation regime, nutrient availability, and carbon turnover in tropical rain forests. Oecologia, 165(3), 783–795. doi:10.1007/s00442-010-1881-0
 *  Quideau, S. A., Chadwick, O. A., Trumbore, S. E., Johnson-Maynard, J. L., Graham, R. C., & Anderson, M. A. (2001). Vegetation control on soil organic matter dynamics. Organic Geochemistry, 32(2), 247–252. doi:10.1016/s0146-6380(00)00171-6
 *  Rabbi, S. M. F., Hua, Q., Daniel, H., Lockwood, P. V., Wilson, B. R., & Young, I. M. (2013). Mean Residence Time of Soil Organic Carbon in Aggregates Under Contrasting Land Uses Based on Radiocarbon Measurements. Radiocarbon, 55(01), 127–139. doi:10.2458/azu_js_rc.v55i1.16179
