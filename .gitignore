@@ -11,3 +11,6 @@
 # Folders
 _site/
 .sass-cache/
+
+# IntelliJ IDEs
+.idea
