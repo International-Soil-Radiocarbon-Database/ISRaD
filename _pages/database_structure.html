@@ -8,11 +8,18 @@ overlay_image: /assets/images/soil.jpg
 
 
 For up to date overview of variables included in the database see table bellow.
-It can be downloaded as XLSX file from <a href="https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/inst/extdata/ISRaD_Template_Info.xlsx" download="ISRaD_Template_Info.xlsx">here</a>.
+It can be downloaded as XLSX file from <a
+        href="https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/inst/extdata/ISRaD_Template_Info.xlsx"
+        download="ISRaD_Template_Info.xlsx">here</a>.
 
 <ul class="database-sheets"></ul>
 
 <div id="databasePlaceholder"></div>
+
+<div class="shoutout">
+    For parsing of XLXS file we used awesome tool <a href="https://github.com/SheetJS/js-xlsx">SheetJS</a> and
+    for displaying the data another awesome tool <a href="https://github.com/TonyGermaneri/canvas-datagrid">canvas-datagrid</a>.
+</div>
 
 <script src="/assets/js/database_viewer/xlsx.full.min.js"></script>
 <script src="/assets/js/database_viewer/canvas-datagrid.js"></script>
@@ -53,16 +60,16 @@ It can be downloaded as XLSX file from <a href="https://raw.githubusercontent.co
         workbook.SheetNames.forEach(function (sheetName, index) {
             var elem = $('<li><a>' + sheetName + '</a></li>');
 
-            if(index === DEFAULT_INDEX_SHEET){
+            if (index === DEFAULT_INDEX_SHEET) {
                 elem.addClass('active');
             }
 
             elem.find('a').on('click', function () {
-              switchSheet(sheetName);
+                switchSheet(sheetName);
 
-              // Displaying active sheet
-              $('.database-sheets .active').removeClass('active');
-              elem.addClass('active');
+                // Displaying active sheet
+                $('.database-sheets .active').removeClass('active');
+                elem.addClass('active');
             });
 
             $('.database-sheets').append(elem)
