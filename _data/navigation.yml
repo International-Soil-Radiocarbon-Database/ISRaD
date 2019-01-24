@@ -8,6 +8,8 @@ main:
      url: /rpackage/
    - title: "Contribute"
      url: /contribute/
+   - title: "FAQ"
+     url: /template_faq/
    - title: "Credits"
      url: /credits/
  
