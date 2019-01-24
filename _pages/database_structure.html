@@ -1,0 +1,91 @@
+---
+layout: splash
+permalink: /database_structure/
+title: "Database structure"
+header:
+overlay_image: /assets/images/soil.jpg
+---
+
+
+For up to date overview of variables included in the database see table bellow.
+It can be downloaded as XLSX file from <a
+        href="https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/inst/extdata/ISRaD_Template_Info.xlsx"
+        download="ISRaD_Template_Info.xlsx">here</a>.
+
+<ul class="database-sheets"></ul>
+
+<div id="databasePlaceholder"></div>
+
+<div class="shoutout">
+    For parsing of XLXS file we used awesome tool <a href="https://github.com/SheetJS/js-xlsx">SheetJS</a> and
+    for displaying the data another awesome tool <a href="https://github.com/TonyGermaneri/canvas-datagrid">canvas-datagrid</a>.
+</div>
+
+<script src="/assets/js/database_viewer/xlsx.full.min.js"></script>
+<script src="/assets/js/database_viewer/canvas-datagrid.js"></script>
+<script type="text/javascript">
+    // Configuration
+    const DB_STRUCTURE_XLXS_FILE = 'https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/inst/extdata/ISRaD_Template_Info.xlsx';
+    const OUTPUT_ELEM_ID = 'databasePlaceholder';
+    const DEFAULT_INDEX_SHEET = 1;
+
+    ///////////////////////////////////////////////////////
+    var gridElem = document.getElementById(OUTPUT_ELEM_ID);
+    var grid = canvasDatagrid({
+        parentNode: gridElem,
+        allowColumnReordering: false,
+        editable: false,
+        name: 'ISRaDDatabase'
+    });
+    grid.style.height = '100%';
+    grid.style.width = '100%';
+
+    var workbook;
+
+    function fetchWorkbook(url, success) {
+        var req = new XMLHttpRequest();
+        req.open("GET", url, true);
+        req.responseType = "arraybuffer";
+
+        req.onload = function (e) {
+            /* parse the data when it is received */
+            var data = new Uint8Array(req.response);
+            workbook = XLSX.read(data, {type: "array"});
+            success(workbook, {'cellStyles': true});
+        };
+        req.send();
+    }
+
+    function renderSheetsNames(workbook) {
+        workbook.SheetNames.forEach(function (sheetName, index) {
+            var elem = $('<li><a>' + sheetName + '</a></li>');
+
+            if (index === DEFAULT_INDEX_SHEET) {
+                elem.addClass('active');
+            }
+
+            elem.find('a').on('click', function () {
+                switchSheet(sheetName);
+
+                // Displaying active sheet
+                $('.database-sheets .active').removeClass('active');
+                elem.addClass('active');
+            });
+
+            $('.database-sheets').append(elem)
+        })
+    }
+
+    function renderWorkbook(workbook) {
+        renderSheetsNames(workbook);
+        switchSheet(workbook.SheetNames[DEFAULT_INDEX_SHEET]);
+    }
+
+    function switchSheet(name) {
+        var ws = workbook.Sheets[name];
+        grid.data = XLSX.utils.sheet_to_json(ws);
+    }
+
+
+    fetchWorkbook(DB_STRUCTURE_XLXS_FILE, renderWorkbook);
+</script>
