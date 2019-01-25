@@ -38,13 +38,14 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
   <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg" width="300">|
   <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="500">
  </p>
-<p align="center">
-  <a class="twitter-timeline" data-height="900" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by  soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</p>
 
 ## Major Updates to ISRaD
 * [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
+ 
 
+<p align="center">
+  <a class="twitter-timeline" data-height="900" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by  soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
 
 ## Contact 
 
