@@ -42,6 +42,10 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
   <a class="twitter-timeline" data-height="900" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by  soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 
+## Major Updates to ISRaD
+1. [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
+
+
 ## Contact 
 
 Please direct comments, concerns and suggestions to info.israd@gmail.com.
