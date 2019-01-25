@@ -43,7 +43,7 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
 </p>
 
 ## Major Updates to ISRaD
-1. [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
+* [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
 
 
 ## Contact 
