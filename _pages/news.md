@@ -1,6 +1,6 @@
 ---
 layout: splash
-permalink: /contribute/
+permalink: /news/
 title: "ISRaD News"
 header:
   overlay_image: /assets/images/soil.jpg
