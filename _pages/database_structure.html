@@ -84,6 +84,7 @@ It can be downloaded as XLSX file from <a
     function switchSheet(name) {
         var ws = workbook.Sheets[name];
         grid.data = XLSX.utils.sheet_to_json(ws);
+        grid.schema.forEach(function (c) { grid.fitColumnToValues(c.name); });
     }
 
 
