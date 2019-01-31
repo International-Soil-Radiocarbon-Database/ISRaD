@@ -21,8 +21,8 @@ It can be downloaded as XLSX file from <a
     for displaying the data another awesome tool <a href="https://github.com/TonyGermaneri/canvas-datagrid">canvas-datagrid</a>.
 </div>
 
-<script src="/assets/js/database_viewer/xlsx.full.min.js"></script>
-<script src="/assets/js/database_viewer/canvas-datagrid.js"></script>
+<script src="{{ '/assets/js/database_viewer/xlsx.full.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/database_viewer/canvas-datagrid.js' | relative_url }}"></script>
 <script type="text/javascript">
     // Configuration
     const DB_STRUCTURE_XLXS_FILE = 'https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/inst/extdata/ISRaD_Template_Info.xlsx';
@@ -84,6 +84,7 @@ It can be downloaded as XLSX file from <a
     function switchSheet(name) {
         var ws = workbook.Sheets[name];
         grid.data = XLSX.utils.sheet_to_json(ws);
+        grid.schema.forEach(function (c) { grid.fitColumnToValues(c.name); });
     }
 
 
