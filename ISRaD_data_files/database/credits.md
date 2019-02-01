@@ -5,7 +5,7 @@ ISRaD has been built based on two main compilations:
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
  
 ## Studies within ISRaD
-Currently, there are 181 entries in ISRaD, which are from the following publications:
+Currently, there are 182 entries in ISRaD, which are from the following publications:
  
 *  Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The dynamics of organic matter in rock fragments in soil investigated by 14C dating and measurements of 13C. European Journal of Soil Science, 53(1), 147–159. doi:10.1046/j.1365-2389.2002.00432.x
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
@@ -58,6 +58,7 @@ Currently, there are 181 entries in ISRaD, which are from the following publicat
 *  Fernandez, I. J., Rustad, L. E., & Lawrence, G. B. (1993). Estimating total soil mass, nutrient content, and trace metals in soils under a low elevation spruce-fir forest. Canadian Journal of Soil Science, 73(3), 317–328. doi:10.4141/cjss93-034
 *  Fierer, N., Chadwick, O. A., & Trumbore, S. E. (2005). Production of CO2 in Soil Profiles of a California Annual Grassland. Ecosystems, 8(4), 412–429. doi:10.1007/s10021-003-0151-y
 *  Gaudinski, J. B., Trumbore, S. E., Davidson, E. A., & Zheng, S. (2000). Biogeochemistry, 51(1), 33–69. doi:10.1023/a:1006301010014
+*  Gentsch, N., Wild, B., Mikutta, R., Capek, P., Diáková, K., Schrumpf, M., … Guggenberger, G. (2018). Temperature response of permafrost soil carbon is attenuated by mineral protection. Global Change Biology, 24(8), 3401–3415. doi:10.1111/gcb.14316
 *  Gillson, L. (2004). Testing non-equilibrium theories in savannas: 1400 years of vegetation change in Tsavo National Park, Kenya. Ecological Complexity, 1(4), 281–298. doi:10.1016/j.ecocom.2004.06.001
 *  Heckman, K., Lawrence, C. R., & Harden, J. W. (2018). A sequential selective dissolution method to quantify storage and stability of organic carbon associated with Al and Fe hydroxide phases. Geoderma, 312, 24–35. doi:10.1016/j.geoderma.2017.09.043
 *  GOH, K. M., STOUT, J. D., & RAFTER, T. A. (1977). RADIOCARBON ENRICHMENT OF SOIL ORGANIC MATTER FRACTIONS IN NEW ZEALAND SOILS. Soil Science, 123(6), 385–391. doi:10.1097/00010694-197706000-00007
