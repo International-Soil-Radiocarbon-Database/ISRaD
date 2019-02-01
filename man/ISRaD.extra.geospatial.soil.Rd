@@ -9,10 +9,10 @@ ISRaD.extra.geospatial.soil(database, geodata_soil_directory)
 \arguments{
 \item{database}{ISRaD dataset object.}
 
-\item{geodata_soil_directory}{directory where geospatial soil datasets are found, or to which the files can be downloaded.}
+\item{geodata_soil_directory}{directory where geospatial soil datasets are found, or to which can be downloaded.}
 }
 \description{
-Function to download and extract soil data from ISRIC spatial data products. WARNING: downloads (if necessary) large data files (>15 GB total)
+Function to download and extract soil data from ISRIC spatial data products. WARNING: downloads large data files (>15 GB total)
 }
 \details{
 Uses site and profile latitude and longitute to extract soil classifications and characteristics from .tif geospatial files acquired from ISRIC (https://www.isric.org/explore/soilgrids).
@@ -25,5 +25,5 @@ Hengl T, de Jesus JM, MacMillan RA, Batjes NH, Heuvelink GBM, et al. (2014) Soil
 Shangguan, W., Hengl, T., de Jesus, J. M., Yuan, H. and Dai, Y. (2016), Mapping the global depth to bedrock for land surface modeling. J. Adv. Model. Earth Syst. doi:10.1002/2016MS000686.
 }
 \author{
-Shane Stoner, Jeff Beem-Miller
+Shane Stoner sstoner@bgc-jena.mpg.de
 }
