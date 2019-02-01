@@ -57,7 +57,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
 
   removed_entries<-setdiff(ISRaD_data$metadata$entry_name, ISRaD_data_compiled$metadata$entry_name)
   if(length(removed_entries)==0) removed_entries <- "none"
-  cat("\t\t entry_name values removed from the data:", new_entries, "\n")
+  cat("\t\t entry_name values removed from the data:", removed_entries, "\n")
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")
   if (reviewed==2){

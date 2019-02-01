@@ -13,7 +13,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( flux interstitial fraction incubation )
+	NOTE: empty tabs detected ( flux interstitial incubation )
 
 Not checking dataset doi because 'checkdoi==F'...
 
@@ -86,6 +86,7 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
+    metadata_note : 1
     template_version : 1
  site tab...1 observations
     entry_name : 1
@@ -93,34 +94,56 @@ Summary statistics...
     site_lat : 1
     site_long : 1
     site_elevation : 1
- profile tab...3 observations
+ profile tab...1 observations
+    entry_name : 1
+    site_name : 1
+    pro_name : 1
+    pro_note : 1
+    pro_treatment : 1
+    pro_MAT : 1
+    pro_MAP : 1
+    pro_soil_taxon : 1
+    pro_soil_taxon_sys : 1
+    pro_land_cover : 1
+    pro_lc_phenology : 1
+    pro_lc_leaf_type : 1
+    pro_veg_note : 1
+ flux tab...0 observations
+ layer tab...3 observations
     entry_name : 3
     site_name : 3
     pro_name : 3
-    pro_note : 3
-    pro_treatment : 3
-    pro_soil_taxon : 3
-    pro_soil_taxon_sys : 3
-    pro_land_cover : 3
-    pro_veg_note : 3
- flux tab...0 observations
- layer tab...9 observations
+    lyr_name : 3
+    lyr_obs_date_y : 3
+    lyr_top : 3
+    lyr_bot : 3
+    lyr_hzn : 3
+    lyr_bd_samp : 3
+    lyr_sand_tot_psa : 3
+    lyr_silt_tot_psa : 3
+    lyr_clay_tot_psa : 3
+    lyr_coarse_tot : 3
+    lyr_ph : 3
+    lyr_cat_exch : 3
+    lyr_c_tot : 3
+    lyr_n_tot : 3
+    lyr_14c : 3
+    lyr_14c_sigma : 3
+ interstitial tab...0 observations
+ fraction tab...9 observations
     entry_name : 9
     site_name : 9
     pro_name : 9
     lyr_name : 9
-    lyr_obs_date_y : 9
-    lyr_top : 9
-    lyr_bot : 9
-    lyr_hzn : 9
-    lyr_bd_samp : 9
-    lyr_c_tot : 9
-    lyr_14c : 9
-    lyr_14c_sigma : 9
-    lyr_fraction_modern : 9
-    lyr_fraction_modern_sigma : 9
- interstitial tab...0 observations
- fraction tab...0 observations
+    frc_name : 9
+    frc_input : 9
+    frc_scheme : 9
+    frc_scheme_units : 9
+    frc_lower : 9
+    frc_upper : 9
+    frc_agent : 9
+    frc_14c : 9
+    frc_14c_sigma : 9
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
