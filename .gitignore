@@ -1,7 +1,6 @@
 inst/doc
 ##ignore mac files
 .DS_Store
-
 ##ignore R files
 .Rproj.user
 .Rhistory
@@ -11,3 +10,4 @@ ISRaD.Rproj
 # Folders
 _site/
 .sass-cache/
+DESCRIPTION
