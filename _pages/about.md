@@ -42,28 +42,43 @@ Please report issues by posting to <a href="https://github.com/International-Soi
 
 ## Steering committee
 The steering committee provides scientific leadership for the project and sets the main goals and vision.
-Currently, these are:
+The ISRaD steering committe includes:
 
-* Corey Lawrence
+* Corey Lawrence, US Geological Survey
+* Sue Trumbore, Max Planck Institute
+* Alison Hoyt, Max Planck Institute
+* Carlos Sierra, Max Planck Institute
+* Joseph Blankenship, University of Arizona
+* Susan Crow, University of Hawaii
+* Katherine Heckman, US Forest Service
 
 ### Contributors
 Contributors are individuals who contribute data and code for the database. 
-Given the history of this project, main contributors have been:
+Current contributors to include:
 
 * Corey Lawrence
-* Powell-Center group
 * Susan Trumbore
 * Jennifer Harden
 * Christine Hatte
 * Alison Hoyt
 * Jeffrey Beem-Miller
 * Grey Monroe
+* Paul Levine
+* Olga Vinduskova
+* Karis McFarlane
+* Caitlin Hicks-Pries
+* Kathe Todd-Brown
+* USGS Powell Center group
 
 ### Maintainers
 Maintainers are in charge of the integrity of the code. Currently, they are:
 
 * Grey Monroe
 * Carlos Sierra
+* Alison Hoyt
+* Shane Stoner
+* Jeff Beem-Miller
+* Corey Lawrence
 
 ### Expert Reviewers
 Expert reviewers review all data submitted to ISRaD. Currently, they are:
