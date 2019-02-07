@@ -4,10 +4,15 @@
 \alias{read_Treat2016}
 \title{Read in data for Treat 2016.}
 \usage{
-read_Treat2016(dowloadDir = "temp")
+read_Treat2016(download = T, downloadDir = "temp",
+  convertedDir = "~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/")
 }
 \arguments{
-\item{dowloadDir}{directory where data files will be downloaded}
+\item{download}{boolean, if T the Treat datasets will be downloaded from pangea. Otherwise, they files in downloadDir will be used.}
+
+\item{downloadDir}{directory where data files will be downloaded}
+
+\item{convertedDir}{directory where data files that are converted to ISRaD template will be saved}
 }
 \value{
 writes out files for individual data objects

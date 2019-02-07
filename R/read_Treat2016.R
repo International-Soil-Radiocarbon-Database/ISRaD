@@ -2,12 +2,15 @@
 #' 
 #' Currently doesn't work and is under development
 #'
-#' @param dowloadDir directory where data files will be downloaded
+#' @param download boolean, if T the Treat datasets will be downloaded from pangea. Otherwise, they files in downloadDir will be used.
+#' @param downloadDir directory where data files will be downloaded
+#' @param convertedDir directory where data files that are converted to ISRaD template will be saved
 #' @return writes out files for individual data objects
 #' @import pangaear
+#' @export
 
 
-read_Treat2016 <- function(dowloadDir = 'temp'){
+read_Treat2016 <- function(download = T, downloadDir = 'temp', convertedDir ="~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/"){
 
 # setup -------------------------------------------------------------------
 
@@ -23,16 +26,21 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   names(template)<-getSheetNames(template_file)
   template<-lapply(template, function(x) x %>% mutate_all(as.character))
 
+  dois<-read.csv("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/dois.csv")
 
 # S2 ----------------------------------------------------------------------
-
+if (download == T ){
   treatS2<-pangaear::pg_data(doi = '10.1594/PANGAEA.863695')[[1]]$data
+  write.csv(treatS2, paste0(downloadDir, "treatS2.csv"))
+} else {
+  treatS2<-read.csv(paste0(downloadDir, "treatS2.csv"))
+  
+}
   
   data_template<-list()
   #metadata
   data_template$metadata<-data.frame(
     entry_name=treatS2$Reference,
-    doi="unknown",
     compilation_doi="10.1594/PANGAEA.863689",
     contact_name = "Alison Hoyt",
     contact_email= "ahoyt@bgc-jena.mpg.de",
@@ -40,18 +48,24 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     curator_email="cctreat@gmail.com",
     curator_organization="USGS",
     metadata_note="Treat et al 2016 compliation",
-    modification_date_y=format(Sys.Date(),"%yyyy"),
+    modification_date_y=format(Sys.Date(),"%Y"),
     modification_date_m=format(Sys.Date(),"%m"),
     modification_date_d=format(Sys.Date(),"%d"),
     bibliographical_reference=treatS2$Reference,
     template_version=template$metadata$template_version[3]
   )
+
+  data_template$metadata$doi<-dois$doi[match(gsub(",","_", gsub(" ","",   gsub("\\.","", data_template$metadata$entry_name))), dois$entry_name)]
+  data_template$metadata$doi<-as.character(data_template$metadata$doi)
+  data_template$metadata$doi[which(is.na(data_template$metadata$doi))]<-"unknown"
   
   data_template$metadata[]<-lapply(data_template$metadata, as.character)
   data_template$metadata=bind_rows(template$metadata[c(1,2),], data_template$metadata)
   data_template$metadata=data_template$metadata[which(!duplicated(data_template$metadata)),]
   
   #site
+  treatS2$Site<-paste(treatS2$Reference, treatS2$Latitude, treatS2$Longitude, sep = "_")
+  
   data_template$site<-data.frame(
     entry_name=treatS2$Reference,
     site_name= treatS2$Site,
@@ -83,8 +97,11 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   #layer
   
   #need to use the S1 file for getting observation year
+  
   treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1.xlsx", startRow=422)
+  
 
+  
   data_template$layer<-data.frame(
     entry_name=treatS2$Reference,
     site_name= treatS2$Site,
@@ -122,13 +139,18 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   
 # S3 ----------------------------------------------------------------------
 
-  treatS3<-pangaear::pg_data(doi = '10.1594/PANGAEA.863692')[[1]]$data
-
+  if (download == T ){
+    treatS3<-pangaear::pg_data(doi = '10.1594/PANGAEA.863692')[[1]]$data
+    write.csv(treatS3, paste0(downloadDir, "treatS3.csv"))
+  } else {
+    treatS3<-read.csv(paste0(downloadDir, "treatS3.csv"))
+    
+  }
+  
   data_template<-list()
   #metadata
   data_template$metadata<-data.frame(
     entry_name=treatS3$Reference,
-    doi="unknown",
     compilation_doi="10.1594/PANGAEA.863689",
     contact_name = "Alison Hoyt",
     contact_email= "ahoyt@bgc-jena.mpg.de",
@@ -136,18 +158,25 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     curator_email="cctreat@gmail.com",
     curator_organization="USGS",
     metadata_note="Treat et al 2016 compliation",
-    modification_date_y=format(Sys.Date(),"%yyyy"),
+    modification_date_y=format(Sys.Date(),"%Y"),
     modification_date_m=format(Sys.Date(),"%m"),
     modification_date_d=format(Sys.Date(),"%d"),
     bibliographical_reference=treatS3$Reference,
     template_version=template$metadata$template_version[3]
   )
   
+  data_template$metadata$doi<-dois$doi[match(gsub(",","_", gsub(" ","",   gsub("\\.","", data_template$metadata$entry_name))), dois$entry_name)]
+  data_template$metadata$doi<-as.character(data_template$metadata$doi)
+  data_template$metadata$doi[which(is.na(data_template$metadata$doi))]<-"unknown"
+  
   data_template$metadata[]<-lapply(data_template$metadata, as.character)
   data_template$metadata=bind_rows(template$metadata[c(1,2),], data_template$metadata)
   data_template$metadata=data_template$metadata[which(!duplicated(data_template$metadata)),]
   
   #site
+  
+  treatS3$Site<-paste(treatS3$Reference, treatS3$Latitude, treatS3$Longitude, sep = "_")
+  
   data_template$site<-data.frame(
     entry_name=treatS3$Reference,
     site_name= treatS3$Site,
@@ -180,7 +209,7 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   
   treatS3$lyr_bot <- treatS3$`Depth [m]`*100
   treatS3$`Samp thick [cm]`[is.na(treatS3$`Samp thick [cm]`)]<-0
-  treatS3$lyr_top <- treatS3$lyr_bot + treatS3$`Samp thick [cm]`
+  treatS3$lyr_top <- treatS3$lyr_bot - treatS3$`Samp thick [cm]`
   
   layer_fraction_key<-read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/Dated_material_unique_matching.xlsx")
   layer_materials<-layer_fraction_key %>% select(.data$material, .data$key) %>% filter(.data$key==1)
@@ -200,7 +229,6 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   treatS3_fractions$lyr_14c<-NA
   treatS3_fractions$lyr_14c_sd<-NA
   
-  
   data_template$layer<-data.frame(
     entry_name=c(treatS3_layers$Reference,treatS3_fractions$Reference),
     site_name= c(treatS3_layers$Site,treatS3_fractions$Site),
@@ -215,7 +243,8 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
   
   #need to use the S1 file for getting observation year
   treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1.xlsx", startRow=422)
-  data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
+
+   data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
   
   
   data_template$layer[]<-lapply(data_template$layer, as.character)
@@ -233,6 +262,12 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     pro_name=treatS3_fractions$ID,
     lyr_name=treatS3_fractions$lyr_name,
     frc_name=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated material`),
+    frc_input=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated material`),
+    frc_scheme="Manual_Separation",
+    frc_scheme_units="presence/absence",
+    frc_lower="-Inf",
+    frc_upper="Inf",
+    frc_agent="manual",
     frc_rc_lab_number=treatS3_fractions$`Lab label`,
     frc_14c=treatS3_fractions$`Age dated [ka]`,
     frc_14c_sd=as.data.frame(treatS3_fractions)[,15] #cant use column name because it contains non-ASCII character 
@@ -277,7 +312,7 @@ read_Treat2016 <- function(dowloadDir = 'temp'){
     
     ref_data$`controlled vocabulary` <- template$`controlled vocabulary`
     
-    write.xlsx(ref_data, file = paste0("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", ref, ".xlsx"))
+    write.xlsx(ref_data, file = paste0(convertedDir, ref, ".xlsx"))
   }
   
 }
