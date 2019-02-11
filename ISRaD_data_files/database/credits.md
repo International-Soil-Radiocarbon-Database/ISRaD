@@ -5,7 +5,7 @@ ISRaD has been built based on two main compilations:
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
  
 ## Studies within ISRaD
-Currently, there are 183 entries in ISRaD, which are from the following publications:
+Currently, there are 184 entries in ISRaD, which are from the following publications:
  
 *  Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The dynamics of organic matter in rock fragments in soil investigated by 14C dating and measurements of 13C. European Journal of Soil Science, 53(1), 147–159. doi:10.1046/j.1365-2389.2002.00432.x
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
@@ -96,6 +96,7 @@ Currently, there are 183 entries in ISRaD, which are from the following publicat
 *  Krull, E. S., Bestland, E. A., Skjemstad, J. O., & Parr, J. F. (2006). Geochemistry (d13C, d15N, 13C NMR) and residence times (14C and OSL) of soil organic matter from red-brown earths of South Australia: Implications for soil genesis. Geoderma, 132(3-4), 344–360. doi:10.1016/j.geoderma.2005.06.001
 *  Ladyman, S. J., & Harkness, D. D. (1980). Carbon Isotope Measurement as An Index of Soil Development. Radiocarbon, 22(03), 885–891. doi:10.1017/s0033822200010286
 *  Laskar, A. H., Yadava, M. G., & Ramesh, R. (2012). Radiocarbon and Stable Carbon Isotopes in Two Soil Profiles from Northeast India. Radiocarbon, 54(01), 81–89. doi:10.2458/azu_js_rc.v54i1.15840
+*  Lassey, K. R., Tate, K. R., Sparks, R. J., & Claydon, J. J. (1996). Historic Measurements of Radiocarbon in New Zealand Soils. Radiocarbon, 38(02), 253–270. doi:10.1017/s003382220001763x
 *  Lavoie, M., Mack, M. C., & Schuur, E. A. G. (2011). Effects of elevated nitrogen and temperature on carbon and nitrogen dynamics in Alaskan arctic and boreal soils. Journal of Geophysical Research, 116(G3). doi:10.1029/2010jg001629
 *  Lawrence, C. R., Harden, J. W., Xu, X., Schulz, M. S., & Trumbore, S. E. (2015). Long-term controls on soil organic carbon with depth and time: A case study from the Cowlitz River Chronosequence, WA USA. Geoderma, 247-248, 73–87. doi:10.1016/j.geoderma.2015.02.005
 *  Leavitt, S. W., Follett, R. F., Kimble, J. M., & Pruessner, E. G. (2007). Radiocarbon and d13C depth profiles of soil organic carbon in the U.S. Great Plains: A possible spatial record of paleoenvironment and paleovegetation. Quaternary International, 162-163, 21–34. doi:10.1016/j.quaint.2006.10.033

@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2019-02-11 08:51:55 
+ 2019-02-11 11:48:17 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -219,7 +219,7 @@ Compiling data files in D:/ISRaD/ISRaD_data_files/
 
  97 checking Laskar_2012.xlsx ...passed
 
- 98 checking Lassey_1996.xlsx ...failed QAQC. Check report in QAQC folder.
+ 98 checking Lassey_1996.xlsx ...passed
 
  99 checking Lavoie_2011.xlsx ...passed
 
@@ -411,72 +411,72 @@ Compiling data files in D:/ISRaD/ISRaD_data_files/
 
 Summary statistics...
 
- metadata tab...196 observations
-    entry_name : 196
-    doi : 196
-    compilation_doi : 77
-    curator_name : 196
-    curator_organization : 196
-    curator_email : 196
-    modification_date_y : 196
-    modification_date_m : 196
-    modification_date_d : 196
-    contact_name : 196
-    contact_email : 196
+ metadata tab...197 observations
+    entry_name : 197
+    doi : 197
+    compilation_doi : 78
+    curator_name : 197
+    curator_organization : 197
+    curator_email : 197
+    modification_date_y : 197
+    modification_date_m : 197
+    modification_date_d : 197
+    contact_name : 197
+    contact_email : 197
     contact_orcid_id : 41
-    bibliographical_reference : 196
-    metadata_note : 68
+    bibliographical_reference : 197
+    metadata_note : 69
     associated_datasets : 37
     template_version : 103
- site tab...566 observations
-    entry_name : 566
-    site_name : 566
-    site_lat : 566
-    site_long : 566
+ site tab...574 observations
+    entry_name : 574
+    site_name : 574
+    site_lat : 574
+    site_long : 574
     site_datum : 208
-    site_elevation : 469
-    site_note : 267
- profile tab...1763 observations
-    entry_name : 1763
-    site_name : 1763
+    site_elevation : 477
+    site_note : 275
+ profile tab...1772 observations
+    entry_name : 1772
+    site_name : 1772
     plot_name : 625
-    pro_name : 1763
+    pro_name : 1772
     pro_note : 566
     pro_lat : 362
     pro_long : 362
     pro_elevation : 148
-    pro_treatment : 1763
+    pro_treatment : 1772
     pro_treatment_note : 355
     pro_comp : 179
     pro_reps : 321
-    pro_MAT : 1131
-    pro_MAP : 1270
-    pro_usda_soil_order : 712
-    pro_soil_series : 341
-    pro_soil_taxon : 1130
-    pro_soil_taxon_sys : 934
+    pro_MAT : 1140
+    pro_MAP : 1279
+    pro_usda_soil_order : 721
+    pro_soil_series : 350
+    pro_soil_taxon : 1139
+    pro_soil_taxon_sys : 943
     pro_chrono_name : 6
     pro_soil_age : 128
     pro_soil_age_note : 6
     pro_MAST : 177
     pro_MASWC : 137
-    pro_land_cover : 1654
-    pro_lc_phenology : 7
-    pro_lc_leaf_type : 7
-    pro_lc_photosyn_path : 6
-    pro_veg_note : 1350
+    pro_land_cover : 1663
+    pro_lc_phenology : 8
+    pro_lc_leaf_type : 8
+    pro_lc_photosyn_path : 13
+    pro_veg_note : 1359
     pro_bedrock_depth : 113
     pro_depth_water : 109
     pro_thaw_depth : 66
-    pro_parent_material : 703
-    pro_parent_chem : 407
-    pro_parent_material_notes : 748
-    pro_2d_position : 217
-    pro_aspect : 59
-    pro_aspect_deg : 17
-    pro_slope : 215
-    pro_slope_shape : 93
-    pro_drainage_class : 327
+    pro_parent_material : 712
+    pro_parent_chem : 414
+    pro_parent_material_notes : 757
+    pro_2d_position : 218
+    pro_aspect : 66
+    pro_aspect_deg : 24
+    pro_slope : 224
+    pro_slope_shape : 96
+    pro_drainage_class : 336
     pro_soc : 156
     pro_soc_sigma : 47
     pro_soc_depth : 139
@@ -516,37 +516,37 @@ Summary statistics...
     flx_14c_sigma : 137
     flx_14c_sd : 17
     flx_fraction_modern : 20
- layer tab...6898 observations
-    entry_name : 6898
-    site_name : 6898
-    pro_name : 6898
-    lyr_name : 6898
-    lyr_obs_date_y : 6898
-    lyr_obs_date_m : 3057
-    lyr_obs_date_d : 2227
+ layer tab...6952 observations
+    entry_name : 6952
+    site_name : 6952
+    pro_name : 6952
+    lyr_name : 6952
+    lyr_obs_date_y : 6952
+    lyr_obs_date_m : 3111
+    lyr_obs_date_d : 2281
     lyr_all_org_neg : 290
-    lyr_top : 6898
-    lyr_bot : 6898
-    lyr_hzn : 3389
+    lyr_top : 6952
+    lyr_bot : 6952
+    lyr_hzn : 3443
     lyr_comp : 391
     lyr_note : 1277
     lyr_color : 347
     lyr_burn_ev : 53
-    lyr_bd_samp : 2264
+    lyr_bd_samp : 2304
     lyr_bd_tot : 1386
     lyr_bd_notes : 874
-    lyr_sand_tot_psa : 1190
-    lyr_silt_tot_psa : 1123
-    lyr_clay_tot_psa : 1489
+    lyr_sand_tot_psa : 1219
+    lyr_silt_tot_psa : 1152
+    lyr_clay_tot_psa : 1518
     lyr_coarse_tot : 627
     lyr_coarse_size_thresh : 601
-    lyr_texture_class : 214
+    lyr_texture_class : 259
     lyr_bet_surface_area : 115
     lyr_ph_cacl : 281
-    lyr_ph_h2o : 782
-    lyr_ph : 729
+    lyr_ph_h2o : 831
+    lyr_ph : 751
     lyr_ph_method : 582
-    lyr_cat_exch : 112
+    lyr_cat_exch : 161
     lyr_base_sum : 65
     lyr_cec_sum : 303
     lyr_ca_exch : 190
@@ -556,21 +556,21 @@ Summary statistics...
     lyr_ecec : 106
     lyr_bs : 243
     lyr_c_inorg : 501
-    lyr_c_org : 1710
+    lyr_c_org : 1759
     lyr_c_tot : 3474
     lyr_soc : 1161
     lyr_soc_sigma : 177
-    lyr_n_tot : 1996
+    lyr_n_tot : 2045
     lyr_son : 1
-    lyr_c_to_n : 1406
+    lyr_c_to_n : 1449
     lyr_loi : 44
     lyr_15n : 858
-    lyr_13c : 2108
-    lyr_rc_lab : 1146
-    lyr_rc_lab_number : 633
+    lyr_13c : 2143
+    lyr_rc_lab : 1181
+    lyr_rc_lab_number : 668
     lyr_rc_year : 1028
-    lyr_14c : 2647
-    lyr_14c_sigma : 1246
+    lyr_14c : 2682
+    lyr_14c_sigma : 1281
     lyr_14c_sd : 20
     lyr_fraction_modern : 2336
     lyr_fraction_modern_sigma : 1495
@@ -608,10 +608,10 @@ Summary statistics...
     lyr_fe_oxides : 95
     lyr_calcite_dolomite : 36
     lyr_zeolite : 6
-    lyr_bd_samp_fill_extra : 2
-    lyr_c_org_fill_extra : 5
+    lyr_bd_samp_fill_extra : 5
+    lyr_c_org_fill_extra : 8
     lyr_14c_fill_extra : 10
-    lyr_fill_notes_extra : 10
+    lyr_fill_notes_extra : 13
  interstitial tab...353 observations
     entry_name : 353
     site_name : 353
