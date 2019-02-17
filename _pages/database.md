@@ -60,7 +60,7 @@ The links below download the latest development version of the ISRaD database
 *   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_list.xlsx)
  full hierarchical database with additional columns compiled in a single .xlsx template
 ### Flattened *"ISRaD_extra"* data:
-*   <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_layer.csv" download>Download</a>
+*   <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/master/ISRaD_data_files/database/ISRaD_extra_flat_layer.csv" download target="_blank">Download</a>
 *   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_layer.csv) **Layer data** and associated information (Layer, Profile, Site, Metadata)
 *   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_flux.csv) **Flux data** and associated information as .csv (Flux, Profile, Site, Metadata)
 *   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_interstitial.csv) **Interstitial data** and associated information (Interstitial, Profile, Site, Metadata)
