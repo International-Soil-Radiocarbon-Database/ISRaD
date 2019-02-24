@@ -7,6 +7,7 @@
 #' @param geodata_clim_directory directory where geospatial climate datasets are found. Necessary to create ISRaD_Extra
 #' @param geodata_soil_directory directory where geospatial soil datasets are found. Necessary to create ISRaD_Extra
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
+#' @import stringr
 #' @export
 #' @examples
 #' \dontrun{
@@ -16,6 +17,7 @@
 
 ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_soil_directory){
 
+  requireNamespace("stringr")
 # Install local ISRaD -----------------------------------------------------
 
 
@@ -26,6 +28,12 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
 
 # Compile database --------------------------------------------------------
 
+  if (is.null(geodata_clim_directory) | is.null(geodata_soil_directory)){
+    cat("geodata_clim_directory and geodata_soil_directory must be specified.\n")
+    stop()
+  }
+  
+  
   cat("Compiling the data files in",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
   cat("You must review the compilation report log file when complete... \n\n")
   ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files/"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
@@ -96,9 +104,11 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
   cat("\tUpdating flattened data objects...\n")
   for(tab in c("flux","layer","interstitial","incubation","fraction")){
     flattened_data<-ISRaD.flatten(database=ISRaD_data, table = tab)
+    #flattened_data<-str_replace_all(flattened_data, "[\r\n]" , "")
     cat("writing ISRaD_data_flat_", tab, ".csv"," ...\n", sep = "")
     utils::write.csv(flattened_data, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_data_flat_", tab, ".csv"))
     flattened_extra<-ISRaD.flatten(database=ISRaD_extra, table = tab)
+    #flattened_extra<-str_replace_all(flattened_extra, "[\r\n]" , "")
     cat("writing ISRaD_extra_flat_", tab, ".csv"," ...\n", sep = "")
     utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_extra_flat_", tab, ".csv"))
 
