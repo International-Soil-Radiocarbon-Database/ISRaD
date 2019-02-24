@@ -13,20 +13,22 @@ ISRaD.extra.fill_dates<-function(database){
     for(r in 1:nrow(x$fraction)){
       
   x$fraction$frc_obs_date_y[r] <- ifelse(is.na(x$fraction$frc_obs_date_y[r]),
-                                     as.character(x$layer$lyr_obs_date_y)[which( as.character(x$layer$lyr_name)== as.character(x$fraction$lyr_name)[r] &  as.character(x$layer$entry_name)== as.character(x$fraction$entry_name)[r])],
+                                     as.character(x$layer$lyr_obs_date_y)[which(as.character(x$layer$lyr_name)== as.character(x$fraction$lyr_name)[r] &  as.character(x$layer$entry_name)== as.character(x$fraction$entry_name)[r])],
                                  x$fraction$frc_obs_date_y[r])
     }
+    x$fraction$frc_obs_date_y<-as.numeric(x$fraction$frc_obs_date_y)
     
   return(x)
 }
 
 inc_date_fill <- function(x) {
-  for(r in 1:nrow(x$fraction)){
+  for(r in 1:nrow(x$incubation)){
     
-    x$incubation$frc_obs_date_y[r] <- ifelse(is.na(x$incubation$inc_obs_date_y[r]),
-                                           as.character(x$layer$lyr_obs_date_y)[which( as.character(x$layer$lyr_name)== as.character(x$incubation$lyr_name)[r] &  as.character(x$layer$entry_name)== as.character(x$incubation$entry_name)[r])],
+    x$incubation$inc_obs_date_y[r] <- ifelse(is.na(x$incubation$inc_obs_date_y[r]),
+                                           as.character(x$layer$lyr_obs_date_y)[which(as.character(x$layer$lyr_name)== as.character(x$incubation$lyr_name)[r] &  as.character(x$layer$entry_name)== as.character(x$incubation$entry_name)[r])],
                                            x$incubation$inc_obs_date_y[r])
   }
+  x$incubation$inc_obs_date_y<-as.numeric(x$incubation$inc_obs_date_y)
   
   return(x)
 }
