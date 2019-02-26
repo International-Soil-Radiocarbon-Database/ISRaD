@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2019-02-25 09:26:57 
+ 2019-02-26 12:04:14 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -21,7 +21,7 @@ Checking controlled vocab between ISRaD template and info file...
  fraction ...
  incubation ...
 
-Compiling data files in /Users/greymonroe/github/ISRaD/ISRaD_data_files/ 
+Compiling data files in D:/ISRaD/ISRaD_data_files/ 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
@@ -431,50 +431,50 @@ Summary statistics...
     bibliographical_reference : 199
     metadata_note : 69
     associated_datasets : 38
-    template_version : 105
- site tab...579 observations
-    entry_name : 579
-    site_name : 579
-    site_lat : 579
-    site_long : 579
-    site_datum : 213
+    template_version : 106
+ site tab...583 observations
+    entry_name : 583
+    site_name : 583
+    site_lat : 583
+    site_long : 583
+    site_datum : 212
     site_elevation : 478
-    site_note : 276
- profile tab...1785 observations
-    entry_name : 1785
-    site_name : 1785
+    site_note : 281
+ profile tab...1787 observations
+    entry_name : 1787
+    site_name : 1787
     plot_name : 625
-    pro_name : 1785
+    pro_name : 1787
     pro_note : 570
     pro_lat : 366
     pro_long : 366
     pro_elevation : 152
-    pro_treatment : 1785
+    pro_treatment : 1787
     pro_treatment_note : 355
-    pro_comp : 188
+    pro_comp : 190
     pro_reps : 321
     pro_MAT : 1144
     pro_MAP : 1283
-    pro_usda_soil_order : 734
-    pro_soil_series : 350
-    pro_soil_taxon : 1147
-    pro_soil_taxon_sys : 956
+    pro_usda_soil_order : 739
+    pro_soil_series : 352
+    pro_soil_taxon : 1144
+    pro_soil_taxon_sys : 961
     pro_chrono_name : 10
     pro_soil_age : 132
     pro_soil_age_note : 6
     pro_MAST : 177
     pro_MASWC : 137
-    pro_land_cover : 1676
+    pro_land_cover : 1678
     pro_lc_phenology : 8
     pro_lc_leaf_type : 8
     pro_lc_photosyn_path : 13
-    pro_veg_note : 1366
+    pro_veg_note : 1364
     pro_bedrock_depth : 117
     pro_complete : 4
     pro_depth_water : 109
     pro_thaw_depth : 66
-    pro_parent_material : 722
-    pro_parent_chem : 414
+    pro_parent_material : 719
+    pro_parent_chem : 411
     pro_parent_material_notes : 767
     pro_2d_position : 218
     pro_aspect : 70
@@ -521,20 +521,20 @@ Summary statistics...
     flx_14c_sigma : 137
     flx_14c_sd : 17
     flx_fraction_modern : 20
- layer tab...6978 observations
-    entry_name : 6978
-    site_name : 6978
-    pro_name : 6978
-    lyr_name : 6978
-    lyr_obs_date_y : 6978
-    lyr_obs_date_m : 3111
+ layer tab...6993 observations
+    entry_name : 6993
+    site_name : 6993
+    pro_name : 6993
+    lyr_name : 6993
+    lyr_obs_date_y : 6993
+    lyr_obs_date_m : 3108
     lyr_obs_date_d : 2281
     lyr_all_org_neg : 292
-    lyr_top : 6978
-    lyr_bot : 6978
-    lyr_hzn : 3463
-    lyr_comp : 391
-    lyr_note : 1303
+    lyr_top : 6993
+    lyr_bot : 6993
+    lyr_hzn : 3478
+    lyr_comp : 409
+    lyr_note : 1300
     lyr_color : 347
     lyr_burn_ev : 53
     lyr_bd_samp : 2304
@@ -560,26 +560,26 @@ Summary statistics...
     lyr_k_exch : 180
     lyr_ecec : 106
     lyr_bs : 253
-    lyr_c_inorg : 501
-    lyr_c_org : 1770
-    lyr_c_tot : 3497
+    lyr_c_inorg : 519
+    lyr_c_org : 1788
+    lyr_c_tot : 3514
     lyr_soc : 1161
     lyr_soc_sigma : 177
-    lyr_n_tot : 2068
+    lyr_n_tot : 2081
     lyr_son : 1
-    lyr_c_to_n : 1472
+    lyr_c_to_n : 1485
     lyr_loi : 57
     lyr_15n : 870
-    lyr_13c : 2155
-    lyr_rc_lab : 1181
-    lyr_rc_lab_number : 668
-    lyr_rc_year : 1028
-    lyr_14c : 2682
+    lyr_13c : 2172
+    lyr_rc_lab : 1198
+    lyr_rc_lab_number : 686
+    lyr_rc_year : 1046
+    lyr_14c : 2681
     lyr_14c_sigma : 1281
     lyr_14c_sd : 20
     lyr_fraction_modern : 2336
-    lyr_fraction_modern_sigma : 1495
-    lyr_fraction_modern_sd : 7
+    lyr_fraction_modern_sigma : 1513
+    lyr_fraction_modern_sd : 25
     lyr_mbc_method : 139
     lyr_raw_mbc : 12
     lyr_reported_mbc : 124
@@ -643,43 +643,43 @@ Summary statistics...
     ist_14c_sigma : 154
     ist_14c_sd : 11
     ist_fraction_modern : 43
- fraction tab...3641 observations
-    entry_name : 3641
-    site_name : 3641
-    pro_name : 3641
-    lyr_name : 3641
-    frc_name : 3641
-    frc_input : 3641
-    frc_property : 3004
-    frc_scheme : 3641
-    frc_scheme_units : 3641
-    frc_lower : 3641
-    frc_upper : 3641
-    frc_agent : 3641
+ fraction tab...3703 observations
+    entry_name : 3703
+    site_name : 3703
+    pro_name : 3703
+    lyr_name : 3703
+    frc_name : 3703
+    frc_input : 3703
+    frc_property : 3051
+    frc_scheme : 3703
+    frc_scheme_units : 3703
+    frc_lower : 3703
+    frc_upper : 3703
+    frc_agent : 3703
     frc_scheme_conc : 256
     frc_comp : 396
-    frc_note : 938
-    frc_mass_perc : 1275
-    frc_obs_date_y : 842
+    frc_note : 931
+    frc_mass_perc : 1342
+    frc_obs_date_y : 928
     frc_obs_date_m : 368
     frc_obs_date_d : 351
     frc_bet_surface_area : 21
-    frc_c_perc : 1636
-    frc_c_tot : 820
-    frc_c_org : 1328
-    frc_c_inorg : 21
-    frc_n_tot : 1162
-    frc_c_to_n : 1044
+    frc_c_perc : 1703
+    frc_c_tot : 887
+    frc_c_org : 1414
+    frc_c_inorg : 107
+    frc_n_tot : 1214
+    frc_c_to_n : 1096
     frc_15n : 623
-    frc_13c : 1735
-    frc_rc_lab : 1590
-    frc_rc_lab_number : 670
-    frc_rc_year : 1562
-    frc_14c : 1689
+    frc_13c : 1791
+    frc_rc_lab : 1676
+    frc_rc_lab_number : 756
+    frc_rc_year : 1648
+    frc_14c : 1660
     frc_14c_sigma : 821
     frc_14c_sd : 47
-    frc_fraction_modern : 1065
-    frc_fraction_modern_sigma : 693
+    frc_fraction_modern : 1151
+    frc_fraction_modern_sigma : 779
     frc_fraction_modern_sd : 42
     frc_mbc_method : 50
     frc_reported_mbc : 46
@@ -692,6 +692,8 @@ Summary statistics...
     frc_si_ox : 46
     frc_noncrystalline_ox : 12
     frc_ox_notes : 40
+    frc_fe_hy : 21
+    frc_al_hy : 21
     frc_fe_dith : 56
     frc_al_dith : 43
     frc_quartz : 36
