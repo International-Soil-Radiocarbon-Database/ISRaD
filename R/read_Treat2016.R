@@ -26,16 +26,20 @@ read_Treat2016 <- function(download = T, downloadDir = 'temp', convertedDir ="~/
   names(template)<-getSheetNames(template_file)
   template<-lapply(template, function(x) x %>% mutate_all(as.character))
 
-  dois<-read.csv("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/dois.csv")
+  dois<-utils::read.csv("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/dois.csv")
 
 # S2 ----------------------------------------------------------------------
 if (download == T ){
   treatS2<-pangaear::pg_data(doi = '10.1594/PANGAEA.863695')[[1]]$data
-  write.csv(treatS2, paste0(downloadDir, "treatS2.csv"))
+  utils::write.csv(treatS2, paste0(downloadDir, "treatS2.csv"))
 } else {
-  treatS2<-read.csv(paste0(downloadDir, "treatS2.csv"))
+  treatS2<-utils::read.csv(paste0(downloadDir, "treatS2.csv"))
   
 }
+
+  
+  treatS2$Site<-paste(treatS2$Reference,":", treatS2$Longitude, "," ,treatS2$Latitude)
+  
   
   data_template<-list()
   #metadata
@@ -64,14 +68,12 @@ if (download == T ){
   data_template$metadata=data_template$metadata[which(!duplicated(data_template$metadata)),]
   
   #site
-  treatS2$Site<-paste(treatS2$Reference, treatS2$Latitude, treatS2$Longitude, sep = "_")
   
   data_template$site<-data.frame(
     entry_name=treatS2$Reference,
     site_name= treatS2$Site,
     site_lat= treatS2$Latitude,
-    site_long= treatS2$Longitude,
-    site_elevation= treatS2$`Height [m]`
+    site_long= treatS2$Longitude
   )
   data_template$site[]<-lapply(data_template$site, as.character)
   data_template$site=bind_rows(template$site[c(1,2),], data_template$site)
@@ -84,7 +86,8 @@ if (download == T ){
    pro_treatment="control",
    pro_name=treatS2$ID,
    pro_lat= treatS2$Latitude,
-   pro_long= treatS2$Longitude
+   pro_long= treatS2$Longitude,
+   pro_elevation= treatS2$`Height [m]`
   )
   
   data_template$profile[]<-lapply(data_template$profile, as.character)
@@ -98,10 +101,8 @@ if (download == T ){
   
   #need to use the S1 file for getting observation year
   
-  treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1.xlsx", startRow=422)
-  
+  treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1_edit.xlsx", startRow=422)
 
-  
   data_template$layer<-data.frame(
     entry_name=treatS2$Reference,
     site_name= treatS2$Site,
@@ -109,6 +110,7 @@ if (download == T ){
     lyr_name=paste(treatS2$ID, as.numeric((as.factor(paste(treatS2$`Depth bot [m]`, treatS2$`Depth top [m]`)))), sep="-layer"),
     lyr_bot=treatS2$`Depth bot [m]` *100,
     lyr_top=treatS2$`Depth top [m]` *100,
+    lyr_all_org_neg = "yes",
     lyr_bd_samp=treatS2$`DBD [g/cm**3]`,
     lyr_loi= treatS2$`LOI [%]`,
     lyr_c_tot=treatS2$`TC [%]`,
@@ -141,11 +143,17 @@ if (download == T ){
 
   if (download == T ){
     treatS3<-pangaear::pg_data(doi = '10.1594/PANGAEA.863692')[[1]]$data
-    write.csv(treatS3, paste0(downloadDir, "treatS3.csv"))
+    utils::write.csv(treatS3, paste0(downloadDir, "treatS3.csv"))
   } else {
-    treatS3<-read.csv(paste0(downloadDir, "treatS3.csv"))
+    treatS3<-utils::read.csv(paste0(downloadDir, "treatS3.csv"))
     
   }
+  
+  treatS3<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S3_edit.xlsx", startRow=221)
+  
+  
+  treatS3 <- treatS3 %>% filter(.data$`Method.comm` != "210Pb")
+  treatS3$Site<-paste(treatS3$Reference,":", treatS3$Longitude, "," ,treatS3$Latitude)
   
   data_template<-list()
   #metadata
@@ -174,15 +182,12 @@ if (download == T ){
   data_template$metadata=data_template$metadata[which(!duplicated(data_template$metadata)),]
   
   #site
-  
-  treatS3$Site<-paste(treatS3$Reference, treatS3$Latitude, treatS3$Longitude, sep = "_")
-  
+
   data_template$site<-data.frame(
     entry_name=treatS3$Reference,
     site_name= treatS3$Site,
     site_lat= treatS3$Latitude,
-    site_long= treatS3$Longitude,
-    site_elevation= treatS3$`Height [m]`
+    site_long= treatS3$Longitude
   )
   data_template$site[]<-lapply(data_template$site, as.character)
   data_template$site=bind_rows(template$site[c(1,2),], data_template$site)
@@ -195,7 +200,8 @@ if (download == T ){
     pro_name=treatS3$ID,
     pro_treatment="control",
     pro_lat= treatS3$Latitude,
-    pro_long= treatS3$Longitude
+    pro_long= treatS3$Longitude,
+    pro_elevation= treatS3$`Height.[m]`
   )
   
   data_template$profile[]<-lapply(data_template$profile, as.character)
@@ -207,27 +213,27 @@ if (download == T ){
   
   #layer
   
-  treatS3$lyr_bot <- treatS3$`Depth [m]`*100
-  treatS3$`Samp thick [cm]`[is.na(treatS3$`Samp thick [cm]`)]<-0
-  treatS3$lyr_top <- treatS3$lyr_bot - treatS3$`Samp thick [cm]`
+  treatS3$lyr_bot <- treatS3$`Depth.[m]`*100
+  treatS3$`Samp.thick.[cm]`[which(is.na(treatS3$`Samp.thick.[cm]`))]<-0
+  treatS3$lyr_top <- treatS3$lyr_bot - treatS3$`Samp.thick.[cm]`
   
   layer_fraction_key<-read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/Dated_material_unique_matching.xlsx")
   layer_materials<-layer_fraction_key %>% select(.data$material, .data$key) %>% filter(.data$key==1)
   fraction_materials<-layer_fraction_key %>% select(.data$material, .data$key) %>% filter(.data$key==2)
   
 
-  treatS3_layers<-treatS3 %>% filter(.data$`Dated material` %in% layer_materials$material)
-  treatS3_layers$lyr_name<-paste(treatS3_layers$ID, as.numeric((as.factor(paste(treatS3_layers$`Depth [m]`)))), sep="-rad_layer")
-  treatS3_layers$lyr_rc_lab_number<-treatS3_layers$`Lab label`
-  treatS3_layers$lyr_14c<-treatS3_layers$`Age dated [ka]`
-  treatS3_layers$lyr_14c_sd=as.data.frame(treatS3_layers)[,15] #cant use column name because it contains non-ASCII character
+  treatS3_layers<-treatS3 %>% filter(.data$`Dated.material` %in% layer_materials$material)
+  treatS3_layers$lyr_name<-paste(treatS3_layers$ID, as.numeric((as.factor(paste(treatS3_layers$`Depth.[m]`)))), sep="-rad_layer")
+  treatS3_layers$lyr_rc_lab_number<-treatS3_layers$`Lab.label`
+  treatS3_layers$lyr_fraction_modern<-exp((treatS3_layers$`Age.dated.[ka]`*1000)/-8033)
+  treatS3_layers$lyr_fraction_modern_sigma=treatS3_layers$lyr_fraction_modern*(as.data.frame(treatS3_layers)[,15]*1000)/8033 #cant use column name because it contains non-ASCII character
   
-  treatS3_fractions<-treatS3 %>% filter(.data$`Dated material` %in% fraction_materials$material)
-  treatS3_fractions$lyr_name<-paste(treatS3_fractions$ID, as.numeric((as.factor(paste(treatS3_fractions$`Depth [m]`)))), sep="-rad_dummy_layer")
+  treatS3_fractions<-treatS3 %>% filter(.data$`Dated.material` %in% fraction_materials$material)
+  treatS3_fractions$lyr_name<-paste(treatS3_fractions$ID, as.numeric((as.factor(paste(treatS3_fractions$`Depth.[m]`)))), sep="-rad_dummy_layer")
   
   treatS3_fractions$lyr_rc_lab_number<-NA
-  treatS3_fractions$lyr_14c<-NA
-  treatS3_fractions$lyr_14c_sd<-NA
+  treatS3_fractions$lyr_fraction_modern<-NA
+  treatS3_fractions$lyr_fraction_modern_sigma<-NA
   
   data_template$layer<-data.frame(
     entry_name=c(treatS3_layers$Reference,treatS3_fractions$Reference),
@@ -236,14 +242,15 @@ if (download == T ){
     lyr_name=c(treatS3_layers$lyr_name,treatS3_fractions$lyr_name),
     lyr_top=c(treatS3_layers$lyr_top,treatS3_fractions$lyr_top),
     lyr_bot=c(treatS3_layers$lyr_bot,treatS3_fractions$lyr_bot),
+    lyr_all_org_neg = "yes",
     lyr_rc_lab_number=c(treatS3_layers$lyr_rc_lab_number,treatS3_fractions$lyr_rc_lab_number),
-    lyr_14c=c(treatS3_layers$lyr_14c,treatS3_fractions$lyr_14c),
-    lyr_14c_sd=c(treatS3_layers$lyr_14c_sd,treatS3_fractions$lyr_14c_sd)
+    lyr_fraction_modern=c(treatS3_layers$lyr_fraction_modern,treatS3_fractions$lyr_fraction_modern),
+    lyr_fraction_modern_sigma=c(treatS3_layers$lyr_fraction_modern_sigma,treatS3_fractions$lyr_fraction_modern_sigma)
   )
   
   #need to use the S1 file for getting observation year
-  treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1.xlsx", startRow=422)
-
+  treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1_edit.xlsx", startRow=422)
+  
    data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
   
   
@@ -261,17 +268,18 @@ if (download == T ){
     site_name= treatS3_fractions$Site,
     pro_name=treatS3_fractions$ID,
     lyr_name=treatS3_fractions$lyr_name,
-    frc_name=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated material`),
-    frc_input=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated material`),
+    frc_name=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated.material`),
+    frc_input=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated.material`),
     frc_scheme="Manual_Separation",
     frc_scheme_units="presence/absence",
     frc_lower="-Inf",
     frc_upper="Inf",
     frc_agent="manual",
-    frc_rc_lab_number=treatS3_fractions$`Lab label`,
-    frc_14c=treatS3_fractions$`Age dated [ka]`,
-    frc_14c_sd=as.data.frame(treatS3_fractions)[,15] #cant use column name because it contains non-ASCII character 
+    frc_rc_lab_number=treatS3_fractions$`Lab.label`
   )
+  
+  data_template$fraction$frc_fraction_modern<-exp((treatS3_fractions$`Age.dated.[ka]`*1000)/-8033)
+  data_template$fraction$frc_fraction_modern_sigma=data_template$fraction$frc_fraction_modern*(as.data.frame(treatS3_fractions)[,15]*1000)/8033 #cant use column name because it contains non-ASCII character
   
   data_template$fraction[]<-lapply(data_template$fraction, as.character)
   data_template$fraction=bind_rows(template$fraction[c(1,2),], data_template$fraction)
@@ -312,6 +320,36 @@ if (download == T ){
     
     ref_data$`controlled vocabulary` <- template$`controlled vocabulary`
     
+  #   site_lat_lons<-paste(ref_data$site$site_lat,ref_data$site$site_long)
+  #   site_lat_lons_counts<-table(site_lat_lons)
+  #   site_lat_lons_dups<-site_lat_lons_counts[which(site_lat_lons_counts>1)]
+  #  
+  # if(length(site_lat_lons_dups)>0){
+  #   for(dup in names(site_lat_lons_dups)){
+  #    dup_site_names<-ref_data$site$site_name[which(site_lat_lons==dup)] #identify the names of the duplicated sites
+  #    new_site_name<-paste(dup_site_names, collapse=" and ") #collapse their names
+  #    
+  #    dup_sites<-which(ref_data$site$site_name %in% dup_site_names) # identify the row numbers of the duplicated sites
+  #    ref_data$site$site_name[dup_sites[1]]<-new_site_name #rename first row of duplicated sites
+  #    ref_data$site<-ref_data$site[-dup_sites[-1],] #remove the other rows
+  #   
+  #    dup_sites_pro<-which(ref_data$profile$site_name %in% dup_site_names)
+  #    ref_data$profile$pro_name[dup_sites_pro]<-ref_data$profile$site_name[dup_sites_pro]
+  #    ref_data$profile$site_name[dup_sites_pro]<-new_site_name
+  #    
+  #    dup_sites_lyr<-which(ref_data$layer$site_name %in% dup_site_names)
+  #    ref_data$layer$pro_name[dup_sites_lyr]<-ref_data$layer$site_name[dup_sites_lyr]
+  #    ref_data$layer$site_name[dup_sites_lyr]<-new_site_name
+  #    
+  #    dup_sites_frc<-which(ref_data$fraction$site_name %in% dup_site_names)
+  #    ref_data$fraction$pro_name[dup_sites_frc]<-ref_data$fraction$site_name[dup_sites_frc]
+  #    ref_data$fraction$site_name[dup_sites_frc]<-new_site_name
+  #    
+  #    
+  #    }
+  #  }
+  #   
+
     write.xlsx(ref_data, file = paste0(convertedDir, ref, ".xlsx"))
   }
   

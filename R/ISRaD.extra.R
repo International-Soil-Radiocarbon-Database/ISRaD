@@ -10,14 +10,23 @@
 
 ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory){
 
+  cat("\t filling dates \n")
   database<-ISRaD.extra.fill_dates(database)
+  cat("\t filling 14c \n")
   database<-ISRaD.extra.fill_14c(database)
+  cat("\t filling coordinates \n")
   database<-ISRaD.extra.fill_coords(database)
+  cat("\t filling delta delta \n")
   database<-ISRaD.extra.delta_delta(database)
+  cat("\t filling fm \n")
   database<-ISRaD.extra.fill_fm(database)
+  cat("\t filling cstocks \n")
   database<-ISRaD.extra.Cstocks(database)
+  cat("\t filling expert \n")
   database<-ISRaD.extra.fill_expert(database)
+  cat("\t filling geospatial climate data \n")
   database<-ISRaD.extra.geospatial.climate(database, geodata_clim_directory=geodata_clim_directory)
+  cat("\t filling geospatial soil data \n")
   database<-ISRaD.extra.geospatial.soil(database, geodata_soil_directory=geodata_soil_directory)
 
   ISRaD_data_filled <- database
