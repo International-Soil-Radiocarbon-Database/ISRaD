@@ -87,10 +87,12 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
 
   ISRaD_data<-ISRaD_data_compiled
   usethis::use_data(ISRaD_data, overwrite = T)
+  save(ISRaD_data, file="ISRaD_data_files/database/ISRaD_data")
   cat("ISRaD_data has been updated...\n\n")
 
   ISRaD_extra<-ISRaD_extra_compiled
   usethis::use_data(ISRaD_extra, overwrite = T)
+  save(ISRaD_extra, file="ISRaD_data_files/database/ISRaD_extra")
   cat("ISRaD_extra has been updated...\n\n")
 
 
