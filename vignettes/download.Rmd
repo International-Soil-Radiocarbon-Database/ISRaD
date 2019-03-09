@@ -5,7 +5,7 @@ date: "3/8/2019"
 output:
   pdf_document: default
 vignette: |
-  %\VignetteIndexEntry{Exploring Fractions} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{download} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
 ---
 
 This brief vingette describes how to download the ISRaD data directly from R using the ISRaD R package.
@@ -36,11 +36,11 @@ library(ISRaD) # load the package
 
 2. Download the data.
 
-The function to download the data is ISRaD.download. This function downloads ISRaD data in .rda format. It also returns this object so you can load the data into R in one step. In the example below, we are downloading the standard ISRaD data object and storing it as a variable called `mydata`.
-
-It accepts two parameters, directory and extra.
+The function to download the data is ISRaD.download. This function downloads ISRaD data in .rda format. It also returns this object so you can load the data into R in one step. It accepts two parameters, directory and extra.  
 `directory` = where you want to downlaod the data object.  
 `extra` = whether or not you want to download the ISRaD_extra object.  
+
+In the example below, we are downloading the standard ISRaD data object and storing it as a variable called `mydata`.
 
 ```{r download, eval=F}
 mydata<-ISRaD.download(directory = "~/Desktop/", extra = F)
