@@ -3,12 +3,9 @@ title: "ISRaD Download"
 author: "Grey Monroe"
 date: "3/8/2019"
 output:
-  html_document:
-    df_print: paged
-vignette: >
-  %\VignetteIndexEntry{Exploring Fractions}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+  pdf_document: default
+vignette: |
+  %\VignetteIndexEntry{Exploring Fractions} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
 ---
 
 This brief vingette describes how to download the ISRaD data directly from R using the ISRaD R package.
