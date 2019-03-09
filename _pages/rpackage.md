@@ -11,4 +11,4 @@ The ISRaD R package provides the full database, and functions to work with the d
 
 ## R package installation and user manual:
 ### [Tutorial here](/user_manual.html)
-### [ISRaD data download]("https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/vignettes/download.pdf")
+### [ISRaD data download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/vignettes/download.pdf)
