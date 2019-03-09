@@ -5,7 +5,9 @@ date: "3/8/2019"
 output:
   pdf_document: default
 vignette: |
-  %\VignetteIndexEntry{download} %\VignetteEngine{knitr::rmarkdown} %\VignetteEncoding{UTF-8}
+  %\VignetteIndexEntry{download} 
+  %\VignetteEngine{knitr::rmarkdown} 
+  %\VignetteEncoding{UTF-8}
 ---
 
 This brief vingette describes how to download the ISRaD data directly from R using the ISRaD R package.

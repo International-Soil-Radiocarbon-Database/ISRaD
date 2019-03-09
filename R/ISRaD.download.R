@@ -15,15 +15,17 @@ ISRaD.download<-function(directory = NULL, extra = F){
     #dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/data/ISRaD_extra.rda"
     dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra"
     dataName<-"ISRaD_extra.rda"
+    cat("\n Downloading", dataName, "from", dataURL, "\n")
     } else {
     dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data"
     #dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/data/ISRaD_data.rda"
     dataName<-"ISRaD_data.rda"
-    
+    cat("\n Downloading", dataName, "from", dataURL, "\n")
     }
   utils::download.file(dataURL,paste0(directory, dataName))
   data<-load(paste0(directory, dataName))
   data<-get(data)
+  cat("\n Download complete. This data object was created on", attributes(data)$version, "\n")
   return(data)
 
 }

@@ -18,4 +18,5 @@ ISRaD.shiny<-function(){
   requireNamespace("shiny")
   
   shiny::runApp(system.file('shiny', package='ISRaD'))
+  
 }

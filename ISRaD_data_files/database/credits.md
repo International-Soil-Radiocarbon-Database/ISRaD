@@ -14,7 +14,7 @@ Currently, there are 186 entries in ISRaD, which are from the following publicat
 *  Baisden, W. T., Parfitt, R. L., Ross, C., Schipper, L. A., & Canessa, S. (2011). Evaluating 50 years of time-series soil radiocarbon data: towards routine calculation of robust C residence times. Biogeochemistry, 112(1-3), 129–137. doi:10.1007/s10533-011-9675-y
 *  Basile-Doelsch, I., Amundson, R., Stone, W. E. E., Masiello, C. A., Bottero, J. Y., Colin, F., … Meunier, J. D. (2005). Mineralogical control of organic carbon dynamics in a volcanic ash soil on La Reunion. European Journal of Soil Science, 0(0), 050912034650042. doi:10.1111/j.1365-2389.2005.00703.x
 *  Becker-Heidmann, P., & Scharpenseel, H.-W. (1986). Thin Layer δ13C and D14C Monitoring of “Lessive” Soil Profiles. Radiocarbon, 28(2A), 383–390. doi:10.1017/s0033822200007499
-*  Becker-Heidmann, P., & Scharpenseel, H.-W. (1989). Carbon Isotope Dynamics in Some Tropical Soils. Radiocarbon, 31(03), 672–679. doi:10.1017/s0033822200012273
+*  NULL
 *  Becker-Heidmann, P., Andresen, O., Kalmar, D., Scharpenseel, H.-W., & Yaalon, D. H. (2002). Carbon Dynamics in Vertisols as Revealed by High-Resolution Sampling. Radiocarbon, 44(01), 63–73. doi:10.1017/s0033822200064687
 *  Berg, B., & Gerstberger, P. (2004). Element Fluxes with Litterfall in Mature Stands of Norway Spruce and European Beech in Bavaria, South Germany. Biogeochemistry of Forested Catchments in a Changing Environment, 271–278. doi:10.1007/978-3-662-06073-5_16
 *  Berhe, A. A., Harden, J. W., Torn, M. S., Kleber, M., Burton, S. D., & Harte, J. (2012). Persistence of soil organic matter in eroding versus depositional landform positions. Journal of Geophysical Research: Biogeosciences, 117(G2), n/a–n/a. doi:10.1029/2011jg001790
