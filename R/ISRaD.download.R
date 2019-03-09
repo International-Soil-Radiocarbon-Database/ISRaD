@@ -13,11 +13,11 @@ ISRaD.download<-function(directory = NULL, extra = F){
   
   if (extra){
     #dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/data/ISRaD_extra.rda"
-    dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra"
+    dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra.rda"
     dataName<-"ISRaD_extra.rda"
     cat("\n Downloading", dataName, "from", dataURL, "\n")
     } else {
-    dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data"
+    dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data.rda"
     #dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/data/ISRaD_data.rda"
     dataName<-"ISRaD_data.rda"
     cat("\n Downloading", dataName, "from", dataURL, "\n")
