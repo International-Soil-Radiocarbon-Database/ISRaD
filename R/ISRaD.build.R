@@ -85,23 +85,29 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
     stop("You cannot replace the ISRaD_data object with a faulty data object...")
   }
 
+  v<-paste0("v1-", as.character(Sys.Date()))
+  
   ISRaD_data<-ISRaD_data_compiled
-  attributes(ISRaD_data)$version<-as.character(Sys.Date())
+  attributes(ISRaD_data)$version<-v
   usethis::use_data(ISRaD_data, overwrite = T)
-  save(ISRaD_data, file="ISRaD_data_files/database/ISRaD_data.rda")
+  save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
+  save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_data_",v,".rda"))
   cat("ISRaD_data has been updated...\n\n")
 
   ISRaD_extra<-ISRaD_extra_compiled
-  attributes(ISRaD_extra)$version<-as.character(Sys.Date())
+  attributes(ISRaD_extra)$version<-v
   usethis::use_data(ISRaD_extra, overwrite = T)
-  save(ISRaD_extra, file="ISRaD_data_files/database/ISRaD_extra.rda")
+  save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
+  save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_extra_",v,".rda"))
   cat("ISRaD_extra has been updated...\n\n")
 
 
 # Save ISRaD extra object as Excel file --------------------------------------------------
 
   openxlsx::write.xlsx(ISRaD_extra, file = file.path(ISRaD_directory, "ISRaD_data_files/database", "ISRaD_extra_list.xlsx"))
-
+  openxlsx::write.xlsx(ISRaD_extra, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_list_",v,".xlsx"))
+  openxlsx::write.xlsx(ISRaD_data, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_data_list_",v,".xlsx"))
+  
 
 # Flattened data objects --------------------------------------------------
 
@@ -111,13 +117,19 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_s
     #flattened_data<-str_replace_all(flattened_data, "[\r\n]" , "")
     cat("writing ISRaD_data_flat_", tab, ".csv"," ...\n", sep = "")
     utils::write.csv(flattened_data, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_data_flat_", tab, ".csv"))
+    utils::write.csv(flattened_data, paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_data_flat_", tab,"_",v, ".csv"))
+    
     flattened_extra<-ISRaD.flatten(database=ISRaD_extra, table = tab)
     #flattened_extra<-str_replace_all(flattened_extra, "[\r\n]" , "")
     cat("writing ISRaD_extra_flat_", tab, ".csv"," ...\n", sep = "")
     utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_extra_flat_", tab, ".csv"))
-
+    utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_flat_", tab,"_",v, ".csv"))
+    
   }
-
+  
+  setwd(paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files"))
+  utils::zip(zipfile = paste0("../ISRaD_database_files"), files = list.files(paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files"), full.names = F))
+  setwd(ISRaD_directory)
 
 # update references -------------------------------------------------------
 
