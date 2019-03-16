@@ -33,10 +33,9 @@ if (download == T ){
   treatS2<-pangaear::pg_data(doi = '10.1594/PANGAEA.863695')[[1]]$data
   utils::write.csv(treatS2, paste0(downloadDir, "treatS2.csv"))
 } else {
-  treatS2<-utils::read.csv(paste0(downloadDir, "treatS2.csv"))
+  treatS2<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S2_edit.xlsx", startRow=629)
   
 }
-
   
   treatS2$Site<-paste(treatS2$Reference,":", treatS2$Longitude, "," ,treatS2$Latitude)
   
@@ -87,7 +86,7 @@ if (download == T ){
    pro_name=treatS2$ID,
    pro_lat= treatS2$Latitude,
    pro_long= treatS2$Longitude,
-   pro_elevation= treatS2$`Height [m]`
+   pro_elevation= treatS2$`Height.[m]`
   )
   
   data_template$profile[]<-lapply(data_template$profile, as.character)
@@ -107,19 +106,20 @@ if (download == T ){
     entry_name=treatS2$Reference,
     site_name= treatS2$Site,
     pro_name=treatS2$ID,
-    lyr_name=paste(treatS2$ID, as.numeric((as.factor(paste(treatS2$`Depth bot [m]`, treatS2$`Depth top [m]`)))), sep="-layer"),
-    lyr_bot=treatS2$`Depth bot [m]` *100,
-    lyr_top=treatS2$`Depth top [m]` *100,
+    lyr_name=paste(treatS2$ID, as.numeric((as.factor(paste(treatS2$`Depth.bot.[m]`, treatS2$`Depth.top.[m]`)))), sep="-layer"),
+    lyr_bot=treatS2$`Depth.bot.[m]` *100,
+    lyr_top=treatS2$`Depth.top.[m]` *100,
     lyr_all_org_neg = "yes",
-    lyr_bd_samp=treatS2$`DBD [g/cm**3]`,
-    lyr_loi= treatS2$`LOI [%]`,
-    lyr_c_tot=treatS2$`TC [%]`,
-    lyr_n_tot=treatS2$`TN [%]`,
+    lyr_bd_samp=treatS2$`DBD.[g/cm**3]`,
+    lyr_loi= treatS2$`LOI.[%]`,
+    lyr_c_tot=treatS2$`TC.[%]`,
+    lyr_n_tot=treatS2$`TN.[%]`,
     lyr_note=treatS2$Lithology,
     lyr_hzn=treatS2$Peat
   )
   
-  data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
+  #data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
+  data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$pro_name,treatS1$`ID.(Auth-Site-CoreID)`)]
   
   data_template$layer[]<-lapply(data_template$layer, as.character)
   data_template$layer=bind_rows(template$layer[c(1,2),], data_template$layer)
@@ -251,8 +251,9 @@ if (download == T ){
   #need to use the S1 file for getting observation year
   treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S1_edit.xlsx", startRow=422)
   
-   data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
-  
+   #data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$entry_name,treatS1$Reference)]
+   data_template$layer$lyr_obs_date_y <- treatS1$Coring_year[match(data_template$layer$pro_name,treatS1$`ID.(Auth-Site-CoreID)`)]
+   
   
   data_template$layer[]<-lapply(data_template$layer, as.character)
   data_template$layer=bind_rows(template$layer[c(1,2),], data_template$layer)
