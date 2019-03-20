@@ -114,10 +114,6 @@ Summary statistics...
     lyr_top : 20
     lyr_bot : 20
     lyr_bd_samp : 20
-    lyr_bd_samp_fill_extra : 2
-    lyr_c_org_fill_extra : 5
-    lyr_14c_fill_extra : 10
-    lyr_fill_notes_extra : 10
  interstitial tab...22 observations
     entry_name : 22
     site_name : 22

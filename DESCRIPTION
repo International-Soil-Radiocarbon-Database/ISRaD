@@ -1,6 +1,6 @@
 Package: ISRaD
 Title: Tools and Data for the International Soil Radiocarbon Database
-Version: 0.1.0.934
+Version: 0.1.0.935
 Authors@R: c(person("Alison", "Hoyt", email = "ahoyt@bgc-jena.mpg.de", role = c("aut")), person("Jeffrey", "Beem-Miller", email = "jbeem@bgc-jena.mpg.de", role = c("aut")),person("Shane", "Stoner", email = "sstoner@bgc-jena.mpg.de", role = c("aut")), person("J. Grey", "Monroe", email = "greymonroe@gmail.com", role = c("aut", "cre")))
 Description: This is the central location for data and tools for the development, maintenance, analysis, and deployment of the International Soil Radiocarbon Database. This database and package have been developed in collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute. 
 Depends: R (>= 3.3.0)
