@@ -48,8 +48,7 @@ ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geoda
   # extract PET
   pet<-raster::raster(paste(geodata_pet_directory, '/', "w001001.adf", sep=""))
   pet_extracted<-raster::extract(pet, cbind(database$profile$pro_long, database$profile$pro_lat))
-  colnames(pet_extracted)<-paste("pro", "_", "PET")
-  database$profile<-cbind(database$profile, pet_extracted)
+  database$profile$pro_PET<-pet_extracted
 
   return(database)
 
