@@ -4,7 +4,7 @@
 #' @param database ISRaD dataset object.
 #' @param geodata_clim_directory directory where geospatial climate datasets are found.
 #' @export
-#' @details Adds new climate fields BIO1-BIO19:
+#' @details Adds new climate fields BIO1-BIO19, PET:
 #'
 #' BIO1 = Annual Mean Temperature,
 #' BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
@@ -25,23 +25,31 @@
 #' BIO17 = Precipitation of Driest Quarter,
 #' BIO18 = Precipitation of Warmest Quarter,
 #' BIO19 = Precipitation of Coldest Quarter
+#' PET = Potential evapotranspiration (Penman-Monteith method for short-clipped grass w/ worldclim input data)
 #'
 #' All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on site lat and long
 #'
 #' @author J. Grey Monroe, Alison Hoyt
 #' @return An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.
-#' @references http://www.worldclim.org/
+#' @references http://www.worldclim.org/; PET data from: Kramer, M. and O. Chadwick. 2018. Climate-driven thresholds in reactive mineral retention of soil carbon at the global scale. Nature Climate Change 8:1104–1108.
 #'
 
-ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory) {
+ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geodata_pet_directory) {
 
   requireNamespace("raster")
 
+  # extract worldclim vars
   cat("\nextracting bioclim variables (http://www.worldclim.org/bioclim for details)...")
-  bio<-raster::getData("worldclim", var='bio', res=2.5, path= geodata_clim_directory)
+  bio<-raster::getData("worldclim", var='bio', res=2.5, path=geodata_clim_directory)
   bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
   colnames(bio_extracted)<-paste("pro",  colnames(bio_extracted), sep="_")
   database$profile<-cbind(database$profile, bio_extracted)
+
+  # extract PET
+  pet<-raster::raster(paste(geodata_pet_directory, '/', "w001001.adf", sep=""))
+  pet_extracted<-raster::extract(pet, cbind(database$profile$pro_long, database$profile$pro_lat))
+  colnames(pet_extracted)<-paste("pro", "_", "PET")
+  database$profile<-cbind(database$profile, pet_extracted)
 
   return(database)
 
