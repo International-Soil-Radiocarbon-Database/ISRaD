@@ -13,7 +13,8 @@
 #' @examples
 #' \dontrun{
 #' ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_clim_datasets",
-#'   geodata_pet_directory="~/geospatial_pet_dataset", geodata_soil_directory="~/geospatial_soil_datasets")
+#'   geodata_pet_directory="~/geospatial_pet_dataset",
+#'   geodata_soil_directory="~/geospatial_soil_datasets")
 #' }
 
 ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_pet_directory, geodata_soil_directory){

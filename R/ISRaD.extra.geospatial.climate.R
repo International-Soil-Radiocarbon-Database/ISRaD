@@ -3,6 +3,7 @@
 #' @description Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
 #' @param database ISRaD dataset object.
 #' @param geodata_clim_directory directory where geospatial climate datasets are found.
+#' @param geodata_pet_directory directory where geospatial pet dataset is found.
 #' @export
 #' @details Adds new climate fields BIO1-BIO19, PET:
 #'

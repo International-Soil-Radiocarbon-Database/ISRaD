@@ -4,7 +4,8 @@
 \alias{ISRaD.extra}
 \title{ISRaD.extra}
 \usage{
-ISRaD.extra(database, geodata_clim_directory, geodata_soil_directory)
+ISRaD.extra(database, geodata_clim_directory, geodata_soil_directory,
+  geodata_pet_directory)
 }
 \arguments{
 \item{database}{soilcarbon dataset object}
@@ -12,6 +13,8 @@ ISRaD.extra(database, geodata_clim_directory, geodata_soil_directory)
 \item{geodata_clim_directory}{directory where geospatial climate data are found}
 
 \item{geodata_soil_directory}{directory where geospatial soil data are found}
+
+\item{geodata_pet_directory}{directory where geospatial pet data are found}
 }
 \value{
 returns new ISRaD_extra object with derived, transformed, and filled columns
@@ -20,5 +23,5 @@ returns new ISRaD_extra object with derived, transformed, and filled columns
 Fills in transformed and geospatial data where possible, generatating an enhanced version of ISRaD.
 }
 \details{
-Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks frmo entered data, and fills soil taxonomy, and climatic data from
+Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks frmo entered data; fills soil and climatic data from external geospatial data products
 }

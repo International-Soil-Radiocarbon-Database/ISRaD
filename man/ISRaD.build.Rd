@@ -5,12 +5,14 @@
 \title{ISRaD.build builds the database and updates objects in R package}
 \usage{
 ISRaD.build(ISRaD_directory = getwd(), geodata_clim_directory,
-  geodata_soil_directory)
+  geodata_pet_directory, geodata_soil_directory)
 }
 \arguments{
 \item{ISRaD_directory}{directory where the ISRaD package is found}
 
 \item{geodata_clim_directory}{directory where geospatial climate datasets are found. Necessary to create ISRaD_Extra}
+
+\item{geodata_pet_directory}{directory where geospatial pet dataset is found. Necessary to create ISRaD_Extra}
 
 \item{geodata_soil_directory}{directory where geospatial soil datasets are found. Necessary to create ISRaD_Extra}
 }
@@ -23,7 +25,7 @@ Meant to be used by the maintainers/developers of ISRaD
 }
 \examples{
 \dontrun{
-ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_soil_datasets",
-  geodata_clim_directory="~/geospatial_soil_datasets")
+ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_clim_datasets",
+  geodata_pet_directory="~/geospatial_pet_dataset", geodata_soil_directory="~/geospatial_soil_datasets")
 }
 }

@@ -4,7 +4,8 @@
 \alias{ISRaD.extra.geospatial.climate}
 \title{ISRaD.extra.geospatial.climate}
 \usage{
-ISRaD.extra.geospatial.climate(database, geodata_clim_directory)
+ISRaD.extra.geospatial.climate(database, geodata_clim_directory,
+  geodata_pet_directory)
 }
 \arguments{
 \item{database}{ISRaD dataset object.}
@@ -18,7 +19,7 @@ An ISRaD_data object with additional rows containing values from geospatial data
 Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
 }
 \details{
-Adds new climate fields BIO1-BIO19:
+Adds new climate fields BIO1-BIO19, PET:
 
 BIO1 = Annual Mean Temperature,
 BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
@@ -39,11 +40,12 @@ BIO16 = Precipitation of Wettest Quarter,
 BIO17 = Precipitation of Driest Quarter,
 BIO18 = Precipitation of Warmest Quarter,
 BIO19 = Precipitation of Coldest Quarter
+PET = Potential evapotranspiration (Penman-Monteith method for short-clipped grass w/ worldclim input data)
 
 All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on site lat and long
 }
 \references{
-http://www.worldclim.org/
+http://www.worldclim.org/; PET data from: Kramer, M. and O. Chadwick. 2018. Climate-driven thresholds in reactive mineral retention of soil carbon at the global scale. Nature Climate Change 8:1104–1108.
 }
 \author{
 J. Grey Monroe, Alison Hoyt
