@@ -28,7 +28,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
 
 # Compile database --------------------------------------------------------
 
-  if (is.null(geodata_clim_directory) | is.null(geodata_soil_directory)){
+  if (is.null(geodata_clim_directory) | is.null(geodata_soil_directory) | is.null(geodata_pet_directory)){
     cat("geodata_clim_directory and geodata_soil_directory must be specified.\n")
     stop()
   }
@@ -73,7 +73,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   }
 
   cat("\nCreating the ISRaD_extra object...\n")
-  ISRaD_extra_compiled<-ISRaD.extra(database=ISRaD_data_compiled, geodata_clim_directory = geodata_clim_directory, geodata_soil_directory = geodata_soil_directory)
+  ISRaD_extra_compiled<-ISRaD.extra(database=ISRaD_data_compiled, geodata_clim_directory = geodata_clim_directory, geodata_soil_directory = geodata_soil_directory, geodata_pet_directory=geodata_pet_directory)
   cat("Replacing the ISRaD_extra object with the new one...\n")
 
   cat("\tChecking the number of new rows in the compiled ISRaD_extra object...\n")
