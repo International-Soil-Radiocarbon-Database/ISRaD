@@ -25,7 +25,7 @@ ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory){
   cat("\t filling expert \n")
   database<-ISRaD.extra.fill_expert(database)
   cat("\t filling geospatial climate data \n")
-  database<-ISRaD.extra.geospatial.climate(database, geodata_clim_directory=geodata_clim_directory)
+  database<-ISRaD.extra.geospatial.climate(database, geodata_clim_directory=geodata_clim_directory, geodata_pet_directory=geodata_pet_directory)
   cat("\t filling geospatial soil data \n")
   database<-ISRaD.extra.geospatial.soil(database, geodata_soil_directory=geodata_soil_directory)
 
