@@ -42,7 +42,7 @@ BIO16 = Precipitation of Wettest Quarter,
 BIO17 = Precipitation of Driest Quarter,
 BIO18 = Precipitation of Warmest Quarter,
 BIO19 = Precipitation of Coldest Quarter
-PET = Potential evapotranspiration (Penman-Monteith method for short-clipped grass w/ worldclim input data)
+PET = Potential evapotranspiration, mm/yr (Penman-Monteith method for short-clipped grass w/ worldclim input data)
 
 All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on site lat and long
 }
