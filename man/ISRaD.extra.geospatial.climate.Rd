@@ -11,6 +11,8 @@ ISRaD.extra.geospatial.climate(database, geodata_clim_directory,
 \item{database}{ISRaD dataset object.}
 
 \item{geodata_clim_directory}{directory where geospatial climate datasets are found.}
+
+\item{geodata_pet_directory}{directory where geospatial pet dataset is found.}
 }
 \value{
 An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.
