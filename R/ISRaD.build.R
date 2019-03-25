@@ -6,13 +6,14 @@
 #' @param ISRaD_directory directory where the ISRaD package is found
 #' @param geodata_clim_directory directory where geospatial climate datasets are found. Necessary to create ISRaD_Extra
 #' @param geodata_soil_directory directory where geospatial soil datasets are found. Necessary to create ISRaD_Extra
+#' @param geodata_pet_directory directory where geospatial pet dataset is found. Necessary to create ISRaD_Extra
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
 #' @import stringr
 #' @export
 #' @examples
 #' \dontrun{
-#' ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_soil_datasets",
-#'   geodata_clim_directory="~/geospatial_soil_datasets")
+#' ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_clim_datasets",
+#'   geodata_pet_directory="~/geospatial_pet_dataset", geodata_soil_directory="~/geospatial_soil_datasets")
 #' }
 
 ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_pet_directory, geodata_soil_directory){
