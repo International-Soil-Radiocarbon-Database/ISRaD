@@ -124,6 +124,7 @@ Summary statistics...
     lyr_name : 8
     lyr_obs_date_y : 8
     lyr_obs_date_m : 8
+    lyr_all_org_neg : 8
     lyr_top : 8
     lyr_bot : 8
     lyr_hzn : 8
