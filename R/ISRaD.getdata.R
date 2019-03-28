@@ -25,8 +25,8 @@ ISRaD.getdata<-function(directory = getwd(), dataset = "full", extra = F){
 
 database_files<-list.files(paste0(directory, "/ISRaD_database_files"), full.names = T)
 
-if(extra) {data_type<-"ISRaD_extra"
-  } else {data_type<-"ISRaD_data"}
+if(extra) {data_type<-"ISRaD_extra_"
+  } else {data_type<-"ISRaD_data_"}
 
 if(dataset != "full"){
   file<-database_files[intersect(grep(data_type, database_files), grep(dataset, database_files))]
