@@ -21,6 +21,7 @@
 ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_pet_directory, geodata_soil_directory, citations=T){
 
   requireNamespace("stringr")
+  requireNamespace("tidyverse")
 # Install local ISRaD -----------------------------------------------------
 
 
@@ -110,7 +111,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
 
   cat("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is", v,"\n\n")
   
-  ISRaD_extra_char<-lapply(ISRaD_extra, function(x) lapply(x, as.character))
+  ISRaD_extra_char<-lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
   openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files/database", "ISRaD_extra_list.xlsx"))
   
   system(paste0("rm ", paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD*")))

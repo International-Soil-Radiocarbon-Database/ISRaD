@@ -22,13 +22,13 @@ ISRaD.extra.fill_expert<- function(database) {
   database$layer[ix,"lyr_soc_fill_extra"] <- database$layer[ix,"lyr_soc"]
 
   # Fill missing carbon stocks in the lyr_soc_fill_extra where the extra filled data allows
-  ix <- which(is.na(database$layer$lyr_soc_fill_extra) & !is.na(database$layer$lyr_bd_samp_fill_extra) & !is.na(database$layer$lyr_c_org_fill_extra))
+  ix <- which(is.na(database$layer$lyr_soc_fill_extra) & !is.na(database$layer$lyr_bd_samp_fill_extra) & !is.na(database$layer$lyr_c_org_fill_extra) & is.finite(database$layer$lyr_bot) & is.finite(database$layer$lyr_top))
   database$layer[ix,"lyr_soc_fill_extra"] <- (database$layer[ix,"lyr_c_org_fill_extra"]/100)*database$layer[ix,"lyr_bd_samp_fill_extra"]*(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"])
   # Fill missing bulk density in the lyr_bd_samp_fill_extra where the extra filled data allows
-  ix <- which(is.na(database$layer$lyr_bd_samp_fill_extra) & !is.na(database$layer$lyr_soc_fill_extra) & !is.na(database$layer$lyr_c_org_fill_extra))
+  ix <- which(is.na(database$layer$lyr_bd_samp_fill_extra) & !is.na(database$layer$lyr_soc_fill_extra) & !is.na(database$layer$lyr_c_org_fill_extra)& is.finite(database$layer$lyr_bot) & is.finite(database$layer$lyr_top))
   database$layer[ix,"lyr_bd_samp_fill_extra"] <- database$layer[ix,"lyr_soc_fill_extra"]/((database$layer[ix,"lyr_c_org_fill_extra"]/100)*(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"]))
   # Fill missing carbon concentration in the lyr_c_org_fill_extra where the extra filled data allows
-  ix <- which(is.na(database$layer$lyr_c_org_fill_extra) & !is.na(database$layer$lyr_bd_samp_fill_extra) & !is.na(database$layer$lyr_soc_fill_extra))
+  ix <- which(is.na(database$layer$lyr_c_org_fill_extra) & !is.na(database$layer$lyr_bd_samp_fill_extra) & !is.na(database$layer$lyr_soc_fill_extra) & is.finite(database$layer$lyr_bot) & is.finite(database$layer$lyr_top))
   database$layer[ix,"lyr_c_org_fill_extra"] <- 100*database$layer[ix,"lyr_soc_fill_extra"]/(database$layer[ix,"lyr_bd_samp_fill_extra"]*(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"]))
 
   # Fill actual radiocarbon values into the lyr_14c_fill_extra column
