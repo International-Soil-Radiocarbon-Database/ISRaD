@@ -135,7 +135,8 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
     utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_flat_", tab,"_",v, ".csv"))
 
   }
-
+  system(paste0("rm ", paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files.zip")))
+  
   setwd(paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files"))
   utils::zip(zipfile = paste0("../ISRaD_database_files"), files = list.files(paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files"), full.names = F))
   setwd(ISRaD_directory)
