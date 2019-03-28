@@ -24,7 +24,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={ISRaD Download},
+            pdftitle={ISRaD getdata},
             pdfauthor={Grey Monroe},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -106,7 +106,7 @@
 \usepackage{titling}
 
 % Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
+\providecommand{\subtitle}[1]{
   \posttitle{
     \begin{center}\large#1\end{center}
     }
@@ -114,7 +114,7 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{ISRaD Download}
+  \title{ISRaD getdata}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
     \author{Grey Monroe}
@@ -128,8 +128,8 @@
 \begin{document}
 \maketitle
 
-This brief vingette describes how to download the ISRaD data directly
-from R using the ISRaD R package.
+This brief vingette describes how to load the ISRaD data directly from R
+using the ISRaD R package.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -163,32 +163,25 @@ have the ISRaD package you can skip this step.
 \setcounter{enumi}{1}
 \tightlist
 \item
-  Download the data.
+  Load the data.
 \end{enumerate}
 
-The function to download the data is ISRaD.download. This function
-downloads ISRaD data in .rda format. It also returns this object so you
-can load the data into R in one step. It accepts two parameters,
-directory and extra.\\
-\texttt{directory} = where you want to downlaod the data object.\\
+The function to load the data is ISRaD.getdata. This function downloads
+ISRaD data if you dont already have it. It also loads the data into R in
+one step. It accepts three parameters, directory, dataset, extra.\\
+\texttt{directory} = where the data is located or where you want to
+download the data. \texttt{dataset} = which dataset you want. This can
+be the ``full'' dataset or flattened data objects which are either
+``flux'',``interstitial'',``incubation'',``fraction'',or ``layer''.
 \texttt{extra} = whether or not you want to download the ISRaD\_extra
 object.
 
-In the example below, we are downloading the standard ISRaD data object
-and storing it as a variable called \texttt{mydata}.
+In the example below, we are loading the standard ISRaD data object and
+storing it as a variable called \texttt{mydata}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{mydata<-}\KeywordTok{ISRaD.download}\NormalTok{(}\DataTypeTok{directory =} \StringTok{"~/Desktop/"}\NormalTok{, }\DataTypeTok{extra =}\NormalTok{ F)}
-\end{Highlighting}
-\end{Shaded}
-
-You can also download the ISRaD\_extra dataset which includes additional
-columns by setting \texttt{extra} = T.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{mydata_extra<-}\KeywordTok{ISRaD.download}\NormalTok{(}\DataTypeTok{directory =} \StringTok{"~/Desktop/"}\NormalTok{, }\DataTypeTok{extra =}\NormalTok{ T)}
+\NormalTok{mydata<-}\KeywordTok{ISRaD.getdata}\NormalTok{(}\DataTypeTok{directory =} \StringTok{"~/Desktop/"}\NormalTok{, }\DataTypeTok{dataset=}\StringTok{"full"}\NormalTok{, }\DataTypeTok{extra =}\NormalTok{ F)}
 \end{Highlighting}
 \end{Shaded}
 

@@ -33,6 +33,7 @@ if(dataset != "full"){
   v<-gsub(".+_(v.+)\\..+","\\1",file)
   data<-utils::read.csv(file)
   attributes(data)$version<-v
+  cat("\n Loading", file,"\n")
   cat("\n This data is from ISRaD version", attributes(data)$version, "\n")
 }
 
@@ -41,6 +42,7 @@ if (dataset == "full"){
   file<-database_files[intersect(grep(data_type, database_files), grep(".rda", database_files))]
   data<-load(file)
   data<-get(data)
+  cat("\n Loading", file,"\n")
   cat("\n This data is from ISRaD version", attributes(data)$version, "\n")
 }
 
