@@ -5,7 +5,7 @@
 \title{ISRaD.build builds the database and updates objects in R package}
 \usage{
 ISRaD.build(ISRaD_directory = getwd(), geodata_clim_directory,
-  geodata_pet_directory, geodata_soil_directory)
+  geodata_pet_directory, geodata_soil_directory, citations = T)
 }
 \arguments{
 \item{ISRaD_directory}{directory where the ISRaD package is found}
@@ -15,6 +15,8 @@ ISRaD.build(ISRaD_directory = getwd(), geodata_clim_directory,
 \item{geodata_pet_directory}{directory where geospatial pet dataset is found. Necessary to create ISRaD_Extra}
 
 \item{geodata_soil_directory}{directory where geospatial soil datasets are found. Necessary to create ISRaD_Extra}
+
+\item{citations}{T or F. Update citations.}
 }
 \value{
 runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra

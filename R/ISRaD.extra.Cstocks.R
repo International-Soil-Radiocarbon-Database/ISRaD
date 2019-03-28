@@ -21,10 +21,10 @@ ISRaD.extra.Cstocks<-function(database){
     iix <- which(is.na(database$layer$lyr_c_org) & database$layer$lyr_c_inorg!=0 & !is.na(database$layer$lyr_c_tot)) # id carbonate containing lyrs missing c_org
     database$layer[iix,"lyr_c_org"] <- database$layer[iix,"lyr_c_tot"]-database$layer[iix,"lyr_c_inorg"] # replace w/ c_tot-c_inorg
   # fill OC with SOC stocks if BD data present
-    ix <- which(is.na(database$layer$lyr_c_org) & !is.na(database$layer$lyr_soc) & !is.na(database$layer$lyr_bd_samp))
+    ix <- which(is.na(database$layer$lyr_c_org) & !is.na(database$layer$lyr_soc) & !is.na(database$layer$lyr_bd_samp) & is.finite(database$layer$lyr_bot) & is.finite(database$layer$lyr_top))
     database$layer[ix,"lyr_c_org"] <- database$layer[ix,"lyr_soc"]/database$layer[ix,"lyr_bd_samp"]/(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"])*100
   # fill lyr_soc if BD and lyr_c_org present
-    ix <- which(is.na(database$layer$lyr_soc) & !is.na(database$layer$lyr_bd_samp) & !is.na(database$layer$lyr_c_org))
+    ix <- which(is.na(database$layer$lyr_soc) & !is.na(database$layer$lyr_bd_samp) & !is.na(database$layer$lyr_c_org) & is.finite(database$layer$lyr_bot) & is.finite(database$layer$lyr_top))
     database$layer[ix,"lyr_soc"] <- (database$layer[ix,"lyr_c_org"]/100)*database$layer[ix,"lyr_bd_samp"]*(database$layer[ix,"lyr_bot"]-database$layer[ix,"lyr_top"])
   return(database)
 }
