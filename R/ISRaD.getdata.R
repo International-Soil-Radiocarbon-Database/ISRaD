@@ -36,12 +36,12 @@ if(dataset != "full"){
   cat("\n This data is from ISRaD version", attributes(data)$version, "\n")
 }
 
-### TO DO :
+
 if (dataset == "full"){
-file<-database_files[intersect(grep(data_type, database_files), grep(".rda", database_files))]
-data<-load(file)
-data<-get(data)
-cat("\n This data is from ISRaD version", attributes(data)$version, "\n")
+  file<-database_files[intersect(grep(data_type, database_files), grep(".rda", database_files))]
+  data<-load(file)
+  data<-get(data)
+  cat("\n This data is from ISRaD version", attributes(data)$version, "\n")
 }
 
 return(data)

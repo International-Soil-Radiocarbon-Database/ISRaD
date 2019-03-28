@@ -96,14 +96,12 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   attributes(ISRaD_data)$version<-v
   usethis::use_data(ISRaD_data, overwrite = T)
   save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
-  save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_data_",v,".rda"))
   cat("ISRaD_data has been updated...\n\n")
 
   ISRaD_extra<-ISRaD_extra_compiled
   attributes(ISRaD_extra)$version<-v
   usethis::use_data(ISRaD_extra, overwrite = T)
   save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
-  save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_extra_",v,".rda"))
   cat("ISRaD_extra has been updated...\n\n")
 
 
@@ -117,7 +115,9 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   system(paste0("rm ", paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD*")))
   openxlsx::write.xlsx(ISRaD_extra_char, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_list_",v,".xlsx"))
   openxlsx::write.xlsx(ISRaD_data, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_data_list_",v,".xlsx"))
-
+  save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_data_",v,".rda"))
+  save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_extra_",v,".rda"))
+  
 # Flattened data objects --------------------------------------------------
 
   cat("\tUpdating flattened data objects...\n")
