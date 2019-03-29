@@ -40,11 +40,13 @@ Overview of variables included in the database can be found [here](https://inter
 ## Using ISRaD Data
 There are various options to access the ISRaD database: 
 *   The ISRaD R package provides the full database, and functions to work with the data
-*   The full hierarchical database is available in a single compiled .xlsx template (below)
-*   Flattened versions of subsets of the database are available as .csv files (below)
+*   The full hierarchical database is available in a single compiled .xlsx template
+*   Flattened versions of subsets of the database are available as .csv files
 
-### [**Download**](
-This link downloads the latest development version of the ISRaD database
+
+# [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip)
+ 
+This link downloads the latest development version of the ISRaD database. It contains the following data files:
 
 ## Data Files 
 ### Hierarchical data:
