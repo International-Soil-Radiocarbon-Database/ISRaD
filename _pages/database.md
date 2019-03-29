@@ -43,29 +43,31 @@ There are various options to access the ISRaD database:
 *   The full hierarchical database is available in a single compiled .xlsx template (below)
 *   Flattened versions of subsets of the database are available as .csv files (below)
 
+### [**Download**](
+This link downloads the latest development version of the ISRaD database
+
 ## Data Files 
-The links below download the latest development version of the ISRaD database
 ### Hierarchical data:
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_list.xlsx)
- full hierarchical database compiled in a single .xlsx template 
+*	**ISRaD_data_vX.xlsx** - Full hierarchical database with additional columns compiled in a single .xlsx template.  
+*	**ISRaD_data_vX.rda** - Same but in R data format 
 ### Flattened data:
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data_flat_layer.csv) **Layer data** and associated information (Layer, Profile, Site, Metadata)
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data_flat_flux.csv) **Flux data** and associated information as .csv (Flux, Profile, Site, Metadata)
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data_flat_interstitial.csv) **Interstitial data** and associated information (Interstitial, Profile, Site, Metadata)
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data_flat_fraction.csv) **Fraction data** and associated information (Fraction, Layer, Profile, Site, Metadata) 
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_data_flat_incubation.csv) **Incubation data** and associated information (Incubation, Layer, Profile, Site, Metadata)
+*   **ISRaD_data_flat_layer_vX.csv** - Layer data and associated information (Layer, Profile, Site, Metadata)
+*   **ISRaD_data_flat_flux_vX.csv** - Flux data and associated information as .csv (Flux, Profile, Site, Metadata)
+*   **ISRaD_data_flat_interstitial_vX.csv** - Interstitial data and associated information (Interstitial, Profile, Site, Metadata)
+*   **ISRaD_data_flat_fraction_vX.csv** - Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata) 
+*   **ISRaD_data_flat_incubation.csv** - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
 
 ### Hierarchical *"ISRaD_extra"* data:
-*	**ISRaD_extra_v(X).xlsx**...ISRaD_extra is a filled data product, with additional columns and calculations added for the user. Full hierarchical database with additional columns compiled in a single .xlsx template.  
-*	**ISRaD_extra_v(X).rda**...in R data format
+*	**ISRaD_extra_vX.xlsx** - ISRaD_extra is a filled data product, with additional columns and calculations added for the user. Full hierarchical database with additional columns compiled in a single .xlsx template.  
+*	**ISRaD_extra_vX.rda** - Same but in R data format
  
 ### Flattened *"ISRaD_extra"* data:
 
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_layer.csv) **Layer data** and associated information (Layer, Profile, Site, Metadata)
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_flux.csv) **Flux data** and associated information as .csv (Flux, Profile, Site, Metadata)
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_interstitial.csv) **Interstitial data** and associated information (Interstitial, Profile, Site, Metadata)
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_fraction.csv) **Fraction data** and associated information (Fraction, Layer, Profile, Site, Metadata) 
-*   [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_extra_flat_incubation.csv) **Incubation data** and associated information (Incubation, Layer, Profile, Site, Metadata)
+*   **ISRaD_extra_flat_layer_vX.csv** - Layer data and associated information (Layer, Profile, Site, Metadata)
+*   **ISRaD_extra_flat_flux_vX.csv** - Flux data and associated information as .csv (Flux, Profile, Site, Metadata)
+*   **ISRaD_extra_flat_interstitial_vX.csv** - Interstitial data and associated information (Interstitial, Profile, Site, Metadata)
+*   **ISRaD_extra_flat_fraction_vX.csv** - Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata) 
+*   **ISRaD_extra_flat_incubation.csv** - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
 
 
 ## Database R Package download (raw R Package for advanced users)
