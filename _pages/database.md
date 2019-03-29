@@ -50,26 +50,26 @@ This link downloads the latest development version of the ISRaD database. It con
 
 ## Data Files 
 ### Hierarchical data:
-*	**ISRaD_data_vX.xlsx** - Full hierarchical database with additional columns compiled in a single .xlsx template.  
-*	**ISRaD_data_vX.rda** - Same but in R data format 
+*	**ISRaD_data_vX_date.xlsx** - Full hierarchical database with additional columns compiled in a single .xlsx template.  
+*	**ISRaD_data_vX_date.rda** - Same but in R data format 
 ### Flattened data:
-*   **ISRaD_data_flat_layer_vX.csv** - Layer data and associated information (Layer, Profile, Site, Metadata)
-*   **ISRaD_data_flat_flux_vX.csv** - Flux data and associated information as .csv (Flux, Profile, Site, Metadata)
-*   **ISRaD_data_flat_interstitial_vX.csv** - Interstitial data and associated information (Interstitial, Profile, Site, Metadata)
-*   **ISRaD_data_flat_fraction_vX.csv** - Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata) 
-*   **ISRaD_data_flat_incubation.csv** - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
+*   **ISRaD_data_flat_layer_vX_date.csv** - Layer data and associated information (Layer, Profile, Site, Metadata)
+*   **ISRaD_data_flat_flux_vX_date.csv** - Flux data and associated information as .csv (Flux, Profile, Site, Metadata)
+*   **ISRaD_data_flat_interstitial_vX_date.csv** - Interstitial data and associated information (Interstitial, Profile, Site, Metadata)
+*   **ISRaD_data_flat_fraction_vX_date.csv** - Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata) 
+*   **ISRaD_data_flat_incubation_date.csv** - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
 
 ### Hierarchical *"ISRaD_extra"* data:
-*	**ISRaD_extra_vX.xlsx** - ISRaD_extra is a filled data product, with additional columns and calculations added for the user. Full hierarchical database with additional columns compiled in a single .xlsx template.  
-*	**ISRaD_extra_vX.rda** - Same but in R data format
+*	**ISRaD_extra_vX_date.xlsx** - ISRaD_extra is a filled data product, with additional columns and calculations added for the user. Full hierarchical database with additional columns compiled in a single .xlsx template.  
+*	**ISRaD_extra_vX_date.rda** - Same but in R data format
  
 ### Flattened *"ISRaD_extra"* data:
 
-*   **ISRaD_extra_flat_layer_vX.csv** - Layer data and associated information (Layer, Profile, Site, Metadata)
-*   **ISRaD_extra_flat_flux_vX.csv** - Flux data and associated information as .csv (Flux, Profile, Site, Metadata)
-*   **ISRaD_extra_flat_interstitial_vX.csv** - Interstitial data and associated information (Interstitial, Profile, Site, Metadata)
-*   **ISRaD_extra_flat_fraction_vX.csv** - Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata) 
-*   **ISRaD_extra_flat_incubation.csv** - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
+*   **ISRaD_extra_flat_layer_vX_date.csv** - Layer data and associated information (Layer, Profile, Site, Metadata)
+*   **ISRaD_extra_flat_flux_vX_date.csv** - Flux data and associated information as .csv (Flux, Profile, Site, Metadata)
+*   **ISRaD_extra_flat_interstitial_vX_date.csv** - Interstitial data and associated information (Interstitial, Profile, Site, Metadata)
+*   **ISRaD_extra_flat_fraction_vX_date.csv** - Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata) 
+*   **ISRaD_extra_flat_incubation_date.csv** - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
 
 ## Versioning
 The names of the data files reflect the current version with the following format **(data name)(vX)(date).(format)**, where **data name** tells what data this is (ie. ISRaD_extra_flat_layer), **vX** refers to the latest official version number (X), **date** tells the date of the most recently updated development version, and **format** is the file type.
