@@ -71,6 +71,9 @@ This link downloads the latest development version of the ISRaD database. It con
 *   **ISRaD_extra_flat_fraction_vX.csv** - Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata) 
 *   **ISRaD_extra_flat_incubation.csv** - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
 
+## Versioning
+The names of the data files reflect the current version with the following format **(data name)(vX)(date).(format)**, where **data name** tells what data this is (ie. ISRaD_extra_flat_layer), **vX** refers to the latest official version number (X), **date** tells the date of the most recently updated development version, and **format** is the file type.
+
 
 ## Database R Package download (raw R Package for advanced users)
 
