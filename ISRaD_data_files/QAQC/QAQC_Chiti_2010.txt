@@ -76,7 +76,6 @@ Summary statistics...
  metadata tab...1 observations
     entry_name : 1
     doi : 1
-    compilation_doi : 1
     curator_name : 1
     curator_organization : 1
     curator_email : 1
@@ -86,64 +85,86 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
-    metadata_note : 1
-    template_version : 1
  site tab...1 observations
     entry_name : 1
     site_name : 1
     site_lat : 1
     site_long : 1
+    site_datum : 1
     site_elevation : 1
+    site_note : 1
  profile tab...1 observations
     entry_name : 1
     site_name : 1
     pro_name : 1
-    pro_note : 1
     pro_treatment : 1
     pro_MAT : 1
     pro_MAP : 1
+    pro_usda_soil_order : 1
     pro_soil_taxon : 1
     pro_soil_taxon_sys : 1
     pro_land_cover : 1
     pro_lc_phenology : 1
     pro_lc_leaf_type : 1
+    pro_lc_photosyn_path : 1
     pro_veg_note : 1
+    pro_parent_material : 1
+    pro_parent_chem : 1
+    pro_parent_material_notes : 1
  flux tab...0 observations
- layer tab...3 observations
-    entry_name : 3
-    site_name : 3
-    pro_name : 3
-    lyr_name : 3
-    lyr_obs_date_y : 3
-    lyr_top : 3
-    lyr_bot : 3
-    lyr_hzn : 3
-    lyr_bd_samp : 3
+ layer tab...13 observations
+    entry_name : 13
+    site_name : 13
+    pro_name : 13
+    lyr_name : 13
+    lyr_obs_date_y : 13
+    lyr_top : 13
+    lyr_bot : 13
+    lyr_hzn : 13
+    lyr_comp : 13
+    lyr_color : 3
+    lyr_color_dry : 12
+    lyr_burn_ev : 4
+    lyr_bd_tot : 3
     lyr_sand_tot_psa : 3
     lyr_silt_tot_psa : 3
     lyr_clay_tot_psa : 3
     lyr_coarse_tot : 3
+    lyr_texture_class : 3
     lyr_ph : 3
-    lyr_cat_exch : 3
-    lyr_c_tot : 3
-    lyr_n_tot : 3
-    lyr_14c : 3
-    lyr_14c_sigma : 3
+    lyr_ph_method : 3
+    lyr_ca_exch : 3
+    lyr_na_exch : 3
+    lyr_mg_exch : 3
+    lyr_k_exch : 3
+    lyr_ecec : 3
+    lyr_bs : 3
+    lyr_c_org : 4
+    lyr_c_tot : 4
+    lyr_soc : 4
+    lyr_soc_sigma : 4
+    lyr_n_tot : 4
+    lyr_son : 4
+    lyr_c_to_n : 4
+    lyr_14c : 12
+    lyr_14c_sigma : 12
  interstitial tab...0 observations
- fraction tab...9 observations
-    entry_name : 9
-    site_name : 9
-    pro_name : 9
-    lyr_name : 9
-    frc_name : 9
-    frc_input : 9
-    frc_scheme : 9
-    frc_scheme_units : 9
-    frc_lower : 9
-    frc_upper : 9
-    frc_agent : 9
-    frc_14c : 9
-    frc_14c_sigma : 9
+ fraction tab...1 observations
+    entry_name : 1
+    site_name : 1
+    pro_name : 1
+    lyr_name : 1
+    frc_name : 1
+    frc_input : 1
+    frc_property : 1
+    frc_scheme : 1
+    frc_scheme_units : 1
+    frc_lower : 1
+    frc_upper : 1
+    frc_agent : 1
+    frc_comp : 1
+    frc_14c : 1
+    frc_14c_sigma : 1
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
