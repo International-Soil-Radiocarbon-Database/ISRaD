@@ -41,15 +41,17 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   sg.ftp <- "ftp://ftp.soilgrids.org/data/recent/"
 
-  filenames = RCurl::getURL(sg.ftp, ftp.use.epsv=FALSE, dirlistonly = TRUE)
-  base::print('Connected to ftp server...')
-  filenames = base::strsplit(filenames, "\r*\n")[[1]]
+  
+  
 
   savefile_USDA_250m = "soilgrids_USDA_250m.tif"
-
-  USDA_250m.name <- filenames[grep(filenames, pattern=utils::glob2rx("TAXOUSDA_250m.tif$"))]
-
+  
   if(!base::file.exists(savefile_USDA_250m)) {
+    filenames = RCurl::getURL(sg.ftp, ftp.use.epsv=FALSE, dirlistonly = TRUE)
+    base::print('Connected to ftp server...')
+    filenames = base::strsplit(filenames, "\r*\n")[[1]]
+    USDA_250m.name <- filenames[grep(filenames, pattern=utils::glob2rx("TAXOUSDA_250m.tif$"))]
+    
     try(utils::download.file(paste(sg.ftp, USDA_250m.name, sep=""), savefile_USDA_250m))
     base::print('Downloading USDA classification raster...')
   }
@@ -98,10 +100,11 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_0cm = "soilgrids_ORC_0cm.tif"
 
-  ORC_0cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl1_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_0cm)) {
+    ORC_0cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl1_250m.tif$"))]
+    
     try(utils::download.file(paste(sg.ftp, ORC_0cm.name, sep=""), savefile_ORC_0cm))
     base::print('Downloading ORC 0cm raster...')
   }
@@ -122,10 +125,11 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_5cm = "soilgrids_ORC_5cm.tif"
 
-  ORC_5cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl2_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_5cm)) {
+    ORC_5cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl2_250m.tif$"))]
+    
     try(utils::download.file(paste(sg.ftp, ORC_5cm.name, sep=""), savefile_ORC_5cm))
     base::print('Downloading ORC 5cm raster...')
   }
@@ -146,10 +150,10 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_15cm = "soilgrids_ORC_15cm.tif"
 
-  ORC_15cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl3_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_15cm)) {
+    ORC_15cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl3_250m.tif$"))]
     try(utils::download.file(paste(sg.ftp, ORC_15cm.name, sep=""), savefile_ORC_15cm))
     base::print('Downloading ORC 15cm raster...')
   }
@@ -170,10 +174,11 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_30cm = "soilgrids_ORC_30cm.tif"
 
-  ORC_30cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl4_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_30cm)) {
+    ORC_30cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl4_250m.tif$"))]
+    
     try(utils::download.file(paste(sg.ftp, ORC_30cm.name, sep=""), savefile_ORC_30cm))
     base::print('Downloading ORC 30cm raster...')
   }
@@ -194,10 +199,11 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
 
   savefile_ORC_60cm = "soilgrids_ORC_60cm.tif"
 
-  ORC_60cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl5_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_60cm)) {
+    ORC_60cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl5_250m.tif$"))]
+    
     try(utils::download.file(paste(sg.ftp, ORC_60cm.name, sep=""), savefile_ORC_60cm))
     base::print('Downloading ORC 60cm raster...')
   }
@@ -217,10 +223,11 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
   ## 250m resolution
   savefile_ORC_100cm = "soilgrids_ORC_100cm.tif"
 
-  ORC_100cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl6_250m.tif$"))]
 
   #Download file from ISRIC ftp
   if(!file.exists(savefile_ORC_100cm)) {
+    ORC_100cm.name <- filenames[grep(filenames, pattern=utils::glob2rx("ORCDRC_M_sl6_250m.tif$"))]
+    
     try(utils::download.file(paste(sg.ftp, ORC_100cm.name, sep=""), savefile_ORC_100cm))
     base::print('Downloading ORC 100cm raster...')
   }

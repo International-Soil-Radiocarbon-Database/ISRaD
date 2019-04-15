@@ -1,6 +1,10 @@
 ISRaD Compilation Log 
  
+<<<<<<< HEAD
  2019-04-15 08:03:22 
+=======
+ 2019-04-01 18:15:54 
+>>>>>>> f11f25591b49699560b63bcf57e930bc212b384f
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -21,7 +25,7 @@ Checking controlled vocab between ISRaD template and info file...
  fraction ...
  incubation ...
 
-Compiling data files in D:/ISRaD/ISRaD_data_files/ 
+Compiling data files in /Users/alkalifly/Documents/ISRaD/dev/ISRaD/ISRaD_data_files/ 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 

@@ -7,6 +7,7 @@
 #' @param geodata_clim_directory directory where geospatial climate datasets are found. Necessary to create ISRaD_Extra
 #' @param geodata_soil_directory directory where geospatial soil datasets are found. Necessary to create ISRaD_Extra
 #' @param geodata_pet_directory directory where geospatial pet dataset is found. Necessary to create ISRaD_Extra
+#' @param citations T or F. Update citations.
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
 #' @import stringr
 #' @export
@@ -17,9 +18,10 @@
 #'   geodata_soil_directory="~/geospatial_soil_datasets")
 #' }
 
-ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_pet_directory, geodata_soil_directory){
+ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_pet_directory, geodata_soil_directory, citations=T){
 
   requireNamespace("stringr")
+  requireNamespace("tidyverse")
 # Install local ISRaD -----------------------------------------------------
 
 
@@ -82,6 +84,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   for(t in names(ISRaD_extra_compiled)){
     cat("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), "ncol were added to the", t, "table.\n")
   }
+  
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")
   if (reviewed==2){
     stop("You cannot replace the ISRaD_data object with a faulty data object...")
@@ -93,24 +96,28 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   attributes(ISRaD_data)$version<-v
   usethis::use_data(ISRaD_data, overwrite = T)
   save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
-  save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_data_",v,".rda"))
   cat("ISRaD_data has been updated...\n\n")
 
   ISRaD_extra<-ISRaD_extra_compiled
   attributes(ISRaD_extra)$version<-v
   usethis::use_data(ISRaD_extra, overwrite = T)
   save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
-  save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_extra_",v,".rda"))
   cat("ISRaD_extra has been updated...\n\n")
 
 
 # Save ISRaD extra object as Excel file --------------------------------------------------
 
-  openxlsx::write.xlsx(ISRaD_extra, file = file.path(ISRaD_directory, "ISRaD_data_files/database", "ISRaD_extra_list.xlsx"))
-  openxlsx::write.xlsx(ISRaD_extra, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_list_",v,".xlsx"))
+  cat("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is", v,"\n\n")
+  
+  ISRaD_extra_char<-lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
+  openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files/database", "ISRaD_extra_list.xlsx"))
+  
+  system(paste0("rm ", paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD*")))
+  openxlsx::write.xlsx(ISRaD_extra_char, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_list_",v,".xlsx"))
   openxlsx::write.xlsx(ISRaD_data, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_data_list_",v,".xlsx"))
-
-
+  save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_data_",v,".rda"))
+  save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_extra_",v,".rda"))
+  
 # Flattened data objects --------------------------------------------------
 
   cat("\tUpdating flattened data objects...\n")
@@ -128,14 +135,15 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
     utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_flat_", tab,"_",v, ".csv"))
 
   }
-
+  system(paste0("rm ", paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files.zip")))
+  
   setwd(paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files"))
   utils::zip(zipfile = paste0("../ISRaD_database_files"), files = list.files(paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files"), full.names = F))
   setwd(ISRaD_directory)
 
 # update references -------------------------------------------------------
 
-  #if(removed_entries != "none" & new_entries !="none") {
+  if(removed_entries != "none" & new_entries !="none") {
   cat("\nUpdating credits.md page...this takes about 5 min")
 
   dois=as.character(ISRaD_data$metadata$doi)
@@ -162,8 +170,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   cat(c(h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
         h2, p2, " ", paste("* ",a)), sep="\n", file="ISRaD_data_files/database/credits.md")
 
-
-  #}
+  }
 
 # document and check ------------------------------------------------------
 

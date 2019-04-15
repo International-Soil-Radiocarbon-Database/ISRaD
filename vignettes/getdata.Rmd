@@ -1,0 +1,51 @@
+---
+title: "ISRaD getdata"
+author: "Grey Monroe"
+date: "3/8/2019"
+output:
+  pdf_document: default
+vignette: |
+  %\VignetteIndexEntry{download} 
+  %\VignetteEngine{knitr::rmarkdown} 
+  %\VignetteEncoding{UTF-8}
+---
+
+This brief vingette describes how to load the ISRaD data directly from R using the ISRaD R package.
+
+1. Install (optional)
+
+First as always, you must have installed the ISRaD R package, which provides the function to download the ISRaD data objects. If you already have the ISRaD package you can skip this step.
+
+```{r install, eval=F}
+# 1) Install and load the 'devtools' and 'rcrossref' packages
+# 'devtools' allows you to install the ISRaD package in its "beta"/development form
+# 'rcrossref' is used by our QAQC tool, but sometimes ISRaD won't install without it
+install.packages("devtools")
+library(devtools) 
+install.packages("rcrossref")
+library("rcrossref")
+
+# 2) Install package 'ISRaD' from the github repository:
+devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD", ref="master")
+library(ISRaD) # load the package
+
+```
+
+
+```{r setup, include=F}
+library(ISRaD) # load the package
+```
+
+2. Load the data.
+
+The function to load the data is ISRaD.getdata. This function downloads ISRaD data if you dont already have it. It also loads the data into R in one step. It accepts three parameters, directory, dataset, extra.  
+`directory` = where the data is located or where you want to download the data.
+`dataset` = which dataset you want. This can be the "full" dataset or flattened data objects which are either "flux","interstitial","incubation","fraction",or "layer".
+`extra` = whether or not you want to download the ISRaD_extra object.  
+
+In the example below, we are loading the standard ISRaD data object and storing it as a variable called `mydata`.
+
+```{r download, eval=F}
+mydata<-ISRaD.getdata(directory = "~/Desktop/", dataset="full", extra = F)
+```
+

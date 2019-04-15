@@ -4,16 +4,14 @@
 \alias{ISRaD.getdata}
 \title{ISRaD.getdata}
 \usage{
-ISRaD.getdata(directory = getwd(), extra = F, flat = F, tab = NULL)
+ISRaD.getdata(directory = getwd(), dataset = "full", extra = F)
 }
 \arguments{
 \item{directory}{location of ISRaD_database_files folder. If not found, it will be download. The default is the current working directory.}
 
+\item{dataset}{Specify which data you want. Options are c("full", flux","interstitial","incubation","fraction","layer")}
+
 \item{extra}{T or F. If T, the ISRaD_extra object will be returned. If F, ISRaD_data will be returned. Default is F.}
-
-\item{flat}{T or F. If T, the function will return the flattened data object.}
-
-\item{tab}{if flat == T, you must specify which flattened file you want. Options are c("flux","interstitial","incubation","fraction","layer")}
 }
 \value{
 ISRaD data object
