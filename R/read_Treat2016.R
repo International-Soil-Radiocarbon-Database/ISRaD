@@ -36,8 +36,7 @@ if (download == T ){
   treatS2<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/Treat_S2_edit.xlsx", startRow=629)
   
 }
-  
-  treatS2$Site<-paste(treatS2$Reference,":", treatS2$Longitude, "," ,treatS2$Latitude)
+  treatS2$Site_name<-paste(treatS2$Reference,":", treatS2$Longitude, "," ,treatS2$Latitude)
   
   
   data_template<-list()
@@ -70,7 +69,8 @@ if (download == T ){
   
   data_template$site<-data.frame(
     entry_name=treatS2$Reference,
-    site_name= treatS2$Site,
+    site_name= treatS2$Site_name,
+    site_note=treatS2$Site,
     site_lat= treatS2$Latitude,
     site_long= treatS2$Longitude
   )
@@ -81,7 +81,7 @@ if (download == T ){
   #profile
   data_template$profile<-data.frame(
    entry_name=treatS2$Reference,
-   site_name= treatS2$Site,
+   site_name= treatS2$Site_name,
    pro_treatment="control",
    pro_name=treatS2$ID,
    pro_lat= treatS2$Latitude,
@@ -104,7 +104,7 @@ if (download == T ){
 
   data_template$layer<-data.frame(
     entry_name=treatS2$Reference,
-    site_name= treatS2$Site,
+    site_name= treatS2$Site_name,
     pro_name=treatS2$ID,
     lyr_name=paste(treatS2$ID, as.numeric((as.factor(paste(treatS2$`Depth.bot.[m]`, treatS2$`Depth.top.[m]`)))), sep="-layer"),
     lyr_bot=treatS2$`Depth.bot.[m]` *100,
@@ -153,7 +153,7 @@ if (download == T ){
   
   
   treatS3 <- treatS3 %>% filter(.data$`Method.comm` != "210Pb")
-  treatS3$Site<-paste(treatS3$Reference,":", treatS3$Longitude, "," ,treatS3$Latitude)
+  treatS3$Site_name<-paste(treatS3$Reference,":", treatS3$Longitude, "," ,treatS3$Latitude)
   
   data_template<-list()
   #metadata
@@ -185,7 +185,8 @@ if (download == T ){
 
   data_template$site<-data.frame(
     entry_name=treatS3$Reference,
-    site_name= treatS3$Site,
+    site_name= treatS3$Site_name,
+    site_note=treatS3$Site,
     site_lat= treatS3$Latitude,
     site_long= treatS3$Longitude
   )
@@ -196,8 +197,9 @@ if (download == T ){
   #profile
   data_template$profile<-data.frame(
     entry_name=treatS3$Reference,
-    site_name= treatS3$Site,
+    site_name= treatS3$Site_name,
     pro_name=treatS3$ID,
+    #pro_note=treatS3$Core,
     pro_treatment="control",
     pro_lat= treatS3$Latitude,
     pro_long= treatS3$Longitude,
@@ -237,7 +239,7 @@ if (download == T ){
   
   data_template$layer<-data.frame(
     entry_name=c(treatS3_layers$Reference,treatS3_fractions$Reference),
-    site_name= c(treatS3_layers$Site,treatS3_fractions$Site),
+    site_name= c(treatS3_layers$Site_name,treatS3_fractions$Site_name),
     pro_name=c(treatS3_layers$ID,treatS3_fractions$ID),
     lyr_name=c(treatS3_layers$lyr_name,treatS3_fractions$lyr_name),
     lyr_top=c(treatS3_layers$lyr_top,treatS3_fractions$lyr_top),
@@ -266,11 +268,13 @@ if (download == T ){
   #fraction
   data_template$fraction<-data.frame(
     entry_name=treatS3_fractions$Reference,
-    site_name= treatS3_fractions$Site,
+    site_name= treatS3_fractions$Site_name,
     pro_name=treatS3_fractions$ID,
     lyr_name=treatS3_fractions$lyr_name,
     frc_name=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated.material`),
-    frc_input=paste(treatS3_fractions$lyr_name, treatS3_fractions$`Dated.material`),
+    frc_note=paste0("Dated material: ",treatS3_fractions$`Dated.material`),
+    frc_property ="macrofossil",
+    frc_input=paste(treatS3_fractions$lyr_name),
     frc_scheme="Manual_Separation",
     frc_scheme_units="presence/absence",
     frc_lower="-Inf",
@@ -321,35 +325,6 @@ if (download == T ){
     
     ref_data$`controlled vocabulary` <- template$`controlled vocabulary`
     
-  #   site_lat_lons<-paste(ref_data$site$site_lat,ref_data$site$site_long)
-  #   site_lat_lons_counts<-table(site_lat_lons)
-  #   site_lat_lons_dups<-site_lat_lons_counts[which(site_lat_lons_counts>1)]
-  #  
-  # if(length(site_lat_lons_dups)>0){
-  #   for(dup in names(site_lat_lons_dups)){
-  #    dup_site_names<-ref_data$site$site_name[which(site_lat_lons==dup)] #identify the names of the duplicated sites
-  #    new_site_name<-paste(dup_site_names, collapse=" and ") #collapse their names
-  #    
-  #    dup_sites<-which(ref_data$site$site_name %in% dup_site_names) # identify the row numbers of the duplicated sites
-  #    ref_data$site$site_name[dup_sites[1]]<-new_site_name #rename first row of duplicated sites
-  #    ref_data$site<-ref_data$site[-dup_sites[-1],] #remove the other rows
-  #   
-  #    dup_sites_pro<-which(ref_data$profile$site_name %in% dup_site_names)
-  #    ref_data$profile$pro_name[dup_sites_pro]<-ref_data$profile$site_name[dup_sites_pro]
-  #    ref_data$profile$site_name[dup_sites_pro]<-new_site_name
-  #    
-  #    dup_sites_lyr<-which(ref_data$layer$site_name %in% dup_site_names)
-  #    ref_data$layer$pro_name[dup_sites_lyr]<-ref_data$layer$site_name[dup_sites_lyr]
-  #    ref_data$layer$site_name[dup_sites_lyr]<-new_site_name
-  #    
-  #    dup_sites_frc<-which(ref_data$fraction$site_name %in% dup_site_names)
-  #    ref_data$fraction$pro_name[dup_sites_frc]<-ref_data$fraction$site_name[dup_sites_frc]
-  #    ref_data$fraction$site_name[dup_sites_frc]<-new_site_name
-  #    
-  #    
-  #    }
-  #  }
-  #   
 
     write.xlsx(ref_data, file = paste0(convertedDir, ref, ".xlsx"))
   }
