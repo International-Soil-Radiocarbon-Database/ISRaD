@@ -151,6 +151,10 @@ Summary statistics...
     frc_name : 26
     inc_name : 62
     inc_type : 62
+    inc_obs_date_y : 62
+    inc_duration : 62
+    inc_duration_type : 62
+    inc_moisture_type : 62
     inc_13c : 56
     inc_rc_lab_number : 62
     inc_14c : 60

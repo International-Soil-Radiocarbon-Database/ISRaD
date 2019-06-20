@@ -150,6 +150,7 @@ Summary statistics...
     lyr_name : 9
     inc_name : 9
     inc_type : 9
+    inc_note : 9
     inc_obs_date_y : 9
     inc_obs_date_m : 9
     inc_obs_date_d : 9

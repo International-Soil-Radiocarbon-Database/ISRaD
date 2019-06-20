@@ -17,36 +17,36 @@ requireNamespace("dplyr")
 
     yrs=seq(1966,2009.5,by=1/4) # Series of years by quarters
 
-    gravin<-ISRaD::gravin
-    north_raw=stats::spline(gravin[,c("Date","NHc14")],xout=yrs)
+    graven<-ISRaD::graven
+    north_raw=stats::spline(graven[,c("Date","NHc14")],xout=yrs)
     north_spline=stats::ts((north_raw$y),start=1966,freq=4) #Transformation into a time-series object
     north_spline=forecast::ets(north_spline)
     north_forecast=forecast::forecast(north_spline,h=5*4) #Uses the fitted model to forecast 11 years into the future
-    north=data.frame(Year=c(gravin$Date,
+    north=data.frame(Year=c(graven$Date,
                               seq(stats::tsp(north_forecast$mean)[1],stats::tsp(north_forecast$mean)[2], by=1/stats::tsp(north_forecast$mean)[3])),
-                       Delta14C=c(gravin$NHc14,as.numeric(north_forecast$mean)))
-    
-    south_raw=stats::spline(gravin[,c("Date","SHc14")],xout=yrs)
+                       Delta14C=c(graven$NHc14,as.numeric(north_forecast$mean)))
+
+    south_raw=stats::spline(graven[,c("Date","SHc14")],xout=yrs)
     south_spline=stats::ts((south_raw$y),start=1966,freq=4) #Transformation into a time-series object
     south_spline=forecast::ets(south_spline)
     south_forecast=forecast::forecast(south_spline,h=5*4) #Uses the fitted model to forecast 11 years into the future
-    south=data.frame(Year=c(gravin$Date,
+    south=data.frame(Year=c(graven$Date,
                             seq(stats::tsp(south_forecast$mean)[1],stats::tsp(south_forecast$mean)[2], by=1/stats::tsp(south_forecast$mean)[3])),
-                     Delta14C=c(gravin$SHc14,as.numeric(south_forecast$mean)))
+                     Delta14C=c(graven$SHc14,as.numeric(south_forecast$mean)))
 
-    tropic_raw=stats::spline(gravin[,c("Date","Tropicsc14")],xout=yrs)
+    tropic_raw=stats::spline(graven[,c("Date","Tropicsc14")],xout=yrs)
     tropic_spline=stats::ts((tropic_raw$y),start=1966,freq=4) #Transformation into a time-series object
     tropic_spline=forecast::ets(tropic_spline)
     tropic_forecast=forecast::forecast(tropic_spline,h=5*4) #Uses the fitted model to forecast 11 years into the future
-    tropic=data.frame(Year=c(gravin$Date,
+    tropic=data.frame(Year=c(graven$Date,
                             seq(stats::tsp(tropic_forecast$mean)[1],stats::tsp(tropic_forecast$mean)[2], by=1/stats::tsp(tropic_forecast$mean)[3])),
-                     Delta14C=c(gravin$Tropicsc14,as.numeric(tropic_forecast$mean)))
-    
+                     Delta14C=c(graven$Tropicsc14,as.numeric(tropic_forecast$mean)))
+
     atm14C.annual <- data.frame(year = unique(ceiling(tropic$Year)),
                                 d14C.n = tapply(north$Delta14C, ceiling(north$Year), FUN=mean),
                                 d14C.s = tapply(south$Delta14C, ceiling(south$Year), FUN=mean),
                                 d14C.t = tapply(tropic$Delta14C, ceiling(tropic$Year), FUN=mean))
-    
+
     # OLD CODE ###############
     # NHZone2=SoilR::bind.C14curves(prebomb=SoilR::IntCal13,postbomb=SoilR::Hua2013$NHZone2,time.scale="AD")
     # nhz2=stats::spline(SoilR::Hua2013$NHZone2[,c(1,4)],xout=yrs) #Spline interpolation of the NH_Zone 2 dataset at a quarterly basis
@@ -58,7 +58,7 @@ requireNamespace("dplyr")
     #                           seq(stats::tsp(f2.nhz2$mean)[1],stats::tsp(f2.nhz2$mean)[2], by=1/stats::tsp(f2.nhz2$mean)[3])),
     #                    Delta14C=c(bombcurve.nhz2[-dim(bombcurve.nhz2)[1],2],as.numeric(f2.nhz2$mean)))
     # NHZone2$year <- ceiling(NHZone2$Year) # rounds fractional years to year
-    # 
+    #
     # #Forecast bomb curve in SH
     # SHZone12=SoilR::bind.C14curves(prebomb=SoilR::IntCal13,postbomb=SoilR::Hua2013$SHZone12,time.scale="AD")
     # shz2=stats::spline(SoilR::Hua2013$SHZone12[,c(1,4)],xout=yrs) #Spline interpolation of the SH_Zone12 dataset at a quaterly basis
@@ -70,7 +70,7 @@ requireNamespace("dplyr")
     #                            seq(stats::tsp(f2.shz2$mean)[1],stats::tsp(f2.shz2$mean)[2], by=1/stats::tsp(f2.shz2$mean)[3])),
     #                     Delta14C=c(bombcurve.shz2[-dim(bombcurve.shz2)[1],2],as.numeric(f2.shz2$mean)))
     # SHZone12$year <- ceiling(SHZone12$Year) # rounds fractional years to year
-    # 
+    #
     # atm14C.annual <- data.frame(year = unique(SHZone12$year),
     #                             d14C.n = tapply(NHZone2$Delta14C, NHZone2$year, FUN=mean),
     #                             d14C.s = tapply(SHZone12$Delta14C, SHZone12$year, FUN=mean))
@@ -80,12 +80,12 @@ requireNamespace("dplyr")
       north.obs <- which(df.pro$pro_lat>30)
       south.obs <- which(df.pro$pro_lat<(-30))
       tropic.obs <- which(df.pro$pro_lat<30 & df.pro$pro_lat>(-30))
-      
+
       df.pro$atm14C<-NA
       df.pro$atm14C[north.obs]<-atm14C.annual$d14C.n[match(df.pro[north.obs,obs_date_y],atm14C.annual$year)]
       df.pro$atm14C[south.obs]<-atm14C.annual$d14C.s[match(df.pro[south.obs,obs_date_y],atm14C.annual$year)]
       df.pro$atm14C[tropic.obs]<-atm14C.annual$d14C.t[match(df.pro[tropic.obs,obs_date_y],atm14C.annual$year)]
-                         
+
       return(df.pro)
       }
 
@@ -93,7 +93,7 @@ requireNamespace("dplyr")
     database$profile$pro_graven_zone[database$profile$pro_lat>30]<-"north"
     database$profile$pro_graven_zone[database$profile$pro_lat<(-30)]<-"south"
     database$profile$pro_graven_zone[database$profile$pro_lat<30 & database$profile$pro_lat>-30]<-"tropic"
-    
+
     ## calculate del del 14C
     # flux
     database$flux$flx_graven_atm<-calc_atm14c(database$flux, "flx_obs_date_y")$atm14C
@@ -110,6 +110,6 @@ requireNamespace("dplyr")
     # incubation
     database$incubation$inc_graven_atm<-calc_atm14c(database$incubation, "inc_obs_date_y")$atm14C
     database$incubation$inc_dd14c <- database$incubation$inc_14c-database$incubation$inc_graven_atm
-    
+
   return(database)
 }

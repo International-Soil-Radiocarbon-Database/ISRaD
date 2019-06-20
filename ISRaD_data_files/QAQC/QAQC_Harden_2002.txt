@@ -202,6 +202,9 @@ Summary statistics...
     inc_name : 15
     inc_type : 15
     inc_note : 15
+    inc_obs_date_y : 15
+    inc_duration : 15
+    inc_duration_type : 15
     inc_temp : 15
     inc_moisture_type : 15
     inc_flux : 14

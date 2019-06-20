@@ -106,7 +106,7 @@ Summary statistics...
     pro_parent_material : 16
     pro_parent_chem : 16
     pro_parent_material_notes : 16
-    pro_2d_position : 14
+    pro_2d_position : 15
  flux tab...0 observations
  layer tab...107 observations
     entry_name : 107

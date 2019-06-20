@@ -100,6 +100,8 @@ Summary statistics...
     pro_name : 13
     pro_treatment : 13
     pro_treatment_note : 7
+    pro_soil_taxon : 13
+    pro_soil_taxon_sys : 13
     pro_land_cover : 13
     pro_veg_note : 13
     pro_thaw_depth : 13
@@ -125,7 +127,7 @@ Summary statistics...
     lyr_name : 23
     inc_name : 23
     inc_type : 23
-    inc_note : 8
+    inc_note : 23
     inc_duration : 23
     inc_duration_type : 23
     inc_temp : 23

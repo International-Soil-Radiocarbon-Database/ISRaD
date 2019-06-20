@@ -93,30 +93,32 @@ Summary statistics...
     site_datum : 7
     site_elevation : 7
     site_note : 1
- profile tab...42 observations
-    entry_name : 42
-    site_name : 42
-    pro_name : 42
-    pro_treatment : 42
-    pro_reps : 42
-    pro_MAT : 42
-    pro_MAP : 42
+ profile tab...49 observations
+    entry_name : 49
+    site_name : 49
+    pro_name : 49
+    pro_treatment : 49
+    pro_reps : 44
+    pro_MAT : 44
+    pro_MAP : 44
     pro_soil_taxon : 8
     pro_soil_taxon_sys : 8
-    pro_land_cover : 42
-    pro_parent_material : 42
+    pro_land_cover : 44
+    pro_parent_material : 44
  flux tab...0 observations
- layer tab...42 observations
-    entry_name : 42
-    site_name : 42
-    pro_name : 42
-    lyr_name : 42
-    lyr_obs_date_y : 42
-    lyr_obs_date_m : 42
-    lyr_obs_date_d : 42
-    lyr_top : 42
-    lyr_bot : 42
+ layer tab...43 observations
+    entry_name : 43
+    site_name : 43
+    pro_name : 43
+    lyr_name : 43
+    lyr_obs_date_y : 43
+    lyr_obs_date_m : 43
+    lyr_obs_date_d : 43
+    lyr_top : 43
+    lyr_bot : 43
+    lyr_bd_samp : 1
     lyr_13c : 42
+    lyr_rc_lab : 42
     lyr_rc_lab_number : 42
     lyr_14c : 27
  interstitial tab...0 observations
@@ -128,6 +130,7 @@ Summary statistics...
     lyr_name : 42
     inc_name : 42
     inc_type : 42
+    inc_note : 42
     inc_obs_date_y : 38
     inc_obs_date_m : 38
     inc_obs_date_d : 38

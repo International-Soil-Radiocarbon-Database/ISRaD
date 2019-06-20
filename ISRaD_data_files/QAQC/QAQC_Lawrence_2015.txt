@@ -100,6 +100,7 @@ Summary statistics...
     entry_name : 17
     site_name : 17
     pro_name : 17
+    pro_note : 17
     pro_lat : 11
     pro_long : 11
     pro_treatment : 17

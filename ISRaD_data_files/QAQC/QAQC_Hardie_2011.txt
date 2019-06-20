@@ -123,8 +123,8 @@ Summary statistics...
     lyr_13c : 3
     lyr_rc_lab : 3
     lyr_rc_lab_number : 3
-    lyr_14c : 3
-    lyr_14c_sigma : 3
+    lyr_fraction_modern : 3
+    lyr_fraction_modern_sigma : 3
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...9 observations
@@ -148,8 +148,8 @@ Summary statistics...
     inc_13c : 9
     inc_rc_lab : 9
     inc_rc_lab_number : 9
-    inc_14c : 9
-    inc_14c_sigma : 9
+    inc_fraction_modern : 9
+    inc_fraction_modern_sigma : 9
  - - - - - - - - - - - - - - - - - - - -
 
 
