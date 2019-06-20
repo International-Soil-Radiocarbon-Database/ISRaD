@@ -134,6 +134,11 @@ Summary statistics...
     lyr_name : 14
     inc_name : 14
     inc_type : 14
+    inc_note : 14
+    inc_duration : 14
+    inc_duration_type : 14
+    inc_temp : 14
+    inc_moisture_type : 14
     inc_flux : 10
     inc_flux_units : 10
     inc_13c : 13
