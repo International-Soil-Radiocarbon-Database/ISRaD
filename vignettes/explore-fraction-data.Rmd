@@ -25,6 +25,9 @@ library(ggplot2)
 ## Join Fraction Data to relevant data from other levels of the hierarchy
 ```{r echo=TRUE, warning = FALSE, message = FALSE, results="hide"}
 
+#Get latest ISRaD data from github
+ISRaD_data <- ISRaD.getdata(directory = "~/Desktop/", dataset="full", extra = F)
+
 #Create flat data to work with:
 frc_data <- ISRaD_data$fraction %>% as_tibble() %>% #Start with fraction data
   left_join(ISRaD_data$layer) %>% #Join to layer data
@@ -48,16 +51,16 @@ head(frc_data)
 
 #Example of how to add a new column to your data frame or tibble:
 #note will add the column temporarily, but won't save it unless you assign it to an R object
-frc_data %>% 
-  dplyr::mutate(frc_pmC = frc_fraction_modern*100) 
+frc_data %>%
+  dplyr::mutate(frc_pmC = frc_fraction_modern*100)
 
 #First fill in observation year across levels
 #Add a column using mutate
 #Use if_else(is.na, true statement, false statement) to check for missing values
 frc_data <- frc_data %>%
-  dplyr::mutate(frc_obs_date_y =  if_else(is.na(frc_obs_date_y), lyr_obs_date_y, frc_obs_date_y)) 
-  
-  
+  dplyr::mutate(frc_obs_date_y =  if_else(is.na(frc_obs_date_y), lyr_obs_date_y, frc_obs_date_y))
+
+
 #Then calculate delta 14C from fraction modern
 #delta14C=[fraction_modern*exp(lambda*(1950-Yc))-1]*1000
 #Where lambda is 1/(true mean-life) of radiocarbon = 1/8267 = 0.00012097
@@ -93,7 +96,7 @@ frc_data_small <- frc_data %>%
   unique() #note: unique reduces from 1712 to 1665. what type of entries would we be removing here?
 
 
-#Group and look at summary statistics by land cover 
+#Group and look at summary statistics by land cover
 frc_data_small %>%
   group_by(pro_land_cover) %>%
   summarise(num_data_points = n(),
@@ -185,6 +188,3 @@ frc_data_small %>%
   geom_point()
 
 ```
-
-
-

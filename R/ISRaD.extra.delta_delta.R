@@ -28,7 +28,7 @@ requireNamespace("dplyr")
 
       # add in lyr_obs_date_y for calculating del del in inc and frc tables
       if(obs_date_y == "lyr_obs_date_y" & is.null(df.pro$lyr_obs_date_y)) {
-        df.pro$lyr_obs_date_y<-israd$layer[match(df.pro$lyr_name,israd$layer$lyr_name),"lyr_obs_date_y"]
+        df.pro$lyr_obs_date_y<-database$layer[match(df.pro$lyr_name,database$layer$lyr_name),"lyr_obs_date_y"]
       }
 
       df.pro$atm14C<-NA
