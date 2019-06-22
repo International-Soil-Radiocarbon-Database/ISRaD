@@ -4,7 +4,8 @@
 \alias{ISRaD.getdata}
 \title{ISRaD.getdata}
 \usage{
-ISRaD.getdata(directory = getwd(), dataset = "full", extra = F)
+ISRaD.getdata(directory = getwd(), dataset = "full", extra = F,
+  force_download = F)
 }
 \arguments{
 \item{directory}{location of ISRaD_database_files folder. If not found, it will be download. The default is the current working directory.}
@@ -12,6 +13,8 @@ ISRaD.getdata(directory = getwd(), dataset = "full", extra = F)
 \item{dataset}{Specify which data you want. Options are c("full", flux","interstitial","incubation","fraction","layer")}
 
 \item{extra}{T or F. If T, the ISRaD_extra object will be returned. If F, ISRaD_data will be returned. Default is F.}
+
+\item{force_download}{T or F. If there are already ISRaD_database files in the directory you specify, new data will not be downloaded by default. However, if you set force_downlaod to T, the newest data from github will be downloaded regardless.}
 }
 \value{
 ISRaD data object
