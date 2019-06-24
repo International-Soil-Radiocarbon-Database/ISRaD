@@ -59,7 +59,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   cat("\nReplacing the ISRaD_data object with the new one...\n")
 
   cat("\tChecking the number of new rows in the compiled ISRaD_data object...\n")
-  ISRaD_data<-load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
+  load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
   for(t in names(ISRaD_data_compiled)){
     cat("\t\t", nrow(ISRaD_data_compiled[[t]])-nrow(ISRaD_data[[t]]), "rows were added to the", t, "table.\n")
   }
@@ -82,7 +82,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   cat("Replacing the ISRaD_extra object with the new one...\n")
 
   cat("\tChecking the number of new rows in the compiled ISRaD_extra object...\n")
-  ISRaD_extra<-load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
+  load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
   for(t in names(ISRaD_extra_compiled)){
     cat("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), "ncol were added to the", t, "table.\n")
   }
