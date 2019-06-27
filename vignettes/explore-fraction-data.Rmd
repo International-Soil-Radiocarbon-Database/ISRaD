@@ -26,7 +26,7 @@ library(ggplot2)
 ```{r echo=TRUE, warning = FALSE, message = FALSE, results="hide"}
 
 #Get latest ISRaD data from github
-ISRaD_data <- ISRaD.getdata(directory, dataset="full", extra = F)
+ISRaD_data <- ISRaD.getdata(directory="~", dataset="full", extra = F)
 
 #Create flat data to work with:
 frc_data <- ISRaD_data$fraction %>% as_tibble() %>% #Start with fraction data
