@@ -46,6 +46,6 @@ The function to load the data is ISRaD.getdata. This function downloads ISRaD da
 In the example below, we are loading the standard ISRaD data object and storing it as a variable called `mydata`.
 
 ```{r download, eval=F}
-mydata<-ISRaD.getdata(directory = "~/Desktop/", dataset="full", extra = F)
+mydata<-ISRaD.getdata(directory = "~", dataset="full", extra = F)
 ```
 
