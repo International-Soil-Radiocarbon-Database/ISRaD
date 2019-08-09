@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2019-07-04 07:05:45 
+ 2019-07-17 14:24:36 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -8,6 +8,8 @@ Checking compatibility between ISRaD template and info file...
  site ...
  profile ...
  flux ...
+	WARNING column names unique to info file: flx_o18
+	WARNING column names unique to template file: flx_18o
  layer ...
  interstitial ...
  fraction ...
@@ -225,274 +227,276 @@ Compiling data files in D:/Workspace/ISRaD/ISRaD_data_files/
 
  100 checking Kondo_2010.xlsx ...passed
 
- 101 checking Kramer_2016.xlsx ...passed
+ 101 checking Kramer_2012.xlsx ...passed
 
- 102 checking Krull_2003.xlsx ...passed
+ 102 checking Kramer_2016.xlsx ...passed
 
- 103 checking Krull_2005.xlsx ...passed
+ 103 checking Krull_2003.xlsx ...passed
 
- 104 checking Krull_2006.xlsx ...passed
+ 104 checking Krull_2005.xlsx ...passed
 
- 105 checking Ladyman_1980.xlsx ...passed
+ 105 checking Krull_2006.xlsx ...passed
 
- 106 checking Laskar_2012.xlsx ...passed
+ 106 checking Ladyman_1980.xlsx ...passed
 
- 107 checking Lassey_1996.xlsx ...passed
+ 107 checking Laskar_2012.xlsx ...passed
 
- 108 checking Lavoie_2011.xlsx ...passed
+ 108 checking Lassey_1996.xlsx ...passed
 
- 109 checking Lawrence_2015.xlsx ...passed
+ 109 checking Lavoie_2011.xlsx ...passed
 
- 110 checking Leavitt_2007.xlsx ...passed
+ 110 checking Lawrence_2015.xlsx ...passed
 
- 111 checking Lee_2012.xlsx ...passed
+ 111 checking Leavitt_2007.xlsx ...passed
 
- 112 checking Leifeld_2009.xlsx ...passed
+ 112 checking Lee_2012.xlsx ...passed
 
- 113 checking Leith_2014.xlsx ...passed
+ 113 checking Leifeld_2009.xlsx ...passed
 
- 114 checking Lemke_2006.xlsx ...passed
+ 114 checking Leith_2014.xlsx ...passed
 
- 115 checking Li_2010.xlsx ...passed
+ 115 checking Lemke_2006.xlsx ...passed
 
- 116 checking Liu_2006.xlsx ...passed
+ 116 checking Li_2010.xlsx ...passed
 
- 117 checking Lupascu_2018.xlsx ...passed
+ 117 checking Liu_2006.xlsx ...passed
 
- 118 checking Lybrand_2017.xlsx ...passed
+ 118 checking Lupascu_2018.xlsx ...passed
 
- 119 checking Manies_2004.xlsx ...passed
+ 119 checking Lybrand_2017.xlsx ...passed
 
- 120 checking Marin-Spiotta_2008.xlsx ...passed
+ 120 checking Manies_2004.xlsx ...passed
 
- 121 checking Marin-Spiotta_2011.xlsx ...passed
+ 121 checking Marin-Spiotta_2008.xlsx ...passed
 
- 122 checking Mariotti_1994.xlsx ...passed
+ 122 checking Marin-Spiotta_2011.xlsx ...passed
 
- 123 checking Martel_1974.xlsx ...passed
+ 123 checking Mariotti_1994.xlsx ...passed
 
- 124 checking Masiello_2004.xlsx ...passed
+ 124 checking Martel_1974.xlsx ...passed
 
- 125 checking McClaran_2000.xlsx ...passed
+ 125 checking Masiello_2004.xlsx ...passed
 
- 126 checking McClung_de_Tapia_2005.xlsx ...passed
+ 126 checking McClaran_2000.xlsx ...passed
 
- 127 checking McFarlane2013Porras2017TrumboreUnp_inc.xlsx ...passed
+ 127 checking McClung_de_Tapia_2005.xlsx ...passed
 
- 128 checking Meyer_2012.xlsx ...passed
+ 128 checking McFarlane2013Porras2017TrumboreUnp_inc.xlsx ...passed
 
- 129 checking Mikutta_2009.xlsx ...passed
+ 129 checking Meyer_2012.xlsx ...passed
 
- 130 checking Milton_1998.xlsx ...passed
+ 130 checking Mikutta_2009.xlsx ...passed
 
- 131 checking Monreal_1997.xlsx ...passed
+ 131 checking Milton_1998.xlsx ...passed
 
- 132 checking Morris_unpub.xlsx ...passed
+ 132 checking Monreal_1997.xlsx ...passed
 
- 133 checking Mueller_2014.xlsx ...passed
+ 133 checking Morris_unpub.xlsx ...passed
 
- 134 checking Muhr_2009.xlsx ...passed
+ 134 checking Mueller_2014.xlsx ...passed
 
- 135 checking Nagy_2017.xlsx ...passed
+ 135 checking Muhr_2009.xlsx ...passed
 
- 136 checking Nave_2017_corr.xlsx ...passed
+ 136 checking Nagy_2017.xlsx ...passed
 
- 137 checking Nowinski_2009.xlsx ...passed
+ 137 checking Nave_2017_corr.xlsx ...passed
 
- 138 checking Nowinski_2010.xlsx ...passed
+ 138 checking Nowinski_2009.xlsx ...passed
 
- 139 checking O'Donnell_2011.xlsx ...passed
+ 139 checking Nowinski_2010.xlsx ...passed
 
- 140 checking OBrien_1986.xlsx ...passed
+ 140 checking O'Donnell_2011.xlsx ...passed
 
- 141 checking Ohno_2017.xlsx ...passed
+ 141 checking OBrien_1986.xlsx ...passed
 
- 142 checking Paul_1997.xlsx ...passed
+ 142 checking Ohno_2017.xlsx ...passed
 
- 143 checking Perez_2006.xlsx ...passed
+ 143 checking Paul_1997.xlsx ...passed
 
- 144 checking Pessenda_1996.xlsx ...passed
+ 144 checking Perez_2006.xlsx ...passed
 
- 145 checking Pessenda_2001.xlsx ...passed
+ 145 checking Pessenda_1996.xlsx ...passed
 
- 146 checking Phillips_2013.xlsx ...passed
+ 146 checking Pessenda_2001.xlsx ...passed
 
- 147 checking Posada_2011.xlsx ...passed
+ 147 checking Phillips_2013.xlsx ...passed
 
- 148 checking Quideau_2001.xlsx ...passed
+ 148 checking Posada_2011.xlsx ...passed
 
- 149 checking Rabbi_2013.xlsx ...passed
+ 149 checking Quideau_2001.xlsx ...passed
 
- 150 checking Rasmussen_2005.xlsx ...passed
+ 150 checking Rabbi_2013.xlsx ...passed
 
- 151 checking Rasmussen_2010.xlsx ...passed
+ 151 checking Rasmussen_2005.xlsx ...passed
 
- 152 checking Rasmussen_2018.xlsx ...passed
+ 152 checking Rasmussen_2010.xlsx ...passed
 
- 153 checking Resh_2002.xlsx ...passed
+ 153 checking Rasmussen_2018.xlsx ...passed
 
- 154 checking Rethemeyer_2005.xlsx ...passed
+ 154 checking Resh_2002.xlsx ...passed
 
- 155 checking Richter_1999.xlsx ...passed
+ 155 checking Rethemeyer_2005.xlsx ...passed
 
- 156 checking Rogers_2014.xlsx ...passed
+ 156 checking Richter_1999.xlsx ...passed
 
- 157 checking Rumpel_2002.xlsx ...passed
+ 157 checking Rogers_2014.xlsx ...passed
 
- 158 checking Rumpel_2008.xlsx ...passed
+ 158 checking Rumpel_2002.xlsx ...passed
 
- 159 checking Saiz_2015.xlsx ...passed
+ 159 checking Rumpel_2008.xlsx ...passed
 
- 160 checking Sanderman_2017.xlsx ...passed
+ 160 checking Saiz_2015.xlsx ...passed
 
- 161 checking Scharpenseel_1973a.xlsx ...passed
+ 161 checking Sanderman_2017.xlsx ...passed
 
- 162 checking Schimel_2011.xlsx ...passed
+ 162 checking Scharpenseel_1973a.xlsx ...passed
 
- 163 checking Schoening_2006.xlsx ...passed
+ 163 checking Schimel_2011.xlsx ...passed
 
- 164 checking Schulze_2009.xlsx ...passed
+ 164 checking Schoening_2006.xlsx ...passed
 
- 165 checking Schulze_2011.xlsx ...passed
+ 165 checking Schulze_2009.xlsx ...passed
 
- 166 checking Schuur_2001.xlsx ...passed
+ 166 checking Schulze_2011.xlsx ...passed
 
- 167 checking Schuur_2006.xlsx ...passed
+ 167 checking Schuur_2001.xlsx ...passed
 
- 168 checking Schwartz_1992.xlsx ...passed
+ 168 checking Schuur_2006.xlsx ...passed
 
- 169 checking Schwartz_1996.xlsx ...passed
+ 169 checking Schwartz_1992.xlsx ...passed
 
- 170 checking Shaw_2004.xlsx ...passed
+ 170 checking Schwartz_1996.xlsx ...passed
 
- 171 checking Shen_2001.xlsx ...passed
+ 171 checking Shaw_2004.xlsx ...passed
 
- 172 checking Sierra_2012.xlsx ...passed
+ 172 checking Shen_2001.xlsx ...passed
 
- 173 checking Sollins_2006.xlsx ...passed
+ 173 checking Sierra_2012.xlsx ...passed
 
- 174 checking Sollins_2009.xlsx ...passed
+ 174 checking Sollins_2006.xlsx ...passed
 
- 175 checking Stephan_1983.xlsx ...passed
+ 175 checking Sollins_2009.xlsx ...passed
 
- 176 checking Stout_1980.xlsx ...passed
+ 176 checking Stephan_1983.xlsx ...passed
 
- 177 checking Swanston_2005.xlsx ...passed
+ 177 checking Stout_1980.xlsx ...passed
 
- 178 checking Szymanski_2019.xlsx ...passed
+ 178 checking Swanston_2005.xlsx ...passed
 
- 179 checking Tan_2013.xlsx ...passed
+ 179 checking Szymanski_2019.xlsx ...passed
 
- 180 checking Taylor_2015.xlsx ...passed
+ 180 checking Tan_2013.xlsx ...passed
 
- 181 checking Tefs_2012.xlsx ...passed
+ 181 checking Taylor_2015.xlsx ...passed
 
- 182 checking Tegen_1996.xlsx ...passed
+ 182 checking Tefs_2012.xlsx ...passed
 
- 183 checking Telles_2003.xlsx ...passed
+ 183 checking Tegen_1996.xlsx ...passed
 
- 184 checking Tifafi_2018.xlsx ...passed
+ 184 checking Telles_2003.xlsx ...passed
 
- 185 checking Tonnejick_2006.xlsx ...passed
+ 185 checking Tifafi_2018.xlsx ...passed
 
- 186 checking Torn_1997.xlsx ...passed
+ 186 checking Tonnejick_2006.xlsx ...passed
 
- 187 checking Torn_2002.xlsx ...passed
+ 187 checking Torn_1997.xlsx ...passed
 
- 188 checking Torn_2005.xlsx ...passed
+ 188 checking Torn_2002.xlsx ...passed
 
- 189 checking Trumbore_1993.xlsx ...passed
+ 189 checking Torn_2005.xlsx ...passed
 
- 190 checking Trumbore_1995.xlsx ...passed
+ 190 checking Trumbore_1993.xlsx ...passed
 
- 191 checking Trumbore_1996Koarashi_2012Marzaioli_2010.xlsx ...passed
+ 191 checking Trumbore_1995.xlsx ...passed
 
- 192 checking Trumbore_1997.xlsx ...passed
+ 192 checking Trumbore_1996Koarashi_2012Marzaioli_2010.xlsx ...passed
 
- 193 checking Trumbore_1999.xlsx ...passed
+ 193 checking Trumbore_1997.xlsx ...passed
 
- 194 checking Trumbore_2006.xlsx ...passed
+ 194 checking Trumbore_1999.xlsx ...passed
 
- 195 checking van_Dam_1997.xlsx ...passed
+ 195 checking Trumbore_2006.xlsx ...passed
 
- 196 checking van_der_Voort_2016.xlsx ...passed
+ 196 checking van_Dam_1997.xlsx ...passed
 
- 197 checking van_Mourik_2010.xlsx ...passed
+ 197 checking van_der_Voort_2016.xlsx ...passed
 
- 198 checking Vaughn_2014.xlsx ...passed
+ 198 checking van_Mourik_2010.xlsx ...passed
 
- 199 checking Wagai_2015.xlsx ...passed
+ 199 checking Vaughn_2014.xlsx ...passed
 
- 200 checking Waldrop_2012.xlsx ...passed
+ 200 checking Wagai_2015.xlsx ...passed
 
- 201 checking Wang_1996.xlsx ...passed
+ 201 checking Waldrop_2012.xlsx ...passed
 
- 202 checking Wang_1999.xlsx ...passed
+ 202 checking Wang_1996.xlsx ...passed
 
- 203 checking Wang_2000.xlsx ...passed
+ 203 checking Wang_1999.xlsx ...passed
 
- 204 checking Wang_2005.xlsx ...passed
+ 204 checking Wang_2000.xlsx ...passed
 
- 205 checking Wunderlich_2012.xlsx ...passed
+ 205 checking Wang_2005.xlsx ...passed
+
+ 206 checking Wunderlich_2012.xlsx ...passed
 
 -------------
 
 Summary statistics...
 
- metadata tab...211 observations
-    entry_name : 211
-    doi : 211
+ metadata tab...212 observations
+    entry_name : 212
+    doi : 212
     compilation_doi : 78
-    curator_name : 211
-    curator_organization : 211
-    curator_email : 211
-    modification_date_y : 211
-    modification_date_m : 211
-    modification_date_d : 211
-    contact_name : 211
-    contact_email : 211
+    curator_name : 212
+    curator_organization : 212
+    curator_email : 212
+    modification_date_y : 212
+    modification_date_m : 212
+    modification_date_d : 212
+    contact_name : 212
+    contact_email : 212
     contact_orcid_id : 43
-    bibliographical_reference : 211
-    metadata_note : 73
-    associated_datasets : 41
-    template_version : 114
- site tab...612 observations
-    entry_name : 612
-    site_name : 612
-    site_lat : 612
-    site_long : 612
+    bibliographical_reference : 212
+    metadata_note : 74
+    associated_datasets : 42
+    template_version : 115
+ site tab...618 observations
+    entry_name : 618
+    site_name : 618
+    site_lat : 618
+    site_long : 618
     site_datum : 236
-    site_elevation : 493
-    site_note : 301
- profile tab...1924 observations
-    entry_name : 1924
-    site_name : 1924
+    site_elevation : 498
+    site_note : 307
+ profile tab...1930 observations
+    entry_name : 1930
+    site_name : 1930
     plot_name : 695
-    pro_name : 1924
+    pro_name : 1930
     pro_note : 679
     pro_lat : 440
     pro_long : 440
     pro_elevation : 184
-    pro_treatment : 1924
+    pro_treatment : 1930
     pro_treatment_note : 371
     pro_comp : 203
     pro_reps : 362
-    pro_MAT : 1228
-    pro_MAP : 1363
-    pro_usda_soil_order : 844
+    pro_MAT : 1234
+    pro_MAP : 1369
+    pro_usda_soil_order : 850
     pro_soil_series : 366
-    pro_soil_taxon : 1244
-    pro_soil_taxon_sys : 1094
+    pro_soil_taxon : 1250
+    pro_soil_taxon_sys : 1100
     pro_chrono_name : 26
-    pro_soil_age : 132
+    pro_soil_age : 138
     pro_soil_age_note : 6
     pro_MAST : 177
     pro_MASWC : 137
-    pro_land_cover : 1824
+    pro_land_cover : 1830
     pro_lc_phenology : 114
     pro_lc_leaf_type : 112
     pro_lc_photosyn_path : 93
-    pro_veg_note : 1457
+    pro_veg_note : 1463
     pro_NPP : 8
     pro_bedrock_depth : 118
     pro_complete : 4
@@ -546,20 +550,20 @@ Summary statistics...
     flx_14c_sigma : 137
     flx_14c_sd : 17
     flx_fraction_modern : 20
- layer tab...7689 observations
-    entry_name : 7689
-    site_name : 7689
-    pro_name : 7689
-    lyr_name : 7689
-    lyr_obs_date_y : 7689
+ layer tab...7734 observations
+    entry_name : 7734
+    site_name : 7734
+    pro_name : 7734
+    lyr_name : 7734
+    lyr_obs_date_y : 7734
     lyr_obs_date_m : 3561
     lyr_obs_date_d : 2598
     lyr_all_org_neg : 300
-    lyr_top : 7689
-    lyr_bot : 7689
-    lyr_hzn : 3859
+    lyr_top : 7734
+    lyr_bot : 7734
+    lyr_hzn : 3904
     lyr_comp : 508
-    lyr_note : 1836
+    lyr_note : 1852
     lyr_color : 503
     lyr_color_dry : 12
     lyr_burn_ev : 105
@@ -587,20 +591,20 @@ Summary statistics...
     lyr_ecec : 121
     lyr_bs : 256
     lyr_c_inorg : 531
-    lyr_c_org : 2021
+    lyr_c_org : 2066
     lyr_c_tot : 3978
     lyr_soc : 1236
     lyr_soc_sigma : 222
-    lyr_n_tot : 2531
+    lyr_n_tot : 2576
     lyr_son : 5
-    lyr_c_to_n : 1545
+    lyr_c_to_n : 1590
     lyr_loi : 187
-    lyr_15n : 945
+    lyr_15n : 990
     lyr_13c : 2669
     lyr_rc_lab : 1424
     lyr_rc_lab_number : 758
     lyr_rc_year : 1109
-    lyr_14c : 2917
+    lyr_14c : 2952
     lyr_14c_sigma : 1528
     lyr_14c_sd : 20
     lyr_fraction_modern : 2629
