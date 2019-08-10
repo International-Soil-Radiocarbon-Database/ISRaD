@@ -31,11 +31,6 @@ library(ISRaD) # load the package
 
 ```
 
-
-```{r setup, include=F}
-library(ISRaD) # load the package
-```
-
 2. Load the data.
 
 The function to load the data is ISRaD.getdata. This function downloads ISRaD data if you dont already have it. It also loads the data into R in one step. It accepts three parameters, directory, dataset, extra.  
@@ -46,6 +41,6 @@ The function to load the data is ISRaD.getdata. This function downloads ISRaD da
 In the example below, we are loading the standard ISRaD data object and storing it as a variable called `mydata`.
 
 ```{r download, eval=F}
-mydata<-ISRaD.getdata(directory = "~", dataset="full", extra = F)
+mydata<-ISRaD.getdata(directory = "~", dataset="full", extra = F, force_download = T)
 ```
 
