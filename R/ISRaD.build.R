@@ -39,7 +39,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
 
 
   cat("Compiling the data files in",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
-  cat("You must review the compilation report log file when complete... \n\n")
+  cat("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
   ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files/"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
 
   cat("\nISRaD_data.xlsx saved to", paste0(ISRaD_directory,"/ISRaD_data_files/database\n\n"))
@@ -198,7 +198,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   system(paste(shQuote(file.path(R.home("bin"), "R")),
                "CMD", "Rd2pdf", shQuote(getwd())))
 
-  reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github?")
+  reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github? (will update version number in DESCRIPTION file)")
   if (reviewed==1){
     cat("Ok, the DESCRIPTION file is being updated with a new version...\n")
     DESC<-readLines(paste0(ISRaD_directory,"/DESCRIPTION"))

@@ -5,12 +5,13 @@
 #' @param download boolean, if T the Treat datasets will be downloaded from pangea. Otherwise, they files in downloadDir will be used.
 #' @param downloadDir directory where data files will be downloaded
 #' @param convertedDir directory where data files that are converted to ISRaD template will be saved
+#' @param dois_file file with doi numbers
 #' @return writes out files for individual data objects
 #' @import pangaear
 #' @export
 
 
-read_Treat2016 <- function(download = T, downloadDir = 'temp', convertedDir ="~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/"){
+read_Treat2016 <- function(download = T, downloadDir = 'temp', convertedDir ="~/Dropbox/USGS/ISRaD_data/Compilations/Treat/converted/", dois_file="~/Dropbox/USGS/ISRaD_data/Compilations/Treat/dois.csv"){
 
 # setup -------------------------------------------------------------------
 
@@ -26,7 +27,7 @@ read_Treat2016 <- function(download = T, downloadDir = 'temp', convertedDir ="~/
   names(template)<-getSheetNames(template_file)
   template<-lapply(template, function(x) x %>% mutate_all(as.character))
   
-  dois<-utils::read.csv("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/dois.csv")
+  dois<-utils::read.csv(dois_file)
   
   # S2 ----------------------------------------------------------------------
   if (download == T ){
