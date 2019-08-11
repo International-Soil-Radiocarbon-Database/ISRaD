@@ -6,9 +6,10 @@ inst/doc
 .Rhistory
 .RData
 .Ruserdata
+.Rapp.history
 ISRaD.Rproj
 # Folders
 _site/
 .sass-cache/
 DESCRIPTION
-.Rapp.history
+
