@@ -29,6 +29,10 @@ ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory, 
   database<-ISRaD.extra.geospatial.climate(database, geodata_clim_directory=geodata_clim_directory, geodata_pet_directory=geodata_pet_directory)
   cat("\t filling geospatial soil data \n")
   database<-ISRaD.extra.geospatial.soil(database, geodata_soil_directory=geodata_soil_directory)
+  cat("\t filling 0.5 degree geospatial climate and soil data from Zheng Shi \n")
+  database<-ISRaD.extra.geospatial.Zheng(database, geodata_soil_directory)
+  cat("\t filling 250m soil grids clay \n")
+  database<-ISRaD.extra.geospatial.clay(database, geodata_soil_directory)
 
   ISRaD_data_filled <- database
 
