@@ -16,9 +16,9 @@ ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory){
     tifType <- unlist(strsplit(x, '/'))
     tifType <- unlist(strsplit(tifType[length(tifType)], '_Zheng.tif'))
     columnName <- paste('pro_0.5_', tifType, sep = '')
-    tifRaster <- raster(x)
-    crs(tifRaster) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
-    tifRaster <- setExtent(tifRaster, extent(-180, 180, -90, 90))
+    tifRaster <- raster::raster(x)
+    raster::crs(tifRaster) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+    tifRaster <- raster::setExtent(tifRaster, raster::extent(-180, 180, -90, 90))
     #plot(tifRaster)
     database$profile <- cbind(database$profile, raster::extract(tifRaster, extraCoords))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
