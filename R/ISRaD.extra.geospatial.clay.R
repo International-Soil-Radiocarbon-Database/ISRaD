@@ -13,9 +13,9 @@ ISRaD.extra.geospatial.clay <- function(database, geodata_soil_directory){
   for(x in list.files(path = geodata_clay_directory, pattern = 'v0.2.tif', full.names = TRUE)){
     clayDepth <- unlist(strsplit(unlist(unlist(strsplit(x, 'sol_clay.wfraction_usda.3a1a1a_m_250m_'))), '_1950..2017_v0.2.tif'))
     columnName <- paste('pro_SGclay_', clayDepth, sep = '')[2]
-    tifRaster <- raster(x)
+    tifRaster <- raster::raster(x)
     addedCols <- c(addedCols, columnName)
-    crs(tifRaster) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+    raster::crs(tifRaster) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
     #plot(tifRaster, main = columnName)
     database$profile <- cbind(database$profile, raster::extract(tifRaster, extraCoords))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
