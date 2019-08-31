@@ -24,7 +24,12 @@ ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory){
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
 
-  USDA_0.5_key <- data.frame(read.csv('USDA_soilOrder_0.5degree_key.csv'))
+  pathlength <- nchar(geodata_soil_directory)
+  if(substr(geodata_soil_directory, pathlength-0,pathlength) != '/'){
+    geodata_soil_directory <-paste(geodata_soil_directory, '/', sep='')
+  }
+  USDA_0.5_key_path <- paste(geodata_soil_directory, 'USDA_soilOrder_0.5degree_key.csv', sep = '')
+  USDA_0.5_key <- data.frame(read.csv(USDA_0.5_key_path))
   database$profile <- left_join(database$profile, USDA_0.5_key)
   return(database)
 }
