@@ -9,6 +9,9 @@
 
 ### Start Function ###
 ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory){
+  requireNamespace('raster')
+  requireNamespace('dplyr')
+
   extraCoords <- data.frame(database$profile$pro_long, database$profile$pro_lat)
 
   #Zheng's 0.5 degree data
@@ -30,6 +33,6 @@ ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory){
   }
   USDA_0.5_key_path <- paste(geodata_soil_directory, 'USDA_soilOrder_0.5degree_key.csv', sep = '')
   USDA_0.5_key <- data.frame(read.csv(USDA_0.5_key_path))
-  database$profile <- left_join(database$profile, USDA_0.5_key)
+  database$profile <- dplyr::left_join(database$profile, USDA_0.5_key)
   return(database)
 }
