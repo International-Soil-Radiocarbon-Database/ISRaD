@@ -32,7 +32,7 @@ ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory){
     geodata_soil_directory <-paste(geodata_soil_directory, '/', sep='')
   }
   USDA_0.5_key_path <- paste(geodata_soil_directory, 'USDA_soilOrder_0.5degree_key.csv', sep = '')
-  USDA_0.5_key <- data.frame(read.csv(USDA_0.5_key_path))
+  USDA_0.5_key <- data.frame(utils::read.csv(USDA_0.5_key_path))
   database$profile <- dplyr::left_join(database$profile, USDA_0.5_key)
   return(database)
 }
