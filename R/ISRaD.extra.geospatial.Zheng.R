@@ -2,7 +2,7 @@
 #'
 #' @description Extracts MAT, MAP, MODIS land cover, and soil order from global 0.5 degree gridded data products
 #' @param database soilcarbon dataset object
-#' @param geodata_Zheng_directory directory where 0.5 degree geospatial soil and climate data are located
+#' @param geodata_soil_directory directory where 0.5 degree geospatial soil and climate data are located
 #' @details Uses geographic coordinates of profiles (including those filled from site-level coordinates) to extract MAT, MAP, land cover, and soil order at 0.5 degree spatial resolution. These products were derived for global mapping purposes by Yujie He and Zheng Shi. Note: MODIS 0.5 degree land cover (pro_0.5_landCover_MODIS) was reclassified from 16 classes to 10 classes (pro_0.5_landCover) to match observations for He et al. (2016) (doi: 10.1126/science.aad4273)
 #' @export
 #' @return returns new ISRaD_extra object with extracted 0.5 degree MAT, MAP, land cover, and soil order for every profile
