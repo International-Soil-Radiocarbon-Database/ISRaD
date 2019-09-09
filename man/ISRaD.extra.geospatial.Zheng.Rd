@@ -9,7 +9,7 @@ ISRaD.extra.geospatial.Zheng(database, geodata_soil_directory)
 \arguments{
 \item{database}{soilcarbon dataset object}
 
-\item{geodata_Zheng_directory}{directory where 0.5 degree geospatial soil and climate data are located}
+\item{geodata_soil_directory}{directory where 0.5 degree geospatial soil and climate data are located}
 }
 \value{
 returns new ISRaD_extra object with extracted 0.5 degree MAT, MAP, land cover, and soil order for every profile
