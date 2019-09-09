@@ -33,7 +33,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
 # Compile database --------------------------------------------------------
 
   if (is.null(geodata_clim_directory) | is.null(geodata_soil_directory) | is.null(geodata_pet_directory)){
-    cat("geodata_clim_directory and geodata_soil_directory must be specified.\n")
+    cat("geodata_clim_directory, geodata_pet_directory, and geodata_soil_directory must be specified.\n")
     stop()
   }
 

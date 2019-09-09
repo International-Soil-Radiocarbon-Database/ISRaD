@@ -34,7 +34,7 @@ read_Treat2016 <- function(download = T, downloadDir = 'temp', convertedDir ="~/
     treatS2<-pangaear::pg_data(doi = '10.1594/PANGAEA.863695')[[1]]$data
     utils::write.csv(treatS2, paste0(downloadDir, "treatS2.csv"))
   } else {
-    treatS2<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/2019.08.10/Treat_S2_edit.xlsx", startRow=629)
+    treatS2<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/2019.08.13/Treat_S2_edit.xlsx", startRow=629)
     
   }
   treatS2$Site_name<-paste(treatS2$Reference,":", treatS2$Longitude, "," ,treatS2$Latitude)
@@ -102,7 +102,7 @@ read_Treat2016 <- function(download = T, downloadDir = 'temp', convertedDir ="~/
   
   #need to use the S1 file for getting observation year
   
-  treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/2019.08.10/Treat_S1_edit.xlsx", startRow=422)
+  treatS1<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/2019.08.13/Treat_S1_edit.xlsx", startRow=422)
   colnames(treatS1)<-gsub("\\."," ", colnames(treatS1))
   #treatS1<-pangaear::pg_data(doi = '10.1594/PANGAEA.863689')[[1]]$data
   
@@ -153,7 +153,7 @@ read_Treat2016 <- function(download = T, downloadDir = 'temp', convertedDir ="~/
     
   }
   
-  treatS3<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/2019.08.10/Treat_S3_edit.xlsx", startRow=221)
+  treatS3<-openxlsx::read.xlsx("~/Dropbox/USGS/ISRaD_data/Compilations/Treat/raw/2019.08.13/Treat_S3_edit.xlsx", startRow=221)
   colnames(treatS3)<-gsub("\\."," ", colnames(treatS3))
   
   
