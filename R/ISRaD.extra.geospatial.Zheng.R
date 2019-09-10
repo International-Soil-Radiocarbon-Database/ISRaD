@@ -15,7 +15,7 @@ ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory){
   extraCoords <- data.frame(database$profile$pro_long, database$profile$pro_lat)
 
   #Zheng's 0.5 degree data
-  for(x in list.files(path = geodata_soil_directory, pattern = '.tif', full.names = TRUE)){
+  for(x in list.files(path = geodata_soil_directory, pattern = 'Zheng.tif', full.names = TRUE)){
     tifType <- unlist(strsplit(x, '/'))
     tifType <- unlist(strsplit(tifType[length(tifType)], '_Zheng.tif'))
     columnName <- paste('pro_0.5_', tifType, sep = '')
@@ -34,5 +34,6 @@ ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory){
   USDA_0.5_key_path <- paste(geodata_soil_directory, 'USDA_soilOrder_0.5degree_key.csv', sep = '')
   USDA_0.5_key <- data.frame(utils::read.csv(USDA_0.5_key_path))
   database$profile <- dplyr::left_join(database$profile, USDA_0.5_key)
+  database$profile$pro_0.5_soilorder <- NULL
   return(database)
 }
