@@ -11,3 +11,5 @@ There was 1 NOTE:
 
   Maintainer: 'Jeffrey Beem-Miller <jbeem@bgc-jena.mpg.de>'
   New submission
+
+* Previously submitted with error due to openssl config on Fedora; now fixed
