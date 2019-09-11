@@ -1,6 +1,6 @@
 #' Read He 2016
-#' 
-#' Read in the data from Yuji He's 2016 Science paper as a raw csv file
+#'
+#' Read in the data from Yujie He's 2016 Science paper as a raw csv file
 #'
 #' @param Yujie_file The raw csv data
 #'
@@ -10,20 +10,20 @@
 
 read_YujiHe2016 <- function(Yujie_file = NULL){
   requireNamespace('tidyverse')
-  
+
   if(is.null(Yuijie_file)){
     Yuijie_file<- "~/Dropbox/ISRaD_data/Compilations/Yujie/raw/Yujie_dataset2.csv"
   }
 
-  Yujie_dataset <- utils::read.csv(Yujie_file, na.strings = c("","NA"), 
+  Yujie_dataset <- utils::read.csv(Yujie_file, na.strings = c("","NA"),
                             stringsAsFactors = FALSE, colClasses='character') %>%
     #replace NA pc_dataset_name with 'no_ref'
-    dplyr::mutate(pc_dataset_name = as.factor(if_else(is.na(.data$pc_dataset_name), 
+    dplyr::mutate(pc_dataset_name = as.factor(if_else(is.na(.data$pc_dataset_name),
                                             "no_ref", gsub('\\s+', '_',
                                                            as.character(.data$pc_dataset_name))))) %>%
     #remove sites without longitude specified
     dplyr::group_by(.data$Site) %>% #some sites have multiple lat-lon, rename them
-    dplyr::mutate(site_name = ifelse(length(.data$Site) == 1, 
+    dplyr::mutate(site_name = ifelse(length(.data$Site) == 1,
                   as.character(.data$Site), sprintf('%s:%s,%s', as.character(.data$Site), .data$Lat, .data$Lon))) %>%
     #create profile names from the site name and profile ID
     dplyr::mutate(profile_name = paste(.data$site_name, .data$ProfileID, sep="_")) %>%
@@ -32,9 +32,9 @@ read_YujiHe2016 <- function(Yujie_file = NULL){
     ungroup() %>%
     mutate(pro_veg_note=paste(.data$VegTypeCodeStr_Local, .data$VegLocal,
                               .data$VegType_Species, sep=";")) %>%
-    rename(entry_name=.data$pc_dataset_name, 
-           site_lat=.data$Lat, 
-           site_long=.data$Lon, 
+    rename(entry_name=.data$pc_dataset_name,
+           site_lat=.data$Lat,
+           site_long=.data$Lon,
            site_elevation=.data$Elevation,
            pro_name=.data$profile_name,
            pro_MAT=.data$MAT_original,
@@ -73,12 +73,12 @@ read_YujiHe2016 <- function(Yujie_file = NULL){
            lyr_al_py=.data$Alp,
            lyr_al_dith=.data$Ald,
            lyr_al_ox=.data$Alo,
-           lyr_smect_vermic=.data$Smectite) 
-  
+           lyr_smect_vermic=.data$Smectite)
+
   #scrub non ascii chacaters
   #ans <- lapply(ans, function(x) stringi::stri_trans_general(as.character(x), "latin-ascii"))
-  
-  
+
+
   ans <- list(metadata=Yujie_dataset %>%
                 select(.data$entry_name, .data$doi) %>% unique() %>%
                 group_by(.data$entry_name) %>%
@@ -91,7 +91,7 @@ read_YujiHe2016 <- function(Yujie_file = NULL){
                        contact_name = "Yujie He",
                        contact_email = "yujiehe.pu@gmail.com",
                        compilation_doi = "10.1126/science.aad4273"),
-              site=Yujie_dataset %>% 
+              site=Yujie_dataset %>%
                 select(.data$entry_name, starts_with('site_')) %>% unique(),
               profile=Yujie_dataset %>%
                 select(.data$entry_name, .data$site_name, starts_with('pro_')) %>% unique() %>%
@@ -99,37 +99,37 @@ read_YujiHe2016 <- function(Yujie_file = NULL){
                        pro_soil_taxon_sys = "USDA"),
               layer=Yujie_dataset %>%
                 select(.data$entry_name, .data$site_name, .data$pro_name, starts_with('lyr_')) %>% unique())
-  
+
   ##Fill in bib with doi citations from rcrossref
   temp <- rcrossref::cr_cn(ans$metadata$doi, format='text', raw=TRUE)
   ans$metadata$bibliographical_reference <- unlist(lapply(temp, function(x){
     return(dplyr::if_else(is.null(x), 'NA', x))
   }))
-  
+
   ##drop 'modern' notation from faction modern
   #ans$layer$lyr_fraction_modern <- as.numeric(ans$layer$lyr_fraction_modern)
-    
+
   ##convert the land cover vocab
   land_cover <- openxlsx::read.xlsx(
     "~/Dropbox/ISRaD_data/Compilations/Yujie/info/vegetation_class_code.xlsx")
-  
+
   ans$profile$pro_land_cover <-  stats::setNames(land_cover$Controlled,
                             land_cover$VegTypeCodeStr_Local)[ans$profile$pro_land_cover]
-  
-  
+
+
   ## pull in the template
   utils::download.file(url='https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx',
                 destfile="~/Dropbox/ISRaD_data/Compilations/Yujie/ISRaD_Master_Template.xlsx")
-  
-  
+
+
   templet <- lapply(list( metadata = 'metadata', site='site', profile='profile',
-                          flux="flux", layer="layer", interstitial="interstitial",        
-                          fraction="fraction", incubation="incubation", 
+                          flux="flux", layer="layer", interstitial="interstitial",
+                          fraction="fraction", incubation="incubation",
                           `controlled vocabulary`="controlled vocabulary"),
                     function(x){openxlsx::read.xlsx(
                       "~/Dropbox/ISRaD_data/Compilations/Yujie/ISRaD_Master_Template.xlsx",
-                      sheet=x) %>% mutate_all(as.character)}) 
-           
+                      sheet=x) %>% mutate_all(as.character)})
+
   #Deal with templet versions nicely
   template_version <- 0
   if('template_version' %in% names(templet$metadata)){
@@ -137,7 +137,7 @@ read_YujiHe2016 <- function(Yujie_file = NULL){
     templet$metadata <- templet$metadata[1:2,]
   }
   ans$metadata$template_version <- templet_version
-  
+
   ##pull the studies appart for curation
   #currentEntry <- ans$metadata$entry_name[1]
   for(currentEntry in as.character(ans$metadata$entry_name)){
@@ -145,16 +145,16 @@ read_YujiHe2016 <- function(Yujie_file = NULL){
     for(mySheet in names(ans)){
       sliceEntry[[mySheet]] <- templet[[mySheet]]  %>%
         bind_rows(
-          ans[[mySheet]] %>% 
-            filter(.data$entry_name == currentEntry) %>% 
+          ans[[mySheet]] %>%
+            filter(.data$entry_name == currentEntry) %>%
             mutate_all(as.character))
-      
+
     }
-    
-    openxlsx::write.xlsx(sliceEntry, file = 
+
+    openxlsx::write.xlsx(sliceEntry, file =
                            file.path("~/Dropbox/ISRaD_data/Compilations/Yujie/read_YujiHe2016_out",
                                      paste0(currentEntry, ".xlsx")))
   }
-  
+
   return(ans)
 }
