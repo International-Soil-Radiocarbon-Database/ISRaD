@@ -45,7 +45,8 @@ There are various options to access the ISRaD database:
 
 ## Raw versus Expanded data
 There are two different file types for accessing the ISRaD dataset: 
-*   Raw data files (with names begining in "ISRaD_data") contain only data ingested from the original source datasets. *   *   *   Expanded or "extra" data files (with names begnining in "ISRaD_extra") include the original raw data as well as includes additional parameters that have either been calculated or imported based on site coordinates, such as geospatially referenced climate information. A current list and descritption of the ISRaD_extra variables is available [here](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/inst/extdata/ISRaD_Extra_Info.xlsx)
+*   Raw data files (with names begining in "ISRaD_data") contain only data ingested from the original source datasets.   
+*   Expanded or "extra" data files (with names begnining in "ISRaD_extra") include the original raw data as well as includes additional parameters that have either been calculated or imported based on site coordinates, such as geospatially referenced climate information. A current list and descritption of the ISRaD_extra variables is available [here](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/inst/extdata/ISRaD_Extra_Info.xlsx)
 
 # [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip)
  
