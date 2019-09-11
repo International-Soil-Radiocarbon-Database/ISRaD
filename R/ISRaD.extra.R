@@ -1,6 +1,6 @@
 #' ISRaD.extra
 #'
-#' @description Fills in transformed and geospatial data where possible, generatating an enhanced version of ISRaD.
+#' @description Fills in transformed and geospatial data where possible, generating an enhanced version of ISRaD.
 #' @param database soilcarbon dataset object
 #' @param geodata_clim_directory directory where geospatial climate data are found
 #' @param geodata_soil_directory directory where geospatial soil data are found
