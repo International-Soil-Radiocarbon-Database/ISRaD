@@ -33,6 +33,11 @@ ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory){
       Depth <- substr(Depth, 2, nchar(Depth))
       columnName <- paste('pro_SG_Cstock_', Depth, sep = '')
     }
+    if(substr(shortx, 0, 14) == 'sol_coarsefrag'){
+      Depth <- unlist(strsplit(unlist(unlist(strsplit(shortx, 'sol_coarsefrag.vfraction_usda.3b1_m_250m_b'))), 'cm_1950..2017_v0.2.tif'))
+      Depth <- substr(Depth, 2, nchar(Depth))
+      columnName <- paste('pro_SG_Cstock_', Depth, sep = '')
+    }
     print(paste('Adding column', columnName))
     tifRaster <- raster::raster(x)
     raster::crs(tifRaster) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"

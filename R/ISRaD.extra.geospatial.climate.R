@@ -40,7 +40,7 @@ ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geoda
   requireNamespace("raster")
 
   # extract worldclim vars
-  cat("\nextracting bioclim variables (http://www.worldclim.org/bioclim for details)...")
+  cat("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
   bio<-raster::getData("worldclim", var='bio', res=2.5, path=geodata_clim_directory)
   bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
   colnames(bio_extracted)<-paste("pro",  colnames(bio_extracted), sep="_")
