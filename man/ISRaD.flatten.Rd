@@ -18,7 +18,7 @@ returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),nco
 : Joins tables in ISRaD based on linking variables and returns "flat" dataframes
 }
 \details{
-: ISRaD.extra.flatten generates flat files (2 dimensional matrices) for user specfied ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
+: ISRaD.extra.flatten generates flat files (2 dimensional matrices) for user specified ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
 }
 \references{
 :
