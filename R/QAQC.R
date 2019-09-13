@@ -505,7 +505,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warnif(verbose) cating("\n\tWARNING: 'entry_name' mismatch between 'incubation' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'entry_name' mismatch between 'incubation' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
