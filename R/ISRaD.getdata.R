@@ -15,23 +15,23 @@ ISRaD.getdata<-function(directory = getwd(), dataset = "full", extra = F, force_
   }
 
   if (!"ISRaD_database_files" %in% list.files(directory)){
-    cat("\n ISRaD_database_files not found...")
+    message("\n ISRaD_database_files not found...")
     dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
 
-    cat("\n Downloading database files from.",dataURL,"\n")
+    message("\n Downloading database files from.",dataURL,"\n")
     utils::download.file(dataURL,normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files.zip")))
-    cat("\n Unzipping database files to",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
+    message("\n Unzipping database files to",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
     utils::unzip(normalizePath(winslash="\\",paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")))
   }
-  
+
   if (force_download){
-    cat("\n Replacing ISRaD_database_files ...")
+    message("\n Replacing ISRaD_database_files ...")
     dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
-    
-    cat("\n Downloading database files from.",dataURL,"\n")
+
+    message("\n Downloading database files from.",dataURL,"\n")
     utils::download.file(dataURL,normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files.zip")))
-    
-    cat("\n Removing old database files in",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
+
+    message("\n Removing old database files in",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
     reviewed<-utils::menu(c("Yes", "No"), title="Are you sure you want to replace these with the newest version? You can copy them to a new directory now if you want keep them.")
     print(reviewed)
     if (reviewed == 1){
@@ -39,11 +39,11 @@ ISRaD.getdata<-function(directory = getwd(), dataset = "full", extra = F, force_
         file.remove(f)
       }
     }else {stop("Ok, keeping the old files. You can run again without force_download=T to load.")}
-    
-    cat("\n Unzipping database files to",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
+
+    message("\n Unzipping database files to",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
     utils::unzip(normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash="\\",paste0(directory, "/ISRaD_database_files")))
   }
-  
+
 
 database_files<-list.files(normalizePath(winslash="\\",paste0(directory, "/ISRaD_database_files")), full.names = T)
 
@@ -55,8 +55,8 @@ if(dataset != "full"){
   v<-gsub(".+_(v.+)\\..+","\\1",file)
   data<-utils::read.csv(file)
   attributes(data)$version<-v
-  cat("\n Loading", file,"\n")
-  cat("\n This data is from ISRaD version", attributes(data)$version, "\n")
+  message("\n Loading", file,"\n")
+  message("\n This data is from ISRaD version", attributes(data)$version, "\n")
 }
 
 
@@ -64,8 +64,8 @@ if (dataset == "full"){
   file<-database_files[intersect(grep(data_type, database_files), grep(".rda", database_files))]
   data<-load(file)
   data<-get(data)
-  cat("\n Loading", file,"\n")
-  cat("\n This data is from ISRaD version", attributes(data)$version, "\n")
+  message("\n Loading", file,"\n")
+  message("\n This data is from ISRaD version", attributes(data)$version, "\n")
 }
 
 return(data)

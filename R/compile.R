@@ -29,7 +29,7 @@ compile <- function(dataset_directory,
   requireNamespace("assertthat")
   requireNamespace("openxlsx")
   requireNamespace("tidyverse")
-  
+
   # Check inputs
   assertthat::assert_that(dir.exists(dataset_directory))
   assertthat::assert_that(is.logical(write_report))
@@ -51,7 +51,7 @@ compile <- function(dataset_directory,
   }
 
   #Start writing in the output file
-  cat("ISRaD Compilation Log \n",
+  message("ISRaD Compilation Log \n",
       "\n", as.character(Sys.time()),
       "\n",rep("-", 15),"\n", file=outfile)
 
@@ -72,7 +72,7 @@ compile <- function(dataset_directory,
   ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2,3),])
   ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
-  cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
+  message("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
       file=outfile, append = TRUE)
 
   data_files<-list.files(dataset_directory, full.names = TRUE)
@@ -81,13 +81,13 @@ compile <- function(dataset_directory,
   entry_stats<-data.frame()
 
   for(d in 1:length(data_files)){
-    cat("\n\n",d, "checking", basename(data_files[d]),"...",
+    message("\n\n",d, "checking", basename(data_files[d]),"...",
         file=outfile, append = TRUE)
     soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi=checkdoi)
     if (attributes(soilcarbon_data)$error>0) {
-      cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
+      message("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
       next
-    } else cat("passed", file=outfile, append = TRUE)
+    } else message("passed", file=outfile, append = TRUE)
 
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
@@ -100,26 +100,26 @@ compile <- function(dataset_directory,
 
 }
 
-  
+
   #convert data to correct data type
   ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, as.character))
   ISRaD_database<-lapply(ISRaD_database, function(x) lapply(x, utils::type.convert))
   ISRaD_database<-lapply(ISRaD_database, as.data.frame)
 
 # Return database file, logs, and reports ---------------------------------
-  cat("\n\n-------------\n", file=outfile, append = T)
-  cat("\nSummary statistics...\n", file=outfile, append = T)
+  message("\n\n-------------\n", file=outfile, append = T)
+  message("\nSummary statistics...\n", file=outfile, append = T)
 
   for (t in 1:length(names(ISRaD_database))){
     tab<-names(ISRaD_database)[t]
     data_tab<-ISRaD_database[[tab]]
-    cat("\n",tab,"tab...", file=outfile, append = T)
-    cat(nrow(data_tab), "observations", file=outfile, append = T)
+    message("\n",tab,"tab...", file=outfile, append = T)
+    message(nrow(data_tab), "observations", file=outfile, append = T)
     if (nrow(data_tab)>0){
       col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
       col_counts<-col_counts[col_counts>0]
       for(c in 1:length(col_counts)){
-        cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
+        message("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
 
       }
     }
@@ -139,11 +139,11 @@ compile <- function(dataset_directory,
 
 
   openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
-  
-  cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
-if(write_report==T){ 
-  cat("\n Compilation report saved to", outfile,"\n", file="", append = T) }
+  message("\n", rep("-", 20), file=outfile, append = TRUE)
+
+if(write_report==T){
+  message("\n Compilation report saved to", outfile,"\n", file="", append = T) }
 
     if(return_type=="list"){
   return(ISRaD_database)

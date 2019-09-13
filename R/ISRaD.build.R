@@ -12,37 +12,30 @@
 #' @import stringr
 #' @export
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_clim_datasets",
 #'   geodata_pet_directory="~/geospatial_pet_dataset",
 #'   geodata_soil_directory="~/geospatial_soil_datasets")
 #' }
 
-ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_pet_directory, geodata_soil_directory, citations=T){
+ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_directory, geodata_soil_directory, citations=T){
 
   requireNamespace("stringr")
   requireNamespace("tidyverse")
-# Install local ISRaD -----------------------------------------------------
-
-
-  cat("Installing local version of ISRaD...")
-  devtools::install("../ISRaD")
-  library(ISRaD)
-
 
 # Compile database --------------------------------------------------------
 
   if (is.null(geodata_clim_directory) | is.null(geodata_soil_directory) | is.null(geodata_pet_directory)){
-    cat("geodata_clim_directory, geodata_pet_directory, and geodata_soil_directory must be specified.\n")
+    warning("geodata_clim_directory, geodata_pet_directory, and geodata_soil_directory must be specified.\n")
     stop()
   }
 
 
-  cat("Compiling the data files in",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
-  cat("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
+  message("Compiling the data files in",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
+  message("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
   ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files/"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
 
-  cat("\nISRaD_data.xlsx saved to", paste0(ISRaD_directory,"/ISRaD_data_files/database\n\n"))
+  message("\nISRaD_data.xlsx saved to", paste0(ISRaD_directory,"/ISRaD_data_files/database\n\n"))
 
   reviewed<-utils::menu(c("Yes", "No"), title="Have you reviewed the compilation report log file? (ISRaD_data_files/database/ISRaD_log.txt). I would suggest using the git commit preview window in R to see changes.")
   if (reviewed==2){
@@ -56,37 +49,37 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
 
 # Replace data objects ----------------------------------------------------
 
-  cat("\nReplacing the ISRaD_data object with the new one...\n")
+  message("\nReplacing the ISRaD_data object with the new one...\n")
 
-  cat("\tChecking the number of new rows in the compiled ISRaD_data object...\n")
+  message("\tChecking the number of new rows in the compiled ISRaD_data object...\n")
   load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
   ISRaD_data<-ISRaD_data
   for(t in names(ISRaD_data_compiled)){
-    cat("\t\t", nrow(ISRaD_data_compiled[[t]])-nrow(ISRaD_data[[t]]), "rows were added to the", t, "table.\n")
+    message("\t\t", nrow(ISRaD_data_compiled[[t]])-nrow(ISRaD_data[[t]]), "rows were added to the", t, "table.\n")
   }
 
   new_entries<-setdiff(ISRaD_data_compiled$metadata$entry_name,ISRaD_data$metadata$entry_name)
   if(length(new_entries)==0) new_entries <- "none"
-  cat("\t\t New entry_name values added to the data:", new_entries, "\n")
+  message("\t\t New entry_name values added to the data:", new_entries, "\n")
 
   removed_entries<-setdiff(ISRaD_data$metadata$entry_name, ISRaD_data_compiled$metadata$entry_name)
   if(length(removed_entries)==0) removed_entries <- "none"
-  cat("\t\t entry_name values removed from the data:", removed_entries, "\n")
+  message("\t\t entry_name values removed from the data:", removed_entries, "\n")
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")
   if (reviewed==2){
   stop("You cannot replace the ISRaD_data object with a faulty data object...")
   }
 
-  cat("\nCreating the ISRaD_extra object...\n")
+  message("\nCreating the ISRaD_extra object...\n")
   ISRaD_extra_compiled<-ISRaD.extra(database=ISRaD_data_compiled, geodata_clim_directory = geodata_clim_directory, geodata_soil_directory = geodata_soil_directory, geodata_pet_directory=geodata_pet_directory)
-  cat("Replacing the ISRaD_extra object with the new one...\n")
+  message("Replacing the ISRaD_extra object with the new one...\n")
 
-  cat("\tChecking the number of new rows in the compiled ISRaD_extra object...\n")
+  message("\tChecking the number of new rows in the compiled ISRaD_extra object...\n")
   load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
   ISRaD_extra<-ISRaD_extra
   for(t in names(ISRaD_extra_compiled)){
-    cat("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), "ncol were added to the", t, "table.\n")
+    message("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), "ncol were added to the", t, "table.\n")
   }
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")
@@ -99,17 +92,17 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   ISRaD_data<-ISRaD_data_compiled
   attributes(ISRaD_data)$version<-v
   save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
-  cat("ISRaD_data has been updated...\n\n")
+  message("ISRaD_data has been updated...\n\n")
 
   ISRaD_extra<-ISRaD_extra_compiled
   attributes(ISRaD_extra)$version<-v
   save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
-  cat("ISRaD_extra has been updated...\n\n")
+  message("ISRaD_extra has been updated...\n\n")
 
 
 # Save ISRaD extra object as Excel file --------------------------------------------------
 
-  cat("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is", v,"\n\n")
+  message("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is", v,"\n\n")
 
   ISRaD_extra_char<-lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
   openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files/database", "ISRaD_extra_list.xlsx"))
@@ -122,17 +115,17 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
 
 # Flattened data objects --------------------------------------------------
 
-  cat("\tUpdating flattened data objects...\n")
+  message("\tUpdating flattened data objects...\n")
   for(tab in c("flux","layer","interstitial","incubation","fraction")){
     flattened_data<-ISRaD.flatten(database=ISRaD_data, table = tab)
     #flattened_data<-str_replace_all(flattened_data, "[\r\n]" , "")
-    cat("writing ISRaD_data_flat_", tab, ".csv"," ...\n", sep = "")
+    message("writing ISRaD_data_flat_", tab, ".csv"," ...\n", sep = "")
     utils::write.csv(flattened_data, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_data_flat_", tab, ".csv"))
     utils::write.csv(flattened_data, paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_data_flat_", tab,"_",v, ".csv"))
 
     flattened_extra<-ISRaD.flatten(database=ISRaD_extra, table = tab)
     #flattened_extra<-str_replace_all(flattened_extra, "[\r\n]" , "")
-    cat("writing ISRaD_extra_flat_", tab, ".csv"," ...\n", sep = "")
+    message("writing ISRaD_extra_flat_", tab, ".csv"," ...\n", sep = "")
     utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_extra_flat_", tab, ".csv"))
     utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_flat_", tab,"_",v, ".csv"))
 
@@ -146,7 +139,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
 # update references -------------------------------------------------------
 
   if(removed_entries != "none" & new_entries !="none") {
-  cat("\nUpdating credits.md page...this takes about 5 min")
+  message("\nUpdating credits.md page...this takes about 5 min")
 
   dois=as.character(ISRaD_data$metadata$doi)
   cleandois=dois[dois[]!="israd"]
@@ -169,14 +162,14 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   p2=paste("Currently, there are", n, "entries in ISRaD, which are from the following publications:")
 
   # Print markdown file for website
-  cat(c(h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
+  message(c(h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
         h2, p2, " ", paste("* ",a)), sep="\n", file="ISRaD_data_files/database/credits.md")
 
   }
 
 # document and check ------------------------------------------------------
 
-  cat("\tUpdating documentation and running check()...\n")
+  message("\tUpdating documentation and running check()...\n")
 
   devtools::document(pkg = ISRaD_directory)
   devtools::check(pkg=ISRaD_directory, manual = T, cran = T)
@@ -185,7 +178,7 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
   while(errors==1){
   errors<-utils::menu(c("Yes", "No"), title="Were there any errors, warnings, or notes?")
   if (errors==1){
-    cat("Ok, please fix the issues and confim below when you are ready to run the check again...\n")
+    message("Ok, please fix the issues and confim below when you are ready to run the check again...\n")
     ready<-utils::menu(c("Yes", "No"), title="Are you ready to run the check again?")
     if (ready==1){
       devtools::check(pkg=ISRaD_directory, manual = T, cran = T)
@@ -200,14 +193,14 @@ ISRaD.build<-function(ISRaD_directory=getwd(), geodata_clim_directory, geodata_p
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github? (will update version number in DESCRIPTION file)")
   if (reviewed==1){
-    cat("Ok, the DESCRIPTION file is being updated with a new version...\n")
+    message("Ok, the DESCRIPTION file is being updated with a new version...\n")
     DESC<-readLines(paste0(ISRaD_directory,"/DESCRIPTION"))
     version<-strsplit(DESC[3],split = "\\.")
     if(length(version[[1]])<4) version[[1]][4]<-900
     version[[1]][4]<-as.numeric(version[[1]][4])+1
     DESC[3]<-paste(unlist(version), collapse = ".")
     writeLines(DESC, paste0(ISRaD_directory,"/DESCRIPTION"))
-    cat("Ok, you can now commit and push this to github!\n You should also then reload R and reinstall ISRaD from github since you changed the data objects.\n")
+    message("Ok, you can now commit and push this to github!\n You should also then reload R and reinstall ISRaD from github since you changed the data objects.\n")
   }
 
 }
