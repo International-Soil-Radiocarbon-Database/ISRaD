@@ -1,22 +1,21 @@
-#' Check ISRaD Templet files
+#' Check ISRaD Template/Info files
 #'
-#' Check that the Templet information file and the templet file match appropriately.
+#' Check that the template information file and the template file match appropriately.
 #'
 #' @param outfile file to dump the output report. Defaults to an empty string that will print
 #' to standard output.
-#'
 #' @return returns NULL
-#'
+#' @export
 #' @examples
 #' \donttest{
-#' checkTempletFiles()
+#' ISRaD:::checkTemplateFiles()
 #' }
-checkTempletFiles <- function(outfile=''){
+checkTemplateFiles <- function(outfile=''){
 
   message("\nChecking compatibility between ISRaD template and info file...",
       file=outfile, append = TRUE)
 
-  # Get the tables stored in the templet sheets
+  # Get the tables stored in the template sheets
   template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx",
                                package = "ISRaD")
   template <- lapply(stats::setNames(nm=openxlsx::getSheetNames(template_file)),

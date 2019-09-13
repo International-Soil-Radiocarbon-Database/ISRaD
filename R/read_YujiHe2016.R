@@ -1,4 +1,4 @@
-#' Read He 2016
+template#' Read He 2016
 #'
 #' Read in the data from Yujie He's 2016 Science paper as a raw csv file
 #'
@@ -122,7 +122,7 @@ read_YujiHe2016 <- function(Yujie_file = NULL){
                 destfile="~/Dropbox/ISRaD_data/Compilations/Yujie/ISRaD_Master_Template.xlsx")
 
 
-  templet <- lapply(list( metadata = 'metadata', site='site', profile='profile',
+  template <- lapply(list( metadata = 'metadata', site='site', profile='profile',
                           flux="flux", layer="layer", interstitial="interstitial",
                           fraction="fraction", incubation="incubation",
                           `controlled vocabulary`="controlled vocabulary"),
@@ -130,20 +130,20 @@ read_YujiHe2016 <- function(Yujie_file = NULL){
                       "~/Dropbox/ISRaD_data/Compilations/Yujie/ISRaD_Master_Template.xlsx",
                       sheet=x) %>% mutate_all(as.character)})
 
-  #Deal with templet versions nicely
+  #Deal with template versions nicely
   template_version <- 0
-  if('template_version' %in% names(templet$metadata)){
-    templet_version <- templet$metadata$template_version[3]
-    templet$metadata <- templet$metadata[1:2,]
+  if('template_version' %in% names(template$metadata)){
+    template_version <- template$metadata$template_version[3]
+    template$metadata <- template$metadata[1:2,]
   }
-  ans$metadata$template_version <- templet_version
+  ans$metadata$template_version <- template_version
 
   ##pull the studies appart for curation
   #currentEntry <- ans$metadata$entry_name[1]
   for(currentEntry in as.character(ans$metadata$entry_name)){
-    sliceEntry <- templet
+    sliceEntry <- template
     for(mySheet in names(ans)){
-      sliceEntry[[mySheet]] <- templet[[mySheet]]  %>%
+      sliceEntry[[mySheet]] <- template[[mySheet]]  %>%
         bind_rows(
           ans[[mySheet]] %>%
             filter(.data$entry_name == currentEntry) %>%

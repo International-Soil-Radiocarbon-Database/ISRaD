@@ -57,10 +57,10 @@ compile <- function(dataset_directory,
 
 
 # Check template and info compatability -------------------------------------------------
-  checkTempletFiles(outfile)
+  checkTemplateFiles(outfile)
 
 # QAQC and compile data files -------------------------------------------------------
-  # Get the tables stored in the templet sheets
+  # Get the tables stored in the template sheets
   template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx",
                                package = "ISRaD")
   template <- lapply(stats::setNames(nm=openxlsx::getSheetNames(template_file)),
