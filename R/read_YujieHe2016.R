@@ -8,7 +8,7 @@
 #'
 #' @importFrom rcrossref cr_citation
 
-read_YujiHe2016 <- function(Yujie_file = NULL){
+read_YujieHe2016 <- function(Yujie_file = NULL){
   requireNamespace('tidyverse')
 
   if(is.null(Yuijie_file)){
