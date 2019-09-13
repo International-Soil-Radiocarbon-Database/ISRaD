@@ -40,7 +40,7 @@ checkTemplateFiles <- function(outfile=''){
     }
     if(any(! (colnames(template[[tab]]) %in% template_info[[tab]]$Column_Name))) {
       capture.output(cat("\n\tWARNING column names unique to template file:",
-                         setdiff(colnames(template[[tab]]),template_info[[tab]]$Column_Name),
+                         setdiff(colnames(template[[tab]]),template_info[[tab]]$Column_Name)),
                      file=outfile, append = TRUE)
     }
   }
