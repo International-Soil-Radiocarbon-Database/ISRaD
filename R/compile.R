@@ -51,7 +51,7 @@ compile <- function(dataset_directory,
   }
 
   #Start writing in the output file
-  message("ISRaD Compilation Log \n",
+  cat("ISRaD Compilation Log \n",
       "\n", as.character(Sys.time()),
       "\n",rep("-", 15),"\n", file=outfile)
 
@@ -85,9 +85,9 @@ compile <- function(dataset_directory,
         file=outfile, append = TRUE)
     soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi=checkdoi)
     if (attributes(soilcarbon_data)$error>0) {
-      message("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
+      cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
       next
-    } else message("passed", file=outfile, append = TRUE)
+    } else cat("passed", file=outfile, append = TRUE)
 
 
    char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
@@ -107,19 +107,19 @@ compile <- function(dataset_directory,
   ISRaD_database<-lapply(ISRaD_database, as.data.frame)
 
 # Return database file, logs, and reports ---------------------------------
-  message("\n\n-------------\n", file=outfile, append = T)
-  message("\nSummary statistics...\n", file=outfile, append = T)
+  cat("\n\n-------------\n", file=outfile, append = T)
+  cat("\nSummary statistics...\n", file=outfile, append = T)
 
   for (t in 1:length(names(ISRaD_database))){
     tab<-names(ISRaD_database)[t]
     data_tab<-ISRaD_database[[tab]]
-    message("\n",tab,"tab...", file=outfile, append = T)
-    message(nrow(data_tab), "observations", file=outfile, append = T)
+    cat("\n",tab,"tab...", file=outfile, append = T)
+    cat(nrow(data_tab), "observations", file=outfile, append = T)
     if (nrow(data_tab)>0){
       col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
       col_counts<-col_counts[col_counts>0]
       for(c in 1:length(col_counts)){
-        message("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
+        cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
 
       }
     }
@@ -140,7 +140,7 @@ compile <- function(dataset_directory,
 
   openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
 
-  message("\n", rep("-", 20), file=outfile, append = TRUE)
+  cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
 if(write_report==T){
   message("\n Compilation report saved to", outfile,"\n", file="", append = T) }
