@@ -8,6 +8,7 @@
 #' @param summaryStats prints summary statistics. Default is TRUE
 #' @param dataReport prints list structure of database. Default is FALSE
 #' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
+#' @param verbose set to TRUE to print results of function to console
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr
@@ -15,7 +16,7 @@
 #' @export
 
 
-QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F, checkdoi=T){
+QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F, checkdoi=T, verbose=F){
 
   ##### setup #####
 
@@ -38,23 +39,23 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
 
-  message("         Thank you for contributing to the ISRaD database! \n", file=outfile)
-  message("         Please review this quality control report. \n", file=outfile, append = T)
-  message("         Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/ for more information. \n", file=outfile, append = T)
-  message(rep("-", 30),"\n\n", file=outfile, append = T)
+  if(verbose) cat("         Thank you for contributing to the ISRaD database! \n", file=outfile)
+  if(verbose) cat("         Please review this quality control report. \n", file=outfile, append = T)
+  if(verbose) cat("         Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/ for more information. \n", file=outfile, append = T)
+  if(verbose) cat(rep("-", 30),"\n\n", file=outfile, append = T)
 
-  message("\nFile:", basename(file), file=outfile, append = T)
+  if(verbose) cat("\nFile:", basename(file), file=outfile, append = T)
   #message("\nTime:", as.character(Sys.time()), "\n", file=outfile, append = T)
 
   ##### check file extension #####
-  message("\n\nChecking file type...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking file type...", file=outfile, append = T)
   if(!grep(".xlsx", file)==1){
-    warning("\tWARNING: ", file, " is not the current file type (should have '.xlsx' extension)", file=outfile, append = T);error<-error+1
+    if(verbose) cat("\tWARNING: ", file, " is not the current file type (should have '.xlsx' extension)", file=outfile, append = T);error<-error+1
   }
 
   ##### check template #####
 
-  message("\n\nChecking file format compatibility with ISRaD templates...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking file format compatibility with ISRaD templates...", file=outfile, append = T)
 
   # get tabs for data and current template files from R package on github
   template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
@@ -66,7 +67,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   names(template_info)<-getSheetNames(template_info_file)
 
   if (!all(getSheetNames(file) %in% names(template)) | !all(names(template) %in% getSheetNames(file))){
-    warning("\tWARNING:  tabs in data file do not match accepted templates. Please use current template. Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute", file=outfile, append = T);error<-error+1
+    if(verbose) cat("\tWARNING:  tabs in data file do not match accepted templates. Please use current template. Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute", file=outfile, append = T);error<-error+1
 
     if (writeQCreport==T){
       sink(type="message")
@@ -79,8 +80,8 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   if (all(getSheetNames(file) %in% names(template))){
-    message("\n Template format detected: ", basename(template_file), file=outfile, append = T)
-    message("\n Template info file to be used for QAQC: ", basename(template_info_file), file=outfile, append = T)
+    if(verbose) cat("\n Template format detected: ", basename(template_file), file=outfile, append = T)
+    if(verbose) cat("\n Template info file to be used for QAQC: ", basename(template_info_file), file=outfile, append = T)
 
     data<-lapply(getSheetNames(file)[1:8], function(s) read.xlsx(file , sheet=s))
     names(data)<-getSheetNames(file)[1:8]
@@ -89,7 +90,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   ##### check for description rows #####
 
   if(!(all(lapply(data, function(x) x[1,1])=="Entry/Dataset Name") & all(lapply(data, function(x) x[2,1])=="Author_year"))){
-    warning("\n\tWARNING:  Description rows in data file not detected. The first two rows of your data file should be the description rows as found in the template file.", file=outfile, append = T);error<-error+1
+    if(verbose) cat("\n\tWARNING:  Description rows in data file not detected. The first two rows of your data file should be the description rows as found in the template file.", file=outfile, append = T);error<-error+1
   }
 
   # trim description/empty rows
@@ -109,52 +110,52 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   data<-lapply(data, as.data.frame)
 
   ##### check for empty tabs ####
-  message("\n\nChecking for empty tabs...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking for empty tabs...", file=outfile, append = T)
   emptytabs<-names(data)[unlist(lapply(data, function(x) all(is.na(x))))]
 
   if(length(emptytabs)>0){
-    message("\n\tNOTE: empty tabs detected (", emptytabs,")", file=outfile, append = T)
+    if(verbose) cat("\n\tNOTE: empty tabs detected (", emptytabs,")", file=outfile, append = T)
     note<-note+1
   }
 
 
   ##### check doi --------------------------------------------------------
   if (checkdoi==T){
-  message("\n\nChecking dataset doi...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking dataset doi...", file=outfile, append = T)
   dois<-data$metadata$doi
   if(is.na(dois)) dois<-""
   if(length(dois)<2){
   for (d in 1:length(dois)){
     if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
-      warning("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
+      if(verbose) cat("\n\tWARNING: doi not valid", file=outfile, append = T);error<-error+1
     }
   }
   }
   } else {
-    message("\n\nNot checking dataset doi because 'checkdoi==F'...", file=outfile, append = T)
+    if(verbose) cat("\n\nNot checking dataset doi because 'checkdoi==F'...", file=outfile, append = T)
 
   }
 
   ##### check for extra or misnamed columns ####
-  message("\n\nChecking for extra or misspelled column names...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking for extra or misspelled column names...", file=outfile, append = T)
   for (t in 1:length(names(data))){
     tab<-names(data)[t]
-    message("\n",tab,"tab...", file=outfile, append = T)
+    if(verbose) cat("\n",tab,"tab...", file=outfile, append = T)
     data_colnames<-colnames(data[[tab]])
     template_colnames<-colnames(template[[tab]])
 
     #compare column names in data to template column names
     notintemplate<-setdiff(data_colnames, template_colnames)
     if (length(notintemplate>0)) {
-      warning("\n\tWARNING: column name mismatch template:", notintemplate, file=outfile, append = T);error<-error+1
+      if(verbose) cat("\n\tWARNING: column name mismatch template:", notintemplate, file=outfile, append = T);error<-error+1
     }
   }
 
   ##### check for missing values in required columns ####
-  message("\n\nChecking for missing values in required columns...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking for missing values in required columns...", file=outfile, append = T)
   for (t in 1:length(names(data))){
     tab<-names(data)[t]
-    message("\n",tab,"tab...", file=outfile, append = T)
+    if(verbose) cat("\n",tab,"tab...", file=outfile, append = T)
     required_colnames<-template_info[[tab]]$Column_Name[template_info[[tab]]$Required=="Yes"]
     template_info[["flux"]]$Column_Name
 
@@ -163,12 +164,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     which_missing_values<-unlist(sapply(required_colnames[missing_values], function(c) unlist(which(is.na(data[[tab]][[c]])))))
 
     if (T %in% unlist(missing_values)) {
-      warning("\n\tWARNING: missing values where required:", required_colnames[missing_values], "(rows:",which_missing_values+3,")", file=outfile, append = T);error<-error+1
+      if(verbose) cat("\n\tWARNING: missing values where required:", required_colnames[missing_values], "(rows:",which_missing_values+3,")", file=outfile, append = T);error<-error+1
     }
   }
 
   ##### check levels #####
-  message("\n\nChecking that level names match between tabs...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking that level names match between tabs...", file=outfile, append = T)
   rowmatch <- function (x, table, nomatch = NA) {
     if (class(table) == "matrix")
         table <- as.data.frame(table)
@@ -180,7 +181,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   }
 
   # check site tab #
-  message("\n site tab...", file=outfile, append = T)
+  if(verbose) cat("\n site tab...", file=outfile, append = T)
   mismatch <- c() #Entry name
   for (t in 1:length(data$site$entry_name)){
     item_name <- as.character(data$site$entry_name)[t]
@@ -189,23 +190,23 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'entry_name' mismatch between 'site' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'entry_name' mismatch between 'site' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
   duplicates <- data$site %>% select(.data$entry_name, .data$site_lat, .data$site_long) %>% duplicated() %>% which()
   if(length(duplicates)>0){
-    warning("\n\tWARNING: Duplicate site coordinates identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Duplicate site coordinates identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
   duplicates <- data$site %>% select(.data$entry_name, .data$site_name) %>% duplicated() %>% which()
   if(length(duplicates)>0){
-    warning("\n\tWARNING: Duplicate site names identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Duplicate site names identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
   # check profile tab #
-  message("\n profile tab...", file=outfile, append = T)
+  if(verbose) cat("\n profile tab...", file=outfile, append = T)
   mismatch <- c() #Entry name
   for (t in 1:length(data$profile$entry_name)){
     item_name <- as.character(data$profile$entry_name)[t]
@@ -214,7 +215,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'entry_name' mismatch between 'profile' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'entry_name' mismatch between 'profile' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -226,26 +227,26 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'site_name' mismatch between 'profile' and 'metadata' tabs. ( row/s:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'site_name' mismatch between 'profile' and 'metadata' tabs. ( row/s:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), as.data.frame(lapply(data$site, as.character), stringsAsFactors = F), by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$profile,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    warning("\n\tWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
   duplicates <- data$profile %>% select(.data$entry_name, .data$site_name, .data$pro_name) %>% duplicated() %>% which()
   if(length(duplicates)>0){
-    warning("\n\tWARNING: Duplicate profile row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Duplicate profile row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
 
   # check flux tab #
-  message("\n flux tab...", file=outfile, append = T)
+  if(verbose) cat("\n flux tab...", file=outfile, append = T)
   if (length(data$flux$entry_name)>0){
   mismatch <- c() #Entry name
   for (t in 1:length(data$flux$entry_name)){
@@ -255,7 +256,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'entry_name' mismatch between 'flux' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'entry_name' mismatch between 'flux' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -267,7 +268,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'site_name' mismatch between 'flux' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'site_name' mismatch between 'flux' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -279,7 +280,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'profile_name' mismatch between 'flux' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'profile_name' mismatch between 'flux' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -287,7 +288,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   mismatch.rows <- anti_join(as.data.frame(lapply(data$flux, as.character), stringsAsFactors = F), as.data.frame(lapply(data$site, as.character), stringsAsFactors = F), by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$flux,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    warning("\n\tWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -295,20 +296,20 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if("flx_name" %in% colnames(data$flux)) {
       duplicates <- data$flux %>% select("entry_name","site_name","pro_name","flx_name") %>% duplicated() %>% which()
       if(length(duplicates)>0){
-      warning("\n\tWARNING: Duplicate flux row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+      if(verbose) cat("\n\tWARNING: Duplicate flux row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
       error <- error+1
       }
     } else {
         duplicates <- data$flux %>% select("entry_name","site_name","pro_name") %>% duplicated() %>% which()
         if(length(duplicates)>0){
-          warning("\n\tWARNING: Duplicate flux row identified. Add 'flx_name' column w/ unique identifiers. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+          if(verbose) cat("\n\tWARNING: Duplicate flux row identified. Add 'flx_name' column w/ unique identifiers. ( row/s:", duplicates+3, ")", file=outfile, append = T)
           error <- error+1
       }
     }
   }
 
   # check layer tab #
-  message("\n layer tab...", file=outfile, append = T)
+  if(verbose) cat("\n layer tab...", file=outfile, append = T)
   if (length(data$layer$entry_name)>0){
   mismatch <- c() #Entry name
   for (t in 1:length(data$layer$entry_name)){
@@ -318,7 +319,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'entry_name' mismatch between 'layer' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'entry_name' mismatch between 'layer' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -330,7 +331,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'site_name' mismatch between 'layer' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'site_name' mismatch between 'layer' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -342,26 +343,26 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'profile_name' mismatch between 'layer' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'profile_name' mismatch between 'layer' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    warning("\n\tWARNING: Name combination mismatch between 'layer' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Name combination mismatch between 'layer' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
   duplicates <- data$layer %>% select(ends_with("name")) %>% duplicated() %>% which()
   if(length(duplicates)>0){
-    warning("\n\tWARNING: Duplicate layer row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Duplicate layer row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
   lyr_depth_err <- which(data$layer$lyr_bot < data$layer$lyr_top)
   if(length(lyr_depth_err > 0)){
-    warning("\n\tWARNING: lyr_bot < lyr_top. ( row/s:", lyr_depth_err+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: lyr_bot < lyr_top. ( row/s:", lyr_depth_err+3, ")", file=outfile, append = T)
     error <- error+1
   }
 }
@@ -369,7 +370,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
 
 
   # check interstitial tab #
-  message("\n interstitial tab...", file=outfile, append = T)
+  if(verbose) cat("\n interstitial tab...", file=outfile, append = T)
   if (length(data$interstitial$entry_name)>0){
   mismatch <- c() #Entry name
   for (t in 1:length(data$interstitial$entry_name)){
@@ -379,7 +380,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'entry_name' mismatch between 'interstitial' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'entry_name' mismatch between 'interstitial' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -391,7 +392,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'site_name' mismatch between 'interstitial' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'site_name' mismatch between 'interstitial' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -403,26 +404,26 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'profile_name' mismatch between 'interstitial' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'profile_name' mismatch between 'interstitial' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$interstitial, as.character), stringsAsFactors = F), as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$interstitial,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    warning("\n\tWARNING: Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
   duplicates <- data$interstitial %>% select(ends_with("name")) %>% duplicated() %>% which()
   if(length(duplicates)>0){
-    warning("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Duplicate interstitial row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
   }
 
   # check fraction tab #
-  message("\n fraction tab...", file=outfile, append = T)
+  if(verbose) cat("\n fraction tab...", file=outfile, append = T)
   if (length(data$fraction$entry_name)>0){
 
   mismatch <- c() #Entry name
@@ -433,7 +434,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'entry_name' mismatch between 'fraction' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'entry_name' mismatch between 'fraction' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -445,7 +446,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'site_name' mismatch between 'fraction' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'site_name' mismatch between 'fraction' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -457,7 +458,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'profile_name' mismatch between 'fraction' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'profile_name' mismatch between 'fraction' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -469,14 +470,14 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'lyr_name' mismatch between 'fraction' and 'layer' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'lyr_name' mismatch between 'fraction' and 'layer' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$fraction, as.character), stringsAsFactors = F), as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name","lyr_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$fraction,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    warning("\n\tWARNING: Name combination mismatch between 'fraction' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Name combination mismatch between 'fraction' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -489,12 +490,12 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
 
   duplicates <- data$fraction %>% select(ends_with("name")) %>% duplicated() %>% which()
   if(length(duplicates)>0){
-    warning("\n\tWARNING: Duplicate fraction row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Duplicate fraction row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
   }
   # check incubation tab #
-  message("\n incubation tab...", file=outfile, append = T)
+  if(verbose) cat("\n incubation tab...", file=outfile, append = T)
   if (length(data$incubation$entry_name)>0){
   mismatch <- c() #Entry name
   for (t in 1:length(data$incubation$entry_name)){
@@ -504,7 +505,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'entry_name' mismatch between 'incubation' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    warnif(verbose) cating("\n\tWARNING: 'entry_name' mismatch between 'incubation' and 'metadata' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -516,7 +517,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'site_name' mismatch between 'incubation' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'site_name' mismatch between 'incubation' and 'site' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -528,7 +529,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'profile_name' mismatch between 'incubation' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'profile_name' mismatch between 'incubation' and 'profile' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
@@ -540,26 +541,26 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     }
   }
   if (length(mismatch) > 0){
-    warning("\n\tWARNING: 'lyr_name' mismatch between 'incubation' and 'layer' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: 'lyr_name' mismatch between 'incubation' and 'layer' tabs. ( rows:", mismatch, ")", file=outfile, append = T)
     error <- error+1
   }
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$incubation, as.character), stringsAsFactors = F), as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name","lyr_name"))
   if(dim(mismatch.rows)[1]>0){
     row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
-    warning("\n\tWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile, append = T)
     error <- error+1
   }
 
   duplicates <- data$incubation %>% select(ends_with("name")) %>% duplicated() %>% which()
   if(length(duplicates)>0){
-    warning("\n\tWARNING: Duplicate incubation row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
+    if(verbose) cat("\n\tWARNING: Duplicate incubation row identified. ( row/s:", duplicates+3, ")", file=outfile, append = T)
     error <- error+1
   }
 }
 
   ##### check numeric values #####
-  message("\n\nChecking numeric variable columns for inappropriate values...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking numeric variable columns for inappropriate values...", file=outfile, append = T)
 
   which.nonnum <- function(x) {
     badNum <- is.na(suppressWarnings(as.numeric(as.character(x))))
@@ -569,7 +570,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   for (t in 1:length(names(data))){
     tab<-names(data)[t]
     tab_info<-template_info[[tab]]
-    message("\n",tab,"tab...", file=outfile, append = T)
+    if(verbose) cat("\n",tab,"tab...", file=outfile, append = T)
 
     #check for non-numeric values where required
     numeric_columns<-tab_info$Column_Name[tab_info$Variable_class=="numeric"]
@@ -580,18 +581,18 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
       if(!column %in% colnames(data[[tab]])) next
       nonnum<-!is.numeric(data[[tab]][,column]) & !is.logical(data[[tab]][,column])
       if(nonnum) {
-        warning("\n\tWARNING non-numeric values in", column, "column", file=outfile, append = T); error<-error+1
+        if(verbose) cat("\n\tWARNING non-numeric values in", column, "column", file=outfile, append = T); error<-error+1
       } else {
         max<-as.numeric(tab_info$Max[tab_info$Column_Name == column])
         min<-as.numeric(tab_info$Min[tab_info$Column_Name == column])
         toobig<-data[[tab]][,column]>max
         toosmall<-data[[tab]][,column]<min
         if(sum(toobig, na.rm=T)>0) {
-          warning("\n\tWARNING values greater than accepted max in", column, "column (rows", which(toobig)+3, ")", file=outfile, append = T); error<-error+1
+          if(verbose) cat("\n\tWARNING values greater than accepted max in", column, "column (rows", which(toobig)+3, ")", file=outfile, append = T); error<-error+1
         }
 
         if(sum(toosmall, na.rm=T)>0) {
-          warning("\n\tWARNING values smaller than accepted min in", column, "column (rows", which(toosmall)+3, ")", file=outfile, append = T); error<-error+1
+          if(verbose) cat("\n\tWARNING values smaller than accepted min in", column, "column (rows", which(toosmall)+3, ")", file=outfile, append = T); error<-error+1
         }
 
       }
@@ -603,10 +604,10 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   ##### check controlled vocab -----------------------------------------------
 
 
-  message("\n\nChecking controlled vocab...", file=outfile, append = T)
+  if(verbose) cat("\n\nChecking controlled vocab...", file=outfile, append = T)
   for (t in 2:length(names(data))){
     tab<-names(data)[t]
-    message("\n",tab,"tab...", file=outfile, append = T)
+    if(verbose) cat("\n",tab,"tab...", file=outfile, append = T)
     tab_info<-template_info[[tab]]
 
     #check for non-numeric values where required
@@ -621,7 +622,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
       if(controlled_vocab[1]=="must match across levels") next
       vocab_check<-sapply(data[[tab]][,column], function(x) x %in% c(controlled_vocab, NA))
       if(F %in% vocab_check){
-        warning("\n\tWARNING: unacceptable values detected in the", column, "column:", unique(as.character(data[[tab]][,column][!vocab_check])), file=outfile, append = T); error<-error+1
+        if(verbose) cat("\n\tWARNING: unacceptable values detected in the", column, "column:", unique(as.character(data[[tab]][,column][!vocab_check])), file=outfile, append = T); error<-error+1
       }
 
     }
@@ -632,19 +633,19 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
 
   ##### Summary #####
 
-  message("\n", rep("-", 20), file=outfile, append = T)
+  if(verbose) cat("\n", rep("-", 20), file=outfile, append = T)
   if(error==0){
-    message("\nPASSED. Nice work!", file=outfile, append = T)
+    if(verbose) cat("\nPASSED. Nice work!", file=outfile, append = T)
   } else {
-    message("\n", error, "WARNINGS need to be fixed\n", file=outfile, append = T)
+    if(verbose) cat("\n", error, "WARNINGS need to be fixed\n", file=outfile, append = T)
   }
-  message("\n\n", rep("-", 20), file=outfile, append = T)
+  if(verbose) cat("\n\n", rep("-", 20), file=outfile, append = T)
 
 
   # summary statistics ------------------------------------------------------
   if(summaryStats==T){
-    message("\n\nIt might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.\n", file=outfile, append = T)
-    message("\nSummary statistics...\n", file=outfile, append = T)
+    if(verbose) cat("\n\nIt might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.\n", file=outfile, append = T)
+    if(verbose) cat("\nSummary statistics...\n", file=outfile, append = T)
 
     for (t in 1:length(names(data))){
       tab<-names(data)[t]
@@ -661,15 +662,15 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
       }
     }
 
-    message("\n", rep("-", 20), file=outfile, append = T)
+    if(verbose) cat("\n", rep("-", 20), file=outfile, append = T)
 
 
 
-    message("\n\n", file=outfile, append = T)
+    if(verbose) cat("\n\n", file=outfile, append = T)
 
   }
-  message("\n\nPlease email info.israd@gmail.com with concerns or suggestions", file=outfile, append = T)
-  message("\nIf you think there is a error in the functioning of this code please post to
+  if(verbose) cat("\n\nPlease email info.israd@gmail.com with concerns or suggestions", file=outfile, append = T)
+  if(verbose) cat("\nIf you think there is a error in the functioning of this code please post to
       \nhttps://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues\n", file=outfile, append = T)
 
   attributes(data)$error<-error
