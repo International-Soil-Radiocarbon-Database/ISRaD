@@ -8,7 +8,7 @@
 
 checkTemplateFiles <- function(outfile=''){
 
-  message("\nChecking compatibility between ISRaD template and info file...",
+  cat("\nChecking compatibility between ISRaD template and info file...",
       file=outfile, append = TRUE)
 
   # Get the tables stored in the template sheets
@@ -27,20 +27,20 @@ checkTemplateFiles <- function(outfile=''){
 
   # check that column names in the info and template files match
   for (tab in names(template)[1:8]){
-    message("\n",tab,"...", file=outfile, append = TRUE)
+    cat("\n",tab,"...", file=outfile, append = TRUE)
     if(any(! (template_info[[tab]]$Column_Name %in% colnames(template[[tab]])))) {
-      warning("\n\tWARNING column names unique to info file:",
+      cat("\n\tWARNING column names unique to info file:",
           setdiff(template_info[[tab]]$Column_Name, colnames(template[[tab]])),
           file=outfile, append = TRUE)
     }
     if(any(! (colnames(template[[tab]]) %in% template_info[[tab]]$Column_Name))) {
-      warning("\n\tWARNING column names unique to template file:",
+      cat("\n\tWARNING column names unique to template file:",
           setdiff(colnames(template[[tab]]),template_info[[tab]]$Column_Name),
           file=outfile, append = TRUE)
     }
   }
 
-  message("\nChecking controlled vocab between ISRaD template and info file...",
+  cat("\nChecking controlled vocab between ISRaD template and info file...",
       file=outfile, append = T)
 
   ##Strip out the extra header
@@ -59,7 +59,7 @@ checkTemplateFiles <- function(outfile=''){
   #for each sheet that has a Variable_class defined
   for (tab in names(sheetNames)[unlist(lapply(sheetNames,
                                               function(x){ any('Variable_class' %in% x)}))]){
-    message("\n",tab,"...", file=outfile, append = TRUE)
+    cat("\n",tab,"...", file=outfile, append = TRUE)
 
     template_info_vocab <- template_info[[tab]] %>% #pull the sheet in the info
       dplyr::filter(.data$Variable_class == 'character', #filter the variable class
@@ -74,13 +74,13 @@ checkTemplateFiles <- function(outfile=''){
                                             unlist(.data$Info_Vocab)))
 
     if(!any(unlist(template_info_vocab$InfoInTemplate))){
-      warning("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
+      cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
           unlist(template_info_vocab$Info_Vocab)[!unlist(template_info_vocab$InfoInTemplate)],
           file=outfile, append = TRUE)
     }
 
     if(!any(unlist(template_info_vocab$TemplateInInfo))){
-      warning("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
+      cat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
           unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)],
           file=outfile, append = TRUE)
     }
@@ -90,12 +90,12 @@ checkTemplateFiles <- function(outfile=''){
       dplyr::filter(.data$Variable_class == 'numeric')
 
     if(! is.numeric(utils::type.convert(template_info_num$Max))){
-      warning("\n\tWARNING non-numeric values in Max column",
+      cat("\n\tWARNING non-numeric values in Max column",
           file=outfile, append = TRUE)
     }
 
     if(! is.numeric(utils::type.convert(template_info_num$Min))){
-      warning("\n\tWARNING non-numeric values in Min column",
+      cat("\n\tWARNING non-numeric values in Min column",
           file=outfile, append = TRUE)
     }
   }

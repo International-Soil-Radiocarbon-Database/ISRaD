@@ -72,7 +72,7 @@ compile <- function(dataset_directory,
   ISRaD_database <- lapply(template[1:8], function(x) x[-c(1,2,3),])
   ISRaD_database <- lapply(ISRaD_database, function(x) x %>% mutate_all(as.character))
 
-  message("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
+  cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30),"\n",
       file=outfile, append = TRUE)
 
   data_files<-list.files(dataset_directory, full.names = TRUE)
@@ -81,7 +81,7 @@ compile <- function(dataset_directory,
   entry_stats<-data.frame()
 
   for(d in 1:length(data_files)){
-    message("\n\n",d, "checking", basename(data_files[d]),"...",
+    cat("\n\n",d, "checking", basename(data_files[d]),"...",
         file=outfile, append = TRUE)
     soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi=checkdoi)
     if (attributes(soilcarbon_data)$error>0) {
