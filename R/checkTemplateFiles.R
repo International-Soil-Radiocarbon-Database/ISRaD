@@ -4,7 +4,12 @@
 #'
 #' @param outfile file to dump the output report. Defaults to an empty string that will print
 #' to standard output.
+#' @export
 #' @return returns NULL
+#' @examples
+#' \donttest{
+#' checkTempletFiles()
+#' }
 
 checkTemplateFiles <- function(outfile=''){
 
