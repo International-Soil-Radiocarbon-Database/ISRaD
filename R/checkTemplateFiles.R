@@ -5,7 +5,6 @@
 #' @param outfile file to dump the output report. Defaults to an empty string that will print
 #' to standard output.
 #' @return returns NULL
-#' @export
 #' @examples
 #' \donttest{
 #' ISRaD:::checkTemplateFiles()
