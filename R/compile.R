@@ -11,7 +11,7 @@
 #' @param write_out boolean flag to write the compiled database file as .csv
 #' in dataset_directory (FALSE will not generate output file but will return)
 #' @param return_type a string that defines return object.
-#' Default is "none".
+#' Default is "list".
 #' Acceptable values are "none" or "list" depending on the format you want to
 #' have the database returned in.
 #' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
