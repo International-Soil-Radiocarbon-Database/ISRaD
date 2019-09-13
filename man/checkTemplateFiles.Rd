@@ -16,3 +16,8 @@ returns NULL
 \description{
 Check that the template information file and the template file match appropriately.
 }
+\examples{
+\donttest{
+checkTempletFiles()
+}
+}
