@@ -1,4 +1,4 @@
-template#' Read He 2016
+#' Read He 2016
 #'
 #' Read in the data from Yujie He's 2016 Science paper as a raw csv file
 #'
