@@ -25,3 +25,6 @@ QAQC(file, writeQCreport = F, outfile_QAQC = "", summaryStats = T,
 \description{
 Check the imported soil carbon dataset for formatting and entry errors
 }
+\details{
+This function is also called by the online QAQC tool available at the ISRaD website <https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/>.
+}

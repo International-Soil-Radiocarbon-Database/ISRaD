@@ -21,6 +21,8 @@ An ISRaD_data object with additional rows containing values from geospatial data
 Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
 }
 \details{
+Note that for this function to work you must have downloaded the climate data to a local directory (sources given in references section, below).
+
 Adds new climate fields BIO1-BIO19, PET
 
 BIO1 = Annual Mean Temperature,
