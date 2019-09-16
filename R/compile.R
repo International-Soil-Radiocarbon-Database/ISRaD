@@ -148,6 +148,6 @@ if(write_report==T){
   return(ISRaD_database)
     }
 
-
+closeAllConnections()
 
 }
