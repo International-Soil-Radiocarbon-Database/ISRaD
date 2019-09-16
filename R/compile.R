@@ -142,7 +142,7 @@ compile <- function(dataset_directory,
   if(verbose) cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
 if(write_report==T){
-  message("\n Compilation report saved to", outfile, "\n", file="", append = T) }
+  message("\n Compilation report saved to", outfile, "\n", file="") }
 
     if(return_type=="list"){
   return(ISRaD_database)
