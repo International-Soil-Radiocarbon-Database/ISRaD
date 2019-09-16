@@ -1,6 +1,7 @@
 #' ISRaD.extra.geospatial.climate
 #'
 #' @description Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
+#' @details Note that for this function to work you must have downloaded the climate data to a local directory (sources given in references section, below).
 #' @param database ISRaD dataset object.
 #' @param geodata_clim_directory directory where geospatial climate datasets are found.
 #' @param geodata_pet_directory directory where geospatial pet dataset is found.
@@ -33,7 +34,6 @@
 #' @author J. Grey Monroe, Alison Hoyt
 #' @return An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.
 #' @references http://www.worldclim.org/; PET data from: Kramer, M. and O. Chadwick. 2018. Climate-driven thresholds in reactive mineral retention of soil carbon at the global scale. Nature Climate Change 8:1104–1108.
-
 
 ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geodata_pet_directory) {
 
