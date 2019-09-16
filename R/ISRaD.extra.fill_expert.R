@@ -2,15 +2,20 @@
 #'
 #' @description: Fills in columns of expert-reviewed full data with real data where available, and calculates missing carbon stocks with filled data.
 #' @param database ISRaD dataset object.
-#' @details: 
+#' @details:
 #' @author: Paul A. Levine
-#' @references: 
+#' @references:
 #' @export
 #' @return returns ISRaD_data object with the lyr_xxx_fill_extra columns containing both original and filled data
+#' @examples
+#' \donttest {
+#' ISRaD_full <- ISRaD.getdata(tempdir())
+#' ISRaD.extra.fill_expert(ISRaD_full)
+#' }
 
 ISRaD.extra.fill_expert<- function(database) {
 
-  
+
   # Fill actual bulk density values into the lyr_bd_samp_fill_extra column
   ix <- which(!is.na(database$layer$lyr_bd_samp))
   database$layer[ix,"lyr_bd_samp_fill_extra"] <- database$layer[ix,"lyr_bd_samp"]

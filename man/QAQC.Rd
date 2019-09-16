@@ -5,7 +5,7 @@
 \title{QAQC}
 \usage{
 QAQC(file, writeQCreport = F, outfile = "", summaryStats = T,
-  dataReport = F, checkdoi = T)
+  dataReport = F, checkdoi = T, verbose = F)
 }
 \arguments{
 \item{file}{directory to data file}
@@ -19,6 +19,8 @@ QAQC(file, writeQCreport = F, outfile = "", summaryStats = T,
 \item{dataReport}{prints list structure of database. Default is FALSE}
 
 \item{checkdoi}{set to F if you do not want the QAQC check to validate doi numbers}
+
+\item{verbose}{set to TRUE to print results of function to console}
 }
 \description{
 Check the imported soil carbon dataset for formatting and entry errors

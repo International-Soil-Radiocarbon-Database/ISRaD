@@ -6,6 +6,11 @@
 #' @author J. Beem-Miller
 #' @return returns ISRaD_data object with filled columns
 #' @export
+#' @examples
+#' \donttest {
+#' ISRaD_full <- ISRaD.getdata(tempdir())
+#' ISRaD.extra.Cstocks(ISRaD_full)
+#' }
 
 ISRaD.extra.Cstocks<-function(database){
   # make single BD value from BD sample and BD total

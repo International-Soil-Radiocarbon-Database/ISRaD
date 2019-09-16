@@ -5,6 +5,11 @@
 #' @author J. Beem-Miller
 #' @export
 #' @return returns ISRaD_data object with filled profile coordinates
+#' @examples
+#' \donttest {
+#' ISRaD_full <- ISRaD.getdata(tempdir())
+#' ISRaD.extra.fill_coords(ISRaD_full)
+#' }
 
 ISRaD.extra.fill_coords<-function(database){
   ix <- which(is.na(database$profile$pro_lat))

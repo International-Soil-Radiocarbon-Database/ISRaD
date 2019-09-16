@@ -4,8 +4,8 @@
 \alias{ISRaD.build}
 \title{ISRaD.build builds the database and updates objects in R package}
 \usage{
-ISRaD.build(ISRaD_directory = getwd(), geodata_clim_directory,
-  geodata_pet_directory, geodata_soil_directory, citations = T)
+ISRaD.build(ISRaD_directory, geodata_clim_directory, geodata_pet_directory,
+  geodata_soil_directory, citations = T)
 }
 \arguments{
 \item{ISRaD_directory}{directory where the ISRaD package is found}
@@ -26,7 +26,7 @@ Wrapper function that combines tools for rapid deployment of R package data obje
 Meant to be used by the maintainers/developers of ISRaD
 }
 \examples{
-\dontrun{
+\donttest{
 ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_clim_datasets",
   geodata_pet_directory="~/geospatial_pet_dataset",
   geodata_soil_directory="~/geospatial_soil_datasets")
