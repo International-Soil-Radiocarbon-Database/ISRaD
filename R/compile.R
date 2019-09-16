@@ -25,7 +25,7 @@
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
-                    return_type=c('none', 'list')[2], checkdoi=F, verbose=F){
+                    return_type=c('none', 'list')[2], checkdoi=F, verbose=T){
   #Libraries used
   requireNamespace("assertthat")
   requireNamespace("openxlsx")
