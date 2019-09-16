@@ -21,7 +21,7 @@ ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download=F
     message("\n ISRaD_database_files not found...")
     dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
 
-    message("\n Downloading database files from.",dataURL,"\n")
+    message("\n Downloading database files from: ",dataURL,"\n")
     utils::download.file(dataURL,normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files.zip")))
     message("\n Unzipping database files to",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
     utils::unzip(normalizePath(winslash="\\",paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")))
@@ -31,10 +31,10 @@ ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download=F
     message("\n Replacing ISRaD_database_files ...")
     dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
 
-    message("\n Downloading database files from.",dataURL,"\n")
+    message("\n Downloading database files from: ",dataURL,"\n")
     utils::download.file(dataURL,normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files.zip")))
 
-    message("\n Removing old database files in",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
+    message("\n Removing old database files in ",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
     reviewed<-utils::menu(c("Yes", "No"), title="Are you sure you want to replace these with the newest version? You can copy them to a new directory now if you want keep them.")
     print(reviewed)
     if (reviewed == 1){
@@ -43,7 +43,7 @@ ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download=F
       }
     }else {stop("Ok, keeping the old files. You can run again without force_download=T to load.")}
 
-    message("\n Unzipping database files to",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
+    message("\n Unzipping database files to ",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
     utils::unzip(normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash="\\",paste0(directory, "/ISRaD_database_files")))
   }
 
@@ -58,8 +58,8 @@ if(dataset != "full"){
   v<-gsub(".+_(v.+)\\..+","\\1",file)
   data<-utils::read.csv(file)
   attributes(data)$version<-v
-  message("\n Loading", file,"\n")
-  message("\n This data is from ISRaD version", attributes(data)$version, "\n")
+  message("\n Loading ", file,"\n")
+  message("\n This data is from ISRaD ", attributes(data)$version, "\n")
 }
 
 
@@ -67,8 +67,8 @@ if (dataset == "full"){
   file<-database_files[intersect(grep(data_type, database_files), grep(".rda", database_files))]
   data<-load(file)
   data<-get(data)
-  message("\n Loading", file,"\n")
-  message("\n This data is from ISRaD version", attributes(data)$version, "\n")
+  message("\n Loading ", file,"\n")
+  message("\n This data is from ISRaD version ", attributes(data)$version, "\n")
 }
 
 return(data)

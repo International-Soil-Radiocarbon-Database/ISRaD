@@ -31,11 +31,11 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
   }
 
 
-  message("Compiling the data files in",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
+  message("Compiling the data files in ",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
   message("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
   ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files/"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
 
-  message("\nISRaD_data.xlsx saved to", paste0(ISRaD_directory,"/ISRaD_data_files/database\n\n"))
+  message("\nISRaD_data.xlsx saved to ", paste0(ISRaD_directory,"/ISRaD_data_files/database\n\n"))
 
   reviewed<-utils::menu(c("Yes", "No"), title="Have you reviewed the compilation report log file? (ISRaD_data_files/database/ISRaD_log.txt). I would suggest using the git commit preview window in R to see changes.")
   if (reviewed==2){
@@ -55,16 +55,16 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
   load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
   ISRaD_data<-ISRaD_data
   for(t in names(ISRaD_data_compiled)){
-    message("\t\t", nrow(ISRaD_data_compiled[[t]])-nrow(ISRaD_data[[t]]), "rows were added to the", t, "table.\n")
+    message("\t\t", nrow(ISRaD_data_compiled[[t]])-nrow(ISRaD_data[[t]]), " rows were added to the ", t, " table.\n")
   }
 
   new_entries<-setdiff(ISRaD_data_compiled$metadata$entry_name,ISRaD_data$metadata$entry_name)
   if(length(new_entries)==0) new_entries <- "none"
-  message("\t\t New entry_name values added to the data:", new_entries, "\n")
+  message("\t\t New entry_name values added to the data: ", new_entries, "\n")
 
   removed_entries<-setdiff(ISRaD_data$metadata$entry_name, ISRaD_data_compiled$metadata$entry_name)
   if(length(removed_entries)==0) removed_entries <- "none"
-  message("\t\t entry_name values removed from the data:", removed_entries, "\n")
+  message("\t\t entry_name values removed from the data: ", removed_entries, "\n")
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")
   if (reviewed==2){
@@ -79,7 +79,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
   load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
   ISRaD_extra<-ISRaD_extra
   for(t in names(ISRaD_extra_compiled)){
-    message("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), "ncol were added to the", t, "table.\n")
+    message("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), "ncol were added to the ", t, " table.\n")
   }
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")

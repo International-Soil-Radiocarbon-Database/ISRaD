@@ -1,5 +1,774 @@
 ISRaD Compilation Log 
  
- 2019-09-13 16:37:13 
+ 2019-09-16 14:18:51 
  - - - - - - - - - - - - - - - 
-passedpassedpassed
+
+Checking compatibility between ISRaD template and info file...
+ metadata ...
+ site ...
+ profile ...
+ flux ...
+ layer ...
+ interstitial ...
+ fraction ...
+ incubation ...
+Checking controlled vocab between ISRaD template and info file...
+ site ...
+ profile ...
+ flux ...
+ layer ...
+ interstitial ...
+ fraction ...
+ incubation ...
+
+Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files/ 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+ 1 checking Agnelli_2002.xlsx ...passed
+
+ 2 checking Atarashi-Andoh_2012.xlsx ...passed
+
+ 3 checking Baisden_2002.xlsx ...passed
+
+ 4 checking Baisden_2007.xlsx ...passed
+
+ 5 checking Baisden_2013.xlsx ...passed
+
+ 6 checking Basile_Doelsch_2005.xlsx ...passed
+
+ 7 checking Bauters_2019.xlsx ...passed
+
+ 8 checking Becker-Heidmann_1986.xlsx ...passed
+
+ 9 checking Becker-Heidmann_1989.xlsx ...passed
+
+ 10 checking Becker-Heidmann_2002.xlsx ...passed
+
+ 11 checking Berg_2004.xlsx ...passed
+
+ 12 checking Berhe_2012.xlsx ...passed
+
+ 13 checking Biedenbender_2004.xlsx ...passed
+
+ 14 checking Binkley_1999.xlsx ...passed
+
+ 15 checking Bird_2002.xlsx ...passed
+
+ 16 checking Bol_1996.xlsx ...passed
+
+ 17 checking Bol_2003.xlsx ...passed
+
+ 18 checking Butman_2007.xlsx ...passed
+
+ 19 checking Butnor_2017.xlsx ...passed
+
+ 20 checking Caner_2003.xlsx ...passed
+
+ 21 checking Carbone_2008.xlsx ...passed
+
+ 22 checking Carbone_2011.xlsx ...passed
+
+ 23 checking Carbone_2016.xlsx ...passed
+
+ 24 checking Castanha_2012.xlsx ...passed
+
+ 25 checking Chabbi_2009.xlsx ...passed
+
+ 26 checking Chen_2002.xlsx ...passed
+
+ 27 checking Cherkinsky_1996.xlsx ...passed
+
+ 28 checking Chiti_2009.xlsx ...passed
+
+ 29 checking Chiti_2010.xlsx ...passed
+
+ 30 checking Chiti_2016.xlsx ...passed
+
+ 31 checking Chiti_2018a.xlsx ...passed
+
+ 32 checking Chiti_2018b.xlsx ...passed
+
+ 33 checking Chorover_2004.xlsx ...passed
+
+ 34 checking Clark_2002.xlsx ...passed
+
+ 35 checking Conen_2008.xlsx ...passed
+
+ 36 checking Crews_1995.xlsx ...passed
+
+ 37 checking Crow_2015.xlsx ...passed
+
+ 38 checking Cusack_2010.xlsx ...passed
+
+ 39 checking Cusack_2012.xlsx ...passed
+
+ 40 checking Cusack_2013.xlsx ...passed
+
+ 41 checking Czimczik_2005.xlsx ...passed
+
+ 42 checking Czimczik_2007.xlsx ...passed
+
+ 43 checking Czimczik_2010.xlsx ...passed
+
+ 44 checking Czimczik_Thesis_2003.xlsx ...passed
+
+ 45 checking Czimczik_Unpublished.xlsx ...passed
+
+ 46 checking De_Feudis_2019.xlsx ...passed
+
+ 47 checking de_Freitas_2001.xlsx ...passed
+
+ 48 checking Dejardins_1994.xlsx ...passed
+
+ 49 checking Doetterl_2012.xlsx ...passed
+
+ 50 checking Doetterl_2015.xlsx ...passed
+
+ 51 checking Dorr_1980.xlsx ...passed
+
+ 52 checking Dorr_1986.xlsx ...passed
+
+ 53 checking Dorr_1989.xlsx ...passed
+
+ 54 checking Duemig_2008.xlsx ...passed
+
+ 55 checking Dutta_2006.xlsx ...passed
+
+ 56 checking Elzein_1995.xlsx ...passed
+
+ 57 checking Eusterhues_2003.xlsx ...passed
+
+ 58 checking Ewing_2006.xlsx ...passed
+
+ 59 checking Fernandez_1993.xlsx ...passed
+
+ 60 checking Fierer_2005.xlsx ...passed
+
+ 61 checking Fontaine_2007.xlsx ...passed
+
+ 62 checking Gaudinski_2000.xlsx ...passed
+
+ 63 checking Gaudinski_2001.xlsx ...passed
+
+ 64 checking Gentsch_2018.xlsx ...passed
+
+ 65 checking Gillson_2004.xlsx ...passed
+
+ 66 checking Goh_1976.xlsx ...passed
+
+ 67 checking Goh_1977.xlsx ...passed
+
+ 68 checking Guillet_1988.xlsx ...passed
+
+ 69 checking Guillet_2001.xlsx ...passed
+
+ 70 checking Guillet_2010.xlsx ...passed
+
+ 71 checking Hall_2015.xlsx ...passed
+
+ 72 checking Harden_1999.xlsx ...passed
+
+ 73 checking Harden_2002.xlsx ...passed
+
+ 74 checking Hardie_2009.xlsx ...passed
+
+ 75 checking Hardie_2011.xlsx ...passed
+
+ 76 checking Harkness_1986.xlsx ...passed
+
+ 77 checking Harrison_1993.xlsx ...passed
+
+ 78 checking Hatton_2012.xlsx ...passed
+
+ 79 checking Heckman_2010.xlsx ...passed
+
+ 80 checking Hicks-Pries_2012.xlsx ...passed
+
+ 81 checking Hicks-Pries_2013.xlsx ...passed
+
+ 82 checking Hicks-Pries_2015.xlsx ...passed
+
+ 83 checking Hicks-Pries_2016.xlsx ...passed
+
+ 84 checking Hicks-Pries_2017.xlsx ...passed
+
+ 85 checking Hicks-Pries_2017b.xlsx ...passed
+
+ 86 checking Horwath_2008.xlsx ...passed
+
+ 87 checking Horwath_Thesis_2007.xlsx ...passed
+
+ 88 checking Hsieh_1996.xlsx ...passed
+
+ 89 checking Huang_1996.xlsx ...passed
+
+ 90 checking Huang_1999.xlsx ...passed
+
+ 91 checking Kaiser_2007.xlsx ...passed
+
+ 92 checking Karhu_2010.xlsx ...passed
+
+ 93 checking Katsuno_2010.xlsx ...passed
+
+ 94 checking Khomo_2017.xlsx ...passed
+
+ 95 checking Kleber_2005.xlsx ...passed
+
+ 96 checking Kleber_2011.xlsx ...passed
+
+ 97 checking Koarashi_2005.xlsx ...passed
+
+ 98 checking Koarashi_2009.xlsx ...passed
+
+ 99 checking Kogel-Knabner_2008.xlsx ...passed
+
+ 100 checking Kondo_2010.xlsx ...passed
+
+ 101 checking Kramer_2012.xlsx ...passed
+
+ 102 checking Kramer_2016.xlsx ...passed
+
+ 103 checking Krull_2003.xlsx ...passed
+
+ 104 checking Krull_2005.xlsx ...passed
+
+ 105 checking Krull_2006.xlsx ...passed
+
+ 106 checking Ladyman_1980.xlsx ...passed
+
+ 107 checking Laskar_2012.xlsx ...passed
+
+ 108 checking Lassey_1996.xlsx ...passed
+
+ 109 checking Lavoie_2011.xlsx ...passed
+
+ 110 checking Lawrence_2015.xlsx ...passed
+
+ 111 checking Leavitt_2007.xlsx ...passed
+
+ 112 checking Lee_2012.xlsx ...passed
+
+ 113 checking Leifeld_2009.xlsx ...passed
+
+ 114 checking Leith_2014.xlsx ...passed
+
+ 115 checking Lemke_2006.xlsx ...passed
+
+ 116 checking Li_2010.xlsx ...passed
+
+ 117 checking Liu_2006.xlsx ...passed
+
+ 118 checking Lupascu_2018.xlsx ...passed
+
+ 119 checking Lybrand_2017.xlsx ...passed
+
+ 120 checking Manies_2004.xlsx ...passed
+
+ 121 checking Marin-Spiotta_2008.xlsx ...passed
+
+ 122 checking Marin-Spiotta_2011.xlsx ...passed
+
+ 123 checking Mariotti_1994.xlsx ...passed
+
+ 124 checking Martel_1974.xlsx ...passed
+
+ 125 checking Masiello_2004.xlsx ...passed
+
+ 126 checking McClaran_2000.xlsx ...passed
+
+ 127 checking McClung_de_Tapia_2005.xlsx ...passed
+
+ 128 checking McFarlane2013Porras2017TrumboreUnp_inc.xlsx ...passed
+
+ 129 checking Meyer_2012.xlsx ...passed
+
+ 130 checking Mikutta_2009.xlsx ...passed
+
+ 131 checking Milton_1998.xlsx ...passed
+
+ 132 checking Monreal_1997.xlsx ...passed
+
+ 133 checking Morris_unpub.xlsx ...passed
+
+ 134 checking Mueller_2014.xlsx ...passed
+
+ 135 checking Muhr_2009.xlsx ...passed
+
+ 136 checking Nagy_2017.xlsx ...passed
+
+ 137 checking Nave_2017_corr.xlsx ...passed
+
+ 138 checking Nowinski_2009.xlsx ...passed
+
+ 139 checking Nowinski_2010.xlsx ...passed
+
+ 140 checking O'Donnell_2011.xlsx ...passed
+
+ 141 checking OBrien_1986.xlsx ...passed
+
+ 142 checking Ohno_2017.xlsx ...passed
+
+ 143 checking Paul_1997.xlsx ...passed
+
+ 144 checking Pegoraro_2019.xlsx ...passed
+
+ 145 checking Perez_2006.xlsx ...passed
+
+ 146 checking Pessenda_1996.xlsx ...passed
+
+ 147 checking Pessenda_2001.xlsx ...passed
+
+ 148 checking Phillips_2013.xlsx ...passed
+
+ 149 checking Posada_2011.xlsx ...passed
+
+ 150 checking Quideau_2001.xlsx ...passed
+
+ 151 checking Rabbi_2013.xlsx ...passed
+
+ 152 checking Rasmussen_2005.xlsx ...passed
+
+ 153 checking Rasmussen_2010.xlsx ...passed
+
+ 154 checking Rasmussen_2018.xlsx ...passed
+
+ 155 checking Resh_2002.xlsx ...passed
+
+ 156 checking Rethemeyer_2005.xlsx ...passed
+
+ 157 checking Richter_1999.xlsx ...passed
+
+ 158 checking Rogers_2014.xlsx ...passed
+
+ 159 checking Rumpel_2002.xlsx ...passed
+
+ 160 checking Rumpel_2008.xlsx ...passed
+
+ 161 checking Saiz_2015.xlsx ...passed
+
+ 162 checking Sanderman_2017.xlsx ...passed
+
+ 163 checking Scharpenseel_1973a.xlsx ...passed
+
+ 164 checking Schimel_2011.xlsx ...passed
+
+ 165 checking Schoening_2006.xlsx ...passed
+
+ 166 checking Schulze_2009.xlsx ...passed
+
+ 167 checking Schulze_2011.xlsx ...passed
+
+ 168 checking Schuur_2001.xlsx ...passed
+
+ 169 checking Schuur_2006.xlsx ...passed
+
+ 170 checking Schwartz_1992.xlsx ...passed
+
+ 171 checking Schwartz_1996.xlsx ...passed
+
+ 172 checking Shaw_2004.xlsx ...passed
+
+ 173 checking Shen_2001.xlsx ...passed
+
+ 174 checking Sierra_2012.xlsx ...passed
+
+ 175 checking Sierra_2013.xlsx ...passed
+
+ 176 checking Sollins_2006.xlsx ...passed
+
+ 177 checking Sollins_2009.xlsx ...passed
+
+ 178 checking Stephan_1983.xlsx ...passed
+
+ 179 checking Stout_1980.xlsx ...passed
+
+ 180 checking Swanston_2005.xlsx ...passed
+
+ 181 checking Szymanski_2019.xlsx ...passed
+
+ 182 checking Tan_2013.xlsx ...passed
+
+ 183 checking Taylor_2015.xlsx ...passed
+
+ 184 checking Tefs_2012.xlsx ...passed
+
+ 185 checking Tegen_1996.xlsx ...passed
+
+ 186 checking Telles_2003.xlsx ...passed
+
+ 187 checking Tifafi_2018.xlsx ...passed
+
+ 188 checking Tonnejick_2006.xlsx ...passed
+
+ 189 checking Torn_1997.xlsx ...passed
+
+ 190 checking Torn_2002.xlsx ...passed
+
+ 191 checking Torn_2005.xlsx ...passed
+
+ 192 checking Trumbore_1993.xlsx ...passed
+
+ 193 checking Trumbore_1995.xlsx ...passed
+
+ 194 checking Trumbore_1996Koarashi_2012Marzaioli_2010.xlsx ...passed
+
+ 195 checking Trumbore_1997.xlsx ...passed
+
+ 196 checking Trumbore_1999.xlsx ...passed
+
+ 197 checking Trumbore_2006.xlsx ...passed
+
+ 198 checking van_Dam_1997.xlsx ...passed
+
+ 199 checking van_der_Voort_2016.xlsx ...passed
+
+ 200 checking van_Mourik_2010.xlsx ...passed
+
+ 201 checking Vaughn_2014.xlsx ...passed
+
+ 202 checking Wagai_2015.xlsx ...passed
+
+ 203 checking Waldrop_2012.xlsx ...passed
+
+ 204 checking Wang_1996.xlsx ...passed
+
+ 205 checking Wang_1999.xlsx ...passed
+
+ 206 checking Wang_2000.xlsx ...passed
+
+ 207 checking Wang_2005.xlsx ...passed
+
+ 208 checking Wunderlich_2012.xlsx ...passed
+
+-------------
+
+Summary statistics...
+
+ metadata tab...214 observations
+    entry_name : 214
+    doi : 214
+    compilation_doi : 79
+    curator_name : 214
+    curator_organization : 214
+    curator_email : 214
+    modification_date_y : 214
+    modification_date_m : 214
+    modification_date_d : 214
+    contact_name : 214
+    contact_email : 214
+    contact_orcid_id : 43
+    bibliographical_reference : 214
+    metadata_note : 75
+    associated_datasets : 43
+    template_version : 116
+ site tab...621 observations
+    entry_name : 621
+    site_name : 621
+    site_lat : 621
+    site_long : 621
+    site_datum : 237
+    site_elevation : 501
+    site_note : 308
+ profile tab...1947 observations
+    entry_name : 1947
+    site_name : 1947
+    plot_name : 699
+    pro_name : 1947
+    pro_note : 679
+    pro_lat : 440
+    pro_long : 440
+    pro_elevation : 184
+    pro_treatment : 1947
+    pro_treatment_note : 371
+    pro_comp : 203
+    pro_reps : 362
+    pro_MAT : 1251
+    pro_MAP : 1386
+    pro_usda_soil_order : 863
+    pro_soil_series : 366
+    pro_soil_taxon : 1254
+    pro_soil_taxon_sys : 1100
+    pro_chrono_name : 26
+    pro_soil_age : 138
+    pro_soil_age_note : 6
+    pro_MAST : 177
+    pro_MASWC : 137
+    pro_land_cover : 1847
+    pro_lc_phenology : 114
+    pro_lc_leaf_type : 112
+    pro_lc_photosyn_path : 93
+    pro_veg_note : 1480
+    pro_NPP : 8
+    pro_bedrock_depth : 118
+    pro_complete : 4
+    pro_depth_water : 109
+    pro_thaw_depth : 74
+    pro_parent_material : 784
+    pro_parent_chem : 433
+    pro_parent_material_notes : 835
+    pro_2d_position : 239
+    pro_aspect : 80
+    pro_aspect_deg : 29
+    pro_slope : 249
+    pro_slope_shape : 96
+    pro_drainage_class : 385
+    pro_soc : 172
+    pro_soc_sigma : 49
+    pro_soc_depth : 155
+ flux tab...2119 observations
+    entry_name : 2119
+    site_name : 2119
+    plot_name : 1699
+    pro_name : 2119
+    flx_name : 2119
+    flx_lat : 1
+    flx_long : 1
+    flx_obs_date_y : 2119
+    flx_obs_date_m : 2081
+    flx_obs_date_d : 1685
+    flx_pathway : 2045
+    flx_pathway_note : 215
+    flx_analyte : 2094
+    flx_ecosystem_component : 2086
+    flx_method : 1993
+    flx_method_note : 1326
+    flx_storage_method : 640
+    flx_duration : 262
+    flx_duration_units : 262
+    flx_keeling_plot : 32
+    flx_atm_correction : 420
+    flx_source_temp : 841
+    flx_source_H2O : 307
+    flx_rate : 211
+    flx_rate_sd : 990
+    flx_rate_units : 1111
+    flx_13c : 579
+    flx_13c_sd : 40
+    flx_rc_lab : 833
+    flx_rc_lab_number : 177
+    flx_rc_year : 495
+    flx_14c : 1079
+    flx_14c_sigma : 137
+    flx_14c_sd : 17
+    flx_fraction_modern : 20
+ layer tab...7785 observations
+    entry_name : 7785
+    site_name : 7785
+    pro_name : 7785
+    lyr_name : 7785
+    lyr_obs_date_y : 7785
+    lyr_obs_date_m : 3573
+    lyr_obs_date_d : 2598
+    lyr_all_org_neg : 312
+    lyr_top : 7785
+    lyr_bot : 7785
+    lyr_hzn : 3912
+    lyr_comp : 508
+    lyr_note : 1880
+    lyr_color : 503
+    lyr_color_dry : 12
+    lyr_burn_ev : 105
+    lyr_bd_samp : 2733
+    lyr_bd_tot : 1841
+    lyr_bd_notes : 946
+    lyr_sand_tot_psa : 1427
+    lyr_silt_tot_psa : 1360
+    lyr_clay_tot_psa : 1757
+    lyr_coarse_tot : 965
+    lyr_coarse_size_thresh : 942
+    lyr_texture_class : 312
+    lyr_bet_surface_area : 115
+    lyr_ph_cacl : 293
+    lyr_ph_h2o : 911
+    lyr_ph : 1093
+    lyr_ph_method : 697
+    lyr_cat_exch : 241
+    lyr_base_sum : 65
+    lyr_cec_sum : 343
+    lyr_ca_exch : 208
+    lyr_na_exch : 138
+    lyr_mg_exch : 192
+    lyr_k_exch : 198
+    lyr_ecec : 121
+    lyr_bs : 256
+    lyr_c_inorg : 543
+    lyr_c_org : 2078
+    lyr_c_tot : 4001
+    lyr_soc : 1236
+    lyr_soc_sigma : 222
+    lyr_n_tot : 2599
+    lyr_son : 5
+    lyr_c_to_n : 1625
+    lyr_loi : 187
+    lyr_15n : 1002
+    lyr_13c : 2703
+    lyr_rc_lab : 1446
+    lyr_rc_lab_number : 758
+    lyr_rc_year : 1109
+    lyr_14c : 2952
+    lyr_14c_sigma : 1528
+    lyr_14c_sd : 20
+    lyr_fraction_modern : 2651
+    lyr_fraction_modern_sigma : 1721
+    lyr_fraction_modern_sd : 27
+    lyr_mbc_method : 153
+    lyr_raw_mbc : 14
+    lyr_reported_mbc : 136
+    lyr_p_ext : 12
+    lyr_p_units : 12
+    lyr_p_method : 6
+    lyr_fe_py : 559
+    lyr_al_py : 601
+    lyr_fe_al_py : 9
+    lyr_c_py : 150
+    lyr_py_notes : 160
+    lyr_fe_ox : 734
+    lyr_al_ox : 791
+    lyr_si_ox : 133
+    lyr_ox_notes : 149
+    lyr_fe_hy : 43
+    lyr_al_hy : 43
+    lyr_si_hy : 13
+    lyr_hy_notes : 30
+    lyr_fe_dith : 664
+    lyr_al_dith : 490
+    lyr_si_dith : 7
+    lyr_dith_notes : 121
+    lyr_quartz : 146
+    lyr_alkali_feldspar : 66
+    lyr_plag_feldspar : 96
+    lyr_mica_chlorite : 98
+    lyr_pyroxine : 57
+    lyr_olivine : 4
+    lyr_kaol_halloy : 113
+    lyr_smect_vermic : 97
+    lyr_fe_oxides : 95
+    lyr_calcite_dolomite : 36
+    lyr_zeolite : 6
+    lyr_bd_samp_fill_extra : 3
+    lyr_c_org_fill_extra : 3
+    lyr_fill_notes_extra : 3
+ interstitial tab...353 observations
+    entry_name : 353
+    site_name : 353
+    pro_name : 353
+    ist_name : 353
+    ist_obs_date_y : 353
+    ist_obs_date_m : 310
+    ist_obs_date_d : 292
+    ist_depth : 353
+    ist_phase : 353
+    ist_analyte : 353
+    ist_method : 256
+    ist_storage_method : 292
+    ist_time_dur : 164
+    ist_concentration : 85
+    ist_concentration_units : 85
+    ist_13c : 235
+    ist_13c_sd : 96
+    ist_rc_lab : 292
+    ist_rc_lab_number : 117
+    ist_rc_year : 195
+    ist_14c : 284
+    ist_14c_sigma : 154
+    ist_14c_sd : 11
+    ist_fraction_modern : 43
+ fraction tab...3910 observations
+    entry_name : 3910
+    site_name : 3910
+    pro_name : 3910
+    lyr_name : 3910
+    frc_name : 3910
+    frc_input : 3910
+    frc_property : 3233
+    frc_scheme : 3910
+    frc_scheme_units : 3910
+    frc_lower : 3910
+    frc_upper : 3910
+    frc_agent : 3910
+    frc_scheme_conc : 286
+    frc_comp : 421
+    frc_note : 1071
+    frc_mass_perc : 1432
+    frc_obs_date_y : 960
+    frc_obs_date_m : 368
+    frc_obs_date_d : 351
+    frc_bet_surface_area : 21
+    frc_c_perc : 1899
+    frc_c_tot : 973
+    frc_c_org : 1626
+    frc_c_inorg : 109
+    frc_n_tot : 1310
+    frc_c_to_n : 1188
+    frc_15n : 721
+    frc_13c : 2037
+    frc_rc_lab : 1832
+    frc_rc_lab_number : 825
+    frc_rc_year : 1778
+    frc_14c : 1789
+    frc_14c_sigma : 950
+    frc_14c_sd : 47
+    frc_fraction_modern : 1163
+    frc_fraction_modern_sigma : 849
+    frc_fraction_modern_sd : 99
+    frc_mbc_method : 50
+    frc_reported_mbc : 46
+    frc_fe_py : 105
+    frc_al_py : 111
+    frc_c_py : 22
+    frc_py_notes : 40
+    frc_fe_ox : 178
+    frc_al_ox : 172
+    frc_si_ox : 46
+    frc_noncrystalline_ox : 12
+    frc_ox_notes : 40
+    frc_fe_hy : 21
+    frc_al_hy : 21
+    frc_fe_dith : 62
+    frc_al_dith : 43
+    frc_quartz : 36
+    frc_alkali_feldspar : 7
+    frc_plag_feldspar : 6
+    frc_mica_chlorite : 6
+    frc_amphibole : 13
+    frc_pyroxine : 1
+    frc_kaol_halloy : 11
+    frc_smect_vermic : 19
+    frc_gibbsite : 1
+    frc_fe_oxides : 7
+    frc_imog_alloph : 18
+    frc_zeolite : 3
+ incubation tab...2038 observations
+    entry_name : 2038
+    site_name : 2038
+    pro_name : 2038
+    lyr_name : 2038
+    frc_name : 170
+    inc_name : 1944
+    inc_type : 2038
+    inc_note : 963
+    inc_obs_date_y : 1185
+    inc_obs_date_m : 726
+    inc_obs_date_d : 604
+    inc_duration : 1465
+    inc_duration_type : 1596
+    inc_temp : 1457
+    inc_moisture_type : 1499
+    inc_moisture : 643
+    inc_moisture_units : 572
+    inc_C_respired : 146
+    inc_flux : 874
+    inc_flux_units : 765
+    inc_13c : 1166
+    inc_13c_sd : 85
+    inc_rc_lab : 1124
+    inc_rc_lab_number : 473
+    inc_rc_year : 915
+    inc_14c : 1276
+    inc_14c_sigma : 658
+    inc_14c_sd : 27
+    inc_fraction_modern : 536
+    inc_fraction_modern_sigma : 444
+    inc_fraction_modern_sd : 2
+ - - - - - - - - - - - - - - - - - - - -
