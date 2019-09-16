@@ -75,11 +75,11 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
   ISRaD_extra_compiled<-ISRaD.extra(database=ISRaD_data_compiled, geodata_clim_directory = geodata_clim_directory, geodata_soil_directory = geodata_soil_directory, geodata_pet_directory=geodata_pet_directory)
   message("Replacing the ISRaD_extra object with the new one...\n")
 
-  message("\tChecking the number of new rows in the compiled ISRaD_extra object...\n")
+  message("\tChecking the number of new columns in the compiled ISRaD_extra object...\n")
   load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
   ISRaD_extra<-ISRaD_extra
   for(t in names(ISRaD_extra_compiled)){
-    message("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), "ncol were added to the ", t, " table.\n")
+    message("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), " ncol were added to the ", t, " table.\n")
   }
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are these differences what you expected?")

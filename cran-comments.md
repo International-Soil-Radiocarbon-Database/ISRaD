@@ -12,4 +12,10 @@ There was 1 NOTE:
   Maintainer: 'Jeffrey Beem-Miller <jbeem@bgc-jena.mpg.de>'
   New submission
 
-* Previously submitted with error due to openssl config on Fedora; now fixed
+* The following requested changes have been made since prior submission:
+  * Author field of DESCRIPTION file updated
+  * Examples added to functions where appropriate
+  * dontrun calls in examples have been removed when unnecessary
+  * donttest calls added to several examples with long run times
+  * Non-exported functions w/ examples now exported
+  * All calls to "cat()" replaced with "if(verbose) cat()" or "message()"
