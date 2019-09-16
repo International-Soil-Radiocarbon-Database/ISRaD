@@ -68,7 +68,7 @@ if (dataset == "full"){
   data<-load(file)
   data<-get(data)
   message("\n Loading ", file,"\n")
-  message("\n This data is from ISRaD version ", attributes(data)$version, "\n")
+  message("\n This data is from ISRaD ", attributes(data)$version, "\n")
 }
 
 return(data)
