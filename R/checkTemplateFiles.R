@@ -13,8 +13,8 @@
 
 checkTemplateFiles <- function(outfile=''){
 
-  capture.output(cat("\nChecking compatibility between ISRaD template and info file..."),
-                 file=outfile, append = TRUE)
+  message("\nChecking compatibility between ISRaD template and info file...",
+          file=outfile, append = TRUE)
 
   # Get the tables stored in the template sheets
   template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx",
@@ -32,11 +32,11 @@ checkTemplateFiles <- function(outfile=''){
 
   # check that column names in the info and template files match
   for (tab in names(template)[1:8]){
-    capture.output(cat("\n",tab,"..."), file=outfile, append = TRUE)
+    message("\n",tab,"...", file=outfile, append = TRUE)
     if(any(! (template_info[[tab]]$Column_Name %in% colnames(template[[tab]])))) {
-      capture.output(cat("\n\tWARNING column names unique to info file:",
-                         setdiff(template_info[[tab]]$Column_Name, colnames(template[[tab]]))),
-                     file=outfile, append = TRUE)
+    message("\n\tWARNING column names unique to info file:",
+            setdiff(template_info[[tab]]$Column_Name, colnames(template[[tab]])),
+            file=outfile, append = TRUE)
     }
     if(any(! (colnames(template[[tab]]) %in% template_info[[tab]]$Column_Name))) {
       capture.output(cat("\n\tWARNING column names unique to template file:",
@@ -45,8 +45,8 @@ checkTemplateFiles <- function(outfile=''){
     }
   }
 
-  capture.output(cat("\nChecking controlled vocab between ISRaD template and info file..."),
-                 file=outfile, append = T)
+  message("\nChecking controlled vocab between ISRaD template and info file...",
+          file=outfile, append = T)
 
   ##Strip out the extra header
   template_vocab <- template$`controlled vocabulary`#pull the control vocab in template
@@ -64,7 +64,7 @@ checkTemplateFiles <- function(outfile=''){
   #for each sheet that has a Variable_class defined
   for (tab in names(sheetNames)[unlist(lapply(sheetNames,
                                               function(x){ any('Variable_class' %in% x)}))]){
-    capture.output(cat("\n",tab,"..."), file=outfile, append = TRUE)
+    message("\n",tab,"...", file=outfile, append = TRUE)
 
     template_info_vocab <- template_info[[tab]] %>% #pull the sheet in the info
       dplyr::filter(.data$Variable_class == 'character', #filter the variable class
@@ -79,15 +79,15 @@ checkTemplateFiles <- function(outfile=''){
                                             unlist(.data$Info_Vocab)))
 
     if(!any(unlist(template_info_vocab$InfoInTemplate))){
-      capture.output(cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
-                         unlist(template_info_vocab$Info_Vocab)[!unlist(template_info_vocab$InfoInTemplate)]),
-                     file=outfile, append = TRUE)
+      message("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
+              unlist(template_info_vocab$Info_Vocab)[!unlist(template_info_vocab$InfoInTemplate)],
+              file=outfile, append = TRUE)
     }
 
     if(!any(unlist(template_info_vocab$TemplateInInfo))){
-      capture.output(cat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
-                         unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)]),
-                     file=outfile, append = TRUE)
+      message("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
+              unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)]),
+              file=outfile, append = TRUE)
     }
 
     ##Check that the min/max are strictly numeric or NA-------------------
@@ -95,13 +95,13 @@ checkTemplateFiles <- function(outfile=''){
       dplyr::filter(.data$Variable_class == 'numeric')
 
     if(! is.numeric(utils::type.convert(template_info_num$Max))){
-      capture.output(cat("\n\tWARNING non-numeric values in Max column"),
-                     file=outfile, append = TRUE)
+      message("\n\tWARNING non-numeric values in Max column",
+              file=outfile, append = TRUE)
     }
 
     if(! is.numeric(utils::type.convert(template_info_num$Min))){
-      capture.output(cat("\n\tWARNING non-numeric values in Min column"),
-                     file=outfile, append = TRUE)
+      message("\n\tWARNING non-numeric values in Min column",
+              file=outfile, append = TRUE)
     }
   }
 

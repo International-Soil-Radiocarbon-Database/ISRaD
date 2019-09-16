@@ -650,13 +650,13 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
     for (t in 1:length(names(data))){
       tab<-names(data)[t]
       data_tab<-data[[tab]]
-      message("\n",tab,"tab...", file=outfile, append = T)
-      message(nrow(data_tab), "observations", file=outfile, append = T)
+      if(verbose) cat("\n",tab,"tab...", file=outfile, append = T)
+      if(verbose) cat(nrow(data_tab), "observations", file=outfile, append = T)
       if (nrow(data_tab)>0){
         col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
         col_counts<-col_counts[col_counts>0]
         for(c in 1:length(col_counts)){
-          message("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
+          if(verbose) cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
 
         }
       }
