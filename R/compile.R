@@ -81,8 +81,7 @@ compile <- function(dataset_directory,
   entry_stats<-data.frame()
 
   for(d in 1:length(data_files)){
-      if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...",
-                      file=outfile, append = TRUE)
+      if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
     soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi=checkdoi)
     if (attributes(soilcarbon_data)$error>0) {
         if(verbose) cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)

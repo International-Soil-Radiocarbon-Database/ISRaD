@@ -35,7 +35,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
 
   if (writeQCreport==T){
     if (outfile==""){
-      outfile<-paste0(dirname(file), "/QAQC/QAQC_", gsub("\\.xlsx", ".txt", basename(file)))
+      outfile<-file(paste0(dirname(file), "/QAQC/QAQC_", gsub("\\.xlsx", ".txt", basename(file))),open="wt")
     }
   }
 
@@ -678,4 +678,7 @@ QAQC <- function(file, writeQCreport=F, outfile="", summaryStats=T, dataReport=F
   if(dataReport==T){
     return(data)
   }
+
+  close(outfile)
+
 }
