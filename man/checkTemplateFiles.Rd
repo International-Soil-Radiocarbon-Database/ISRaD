@@ -9,6 +9,8 @@ checkTemplateFiles(outfile = "", verbose = T)
 \arguments{
 \item{outfile}{file to dump the output report. Defaults to an empty string that will print
 to standard output.}
+
+\item{verbose}{if TRUE (default) will print output to specified outfile}
 }
 \value{
 returns NULL

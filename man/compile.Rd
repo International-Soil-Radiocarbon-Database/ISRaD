@@ -33,6 +33,7 @@ Construct data products to the International Soil Radiocarbon Database.
 }
 \examples{
 \donttest{
-ISRaD.compiled <- compile(tempdir(), write_report = T, write_out = T, return_type = 'list', checkdoi = F, verbose = T)
+ISRaD.compiled <- compile(tempdir(), write_report = T, write_out = T,
+return_type = 'list', checkdoi = F, verbose = T)
 }
 }
