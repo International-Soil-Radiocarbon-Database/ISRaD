@@ -48,7 +48,7 @@ compile <- function(dataset_directory,
   #Set output file
   outfile <- ""
   if(write_report){
-    outfile <- file.path(dataset_directory, "database", "ISRaD_log.txt")
+    outfile <- file(file.path(dataset_directory, "database", "ISRaD_log.txt"), open="wt")
   }
 
   #Start writing in the output file
@@ -82,7 +82,7 @@ compile <- function(dataset_directory,
 
   for(d in 1:length(data_files)){
       if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
-    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi=checkdoi)
+    soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = FALSE, verbose = TRUE)
     if (attributes(soilcarbon_data)$error>0) {
         if(verbose) cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
       next
