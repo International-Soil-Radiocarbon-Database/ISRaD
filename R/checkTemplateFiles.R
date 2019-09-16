@@ -4,6 +4,7 @@
 #'
 #' @param outfile file to dump the output report. Defaults to an empty string that will print
 #' to standard output.
+#' @param verbose if TRUE (default) will print output to specified outfile
 #' @export
 #' @return returns NULL
 #' @examples

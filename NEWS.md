@@ -8,4 +8,4 @@ ISRaD 0.1.3
 ISRaD 0.1.4
 
 # Updated release for CRAN, mid September 2019
-ISRaD 0.1.5
+ISRaD 1.0.0

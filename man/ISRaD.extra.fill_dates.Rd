@@ -19,7 +19,7 @@ Fills frc_obs_date_y and inc_obs_date_y columns from lyr_obs_date_y if not repor
 This function must be run prior to the ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta for the layer and fraction tables.
 }
 \examples{
-\donttest {
+\donttest{
 ISRaD_full <- ISRaD.getdata(tempdir())
 ISRaD.extra.fill_dates(ISRaD_full)
 }

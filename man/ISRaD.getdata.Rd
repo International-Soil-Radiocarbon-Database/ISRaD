@@ -23,7 +23,7 @@ ISRaD data object
 ISRaD.getdata
 }
 \examples{
-\donttest {
+\donttest{
 ISRaD_full <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
 }
 }

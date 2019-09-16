@@ -21,7 +21,7 @@ This function is a static conversion script written at the Fall 2018 Powell Cent
 Back fills pro_usda_soil_order based on USDA classifications
 }
 \examples{
-\donttest {
+\donttest{
 ISRaD_full <- ISRaD.getdata(tempdir())
 ISRaD.extra.fill_soilorders(ISRaD_full)
 }

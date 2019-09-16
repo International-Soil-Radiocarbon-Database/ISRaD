@@ -16,7 +16,7 @@ returns ISRaD_data object with filled profile coordinates
 Fills profile coordinates from site coordinates if profile coordinates not reported.
 }
 \examples{
-\donttest {
+\donttest{
 ISRaD_full <- ISRaD.getdata(tempdir())
 ISRaD.extra.fill_coords(ISRaD_full)
 }

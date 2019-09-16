@@ -21,7 +21,7 @@ returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),nco
 : ISRaD.extra.flatten generates flat files (2 dimensional matrices) for user specified ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
 }
 \examples{
-\donttest {
+\donttest{
 ISRaD_full <- ISRaD.getdata(tempdir())
 ISRaD_incubation <- ISRaD.flatten(ISRaD_full, "incubation")
 }

@@ -19,7 +19,7 @@ returns ISRaD_data object with filled delta 14C columns
 : Warning: xxx_obs_date_y columns must be filled for this to work!
 }
 \examples{
-\donttest {
+\donttest{
 ISRaD_full <- ISRaD.getdata(tempdir())
 ISRaD.extra.fill_14c(ISRaD_full)
 }
