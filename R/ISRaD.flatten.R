@@ -9,7 +9,7 @@
 #' @export
 #' @return returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),ncol(profile),...,ncol(table))
 #' @examples
-#' \donttest {
+#' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir())
 #' ISRaD_incubation <- ISRaD.flatten(ISRaD_full, "incubation")
 #' }

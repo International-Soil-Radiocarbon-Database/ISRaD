@@ -8,7 +8,7 @@
 #' @export
 #' @return returns ISRaD_data object with filled fraction modern columns
 #' @examples
-#' \donttest {
+#' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir())
 #' ISRaD.extra.fill_fm(ISRaD_full)
 #' }

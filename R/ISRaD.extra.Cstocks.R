@@ -7,7 +7,7 @@
 #' @return returns ISRaD_data object with filled columns
 #' @export
 #' @examples
-#' \donttest {
+#' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir())
 #' ISRaD.extra.Cstocks(ISRaD_full)
 #' }

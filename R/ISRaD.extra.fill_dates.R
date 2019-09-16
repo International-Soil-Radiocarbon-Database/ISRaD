@@ -6,7 +6,7 @@
 #' @export
 #' @return returns ISRaD_data object with filled obs_date_y columns
 #' @examples
-#' \donttest {
+#' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir())
 #' ISRaD.extra.fill_dates(ISRaD_full)
 #' }

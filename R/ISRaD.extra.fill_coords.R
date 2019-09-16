@@ -6,7 +6,7 @@
 #' @export
 #' @return returns ISRaD_data object with filled profile coordinates
 #' @examples
-#' \donttest {
+#' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir())
 #' ISRaD.extra.fill_coords(ISRaD_full)
 #' }

@@ -8,7 +8,7 @@
 #' @export
 #' @return returns ISRaD_data object with new delta delta columns in relevant tables
 #' @examples
-#' \donttest {
+#' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir())
 #' ISRaD.extra.delta_delta(ISRaD_full)
 #' }

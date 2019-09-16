@@ -21,7 +21,7 @@ An ISRaD_data object with additional rows containing values from geospatial data
 Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
 }
 \details{
-Adds new climate fields BIO1-BIO19, PET:
+Adds new climate fields BIO1-BIO19, PET
 
 BIO1 = Annual Mean Temperature,
 BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
@@ -44,7 +44,7 @@ BIO18 = Precipitation of Warmest Quarter,
 BIO19 = Precipitation of Coldest Quarter
 PET = Potential evapotranspiration, mm/yr (Penman-Monteith method for short-clipped grass w/ worldclim input data)
 
-All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on site lat and long
+All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on profile lat and long
 }
 \references{
 http://www.worldclim.org/; PET data from: Kramer, M. and O. Chadwick. 2018. Climate-driven thresholds in reactive mineral retention of soil carbon at the global scale. Nature Climate Change 8:1104–1108.

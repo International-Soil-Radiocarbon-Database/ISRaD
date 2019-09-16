@@ -8,7 +8,7 @@
 #' @export
 #' @return returns ISRaD_data object with the lyr_xxx_fill_extra columns containing both original and filled data
 #' @examples
-#' \donttest {
+#' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir())
 #' ISRaD.extra.fill_expert(ISRaD_full)
 #' }

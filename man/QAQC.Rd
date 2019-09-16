@@ -4,15 +4,15 @@
 \alias{QAQC}
 \title{QAQC}
 \usage{
-QAQC(file, writeQCreport = F, outfile = "", summaryStats = T,
-  dataReport = F, checkdoi = T, verbose = F)
+QAQC(file, writeQCreport = F, outfile_QAQC = "", summaryStats = T,
+  dataReport = F, checkdoi = T, verbose = T)
 }
 \arguments{
 \item{file}{directory to data file}
 
 \item{writeQCreport}{if TRUE, a text report of the QC output will be written to the outfile. Default is FALSE}
 
-\item{outfile}{filename of the output file if writeQCreport==TRUE. Default is NULL, and the outfile will be written to the directory where the dataset is stored, and named by the dataset being checked.}
+\item{outfile_QAQC}{filename of the output file if writeQCreport==TRUE. Default is NULL, and the outfile will be written to the directory where the dataset is stored, and named by the dataset being checked.}
 
 \item{summaryStats}{prints summary statistics. Default is TRUE}
 
@@ -20,7 +20,7 @@ QAQC(file, writeQCreport = F, outfile = "", summaryStats = T,
 
 \item{checkdoi}{set to F if you do not want the QAQC check to validate doi numbers}
 
-\item{verbose}{set to TRUE to print results of function to console}
+\item{verbose}{set to TRUE to print results of function}
 }
 \description{
 Check the imported soil carbon dataset for formatting and entry errors

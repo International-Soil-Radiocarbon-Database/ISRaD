@@ -5,19 +5,19 @@
 \title{Compile ISRaD data product}
 \usage{
 compile(dataset_directory, write_report = FALSE, write_out = FALSE,
-  return_type = c("none", "list")[2], checkdoi = F, verbose = F)
+  return_type = c("none", "list")[2], checkdoi = F, verbose = T)
 }
 \arguments{
 \item{dataset_directory}{string defining directory where completed and
 QC passed soilcarbon datasets are stored}
 
 \item{write_report}{boolean flag to write a log file of the
-compilation (FALSE will dump output to console). File will be in the specified
-in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
+compilation. File will be in the specified
+dataset_directory at "database/ISRaD_log.txt". If there is a file already
 there of this name it will be overwritten.}
 
-\item{write_out}{boolean flag to write the compiled database file as .csv
-in dataset_directory (FALSE will not generate output file but will return)}
+\item{write_out}{boolean flag to write the compiled database file as .xlsx
+in dataset_directory}
 
 \item{return_type}{a string that defines return object.
 Default is "list".
@@ -30,4 +30,9 @@ have the database returned in.}
 }
 \description{
 Construct data products to the International Soil Radiocarbon Database.
+}
+\examples{
+\donttest{
+ISRaD.compiled <- compile(tempdir(), write_report = T, write_out = T, return_type = 'list', checkdoi = F, verbose = T)
+}
 }

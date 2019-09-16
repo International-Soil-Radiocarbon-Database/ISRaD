@@ -4,11 +4,11 @@
 \alias{ISRaD.getdata}
 \title{ISRaD.getdata}
 \usage{
-ISRaD.getdata(directory = getwd(), dataset = "full", extra = F,
+ISRaD.getdata(directory, dataset = "full", extra = F,
   force_download = F)
 }
 \arguments{
-\item{directory}{location of ISRaD_database_files folder. If not found, it will be download. The default is the current working directory.}
+\item{directory}{location of ISRaD_database_files folder. If not found, it will be created.}
 
 \item{dataset}{Specify which data you want. Options are c("full", flux","interstitial","incubation","fraction","layer")}
 
@@ -21,4 +21,9 @@ ISRaD data object
 }
 \description{
 ISRaD.getdata
+}
+\examples{
+\donttest {
+ISRaD_full <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+}
 }

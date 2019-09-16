@@ -18,6 +18,12 @@ returns ISRaD_data object with the lyr_xxx_fill_extra columns containing both or
 \details{
 :
 }
+\examples{
+\donttest {
+ISRaD_full <- ISRaD.getdata(tempdir())
+ISRaD.extra.fill_expert(ISRaD_full)
+}
+}
 \references{
 :
 }

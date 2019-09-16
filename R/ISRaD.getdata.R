@@ -7,7 +7,7 @@
 #' @return ISRaD data object
 #' @export
 #' @examples
-#' \donttest {
+#' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
 #' }
 
