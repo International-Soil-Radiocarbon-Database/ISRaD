@@ -7,9 +7,7 @@
 #' @export
 #' @return returns NULL
 #' @examples
-#' \donttest{
-#' checkTempletFiles()
-#' }
+#' checkTemplateFiles()
 
 checkTemplateFiles <- function(outfile=''){
 
@@ -86,7 +84,7 @@ checkTemplateFiles <- function(outfile=''){
 
     if(!any(unlist(template_info_vocab$TemplateInInfo))){
       message("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
-              unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)]),
+              unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)],
               file=outfile, append = TRUE)
     }
 
