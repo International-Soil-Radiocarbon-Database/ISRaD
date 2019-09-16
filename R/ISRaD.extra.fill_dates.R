@@ -5,6 +5,11 @@
 #' @details This function must be run prior to the ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta for the layer and fraction tables.
 #' @export
 #' @return returns ISRaD_data object with filled obs_date_y columns
+#' @examples
+#' \donttest {
+#' ISRaD_full <- ISRaD.getdata(tempdir())
+#' ISRaD.extra.fill_dates(ISRaD_full)
+#' }
 
 ISRaD.extra.fill_dates<-function(database){
 

@@ -7,6 +7,11 @@
 #' @return returns ISRaD_data object with filled pro_usda_soil_order column
 #' @details
 #' Back fills pro_usda_soil_order based on USDA classifications
+#' @examples
+#' \donttest {
+#' ISRaD_full <- ISRaD.getdata(tempdir())
+#' ISRaD.extra.fill_soilorders(ISRaD_full)
+#' }
 
 ISRaD.extra.fill_soilorders<-function(database){
 

@@ -1,14 +1,17 @@
 #' ISRaD.getdata
 #'
-#' @param directory location of ISRaD_database_files folder. If not found, it will be download. The default is the current working directory.
+#' @param directory location of ISRaD_database_files folder. If not found, it will be created.
 #' @param dataset Specify which data you want. Options are c("full", flux","interstitial","incubation","fraction","layer")
 #' @param extra T or F. If T, the ISRaD_extra object will be returned. If F, ISRaD_data will be returned. Default is F.
 #' @param force_download T or F. If there are already ISRaD_database files in the directory you specify, new data will not be downloaded by default. However, if you set force_downlaod to T, the newest data from github will be downloaded regardless.
 #' @return ISRaD data object
 #' @export
-#'
+#' @examples
+#' \donttest {
+#' ISRaD_full <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' }
 
-ISRaD.getdata<-function(directory = getwd(), dataset = "full", extra = F, force_download=F){
+ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download=F){
 
   if(!dataset %in% c("full", "flux","interstitial","incubation","fraction","layer")){
     stop('Dataset paramter not recognized. Options are c("full", "flux","interstitial","incubation","fraction","layer")')

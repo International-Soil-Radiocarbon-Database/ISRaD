@@ -7,6 +7,11 @@
 #' @references: Stuiver and Polach, 1977
 #' @export
 #' @return returns ISRaD_data object with filled fraction modern columns
+#' @examples
+#' \donttest {
+#' ISRaD_full <- ISRaD.getdata(tempdir())
+#' ISRaD.extra.fill_fm(ISRaD_full)
+#' }
 
 ISRaD.extra.fill_fm<-function(database){
 

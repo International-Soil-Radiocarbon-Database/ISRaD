@@ -7,6 +7,11 @@
 #' @references Graven et al. 2017 https://www.geosci-model-dev.net/10/4405/2017/gmd-10-4405-2017.pdf
 #' @export
 #' @return returns ISRaD_data object with new delta delta columns in relevant tables
+#' @examples
+#' \donttest {
+#' ISRaD_full <- ISRaD.getdata(tempdir())
+#' ISRaD.extra.delta_delta(ISRaD_full)
+#' }
 
 
 ISRaD.extra.delta_delta<-function(database){

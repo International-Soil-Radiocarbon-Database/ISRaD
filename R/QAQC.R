@@ -14,7 +14,6 @@
 #' @import tidyr
 #' @importFrom RCurl url.exists
 #' @export
-#' @examples
 
 QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataReport=F, checkdoi=T, verbose=T){
 

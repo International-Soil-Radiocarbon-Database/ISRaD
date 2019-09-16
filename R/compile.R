@@ -5,11 +5,11 @@
 #' @param dataset_directory string defining directory where completed and
 #' QC passed soilcarbon datasets are stored
 #' @param write_report boolean flag to write a log file of the
-#' compilation (FALSE will dump output to console). File will be in the specified
-#' in the dataset_directory at "database/ISRaD_log.txt". If there is a file already
+#' compilation. File will be in the specified
+#' dataset_directory at "database/ISRaD_log.txt". If there is a file already
 #' there of this name it will be overwritten.
-#' @param write_out boolean flag to write the compiled database file as .csv
-#' in dataset_directory (FALSE will not generate output file but will return)
+#' @param write_out boolean flag to write the compiled database file as .xlsx
+#' in dataset_directory
 #' @param return_type a string that defines return object.
 #' Default is "list".
 #' Acceptable values are "none" or "list" depending on the format you want to
@@ -22,6 +22,10 @@
 #' @import openxlsx
 #' @import assertthat
 #' @import tidyverse
+#' @examples
+#' \donttest{
+#' ISRaD.compiled <- compile(tempdir(), write_report = T, write_out = T, return_type = 'list', checkdoi = F, verbose = T)
+#' }
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
@@ -136,16 +140,18 @@ compile <- function(dataset_directory,
   ISRaD_database_excel$`controlled vocabulary`<-template$`controlled vocabulary`
 
 
-
-  openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
+  if(write_out) {
+    openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
+  }
 
   if(verbose) cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
-if(write_report==T){
-  message("\n Compilation report saved to", outfile, "\n", file="") }
+  if(write_report==T) {
+  message("\n Compilation report saved to", outfile, "\n", file="")
+  }
 
-    if(return_type=="list"){
-  return(ISRaD_database)
-    }
+  if(return_type=="list") {
+    return(ISRaD_database)
+  }
 
 }
