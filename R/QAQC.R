@@ -35,7 +35,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   if (writeQCreport==T){
     if (outfile_QAQC==""){
-      outfile_QAQC<-file(paste0(dirname(file), "/QAQC/QAQC_", gsub("\\.xlsx", ".txt", basename(file))),open="wt")
+      outfile_QAQC<-paste0(dirname(file), "/QAQC/QAQC_", gsub("\\.xlsx", ".txt", basename(file)))
     }
   }
 
@@ -69,10 +69,6 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   if (!all(getSheetNames(file) %in% names(template)) | !all(names(template) %in% getSheetNames(file))){
     if(verbose) cat("\tWARNING:  tabs in data file do not match accepted templates. Please use current template. Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute", file=outfile_QAQC, append = T);error<-error+1
 
-    if (writeQCreport==T){
-      sink(type="message")
-      sink()
-    }
     data<-NULL
     attributes(data)$error<-1
     return(data)
@@ -678,7 +674,5 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   if(dataReport==T){
     return(data)
   }
-
-  close(outfile_QAQC)
 
 }

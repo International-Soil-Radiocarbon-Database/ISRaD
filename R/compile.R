@@ -48,7 +48,7 @@ compile <- function(dataset_directory,
   #Set output file
   outfile <- ""
   if(write_report){
-    outfile <- file(file.path(dataset_directory, "database", "ISRaD_log.txt"), open="wt")
+    outfile <- file.path(dataset_directory, "database", "ISRaD_log.txt")
   }
 
   #Start writing in the output file
@@ -142,12 +142,10 @@ compile <- function(dataset_directory,
   if(verbose) cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
 if(write_report==T){
-  message("\n Compilation report saved to", outfile,"\n", file="", append = T) }
+  message("\n Compilation report saved to", outfile, "\n", file="", append = T) }
 
     if(return_type=="list"){
   return(ISRaD_database)
     }
-
-closeAllConnections()
 
 }
