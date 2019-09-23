@@ -24,6 +24,8 @@ ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory, 
   message("\t filling cstocks \n")
   database<-ISRaD.extra.Cstocks(database)
   message("\t filling expert \n")
+  database<-ISRaD.extra.fill_soilorders(database)
+  message("\t filling USDA soil orders \n")
   database<-ISRaD.extra.fill_expert(database)
   message("\t filling geospatial climate data \n")
   database<-ISRaD.extra.geospatial.climate(database, geodata_clim_directory=geodata_clim_directory, geodata_pet_directory=geodata_pet_directory)
