@@ -36,13 +36,15 @@ requireNamespace("dplyr")
         df.pro$lyr_obs_date_y<-database$layer[match(df.pro$lyr_name,database$layer$lyr_name),"lyr_obs_date_y"]
       }
 
-      df.pro$atm14C<-NA
-      df.pro$atm14C[north.obs]<-atm14C.annual$d14C.n[match(df.pro[north.obs,obs_date_y],atm14C.annual$year)]
-      df.pro$atm14C[south.obs]<-atm14C.annual$d14C.s[match(df.pro[south.obs,obs_date_y],atm14C.annual$year)]
-      df.pro$atm14C[tropic.obs]<-atm14C.annual$d14C.t[match(df.pro[tropic.obs,obs_date_y],atm14C.annual$year)]
+      if(nrow(df.pro) > 0) {
+        df.pro$atm14C<-NA
+        df.pro$atm14C[north.obs]<-atm14C.annual$d14C.n[match(df.pro[north.obs,obs_date_y],atm14C.annual$year)]
+        df.pro$atm14C[south.obs]<-atm14C.annual$d14C.s[match(df.pro[south.obs,obs_date_y],atm14C.annual$year)]
+        df.pro$atm14C[tropic.obs]<-atm14C.annual$d14C.t[match(df.pro[tropic.obs,obs_date_y],atm14C.annual$year)]
 
-      return(df.pro$atm14C)
+        return(df.pro$atm14C)
       }
+    }
 
     database$profile$pro_graven_zone<-NA
     database$profile$pro_graven_zone[database$profile$pro_lat>30]<-"north"
