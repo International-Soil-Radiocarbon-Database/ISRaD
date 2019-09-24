@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2019-09-16 18:51:55 
+ 2019-09-24 14:54:49 
  - - - - - - - - - - - - - - - 
 
 Checking compatibility between ISRaD template and info file...
@@ -552,18 +552,18 @@ Summary statistics...
     flx_14c_sigma : 137
     flx_14c_sd : 17
     flx_fraction_modern : 20
- layer tab...7785 observations
-    entry_name : 7785
-    site_name : 7785
-    pro_name : 7785
-    lyr_name : 7785
-    lyr_obs_date_y : 7785
-    lyr_obs_date_m : 3573
-    lyr_obs_date_d : 2598
+ layer tab...7811 observations
+    entry_name : 7811
+    site_name : 7811
+    pro_name : 7811
+    lyr_name : 7811
+    lyr_obs_date_y : 7811
+    lyr_obs_date_m : 3589
+    lyr_obs_date_d : 2614
     lyr_all_org_neg : 312
-    lyr_top : 7785
-    lyr_bot : 7785
-    lyr_hzn : 3912
+    lyr_top : 7811
+    lyr_bot : 7811
+    lyr_hzn : 3921
     lyr_comp : 508
     lyr_note : 1880
     lyr_color : 503
