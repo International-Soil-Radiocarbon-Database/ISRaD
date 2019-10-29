@@ -13,7 +13,7 @@
 read_Treat2016 <- function(download = F, downloadDir = 'temp', convertedDir, dois_file="./ISRaD_data/Compilations/Treat/raw/dois.csv"){
 
   # convertedDir <- '/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/TreatConvertTries/'
-  # convertedDir <- '/Users/shane/14Constraint Dropbox/Shane Stoner/14Cdatabase/TreatConvertedShane/'
+  #convertedDir <- '/Users/shane/14Constraint Dropbox/Shane Stoner/14Cdatabase/TreatConvertedShane/'
   # setup -------------------------------------------------------------------
 
   requireNamespace("pangaear")
@@ -23,9 +23,13 @@ read_Treat2016 <- function(download = F, downloadDir = 'temp', convertedDir, doi
 
   # read in template file from ISRaD Package
   template_file<-system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
+  #template_file<-openxlsx::read.xlsx('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/ISRaD/inst/extdata/ISRaD_Master_Template.xlsx')
   template<-lapply(getSheetNames(template_file), function(s) read.xlsx(template_file , sheet=s))
   names(template)<-getSheetNames(template_file)
-  template<-lapply(template, function(x) x %>% mutate_all(as.character))
+  #template<-lapply(template_file, function(x) x %>% mutate_all(as.character))
+
+  ################### Adding pro_peatland to template file ###################
+  #template$profile$pro_peatland <- c('Peatland Present', '(yes or blank)')
 
   dois<-utils::read.csv(dois_file)
 
@@ -159,7 +163,8 @@ read_Treat2016 <- function(download = F, downloadDir = 'temp', convertedDir, doi
     pro_name=treatS2$ID,
     pro_lat= treatS2$Latitude,
     pro_long= treatS2$Longitude,
-    pro_elevation= treatS2$`Height [m]`
+    pro_elevation= treatS2$`Height [m]`,
+    pro_peatland = 'yes'
   )
 
   data_template$profile[]<-lapply(data_template$profile, as.character)
@@ -350,7 +355,7 @@ read_Treat2016 <- function(download = F, downloadDir = 'temp', convertedDir, doi
     pro_name=treatS3$ID,
     #pro_note=treatS3$Core,
     pro_treatment="control",
-    #pro_peatland = "yes",
+    pro_peatland = "yes",
     pro_lat= treatS3$Latitude,
     pro_long= treatS3$Longitude,
     pro_elevation= treatS3$`Height [m]`
