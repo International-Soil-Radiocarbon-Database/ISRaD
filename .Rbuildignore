@@ -22,3 +22,4 @@
 ^ISRaD.pdf
 ^ISRaD_data_in_progress
 ^cran-comments.md
+.travis.yml
