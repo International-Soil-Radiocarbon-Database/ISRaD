@@ -166,15 +166,6 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   ##### check levels #####
   if(verbose) cat("\n\nChecking that level names match between tabs...", file=outfile_QAQC, append = T)
-  rowmatch <- function (x, table, nomatch = NA) {
-    if (class(table) == "matrix")
-        table <- as.data.frame(table)
-    if (is.null(dim(x)))
-        x <- as.data.frame(matrix(x, nrow = 1))
-    cx <- do.call("paste", c(x[, , drop = FALSE], sep = "\r"))
-    ct <- do.call("paste", c(table[, , drop = FALSE], sep = "\r"))
-    match(cx, ct, nomatch = nomatch)
-  }
 
   # check site tab #
   if(verbose) cat("\n site tab...", file=outfile_QAQC, append = T)
@@ -229,7 +220,8 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), as.data.frame(lapply(data$site, as.character), stringsAsFactors = F), by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
-    row.ind <- which(!is.na(rowmatch(select(data$profile,ends_with("name")),select(mismatch.rows, ends_with("name")))))
+    row.ind <- match(data.frame(t(mismatch.rows[,c("entry_name","site_name")])),
+                     data.frame(t(data$profile[,c("entry_name","site_name")])))
     if(verbose) cat("\n\tWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile_QAQC, append = T)
     error <- error+1
   }
@@ -283,7 +275,8 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$flux, as.character), stringsAsFactors = F), as.data.frame(lapply(data$site, as.character), stringsAsFactors = F), by=c("entry_name","site_name"))
   if(dim(mismatch.rows)[1]>0){
-    row.ind <- which(!is.na(rowmatch(select(data$flux,ends_with("name")),select(mismatch.rows, ends_with("name")))))
+    row.ind <- match(data.frame(t(mismatch.rows[,c("entry_name","site_name")])),
+                     data.frame(t(data$flux[,c("entry_name","site_name")])))
     if(verbose) cat("\n\tWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind+3, ")", file=outfile_QAQC, append = T)
     error <- error+1
   }
@@ -345,7 +338,8 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name"))
   if(dim(mismatch.rows)[1]>0){
-    row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
+    row.ind <- match(data.frame(t(mismatch.rows[,c("entry_name","site_name","pro_name")])),
+                     data.frame(t(data$layer[,c("entry_name","site_name","pro_name")])))
     if(verbose) cat("\n\tWARNING: Name combination mismatch between 'layer' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile_QAQC, append = T)
     error <- error+1
   }
@@ -406,7 +400,8 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$interstitial, as.character), stringsAsFactors = F), as.data.frame(lapply(data$profile, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name"))
   if(dim(mismatch.rows)[1]>0){
-    row.ind <- which(!is.na(rowmatch(select(data$interstitial,ends_with("name")),select(mismatch.rows, ends_with("name")))))
+    row.ind <- match(data.frame(t(mismatch.rows[,c("entry_name","site_name","pro_name")])),
+                     data.frame(t(data$interstitial[,c("entry_name","site_name","pro_name")])))
     if(verbose) cat("\n\tWARNING: Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind+3, ")", file=outfile_QAQC, append = T)
     error <- error+1
   }
@@ -472,7 +467,8 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$fraction, as.character), stringsAsFactors = F), as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name","lyr_name"))
   if(dim(mismatch.rows)[1]>0){
-    row.ind <- which(!is.na(rowmatch(select(data$fraction,ends_with("name")),select(mismatch.rows, ends_with("name")))))
+    row.ind <- match(data.frame(t(mismatch.rows[,c("entry_name","site_name","pro_name","lyr_name")])),
+                     data.frame(t(data$fraction[,c("entry_name","site_name","pro_name","lyr_name")])))
     if(verbose) cat("\n\tWARNING: Name combination mismatch between 'fraction' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile_QAQC, append = T)
     error <- error+1
   }
@@ -543,7 +539,8 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   mismatch.rows <- anti_join(as.data.frame(lapply(data$incubation, as.character), stringsAsFactors = F), as.data.frame(lapply(data$layer, as.character), stringsAsFactors = F), by=c("entry_name","site_name","pro_name","lyr_name"))
   if(dim(mismatch.rows)[1]>0){
-    row.ind <- which(!is.na(rowmatch(select(data$layer,ends_with("name")),select(mismatch.rows, ends_with("name")))))
+    row.ind <- match(data.frame(t(mismatch.rows[,c("entry_name","site_name","pro_name","lyr_name")])),
+                     data.frame(t(data$incubation[,c("entry_name","site_name","pro_name","lyr_name")])))
     if(verbose) cat("\n\tWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind+3, ")", file=outfile_QAQC, append = T)
     error <- error+1
   }
