@@ -23,10 +23,10 @@
 #' @import assertthat
 #' @import tidyverse
 #' @examples
-#' \donttest{
+#' # save Gaudinski_2001 dataset as ISRaD template .xlsx file
+#' ISRaD.save.excel("Gaudinski_2001")
 #' ISRaD.compiled <- compile(tempdir(), write_report = T, write_out = T,
 #' return_type = 'list', checkdoi = F, verbose = T)
-#' }
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
