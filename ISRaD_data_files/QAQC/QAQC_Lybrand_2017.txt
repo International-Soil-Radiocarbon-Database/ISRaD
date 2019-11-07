@@ -100,6 +100,7 @@ Summary statistics...
     pro_MAT : 9
     pro_MAP : 9
     pro_usda_soil_order : 9
+    pro_land_cover : 9
     pro_veg_note : 9
  flux tab...0 observations
  layer tab...16 observations
