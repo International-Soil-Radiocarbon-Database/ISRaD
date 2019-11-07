@@ -3,7 +3,7 @@ layout: splash
 permalink: /database/
 title: "ISRaD database"
 header:
-  overlay_image: /assets/images/soil.jpg
+  overlay_image: /assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png
 htmlwidgets: TRUE
 --- 
 
