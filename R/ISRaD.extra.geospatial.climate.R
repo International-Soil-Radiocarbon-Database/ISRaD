@@ -37,7 +37,7 @@
 #' @examples
 #' \donttest{
 #' ISRaD_full <- ISRaD.getdata(tempdir())
-#' ISRaD.extra.geospatial.Zheng(ISRaD_full)
+#' ISRaD.extra.geospatial.climate(ISRaD_full)
 #' }
 
 ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geodata_pet_directory) {
