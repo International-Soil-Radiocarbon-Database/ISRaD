@@ -26,5 +26,15 @@ QAQC(file, writeQCreport = F, outfile_QAQC = "", summaryStats = T,
 Check the imported soil carbon dataset for formatting and entry errors
 }
 \details{
-This function is also called by the online QAQC tool available at the ISRaD website <https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/>.
+This function is also called by the online QAQC tool available at the ISRaD website <http://soilradiocarbon.org>.
+}
+\examples{
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
+# Save as .xlsx file
+ISRaD.save.xlsx(database = database,
+                template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
+                outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+# Run QAQC
+QAQC(paste0(tempdir(),"/Gaudinski_2001.xlsx"),writeQCreport=F, outfile_QAQC="", summaryStats=T, dataReport=F, checkdoi=T, verbose=T)
 }

@@ -5,7 +5,7 @@
 \title{ISRaD.extra.geospatial.climate}
 \usage{
 ISRaD.extra.geospatial.climate(database, geodata_clim_directory,
-  geodata_pet_directory)
+  geodata_pet_directory, fill.PET = TRUE)
 }
 \arguments{
 \item{database}{ISRaD dataset object.}
@@ -13,6 +13,8 @@ ISRaD.extra.geospatial.climate(database, geodata_clim_directory,
 \item{geodata_clim_directory}{directory where geospatial climate datasets are found.}
 
 \item{geodata_pet_directory}{directory where geospatial pet dataset is found.}
+
+\item{fill.PET}{should PET data be filled (T/F)? Defaults to TRUE. Should be set to FALSE if no local data are available.}
 }
 \value{
 An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.
@@ -21,7 +23,10 @@ An ISRaD_data object with additional rows containing values from geospatial data
 Extracts values from gridded (2.5' arc) climate data using ISRaD profile coordinates.
 }
 \details{
-Note that for this function to work you must have downloaded the climate data to a local directory (sources given in references section, below).
+Worldclim climate data (see description of BIO variables below) will be downloaded if not found in geodata_clim_directory.
+For filling PET data users must have previously downloaded PET data to a local directory. Alternatively the parameter "fill.PET" can be set to FALSE if data are not available.
+PET data in the ISRaD.extra dataset (ISRaD::ISRaD.getdata) was obtained from the supplementary materials of Kramer and Chadwick (2018) (units are mm/yr, Penman-Monteith method for short-clipped grass w/ worldclim input data).
+Full citation in references section below.
 
 Adds new climate fields BIO1-BIO19, PET
 
@@ -44,13 +49,25 @@ BIO16 = Precipitation of Wettest Quarter,
 BIO17 = Precipitation of Driest Quarter,
 BIO18 = Precipitation of Warmest Quarter,
 BIO19 = Precipitation of Coldest Quarter
-PET = Potential evapotranspiration, mm/yr (Penman-Monteith method for short-clipped grass w/ worldclim input data)
+PET = Potential evapotranspiration
 
 All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on profile lat and long
+}
+\examples{
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
+# Fill profile coordinates
+database <- ISRaD.extra.fill_coords(database)
+# Fill climate variables
+# Note that potential evapotranspiration (PET) geospatial data included in the package is only for the Gaudinski_2001 dataset
+# Bioclim variables (temperature, precip, etc.) will be downloaded if not found in geodata_clim_directory
+database.x <- ISRaD.extra.geospatial.climate(database,
+                                             geodata_clim_directory = tempdir(),
+                                             geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
 }
 \references{
 http://www.worldclim.org/; PET data from: Kramer, M. and O. Chadwick. 2018. Climate-driven thresholds in reactive mineral retention of soil carbon at the global scale. Nature Climate Change 8:1104–1108.
 }
 \author{
-J. Grey Monroe, Alison Hoyt
+J. Grey Monroe, Alison Hoyt, J. Beem-Miller
 }

@@ -19,10 +19,12 @@ Fills fraction modern from delta 14C if fraction modern not reported.
 : Warning: xxx_obs_date_y columns must be filled for this to work!
 }
 \examples{
-\donttest{
-ISRaD_full <- ISRaD.getdata(tempdir())
-ISRaD.extra.fill_fm(ISRaD_full)
-}
+# Obtain current ISRaD data
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+# Fill dates
+database.x <- ISRaD.extra.fill_dates(database)
+# Fill fraction modern from delta 14C
+database.x <- ISRaD.extra.fill_fm(database.x)
 }
 \references{
 : Stuiver and Polach, 1977

@@ -18,6 +18,9 @@ returns NULL
 \description{
 Check that the template information file and the template file match appropriately.
 }
+\details{
+Used in compile() function, but primarily a development tool
+}
 \examples{
 checkTemplateFiles()
 }

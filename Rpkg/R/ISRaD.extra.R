@@ -5,7 +5,7 @@
 #' @param geodata_clim_directory directory where geospatial climate data are found
 #' @param geodata_soil_directory directory where geospatial soil data are found
 #' @param geodata_pet_directory directory where geospatial pet data are found
-#' @details Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks frmo entered data; fills soil and climatic data from external geospatial data products
+#' @details Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
 #' @export
 #' @return returns new ISRaD_extra object with derived, transformed, and filled columns
 #' @examples
