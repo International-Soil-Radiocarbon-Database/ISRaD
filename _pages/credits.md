@@ -4,8 +4,7 @@ permalink: /credits/
 title: Credits
 header:
   overlay_image: assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png
----
-
+  
 .fstPage  {
     background-image: assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png;
     /*background-color: lightgray;*/
