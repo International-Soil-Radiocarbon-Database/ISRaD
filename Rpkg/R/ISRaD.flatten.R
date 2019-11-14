@@ -12,7 +12,7 @@
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' fractions <- ISRaD.flatten(database, "fraction")
-#' layers <- ISRaD.flatten(database, "layers")
+#' layers <- ISRaD.flatten(database, "layer")
 
 ISRaD.flatten<-function(database, table){
 

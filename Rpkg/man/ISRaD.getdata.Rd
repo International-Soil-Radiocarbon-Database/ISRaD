@@ -24,9 +24,9 @@ ISRaD.getdata
 }
 \examples{
 # Return full dataset ("full")
-ISRaD_full <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+ISRaD_full <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 # Return full dataset plus "extra" filled data
-ISRaD_extra <- ISRaD.getdata(tempdir(), dataset = "full", extra = T)
+ISRaD_extra <- ISRaD.getdata(tempdir(), dataset = "full", extra = TRUE)
 # Return only fraction data, including filled fraction data
-ISRaD_fractions <- ISRaD.getdata(tempdir(), dataset = "fraction", extra = T)
+ISRaD_fractions <- ISRaD.getdata(tempdir(), dataset = "fraction", extra = TRUE)
 }

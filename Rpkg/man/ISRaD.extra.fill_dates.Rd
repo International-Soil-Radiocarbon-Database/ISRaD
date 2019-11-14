@@ -20,7 +20,7 @@ This function must be run prior to the ISRaD.extra.fill_14c, ISRaD.extra.fill_fm
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 # Fill dates
 database.x <- ISRaD.extra.fill_dates(database)
 }

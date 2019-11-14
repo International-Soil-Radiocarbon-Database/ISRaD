@@ -22,6 +22,6 @@ Back fills pro_usda_soil_order based on USDA classifications
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 database.x <- ISRaD.extra.fill_soilorders(database)
 }

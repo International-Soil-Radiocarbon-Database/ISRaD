@@ -14,6 +14,6 @@ Generates a report of counts of observations at each level of the database
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 ISRaD.rep.count.all(database)
 }

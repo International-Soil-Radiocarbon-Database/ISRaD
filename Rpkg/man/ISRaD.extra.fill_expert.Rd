@@ -20,7 +20,7 @@ returns ISRaD_data object with the lyr_xxx_fill_extra columns containing both or
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 # Fill expert data
 database.x <- ISRaD.extra.fill_expert(database)
 }

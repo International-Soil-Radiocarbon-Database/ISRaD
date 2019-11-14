@@ -14,6 +14,6 @@ Generates a report of fraction level observations, including fraction scheme and
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 ISRaD.rep.count.frc(database)
 }

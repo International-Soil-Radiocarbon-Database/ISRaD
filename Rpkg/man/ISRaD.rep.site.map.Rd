@@ -14,7 +14,7 @@ Generate a world map showing locations of all ISRaD sites
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 # Generate a map of all ISRaD sites
 ISRaD.rep.site.map(database, report = "site.map")
 }

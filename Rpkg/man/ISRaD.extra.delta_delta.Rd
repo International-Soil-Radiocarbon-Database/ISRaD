@@ -20,7 +20,7 @@ Creates new column for delta-delta value. Observation year and profile coordinat
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 # Fill profile coordinates
 database.x <- ISRaD.extra.fill_coords(database)
 # Fill dates
