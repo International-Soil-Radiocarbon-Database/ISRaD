@@ -12,41 +12,21 @@
 #' # Fill profile coordinates
 #' database <- ISRaD.extra.fill_coords(database)
 #' # Run function
-#' # Note that geospatial soil data included in the package is only for the Gaudinski_2001 dataset; global data may be obtained from SoilGrids (see Details).
+#' # Note that geospatial soil data in pkg is only for the Gaudinski_2001 dataset
+#' # Global soils data may be obtained from SoilGrids (see Details).
 #' database.x <- ISRaD.extra.geospatial.soil(database,
-#'                                           geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"))
+#'  geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"))
 
 ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory){
   requireNamespace('raster')
   extraCoords <- data.frame(database$profile$pro_long, database$profile$pro_lat)
   for(x in list.files(path = geodata_soil_directory, pattern = 'v0.2.tif', full.names = TRUE)){
-    shortx <- unlist(strsplit(x, geodata_soil_directory))[2]
-    shortx <- unlist(strsplit(shortx, '/'))[2]
-    if(substr(shortx, 0, 8) == 'sol_clay'){
-      Depth <- unlist(strsplit(unlist(unlist(strsplit(shortx, 'sol_clay.wfraction_usda.3a1a1a_m_250m_'))), '_1950..2017_v0.2.tif'))
-      Depth <- substr(Depth, 2, nchar(Depth))
-      columnName <- paste('pro_SG_clay_', Depth, sep = '')
-    }
-    if(substr(shortx, 0, 12) == 'sol_bulkdens'){
-      Depth <- unlist(strsplit(unlist(unlist(strsplit(shortx, 'sol_bulkdens.fineearth_usda.4a1h_m_250m_b'))), '_1950..2017_v0.2.tif'))
-      Depth <- substr(Depth, 2, nchar(Depth))
-      columnName <- paste('pro_SG_BD_', Depth, sep = '')
-    }
-    if(substr(shortx, 0, 23) == 'sol_organic.carbon_usda'){
-      Depth <- unlist(strsplit(unlist(unlist(strsplit(shortx, 'sol_organic.carbon_usda.6a1c_m_250m_b..'))), '_1950..2017_v0.2.tif'))
-      Depth <- substr(Depth, 2, nchar(Depth))
-      columnName <- paste('pro_SG_orgC_', Depth, sep = '')
-    }
-    if(substr(shortx, 0, 24) == 'sol_organic.carbon.stock'){
-      Depth <- unlist(strsplit(unlist(unlist(strsplit(shortx, 'sol_organic.carbon.stock_msa.kgm2_m_250m_b'))), '_1950..2017_v0.2.tif'))
-      Depth <- substr(Depth, 2, nchar(Depth))
-      columnName <- paste('pro_SG_Cstock_', Depth, sep = '')
-    }
-    if(substr(shortx, 0, 14) == 'sol_coarsefrag'){
-      Depth <- unlist(strsplit(unlist(unlist(strsplit(shortx, 'sol_coarsefrag.vfraction_usda.3b1_m_250m_b'))), '_1950..2017_v0.2.tif'))
-      Depth <- substr(Depth, 2, nchar(Depth))
-      columnName <- paste('pro_SG_coarse_', Depth, sep = '')
-    }
+    shortx <- substr(x, start=nchar(geodata_soil_directory)+2, stop=nchar(x))
+    depth <- substr(shortx,
+                    start=gregexpr(pattern = "_", text = shortx)[[1]][1]+2,
+                    stop=gregexpr(pattern = "cm", text = shortx)[[1]][1]+1)
+    varName <- substr(shortx, 1, gregexpr(pattern = "_", text = shortx)[[1]][1]-1)
+    columnName <- paste0('pro_SG_', varName, "_", depth)
     tifRaster <- raster::raster(x)
     raster::crs(tifRaster) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
     database$profile <- cbind(database$profile, raster::extract(tifRaster, extraCoords))

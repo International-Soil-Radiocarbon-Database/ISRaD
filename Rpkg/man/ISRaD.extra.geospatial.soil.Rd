@@ -26,7 +26,8 @@ database <- ISRaD::Gaudinski_2001
 # Fill profile coordinates
 database <- ISRaD.extra.fill_coords(database)
 # Run function
-# Note that geospatial soil data included in the package is only for the Gaudinski_2001 dataset; global data may be obtained from SoilGrids (see Details).
+# Note that geospatial soil data in pkg is only for the Gaudinski_2001 dataset
+# Global soils data may be obtained from SoilGrids (see Details).
 database.x <- ISRaD.extra.geospatial.soil(database,
-                                          geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"))
+ geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"))
 }

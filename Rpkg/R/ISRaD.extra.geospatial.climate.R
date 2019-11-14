@@ -44,11 +44,11 @@
 #' # Fill profile coordinates
 #' database <- ISRaD.extra.fill_coords(database)
 #' # Fill climate variables
-#' # Note that potential evapotranspiration (PET) geospatial data included in the package is only for the Gaudinski_2001 dataset
-#' # Bioclim variables (temperature, precip, etc.) will be downloaded if not found in geodata_clim_directory
+#' # Note that PET geospatial data in pkg is only for Gaudinski_2001 dataset
+#' # Bioclim variables (temp, precip, etc.) will be downloaded if not found
 #' database.x <- ISRaD.extra.geospatial.climate(database,
-#'                                              geodata_clim_directory = tempdir(),
-#'                                              geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
+#'  geodata_clim_directory = tempdir(),
+#'  geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
 
 ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geodata_pet_directory, fill.PET = TRUE) {
 

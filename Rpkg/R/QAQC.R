@@ -23,7 +23,8 @@
 #'                 template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
 #'                 outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
 #' # Run QAQC
-#' QAQC(paste0(tempdir(),"/Gaudinski_2001.xlsx"),writeQCreport=F, outfile_QAQC="", summaryStats=T, dataReport=F, checkdoi=T, verbose=T)
+#' QAQC(paste0(tempdir(),"/Gaudinski_2001.xlsx"),
+#'      writeQCreport=F, outfile_QAQC="", summaryStats=T, dataReport=F, checkdoi=T, verbose=T)
 
 QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataReport=F, checkdoi=T, verbose=T){
 

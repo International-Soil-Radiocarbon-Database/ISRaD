@@ -13,9 +13,9 @@
 #' database <- ISRaD::Gaudinski_2001
 #' # Fill ISRaD.extra data
 #' database.x <- ISRaD.extra(database,
-#'                           geodata_clim_directory = tempdir(),
-#'                           geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"))
-#'                           geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
+#'  geodata_clim_directory = tempdir(),
+#'  geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"),
+#'  geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
 
 ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory, geodata_pet_directory){
 
@@ -39,8 +39,6 @@ ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory, 
   database<-ISRaD.extra.geospatial.climate(database, geodata_clim_directory=geodata_clim_directory, geodata_pet_directory=geodata_pet_directory)
   message("\t filling 250m spatial soil data  \n")
   database<-ISRaD.extra.geospatial.soil(database, geodata_soil_directory=geodata_soil_directory)
-  message("\t filling 0.5 degree geospatial climate and soil data from Zheng Shi \n")
-  database<-ISRaD.extra.geospatial.Zheng(database, geodata_soil_directory=geodata_soil_directory)
 
   ISRaD_data_filled <- database
 

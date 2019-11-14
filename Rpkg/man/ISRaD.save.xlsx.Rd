@@ -21,8 +21,8 @@ saves data object as xlsx file in ISRaD template format
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 ISRaD.save.xlsx(database = database,
-                template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
-                outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+ template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
+ outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
 }
 \author{
 J Grey Monroe

@@ -8,7 +8,7 @@
 #' @export
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 #' database.x <- ISRaD.extra.Cstocks(database)
 
 ISRaD.extra.Cstocks<-function(database){
