@@ -3,7 +3,7 @@ layout: splash
 permalink: /template_faq/
 title: "Template FAQ"
 header:
-  overlay_image: /assets/images/soil.jpg
+  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Center.png
 ---
 
 
