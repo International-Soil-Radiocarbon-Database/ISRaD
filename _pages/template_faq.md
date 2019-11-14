@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /template_faq/
-title: "Template FAQ"
+title: <span style="color:purple">**Template FAQ**
 header:
   overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Center.png
 ---
