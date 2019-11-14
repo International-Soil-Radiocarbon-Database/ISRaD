@@ -4,6 +4,7 @@
 #' @param database ISRaD data object
 #' @import dplyr
 #' @import tidyr
+#' @export
 #' @examples
 #' # Obtain current ISRaD data
 #' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)

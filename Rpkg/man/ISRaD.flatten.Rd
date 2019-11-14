@@ -24,7 +24,7 @@ returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),nco
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 fractions <- ISRaD.flatten(database, "fraction")
-layers <- ISRaD.flatten(database, "layers")
+layers <- ISRaD.flatten(database, "layer")
 }
 \references{
 :

@@ -6,11 +6,12 @@
 #' @import tidyr
 #' @import ggplot2
 #' @import ggmap
+#' @export
 #' @examples
 #' # Obtain current ISRaD data
 #' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 #' # Generate a map of all ISRaD sites
-#' ISRaD.rep.site.map(database, report = "site.map")
+#' ISRaD.rep.site.map(database)
 
 ISRaD.rep.site.map<-function(database=NULL){
 

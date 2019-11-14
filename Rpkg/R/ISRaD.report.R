@@ -15,7 +15,7 @@
 #' # Generate a map of all ISRaD sites
 #' ISRaD.report(database, report = "site.map")
 
-ISRaD.reports<-function(database=NULL, report="count.all"){
+ISRaD.report<-function(database, report){
   if(report=="entry.stats"){out<-ISRaD.rep.entry.stats(database)}
   if(report=="count.all"){out<-ISRaD.rep.count.all(database)}
   if(report=="count.frc"){ out<-ISRaD.rep.count.frc(database)}
