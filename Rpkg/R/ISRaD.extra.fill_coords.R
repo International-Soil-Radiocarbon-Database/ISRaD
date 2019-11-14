@@ -7,7 +7,7 @@
 #' @return returns ISRaD_data object with filled profile coordinates
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 #' # Fill profile coordinates
 #' database.x <- ISRaD.extra.fill_coords(database)
 

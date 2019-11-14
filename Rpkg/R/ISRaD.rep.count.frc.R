@@ -6,7 +6,7 @@
 #' @import tidyr
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 #' ISRaD.rep.count.frc(database)
 
 ISRaD.rep.count.frc <- function(database=NULL){

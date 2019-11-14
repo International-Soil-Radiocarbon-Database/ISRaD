@@ -9,7 +9,7 @@
 #' @return returns ISRaD_data object with new delta delta columns in relevant tables
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 #' # Fill profile coordinates
 #' database.x <- ISRaD.extra.fill_coords(database)
 #' # Fill dates
