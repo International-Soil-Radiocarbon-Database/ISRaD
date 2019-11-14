@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "ISRaD Database"
+title                    : "ISRaD"
 title_separator          : "-"
 name                     : "International Soil Radiocarbon Database"
 description              : ""
@@ -77,7 +77,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "@soilradiocarbon"
 facebook:
   username               :
   app_id                 :
