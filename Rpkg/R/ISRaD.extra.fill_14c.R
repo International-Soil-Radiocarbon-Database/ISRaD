@@ -9,7 +9,7 @@
 #' @return returns ISRaD_data object with filled delta 14C columns
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
 #' # Fill dates
 #' database.x <- ISRaD.extra.fill_dates(database)
 #' # Fill delta 14C from fraction modern

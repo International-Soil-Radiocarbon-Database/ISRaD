@@ -20,7 +20,7 @@ Fills fraction modern from delta 14C if fraction modern not reported.
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
 # Fill dates
 database.x <- ISRaD.extra.fill_dates(database)
 # Fill fraction modern from delta 14C

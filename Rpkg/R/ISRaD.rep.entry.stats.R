@@ -6,7 +6,7 @@
 #' @import tidyr
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
 #' ISRaD.rep.entry.stats(database)
 
 ISRaD.rep.entry.stats<-function(database=NULL){

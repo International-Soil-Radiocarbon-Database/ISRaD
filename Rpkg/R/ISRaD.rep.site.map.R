@@ -8,7 +8,7 @@
 #' @import ggmap
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
 #' # Generate a map of all ISRaD sites
 #' ISRaD.rep.site.map(database, report = "site.map")
 

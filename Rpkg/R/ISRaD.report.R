@@ -7,7 +7,7 @@
 #' @export
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
 #' # Report metadata statistics
 #' ISRaD.report(database, report = "entry.stats")
 #' # Report summary statistics for all levels of the database

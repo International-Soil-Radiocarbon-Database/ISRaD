@@ -20,7 +20,7 @@ Function first fills lyr_bd_samp and lyr_c_org. SOC stocks can only be calculate
 }
 \examples{
 # Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
+database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 database.x <- ISRaD.extra.Cstocks(database)
 }
 \author{

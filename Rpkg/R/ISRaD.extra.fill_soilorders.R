@@ -9,7 +9,7 @@
 #' Back fills pro_usda_soil_order based on USDA classifications
 #' @examples
 #' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F)
 #' database.x <- ISRaD.extra.fill_soilorders(database)
 
 ISRaD.extra.fill_soilorders<-function(database){

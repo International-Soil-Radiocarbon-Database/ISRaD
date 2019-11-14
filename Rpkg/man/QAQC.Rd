@@ -33,8 +33,8 @@ This function is also called by the online QAQC tool available at the ISRaD webs
 database <- ISRaD::Gaudinski_2001
 # Save as .xlsx file
 ISRaD.save.xlsx(database = database,
-                template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
-                outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+ template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
+ outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
 # Run QAQC
 QAQC(paste0(tempdir(),"/Gaudinski_2001.xlsx"),
      writeQCreport=F, outfile_QAQC="", summaryStats=T, dataReport=F, checkdoi=T, verbose=T)
