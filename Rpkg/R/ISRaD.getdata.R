@@ -7,9 +7,12 @@
 #' @return ISRaD data object
 #' @export
 #' @examples
-#' \donttest{
+#' # Return full dataset ("full")
 #' ISRaD_full <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
-#' }
+#' # Return full dataset plus "extra" filled data
+#' ISRaD_extra <- ISRaD.getdata(tempdir(), dataset = "full", extra = T, force_downlaod = F)
+#' # Return only fraction data, including filled fraction data
+#' ISRaD_fractions <- ISRaD.getdata(tempdir(), dataset = "fraction", extra = T, force_downlaod = F)
 
 ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download=F){
 

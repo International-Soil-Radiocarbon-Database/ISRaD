@@ -1,12 +1,15 @@
-#' rep_frc_data
+#' ISRaD.rep.count.frc
 #'
-#' generate a count of fractionation observations including scheme and property
+#' @description Generates a report of fraction level observations, including fraction scheme and properties
 #' @param database ISRaD data object
 #' @import dplyr
 #' @import tidyr
-#'
+#' @examples
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' ISRaD.rep.count.frc(database)
 
-rep_frc_data<-function(database=NULL){
+ISRaD.rep.count.frc <- function(database=NULL){
   requireNamespace("dplyr")
   requireNamespace("tidyr")
 

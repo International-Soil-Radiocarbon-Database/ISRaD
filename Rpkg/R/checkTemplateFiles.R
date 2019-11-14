@@ -1,7 +1,7 @@
 #' Check ISRaD Template/Info files
 #'
-#' Check that the template information file and the template file match appropriately.
-#'
+#' @description Check that the template information file and the template file match appropriately.
+#' @details Used in compile() function, but primarily a development tool
 #' @param outfile file to dump the output report. Defaults to an empty string that will print
 #' to standard output.
 #' @param verbose if TRUE (default) will print output to specified outfile
@@ -52,7 +52,7 @@ checkTemplateFiles <- function(outfile='', verbose=T) {
   colnames(template_vocab)<-template_vocab[1,] #rename the columns
   template_vocab<-template_vocab[c(-1,-2),]
 
-  ##Crunch the vocabe in the template
+  ##Crunch the vocab in the template
   template_vocab <- template_vocab %>%
     tidyr::gather(key='Column_Name', value='Template_Vocab', na.rm=TRUE) %>%
     dplyr::filter(.data$Template_Vocab != '<NA>') %>%

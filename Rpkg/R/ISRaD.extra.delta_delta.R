@@ -8,10 +8,16 @@
 #' @export
 #' @return returns ISRaD_data object with new delta delta columns in relevant tables
 #' @examples
-#' \donttest{
-#' ISRaD_full <- ISRaD.getdata(tempdir())
-#' ISRaD.extra.delta_delta(ISRaD_full)
-#' }
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' # Fill profile coordinates
+#' database.x <- ISRaD.extra.fill_coords(database)
+#' # Fill dates
+#' database.x <- ISRaD.extra.fill_dates(database.x)
+#' # Fill delta 14C from fraction modern
+#' database.x <- ISRaD.extra.fill_14c(database.x)
+#' # Fill delta delta
+#' database.x <- ISRaD.extra.delta_delta(database.x)
 
 
 ISRaD.extra.delta_delta<-function(database){

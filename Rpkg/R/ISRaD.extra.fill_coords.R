@@ -6,10 +6,10 @@
 #' @export
 #' @return returns ISRaD_data object with filled profile coordinates
 #' @examples
-#' \donttest{
-#' ISRaD_full <- ISRaD.getdata(tempdir())
-#' ISRaD.extra.fill_coords(ISRaD_full)
-#' }
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' # Fill profile coordinates
+#' database.x <- ISRaD.extra.fill_coords(database)
 
 ISRaD.extra.fill_coords<-function(database){
   ix <- which(is.na(database$profile$pro_lat))

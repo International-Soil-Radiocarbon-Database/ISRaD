@@ -1,11 +1,15 @@
-#' rep_count_data
+#' ISRaD.rep.count.all
 #'
-#' generate a count of observations for each level of the database
+#' @description Generates a report of counts of observations at each level of the database
 #' @param database ISRaD data object
 #' @import dplyr
 #' @import tidyr
-#'
-rep_count_data<-function(database=NULL){
+#' @examples
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' ISRaD.rep.count.all(database)
+
+ISRaD.rep.count.all<-function(database=NULL){
   requireNamespace("dplyr")
   requireNamespace("tidyr")
 

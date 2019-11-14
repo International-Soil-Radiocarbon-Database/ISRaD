@@ -6,10 +6,10 @@
 #' @export
 #' @return returns ISRaD_data object with filled obs_date_y columns
 #' @examples
-#' \donttest{
-#' ISRaD_full <- ISRaD.getdata(tempdir())
-#' ISRaD.extra.fill_dates(ISRaD_full)
-#' }
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' # Fill dates
+#' database.x <- ISRaD.extra.fill_dates(database)
 
 ISRaD.extra.fill_dates<-function(database){
 

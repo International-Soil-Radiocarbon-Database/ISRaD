@@ -7,10 +7,9 @@
 #' @return returns ISRaD_data object with filled columns
 #' @export
 #' @examples
-#' \donttest{
-#' ISRaD_full <- ISRaD.getdata(tempdir())
-#' ISRaD.extra.Cstocks(ISRaD_full)
-#' }
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' database.x <- ISRaD.extra.Cstocks(database)
 
 ISRaD.extra.Cstocks<-function(database){
   # make single BD value from BD sample and BD total

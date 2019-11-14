@@ -1,14 +1,15 @@
-#' rep_entry_stats
+#' ISRaD.rep.entry.stats
 #'
-#' generate report of entry statistics
-#'
+#' @description Generates a report of metadata statistics for all entries
 #' @param database ISRaD data object
 #' @import dplyr
 #' @import tidyr
-#'
-#'
+#' @examples
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' ISRaD.rep.entry.stats(database)
 
-rep_entry_stats<-function(database=NULL){
+ISRaD.rep.entry.stats<-function(database=NULL){
   requireNamespace("dplyr")
   requireNamespace("tidyr")
 

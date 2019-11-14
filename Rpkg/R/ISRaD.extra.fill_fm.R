@@ -8,10 +8,12 @@
 #' @export
 #' @return returns ISRaD_data object with filled fraction modern columns
 #' @examples
-#' \donttest{
-#' ISRaD_full <- ISRaD.getdata(tempdir())
-#' ISRaD.extra.fill_fm(ISRaD_full)
-#' }
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' # Fill dates
+#' database.x <- ISRaD.extra.fill_dates(database)
+#' # Fill fraction modern from delta 14C
+#' database.x <- ISRaD.extra.fill_fm(database.x)
 
 ISRaD.extra.fill_fm<-function(database){
 

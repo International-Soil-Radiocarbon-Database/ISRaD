@@ -1,13 +1,18 @@
-#' rep_site_map
+#' ISRaD.rep.site.map
 #'
-#' generate a world map with site locations plotted
+#' @description Generate a world map showing locations of all ISRaD sites
 #' @param database ISRaD data object
 #' @import dplyr
 #' @import tidyr
 #' @import ggplot2
 #' @import ggmap
-#'
-rep_site_map<-function(database=NULL){
+#' @examples
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' # Generate a map of all ISRaD sites
+#' ISRaD.rep.site.map(database, report = "site.map")
+
+ISRaD.rep.site.map<-function(database=NULL){
 
   requireNamespace("dplyr")
   requireNamespace("tidyr")

@@ -8,10 +8,10 @@
 #' @export
 #' @return returns ISRaD_data object with the lyr_xxx_fill_extra columns containing both original and filled data
 #' @examples
-#' \donttest{
-#' ISRaD_full <- ISRaD.getdata(tempdir())
-#' ISRaD.extra.fill_expert(ISRaD_full)
-#' }
+#' # Obtain current ISRaD data
+#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = F, force_downlaod = F)
+#' # Fill expert data
+#' database.x <- ISRaD.extra.fill_expert(database)
 
 ISRaD.extra.fill_expert<- function(database) {
 
