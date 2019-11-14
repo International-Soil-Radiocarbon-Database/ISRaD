@@ -3,8 +3,17 @@ layout: splash
 permalink: /credits/
 title: Credits
 header:
-  overlay_image: /assets/images/soil.jpg
+  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png
 ---
+
+.fstPage  {
+    background-image: assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png;
+    /*background-color: lightgray;*/
+    height: 700px;
+    width:100%;
+    background-size:cover;
+}
+<div class="fstPage"></div>
  
 ## Main compilations
 ISRaD has been built based on two main compilations:
