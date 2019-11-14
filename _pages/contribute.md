@@ -3,7 +3,7 @@ layout: splash
 permalink: /contribute/
 title: "Contribute to ISRaD"
 header:
-  overlay_image: /assets/images/soil.jpg
+  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Left.png
 ---
 
 Thank you for your interest in contributing data to ISRaD!
