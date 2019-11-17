@@ -17,8 +17,8 @@ By contributing to ISRaD you are joining an international community of researche
 
 ## Key Links
 
-1. [ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) 
-1. [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/inst/extdata/ISRaD_Extra_Info.xlsx)
+1. [ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/Rpkg/inst/extdata/ISRaD_Master_Template.xlsx) 
+1. [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx)
 1. [Frequenty Asked Questions (FAQ)](https://international-soil-radiocarbon-database.github.io/ISRaD/template_faq/)
 1. [Online QAQC Tool](https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/)
 1. Contact: info.israd@gmail.com
