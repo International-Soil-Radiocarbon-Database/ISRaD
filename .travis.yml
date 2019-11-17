@@ -1,4 +1,5 @@
+language: python
+  - sudo apt install libgdal-dev
 language: r
 before_install:
   - cd Rpkg
-
