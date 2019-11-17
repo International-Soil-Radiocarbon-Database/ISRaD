@@ -1,4 +1,3 @@
-inst/doc
 ##ignore mac files
 .DS_Store
 ##ignore R files
@@ -11,4 +10,3 @@ ISRaD.Rproj
 # Folders
 _site/
 .sass-cache/
-
