@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD.svg?branch=master)](https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD)
+[![Build Status](https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD.svg?branch=master)](https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD/Rpkg)
 
 # ISRaD
 Repository for the development and release of ISRaD data and tools
