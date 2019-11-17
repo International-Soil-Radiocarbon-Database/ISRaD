@@ -39,6 +39,7 @@
 #' @return An ISRaD_data object with additional rows containing values from geospatial datasets. See description for details.
 #' @references http://www.worldclim.org/; PET data from: Kramer, M. and O. Chadwick. 2018. Climate-driven thresholds in reactive mineral retention of soil carbon at the global scale. Nature Climate Change 8:1104–1108.
 #' @examples
+#' library(rgdal) # needed to load example PET file (.adf)
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' # Fill profile coordinates
