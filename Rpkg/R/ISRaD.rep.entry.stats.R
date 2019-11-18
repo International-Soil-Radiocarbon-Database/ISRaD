@@ -6,11 +6,9 @@
 #' @import tidyr
 #' @export
 #' @examples
-#' \donttest{
-#' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+#' # Load example dataset Gaudinski_2001
+#' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.entry.stats(database)
-#' }
 
 ISRaD.rep.entry.stats<-function(database=NULL){
   requireNamespace("dplyr")

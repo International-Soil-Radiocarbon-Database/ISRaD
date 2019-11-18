@@ -16,8 +16,8 @@ returns ISRaD_data object with filled profile coordinates
 Fills profile coordinates from site coordinates if profile coordinates not reported.
 }
 \examples{
-# Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
 # Fill profile coordinates
 database.x <- ISRaD.extra.fill_coords(database)
 }

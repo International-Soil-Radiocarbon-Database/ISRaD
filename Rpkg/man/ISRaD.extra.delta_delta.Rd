@@ -19,8 +19,8 @@ Calculates the difference between sample delta 14C and the atmosphere for the ye
 Creates new column for delta-delta value. Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords fxs). The relevant atmospheric d14C data (northern or southern hemisphere, or tropics) are determined by profile coordinates.
 }
 \examples{
-# Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
 # Fill profile coordinates
 database.x <- ISRaD.extra.fill_coords(database)
 # Fill dates

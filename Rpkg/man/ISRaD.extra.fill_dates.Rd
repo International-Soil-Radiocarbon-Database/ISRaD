@@ -19,8 +19,9 @@ Fills frc_obs_date_y and inc_obs_date_y columns from lyr_obs_date_y if not repor
 This function must be run prior to the ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta for the layer and fraction tables.
 }
 \examples{
-# Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
 # Fill dates
 database.x <- ISRaD.extra.fill_dates(database)
+# Fraction table now has lyr_obs_date_y values in frc_obs_date_y field
 }

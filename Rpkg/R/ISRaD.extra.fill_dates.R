@@ -6,10 +6,11 @@
 #' @export
 #' @return returns ISRaD_data object with filled obs_date_y columns
 #' @examples
-#' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+#' # Load example dataset Gaudinski_2001
+#' database <- ISRaD::Gaudinski_2001
 #' # Fill dates
 #' database.x <- ISRaD.extra.fill_dates(database)
+#' # Fraction table now has lyr_obs_date_y values in frc_obs_date_y field
 
 ISRaD.extra.fill_dates<-function(database){
 
@@ -36,7 +37,7 @@ ISRaD.extra.fill_dates<-function(database){
       x$fraction$frc_obs_date_y<-as.numeric(x$fraction$frc_obs_date_y)
       return(x)
     }
-    database <- inc_date_fill(database)
+    database <- frc_date_fill(database)
   }
 
 return(database)

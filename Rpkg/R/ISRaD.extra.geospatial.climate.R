@@ -10,6 +10,7 @@
 #' @param geodata_pet_directory directory where geospatial pet dataset is found.
 #' @param fill.PET should PET data be filled (T/F)? Defaults to TRUE. Should be set to FALSE if no local data are available.
 #' @export
+#' @import raster
 #' @details Adds new climate fields BIO1-BIO19, PET
 #'
 #' BIO1 = Annual Mean Temperature,
@@ -55,6 +56,7 @@
 ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geodata_pet_directory, fill.PET = TRUE) {
 
   requireNamespace("raster")
+  requireNamespace("rgdal")
 
   # extract worldclim vars
   message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")

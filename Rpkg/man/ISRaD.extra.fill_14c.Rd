@@ -19,8 +19,8 @@ returns ISRaD_data object with filled delta 14C columns
 : Warning: xxx_obs_date_y columns must be filled for this to work!
 }
 \examples{
-# Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
 # Fill dates
 database.x <- ISRaD.extra.fill_dates(database)
 # Fill delta 14C from fraction modern

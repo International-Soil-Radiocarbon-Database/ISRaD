@@ -16,11 +16,11 @@ returns ISRaD_data object with filled columns
 Calculates soil organic carbon stock
 }
 \details{
-Function first fills lyr_bd_samp and lyr_c_org. SOC stocks can only be calculated if organic carbon concentration and bulk density data are available. SOC stocks are then calculated for the fine earth fraction (<2mm).
+Function first fills lyr_bd_samp and lyr_c_org. Notes: 1) SOC stocks can only be calculated if organic carbon concentration and bulk density data are available, 2) SOC stocks are calculated for the fine earth fraction (<2mm).
 }
 \examples{
-# Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
 database.x <- ISRaD.extra.Cstocks(database)
 }
 \author{

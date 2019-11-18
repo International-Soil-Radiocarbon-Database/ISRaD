@@ -13,7 +13,7 @@ ISRaD.rep.count.all(database = NULL)
 Generates a report of counts of observations at each level of the database
 }
 \examples{
-# Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
 ISRaD.rep.count.all(database)
 }

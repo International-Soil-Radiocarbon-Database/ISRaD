@@ -13,8 +13,10 @@ ISRaD.rep.site.map(database = NULL)
 Generate a world map showing locations of all ISRaD sites
 }
 \examples{
+\donttest{
 # Obtain current ISRaD data
 database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 # Generate a map of all ISRaD sites
 ISRaD.rep.site.map(database)
+}
 }

@@ -13,7 +13,7 @@ ISRaD.rep.count.frc(database = NULL)
 Generates a report of fraction level observations, including fraction scheme and properties
 }
 \examples{
-# Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
 ISRaD.rep.count.frc(database)
 }
