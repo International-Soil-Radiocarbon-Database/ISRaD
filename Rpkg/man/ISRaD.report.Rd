@@ -15,6 +15,7 @@ ISRaD.report(database, report)
 Generate basic summary reports of ISRaD data
 }
 \examples{
+\donttest{
 # Obtain current ISRaD data
 database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 # Report metadata statistics
@@ -23,4 +24,5 @@ ISRaD.report(database, report = "entry.stats")
 ISRaD.report(database, report = "count.all")
 # Generate a map of all ISRaD sites
 ISRaD.report(database, report = "site.map")
+}
 }

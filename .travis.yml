@@ -2,3 +2,4 @@ language: r
 before_install:
   - sudo apt install libgdal-dev
   - cd Rpkg
+r_check_args: --as-cran --run-donttest

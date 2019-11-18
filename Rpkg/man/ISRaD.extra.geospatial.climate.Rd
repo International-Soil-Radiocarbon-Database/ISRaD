@@ -54,6 +54,7 @@ PET = Potential evapotranspiration
 All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on profile lat and long
 }
 \examples{
+\donttest{
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 # Fill profile coordinates
@@ -64,6 +65,7 @@ database <- ISRaD.extra.fill_coords(database)
 database.x <- ISRaD.extra.geospatial.climate(database,
  geodata_clim_directory = tempdir(),
  geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
+}
 }
 \references{
 http://www.worldclim.org/; PET data from: Kramer, M. and O. Chadwick. 2018. Climate-driven thresholds in reactive mineral retention of soil carbon at the global scale. Nature Climate Change 8:1104–1108.

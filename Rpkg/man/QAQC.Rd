@@ -29,6 +29,7 @@ Check the imported soil carbon dataset for formatting and entry errors
 This function is also called by the online QAQC tool available at the ISRaD website <http://soilradiocarbon.org>.
 }
 \examples{
+\donttest{
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 # Save as .xlsx file
@@ -37,4 +38,5 @@ ISRaD.save.xlsx(database = database,
  outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
 # Run QAQC
 QAQC(paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+}
 }

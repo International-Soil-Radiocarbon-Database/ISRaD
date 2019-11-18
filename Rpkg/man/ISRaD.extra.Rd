@@ -26,6 +26,7 @@ Fills in transformed and geospatial data where possible, generating an enhanced 
 Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
 }
 \examples{
+\donttest{
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 # Fill ISRaD.extra data
@@ -33,4 +34,5 @@ database.x <- ISRaD.extra(database,
  geodata_clim_directory = tempdir(),
  geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"),
  geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
+}
 }

@@ -13,7 +13,9 @@ ISRaD.rep.entry.stats(database = NULL)
 Generates a report of metadata statistics for all entries
 }
 \examples{
+\donttest{
 # Obtain current ISRaD data
 database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 ISRaD.rep.entry.stats(database)
+}
 }

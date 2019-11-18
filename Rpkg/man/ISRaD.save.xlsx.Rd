@@ -8,21 +8,23 @@ ISRaD.save.xlsx(database, template_file = system.file("extdata",
   "ISRaD_Master_Template.xlsx", package = "ISRaD"), outfile)
 }
 \arguments{
-\item{database}{ISRaD dataset object.}
+\item{database}{ISRaD data object.}
 
 \item{template_file}{path and name of template file to use (defaults to ISRaD_Master_Template).}
 
 \item{outfile}{path and name to save the excel file}
 }
 \description{
-saves data object as xlsx file in ISRaD template format
+Saves ISRaD data object as .xlsx file in ISRaD template format
 }
 \examples{
+\donttest{
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 ISRaD.save.xlsx(database = database,
  template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
  outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+}
 }
 \author{
 J Grey Monroe

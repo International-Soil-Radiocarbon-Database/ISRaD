@@ -32,6 +32,7 @@ have the database returned in.}
 Construct data products to the International Soil Radiocarbon Database.
 }
 \examples{
+\donttest{
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 # Save as .xlsx file
@@ -41,4 +42,5 @@ ISRaD.save.xlsx(database = database,
 # Compile .xlsx file/s in dataset_directory into ISRaD database object
 ISRaD.compiled <- compile(tempdir(), write_report = TRUE, write_out = TRUE,
                           return_type = 'list', checkdoi = FALSE, verbose = TRUE)
+}
 }
