@@ -55,6 +55,7 @@
 ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geodata_pet_directory, fill.PET = TRUE) {
 
   requireNamespace("raster")
+  requireNamespace("rgdal")
 
   # extract worldclim vars
   message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
