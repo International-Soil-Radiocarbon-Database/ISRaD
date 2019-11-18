@@ -7,8 +7,8 @@
 #' @return returns ISRaD_data object with filled columns
 #' @export
 #' @examples
-#' # Obtain current ISRaD data
-#' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+#' # Load example dataset Gaudinski_2001
+#' database <- ISRaD::Gaudinski_2001
 #' database.x <- ISRaD.extra.Cstocks(database)
 
 ISRaD.extra.Cstocks<-function(database){
