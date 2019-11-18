@@ -7,6 +7,7 @@
 #' @export
 #' @return returns new ISRaD_extra object with extracted bulk density and clay, carbon, and coarse fragment content up to 200 cm soil depth (reported at he Profile level).
 #' @examples
+#' \donttest{
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' # Fill profile coordinates
@@ -16,6 +17,7 @@
 #' # Global soils data may be obtained from SoilGrids (see Details).
 #' database.x <- ISRaD.extra.geospatial.soil(database,
 #'  geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"))
+#' }
 
 ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory){
   requireNamespace('raster')
