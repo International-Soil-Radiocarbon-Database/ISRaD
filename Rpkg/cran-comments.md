@@ -13,9 +13,7 @@ There was 1 NOTE:
   New submission
 
 * The following requested changes have been made since prior submission:
-  * Author field of DESCRIPTION file updated
-  * Examples added to functions where appropriate
-  * dontrun calls in examples have been removed when unnecessary
-  * donttest calls added to several examples with long run times
-  * Non-exported functions w/ examples now exported
-  * All calls to "cat()" replaced with "if(verbose) cat()" or "message()"
+  * Function examples are now executable; donttest calls removed
+  * Toy datasets now included in package for running examples
+  * Calls to write to local machine removed or changed to tempdir()
+  * Description updated to describe package more clearly and include url
