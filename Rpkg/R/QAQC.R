@@ -16,6 +16,7 @@
 #' @importFrom RCurl url.exists
 #' @export
 #' @examples
+#' \donttest{
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' # Save as .xlsx file
@@ -24,6 +25,7 @@
 #'  outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
 #' # Run QAQC
 #' QAQC(paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+#' }
 
 QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataReport=F, checkdoi=T, verbose=T){
 

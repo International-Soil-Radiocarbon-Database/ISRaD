@@ -1,7 +1,7 @@
 #' ISRaD.save.xlsx
 #'
-#' @description saves data object as xlsx file in ISRaD template format
-#' @param database ISRaD dataset object.
+#' @description Saves ISRaD data object as .xlsx file in ISRaD template format
+#' @param database ISRaD data object.
 #' @param outfile path and name to save the excel file
 #' @param template_file path and name of template file to use (defaults to ISRaD_Master_Template).
 #' @author J Grey Monroe
@@ -9,11 +9,13 @@
 #' @import openxlsx
 #' @import dplyr
 #' @examples
+#' \donttest{
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.save.xlsx(database = database,
 #'  template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
 #'  outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+#' }
 
 ISRaD.save.xlsx <- function(database,
                             template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),

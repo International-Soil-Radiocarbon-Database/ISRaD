@@ -6,6 +6,7 @@
 #' @param report Parameter to define which type of report you want. The default is "count.all" other options include "entry.stats", "count.frc", or "site.map".
 #' @export
 #' @examples
+#' \donttest{
 #' # Obtain current ISRaD data
 #' database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 #' # Report metadata statistics
@@ -14,6 +15,7 @@
 #' ISRaD.report(database, report = "count.all")
 #' # Generate a map of all ISRaD sites
 #' ISRaD.report(database, report = "site.map")
+#' }
 
 ISRaD.report<-function(database, report){
   if(report=="entry.stats"){out<-ISRaD.rep.entry.stats(database)}

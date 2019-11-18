@@ -23,6 +23,7 @@
 #' @import assertthat
 #' @import tidyverse
 #' @examples
+#' \donttest{
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' # Save as .xlsx file
@@ -32,6 +33,7 @@
 #' # Compile .xlsx file/s in dataset_directory into ISRaD database object
 #' ISRaD.compiled <- compile(tempdir(), write_report = TRUE, write_out = TRUE,
 #'                           return_type = 'list', checkdoi = FALSE, verbose = TRUE)
+#' }
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,

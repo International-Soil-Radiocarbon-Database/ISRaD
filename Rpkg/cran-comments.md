@@ -13,7 +13,7 @@ There was 1 NOTE:
   New submission
 
 * The following requested changes have been made since prior submission:
-  * Function examples are now executable; donttest calls removed
-  * Toy datasets now included in package for running examples
+  * Function examples are now executable; donttest calls removed if runtime <5s
+  * Toy datasets now included for running examples
   * Calls to write to local machine removed or changed to tempdir()
   * Description updated to describe package more clearly and include url

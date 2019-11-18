@@ -9,6 +9,7 @@
 #' @export
 #' @return returns new ISRaD_extra object with derived, transformed, and filled columns
 #' @examples
+#' \donttest{
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' # Fill ISRaD.extra data
@@ -16,6 +17,7 @@
 #'  geodata_clim_directory = tempdir(),
 #'  geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"),
 #'  geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
+#' }
 
 ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory, geodata_pet_directory){
 
