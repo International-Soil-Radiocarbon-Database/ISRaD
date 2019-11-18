@@ -14,6 +14,7 @@
 #' database.x <- ISRaD.extra.fill_dates(database)
 #' # Fill delta 14C from fraction modern
 #' database.x <- ISRaD.extra.fill_14c(database.x)
+#' # Column flx_14c in the "flux" table is now filled
 
 ISRaD.extra.fill_14c<- function(database) {
 
