@@ -5,7 +5,6 @@
 #' @param geodata_soil_directory directory where geospatial soil data are found
 #' @details Uses filled geographic coordinates of profiles to extract estimated (observations + machine learning predictions) clay content (kg/kg), organic carbon content (x 5 g/kg), carbon stock (kg/m2), bulk density (kg/m3), and coarse fragments (% volumetric) from rasters at 0, 10, 30, 60, 100, and 200 cm soil depth. For function to work, you must first download the appropriate raster files from SoilGrids (doi: 10.5281/zenodo.2525663, doi.org/10.5281/zenodo.1475457, doi.org/10.5281/zenodo.1475970, doi.org/10.5281/zenodo.2525681, doi.org/10.5281/zenodo.1475453). To convert organic carbon content to %, divide by 2. In added columns, "SG" denotes "Soil Grids". For more information see ISRaD Extra info file at <http://soilradiocarbon.org>
 #' @export
-#' @import raster
 #' @return returns new ISRaD_extra object with extracted bulk density and clay, carbon, and coarse fragment content up to 200 cm soil depth (reported at he Profile level).
 #' @examples
 #' \donttest{

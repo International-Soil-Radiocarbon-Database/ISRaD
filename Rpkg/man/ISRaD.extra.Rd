@@ -23,7 +23,7 @@ returns new ISRaD_extra object with derived, transformed, and filled columns
 Fills in transformed and geospatial data where possible, generating an enhanced version of ISRaD.
 }
 \details{
-Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
+Fills fraction modern, delta 14C, delta-delta values, profile coordinates, BD, orgC, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
 }
 \examples{
 \donttest{
