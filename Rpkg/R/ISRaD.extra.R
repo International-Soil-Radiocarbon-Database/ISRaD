@@ -5,7 +5,7 @@
 #' @param geodata_clim_directory directory where geospatial climate data are found
 #' @param geodata_soil_directory directory where geospatial soil data are found
 #' @param geodata_pet_directory directory where geospatial pet data are found
-#' @details Fills fraction modern, delta 14C, delta-delta values, profile coordinates, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
+#' @details Fills fraction modern, delta 14C, delta-delta values, profile coordinates, BD, orgC, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
 #' @export
 #' @return returns new ISRaD_extra object with derived, transformed, and filled columns
 #' @examples
@@ -25,18 +25,14 @@ ISRaD.extra<-function(database, geodata_clim_directory, geodata_soil_directory, 
   database<-ISRaD.extra.fill_dates(database)
   message("\t filling 14c \n")
   database<-ISRaD.extra.fill_14c(database)
+  message("\t filling fm \n")
+  database<-ISRaD.extra.fill_fm(database)
   message("\t filling coordinates \n")
   database<-ISRaD.extra.fill_coords(database)
   message("\t filling delta delta \n")
   database<-ISRaD.extra.delta_delta(database)
-  message("\t filling fm \n")
-  database<-ISRaD.extra.fill_fm(database)
   message("\t filling cstocks \n")
   database<-ISRaD.extra.Cstocks(database)
-  message("\t filling expert \n")
-  database<-ISRaD.extra.fill_soilorders(database)
-  message("\t filling USDA soil orders \n")
-  database<-ISRaD.extra.fill_expert(database)
   message("\t filling geospatial climate data \n")
   database<-ISRaD.extra.geospatial.climate(database, geodata_clim_directory=geodata_clim_directory, geodata_pet_directory=geodata_pet_directory)
   message("\t filling 250m spatial soil data  \n")
