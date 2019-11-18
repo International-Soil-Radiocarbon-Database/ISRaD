@@ -42,7 +42,7 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 
 ## 2. Getting started and key information for entering or working with ISRaD
 
-* **Template** – This is a structured spreadsheet for data entry. Download it [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx)
+* **Template** – This is a structured spreadsheet for data entry. Download it [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Master_Template.xlsx)
 * **Hierarchy** – The [ISRaD data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/) is hierarchical. Each level of the hierarchy is represented by a tab in the template spreadsheet
 * **Original vs derived data** – ISRaD aggregates original data. In most cases, derived values and calculations are not stored within ISRaD
 * **Required Fields** – These are indicated in red. Other fields are optional - enter those relevant to your dataset
@@ -57,8 +57,8 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 
 ## 3. Fill out ISRaD template
 
-1. Fill out [ISRaD template file](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Master_Template.xlsx) with your data.  
-1. Consult the [ISRaD template information file](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx) as you work, for column definitions, units, and controlled vocabulary.
+1. Fill out [ISRaD template file](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Master_Template.xlsx) with your data.  
+1. Consult the [ISRaD template information file](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx) as you work, for column definitions, units, and controlled vocabulary.
 1. Reminders & conventions: 
    * Name your file: "author_year.xlsx"
    * Do not delete the top two description rows. 
