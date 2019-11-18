@@ -12,6 +12,9 @@ There was 1 NOTE:
   Maintainer: 'Jeffrey Beem-Miller <jbeem@bgc-jena.mpg.de>'
   New submission
 
+## r-hub builder
+Building ISRaD with r-hub (using check_rhub() fails because gdal is not available on the r-hub build system. The rgdal package is a dependency of the raster package, which is a dependency of ISRaD. rgdal documentations explains in detail how to install gdal on all platforms, so this seems more an rgdal issue than an ISRaD issue.
+
 * The following requested changes have been made since prior submission:
   * Function examples are now executable; donttest calls removed if runtime <5s
   * Toy datasets now included for running examples
