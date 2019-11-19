@@ -103,8 +103,17 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
     stop("You cannot replace the ISRaD_data object with a faulty data object...")
   }
 
-# add call here to use actual data version
-  v<-paste0("v1-", as.character(Sys.Date()))
+  # tag data w/ version number and date
+  DESC<-readLines(paste0(ISRaD_directory, "/Rpkg", "/DESCRIPTION"))
+  version<-unlist(strsplit(DESC[3],split = "\\."))
+  version<-unlist(strsplit(version,split = "\\ "))
+  version[4]<-as.numeric(version[4])+1 # updates patch version # (third column), use for codebase changes
+  if(length(new_entries)!=0) {
+    version[3]<-as.numeric(version[3])+1 # updates minor version # (second column), use for data changes (new templates)
+  }
+  v<-paste0("v",
+           do.call(paste0, lapply(version[2:4], function(x) paste0(x, "."))),
+           as.character(Sys.Date()))
 
   ISRaD_data<-ISRaD_data_compiled
   attributes(ISRaD_data)$version<-v
@@ -204,23 +213,17 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
   }
 
 
-  system(paste0("rm ", paste0(ISRaD_directory,"/Rpkg"), "/ISRaD.pdf"))
-  system(paste(shQuote(file.path(R.home("bin"), "R")),
-               "CMD", "Rd2pdf", shQuote(paste0(ISRaD_directory,"/Rpkg"))))
+  system(paste0("rm ", paste0(ISRaD_directory, "/Rpkg"), "/ISRaD.pdf"))
+  devtools::build_manual(paste0(getwd(),"/Rpkg"), paste0(getwd(),"/Rpkg"))
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github?")
   if (reviewed==1){
     message("Ok, the DESCRIPTION file is being updated with a new version...\n")
-    DESC<-readLines(paste0(ISRaD_directory,"/DESCRIPTION"))
-    version<-unlist(strsplit(DESC[3],split = "\\."))
-    version<-version[1:3]
-    version[3]<-as.numeric(version[3])+1 # updates patch version # (third column), use for codebase changes
     if(length(new_entries)!=0) {
-      message(paste(length(new_entries), " new entries have been added, so the minor version number is being updated")
-      version[2]<-as.numeric(version[2])+1 # updates minor version # (second column), use for data changes (new templates)
+      message(paste(length(new_entries), " new entries have been added, so the minor version number will be updated"))
     }
     DESC[3]<-paste(unlist(version), collapse = ".")
-    writeLines(DESC, paste0(ISRaD_directory,"/DESCRIPTION"))
+    writeLines(DESC, paste0(ISRaD_directory, "/Rpkg", "/DESCRIPTION"))
     message("Ok, you can now commit and push this to github!\n You should also then reload R and reinstall ISRaD from github.\n")
   }
 
