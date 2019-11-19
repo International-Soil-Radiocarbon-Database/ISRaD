@@ -1,8 +1,11 @@
 ## Test environments
 * local OS: mac 10.13.4; R v3.6.0
-* Windows Server 2008 R2 SP1, R-devel, 32/64 bit
-* Ubuntu Linux 16.04 LTS, R-release, GCC
-* Fedora Linux, R-devel, clang, gfortran
+* Windows Server 2008 (64-bit) (check_win_devel)
+* Ubuntu Linux 16.04.6 LTS, R-release, GCC (Travis CI)
+
+## Travis CI log
+* Passes build
+<https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD>
 
 ## R CMD check results
 There were no ERRORs or WARNINGs.
@@ -11,6 +14,11 @@ There was 1 NOTE:
 
   Maintainer: 'Jeffrey Beem-Miller <jbeem@bgc-jena.mpg.de>'
   New submission
+
+  Possibly mis-spelled words in DESCRIPTION:
+  Biogeochemistry (5:298)
+  ISRaD (5:169, 5:177, 5:376, 5:419, 5:486, 5:533)
+  * These are not misspelled
 
 ## r-hub builder
 Building ISRaD with r-hub (using check_rhub() fails because gdal is not available on the r-hub build system. The rgdal package is a dependency of the raster package, which is a dependency of ISRaD. rgdal documentations explains in detail how to install gdal on all platforms, so this seems more an rgdal issue than an ISRaD issue.
