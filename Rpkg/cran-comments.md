@@ -28,3 +28,6 @@ Building ISRaD with r-hub (using check_rhub() fails because gdal is not availabl
   * Toy datasets now included for running examples
   * Calls to write to local machine removed or changed to tempdir()
   * Description updated to describe package more clearly and include url
+
+## Additional notes:
+  * R CMD check run with "run_dont_test" set to TRUE and passed with no issues
