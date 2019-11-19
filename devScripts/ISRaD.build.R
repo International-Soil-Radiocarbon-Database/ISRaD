@@ -210,13 +210,17 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github?")
   if (reviewed==1){
-    # message("Ok, the DESCRIPTION file is being updated with a new version...\n")
-    # DESC<-readLines(paste0(ISRaD_directory,"/DESCRIPTION"))
-    # version<-strsplit(DESC[3],split = "\\.")
-    # if(length(version[[1]])<4) version[[1]][4]<-900
-    # version[[1]][4]<-as.numeric(version[[1]][4])+1
-    # DESC[3]<-paste(unlist(version), collapse = ".")
-    # writeLines(DESC, paste0(ISRaD_directory,"/DESCRIPTION"))
+    message("Ok, the DESCRIPTION file is being updated with a new version...\n")
+    DESC<-readLines(paste0(ISRaD_directory,"/DESCRIPTION"))
+    version<-unlist(strsplit(DESC[3],split = "\\."))
+    version<-version[1:3]
+    version[3]<-as.numeric(version[3])+1 # updates patch version # (third column), use for codebase changes
+    if(length(new_entries)!=0) {
+      message(paste(length(new_entries), " new entries have been added, so the minor version number is being updated")
+      version[2]<-as.numeric(version[2])+1 # updates minor version # (second column), use for data changes (new templates)
+    }
+    DESC[3]<-paste(unlist(version), collapse = ".")
+    writeLines(DESC, paste0(ISRaD_directory,"/DESCRIPTION"))
     message("Ok, you can now commit and push this to github!\n You should also then reload R and reinstall ISRaD from github.\n")
   }
 
