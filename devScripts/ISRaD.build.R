@@ -11,12 +11,6 @@
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
 #' @import stringr
 #' @export
-#' @examples
-#' \donttest{
-#' ISRaD.build(ISRaD_directory="~/ISRaD/", geodata_clim_directory="~/geospatial_clim_datasets",
-#'   geodata_pet_directory="~/geospatial_pet_dataset",
-#'   geodata_soil_directory="~/geospatial_soil_datasets")
-#' }
 
 ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_directory, geodata_soil_directory, citations=T){
 

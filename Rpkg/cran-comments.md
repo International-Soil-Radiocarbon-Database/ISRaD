@@ -1,6 +1,6 @@
 ## Test environments
 * local OS: mac 10.13.4; R v3.6.0
-* Windows Server 2008 (64-bit) (check_win_devel)
+* Windows Server x86_64-w64-mingw32 (64-bit), R release
 * Ubuntu Linux 16.04.6 LTS, R-release, GCC (Travis CI)
 
 ## Travis CI log
