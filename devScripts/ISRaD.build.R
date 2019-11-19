@@ -66,7 +66,29 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
   }
 
   message("\nCreating the ISRaD_extra object...\n")
-  ISRaD_extra_compiled<-ISRaD.extra(database=ISRaD_data_compiled, geodata_clim_directory = geodata_clim_directory, geodata_soil_directory = geodata_soil_directory, geodata_pet_directory=geodata_pet_directory)
+  message("\t filling dates \n")
+  ISRaD_extra_compiled<-ISRaD.extra.fill_dates(ISRaD_data_compiled)
+  message("\t filling 14c \n")
+  ISRaD_extra_compiled<-ISRaD.extra.fill_14c(ISRaD_extra_compiled)
+  message("\t filling fm \n")
+  ISRaD_extra_compiled<-ISRaD.extra.fill_fm(ISRaD_extra_compiled)
+  message("\t filling coordinates \n")
+  ISRaD_extra_compiled<-ISRaD.extra.fill_coords(ISRaD_extra_compiled)
+  message("\t filling delta delta \n")
+  ISRaD_extra_compiled<-ISRaD.extra.delta_delta(ISRaD_extra_compiled)
+  message("\t filling cstocks \n")
+  ISRaD_extra_compiled<-ISRaD.extra.Cstocks(ISRaD_extra_compiled)
+  message("\t filling expert data \n")
+  ISRaD_extra_compiled<-ISRaD.extra.fill_expert(ISRaD_extra_compiled)
+  message("\t filling USDA soil orders \n")
+  ISRaD_extra_compiled<-ISRaD.extra.fill_soilorders(ISRaD_extra_compiled)
+  message("\t filling geospatial climate data \n")
+  ISRaD_extra_compiled<-ISRaD.extra.geospatial.climate(ISRaD_extra_compiled, geodata_clim_directory=geodata_clim_directory, geodata_pet_directory=geodata_pet_directory)
+  message("\t filling 0.5 deg geospatial data from Zheng Shi \n")
+  ISRaD_extra_compiled<-ISRaD.extra.geospatial.Zheng(ISRaD_extra_compiled, geodata_soil_directory=geodata_soil_directory)
+  message("\t filling 250m spatial soil data  \n")
+  ISRaD_extra_compiled<-ISRaD.extra.geospatial.soil(ISRaD_extra_compiled, geodata_soil_directory=geodata_soil_directory)
+
   message("Replacing the ISRaD_extra object with the new one...\n")
 
   message("\tChecking the number of new columns in the compiled ISRaD_extra object...\n")
@@ -81,6 +103,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
     stop("You cannot replace the ISRaD_data object with a faulty data object...")
   }
 
+# add call here to use actual data version
   v<-paste0("v1-", as.character(Sys.Date()))
 
   ISRaD_data<-ISRaD_data_compiled
@@ -96,7 +119,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
 
 # Save ISRaD extra object as Excel file --------------------------------------------------
 
-  message("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is", v,"\n\n")
+  message("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is ", v,"\n\n")
 
   ISRaD_extra_char<-lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
   openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files/database", "ISRaD_extra_list.xlsx"))
@@ -165,8 +188,8 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
 
   message("\tUpdating documentation and running check()...\n")
 
-  devtools::document(pkg = ISRaD_directory)
-  devtools::check(pkg=ISRaD_directory, manual = T, cran = T)
+  devtools::document(pkg = paste0(ISRaD_directory,"/Rpkg"))
+  devtools::check(pkg=paste0(ISRaD_directory,"/Rpkg"), manual = T, cran = T, run_dont_test = T)
 
   errors<-1
   while(errors==1){
@@ -175,26 +198,26 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
     message("Ok, please fix the issues and confim below when you are ready to run the check again...\n")
     ready<-utils::menu(c("Yes", "No"), title="Are you ready to run the check again?")
     if (ready==1){
-      devtools::check(pkg=ISRaD_directory, manual = T, cran = T)
+      devtools::check(pkg=paste0(ISRaD_directory,"/Rpkg"), manual = T, cran = T, run_dont_test = T)
    }
   }
   }
 
 
-  system(paste0("rm ", getwd(), "/ISRaD.pdf"))
+  system(paste0("rm ", paste0(ISRaD_directory,"/Rpkg"), "/ISRaD.pdf"))
   system(paste(shQuote(file.path(R.home("bin"), "R")),
-               "CMD", "Rd2pdf", shQuote(getwd())))
+               "CMD", "Rd2pdf", shQuote(paste0(ISRaD_directory,"/Rpkg"))))
 
-  reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github? (will update version number in DESCRIPTION file)")
+  reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github?")
   if (reviewed==1){
-    message("Ok, the DESCRIPTION file is being updated with a new version...\n")
-    DESC<-readLines(paste0(ISRaD_directory,"/DESCRIPTION"))
-    version<-strsplit(DESC[3],split = "\\.")
-    if(length(version[[1]])<4) version[[1]][4]<-900
-    version[[1]][4]<-as.numeric(version[[1]][4])+1
-    DESC[3]<-paste(unlist(version), collapse = ".")
-    writeLines(DESC, paste0(ISRaD_directory,"/DESCRIPTION"))
-    message("Ok, you can now commit and push this to github!\n You should also then reload R and reinstall ISRaD from github since you changed the data objects.\n")
+    # message("Ok, the DESCRIPTION file is being updated with a new version...\n")
+    # DESC<-readLines(paste0(ISRaD_directory,"/DESCRIPTION"))
+    # version<-strsplit(DESC[3],split = "\\.")
+    # if(length(version[[1]])<4) version[[1]][4]<-900
+    # version[[1]][4]<-as.numeric(version[[1]][4])+1
+    # DESC[3]<-paste(unlist(version), collapse = ".")
+    # writeLines(DESC, paste0(ISRaD_directory,"/DESCRIPTION"))
+    message("Ok, you can now commit and push this to github!\n You should also then reload R and reinstall ISRaD from github.\n")
   }
 
 }
