@@ -3,7 +3,7 @@ layout: splash
 permalink: /credits/
 title: Credits
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Right.png
+  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Center.png
 ---
 ## Main compilations
 ISRaD has been built based on two main compilations:
