@@ -16,14 +16,14 @@
 
 ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download = F){
 
+  dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/ISRaD_database_files.zip"
+
   if(!dataset %in% c("full", "flux","interstitial","incubation","fraction","layer")){
     stop('Dataset paramter not recognized. Options are c("full", "flux","interstitial","incubation","fraction","layer")')
   }
 
   if (!"ISRaD_database_files" %in% list.files(directory)){
     message("\n ISRaD_database_files not found...")
-    dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
-
     message("\n Downloading database files from: ",dataURL,"\n")
     utils::download.file(dataURL,normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files.zip")))
     message("\n Unzipping database files to",normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")),"...\n")
@@ -32,8 +32,6 @@ ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download =
 
   if (force_download){
     message("\n Replacing ISRaD_database_files ...")
-    dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
-
     message("\n Downloading database files from: ",dataURL,"\n")
     utils::download.file(dataURL,normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files.zip")))
 
