@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /contribute/
-title: "Contribute to ISRaD"
+title: <span style="color:orange">**Contribute**</span> to ISRaD
 header:
   overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Left.png
 ---
