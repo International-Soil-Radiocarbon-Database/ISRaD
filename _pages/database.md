@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /database/
-title: <span style="color:rgb(105,89,205)">**ISRaD**</span> <span style="color:rgb(105,89,205)">**D**</span>atabase {text-shadow: 0.1em 0.1em 0.2em black}
+title: <span style="color:rgb(105,89,205)">**ISRaD**</span> <span style="color:rgb(105,89,205)">**D**</span>atabase 
 header:
   overlay_image: /assets/images/soil.jpg
 htmlwidgets: TRUE
