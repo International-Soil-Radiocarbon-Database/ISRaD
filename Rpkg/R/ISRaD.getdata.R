@@ -16,7 +16,7 @@
 
 ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download = F){
 
-  dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/ISRaD_database_files.zip"
+  dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
 
   if(!dataset %in% c("full", "flux","interstitial","incubation","fraction","layer")){
     stop('Dataset paramter not recognized. Options are c("full", "flux","interstitial","incubation","fraction","layer")')
