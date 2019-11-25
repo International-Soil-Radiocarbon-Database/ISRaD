@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /credits/
-title: Credits
+title: <span style="color:black">**ISRaD R Package**
 header:
   overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Center.png
 ---
