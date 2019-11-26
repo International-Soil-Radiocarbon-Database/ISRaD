@@ -3,7 +3,7 @@ layout: splash
 permalink: /credits/
 title: <span style="color:rgb(105,89,205)">**Credits**
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_USGS_MPI.png height= 10
+  overlay_image: assets/images/ISRaD_logos/ISRaD_USGS_MPI1.png 
 ---
 ## Main compilations
 ISRaD has been built based on two main compilations:
