@@ -3,7 +3,7 @@ layout: splash
 permalink: /template_faq/
 title: <span style="color:rgb(105,89,205)">**Template FAQ** 
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Center.png
+  overlay_image: assets/images/ISRaD_logos/ISRaD_USGS_MPI6.png
 ---
 
 
