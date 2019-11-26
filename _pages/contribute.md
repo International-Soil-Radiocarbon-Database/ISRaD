@@ -3,7 +3,7 @@ layout: splash
 permalink: /contribute/
 title: <span style="color:rgb(105,89,205)">**Contribute to ISRaD**</span>
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Left.png
+  overlay_image: assets/images/ISRaD_logos/ISRaD_USGS_MPI6.png
 ---
 
 Thank you for your interest in contributing data to ISRaD!
