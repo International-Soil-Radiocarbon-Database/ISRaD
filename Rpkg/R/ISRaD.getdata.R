@@ -4,6 +4,7 @@
 #' @param dataset Specify which data you want. Options are c("full", flux","interstitial","incubation","fraction","layer")
 #' @param extra T or F. If T, the ISRaD_extra object will be returned. If F, ISRaD_data will be returned. Default is F.
 #' @param force_download T or F. If there are already ISRaD_database files in the directory you specify, new data will not be downloaded by default. However, if you set force_downlaod to T, the newest data from github will be downloaded regardless.
+#' @param branch string identifying the gitHub branch/blob 
 #' @return ISRaD data object
 #' @export
 #' @examples
@@ -14,9 +15,9 @@
 #' # Return only fraction data, including filled fraction data
 #' ISRaD_fractions <- ISRaD.getdata(tempdir(), dataset = "fraction", extra = TRUE)
 
-ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download = F){
+ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download = F, branch='master'){
 
-  dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
+  dataURL <- sprintf("https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/%s/ISRaD_data_files/database/ISRaD_database_files.zip", branch)
 
   if(!dataset %in% c("full", "flux","interstitial","incubation","fraction","layer")){
     stop('Dataset paramter not recognized. Options are c("full", "flux","interstitial","incubation","fraction","layer")')
