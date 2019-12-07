@@ -50,7 +50,7 @@ There are two different file types for accessing the ISRaD dataset:
 
 # [Download](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip)
  
-This link downloads the latest development version of the ISRaD database. It contains the data files listed below. Descriptions of all variables are available in the [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/inst/extdata/ISRaD_Extra_Info.xlsx)
+This link downloads the latest development version of the ISRaD database. It contains the data files listed below. Descriptions of all variables are available in the [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information File](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx)
 
 ## Data Files 
 ### Hierarchical data:
