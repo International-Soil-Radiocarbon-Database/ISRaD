@@ -86,6 +86,7 @@ Summary statistics...
     contact_email : 1
     bibliographical_reference : 1
     metadata_note : 1
+    associated_datasets : 1
  site tab...1 observations
     entry_name : 1
     site_name : 1
@@ -102,6 +103,7 @@ Summary statistics...
     pro_MAT : 18
     pro_MAP : 18
     pro_soil_taxon : 18
+    pro_land_cover : 18
     pro_veg_note : 18
     pro_parent_material : 18
     pro_parent_material_notes : 18
@@ -121,31 +123,43 @@ Summary statistics...
     lyr_sand_tot_psa : 36
     lyr_silt_tot_psa : 36
     lyr_clay_tot_psa : 36
-    lyr_ph : 30
-    lyr_ph_method : 30
+    lyr_ph : 36
+    lyr_ph_method : 36
     lyr_soc : 6
     lyr_soc_sigma : 6
     lyr_fe_ox : 6
     lyr_al_ox : 6
+    lyr_fe_dith : 6
+    lyr_dith_notes : 6
  interstitial tab...0 observations
- fraction tab...48 observations
-    entry_name : 48
-    site_name : 48
-    pro_name : 48
-    lyr_name : 48
-    frc_name : 48
-    frc_input : 48
-    frc_property : 48
-    frc_scheme : 48
-    frc_scheme_units : 48
-    frc_lower : 48
-    frc_upper : 48
-    frc_agent : 48
+ fraction tab...54 observations
+    entry_name : 54
+    site_name : 54
+    pro_name : 54
+    lyr_name : 54
+    frc_name : 54
+    frc_input : 54
+    frc_property : 54
+    frc_scheme : 54
+    frc_scheme_units : 54
+    frc_lower : 54
+    frc_upper : 54
+    frc_agent : 54
+    frc_comp : 24
+    frc_note : 24
+    frc_mass_perc : 18
     frc_c_perc : 18
     frc_c_tot : 18
-    frc_c_org : 30
+    frc_c_org : 48
+    frc_c_to_n : 6
+    frc_15n : 12
+    frc_13c : 24
+    frc_rc_lab : 18
     frc_rc_year : 30
     frc_14c : 30
+    frc_fe_ox : 36
+    frc_al_ox : 30
+    frc_fe_dith : 6
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
@@ -153,5 +167,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

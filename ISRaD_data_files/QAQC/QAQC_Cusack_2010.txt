@@ -103,6 +103,7 @@ Summary statistics...
     pro_MAT : 17
     pro_MAP : 17
     pro_soil_taxon : 17
+    pro_soil_taxon_sys : 17
     pro_land_cover : 17
     pro_veg_note : 17
  flux tab...0 observations
@@ -130,6 +131,7 @@ Summary statistics...
     inc_obs_date_m : 53
     inc_obs_date_d : 53
     inc_duration : 53
+    inc_duration_type : 53
     inc_temp : 53
     inc_moisture_type : 53
     inc_C_respired : 53
@@ -147,5 +149,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

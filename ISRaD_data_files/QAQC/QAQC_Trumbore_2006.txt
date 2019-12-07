@@ -138,17 +138,17 @@ Summary statistics...
     flx_rc_year : 27
     flx_14c : 27
     flx_14c_sigma : 27
- layer tab...104 observations
-    entry_name : 104
-    site_name : 104
-    pro_name : 104
-    lyr_name : 104
-    lyr_obs_date_y : 104
-    lyr_obs_date_m : 104
-    lyr_obs_date_d : 104
-    lyr_top : 104
-    lyr_bot : 104
-    lyr_hzn : 11
+ layer tab...130 observations
+    entry_name : 130
+    site_name : 130
+    pro_name : 130
+    lyr_name : 130
+    lyr_obs_date_y : 130
+    lyr_obs_date_m : 120
+    lyr_obs_date_d : 120
+    lyr_top : 130
+    lyr_bot : 130
+    lyr_hzn : 20
     lyr_bd_samp : 73
     lyr_bd_tot : 73
     lyr_sand_tot_psa : 55
@@ -205,5 +205,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

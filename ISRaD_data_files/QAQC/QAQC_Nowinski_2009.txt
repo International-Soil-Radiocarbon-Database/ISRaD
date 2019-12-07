@@ -154,6 +154,11 @@ Summary statistics...
     lyr_name : 54
     inc_name : 54
     inc_type : 54
+    inc_note : 54
+    inc_obs_date_y : 54
+    inc_duration : 54
+    inc_duration_type : 54
+    inc_moisture_type : 54
     inc_13c : 53
     inc_rc_lab : 53
     inc_rc_year : 53
@@ -167,5 +172,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

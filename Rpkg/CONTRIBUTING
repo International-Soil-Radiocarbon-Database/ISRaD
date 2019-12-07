@@ -1,0 +1,15 @@
+# Contributions guidelines for codebase
+
+Please fork the repository and submit contributions as pull requests.
+
+# Coding conventions
+
+Below are some general coding conventions used in this project.
+
+1) Methods documentation need to be written in complete sentences and should contain executable examples.
+
+2) Avoid overloading variables whenever possible (ie 'return' should not be a variable since it is a already a function).
+
+3) Use whitespace in code. Please indent your if/for-code blocks. Use spaces between operators. Offset with empty lines and label code chunks.
+
+4) Line length should be max 80 characters.

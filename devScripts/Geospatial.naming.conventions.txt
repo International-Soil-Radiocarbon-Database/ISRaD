@@ -1,0 +1,28 @@
+All geospatial data that is added/extracted through ISRaD extra functions must follow the following naming conventions to generate column names and sort properly.
+
+All items must be separated by “_”. If no relevant data, use ‘x’ as a placeholder.
+
+1.	Variable name
+    a.	“F” – e.g. fungal community
+2.	Top depth
+    a.	“0” – top depth, surface soil, in cm
+3.	Bottom depth
+    a.	“10”  - bottom depth, 10 cm depth
+4.	Year of data
+    a.	“2018”
+5.	Unit
+    a.	“mmyr” – mm per year, without punctuation
+6.	Note or descriptor
+    a.	“AMF” – e.g. arbuscular mycorrhizal fungi
+    b.	Origin, citation, version, product (non-variable name)
+7.	File type
+    a.	“.tif”
+
+
+Example name:
+
+    “F_0_10_2018_mmyr_AMF.tif”
+
+Or, an example of land cover (“LC” ) from MODIS (“MODIS”) data:
+
+		“LC_x_x_x_x_MODIS.tif”

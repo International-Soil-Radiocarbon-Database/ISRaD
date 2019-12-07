@@ -98,7 +98,8 @@ Summary statistics...
     site_name : 12
     pro_name : 12
     pro_treatment : 12
-    pro_MAP : 6
+    pro_MAT : 12
+    pro_MAP : 12
     pro_usda_soil_order : 12
     pro_soil_taxon : 12
     pro_soil_taxon_sys : 12
@@ -129,6 +130,7 @@ Summary statistics...
     lyr_name : 12
     inc_name : 12
     inc_type : 12
+    inc_note : 12
     inc_obs_date_y : 12
     inc_obs_date_m : 12
     inc_obs_date_d : 12
@@ -145,5 +147,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

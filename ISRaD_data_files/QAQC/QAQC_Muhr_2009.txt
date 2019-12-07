@@ -150,6 +150,7 @@ Summary statistics...
     lyr_name : 9
     inc_name : 9
     inc_type : 9
+    inc_note : 9
     inc_obs_date_y : 9
     inc_obs_date_m : 9
     inc_obs_date_d : 9
@@ -167,5 +168,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

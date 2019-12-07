@@ -103,6 +103,8 @@ Summary statistics...
     pro_MAT : 2
     pro_MAP : 2
     pro_usda_soil_order : 2
+    pro_soil_taxon : 2
+    pro_land_cover : 2
     pro_veg_note : 2
     pro_parent_material : 2
     pro_parent_chem : 2
@@ -145,5 +147,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ISRaD Quality Control Check</title>
+
+    <!-- Include order: first jquery, then opencpu.js, and then your code -->
+    <script src="opencpu/jquery-1.10.2.min.js"></script>
+    <script src="opencpu/opencpu-0.4.js"></script>
+
+    <script>
+    //init this script when the page has loaded
+    $(document).ready(function(){
+
+      $("#submitbutton").on("click", function(){
+
+        //arguments
+        var myfile = $("#datafile")[0].files[0];
+
+        if(!myfile){
+          alert("No file selected.");
+          return;
+        }
+
+        //disable the button during upload
+        $("#submitbutton").attr("disabled", "disabled");
+
+
+        //perform the request
+        $("#loading").text("reading file...");
+
+        var req = ocpu.call("QAQC", {
+          file : myfile,
+          writeQCreport:true,
+          outfile_QAQC:"ISRaD_quality_control_report.txt"
+        }, function(session2){
+            mysession=session2;
+            $("#download").text("View quality control report");
+         $("#printlink").attr("href", mysession.getLoc() + "files/ISRaD_quality_control_report.txt")
+            session2.getConsole(function(outtxt){
+                $("#output").text(outtxt);
+           });
+          });
+
+
+        //if R returns an error, alert the error message
+        req.fail(function(){
+          alert("Server error: " + req.responseText);
+        });
+
+        //after request complete, re-enable the button
+        req.always(function(){
+          $("#submitbutton").removeAttr("disabled")
+        });
+
+
+      });
+    });
+    </script>
+
+    <style>
+
+    </style>
+
+  </head>
+
+  <body>
+    <div style="text-align:left">
+    <h3>Upload your ISRaD Data File and generate quality control report </h3>
+    <b>Step 1 - Select ISRaD Data File (author_year.xlsx)</b>
+    <br />
+    <input type="file" id="datafile">
+      <br />
+         <br />
+        <b>Step 2 - Check file</b>
+         <br />
+     <button id="submitbutton" type="button">Generate quality control report</button>
+    <br />
+       <b id="loading"></b>
+     <br />
+      <a target="_blank" id="printlink" download><b id="download"></b></a>
+      <br />
+</div>
+
+
+<div style="font-size:75%">
+    <p>Note: File upload requires Firefox, Chrome, Safari or Internet Explorer 10+</p>
+</div>
+
+  </body>
+</html>

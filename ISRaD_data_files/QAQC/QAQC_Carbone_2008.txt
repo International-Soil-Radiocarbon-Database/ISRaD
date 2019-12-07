@@ -99,6 +99,7 @@ Summary statistics...
     pro_lat : 2
     pro_long : 2
     pro_treatment : 2
+    pro_treatment_note : 2
     pro_MAT : 2
     pro_MAP : 2
     pro_land_cover : 2
@@ -144,5 +145,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues

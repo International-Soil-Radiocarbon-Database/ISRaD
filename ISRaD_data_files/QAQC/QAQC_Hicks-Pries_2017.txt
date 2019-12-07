@@ -102,6 +102,7 @@ Summary statistics...
     pro_treatment_note : 24
     pro_MAT : 54
     pro_MAP : 54
+    pro_usda_soil_order : 54
     pro_soil_taxon : 54
     pro_soil_taxon_sys : 54
     pro_land_cover : 54
@@ -193,7 +194,6 @@ Summary statistics...
     frc_lower : 27
     frc_upper : 27
     frc_agent : 27
-    frc_note : 9
     frc_mass_perc : 27
     frc_obs_date_y : 27
     frc_obs_date_m : 27
@@ -229,5 +229,5 @@ Summary statistics...
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
-      
+                  
 https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues
