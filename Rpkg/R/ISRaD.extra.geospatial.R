@@ -3,6 +3,8 @@
 #' @description Extracts data from a user-supplied raster file and adds data as a new variable at the profile level
 #' @param database ISRaD dataset object
 #' @param geodata_directory directory where geospatial data are found
+#' @param crs coordinate reference system used for geospatial datasets
+#' @param fillWorldClim option to fill climate data from the Worldclim dataset (downloads data from web)
 #' @details Generic function that uses geographic coordinates of profiles to extract data from one or more raster files.
 #' Raster data will be added as new variables at the profile level.
 #' The new variable name will be a concatenation of "pro_", and the file name (excluding the file extension).
@@ -11,13 +13,10 @@
 #' 2) Top layer depth (numeric, cm)
 #' 3) Bottom layer depth (numeric, cm)
 #' 4) Year of data observation (numeric)
-#' 5) Data units (e.g. mmYr for mean annual precipitation)
+#' 5) Data units (e.g. mmyr for mean annual precipitation)
 #' 6) Any relevant notes
-#'
 #' Coordinate reference system can be specified with the "crs" argument; default is WGS84. Note that all files in geodata_directory must use the same crs.
-#'
 #' Option "fillWorldClim" fills climate data from worldclim V1.4 at 2.5 resolution (http://www.worldclim.org/bioclim). Variable descriptions are as follows:
-#'
 #' BIO1 = Annual Mean Temperature,
 #' BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
 #' BIO3 = Isothermality (BIO2/BIO7) (* 100),
@@ -37,9 +36,9 @@
 #' BIO17 = Precipitation of Driest Quarter,
 #' BIO18 = Precipitation of Warmest Quarter,
 #' BIO19 = Precipitation of Coldest Quarter
-#'
 #' @export
 #' @return returns updated ISRaD_extra object with new columns at the profile level
+#' @example
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
@@ -49,8 +48,7 @@
 #' # Note that geospatial data in pkg is only for the Gaudinski_2001 dataset
 #' # Users may supply their own geospatial data as long as it can be read by the raster package
 #' database.x <- ISRaD.extra.geospatial(database,
-#'  geodata_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"),
-#'  crs = +proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
+#'  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
 #'  fillWorldClim = TRUE)
 #' }
 
