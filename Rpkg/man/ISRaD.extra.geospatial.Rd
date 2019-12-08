@@ -25,34 +25,34 @@ Extracts data from a user-supplied raster file and adds data as a new variable a
 }
 \details{
 Generic function that uses geographic coordinates of profiles to extract data from one or more raster files.
-Raster data will be added as new variables at the profile level.
+Raster data will be added as new variables at the profile level.\cr
 The new variable name will be a concatenation of "pro_", and the file name (excluding the file extension).
-The ISRaD recommended file name convention uses a 6 component string, separated by "_". Missing components can be replaced with "x" ("x"s will be dropped before creating variable names). The 6 components are as follows:
-1) Short description of the data type, e.g. "bd" for bulk density
-2) Top layer depth (numeric, cm)
-3) Bottom layer depth (numeric, cm)
-4) Year of data observation (numeric)
-5) Data units (e.g. mmyr for mean annual precipitation)
-6) Any relevant notes
-Coordinate reference system can be specified with the "crs" argument; default is WGS84. Note that all files in geodata_directory must use the same crs.
-Option "fillWorldClim" fills climate data from worldclim V1.4 at 2.5 resolution (http://www.worldclim.org/bioclim). Variable descriptions are as follows:
-BIO1 = Annual Mean Temperature,
-BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
-BIO3 = Isothermality (BIO2/BIO7) (* 100),
-BIO4 = Temperature Seasonality (standard deviation *100),
-BIO5 = Max Temperature of Warmest Month,
-BIO6 = Min Temperature of Coldest Month,
-BIO7 = Temperature Annual Range (BIO5-BIO6),
-BIO8 = Mean Temperature of Wettest Quarter,
-BIO9 = Mean Temperature of Driest Quarter,
-BIO10 = Mean Temperature of Warmest Quarter,
-BIO11 = Mean Temperature of Coldest Quarter,
-BIO12 = Annual Precipitation,
-BIO13 = Precipitation of Wettest Month,
-BIO14 = Precipitation of Driest Month,
-BIO15 = Precipitation Seasonality (Coefficient of Variation),
-BIO16 = Precipitation of Wettest Quarter,
-BIO17 = Precipitation of Driest Quarter,
-BIO18 = Precipitation of Warmest Quarter,
-BIO19 = Precipitation of Coldest Quarter
+The ISRaD recommended file name convention for geospatial files uses a 6 component string, separated by "_". Missing components can be replaced with "x" ("x"s will be dropped before creating variable names). The 6 components are as follows:\cr
+1) Short description of the data type, e.g. "bd" for bulk density\cr
+2) Top layer depth or exact depth (numeric, cm)\cr
+3) Bottom layer depth (numeric, cm)\cr
+4) Year of data observation (numeric)\cr
+5) Data units (e.g. mmyr for mean annual precipitation)\cr
+6) Any relevant notes\cr
+Coordinate reference system can be specified with the "crs" argument; default is WGS84. Note that all files in geodata_directory must use the same crs.\cr
+Option "fillWorldClim" fills climate data from worldclim V1.4 at 2.5 resolution (http://www.worldclim.org/bioclim). Variable descriptions are as follows:\cr
+bio1 = Annual Mean Temperature,\cr
+bio2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),\cr
+bio3 = Isothermality (BIO2/BIO7) (* 100),\cr
+bio4 = Temperature Seasonality (standard deviation *100),\cr
+bio5 = Max Temperature of Warmest Month,\cr
+bio6 = Min Temperature of Coldest Month,\cr
+bio7 = Temperature Annual Range (BIO5-BIO6),\cr
+bio8 = Mean Temperature of Wettest Quarter,\cr
+bio9 = Mean Temperature of Driest Quarter,\cr
+bio10 = Mean Temperature of Warmest Quarter,\cr
+bio11 = Mean Temperature of Coldest Quarter,\cr
+bio12 = Annual Precipitation,\cr
+bio13 = Precipitation of Wettest Month,\cr
+bio14 = Precipitation of Driest Month,\cr
+bio15 = Precipitation Seasonality (Coefficient of Variation),\cr
+bio16 = Precipitation of Wettest Quarter,\cr
+bio17 = Precipitation of Driest Quarter,\cr
+bio18 = Precipitation of Warmest Quarter,\cr
+bio19 = Precipitation of Coldest Quarter\cr
 }

@@ -18,12 +18,12 @@
 #' database.x <- ISRaD.extra.geospatial(database,
 #'  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
 #'  fillWorldClim = FALSE)
-#' # NB: example geospatial data in pkg is clipped to the extent of the Gaudinski_2001 dataset
-#' database.x <- ISRaD.extra.geospatial.keys(database,
+#' # NB: example geospatial data in pkg are clipped to the extent of the Gaudinski_2001 dataset
+#' database.x <- ISRaD.extra.geospatial.keys(database.x,
 #'  geodata_keys = system.file("extdata", "geodata_keys", package = "ISRaD"))
 #' }
 
-ISRaD.extra.geospatial.keys(database, geodata_keys) {
+ISRaD.extra.geospatial.keys <- function(database, geodata_keys) {
   keys <- list.files(geodata_keys, full.names = T)
   varNames <- lapply(keys, function(x) {
     x <- substr(x, start=nchar(geodata_keys)+2, stop=nchar(x))
