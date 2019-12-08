@@ -12,25 +12,25 @@
 #' @export
 #' @details Adds new climate fields BIO1-BIO19, PET
 #'
-#' BIO1 = Annual Mean Temperature,
-#' BIO2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
-#' BIO3 = Isothermality (BIO2/BIO7) (* 100),
-#' BIO4 = Temperature Seasonality (standard deviation *100),
-#' BIO5 = Max Temperature of Warmest Month,
-#' BIO6 = Min Temperature of Coldest Month,
-#' BIO7 = Temperature Annual Range (BIO5-BIO6),
-#' BIO8 = Mean Temperature of Wettest Quarter,
-#' BIO9 = Mean Temperature of Driest Quarter,
-#' BIO10 = Mean Temperature of Warmest Quarter,
-#' BIO11 = Mean Temperature of Coldest Quarter,
-#' BIO12 = Annual Precipitation,
-#' BIO13 = Precipitation of Wettest Month,
-#' BIO14 = Precipitation of Driest Month,
-#' BIO15 = Precipitation Seasonality (Coefficient of Variation),
-#' BIO16 = Precipitation of Wettest Quarter,
-#' BIO17 = Precipitation of Driest Quarter,
-#' BIO18 = Precipitation of Warmest Quarter,
-#' BIO19 = Precipitation of Coldest Quarter
+#' bio1 = Annual Mean Temperature,
+#' bio2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),
+#' bio3 = Isothermality (BIO2/BIO7) (* 100),
+#' bio4 = Temperature Seasonality (standard deviation *100),
+#' bio5 = Max Temperature of Warmest Month,
+#' bio6 = Min Temperature of Coldest Month,
+#' bio7 = Temperature Annual Range (BIO5-BIO6),
+#' bio8 = Mean Temperature of Wettest Quarter,
+#' bio9 = Mean Temperature of Driest Quarter,
+#' bio10 = Mean Temperature of Warmest Quarter,
+#' bio11 = Mean Temperature of Coldest Quarter,
+#' bio12 = Annual Precipitation,
+#' bio13 = Precipitation of Wettest Month,
+#' bio14 = Precipitation of Driest Month,
+#' bio15 = Precipitation Seasonality (Coefficient of Variation),
+#' bio16 = Precipitation of Wettest Quarter,
+#' bio17 = Precipitation of Driest Quarter,
+#' bio18 = Precipitation of Warmest Quarter,
+#' bio19 = Precipitation of Coldest Quarter
 #' PET = Potential evapotranspiration
 #'
 #' All BIO## variables are from http://www.worldclim.org/bioclim V1.4 at 2.5 resolution and are based on profile lat and long
