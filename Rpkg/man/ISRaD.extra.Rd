@@ -4,17 +4,12 @@
 \alias{ISRaD.extra}
 \title{ISRaD.extra}
 \usage{
-ISRaD.extra(database, geodata_clim_directory, geodata_soil_directory,
-  geodata_pet_directory)
+ISRaD.extra(database, geodata_directory)
 }
 \arguments{
 \item{database}{soilcarbon dataset object}
 
-\item{geodata_clim_directory}{directory where geospatial climate data are found}
-
-\item{geodata_soil_directory}{directory where geospatial soil data are found}
-
-\item{geodata_pet_directory}{directory where geospatial pet data are found}
+\item{geodata_directory}{directory where geospatial data are found}
 }
 \value{
 returns new ISRaD_extra object with derived, transformed, and filled columns
@@ -31,8 +26,6 @@ Fills fraction modern, delta 14C, delta-delta values, profile coordinates, BD, o
 database <- ISRaD::Gaudinski_2001
 # Fill ISRaD.extra data
 database.x <- ISRaD.extra(database,
- geodata_clim_directory = tempdir(),
- geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"),
- geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
+ geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"))
 }
 }
