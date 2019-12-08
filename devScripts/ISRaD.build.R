@@ -4,23 +4,22 @@
 #' Meant to be used by the maintainers/developers of ISRaD
 #'
 #' @param ISRaD_directory directory where the ISRaD package is found
-#' @param geodata_clim_directory directory where geospatial climate datasets are found. Necessary to create ISRaD_Extra
-#' @param geodata_soil_directory directory where geospatial soil datasets are found. Necessary to create ISRaD_Extra
-#' @param geodata_pet_directory directory where geospatial pet dataset is found. Necessary to create ISRaD_Extra
+#' @param geodata_directory directory where geospatial datasets are found. Necessary to create ISRaD_Extra
+#' @param geodata_keys directory where geospatial factor keys are found. Necessary to create ISRaD_Extra
 #' @param citations T or F. Update citations.
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
 #' @import stringr
 #' @export
 
-ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_directory, geodata_soil_directory, citations=T){
+ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citations=T){
 
   requireNamespace("stringr")
   requireNamespace("tidyverse")
 
 # Compile database --------------------------------------------------------
 
-  if (is.null(geodata_clim_directory) | is.null(geodata_soil_directory) | is.null(geodata_pet_directory)){
-    warning("geodata_clim_directory, geodata_pet_directory, and geodata_soil_directory must be specified.\n")
+  if (is.null(geodata_directory) | is.null(geodata_keys)){
+    warning("geodata_directory, and geodata_keys directory must be specified.\n")
     stop()
   }
 
@@ -82,12 +81,10 @@ ISRaD.build<-function(ISRaD_directory, geodata_clim_directory, geodata_pet_direc
   ISRaD_extra_compiled<-ISRaD.extra.fill_expert(ISRaD_extra_compiled)
   message("\t filling USDA soil orders \n")
   ISRaD_extra_compiled<-ISRaD.extra.fill_soilorders(ISRaD_extra_compiled)
-  message("\t filling geospatial climate data \n")
-  ISRaD_extra_compiled<-ISRaD.extra.geospatial.climate(ISRaD_extra_compiled, geodata_clim_directory=geodata_clim_directory, geodata_pet_directory=geodata_pet_directory)
-  message("\t filling 0.5 deg geospatial data from Zheng Shi \n")
-  ISRaD_extra_compiled<-ISRaD.extra.geospatial.Zheng(ISRaD_extra_compiled, geodata_soil_directory=geodata_soil_directory)
-  message("\t filling 250m spatial soil data  \n")
-  ISRaD_extra_compiled<-ISRaD.extra.geospatial.soil(ISRaD_extra_compiled, geodata_soil_directory=geodata_soil_directory)
+  message("\t filling geospatial data \n")
+  ISRaD_extra_compiled<-ISRaD.extra.geospatial(ISRaD_extra_compiled, geodata_directory=geodata_directory)
+  message("\t recoding categorical spatial data  \n")
+  ISRaD_extra_compiled<-ISRaD.extra.geospatial.soil(ISRaD_extra_compiled, geodata_keys=geodata_keys)
 
   message("Replacing the ISRaD_extra object with the new one...\n")
 
