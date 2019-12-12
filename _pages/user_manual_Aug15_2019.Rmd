@@ -76,7 +76,7 @@ library("rcrossref")
 
 ```{r eval = FALSE}
 # 2) Install package 'ISRaD' from the development branch of our github repository:
-devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD", ref="master", force = T)
+devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg", ref="master", force = T)
 library(ISRaD) # load the package
 
 ```
