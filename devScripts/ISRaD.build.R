@@ -79,12 +79,10 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
   ISRaD_extra_compiled<-ISRaD.extra.Cstocks(ISRaD_extra_compiled)
   message("\t filling expert data \n")
   ISRaD_extra_compiled<-ISRaD.extra.fill_expert(ISRaD_extra_compiled)
-  message("\t filling USDA soil orders \n")
-  ISRaD_extra_compiled<-ISRaD.extra.fill_soilorders(ISRaD_extra_compiled)
   message("\t filling geospatial data \n")
   ISRaD_extra_compiled<-ISRaD.extra.geospatial(ISRaD_extra_compiled, geodata_directory=geodata_directory)
   message("\t recoding categorical spatial data  \n")
-  ISRaD_extra_compiled<-ISRaD.extra.geospatial.soil(ISRaD_extra_compiled, geodata_keys=geodata_keys)
+  ISRaD_extra_compiled<-ISRaD.extra.geospatial.key(ISRaD_extra_compiled, geodata_keys=geodata_keys)
 
   message("Replacing the ISRaD_extra object with the new one...\n")
 
