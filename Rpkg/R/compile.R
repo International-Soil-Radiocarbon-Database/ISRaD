@@ -96,7 +96,7 @@ compile <- function(dataset_directory,
       if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
       if(checkdoi==TRUE) {
       soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = TRUE, verbose = TRUE)
-    } else {soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = TRUE, verbose = TRUE)}
+    } else {soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = FALSE, verbose = TRUE)}
     if (attributes(soilcarbon_data)$error>0) {
         if(verbose) cat("failed QAQC. Check report in QAQC folder.", file=outfile, append = TRUE)
       next
