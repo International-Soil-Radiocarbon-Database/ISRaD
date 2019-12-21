@@ -82,7 +82,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
   message("\t filling geospatial data \n")
   ISRaD_extra_compiled<-ISRaD.extra.geospatial(ISRaD_extra_compiled, geodata_directory=geodata_directory)
   message("\t recoding categorical spatial data  \n")
-  ISRaD_extra_compiled<-ISRaD.extra.geospatial.key(ISRaD_extra_compiled, geodata_keys=geodata_keys)
+  ISRaD_extra_compiled<-ISRaD.extra.geospatial.keys(ISRaD_extra_compiled, geodata_keys=geodata_keys)
 
   message("Replacing the ISRaD_extra object with the new one...\n")
 
