@@ -28,7 +28,6 @@ feature_row:
 ## Introducing ISRaD Version 1.0!
 <p align = "right">
 <img src="https://www.earth-system-science-data.net/essd_cover_huge.jpg"
-     href="https://www.earth-system-science-data.net/"
      alt="Earth System Science Data"
      width ="155"
      height = "200"
