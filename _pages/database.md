@@ -11,11 +11,9 @@ htmlwidgets: TRUE
 The ISRaD database is built from templates that each describe a single data set.  Because we want to include many kinds of radicoarbon data including fractionation schemes as well as components like interstitial gases and dissolved organics, the template has separate tabs for each kind of information.  Most contributors will not fill in everything, but the main database structure builds on information from the template.
 
 
-
-<p align = "center">
-<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/structure_new.png"
-     style="float: center; margin-right: 10px; margin-left: 10px" />
-</p>
+<figure>
+	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/structure_new.png" width = "500">
+</figure>
 
 The main features include:
 * General information
