@@ -34,6 +34,9 @@ Prior to ingenstion of data included in these past efforts, we fixed a number of
 
 The ISRaD database is currently under development: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>. 
 
+Users citing ISRaD should use the following citation as well as the most recent official data release at the time that they accessed the data. In their citation of the official release, users should also reference the version of the data they used (e.g., v1.2.3.2019-12-20).
+Lawrence, C. R., Beem-Miller, J., Hoyt, A. M., Monroe, G., Sierra, C. A., Stoner, S., Heckman, K., Blankinship, J. C., Crow, S. E., McNicol, G., Trumbore, S., Levine, P. A., Vindušková, O., Todd-Brown, K., Rasmussen, C., Hicks Pries, C. E., Schädel, C., McFarlane, K., Doetterl, S., Hatté, C., He, Y., Treat, C., Harden, J. W., Torn, M. S., Estop-Aragonés, C., Asefaw Berhe, A., Keiluweit, M., Della Rosa Kuhnen, Á., Marin-Spiotta, E., Plante, A. F., Thompson, A., Shi, Z., Schimel, J. P., Vaughn, L. J. S., von Fromm, S. F., and Wagai, R.: An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0, Earth Syst. Sci. Data, 12, 61–76, https://doi.org/10.5194/essd-12-61-2020, 2020.
+
 If you are interested in contributing to the development of the ISRadD R Package or site, please contact info.israd@gmail.com or make a pull request to our github repo. 
 
 To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute</a> page. 
