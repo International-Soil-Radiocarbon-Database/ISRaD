@@ -2,7 +2,7 @@
 layout: splash
 title: <span style="color:rgb(105,89,205)">**ISRaD Database**
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_USGS_MPI6.png
+  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Center.png
 htmlwidgets: TRUE
 --- 
 
