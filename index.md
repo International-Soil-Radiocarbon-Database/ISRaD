@@ -33,7 +33,7 @@ feature_row:
      height = "200"
      style="float: right; margin-right: 10px;" />
 </p>
-A new manuscript detailing the construction and utilization of ISRaD was just published in Earth System Science Data. Hear we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript [here](https://earth-syst-sci-data.net/12/61/2020/ "ISRaD v1.0 Manuscript"). 
+A new manuscript detailing the construction and utilization of ISRaD was just published in Earth System Science Data. Hear we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript <a href="https://earth-syst-sci-data.net/12/61/2020/">here</a>.
 
 ## What is ISRaD?
 ISRaD is a open community repository for soil radiocarbon data.  
