@@ -24,19 +24,19 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
 ## Publications
 The database is described in detail in the following publication from the core ISRaD group:
 
-Lawrence, C. R., Beem-Miller, J., Hoyt, A. M., Monroe, G., Sierra, C. A., Stoner, S., Heckman, K., Blankinship, J. C., Crow, S. E., McNicol, G., Trumbore, S., Levine, P. A., Vindušková, O., Todd-Brown, K., Rasmussen, C., Hicks Pries, C. E., Schädel, C., McFarlane, K., Doetterl, S., Hatté, C., He, Y., Treat, C., Harden, J. W., Torn, M. S., Estop-Aragonés, C., Asefaw Berhe, A., Keiluweit, M., Della Rosa Kuhnen, Á., Marin-Spiotta, E., Plante, A. F., Thompson, A., Shi, Z., Schimel, J. P., Vaughn, L. J. S., von Fromm, S. F., and Wagai, R.: An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0, Earth Syst. Sci. Data, 12, 61–76, https://doi.org/10.5194/essd-12-61-2020, 2020.
+* Lawrence, C. R., Beem-Miller, J., Hoyt, A. M., Monroe, G., Sierra, C. A., Stoner, S., Heckman, K., Blankinship, J. C., Crow, S. E., McNicol, G., Trumbore, S., Levine, P. A., Vindušková, O., Todd-Brown, K., Rasmussen, C., Hicks Pries, C. E., Schädel, C., McFarlane, K., Doetterl, S., Hatté, C., He, Y., Treat, C., Harden, J. W., Torn, M. S., Estop-Aragonés, C., Asefaw Berhe, A., Keiluweit, M., Della Rosa Kuhnen, Á., Marin-Spiotta, E., Plante, A. F., Thompson, A., Shi, Z., Schimel, J. P., Vaughn, L. J. S., von Fromm, S. F., and Wagai, R.: An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0, Earth Syst. Sci. Data, 12, 61–76, https://doi.org/10.5194/essd-12-61-2020, 2020.
 
 ISRaD builds on previously published compilcations of soil radiocarbon measurements but also includes data ingested from individual studies not captured by those prior efforts. The following compilation studies served as our starting point for data ingestion:
 
-Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles. Global Change Biology, 21(11), 4278–4292. <a href="http://doi.org/10.1111/gcb.13012">http://doi.org/10.1111/gcb.13012</a>
+* Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles. Global Change Biology, 21(11), 4278–4292. <a href="http://doi.org/10.1111/gcb.13012">http://doi.org/10.1111/gcb.13012</a>
 
-He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 355(6306), 1419–1424. <a href="http://doi.org/10.1126/science.aad4273">http://doi.org/10.1126/science.aad4273</a>
+* He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 355(6306), 1419–1424. <a href="http://doi.org/10.1126/science.aad4273">http://doi.org/10.1126/science.aad4273</a>
 
 Prior to ingenstion of data included in these past efforts, we fixed a number of errors, added missing data, and populated DOI numbers for all original source studies. Please also see the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/credits/">Credits</a> page for a full list of all original data sources included in the current version of ISRaD.
 
 ## Terms of Use
 
-The ISRaD database is currently under development: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>. 
+The ISRaD database is currently under development: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>.
 
 Users citing ISRaD should use the citation at the top of this page as well as the most recent official data release at the time that they accessed the data. In their citation of the official release, users should also reference the version of the data they used (e.g., v1.2.3.2019-12-20).
 
@@ -70,6 +70,7 @@ Current contributors to include:
 * Jeffrey Beem-Miller
 * Grey Monroe
 * Paul Levine
+* Shane Stoner
 * Olga Vinduskova
 * Karis McFarlane
 * Caitlin Hicks-Pries
