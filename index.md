@@ -29,7 +29,7 @@ feature_row:
 <p align = "right">
 <img src="https://www.earth-system-science-data.net/essd_cover_huge.jpg"
      alt="Earth System Science Data"
-     width ="155"
+     width ="154.5"
      height = "200"
      style="float: right; margin-right: 10px;" />
 </p>
