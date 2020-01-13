@@ -25,7 +25,6 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 ---
-## Introducing ISRaD Version 1.0!
 <p align = "right">
 <img src="https://www.earth-system-science-data.net/essd_cover_huge.jpg"
      alt="Earth System Science Data"
@@ -33,7 +32,8 @@ feature_row:
      height = "200"
      style="float: right; margin-right: 10px;" />
 </p>
-A new manuscript detailing the construction and utilization of ISRaD was just published in Earth System Science Data. Hear we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript <a href="https://earth-syst-sci-data.net/12/61/2020/">here</a>.
+## Introducing ISRaD Version 1.0!
+A new manuscript detailing the construction and utilization of ISRaD was just published in <a href="https://www.earth-system-science-data.net/">Earth System Science Data</a>. Hear we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript <a href="https://earth-syst-sci-data.net/12/61/2020/">here</a>.
 
 <p align = "center">
 <img src="assets/images/ManuscriptHeader.png"
