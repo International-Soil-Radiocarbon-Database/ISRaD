@@ -173,6 +173,10 @@
 
     .page__title {
       font-size: $type-size-2;
+<<<<<<< HEAD
+=======
+      text-shadow: 10px 10px 4px rgba(#fff, 0.5);
+>>>>>>> parent of 6d0d03c... Bigger, better text shadow
       @include breakpoint($small) {
         font-size: $type-size-1;
       }
