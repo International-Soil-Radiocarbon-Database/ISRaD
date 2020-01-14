@@ -1,9 +1,8 @@
 ---
 layout: splash
-permalink: /database/
-title: <span style="color:rgb(105,89,205)">**ISRaD Database**
+title: <span style="orange">**ISRaD Database**
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_logo_long_Center.png
+  overlay_image: /assets/images/soil.jpg
 htmlwidgets: TRUE
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: splash
 permalink: /about/
-title: <span style="color:rgb(105,89,205)">**About ISRaD**
+title: <span style="orange">**About ISRaD**
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_USGS_MPI6.png
+  overlay_image: /assets/images/soil.jpg
 ---
 ## What is ISRaD?
 ISRaD is a open community repository for soil radiocarbon data.

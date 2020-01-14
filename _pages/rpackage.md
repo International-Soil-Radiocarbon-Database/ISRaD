@@ -1,9 +1,9 @@
 ---
 layout: splash
 permalink: /rpackage/
-title: <span style="color:rgb(105,89,205)">**ISRaD R Package**
+title: <span style="orange">**ISRaD R Package**
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_USGS_MPI6.png
+  overlay_image: /assets/images/soil.jpg
 ---
 
 
@@ -15,8 +15,3 @@ The compiled raw data is stored as an R object "ISRaD_data" which can be downloa
 
 ### [Have a Request?](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues/170)
 Want to see how to do something in R with the ISRaD data? The request lines are open! Make a post here describing what you'd like.
-
-
-
-
-

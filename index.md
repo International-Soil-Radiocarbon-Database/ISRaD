@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: <span style="color:orange">**I**</span>nternational <span style="color:orange">**S**</span>oil <span style="color:orange">**Ra**</span>diocarbon <span style="color:rgb(105,89,205)">**D**</span>atabase
+title: <span style="color:orange">**I**</span>nternational <span style="color:orange">**S**</span>oil <span style="color:orange">**Ra**</span>diocarbon <span style="orange">**D**</span>atabase
 header:
   overlay_image: /assets/images/soil.jpg
 feature_row:
@@ -43,11 +43,11 @@ A new manuscript detailing the construction and utilization of ISRaD was just pu
 
 
 ## What is ISRaD?
-ISRaD is a open community repository for soil radiocarbon data.  
+ISRaD is a open community repository for soil radiocarbon data.
 Our goals are:
 * To improve the use of radiocarbon as a constraint for understanding the soil carbon cycle
 * To provide a place for researchers to contribute their soil radiocarbon data once their paper is published
-* To produce tools to make the repository useful 
+* To produce tools to make the repository useful
 
 ISRaD has been developed as a collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry.
 <p align="center">
@@ -57,15 +57,12 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
 
 ## Major Updates to ISRaD
 * [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
- 
+
 
 <p align="center">
   <a class="twitter-timeline" data-height="900" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by  soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </p>
 
-## Contact 
+## Contact
 
 Please direct comments, concerns and suggestions to <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>.
-
-
-

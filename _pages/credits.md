@@ -1,19 +1,19 @@
 ---
 layout: splash
 permalink: /credits/
-title: <span style="color:rgb(105,89,205)">**Credits**
+title: <span style="orange">**Credits**
 header:
-  overlay_image: assets/images/ISRaD_logos/ISRaD_USGS_MPI6.png
+  overlay_image: /assets/images/soil.jpg
 ---
 ## Main compilations
 ISRaD has been built based on two main compilations:
  
 *  Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles. Global Change Biology, 21(11), 4278–4292. doi:10.1111/gcb.13012
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
- 
+
 ## Studies within ISRaD
 Currently, there are 137 entries in ISRaD, which are from the following publications:
- 
+
 *  Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The dynamics of organic matter in rock fragments in soil investigated by 14C dating and measurements of 13C. European Journal of Soil Science, 53(1), 147–159. doi:10.1046/j.1365-2389.2002.00432.x
 *  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
 *  Baisden, W. T., Amundson, R., Cook, A. C., & Brenner, D. L. (2002). Turnover and storage of C and N in five density fractions from California annual grassland surface soils. Global Biogeochemical Cycles, 16(4), 64–1–64–16. doi:10.1029/2001gb001822

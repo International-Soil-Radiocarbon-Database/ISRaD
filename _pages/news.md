@@ -1,14 +1,14 @@
 ---
 layout: splash
 permalink: /news/
-title: "ISRaD News"
+title: <span style="orange">**ISRaD News**
 header:
   overlay_image: /assets/images/soil.jpg
 ---
 
 ISRaD is an active community effort. Here are the latest updates!
 
-#### Comments, questions or concerns? [Post an issue](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) 
+#### Comments, questions or concerns? [Post an issue](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues)
 
 ## News - Updates 2019
 
