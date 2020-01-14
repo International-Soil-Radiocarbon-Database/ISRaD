@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: <span style="color:orange">**I**</span>nternational <span style="color:orange">**S**</span>oil <span style="color:orange">**Ra**</span>diocarbon <span style="orange">**D**</span>atabase
+title: <span style="color:orange">**I**</span>nternational <span style="color:orange">**S**</span>oil <span style="color:orange">**Ra**</span>diocarbon <span style="color:orange">**D**</span>atabase
 header:
   overlay_image: /assets/images/soil.jpg
 feature_row:
