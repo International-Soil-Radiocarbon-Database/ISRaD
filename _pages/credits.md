@@ -1,13 +1,13 @@
 ---
 layout: splash
 permalink: /credits/
-title: <span style="orange">**Credits**
+title: <span style="color:orange">**Credits**
 header:
   overlay_image: /assets/images/soil.jpg
 ---
 ## Main compilations
 ISRaD has been built based on two main compilations:
- 
+
 *  Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles. Global Change Biology, 21(11), 4278–4292. doi:10.1111/gcb.13012
 *  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
 

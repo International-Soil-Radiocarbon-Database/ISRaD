@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /rpackage/
-title: <span style="orange">**ISRaD R Package**
+title: <span style="color:orange">**ISRaD R Package**
 header:
   overlay_image: /assets/images/soil.jpg
 ---

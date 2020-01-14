@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /news/
-title: <span style="orange">**ISRaD News**
+title: <span style="color:orange">**ISRaD News**
 header:
   overlay_image: /assets/images/soil.jpg
 ---
