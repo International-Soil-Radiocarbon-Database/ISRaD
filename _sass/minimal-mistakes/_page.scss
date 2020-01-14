@@ -163,8 +163,8 @@
     .page__meta,
     .page__lead,
     .btn {
-      color: #000;
-      text-shadow: 0 0 30px rgba(#000, 0.5);
+      color: #fff;
+      text-shadow: 10px 10px 4px rgba(#fff, 0.5);
     }
 
     .page__lead {
@@ -173,7 +173,6 @@
 
     .page__title {
       font-size: $type-size-2;
-      text-shadow: 0 00 30px rgba(#fff, 0.5);
       @include breakpoint($small) {
         font-size: $type-size-1;
       }
