@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /credits/
-title: <span style="color:orange">**Credits**
+title: <span style="color:white">**Credits**
 header:
   overlay_image: /assets/images/soil.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /about/
-title: <span style="color:orange">**About ISRaD**
+title: <span style="color:white">**About ISRaD**
 header:
   overlay_image: /assets/images/soil.jpg
 ---

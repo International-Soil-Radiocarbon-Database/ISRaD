@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /contribute/
-title: <span style="color:orange">**Contribute to ISRaD**</span>
+title: <span style="color:white">**Contribute to ISRaD**</span>
 header:
   overlay_image: /assets/images/soil.jpg
 ---

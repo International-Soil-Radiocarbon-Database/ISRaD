@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /template_faq/
-title: <span style="color:orange">**Template FAQ**
+title: <span style="color:white">**Template FAQ**
 header:
   overlay_image: /assets/images/soil.jpg
 ---
