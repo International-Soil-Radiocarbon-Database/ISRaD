@@ -81,11 +81,11 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 1. If there are any NOTES, take a look at them and make sure you are okay with them. 
 1. Once your ISRaD Data File passes the ISRaD quality control report with no WARNINGS, you can submit for ingestion to the ISRaD database.
 
-*Please direct any questions, comments, or suggestions regarding the ISRaD online quality control tool to info.israd@gmail.com.*
+*Please direct any questions, comments, or suggestions regarding the ISRaD online quality control tool to <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>.*
 
 ## 5. Submitting your ISRaD Data File
 
-Email to info.israd@gmail.com:
+Email to <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>:
 1. Your ISRaD Data File (Required)
 1. ISRaD quality control report with no WARNINGS (Required)
 1. If data is from previously published work, include publication link or pdf. 
@@ -100,6 +100,6 @@ If you have questions pertaining to template entry, please start by reviewing ou
 
 If you can't find an answer to your question in the FAQ or you have a speicific suggestion for improvement or there is a problem you would like to report: please post an issue in our [Github issues ](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) page. No special permissions are required to post, although you do need to create a Github account if you don't have one already.
 
-You can also email us at *info.israd@gmail.com* and we will do our best to get back to you.
+You can also email us at *<a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>* and we will do our best to get back to you.
 
 
