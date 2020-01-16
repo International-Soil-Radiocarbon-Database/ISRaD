@@ -13,7 +13,7 @@ The ISRaD database is built from templates that each describe a single data set.
 
 
 <figure>
-	<img src="assets/images/structure_new.png" width = "500">
+	<img src="/assets/images/structure_new.png" width = "500">
 </figure>
 
 The main features include:
