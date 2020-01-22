@@ -83,3 +83,5 @@ The names of the data files reflect the current version with the following forma
 ## Database R Package download (raw R Package for advanced users)
 
 Learn more [here](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/)
+
+Photo credit to Dr. Asmeret Berhe.
