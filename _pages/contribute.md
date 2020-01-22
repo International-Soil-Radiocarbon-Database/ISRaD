@@ -21,7 +21,7 @@ By contributing to ISRaD you are joining an international community of researche
 1. [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx)
 1. [Frequenty Asked Questions (FAQ)](https://international-soil-radiocarbon-database.github.io/ISRaD/template_faq/)
 1. [Online QAQC Tool](https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/)
-1. Contact: info.israd@gmail.com
+1. Contact: <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>
 
 ## How to Add Data to ISRaD:
 
@@ -42,16 +42,16 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 
 ## 2. Getting started and key information for entering or working with ISRaD
 
-* **Template** – This is a structured spreadsheet for data entry. Download it [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Master_Template.xlsx)
-* **Hierarchy** – The [ISRaD data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/) is hierarchical. Each level of the hierarchy is represented by a tab in the template spreadsheet
+* **Template** – This is a structured spreadsheet for data entry. Download it [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Master_Template.xlsx).
+* **Hierarchy** – The [ISRaD data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/) is hierarchical. Each level of the hierarchy is represented by a tab in the template spreadsheet.
 * **Original vs derived data** – ISRaD aggregates original data. In most cases, derived values and calculations are not stored within ISRaD
-* **Required Fields** – These are indicated in red. Other fields are optional - enter those relevant to your dataset
-* **Controlled vocabulary** – We use this to standardize the data entry process. These are captured with dropdown menus, and are also listed on the “controlled vocabulary” tab
+* **Required Fields** – These are indicated in red. Other fields are optional - enter those relevant to your dataset.
+* **Controlled vocabulary** – We use this to standardize the data entry process. These are captured with dropdown menus, and are also listed on the “controlled vocabulary” tab.
 * **Defining Site vs Profile (vs Plot)** – Use Site & Profile tabs to capture the spatial structure of your data. Samples collected in a similar location (within approx. 5km of each other) should be grouped under the same “Site” designation. More detailed sampling locations should be listed as “Profiles”. Each site must have a unique set of coordinates for the general location. Profiles can also have more specific coordinates (optional).
 * **Depth Convention** – Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the “lyr_all_org_neg” column to flag this.
 * **Peatlands** – If depths are reported from the peat surface, use the “lyr_all_org_neg” column to flag this. Macrofossil data should be entered on the fraction tab.
 * **Control/Treatment** – Please designate if this data is from a manipulation experiment (e.g. fertilizer application, warming study, etc). Naturally burned areas and agricultural sites are considered “Control” unless additionally manipulated.
-* **Coordinates** – Follow [this convention](https://en.wikipedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg). Don’t forget the negatives! Unsure? [Test your coordinates](https://www.google.com/maps/) to make sure they are not in the ocean
+* **Coordinates** – Follow [this convention](https://en.wikipedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg). Don’t forget the negatives! Unsure? [Test your coordinates](https://www.google.com/maps/) to make sure they are not in the ocean.
 * **Naming Convention & Unique Names** – You can choose any names for your sites, profiles, etc. Names can repeat, but each sequence of names “Site/Profile/Layer/etc” must be unique. (e.g. “HarvardForest/Profile1/AHorizon” and “HarvardForest/Profile2/AHorizon” are acceptable combinations, although “AHorizon” is a repeated layer name.)
 * **Lots of other things** – Please review the "Contributing to the database" section of our [Frequenty Asked Questions (FAQ)](https://international-soil-radiocarbon-database.github.io/ISRaD/template_faq/) page.
 

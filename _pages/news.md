@@ -18,4 +18,4 @@ ISRaD is an active community effort. Here are the latest updates!
 ## News - Updates 2018
 
 * We now have an FAQ page available [here.](https://international-soil-radiocarbon-database.github.io/ISRaD/template_faq/)
-* Marcus Guderle is the new ISRaD Editor, managing new data submissions & keeping the compiled database up to date. Contact: info.israd@gmail.com
+* Marcus Guderle is the new ISRaD Editor, managing new data submissions & keeping the compiled database up to date. Contact:<a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>
