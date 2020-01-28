@@ -2,9 +2,9 @@
 #'
 #' @description Extracts data from a user-supplied raster file and adds data as a new variable at the profile level
 #' @param database ISRaD dataset object
-#' @param geodata_directory directory where geospatial data are found
-#' @param crs coordinate reference system used for geospatial datasets
-#' @param fillWorldClim option to fill climate data from the Worldclim dataset (downloads data from web)
+#' @param geodata_directory Directory where geospatial data are found
+#' @param crs Coordinate reference system used for geospatial datasets
+#' @param fillWorldClim Option to fill climate data from the Worldclim dataset (downloads data from web)
 #' @details Generic function that uses geographic coordinates of profiles to extract data from one or more raster files.
 #' Raster data will be added as new variables at the profile level.\cr
 #' The new variable name will be a concatenation of "pro_", and the file name (excluding the file extension).

@@ -1,15 +1,15 @@
 #' QAQC
 #'
-#' @description Check the imported soil carbon dataset for formatting and entry errors
+#' @description Checks template files for data coherence, formatting, and data entry errors
 #'
-#' @details This function is also called by the online QAQC tool available at the ISRaD website <http://soilradiocarbon.org>.
-#' @param file directory to data file
-#' @param writeQCreport if TRUE, a text report of the QC output will be written to the outfile. Default is FALSE
-#' @param outfile_QAQC filename of the output file if writeQCreport==TRUE. Default is NULL, and the outfile will be written to the directory where the dataset is stored, and named by the dataset being checked.
-#' @param summaryStats prints summary statistics. Default is TRUE
-#' @param dataReport prints list structure of database. Default is FALSE
-#' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
-#' @param verbose set to TRUE to print results of function
+#' @details This function can also be called from the ISRaD website (<http://soilradiocarbon.org>).
+#' @param file File path for template file to be checked
+#' @param writeQCreport If TRUE, a text report of the QC output will be written to the outfile. Default is FALSE
+#' @param outfile_QAQC Filename of the output file (if writeQCreport==TRUE). Default is NULL, with the outfile being written to the directory where the template file is stored and named according to the file being checked.
+#' @param summaryStats Prints summary statistics. Default is TRUE.
+#' @param dataReport Prints list structure of database. Default is FALSE.
+#' @param checkdoi Set to FALSE if you do not want the QAQC check to validate DOIs (if TRUE this will be time consuming). Default is TRUE.
+#' @param verbose Set to TRUE to print results of function to console. Default is TRUE.
 #' @import openxlsx
 #' @import dplyr
 #' @import tidyr

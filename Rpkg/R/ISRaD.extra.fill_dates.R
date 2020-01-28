@@ -2,9 +2,9 @@
 #'
 #' @description Fills frc_obs_date_y and inc_obs_date_y columns from lyr_obs_date_y if not reported.
 #' @param database ISRaD dataset object.
-#' @details This function must be run prior to the ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta for the layer and fraction tables.
+#' @details QAQC does not require frc_obs_date_y or inc_obs_date_y fields to be filled in. Therefore it is recommended to run this function prior to running the functions ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta, which require xxx_obs_date_y data.
 #' @export
-#' @return returns ISRaD_data object with filled obs_date_y columns
+#' @return returns ISRaD_data object with filled frc_obs_date_y and inc_obs_date_y fields.
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001

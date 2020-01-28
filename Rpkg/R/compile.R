@@ -1,21 +1,18 @@
 #' Compile ISRaD data product
 #'
-#' Construct data products to the International Soil Radiocarbon Database.
+#' Compiles template files into ISRaD database format.
 #'
-#' @param dataset_directory string defining directory where completed and
-#' QC passed soilcarbon datasets are stored
-#' @param write_report boolean flag to write a log file of the
+#' @param dataset_directory Directory where completed QAQCed template files are stored.
+#' @param write_report Boolean flag to write a log file of the
 #' compilation. File will be in the specified
-#' dataset_directory at "database/ISRaD_log.txt". If there is a file already
-#' there of this name it will be overwritten.
-#' @param write_out boolean flag to write the compiled database file as .xlsx
+#' dataset_directory at "database/ISRaD_log.txt". If a file with this name already
+#' exists in this directory it will be overwritten.
+#' @param write_out Set to TRUE to write the compiled database file in .xlsx format
 #' in dataset_directory
-#' @param return_type a string that defines return object.
-#' Default is "list".
-#' Acceptable values are "none" or "list" depending on the format you want to
-#' have the database returned in.
-#' @param checkdoi set to F if you do not want the QAQC check to validate doi numbers
-#' @param verbose set to TRUE to print results of function to console
+#' @param return_type A string that defines return object.
+#' Acceptable values are "none" or "list"; default is "list".
+#' @param checkdoi Set to FALSE if you do not want to validate DOIs during QAQC. (Warning: time consuming).
+#' @param verbose Set to TRUE to print results of function to console.
 #'
 #' @export
 #'

@@ -10,11 +10,14 @@
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
+#' # Note that flx_14c values are NA
+#' is.na(database$flux$flx_14c)
 #' # Fill dates
 #' database.x <- ISRaD.extra.fill_dates(database)
 #' # Fill delta 14C from fraction modern
 #' database.x <- ISRaD.extra.fill_14c(database.x)
 #' # Column flx_14c in the "flux" table is now filled
+#' is.na(database$flux$flx_14c)
 
 ISRaD.extra.fill_14c<- function(database) {
 

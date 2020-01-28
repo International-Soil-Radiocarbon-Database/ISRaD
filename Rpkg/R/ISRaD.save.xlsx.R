@@ -2,8 +2,8 @@
 #'
 #' @description Saves ISRaD data object as .xlsx file in ISRaD template format
 #' @param database ISRaD data object.
-#' @param outfile path and name to save the excel file
-#' @param template_file path and name of template file to use (defaults to ISRaD_Master_Template).
+#' @param outfile Directory path and file name for saving .xlsx file
+#' @param template_file Directory path and name of template file to use (defaults to the ISRaD_Master_Template file built into the package). Not recommended to change this.
 #' @author J Grey Monroe
 #' @export
 #' @import openxlsx

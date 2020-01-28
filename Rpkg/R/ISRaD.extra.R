@@ -1,11 +1,11 @@
 #' ISRaD.extra
 #'
 #' @description Fills in transformed and geospatial data where possible, generating an enhanced version of ISRaD.
-#' @param database soilcarbon dataset object
+#' @param database ISRaD dataset object
 #' @param geodata_directory directory where geospatial data are found
-#' @details Fills fraction modern, delta 14C, delta-delta values, profile coordinates, BD, orgC, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
+#' @details Fills fraction modern, delta 14C, delta-delta, profile coordinates, bulk density, organic C concentration, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
 #' @export
-#' @return returns new ISRaD_extra object with derived, transformed, and filled columns
+#' @return Returns new ISRaD_extra object with derived, transformed, and filled columns
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
