@@ -10,13 +10,13 @@ ISRaD.extra.fill_dates(database)
 \item{database}{ISRaD dataset object.}
 }
 \value{
-returns ISRaD_data object with filled obs_date_y columns
+returns ISRaD_data object with filled frc_obs_date_y and inc_obs_date_y fields.
 }
 \description{
 Fills frc_obs_date_y and inc_obs_date_y columns from lyr_obs_date_y if not reported.
 }
 \details{
-This function must be run prior to the ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta for the layer and fraction tables.
+QAQC does not require frc_obs_date_y or inc_obs_date_y fields to be filled in. Therefore it is recommended to run this function prior to running the functions ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta, which require xxx_obs_date_y data.
 }
 \examples{
 # Load example dataset Gaudinski_2001

@@ -8,25 +8,25 @@ QAQC(file, writeQCreport = F, outfile_QAQC = "", summaryStats = T,
   dataReport = F, checkdoi = T, verbose = T)
 }
 \arguments{
-\item{file}{directory to data file}
+\item{file}{File path for template file to be checked}
 
-\item{writeQCreport}{if TRUE, a text report of the QC output will be written to the outfile. Default is FALSE}
+\item{writeQCreport}{If TRUE, a text report of the QC output will be written to the outfile. Default is FALSE}
 
-\item{outfile_QAQC}{filename of the output file if writeQCreport==TRUE. Default is NULL, and the outfile will be written to the directory where the dataset is stored, and named by the dataset being checked.}
+\item{outfile_QAQC}{Filename of the output file (if writeQCreport==TRUE). Default is NULL, with the outfile being written to the directory where the template file is stored and named according to the file being checked.}
 
-\item{summaryStats}{prints summary statistics. Default is TRUE}
+\item{summaryStats}{Prints summary statistics. Default is TRUE.}
 
-\item{dataReport}{prints list structure of database. Default is FALSE}
+\item{dataReport}{Prints list structure of database. Default is FALSE.}
 
-\item{checkdoi}{set to F if you do not want the QAQC check to validate doi numbers}
+\item{checkdoi}{Set to FALSE if you do not want the QAQC check to validate DOIs (if TRUE this will be time consuming). Default is TRUE.}
 
-\item{verbose}{set to TRUE to print results of function}
+\item{verbose}{Set to TRUE to print results of function to console. Default is TRUE.}
 }
 \description{
-Check the imported soil carbon dataset for formatting and entry errors
+Checks template files for data coherence, formatting, and data entry errors
 }
 \details{
-This function is also called by the online QAQC tool available at the ISRaD website <http://soilradiocarbon.org>.
+This function can also be called from the ISRaD website (<http://soilradiocarbon.org>).
 }
 \examples{
 \donttest{

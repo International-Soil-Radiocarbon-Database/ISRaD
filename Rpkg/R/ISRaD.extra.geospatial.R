@@ -38,7 +38,7 @@
 #' bio19 = Precipitation of Coldest Quarter\cr
 #' @export
 #' @return returns updated ISRaD_extra object with new columns at the profile level
-#' @example
+#' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001

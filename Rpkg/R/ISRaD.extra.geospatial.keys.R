@@ -8,7 +8,7 @@
 #' Additionally, the first column of the .csv file must contain the numeric identifier and the second column the corresponding character value.
 #' @export
 #' @return returns updated ISRaD_extra object with recoded columns
-#' @example
+#' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
@@ -18,7 +18,8 @@
 #' database.x <- ISRaD.extra.geospatial(database,
 #'  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
 #'  fillWorldClim = FALSE)
-#' # NB: example geospatial data in the ISRaD package have been clipped to the extent of the Gaudinski_2001 dataset
+#' # NB: example geospatial data in the ISRaD package have been clipped
+#' #     to the extent of the Gaudinski_2001 dataset
 #' database.x <- ISRaD.extra.geospatial.keys(database.x,
 #'  geodata_keys = system.file("extdata", "geodata_keys", package = "ISRaD"))
 #' }

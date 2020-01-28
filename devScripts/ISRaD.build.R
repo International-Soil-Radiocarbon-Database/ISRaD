@@ -207,9 +207,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
   }
   }
 
-
-  system(paste0("rm ", paste0(ISRaD_directory, "/Rpkg"), "/ISRaD.pdf"))
-  devtools::build_manual(paste0(getwd(),"/Rpkg"), paste0(getwd(),"/Rpkg"))
+  devtools::build_manual()
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github?")
   if (reviewed==1){

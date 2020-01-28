@@ -19,6 +19,22 @@ Recode numeric values from categorical geospatial data products
 }
 \details{
 Generic function that reads .csv files paired with categorical raster data and recodes extracted data in the ISRaD_extra object.
-For the function to work, the .csv filenames must be identical to the corresponding raster filenames, except for the file extension.
+For the function to work, the .csv filenames must be identical to the corresponding raster filenames (except for the file extension).
 Additionally, the first column of the .csv file must contain the numeric identifier and the second column the corresponding character value.
+}
+\examples{
+\donttest{
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
+# Fill profile coordinates
+database <- ISRaD.extra.fill_coords(database)
+# Fill geospatial data
+database.x <- ISRaD.extra.geospatial(database,
+ geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
+ fillWorldClim = FALSE)
+# NB: example geospatial data in the ISRaD package have been clipped
+#     to the extent of the Gaudinski_2001 dataset
+database.x <- ISRaD.extra.geospatial.keys(database.x,
+ geodata_keys = system.file("extdata", "geodata_keys", package = "ISRaD"))
+}
 }

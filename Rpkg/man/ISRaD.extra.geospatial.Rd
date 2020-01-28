@@ -11,11 +11,11 @@ ISRaD.extra.geospatial(database, geodata_directory,
 \arguments{
 \item{database}{ISRaD dataset object}
 
-\item{geodata_directory}{directory where geospatial data are found}
+\item{geodata_directory}{Directory where geospatial data are found}
 
-\item{crs}{coordinate reference system used for geospatial datasets}
+\item{crs}{Coordinate reference system used for geospatial datasets}
 
-\item{fillWorldClim}{option to fill climate data from the Worldclim dataset (downloads data from web)}
+\item{fillWorldClim}{Option to fill climate data from the Worldclim dataset (downloads data from web)}
 }
 \value{
 returns updated ISRaD_extra object with new columns at the profile level
@@ -55,4 +55,18 @@ bio16 = Precipitation of Wettest Quarter,\cr
 bio17 = Precipitation of Driest Quarter,\cr
 bio18 = Precipitation of Warmest Quarter,\cr
 bio19 = Precipitation of Coldest Quarter\cr
+}
+\examples{
+\donttest{
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
+# Fill profile coordinates
+database <- ISRaD.extra.fill_coords(database)
+# Run function
+# Note that geospatial data in pkg is only for the Gaudinski_2001 dataset
+# Users may supply their own geospatial data as long as it can be read by the raster package
+database.x <- ISRaD.extra.geospatial(database,
+ geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
+ fillWorldClim = TRUE)
+}
 }

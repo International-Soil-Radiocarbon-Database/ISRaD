@@ -10,9 +10,9 @@ ISRaD.save.xlsx(database, template_file = system.file("extdata",
 \arguments{
 \item{database}{ISRaD data object.}
 
-\item{template_file}{path and name of template file to use (defaults to ISRaD_Master_Template).}
+\item{template_file}{Directory path and name of template file to use (defaults to the ISRaD_Master_Template file built into the package). Not recommended to change this.}
 
-\item{outfile}{path and name to save the excel file}
+\item{outfile}{Directory path and file name for saving .xlsx file}
 }
 \description{
 Saves ISRaD data object as .xlsx file in ISRaD template format

@@ -7,18 +7,18 @@
 ISRaD.extra(database, geodata_directory)
 }
 \arguments{
-\item{database}{soilcarbon dataset object}
+\item{database}{ISRaD dataset object}
 
 \item{geodata_directory}{directory where geospatial data are found}
 }
 \value{
-returns new ISRaD_extra object with derived, transformed, and filled columns
+Returns new ISRaD_extra object with derived, transformed, and filled columns
 }
 \description{
 Fills in transformed and geospatial data where possible, generating an enhanced version of ISRaD.
 }
 \details{
-Fills fraction modern, delta 14C, delta-delta values, profile coordinates, BD, orgC, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
+Fills fraction modern, delta 14C, delta-delta, profile coordinates, bulk density, organic C concentration, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
 }
 \examples{
 \donttest{
