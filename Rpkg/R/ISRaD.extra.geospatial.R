@@ -6,16 +6,16 @@
 #' @param crs Coordinate reference system used for geospatial datasets
 #' @param fillWorldClim Option to fill climate data from the Worldclim dataset (downloads data from web)
 #' @details Generic function that uses geographic coordinates of profiles to extract data from one or more raster files.
-#' Raster data will be added as new variables at the profile level.\cr
+#' Raster data will be added as new variables at the profile level.\cr\cr
 #' The new variable name will be a concatenation of "pro_", and the file name (excluding the file extension).
-#' The ISRaD recommended file name convention for geospatial files uses a 6 component string, separated by "_". Missing components can be replaced with "x" ("x"s will be dropped before creating variable names). The 6 components are as follows:\cr
+#' The ISRaD file name convention for geospatial files uses a 6 component string, separated by "_". Missing components can be replaced with "x" ("x"s will be dropped before creating variable names). The 6 components are as follows:\cr\cr
 #' 1) Short description of the data type, e.g. "bd" for bulk density\cr
 #' 2) Top layer depth or exact depth (numeric, cm)\cr
 #' 3) Bottom layer depth (numeric, cm)\cr
 #' 4) Year of data observation (numeric)\cr
 #' 5) Data units (e.g. mmyr for mean annual precipitation)\cr
-#' 6) Any relevant notes\cr
-#' Coordinate reference system can be specified with the "crs" argument; default is WGS84. Note that all files in geodata_directory must use the same crs.\cr
+#' 6) Any relevant notes\cr\cr
+#' Coordinate reference system can be specified with the "crs" argument; default is WGS84. Note that all files in geodata_directory must use the same crs.\cr\cr
 #' Option "fillWorldClim" fills climate data from worldclim V1.4 at 2.5 resolution (http://www.worldclim.org/bioclim). Variable descriptions are as follows:\cr
 #' bio1 = Annual Mean Temperature,\cr
 #' bio2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),\cr
