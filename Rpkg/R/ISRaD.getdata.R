@@ -1,6 +1,6 @@
 #' ISRaD.getdata
 #'
-#' @description: Retrieves most recent version of ISRaD data from github
+#' @description Retrieves most recent version of ISRaD data from github
 #' @param directory Location of ISRaD_database_files folder. If not found, it will be created.
 #' @param dataset Specify which data you want. Options are c("full", flux","interstitial","incubation","fraction","layer")
 #' @param extra TRUE/FALSE. If TRUE, the ISRaD_extra object will be returned. If FALSE, ISRaD_data will be returned. Default is FALSE.

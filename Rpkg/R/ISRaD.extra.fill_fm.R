@@ -2,9 +2,9 @@
 #'
 #' @description Fills fraction modern from delta 14C if fraction modern not reported.
 #' @param database ISRaD dataset object.
-#' @details: Warning: xxx_obs_date_y columns must be filled for this to work!
-#' @author: J. Beem-Miller & A. Hoyt
-#' @references: Stuiver and Polach, 1977
+#' @details Warning: xxx_obs_date_y columns must be filled for this to work!
+#' @author J. Beem-Miller & A. Hoyt
+#' @references Stuiver and Polach, 1977
 #' @export
 #' @return returns ISRaD_data object with filled fraction modern columns
 #' @examples
