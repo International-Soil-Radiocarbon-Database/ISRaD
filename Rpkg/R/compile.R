@@ -151,7 +151,7 @@ compile <- function(dataset_directory,
           if(sum(diffs) == 0) {
             if(verbose) cat("\n\n",d, "compiling", basename(data_files[d]), "...", "passed", file=outfile, append = TRUE)
             # merge with ISRaD_database (warnings suppressed b/c variable types will be converted later)
-            suppressWarnings(ISRaD_database <- mapply(bind_rows, template, entry))
+            suppressWarnings(ISRaD_database <- mapply(bind_rows, ISRaD_database, entry))
           } else {
             if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
             if(checkdoi==TRUE) {
