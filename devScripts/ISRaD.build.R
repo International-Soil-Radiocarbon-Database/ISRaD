@@ -192,8 +192,8 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
 
   message("\tUpdating documentation and running check()...\n")
 
-  devtools::document(pkg = paste0(ISRaD_directory,"/Rpkg"))
-  devtools::check(pkg=paste0(ISRaD_directory,"/Rpkg"), manual = T, cran = T, run_dont_test = T)
+  setwd(paste0(ISRaD_directory,"Rpkg"))
+  devtools::check(document = T, manual = T, cran = T, run_dont_test = T)
 
   errors<-1
   while(errors==1){
@@ -206,8 +206,6 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
    }
   }
   }
-
-  devtools::build_manual()
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github?")
   if (reviewed==1){
