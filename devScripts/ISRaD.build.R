@@ -101,13 +101,12 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
   # tag data w/ version number and date
   DESC<-readLines(paste0(ISRaD_directory, "/Rpkg", "/DESCRIPTION"))
   version<-unlist(strsplit(DESC[3],split = "\\."))
-  version<-unlist(strsplit(version,split = "\\ "))
-  version[4]<-as.numeric(version[4])+1 # updates patch version # (third column), use for codebase changes
+  version[3]<-as.numeric(version[3])+1 # updates patch version # (third column), use for codebase changes
   if(length(new_entries)!=0) {
-    version[3]<-as.numeric(version[3])+1 # updates minor version # (second column), use for data changes (new templates)
+    version[2]<-as.numeric(version[2])+1 # updates minor version # (second column), use for data changes (new templates)
   }
   v<-paste0("v",
-           do.call(paste0, lapply(version[2:4], function(x) paste0(x, "."))),
+           do.call(paste0, lapply(version[2:3], function(x) paste0(x, "."))),
            as.character(Sys.Date()))
 
   ISRaD_data<-ISRaD_data_compiled
