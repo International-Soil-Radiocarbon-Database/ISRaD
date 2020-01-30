@@ -16,7 +16,7 @@ returns ISRaD_data object with filled fraction modern columns
 Fills fraction modern from delta 14C if fraction modern not reported.
 }
 \details{
-: Warning: xxx_obs_date_y columns must be filled for this to work!
+Warning: xxx_obs_date_y columns must be filled for this to work!
 }
 \examples{
 # Load example dataset Gaudinski_2001
@@ -27,8 +27,8 @@ database.x <- ISRaD.extra.fill_dates(database)
 database.x <- ISRaD.extra.fill_fm(database.x)
 }
 \references{
-: Stuiver and Polach, 1977
+Stuiver and Polach, 1977
 }
 \author{
-: J. Beem-Miller & A. Hoyt
+J. Beem-Miller & A. Hoyt
 }

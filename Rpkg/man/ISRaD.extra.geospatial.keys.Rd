@@ -32,8 +32,7 @@ database <- ISRaD.extra.fill_coords(database)
 database.x <- ISRaD.extra.geospatial(database,
  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
  fillWorldClim = FALSE)
-# NB: example geospatial data in the ISRaD package have been clipped
-#     to the extent of the Gaudinski_2001 dataset
+# Recode numeric data to categorical
 database.x <- ISRaD.extra.geospatial.keys(database.x,
  geodata_keys = system.file("extdata", "geodata_keys", package = "ISRaD"))
 }
