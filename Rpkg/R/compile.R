@@ -239,10 +239,11 @@ compile <- function(dataset_directory,
     ISRaD_database_excel$fraction<-rbind(template$fraction,ISRaD_database$fraction)
     ISRaD_database_excel$incubation<-rbind(template$incubation,ISRaD_database$incubation)
     ISRaD_database_excel$`controlled vocabulary`<-template$`controlled vocabulary`
-
+    ISRaD_database_excel<-lapply(ISRaD_database_excel, function(x) x %>% dplyr::mutate_all(as.character))
 
     if(write_out) {
-      openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx"))
+      # suppressMessages call due to use of deprecated "zip" fx use in write.xlsx
+      suppressMessages(openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx")))
     }
 
     if(verbose) cat("\n", rep("-", 20), file=outfile, append = TRUE)
