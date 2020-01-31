@@ -84,6 +84,11 @@ compile <- function(dataset_directory,
     data_files <- list.files(dataset_directory, full.names = TRUE)
     data_files <- data_files[grep("\\.xlsx", data_files)]
 
+    if(verbose) {
+      cat("Compiling and checking template files...\n")
+      pb <- utils::txtProgressBar(min = 1, max = length(data_files), style = 3)
+    }
+
     # check if previous ISRaD database exists in database directory, and only run QAQC on new templates
     if(file.exists(file.path(dataset_directory, "database", "ISRaD_list.xlsx"))) {
 
@@ -100,7 +105,7 @@ compile <- function(dataset_directory,
 
       # compile new templates and check against existing data
       for(d in 1:length(data_files)) {
-
+        if(verbose) setTxtProgressBar(pb, d)
         # compile template files into list
         soilcarbon_data<-lapply(getSheetNames(data_files[d])[1:8], function(s) read.xlsx(data_files[d] , sheet=s))
         names(soilcarbon_data)<-getSheetNames(data_files[d])[1:8]
@@ -175,9 +180,9 @@ compile <- function(dataset_directory,
 
     } else {
 
-      if(verbose) cat("\nno existing ISRaD database found...","\n")
+      if(verbose) cat("\nno existing ISRaD database found...","\n", file=outfile, append = TRUE)
       for(d in 1:length(data_files)) {
-
+        if(verbose) setTxtProgressBar(pb, d)
         if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
         if(checkdoi==TRUE) {
           soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = TRUE, verbose = TRUE)
