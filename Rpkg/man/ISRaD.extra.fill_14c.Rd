@@ -13,10 +13,10 @@ ISRaD.extra.fill_14c(database)
 returns ISRaD_data object with filled delta 14C columns
 }
 \description{
-: Fills delta 14C from fraction modern if delta 14C not reported.
+Fills delta 14C from fraction modern if delta 14C not reported.
 }
 \details{
-: Warning: xxx_obs_date_y columns must be filled for this to work!
+Warning: xxx_obs_date_y columns must be filled for this to work!
 }
 \examples{
 # Load example dataset Gaudinski_2001
@@ -31,8 +31,8 @@ database.x <- ISRaD.extra.fill_14c(database.x)
 is.na(database$flux$flx_14c)
 }
 \references{
-: Stuiver and Polach, 1977
+Stuiver and Polach, 1977
 }
 \author{
-: J. Beem-Miller & A. Hoyt
+J. Beem-Miller & A. Hoyt
 }

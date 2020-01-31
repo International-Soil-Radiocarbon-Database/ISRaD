@@ -100,15 +100,15 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
 
   # tag data w/ version number and date
   DESC<-readLines(paste0(ISRaD_directory, "/Rpkg", "/DESCRIPTION"))
-  version<-unlist(strsplit(DESC[3],split = "\\."))
-  version<-unlist(strsplit(version,split = "\\ "))
+  version<-unlist(strsplit(DESC[3],split = "\\:"))
+  version<-unlist(strsplit(version,split = "\\."))
   version[4]<-as.numeric(version[4])+1 # updates patch version # (third column), use for codebase changes
   if(length(new_entries)!=0) {
     version[3]<-as.numeric(version[3])+1 # updates minor version # (second column), use for data changes (new templates)
   }
   v<-paste0("v",
-           do.call(paste0, lapply(version[2:4], function(x) paste0(x, "."))),
-           as.character(Sys.Date()))
+            do.call(paste0, lapply(version[2:4], function(x) paste0(x, "."))),
+            as.character(Sys.Date()))
 
   ISRaD_data<-ISRaD_data_compiled
   attributes(ISRaD_data)$version<-v
@@ -192,8 +192,8 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
 
   message("\tUpdating documentation and running check()...\n")
 
-  devtools::document(pkg = paste0(ISRaD_directory,"/Rpkg"))
-  devtools::check(pkg=paste0(ISRaD_directory,"/Rpkg"), manual = T, cran = T, run_dont_test = T)
+  setwd(paste0(ISRaD_directory,"Rpkg"))
+  devtools::check(document = T, manual = T, cran = T, run_dont_test = T)
 
   errors<-1
   while(errors==1){
@@ -206,8 +206,6 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
    }
   }
   }
-
-  devtools::build_manual()
 
   reviewed<-utils::menu(c("Yes", "No"), title="Are you going to push this to github?")
   if (reviewed==1){

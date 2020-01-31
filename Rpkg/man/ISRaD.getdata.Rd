@@ -20,7 +20,7 @@ ISRaD.getdata(directory, dataset = "full", extra = F,
 ISRaD data object
 }
 \description{
-: Retrieves most recent version of ISRaD data from github
+Retrieves most recent version of ISRaD data from github
 }
 \examples{
 # Return full dataset ("full")

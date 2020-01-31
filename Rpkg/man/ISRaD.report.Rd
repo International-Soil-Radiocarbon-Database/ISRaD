@@ -15,7 +15,7 @@ ISRaD.report(database, report)
 Generate basic summary reports of ISRaD data
 }
 \details{
-: Wrapper for the simple reporting functions ISRaD.rep.count.all, ISRaD.rep.count.frc, ISRaD.rep.entry.stats, ISRaD.rep.site.map
+Wrapper for the simple reporting functions ISRaD.rep.count.all, ISRaD.rep.count.frc, ISRaD.rep.entry.stats, ISRaD.rep.site.map
 }
 \examples{
 \donttest{
