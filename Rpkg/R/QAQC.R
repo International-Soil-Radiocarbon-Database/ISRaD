@@ -164,7 +164,6 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
     tab<-names(data)[t]
     if(verbose) cat("\n",tab,"tab...", file=outfile_QAQC, append = T)
     required_colnames<-template_info[[tab]]$Column_Name[template_info[[tab]]$Required=="Yes"]
-    template_info[["flux"]]$Column_Name
 
     missing_values<-sapply(required_colnames, function(c) NA %in% data[[tab]][[c]])
     T %in% unlist(missing_values)
