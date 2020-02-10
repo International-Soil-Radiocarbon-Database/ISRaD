@@ -180,11 +180,11 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
 
   h2="## Studies within ISRaD"
   n=length(cleandois)
-  p2=paste("Currently, there are", n, "entries in ISRaD, which are from the following publications:")
+  p2=paste("Currently, there are", n, "entries (unique DOIs) in ISRaD, which are from the following publications:")
 
   # Print markdown file for website
-  message(c(h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
-        h2, p2, " ", paste("* ",a)), sep="\n", file="ISRaD_data_files/database/credits.md")
+  cat(c(h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
+        h2, p2, " ", paste("* ",a)), sep="\n", file=file.path(ISRaD_directory,"ISRaD_data_files/database/credits.md"))
 
   }
 
