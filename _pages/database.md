@@ -19,7 +19,7 @@ There are two different versions of the compiled database:
 Descriptions of all ISRaD variables are available in the [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information File](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx)
 
 ## Data Files
-*The following files are included in the [ISRaD_database_files.zip](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/ISRaD_database_files.zip) archive*
+The following files are included in the [ISRaD_database_files.zip](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/ISRaD_database_files.zip) archive:
 ### Hierarchical data:
 *	*ISRaD_data_vX_date.xlsx* - Full hierarchical database with additional columns compiled in a single .xlsx template.
 *	*ISRaD_data_vX_date.rda* - Same but in R data format
