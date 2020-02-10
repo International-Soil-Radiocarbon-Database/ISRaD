@@ -3,7 +3,7 @@
 # ISRaD
 Repository for the development and release of ISRaD data and tools
 
-Visit [soilradiocarbon.org](www.soilradiocarbon.org) for more information
+*Visit [soilradiocarbon.org](www.soilradiocarbon.org) for more information*
 
 # The ISRaD R package is now on CRAN! 
 Note that as ISRaD data is stored here on github, rather than inside of the R package, you will always be able to access the latest data directly from the version of ISRaD on CRAN.
