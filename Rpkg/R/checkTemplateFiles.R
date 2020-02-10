@@ -10,7 +10,7 @@
 #' @examples
 #' checkTemplateFiles()
 
-checkTemplateFiles <- function(outfile='', verbose=T) {
+checkTemplateFiles <- function(outfile='', verbose=TRUE) {
 
   if(verbose) cat("\nChecking compatibility between ISRaD template and info file...",
                   file=outfile, append = TRUE)
@@ -45,7 +45,7 @@ checkTemplateFiles <- function(outfile='', verbose=T) {
   }
 
   if(verbose) cat("\nChecking controlled vocab between ISRaD template and info file...",
-                  file=outfile, append = T)
+                  file=outfile, append = TRUE)
 
   ##Strip out the extra header
   template_vocab <- template$`controlled vocabulary`#pull the control vocab in template

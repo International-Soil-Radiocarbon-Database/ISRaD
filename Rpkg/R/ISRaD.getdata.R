@@ -15,7 +15,7 @@
 #' # Return only fraction data, including filled fraction data
 #' ISRaD_fractions <- ISRaD.getdata(tempdir(), dataset = "fraction", extra = TRUE)
 
-ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download = F){
+ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download = FALSE){
 
   dataURL<-"https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
 
@@ -40,7 +40,7 @@ ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download =
     reviewed<-utils::menu(c("Yes", "No"), title="Are you sure you want to replace these with the newest version? You can copy them to a new directory now if you want keep them.")
     print(reviewed)
     if (reviewed == 1){
-      for(f in list.files(normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")), full.names=T)){
+      for(f in list.files(normalizePath(winslash="\\", paste0(directory, "/ISRaD_database_files")), full.names=TRUE)){
         file.remove(f)
       }
     }else {stop("Ok, keeping the old files. You can run again without force_download=T to load.")}
@@ -50,7 +50,7 @@ ISRaD.getdata<-function(directory, dataset = "full", extra = F, force_download =
   }
 
 
-database_files<-list.files(normalizePath(winslash="\\",paste0(directory, "/ISRaD_database_files")), full.names = T)
+database_files<-list.files(normalizePath(winslash="\\",paste0(directory, "/ISRaD_database_files")), full.names = TRUE)
 
 if(extra) {data_type<-"ISRaD_extra_"
   } else {data_type<-"ISRaD_data_"}

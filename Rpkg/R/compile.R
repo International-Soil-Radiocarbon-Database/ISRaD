@@ -34,7 +34,7 @@
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
-                    return_type=c('none', 'list')[2], checkdoi=F, verbose=T){
+                    return_type=c('none', 'list')[2], checkdoi=FALSE, verbose=TRUE){
 
   # Libraries used
     requireNamespace("assertthat")
@@ -104,7 +104,7 @@ compile <- function(dataset_directory,
       ISRaD_old_list <- lapply(ISRaD_old, function(x) split(x, x$entry_name))
 
       # compile new templates and check against existing data
-      for(d in 1:length(data_files)) {
+      for(d in seq_along(data_files)) {
         if(verbose) setTxtProgressBar(pb, d)
         # compile template files into list
         soilcarbon_data<-lapply(getSheetNames(data_files[d])[1:8], function(s) read.xlsx(data_files[d] , sheet=s))
@@ -112,9 +112,9 @@ compile <- function(dataset_directory,
 
         # trim description/empty rows/empty cols
         soilcarbon_data <- lapply(soilcarbon_data, function(x) x<-x[-1:-2,])
-        for (i in 1:length(soilcarbon_data)){
+        for (i in seq_along(soilcarbon_data)){
           tab<-soilcarbon_data[[i]]
-          for (j in 1:ncol(tab)){
+          for (j in seq_len(ncol(tab))){
             tab[,j][grep("^[ ]+$", tab[,j])]<-NA
           }
           soilcarbon_data[[i]]<-tab
@@ -139,7 +139,7 @@ compile <- function(dataset_directory,
 
         # Compare entry against data in existing database, "ISRaD_old"
         diffs <- vector()
-        for(i in 1:length(ISRaD_old)) {
+        for(i in seq_along(ISRaD_old)) {
 
           # Check for entry, verify tables w/ nrow = 0, and ID diffs
           if(unique(entry[["metadata"]]["entry_name"]) %in% names(ISRaD_old_list[[i]])) {
@@ -157,7 +157,7 @@ compile <- function(dataset_directory,
           suppressWarnings(ISRaD_database <- mapply(bind_rows, ISRaD_database, entry))
         } else {
           if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
-          if(checkdoi==TRUE) {
+          if(checkdoi) {
             soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = TRUE, verbose = TRUE)
           } else {
             soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = FALSE, verbose = TRUE)
@@ -170,7 +170,7 @@ compile <- function(dataset_directory,
 
           char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
 
-          for (t in 1:length(char_data)){
+          for (t in seq_along(char_data)){
             tab<-colnames(char_data)[t]
             data_tab<-char_data[[t]]
             ISRaD_database[[t]]<-bind_rows(ISRaD_database[[t]], data_tab)
@@ -181,10 +181,10 @@ compile <- function(dataset_directory,
     } else {
 
       if(verbose) cat("\nno existing ISRaD database found...","\n", file=outfile, append = TRUE)
-      for(d in 1:length(data_files)) {
+      for(d in seq_along(data_files)) {
         if(verbose) setTxtProgressBar(pb, d)
         if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
-        if(checkdoi==TRUE) {
+        if(checkdoi) {
           soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = TRUE, verbose = TRUE)
         } else {
           soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = FALSE, verbose = TRUE)
@@ -197,7 +197,7 @@ compile <- function(dataset_directory,
 
         char_data <- lapply(soilcarbon_data, function(x) x %>% mutate_all(as.character))
 
-        for (t in 1:length(char_data)){
+        for (t in seq_along(char_data)){
           tab<-colnames(char_data)[t]
           data_tab<-char_data[[t]]
           ISRaD_database[[t]]<-bind_rows(ISRaD_database[[t]], data_tab)
@@ -211,19 +211,19 @@ compile <- function(dataset_directory,
     ISRaD_database<-lapply(ISRaD_database, as.data.frame)
 
     # Return database file, logs, and reports ---------------------------------
-    if(verbose) cat("\n\n-------------\n", file=outfile, append = T)
-    if(verbose) cat("\nSummary statistics...\n", file=outfile, append = T)
+    if(verbose) cat("\n\n-------------\n", file=outfile, append = TRUE)
+    if(verbose) cat("\nSummary statistics...\n", file=outfile, append = TRUE)
 
-    for (t in 1:length(names(ISRaD_database))){
+    for (t in seq_along(names(ISRaD_database))){
       tab<-names(ISRaD_database)[t]
       data_tab<-ISRaD_database[[tab]]
-      if(verbose) cat("\n",tab,"tab...", file=outfile, append = T)
-      if(verbose) cat(nrow(data_tab), "observations", file=outfile, append = T)
+      if(verbose) cat("\n",tab,"tab...", file=outfile, append = TRUE)
+      if(verbose) cat(nrow(data_tab), "observations", file=outfile, append = TRUE)
       if (nrow(data_tab)>0){
         col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
         col_counts<-col_counts[col_counts>0]
-        for(c in 1:length(col_counts)){
-          if(verbose) cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
+        for(c in seq_along(col_counts)){
+          if(verbose) cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = TRUE)
 
         }
       }
@@ -248,7 +248,7 @@ compile <- function(dataset_directory,
 
     if(verbose) cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
-    if(write_report==T) {
+    if(write_report) {
       message("\n Compilation report saved to ", outfile, "\n", file="")
     }
 

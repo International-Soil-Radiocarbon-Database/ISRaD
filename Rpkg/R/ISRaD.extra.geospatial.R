@@ -68,8 +68,8 @@ ISRaD.extra.geospatial <- function(database,
   })
   df <- do.call(rbind, list.df)
   df.sp <- unsplit(lapply(split(df, df[1]), function(x) x[order(x[2]),]),df[1])
-  df.sp <- as.data.frame(lapply(df.sp, as.character), stringsAsFactors=F)
-  list.list <- lapply(1:nrow(df.sp), function(x) {
+  df.sp <- as.data.frame(lapply(df.sp, as.character), stringsAsFactors=FALSE)
+  list.list <- lapply(seq_len(nrow(df.sp)), function(x) {
     x <- paste(unlist(as.character(df.sp[x,])), collapse="_")
     x <- paste0(geodata_directory, "/", x)
     return(x)
@@ -87,7 +87,7 @@ ISRaD.extra.geospatial <- function(database,
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
 
-  if(fillWorldClim == TRUE) {
+  if(fillWorldClim) {
     message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
     bio<-raster::getData("worldclim", var='bio', res=2.5, path=tempdir())
     bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))

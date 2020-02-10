@@ -29,7 +29,7 @@ ISRaD.save.xlsx <- function(database,
 
   loaded_template<-loadWorkbook(template_file)
 
-  for (i in 1:length(names(database))){
+  for (i in seq_along(names(database))){
     tab<-names(database)[i]
 
       database[[tab]][]<-lapply(database[[tab]], as.character)
@@ -39,7 +39,7 @@ ISRaD.save.xlsx <- function(database,
         database[[tab]] <- template[[tab]]
       } else database[[tab]] <- dplyr::bind_rows(template[[tab]][c(1:2),], database[[tab]])
 
-    writeData(loaded_template, sheet = i, database[[tab]], rowNames = F)
+    writeData(loaded_template, sheet = i, database[[tab]], rowNames = FALSE)
 
   }
 
