@@ -1,11 +1,2 @@
-# ISRaD
-Repository for the development and release of ISRaD data and tools
-
-You can install the latest version of ISRaD R package with
-
-```
-install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg")
-```
-
-Visit our site for more information:
-https://international-soil-radiocarbon-database.github.io/ISRaD/
+# ISRaD Webpage files
+This branch hosts files for building the ISRaD webpage [soilradiocarbon.org](https://soilradiocarbon.org/)
