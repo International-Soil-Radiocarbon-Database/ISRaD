@@ -7,6 +7,7 @@ header:
 ---
 ## What is ISRaD?
 ISRaD is an **open community repository** for **soil radiocarbon data**.
+
 Our goals are:
 * To improve the use of radiocarbon as a constraint for understanding the soil carbon cycle
 * To provide a place for researchers to contribute their soil radiocarbon data once published (i.e. datasets with a DOI)
@@ -113,7 +114,7 @@ Data from ISRaD will be regularly ingested into the International Soil Carbon Ne
 
 ## Contact
 
-Please direct and comments, concerns and suggestions to info.israd@gmail.com.
+Please direct any comments, concerns, or suggestions to: info.israd@gmail.com.
 
 <p align="center">
 	<a class="twitter-timeline" data-height="500" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
