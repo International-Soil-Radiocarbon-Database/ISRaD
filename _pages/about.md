@@ -33,7 +33,7 @@ ISRaD builds on previously published compilcations of soil radiocarbon measureme
 
 * He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. **Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century**. Science, 355(6306), 1419–1424. <a href="http://doi.org/10.1126/science.aad4273">http://doi.org/10.1126/science.aad4273</a>
 
-Prior to ingenstion of data included in these past efforts, we fixed a number of errors, added missing data, and verified DOIs for all original source studies. Please also see the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/credits/">Credits</a> page for a full list of all original data sources included in the current version of ISRaD.
+Prior to ingenstion of data included in these past efforts we fixed a number of errors, added missing data, and verified DOIs for all original source studies. Please also see the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/credits/">Credits</a> page for a full list of all original data sources included in the current version of ISRaD.
 
 ## Terms of Use and Citing ISRaD
 Anyone may share or adapt the ISRaD dataset, provided they do so in accordance with the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), also referred to as CC BY. In addition, we strongly encourage ISRaD users to follow two simple guidelines for use:
