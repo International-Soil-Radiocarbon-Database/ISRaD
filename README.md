@@ -1,11 +1,11 @@
 [![Build Status](https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD.svg?branch=master)](https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD/)
 
 # ISRaD
-Repository for the development and release of ISRaD data and tools
+This is the central repository for the development and release of ISRaD data and tools.
 
-Download compiled version of ISRaD [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/ISRaD_database_files.zip)
+Download compiled version of ISRaD (the database) [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/ISRaD_database_files.zip).
 
-The [ISRaD R package](https://CRAN.R-project.org/package=ISRaD) is on [CRAN](https://cran.r-project.org/)
+The [ISRaD R package](https://CRAN.R-project.org/package=ISRaD) is on [CRAN](https://cran.r-project.org/).
 
 *To install the package, start up an R session and run the following code:*
 ```
@@ -13,7 +13,7 @@ install.packages("ISRaD")
 library(ISRaD)
 ```
 
-*For more information and to find out how to get involved visit our website [soilradiocarbon.org](www.soilradiocarbon.org)*
+*For more information, and to find out how to get involved, visit our website: [soilradiocarbon.org](www.soilradiocarbon.org)*
 
 # The ISRaD R package is now on CRAN! 
 Note that as ISRaD data is stored here on github, rather than inside of the R package, you will always be able to access the latest data from versions v1.0.0 or greater of the ISRaD package. The version on CRAN is v1.2.3.
