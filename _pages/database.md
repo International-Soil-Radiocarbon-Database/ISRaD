@@ -30,7 +30,7 @@ The following files are included in the [ISRaD_database_files.zip](https://githu
 *   *ISRaD_data_flat_incubation_vX.date.csv* - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
 
 ### Hierarchical *"ISRaD_extra"* data:
-*	*ISRaD_extra_vX.date.xlsx* - Same as ISRaD_data, but with additional calculated/filled data fields 
+*	*ISRaD_extra_vX.date.xlsx* - Same as *ISRaD_data_vX.date.xlsx*, but with additional calculated/filled data fields 
 *	*ISRaD_extra_vX.date.rda* - Same but in (binary) R data format
 
 ### Flattened *"ISRaD_extra"* data:
@@ -46,7 +46,7 @@ The following files are included in the [ISRaD_database_files.zip](https://githu
 *	*readme.txt* - Metadata and information about zip archive contents.
 
 ## Versioning
-The names of the data files reflect the version of ISRaD and the date on which the database was compiled. Names are constructed in the format **(data name)_(vX).(date).(format)**, where **data name** tells what data this is (ie. ISRaD_extra_flat_layer), **vX** refers to the official ISRaD version number (e.g. "v1.2.3"), **date** gives the date when the data were compiled (yyyy-mm-dd), and **format** is the file type.
+The names of the data files reflect the version of ISRaD used and the date on which the database was compiled. Names are constructed in the format **(data name)_(vX).(date).(format)**, where **data name** tells what data this is (ie. ISRaD_extra_flat_layer), **vX** refers to the official ISRaD version number (e.g. "v1.2.3"), **date** gives the date when the data were compiled (yyyy-mm-dd), and **format** is the file type.
 
 ## Data Structure
 
