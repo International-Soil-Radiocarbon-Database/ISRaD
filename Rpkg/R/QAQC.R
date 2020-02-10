@@ -102,9 +102,9 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   # trim description/empty rows
   data<-lapply(data, function(x) x<-x[-1:-2,])
-  for (i in 1:length(data)){
+  for (i in seq_along(data)){
     tab<-data[[i]]
-    for (j in 1:ncol(tab)){
+    for (j in seq_len(ncol(tab))){
       tab[,j][grep("^[ ]+$", tab[,j])]<-NA
     }
     data[[i]]<-tab
@@ -127,12 +127,12 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
 
   ##### check doi --------------------------------------------------------
-  if (checkdoi==T){
+  if (checkdoi==TRUE){
   if(verbose) cat("\n\nChecking dataset doi...", file=outfile_QAQC, append = T)
   dois<-data$metadata$doi
   if(is.na(dois)) dois<-""
   if(length(dois)<2){
-  for (d in 1:length(dois)){
+  for (d in seq_along(dois)){
     if((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] =="israd"))){
       if(verbose) cat("\n\tWARNING: doi not valid", file=outfile_QAQC, append = T);error<-error+1
     }
@@ -145,7 +145,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   ##### check for extra or misnamed columns ####
   if(verbose) cat("\n\nChecking for extra or misspelled column names...", file=outfile_QAQC, append = T)
-  for (t in 1:length(names(data))){
+  for (t in seq_along(names(data))){
     tab<-names(data)[t]
     if(verbose) cat("\n",tab,"tab...", file=outfile_QAQC, append = T)
     data_colnames<-colnames(data[[tab]])
@@ -160,7 +160,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
   ##### check for missing values in required columns ####
   if(verbose) cat("\n\nChecking for missing values in required columns...", file=outfile_QAQC, append = T)
-  for (t in 1:length(names(data))){
+  for (t in seq_along(names(data))){
     tab<-names(data)[t]
     if(verbose) cat("\n",tab,"tab...", file=outfile_QAQC, append = T)
     required_colnames<-template_info[[tab]]$Column_Name[template_info[[tab]]$Required=="Yes"]
@@ -180,7 +180,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   # check site tab #
   if(verbose) cat("\n site tab...", file=outfile_QAQC, append = T)
   mismatch <- c() #Entry name
-  for (t in 1:length(data$site$entry_name)){
+  for (t in seq_along(data$site$entry_name)){
     item_name <- as.character(data$site$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
       mismatch <- c(mismatch, t+3)
@@ -205,7 +205,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   # check profile tab #
   if(verbose) cat("\n profile tab...", file=outfile_QAQC, append = T)
   mismatch <- c() #Entry name
-  for (t in 1:length(data$profile$entry_name)){
+  for (t in seq_along(data$profile$entry_name)){
     item_name <- as.character(data$profile$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
       mismatch <- c(mismatch, t+3)
@@ -217,7 +217,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Site name
-  for (t in 1:length(data$profile$site_name)){
+  for (t in seq_along(data$profile$site_name)){
     item_name <- as.character(data$profile$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
       mismatch <- c(mismatch, t+3)
@@ -247,7 +247,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   if(verbose) cat("\n flux tab...", file=outfile_QAQC, append = T)
   if (length(data$flux$entry_name)>0){
   mismatch <- c() #Entry name
-  for (t in 1:length(data$flux$entry_name)){
+  for (t in seq_along(data$flux$entry_name)){
     item_name <- as.character(data$flux$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
       mismatch <- c(mismatch, t+3)
@@ -259,7 +259,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Site name
-  for (t in 1:length(data$flux$site_name)){
+  for (t in seq_along(data$flux$site_name)){
     item_name <- as.character(data$flux$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
       mismatch <- c(mismatch, t+3)
@@ -271,7 +271,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Profile name
-  for (t in 1:length(data$flux$pro_name)){
+  for (t in seq_along(data$flux$pro_name)){
     item_name <- as.character(data$flux$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
       mismatch <- c(mismatch, t+3)
@@ -311,7 +311,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   if(verbose) cat("\n layer tab...", file=outfile_QAQC, append = T)
   if (length(data$layer$entry_name)>0){
   mismatch <- c() #Entry name
-  for (t in 1:length(data$layer$entry_name)){
+  for (t in seq_along(data$layer$entry_name)){
     item_name <- as.character(data$layer$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
       mismatch <- c(mismatch, t+3)
@@ -323,7 +323,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Site name
-  for (t in 1:length(data$layer$site_name)){
+  for (t in seq_along(data$layer$site_name)){
     item_name <- as.character(data$layer$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
       mismatch <- c(mismatch, t+3)
@@ -335,7 +335,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Profile name
-  for (t in 1:length(data$layer$pro_name)){
+  for (t in seq_along(data$layer$pro_name)){
     item_name <- as.character(data$layer$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
       mismatch <- c(mismatch, t+3)
@@ -373,7 +373,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   if(verbose) cat("\n interstitial tab...", file=outfile_QAQC, append = T)
   if (length(data$interstitial$entry_name)>0){
   mismatch <- c() #Entry name
-  for (t in 1:length(data$interstitial$entry_name)){
+  for (t in seq_along(data$interstitial$entry_name)){
     item_name <- as.character(data$interstitial$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
       mismatch <- c(mismatch, t+3)
@@ -385,7 +385,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Site name
-  for (t in 1:length(data$interstitial$site_name)){
+  for (t in seq_along(data$interstitial$site_name)){
     item_name <- as.character(data$interstitial$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
       mismatch <- c(mismatch, t+3)
@@ -397,7 +397,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Profile name
-  for (t in 1:length(data$interstitial$pro_name)){
+  for (t in seq_along(data$interstitial$pro_name)){
     item_name <- as.character(data$interstitial$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
       mismatch <- c(mismatch, t+3)
@@ -428,7 +428,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   if (length(data$fraction$entry_name)>0){
 
   mismatch <- c() #Entry name
-  for (t in 1:length(data$fraction$entry_name)){
+  for (t in seq_along(data$fraction$entry_name)){
     item_name <- as.character(data$fraction$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
       mismatch <- c(mismatch, t+3)
@@ -440,7 +440,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Site name
-  for (t in 1:length(data$fraction$site_name)){
+  for (t in seq_along(data$fraction$site_name)){
     item_name <- as.character(data$fraction$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
       mismatch <- c(mismatch, t+3)
@@ -452,7 +452,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Profile name
-  for (t in 1:length(data$fraction$pro_name)){
+  for (t in seq_along(data$fraction$pro_name)){
     item_name <- as.character(data$fraction$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
       mismatch <- c(mismatch, t+3)
@@ -464,7 +464,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Layer name
-  for (t in 1:length(data$fraction$lyr_name)){
+  for (t in seq_along(data$fraction$lyr_name)){
     item_name <- as.character(data$fraction$lyr_name)[t]
     if (!(item_name %in% data$layer$lyr_name)){
       mismatch <- c(mismatch, t+3)
@@ -500,7 +500,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   if(verbose) cat("\n incubation tab...", file=outfile_QAQC, append = T)
   if (length(data$incubation$entry_name)>0){
   mismatch <- c() #Entry name
-  for (t in 1:length(data$incubation$entry_name)){
+  for (t in seq_along(data$incubation$entry_name)){
     item_name <- as.character(data$incubation$entry_name)[t]
     if (!(item_name %in% data$metadata$entry_name)){
       mismatch <- c(mismatch, t+3)
@@ -512,7 +512,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Site name
-  for (t in 1:length(data$incubation$site_name)){
+  for (t in seq_along(data$incubation$site_name)){
     item_name <- as.character(data$incubation$site_name)[t]
     if (!(item_name %in% data$site$site_name)){
       mismatch <- c(mismatch, t+3)
@@ -524,7 +524,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Profile name
-  for (t in 1:length(data$incubation$pro_name)){
+  for (t in seq_along(data$incubation$pro_name)){
     item_name <- as.character(data$incubation$pro_name)[t]
     if (!(item_name %in% data$profile$pro_name)){
       mismatch <- c(mismatch, t+3)
@@ -536,7 +536,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
   }
 
   mismatch <- c() #Layer name
-  for (t in 1:length(data$incubation$lyr_name)){
+  for (t in seq_along(data$incubation$lyr_name)){
     item_name <- as.character(data$incubation$lyr_name)[t]
     if (!(item_name %in% data$layer$lyr_name)){
       mismatch <- c(mismatch, t+3)
@@ -570,7 +570,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
     which(badNum & !is.na(x))
   }
 
-  for (t in 1:length(names(data))){
+  for (t in seq_along(names(data))){
     tab<-names(data)[t]
     tab_info<-template_info[[tab]]
     if(verbose) cat("\n",tab,"tab...", file=outfile_QAQC, append = T)
@@ -579,7 +579,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
     numeric_columns<-tab_info$Column_Name[tab_info$Variable_class=="numeric"]
     if(length(numeric_columns)<1) next
     if(tab %in% emptytabs) next
-    for (c in 1:length(numeric_columns)){
+    for (c in seq_along(numeric_columns)){
       column<-numeric_columns[c]
       if(!column %in% colnames(data[[tab]])) next
       nonnum<-!is.numeric(data[[tab]][,column]) & !is.logical(data[[tab]][,column])
@@ -616,7 +616,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
     #check for non-numeric values where required
     controlled_vocab_columns<-tab_info$Column_Name[tab_info$Variable_class=="character" & !is.na(tab_info$Vocab)]
 
-    for (c in 1:length(controlled_vocab_columns)){
+    for (c in seq_along(controlled_vocab_columns)){
       column<-controlled_vocab_columns[c]
       if(!column %in% colnames(data[[tab]])) next
       controlled_vocab<-tab_info$Vocab[tab_info$Column_Name == column]
@@ -646,11 +646,11 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
 
 
   # summary statistics ------------------------------------------------------
-  if(summaryStats==T){
+  if(summaryStats==TRUE){
     if(verbose) cat("\n\nIt might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.\n", file=outfile_QAQC, append = T)
     if(verbose) cat("\nSummary statistics...\n", file=outfile_QAQC, append = T)
 
-    for (t in 1:length(names(data))){
+    for (t in seq_along(names(data))){
       tab<-names(data)[t]
       data_tab<-data[[tab]]
       if(verbose) cat("\n",tab,"tab...", file=outfile_QAQC, append = T)
@@ -658,7 +658,7 @@ QAQC <- function(file, writeQCreport=F, outfile_QAQC="", summaryStats=T, dataRep
       if (nrow(data_tab)>0){
         col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
         col_counts<-col_counts[col_counts>0]
-        for(c in 1:length(col_counts)){
+        for(c in seq_along(col_counts)){
           if(verbose) cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile_QAQC, append = T)
 
         }

@@ -29,7 +29,7 @@ ISRaD.save.xlsx <- function(database,
 
   loaded_template<-loadWorkbook(template_file)
 
-  for (i in 1:length(names(database))){
+  for (i in seq_along(names(database))){
     tab<-names(database)[i]
 
       database[[tab]][]<-lapply(database[[tab]], as.character)
