@@ -8,9 +8,9 @@ header:
 
 
 ## R Package
-The ISRaD R package (version 1.2.3) is on CRAN and new users can install the package from inside an R session using the normal method:
+The ISRaD R package (version 1.2.3) is on CRAN and users can install the package from inside an R session using the normal method:
 ```
-install.packages("ISRaD)
+install.packages("ISRaD")
 # load package
 library(ISRaD)
 ```
@@ -26,7 +26,7 @@ No matter which version of the package you are using, the latest ISRaD data can 
 
 *(For non-R users, the compiled raw data can also be downloaded as a .zip file directly from github).* 
 
-The ISRaD R package also provides a number of data enhancement tools ("ISRaD.extra" functions) that calculate or fill in certain fields with missing data, as well as provide ancillary data from various geospatial data sources. Note that in addition to the basic compiled version of the database, you can choose to download a version of the compiled database that already has these data filled and added (i.e. "ISRad_extra") by using the option "extra = TRUE" when running the "ISRaD.getdata" function:
+The ISRaD R package provides a number of data enhancement tools ("ISRaD.extra" functions) that calculate or fill in certain fields with missing data, as well as provide ancillary data from various geospatial data sources. Note that in addition to the basic compiled version of the database, you can choose to download a version of the compiled database that already has these data filled and added (i.e. "ISRad_extra") by using the option "extra = TRUE" when running the "ISRaD.getdata" function:
 
 ```
 # set 'directory' argument to local path
