@@ -6,10 +6,10 @@ header:
   overlay_image: /assets/images/soil.jpg
 ---
 ## What is ISRaD?
-ISRaD is a open community repository for soil radiocarbon data.
+ISRaD is an **open community repository** for **soil radiocarbon data**.
 Our goals are:
 * To improve the use of radiocarbon as a constraint for understanding the soil carbon cycle
-* To provide a place for researchers to contribute their soil radiocarbon data once their paper is published
+* To provide a place for researchers to contribute their soil radiocarbon data once published (i.e. datasets with a DOI)
 * To produce tools to make the repository useful
 
 ISRaD has been developed as a collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry, with support from U.S. Department of Agriculture.
