@@ -9,12 +9,12 @@ htmlwidgets: TRUE
 ## Accessing ISRaD Data
 There are various options for accessing ISRaD data:
 *   The compiled database or individual ISRaD datasets can be easily loaded into R following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website. 
-*   ISRaD is also available in .xlsx workbook and .csv formats. Download a zip file [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip). The contents of the zip file are described in detail in the **Data Files** section below.
+*   ISRaD is also available in .xlsx workbook and .csv formats. Download a zip file [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip) (contents of the zip file are described in detail in the **Data Files** section below).
 
 ## Raw versus Expanded data
 There are two different versions of the compiled database:
 *   **Raw data files** (with names begining in "ISRaD_data") contain only data ingested from the original source datasets.
-*   **Expanded or "extra" data files** (with names begnining in "ISRaD_extra") include the original raw data as well as additional parameters that have either been calculated or imported based on site coordinates, such as geospatially referenced climate information. A current list and descritption of the ISRaD_extra variables is available [here](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx)
+*   **Expanded or "extra" data files** (with names begnining in "ISRaD_extra") include the original raw data as well as additional parameters that have either been calculated from existing data, or imported based on geospatial coordinates, e.g. geospatially referenced climate data. ISRaD_extra variables are listed and described in detail [here](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx)
 
 Descriptions of all ISRaD variables are available in the [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information File](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx)
 
