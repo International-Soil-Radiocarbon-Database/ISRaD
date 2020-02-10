@@ -7,9 +7,8 @@ header:
 htmlwidgets: TRUE
 ---
 ## Accessing ISRaD Data
-There are various options for accessing ISRaD data:
-*   The compiled database or individual ISRaD datasets can be easily loaded into R following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website. 
-*   ISRaD is also available in .xlsx workbook and .csv formats. Download a zip file [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip) (contents of the zip file are described in detail in the **Data Files** section below).
+*   Using R, the compiled database or individual ISRaD datasets can be downloaded (in .xlsx, .csv, and .rda format) and easily loaded into an R session following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website. 
+*   For non-R users, ISRaD data is available in .xlsx and .csv formats. Download [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip) (contents of the zip archive are described in detail in the **Data Files** section below).
 
 ## Raw versus "Extra" data
 There are two different versions of the compiled database:
@@ -41,6 +40,10 @@ The following files are included in the [ISRaD_database_files.zip](https://githu
 *   *ISRaD_extra_flat_interstitial_vX_date.csv* - Interstitial data and associated information (Interstitial, Profile, Site, Metadata)
 *   *ISRaD_extra_flat_fraction_vX_date.csv* - Fraction data and associated information (Fraction, Layer, Profile, Site, Metadata)
 *   *ISRaD_extra_flat_incubation_date.csv* - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
+
+### Readme file:
+
+*	*readme.txt* - Metadata and information about zip archive contents.
 
 ## Versioning
 The names of the data files reflect the current version and modification date in the format **(data name)(vX)(date).(format)**, where **data name** tells what data this is (ie. ISRaD_extra_flat_layer), **vX** refers to the official ISRaD version number (e.g. "v1.2.3"), **date** gives the date when the data were compiled, and **format** is the file type.
