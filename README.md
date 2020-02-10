@@ -7,7 +7,7 @@ Download compiled version of ISRaD [here](https://github.com/International-Soil-
 
 Install the [ISRaD R package](https://CRAN.R-project.org/package=ISRaD) from [CRAN](https://cran.r-project.org/)
 
-From R:
+*From R:*
 ```
 install.packages("ISRaD")
 library(ISRaD)
