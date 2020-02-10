@@ -44,7 +44,7 @@ If you are interested in contributing to the development of the ISRadD R Package
 
 To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute</a> page.
 
-Please report issues by posting to <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues </a>.
+Please report issues by posting to the ISRaD [issues](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) page on github.
 
 ## Steering committee
 The steering committee provides scientific leadership for the project and sets the main goals and vision.
@@ -84,14 +84,14 @@ Maintainers are in charge of the integrity of the code. Currently, they are:
 * Carlos Sierra
 * Alison Hoyt
 * Shane Stoner
-* Jeff Beem-Miller
+* Jeffrey Beem-Miller (R package maintainer)
 * Corey Lawrence
 
 ### Expert Reviewers
 Expert reviewers review all data submitted to ISRaD. Currently, they are:
 
 * Sophie von Fromm
-* Jeff Beem-Miller
+* Jeffrey Beem-Miller
 * Kate Heckman
 * Olga Vinduskova
 * Gavin McNicol
