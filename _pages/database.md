@@ -58,7 +58,7 @@ The main features include:
 * General information
 	* **Metadata** information identifying the data source (including DOI) for proper attribution
 	* **Site** provides location information (spatial coordinates)
-	* **Profile**s are places sampled within the general area of the site (e.g. soil profiles, flux chambers, etc.); *if available, more fine scale spatial coordinates may be reported here.*
+	* **Profile**s are places sampled within the general area of the site (e.g. soil profiles, flux chambers, etc.). If available, more fine scale spatial coordinates may be reported here.
 * Data associated with an individual *Profile* can be reported in the following tables:
 	* **Flux** and **Interstitial** measurements, e.g. CO<sub>2</sub>, methane, dissolved organic matter, etc.
 	* **Layer** C, N, bulk density, etc. data from *individual depth layers* of a soil profile. 
