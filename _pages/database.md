@@ -61,13 +61,13 @@ In ISRaD we strive to incorporate radicoarbon data collected at many different s
 
 ISRaD data tables (in descending hierarchical order):
 * General information
-	* **Metadata** information identifies the source of the data (DOI, citation)
+	* **Metadata** identify the source of the data (DOI, citation)
 	* **Site** data provide location information (spatial coordinates)
-	* **Profile**s are places sampled within the general area of the site (e.g. soil profiles, flux chambers, etc.). If available, more fine scale spatial coordinates should be reported. General data on vegetation, soil taxonomy, and local climate (mean annual temperature and precipitation) are reported at the profile level.
+	* **Profile**s are places sampled within the general area of the site (e.g. soil profiles, flux chambers, etc.). Finer scale spatial coordinates should be reported if available. Report general data on vegetation, soil taxonomy, and local climate (mean annual temperature and precipitation) at the profile level.
 * Data associated with an individual **Profile**
 	* **Flux** and **Interstitial** measurements, e.g. CO<sub>2</sub>, methane, dissolved organic matter, etc.
 	* **Layer** %C, %N, bulk density, etc. data from *individual depth layers* of a soil **profile**. 
-* Data associated with a specific **layer** are reported the following tables
+* Data associated with a specific **layer** are reported in the following tables:
 	* **Fractions** of soil as defined by physical, chemical, or biological methods
 	* Amount and isotoptic signature of CO<sub>2</sub> or methane produced during laboratory **Incubations**
 
