@@ -19,7 +19,7 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
 	<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="400">
 </p>
 
-
+We are continually adding new data and improving our code. Both ISRaD data and code are hosted under version control on github: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>.
 
 ## Publications
 The database is described in detail in the following publication from the core ISRaD group:
@@ -34,13 +34,18 @@ ISRaD builds on previously published compilcations of soil radiocarbon measureme
 
 Prior to ingenstion of data included in these past efforts, we fixed a number of errors, added missing data, and populated DOI numbers for all original source studies. Please also see the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/credits/">Credits</a> page for a full list of all original data sources included in the current version of ISRaD.
 
+## Citing ISRaD
+When citing ISRaD please use the citation of the main publication [Lawrence, et al. 2019](https://earth-syst-sci-data.net/12/61/2020/) listed above. **In adddition**, be sure to reference the version of the data used (e.g. *ISRaD_data_v1.2.3.2019-12-20*).
+
 ## Terms of Use
+Anyone may share or adapt the ISRaD dataset, provided they do so in accordance with the Creative Commons Attribution 4.0 International Public License (https://creativecommons.org/licenses/by/4.0/legalcode, last access: 13 March 2019), also referred to as CC BY. In addition, we strongly encourage ISRaD users to follow two simple guidelines for use:
 
-We are continually adding new data and improving our code. Both ISRaD data and code are hosted under version control on github: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>.
+1. When utilizing the resources provided by ISRaD, including the complete dataset, individually curated entries, or value-added calculations included in the R-package, users should cite this publication and reference the version of ISRaD that was used for their work (see Sect. 3.6 above). Additionally, if users leverage individual data entries from the database, they should also cite the original source dataset and/or paper.
 
-When citing ISRaD please use the citation at the top of this page and additionally, be sure to reference the version of the data used (e.g., ISRaD_data_v1.2.3.2019-12-20).
+2. When users interpret their own data in the context of data accessed from ISRaD, they should submit those new data for inclusion in ISRaD after they have published their results and/or obtained a DOI for their dataset.
 
-If you are interested in contributing to the development of the ISRaD R package or website, please contact info.israd@gmail.com or make a pull request to our github repo.
+## Getting involved
+If you are interested in contributing to the development of the ISRaD R package or website, please contact info.israd@gmail.com or make a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) to our [github repository](https://github.com/International-Soil-Radiocarbon-Database/ISRaD).
 
 To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute</a> page.
 
