@@ -36,7 +36,7 @@ Alternatively, for those users willing to risk working with beta code, you can i
 devtools::install_github('International-Soil-Radiocarbon-Database/ISRaD/Rpkg')
 ```
 
-### [Tutorial here](/user_manual_Aug15_2019.html)
+### Looking for step-by-step instructions? [Tutorial here](/user_manual_Aug15_2019.html).
 
-### [Have a Request?](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues/170)
-Code or data-related questions, concerns, suggestions? The request lines are open!
+### Code or data-related questions, concerns, suggestions? [Post an issue here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues). 
+### Or contact us at info.israd@gmail.com (slower).
