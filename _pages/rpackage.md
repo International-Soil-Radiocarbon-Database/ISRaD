@@ -8,7 +8,7 @@ header:
 
 
 ## R Package
-The ISRaD R package (version 1.2.3) is on CRAN and users can install the package from inside an R session using the normal method:
+The ISRaD R package (version 1.2.3) is on CRAN. Users can install the package from inside an R session in the normal fashion:
 ```
 install.packages("ISRaD")
 # load package
