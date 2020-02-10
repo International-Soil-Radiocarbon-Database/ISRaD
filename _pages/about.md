@@ -36,11 +36,11 @@ Prior to ingenstion of data included in these past efforts, we fixed a number of
 
 ## Terms of Use
 
-The ISRaD database is currently under development: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>.
+We are continually adding new data and improving our code. Both ISRaD data and code are hosted under version control on github: <a href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD"> https://github.com/International-Soil-Radiocarbon-Database/ISRaD </a>.
 
-Users citing ISRaD should use the citation at the top of this page as well as the most recent official data release at the time that they accessed the data. In their citation of the official release, users should also reference the version of the data they used (e.g., v1.2.3.2019-12-20).
+When citing ISRaD please use the citation at the top of this page and additionally, be sure to reference the version of the data used (e.g., ISRaD_data_v1.2.3.2019-12-20).
 
-If you are interested in contributing to the development of the ISRadD R Package or site, please contact info.israd@gmail.com or make a pull request to our github repo.
+If you are interested in contributing to the development of the ISRaD R package or website, please contact info.israd@gmail.com or make a pull request to our github repo.
 
 To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute</a> page.
 
