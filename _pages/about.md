@@ -24,23 +24,20 @@ We are continually adding new data and improving our code. Both ISRaD data and c
 ## Publications
 The database is described in detail in the following publication from the core ISRaD group:
 
-* Lawrence, C. R., Beem-Miller, J., Hoyt, A. M., Monroe, G., Sierra, C. A., Stoner, S., Heckman, K., Blankinship, J. C., Crow, S. E., McNicol, G., Trumbore, S., Levine, P. A., Vindušková, O., Todd-Brown, K., Rasmussen, C., Hicks Pries, C. E., Schädel, C., McFarlane, K., Doetterl, S., Hatté, C., He, Y., Treat, C., Harden, J. W., Torn, M. S., Estop-Aragonés, C., Asefaw Berhe, A., Keiluweit, M., Della Rosa Kuhnen, Á., Marin-Spiotta, E., Plante, A. F., Thompson, A., Shi, Z., Schimel, J. P., Vaughn, L. J. S., von Fromm, S. F., and Wagai, R.: An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0, Earth Syst. Sci. Data, 12, 61–76, https://doi.org/10.5194/essd-12-61-2020, 2020.
+* Lawrence, C. R., Beem-Miller, J., Hoyt, A. M., Monroe, G., Sierra, C. A., Stoner, S., Heckman, K., Blankinship, J. C., Crow, S. E., McNicol, G., Trumbore, S., Levine, P. A., Vindušková, O., Todd-Brown, K., Rasmussen, C., Hicks Pries, C. E., Schädel, C., McFarlane, K., Doetterl, S., Hatté, C., He, Y., Treat, C., Harden, J. W., Torn, M. S., Estop-Aragonés, C., Asefaw Berhe, A., Keiluweit, M., Della Rosa Kuhnen, Á., Marin-Spiotta, E., Plante, A. F., Thompson, A., Shi, Z., Schimel, J. P., Vaughn, L. J. S., von Fromm, S. F., and Wagai, R.: **An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0**, Earth Syst. Sci. Data, 12, 61–76, https://doi.org/10.5194/essd-12-61-2020, 2020.
 
 ISRaD builds on previously published compilcations of soil radiocarbon measurements but also includes data ingested from individual studies not captured by those prior efforts. The following compilation studies served as our starting point for data ingestion:
 
-* Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles. Global Change Biology, 21(11), 4278–4292. <a href="http://doi.org/10.1111/gcb.13012">http://doi.org/10.1111/gcb.13012</a>
+* Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). **Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles**. Global Change Biology, 21(11), 4278–4292. <a href="http://doi.org/10.1111/gcb.13012">http://doi.org/10.1111/gcb.13012</a>
 
-* He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 355(6306), 1419–1424. <a href="http://doi.org/10.1126/science.aad4273">http://doi.org/10.1126/science.aad4273</a>
+* He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. **Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century**. Science, 355(6306), 1419–1424. <a href="http://doi.org/10.1126/science.aad4273">http://doi.org/10.1126/science.aad4273</a>
 
-Prior to ingenstion of data included in these past efforts, we fixed a number of errors, added missing data, and populated DOI numbers for all original source studies. Please also see the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/credits/">Credits</a> page for a full list of all original data sources included in the current version of ISRaD.
+Prior to ingenstion of data included in these past efforts, we fixed a number of errors, added missing data, and verified DOIs for all original source studies. Please also see the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/credits/">Credits</a> page for a full list of all original data sources included in the current version of ISRaD.
 
-## Citing ISRaD
-When citing ISRaD please use the citation of the main publication [Lawrence, et al. 2019](https://earth-syst-sci-data.net/12/61/2020/) listed above. **In adddition**, be sure to reference the version of the data used (e.g. *ISRaD_data_v1.2.3.2019-12-20*).
-
-## Terms of Use
+## Terms of Use and Citing ISRaD
 Anyone may share or adapt the ISRaD dataset, provided they do so in accordance with the Creative Commons Attribution 4.0 International Public License (https://creativecommons.org/licenses/by/4.0/legalcode, last access: 13 March 2019), also referred to as CC BY. In addition, we strongly encourage ISRaD users to follow two simple guidelines for use:
 
-1. When utilizing the resources provided by ISRaD, including the complete dataset, individually curated entries, or value-added calculations included in the R-package, users should cite this publication and reference the version of ISRaD that was used for their work (see Sect. 3.6 above). Additionally, if users leverage individual data entries from the database, they should also cite the original source dataset and/or paper.
+1. When utilizing the resources provided by ISRaD, including the complete dataset, individually curated entries, or value-added calculations included in the R-package, users should cite the source publication (Lawrence, et al. 2019](https://earth-syst-sci-data.net/12/61/2020/), citation given above) and reference the version of ISRaD data that was used for their work (e.g. ISRaD_data_v1.2.3.2020-01-30). Additionally, if users leverage individual data entries from the database, they should also cite the original source dataset and/or paper.
 
 2. When users interpret their own data in the context of data accessed from ISRaD, they should submit those new data for inclusion in ISRaD after they have published their results and/or obtained a DOI for their dataset.
 
