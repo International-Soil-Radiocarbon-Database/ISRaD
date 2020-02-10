@@ -34,7 +34,7 @@
 
 compile <- function(dataset_directory,
                     write_report=FALSE, write_out=FALSE,
-                    return_type=c('none', 'list')[2], checkdoi=F, verbose=T){
+                    return_type=c('none', 'list')[2], checkdoi=FALSE, verbose=TRUE){
 
   # Libraries used
     requireNamespace("assertthat")
@@ -211,19 +211,19 @@ compile <- function(dataset_directory,
     ISRaD_database<-lapply(ISRaD_database, as.data.frame)
 
     # Return database file, logs, and reports ---------------------------------
-    if(verbose) cat("\n\n-------------\n", file=outfile, append = T)
-    if(verbose) cat("\nSummary statistics...\n", file=outfile, append = T)
+    if(verbose) cat("\n\n-------------\n", file=outfile, append = TRUE)
+    if(verbose) cat("\nSummary statistics...\n", file=outfile, append = TRUE)
 
     for (t in seq_along(names(ISRaD_database))){
       tab<-names(ISRaD_database)[t]
       data_tab<-ISRaD_database[[tab]]
-      if(verbose) cat("\n",tab,"tab...", file=outfile, append = T)
-      if(verbose) cat(nrow(data_tab), "observations", file=outfile, append = T)
+      if(verbose) cat("\n",tab,"tab...", file=outfile, append = TRUE)
+      if(verbose) cat(nrow(data_tab), "observations", file=outfile, append = TRUE)
       if (nrow(data_tab)>0){
         col_counts<-apply(data_tab, 2, function(x) sum(!is.na(x)))
         col_counts<-col_counts[col_counts>0]
         for(c in seq_along(col_counts)){
-          if(verbose) cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = T)
+          if(verbose) cat("\n   ", names(col_counts[c]),":", col_counts[c], file=outfile, append = TRUE)
 
         }
       }

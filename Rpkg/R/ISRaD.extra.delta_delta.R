@@ -39,7 +39,7 @@ requireNamespace("dplyr")
                                 d14C.t = graven$Tropicsc14)
 
     calc_atm14c<-function(df, obs_date_y) {
-      df.pro<-dplyr::left_join(as.data.frame(lapply(df, as.character), stringsAsFactors=F), as.data.frame(lapply(database$profile, as.character), stringsAsFactors=F), by=c("entry_name","site_name","pro_name"))
+      df.pro<-dplyr::left_join(as.data.frame(lapply(df, as.character), stringsAsFactors=FALSE), as.data.frame(lapply(database$profile, as.character), stringsAsFactors=FALSE), by=c("entry_name","site_name","pro_name"))
       north.obs<-which(df.pro$pro_lat>30)
       south.obs<-which(df.pro$pro_lat<(-30))
       tropic.obs<-which(df.pro$pro_lat<30 & df.pro$pro_lat>(-30))

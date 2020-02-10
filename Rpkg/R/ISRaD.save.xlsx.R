@@ -39,7 +39,7 @@ ISRaD.save.xlsx <- function(database,
         database[[tab]] <- template[[tab]]
       } else database[[tab]] <- dplyr::bind_rows(template[[tab]][c(1:2),], database[[tab]])
 
-    writeData(loaded_template, sheet = i, database[[tab]], rowNames = F)
+    writeData(loaded_template, sheet = i, database[[tab]], rowNames = FALSE)
 
   }
 
