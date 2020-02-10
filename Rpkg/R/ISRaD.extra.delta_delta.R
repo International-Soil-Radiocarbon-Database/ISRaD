@@ -29,7 +29,7 @@ requireNamespace("dplyr")
 
     graven<-ISRaD::graven
 
-    if(future == TRUE) {
+    if(future) {
       graven <- rbind(graven, ISRaD::future14C)
     }
 

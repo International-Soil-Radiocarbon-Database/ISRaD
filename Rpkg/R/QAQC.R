@@ -5,7 +5,7 @@
 #' @details This function can also be called from the ISRaD website (<http://soilradiocarbon.org>).
 #' @param file File path for template file to be checked
 #' @param writeQCreport If TRUE, a text report of the QC output will be written to the outfile. Default is FALSE
-#' @param outfile_QAQC Filename of the output file (if writeQCreport==TRUE). Default is NULL, with the outfile being written to the directory where the template file is stored and named according to the file being checked.
+#' @param outfile_QAQC Filename of the output file (if writeQCreport is TRUE). Default is NULL, with the outfile being written to the directory where the template file is stored and named according to the file being checked.
 #' @param summaryStats Prints summary statistics. Default is TRUE.
 #' @param dataReport Prints list structure of database. Default is FALSE.
 #' @param checkdoi Set to FALSE if you do not want the QAQC check to validate DOIs (if TRUE this will be time consuming). Default is TRUE.
@@ -44,7 +44,7 @@ QAQC <- function(file, writeQCreport=FALSE, outfile_QAQC="", summaryStats=TRUE, 
   #start note count at 0
   note<-0
 
-  if (writeQCreport==TRUE){
+  if (writeQCreport){
     if (outfile_QAQC==""){
       outfile_QAQC<-paste0(dirname(file), "/QAQC/QAQC_", gsub("\\.xlsx", ".txt", basename(file)))
     }
@@ -127,7 +127,7 @@ QAQC <- function(file, writeQCreport=FALSE, outfile_QAQC="", summaryStats=TRUE, 
 
 
   ##### check doi --------------------------------------------------------
-  if (checkdoi==TRUE){
+  if (checkdoi){
   if(verbose) cat("\n\nChecking dataset doi...", file=outfile_QAQC, append = TRUE)
   dois<-data$metadata$doi
   if(is.na(dois)) dois<-""
@@ -646,7 +646,7 @@ QAQC <- function(file, writeQCreport=FALSE, outfile_QAQC="", summaryStats=TRUE, 
 
 
   # summary statistics ------------------------------------------------------
-  if(summaryStats==TRUE){
+  if(summaryStats){
     if(verbose) cat("\n\nIt might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.\n", file=outfile_QAQC, append = TRUE)
     if(verbose) cat("\nSummary statistics...\n", file=outfile_QAQC, append = TRUE)
 
@@ -678,7 +678,7 @@ QAQC <- function(file, writeQCreport=FALSE, outfile_QAQC="", summaryStats=TRUE, 
 
   attributes(data)$error<-error
 
-  if(dataReport==TRUE){
+  if(dataReport){
     return(data)
   }
 

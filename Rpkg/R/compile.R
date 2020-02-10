@@ -157,7 +157,7 @@ compile <- function(dataset_directory,
           suppressWarnings(ISRaD_database <- mapply(bind_rows, ISRaD_database, entry))
         } else {
           if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
-          if(checkdoi==TRUE) {
+          if(checkdoi) {
             soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = TRUE, verbose = TRUE)
           } else {
             soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = FALSE, verbose = TRUE)
@@ -184,7 +184,7 @@ compile <- function(dataset_directory,
       for(d in seq_along(data_files)) {
         if(verbose) setTxtProgressBar(pb, d)
         if(verbose) cat("\n\n",d, "checking", basename(data_files[d]),"...", file=outfile, append = TRUE)
-        if(checkdoi==TRUE) {
+        if(checkdoi) {
           soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = TRUE, verbose = TRUE)
         } else {
           soilcarbon_data<-QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = FALSE, verbose = TRUE)
@@ -248,7 +248,7 @@ compile <- function(dataset_directory,
 
     if(verbose) cat("\n", rep("-", 20), file=outfile, append = TRUE)
 
-    if(write_report==TRUE) {
+    if(write_report) {
       message("\n Compilation report saved to ", outfile, "\n", file="")
     }
 

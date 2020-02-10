@@ -87,7 +87,7 @@ ISRaD.extra.geospatial <- function(database,
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
 
-  if(fillWorldClim == TRUE) {
+  if(fillWorldClim) {
     message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
     bio<-raster::getData("worldclim", var='bio', res=2.5, path=tempdir())
     bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
