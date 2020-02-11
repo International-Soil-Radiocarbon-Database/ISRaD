@@ -61,30 +61,21 @@ load("C:/Users/YourPathHere/ISRaD_data_v1-2019-08-13.rda") #Loads ISRaD_extra
 ```
 
 ####Install the data through the ISRaD R package:
-1) Install and load the 'devtools' and 'rcrossref' packages
-2) Install the ISRaD package from Github
-3) Use the 'get_data' function to download the latest version of the database
-```{r eval = FALSE}
-
-# 'devtools' allows you to install the ISRaD package in its "beta"/development form
-# 'rcrossref' is used by our QAQC tool, but sometimes ISRaD won't install without it
-install.packages("devtools")
-library(devtools) 
-install.packages("rcrossref")
-library("rcrossref")
-```
+1) Install the ISRaD package from CRAN
+2) Use the 'get_data' function to download the latest version of the database to a local directory
 
 ```{r eval = FALSE}
-# 2) Install package 'ISRaD' from the development branch of our github repository:
-devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg", ref="master", force = T)
+# 2) Install package 'ISRaD' from CRAN:
+install.packages("ISRaD")
 library(ISRaD) # load the package
 
 ```
 
 ```{r eval = FALSE}
 # 3) Load data using the get_data function:
-mydir <- "C:/Users/YourPathHere/"
+mydir <- "C:/Users/YourPathHere/" # replace with local path to desired directory
 ISRaD_extra <-ISRaD.getdata(directory = mydir, dataset="full", extra = T, force_download = T)
+# note that force_download = T will replace any previous versions of the data you may have in the directory
 
 
 ```
@@ -104,7 +95,7 @@ library(ggplot2)
 
 
 ## Structure of ISRaD data
-The ISRaD data are formated as a list in an R object called `ISRaD_data`. `ISRaD_data` is a list comprised of 8 data.frames (`metadata`, `site`, `profile`, `flux`, `layer`, `interstitial`, `fraction`, and `incubation`), which correspond to the template data tables. 'ISRaD_extra' follows the same structure. Here is a [conceptual overview of the data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/).
+The ISRaD data are formated as a list in an R object called `ISRaD_data`. `ISRaD_data` is a list comprised of 8 data.frames (`metadata`, `site`, `profile`, `flux`, `layer`, `interstitial`, `fraction`, and `incubation`), which correspond to the template data tables. 'ISRaD_extra' follows the same structure. Here is a [conceptual overview of the data structure](https://international-soil-radiocarbon-database.github.io/ISRaD/database/) (scroll down to "Data Structure" section).
 
 
 ```{r eval=FALSE}
