@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD.svg?branch=master)](https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD/)
 [![cran
-version](https://www.r-pkg.org/badges/version/styler)](https://cran.r-project.org/package=styler)
+version](https://www.r-pkg.org/badges/version/ISRaD)](https://cran.r-project.org/package=ISRaD)
 
 # ISRaD
 This is the central repository for the development and release of ISRaD data and tools.
