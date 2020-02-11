@@ -12,28 +12,27 @@
 #' database <- ISRaD::Gaudinski_2001
 #' # Fill ISRaD.extra data
 #' database.x <- ISRaD.extra(database,
-#'  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"))
+#'   geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD")
+#' )
 #' }
-
-ISRaD.extra<-function(database, geodata_directory){
-
+#'
+ISRaD.extra <- function(database, geodata_directory) {
   message("\t filling dates \n")
-  database<-ISRaD.extra.fill_dates(database)
+  database <- ISRaD.extra.fill_dates(database)
   message("\t filling 14c \n")
-  database<-ISRaD.extra.fill_14c(database)
+  database <- ISRaD.extra.fill_14c(database)
   message("\t filling fm \n")
-  database<-ISRaD.extra.fill_fm(database)
+  database <- ISRaD.extra.fill_fm(database)
   message("\t filling coordinates \n")
-  database<-ISRaD.extra.fill_coords(database)
+  database <- ISRaD.extra.fill_coords(database)
   message("\t filling delta delta \n")
-  database<-ISRaD.extra.delta_delta(database)
+  database <- ISRaD.extra.delta_delta(database)
   message("\t filling cstocks \n")
-  database<-ISRaD.extra.Cstocks(database)
+  database <- ISRaD.extra.Cstocks(database)
   message("\t filling geospatial data \n")
-  database<-ISRaD.extra.geospatial(database, geodata_directory=geodata_directory, fillWorldClim=TRUE)
+  database <- ISRaD.extra.geospatial(database, geodata_directory = geodata_directory, fillWorldClim = TRUE)
 
   ISRaD_data_filled <- database
 
   return(ISRaD_data_filled)
-
 }
