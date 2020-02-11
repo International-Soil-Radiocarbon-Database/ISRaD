@@ -48,16 +48,16 @@
 #' # Note that geospatial data in pkg is only for the Gaudinski_2001 dataset
 #' # Users may supply their own geospatial data as long as it can be read by the raster package
 #' database.x <- ISRaD.extra.geospatial(database,
-#'  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
-#'  fillWorldClim = TRUE)
+#'   geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
+#'   fillWorldClim = TRUE
+#' )
 #' }
-
+#'
 ISRaD.extra.geospatial <- function(database,
                                    geodata_directory,
-                                   crs="+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
-                                   fillWorldClim=TRUE) {
-
-  requireNamespace('raster')
+                                   crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
+                                   fillWorldClim = TRUE) {
+  requireNamespace("raster")
   requireNamespace("rgdal")
 
   filez <- list.files(geodata_directory)
@@ -67,32 +67,32 @@ ISRaD.extra.geospatial <- function(database,
     return(x)
   })
   df <- do.call(rbind, list.df)
-  df.sp <- unsplit(lapply(split(df, df[1]), function(x) x[order(x[2]),]),df[1])
-  df.sp <- as.data.frame(lapply(df.sp, as.character), stringsAsFactors=FALSE)
+  df.sp <- unsplit(lapply(split(df, df[1]), function(x) x[order(x[2]), ]), df[1])
+  df.sp <- as.data.frame(lapply(df.sp, as.character), stringsAsFactors = FALSE)
   list.list <- lapply(seq_len(nrow(df.sp)), function(x) {
-    x <- paste(unlist(as.character(df.sp[x,])), collapse="_")
+    x <- paste(unlist(as.character(df.sp[x, ])), collapse = "_")
     x <- paste0(geodata_directory, "/", x)
     return(x)
   })
   filez2 <- unlist(list.list)
 
-  for(x in filez2) {
-    shortx <- substr(x, start=nchar(geodata_directory)+2, stop=nchar(x))
-    varName <- substr(shortx, 1, regexpr("\\.[^\\.]*$", shortx)[[1]]-1)
-    rmX <- paste(unlist(strsplit(varName, '_x')), collapse = '')
-    columnName <- paste0('pro_', rmX)
+  for (x in filez2) {
+    shortx <- substr(x, start = nchar(geodata_directory) + 2, stop = nchar(x))
+    varName <- substr(shortx, 1, regexpr("\\.[^\\.]*$", shortx)[[1]] - 1)
+    rmX <- paste(unlist(strsplit(varName, "_x")), collapse = "")
+    columnName <- paste0("pro_", rmX)
     tifRaster <- raster::raster(x)
     raster::crs(tifRaster) <- crs
     database$profile <- cbind(database$profile, raster::extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
 
-  if(fillWorldClim) {
+  if (fillWorldClim) {
     message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
-    bio<-raster::getData("worldclim", var='bio', res=2.5, path=tempdir())
-    bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
-    colnames(bio_extracted)<-paste("pro",  colnames(bio_extracted), sep="_")
-    database$profile<-cbind(database$profile, bio_extracted)
+    bio <- raster::getData("worldclim", var = "bio", res = 2.5, path = tempdir())
+    bio_extracted <- raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
+    colnames(bio_extracted) <- paste("pro", colnames(bio_extracted), sep = "_")
+    database$profile <- cbind(database$profile, bio_extracted)
   }
 
   return(database)

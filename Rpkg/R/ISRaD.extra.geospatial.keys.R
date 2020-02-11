@@ -16,25 +16,27 @@
 #' database <- ISRaD.extra.fill_coords(database)
 #' # Fill geospatial data
 #' database.x <- ISRaD.extra.geospatial(database,
-#'  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
-#'  fillWorldClim = FALSE)
+#'   geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
+#'   fillWorldClim = FALSE
+#' )
 #' # Recode numeric data to categorical
 #' database.x <- ISRaD.extra.geospatial.keys(database.x,
-#'  geodata_keys = system.file("extdata", "geodata_keys", package = "ISRaD"))
+#'   geodata_keys = system.file("extdata", "geodata_keys", package = "ISRaD")
+#' )
 #' }
-
+#'
 ISRaD.extra.geospatial.keys <- function(database, geodata_keys) {
   keys <- list.files(geodata_keys, full.names = TRUE)
   varNames <- lapply(keys, function(x) {
-    x <- substr(x, start=nchar(geodata_keys)+2, stop=nchar(x))
-    x <- substr(x, 1, regexpr("\\.[^\\.]*$", x)[[1]]-1)
-    x <- paste0('pro_', paste(unlist(strsplit(x, '_x')), collapse = ''))
+    x <- substr(x, start = nchar(geodata_keys) + 2, stop = nchar(x))
+    x <- substr(x, 1, regexpr("\\.[^\\.]*$", x)[[1]] - 1)
+    x <- paste0("pro_", paste(unlist(strsplit(x, "_x")), collapse = ""))
     return(x)
   })
   key.dfs <- lapply(keys, function(x) data.frame(utils::read.csv(x, stringsAsFactors = FALSE)))
-  proFactors <- database$profile[,match(unlist(varNames),colnames(database$profile))]
-  for(i in seq_along(key.dfs)) {
-    database$profile[,colnames(proFactors)[i]] <- key.dfs[[i]][match(unlist(proFactors[i]), unlist(key.dfs[[i]][1])),2]
+  proFactors <- database$profile[, match(unlist(varNames), colnames(database$profile))]
+  for (i in seq_along(key.dfs)) {
+    database$profile[, colnames(proFactors)[i]] <- key.dfs[[i]][match(unlist(proFactors[i]), unlist(key.dfs[[i]][1])), 2]
   }
   return(database)
 }
