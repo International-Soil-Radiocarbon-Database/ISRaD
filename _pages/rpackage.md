@@ -10,7 +10,7 @@ header:
 ## ISRaD R package
 The ISRaD R package provides tools for data manipulation, data enhancement (ISRaD_extra), QA/QC, and making simple queries and reports. ISRaD data are not bundled with the R package, but are maintained under version control on github, and are continuously being updated.
 
-No matter which version of the package you are using, the latest ISRaD data can be retrieved from the ISRaD github repository using the function "ISRaD.getdata" from within an R session. This will download the latest compiled version of the database to a user-specified directory. All data will be tagged with the ISRaD version number and the date when the data were compiled. 
+The latest ISRaD data can be retrieved from the ISRaD github repository using the function "ISRaD.getdata" from within an R session (all package versions ≥ 1.0.0). This will download the most recently compiled version of the database to a user-specified directory. All data will be tagged with the ISRaD version number and the compilation date. 
 
 *(For non-R users, the compiled raw data can also be downloaded as a .zip file directly from github). See the [Database](https://soilradiocarbon.org/database/) page for more information.* 
 
