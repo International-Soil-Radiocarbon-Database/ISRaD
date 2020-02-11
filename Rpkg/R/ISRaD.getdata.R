@@ -26,7 +26,7 @@ ISRaD.getdata <- function(directory, dataset = "full", extra = F, force_download
     message("\n Downloading database files from: ", dataURL, "\n")
     utils::download.file(dataURL, normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")))
     message("\n Unzipping database files to", normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), "...\n")
-    utils::unzip(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")))
+    utils::unzip(normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files")))
   }
 
   if (force_download) {
@@ -38,7 +38,7 @@ ISRaD.getdata <- function(directory, dataset = "full", extra = F, force_download
     reviewed <- utils::menu(c("Yes", "No"), title = "Are you sure you want to replace these with the newest version? You can copy them to a new directory now if you want keep them.")
     print(reviewed)
     if (reviewed == 1) {
-      for (f in list.files(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), full.names = TRUE)) {
+      for (f in list.files(normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files")), full.names = TRUE)) {
         file.remove(f)
       }
     } else {
@@ -46,11 +46,11 @@ ISRaD.getdata <- function(directory, dataset = "full", extra = F, force_download
     }
 
     message("\n Unzipping database files to ", normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), "...\n")
-    utils::unzip(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")))
+    utils::unzip(normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files")))
   }
 
 
-  database_files <- list.files(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), full.names = TRUE)
+  database_files <- list.files(normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files")), full.names = TRUE)
 
   if (extra) {
     data_type <- "ISRaD_extra_"
