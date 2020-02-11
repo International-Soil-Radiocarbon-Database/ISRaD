@@ -71,7 +71,7 @@ ISRaD.extra.geospatial <- function(database,
   df.sp <- as.data.frame(lapply(df.sp, as.character), stringsAsFactors=FALSE)
   list.list <- lapply(seq_len(nrow(df.sp)), function(x) {
     x <- paste(unlist(as.character(df.sp[x,])), collapse="_")
-    x <- paste0(geodata_directory, "/", x)
+    x <- file.path(geodata_directory, x)
     return(x)
   })
   filez2 <- unlist(list.list)
