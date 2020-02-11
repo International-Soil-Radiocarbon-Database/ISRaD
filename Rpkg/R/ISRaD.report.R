@@ -17,11 +17,19 @@
 #' # Generate a map of all ISRaD sites
 #' ISRaD.report(database, report = "site.map")
 #' }
-
-ISRaD.report<-function(database, report){
-  if(report=="entry.stats"){out<-ISRaD.rep.entry.stats(database)}
-  if(report=="count.all"){out<-ISRaD.rep.count.all(database)}
-  if(report=="count.frc"){ out<-ISRaD.rep.count.frc(database)}
-  if(report=="site.map"){out<-ISRaD.rep.site.map(database)}
+#'
+ISRaD.report <- function(database, report) {
+  if (report == "entry.stats") {
+    out <- ISRaD.rep.entry.stats(database)
+  }
+  if (report == "count.all") {
+    out <- ISRaD.rep.count.all(database)
+  }
+  if (report == "count.frc") {
+    out <- ISRaD.rep.count.frc(database)
+  }
+  if (report == "site.map") {
+    out <- ISRaD.rep.site.map(database)
+  }
   return(out)
 }

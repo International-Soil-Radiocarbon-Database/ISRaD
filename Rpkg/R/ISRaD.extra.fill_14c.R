@@ -18,14 +18,13 @@
 #' database.x <- ISRaD.extra.fill_14c(database.x)
 #' # Column flx_14c in the "flux" table is now filled
 #' is.na(database$flux$flx_14c)
-
-ISRaD.extra.fill_14c<- function(database) {
+ISRaD.extra.fill_14c <- function(database) {
 
   # function to calculate delta 14C from fraction modern and obs year if not reported
   calc_14c <- function(df, d14c, obs_date_y, fraction_modern) {
     lambda <- 0.00012097 # = 1/(true mean life of 14C)
-    ix <- which(is.na(df[,d14c]) & !is.na(df[,fraction_modern]))
-    df[ix, d14c] <- (df[ix, fraction_modern] * exp(lambda*(1950-df[ix, obs_date_y])) - 1 )*1000
+    ix <- which(is.na(df[, d14c]) & !is.na(df[, fraction_modern]))
+    df[ix, d14c] <- (df[ix, fraction_modern] * exp(lambda * (1950 - df[ix, obs_date_y])) - 1) * 1000
     return(df)
   }
 
