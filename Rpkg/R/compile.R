@@ -18,7 +18,7 @@
 #'
 #' @importFrom openxlsx read.xlsx
 #' @importFrom assertthat assert_that
-#' @importFrom utils setTxtProgressBar
+#' @importFrom utils setTxtProgressBar txtProgressBar
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
@@ -98,7 +98,7 @@ compile <- function(dataset_directory,
 
   if (verbose) {
     cat("Compiling and checking template files...\n")
-    pb <- utils::txtProgressBar(min = 1, max = length(data_files), style = 3)
+    pb <- txtProgressBar(min = 1, max = length(data_files), style = 3)
   }
 
   # check if previous ISRaD database exists in database directory, and only run QAQC on new templates
