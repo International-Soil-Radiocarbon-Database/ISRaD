@@ -4,7 +4,7 @@
 \alias{checkTemplateFiles}
 \title{Check ISRaD Template/Info files}
 \usage{
-checkTemplateFiles(outfile = "", verbose = T)
+checkTemplateFiles(outfile = "", verbose = TRUE)
 }
 \arguments{
 \item{outfile}{file to dump the output report. Defaults to an empty string that will print

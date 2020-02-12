@@ -5,7 +5,7 @@
 \title{ISRaD.getdata}
 \usage{
 ISRaD.getdata(directory, dataset = "full", extra = F,
-  force_download = F)
+  force_download = FALSE)
 }
 \arguments{
 \item{directory}{Location of ISRaD_database_files folder. If not found, it will be created.}

@@ -6,7 +6,7 @@
 #' @param extra TRUE/FALSE. If TRUE, the ISRaD_extra object will be returned. If FALSE, ISRaD_data will be returned. Default is FALSE.
 #' @param force_download TRUE/FALSE. If ISRaD_database files already exist in the specified directory, new data will not be downloaded by default. If force_download is set to TRUE, the newest data from github will be downloaded and overwrite any existing files.
 #' @return ISRaD data object
-#' @importFrom utils unzil menu download.file read.csv
+#' @importFrom utils unzip menu download.file read.csv
 #' @export
 #' @examples
 #' # Return full dataset ("full")
