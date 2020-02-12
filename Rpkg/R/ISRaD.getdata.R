@@ -6,6 +6,7 @@
 #' @param extra TRUE/FALSE. If TRUE, the ISRaD_extra object will be returned. If FALSE, ISRaD_data will be returned. Default is FALSE.
 #' @param force_download TRUE/FALSE. If ISRaD_database files already exist in the specified directory, new data will not be downloaded by default. If force_download is set to TRUE, the newest data from github will be downloaded and overwrite any existing files.
 #' @return ISRaD data object
+#' @importFrom utils unzil menu download.file read.csv
 #' @export
 #' @examples
 #' # Return full dataset ("full")
@@ -24,18 +25,18 @@ ISRaD.getdata <- function(directory, dataset = "full", extra = F, force_download
   if (!"ISRaD_database_files" %in% list.files(directory)) {
     message("\n ISRaD_database_files not found...")
     message("\n Downloading database files from: ", dataURL, "\n")
-    utils::download.file(dataURL, normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")))
+    download.file(dataURL, normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")))
     message("\n Unzipping database files to", normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), "...\n")
-    utils::unzip(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")))
+    unzip(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")))
   }
 
   if (force_download) {
     message("\n Replacing ISRaD_database_files ...")
     message("\n Downloading database files from: ", dataURL, "\n")
-    utils::download.file(dataURL, normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")))
+    download.file(dataURL, normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")))
 
     message("\n Removing old database files in ", normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), "...\n")
-    reviewed <- utils::menu(c("Yes", "No"), title = "Are you sure you want to replace these with the newest version? You can copy them to a new directory now if you want keep them.")
+    reviewed <- menu(c("Yes", "No"), title = "Are you sure you want to replace these with the newest version? You can copy them to a new directory now if you want keep them.")
     print(reviewed)
     if (reviewed == 1) {
       for (f in list.files(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), full.names = TRUE)) {
@@ -46,7 +47,7 @@ ISRaD.getdata <- function(directory, dataset = "full", extra = F, force_download
     }
 
     message("\n Unzipping database files to ", normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), "...\n")
-    utils::unzip(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")))
+    unzip(normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")))
   }
 
 
@@ -61,7 +62,7 @@ ISRaD.getdata <- function(directory, dataset = "full", extra = F, force_download
   if (dataset != "full") {
     file <- database_files[intersect(grep(data_type, database_files), grep(dataset, database_files))]
     v <- gsub(".+_(v.+)\\..+", "\\1", file)
-    data <- utils::read.csv(file)
+    data <- read.csv(file)
     attributes(data)$version <- v
     message("\n Loading ", file, "\n")
     message("\n This data is from ISRaD ", attributes(data)$version, "\n")

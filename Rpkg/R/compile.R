@@ -16,8 +16,8 @@
 #'
 #' @export
 #'
-#' @import openxlsx
-#' @import assertthat
+#' @importFrom openxlsx read.xlsx
+#' @importFrom assertthat assert_that
 #' @import tidyverse
 #' @examples
 #' \donttest{
@@ -40,16 +40,11 @@ compile <- function(dataset_directory,
                     write_report = FALSE, write_out = FALSE,
                     return_type = c("none", "list")[2], checkdoi = FALSE, verbose = TRUE) {
 
-  # Libraries used
-  requireNamespace("assertthat")
-  requireNamespace("openxlsx")
-  requireNamespace("tidyverse")
-
   # Check inputs
-  assertthat::assert_that(dir.exists(dataset_directory))
-  assertthat::assert_that(is.logical(write_report))
-  assertthat::assert_that(is.logical(write_out))
-  assertthat::assert_that(is.character(return_type))
+  assert_that(dir.exists(dataset_directory))
+  assert_that(is.logical(write_report))
+  assert_that(is.logical(write_out))
+  assert_that(is.character(return_type))
 
   # Create directories
   if (!dir.exists(file.path(dataset_directory, "QAQC"))) {
@@ -81,7 +76,7 @@ compile <- function(dataset_directory,
   template <- lapply(
     stats::setNames(nm = openxlsx::getSheetNames(template_file)),
     function(s) {
-      openxlsx::read.xlsx(template_file,
+      read.xlsx(template_file,
         sheet = s
       )
     }

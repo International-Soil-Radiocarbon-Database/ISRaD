@@ -5,6 +5,7 @@
 #' @param outfile file to dump the output report. Defaults to an empty string that will print
 #' to standard output.
 #' @param verbose if TRUE (default) will print output to specified outfile
+#' @importFrom openxlsx read.xlsx
 #' @export
 #' @return returns NULL
 #' @examples
@@ -23,7 +24,7 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   template <- lapply(
     stats::setNames(nm = openxlsx::getSheetNames(template_file)),
     function(s) {
-      openxlsx::read.xlsx(template_file,
+      read.xlsx(template_file,
         sheet = s
       )
     }
@@ -35,7 +36,7 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   template_info <- lapply(
     stats::setNames(nm = openxlsx::getSheetNames(template_info_file)),
     function(s) {
-      openxlsx::read.xlsx(template_info_file, sheet = s)
+      read.xlsx(template_info_file, sheet = s)
     }
   )
 

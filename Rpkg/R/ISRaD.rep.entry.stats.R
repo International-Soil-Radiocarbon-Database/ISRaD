@@ -10,8 +10,6 @@
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.entry.stats(database)
 ISRaD.rep.entry.stats <- function(database = NULL) {
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
 
   entry_stats <- data.frame()
   for (entry in unique(database$metadata$entry_name)) {

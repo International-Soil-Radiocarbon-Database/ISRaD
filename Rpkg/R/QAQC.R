@@ -31,16 +31,6 @@
 #'
 QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = TRUE, dataReport = FALSE, checkdoi = TRUE, verbose = TRUE) {
 
-  ##### setup #####
-
-  requireNamespace("openxlsx")
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
-  requireNamespace("RCurl")
-
-
-
-
   # start error count at 0
   error <- 0
   # start note count at 0

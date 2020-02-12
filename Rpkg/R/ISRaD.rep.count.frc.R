@@ -10,8 +10,6 @@
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.count.frc(database)
 ISRaD.rep.count.frc <- function(database = NULL) {
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
 
   frc_data <- suppressWarnings(database$fraction %>% # Start with fraction data
     left_join(database$layer) %>% # Join to layer data

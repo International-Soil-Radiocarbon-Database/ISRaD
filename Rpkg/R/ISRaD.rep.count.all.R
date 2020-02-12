@@ -10,8 +10,6 @@
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.count.all(database)
 ISRaD.rep.count.all <- function(database = NULL) {
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
 
   entry <- mutate_all(database$metadata, as.character) %>% summarise(entries = n_distinct(.data$entry_name))
   site <- mutate_all(database$site, as.character) %>% summarise(sites = n_distinct(.data$site_name))
