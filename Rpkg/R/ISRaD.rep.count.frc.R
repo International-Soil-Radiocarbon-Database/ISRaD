@@ -3,7 +3,6 @@
 #' @description Generates a report of fraction level observations, including fraction scheme and properties
 #' @param database ISRaD data object
 #' @import dplyr
-#' @import tidyr
 #' @export
 #' @examples
 #' # Load example dataset Gaudinski_2001

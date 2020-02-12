@@ -3,7 +3,6 @@
 #' @description Generates a report of metadata statistics for all entries
 #' @param database ISRaD data object
 #' @import dplyr
-#' @import tidyr
 #' @export
 #' @examples
 #' # Load example dataset Gaudinski_2001

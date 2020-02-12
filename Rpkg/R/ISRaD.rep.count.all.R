@@ -3,7 +3,6 @@
 #' @description Generates a report of counts of observations at each level of the database
 #' @param database ISRaD data object
 #' @import dplyr
-#' @import tidyr
 #' @export
 #' @examples
 #' # Load example dataset Gaudinski_2001

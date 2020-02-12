@@ -12,7 +12,6 @@
 #' @param verbose Set to TRUE to print results of function to console. Default is TRUE.
 #' @import openxlsx
 #' @import dplyr
-#' @import tidyr
 #' @importFrom RCurl url.exists
 #' @export
 #' @examples
