@@ -23,10 +23,10 @@
 #' ISRaD.save.xlsx(
 #'   database = database,
 #'   template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
-#'   outfile = paste0(tempdir(), "/Gaudinski_2001.xlsx")
+#'   outfile = file.path(tempdir(), "Gaudinski_2001.xlsx")
 #' )
 #' # Run QAQC
-#' QAQC(paste0(tempdir(), "/Gaudinski_2001.xlsx"))
+#' QAQC(file.path(tempdir(), "Gaudinski_2001.xlsx"))
 #' }
 #'
 QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = TRUE, dataReport = FALSE, checkdoi = TRUE, verbose = TRUE) {
@@ -38,7 +38,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   if (writeQCreport) {
     if (outfile_QAQC == "") {
-      outfile_QAQC <- paste0(dirname(file), "/QAQC/QAQC_", gsub("\\.xlsx", ".txt", basename(file)))
+      outfile_QAQC <- file.path(dirname(file), "QAQC", "QAQC_", gsub("\\.xlsx", ".txt", basename(file)))
     }
   }
 

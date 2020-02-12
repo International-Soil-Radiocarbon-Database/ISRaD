@@ -27,7 +27,7 @@
 #' ISRaD.save.xlsx(
 #'   database = database,
 #'   template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
-#'   outfile = paste0(tempdir(), "/Gaudinski_2001.xlsx")
+#'   outfile = file.path(tempdir(), "Gaudinski_2001.xlsx")
 #' )
 #' # Compile .xlsx file/s in dataset_directory into ISRaD database object
 #' ISRaD.compiled <- compile(tempdir(),
