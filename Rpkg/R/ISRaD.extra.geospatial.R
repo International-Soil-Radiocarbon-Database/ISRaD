@@ -80,7 +80,7 @@ ISRaD.extra.geospatial <- function(database,
     rmX <- paste(unlist(strsplit(varName, "_x")), collapse = "")
     columnName <- paste0("pro_", rmX)
     tifRaster <- raster(x)
-    crs(tifRaster) <- crs
+    raster::crs(tifRaster) <- crs
     database$profile <- cbind(database$profile, extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
