@@ -19,7 +19,6 @@
 #' @importFrom openxlsx read.xlsx
 #' @importFrom assertthat assert_that
 #' @importFrom utils setTxtProgressBar
-#' @import tidyverse
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001

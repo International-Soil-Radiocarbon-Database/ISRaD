@@ -16,7 +16,7 @@ Description: This is the central location for data and tools for the development
     information visit the ISRaD website at: <https://soilradiocarbon.org/>.
 Depends: R (>= 3.5.0)
 Imports: openxlsx, devtools, raster, rgdal, dplyr, tidyr, RCurl, ggplot2, maps, 
-    assertthat, rcrossref, pangaear, tidyverse, stringr
+    assertthat, rcrossref, pangaear, stringr
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
