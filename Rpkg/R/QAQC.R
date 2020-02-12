@@ -77,7 +77,6 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     data <- NULL
     attributes(data)$error <- 1
     return(data)
-    stop("tabs in data file do not match accepted templates")
   }
 
   if (all(getSheetNames(file) %in% names(template))) {
