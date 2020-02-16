@@ -12,7 +12,6 @@
 #' @param verbose Set to TRUE to print results of function to console. Default is TRUE.
 #' @import openxlsx
 #' @import dplyr
-#' @import tidyr
 #' @importFrom RCurl url.exists
 #' @export
 #' @examples
@@ -30,16 +29,6 @@
 #' }
 #'
 QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = TRUE, dataReport = FALSE, checkdoi = TRUE, verbose = TRUE) {
-
-  ##### setup #####
-
-  requireNamespace("openxlsx")
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
-  requireNamespace("RCurl")
-
-
-
 
   # start error count at 0
   error <- 0
@@ -87,7 +76,6 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     data <- NULL
     attributes(data)$error <- 1
     return(data)
-    stop("tabs in data file do not match accepted templates")
   }
 
   if (all(getSheetNames(file) %in% names(template))) {

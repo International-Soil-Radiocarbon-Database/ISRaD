@@ -21,15 +21,14 @@
 ISRaD.report <- function(database, report) {
   if (report == "entry.stats") {
     out <- ISRaD.rep.entry.stats(database)
-  }
-  if (report == "count.all") {
+  } else if (report == "count.all") {
     out <- ISRaD.rep.count.all(database)
-  }
-  if (report == "count.frc") {
+  } else if (report == "count.frc") {
     out <- ISRaD.rep.count.frc(database)
-  }
-  if (report == "site.map") {
+  } else if (report == "site.map") {
     out <- ISRaD.rep.site.map(database)
+  } else {
+    stop("Unknown report type ", report)
   }
   return(out)
 }

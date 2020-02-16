@@ -28,4 +28,5 @@ ISRaD.report(database, report = "count.all")
 # Generate a map of all ISRaD sites
 ISRaD.report(database, report = "site.map")
 }
+
 }

@@ -26,6 +26,8 @@ Fills fraction modern, delta 14C, delta-delta, profile coordinates, bulk density
 database <- ISRaD::Gaudinski_2001
 # Fill ISRaD.extra data
 database.x <- ISRaD.extra(database,
- geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"))
+  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD")
+)
 }
+
 }

@@ -32,7 +32,5 @@ ISRaD.extra <- function(database, geodata_directory) {
   message("\t filling geospatial data \n")
   database <- ISRaD.extra.geospatial(database, geodata_directory = geodata_directory, fillWorldClim = TRUE)
 
-  ISRaD_data_filled <- database
-
-  return(ISRaD_data_filled)
+  database
 }

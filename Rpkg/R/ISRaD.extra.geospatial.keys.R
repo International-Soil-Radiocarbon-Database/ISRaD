@@ -30,8 +30,7 @@ ISRaD.extra.geospatial.keys <- function(database, geodata_keys) {
   varNames <- lapply(keys, function(x) {
     x <- substr(x, start = nchar(geodata_keys) + 2, stop = nchar(x))
     x <- substr(x, 1, regexpr("\\.[^\\.]*$", x)[[1]] - 1)
-    x <- paste0("pro_", paste(unlist(strsplit(x, "_x")), collapse = ""))
-    return(x)
+    paste0("pro_", paste(unlist(strsplit(x, "_x")), collapse = ""))
   })
   key.dfs <- lapply(keys, function(x) data.frame(utils::read.csv(x, stringsAsFactors = FALSE)))
   proFactors <- database$profile[, match(unlist(varNames), colnames(database$profile))]

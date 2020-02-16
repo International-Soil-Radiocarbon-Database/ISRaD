@@ -4,15 +4,16 @@
 \alias{QAQC}
 \title{QAQC}
 \usage{
-QAQC(file, writeQCreport = F, outfile_QAQC = "", summaryStats = T,
-  dataReport = F, checkdoi = T, verbose = T)
+QAQC(file, writeQCreport = FALSE, outfile_QAQC = "",
+  summaryStats = TRUE, dataReport = FALSE, checkdoi = TRUE,
+  verbose = TRUE)
 }
 \arguments{
 \item{file}{File path for template file to be checked}
 
 \item{writeQCreport}{If TRUE, a text report of the QC output will be written to the outfile. Default is FALSE}
 
-\item{outfile_QAQC}{Filename of the output file (if writeQCreport==TRUE). Default is NULL, with the outfile being written to the directory where the template file is stored and named according to the file being checked.}
+\item{outfile_QAQC}{Filename of the output file (if writeQCreport is TRUE). Default is NULL, with the outfile being written to the directory where the template file is stored and named according to the file being checked.}
 
 \item{summaryStats}{Prints summary statistics. Default is TRUE.}
 
@@ -33,10 +34,13 @@ This function can also be called from the ISRaD website (<http://soilradiocarbon
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 # Save as .xlsx file
-ISRaD.save.xlsx(database = database,
- template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
- outfile = paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+ISRaD.save.xlsx(
+  database = database,
+  template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
+  outfile = file.path(tempdir(), "Gaudinski_2001.xlsx")
+)
 # Run QAQC
-QAQC(paste0(tempdir(),"/Gaudinski_2001.xlsx"))
+QAQC(file.path(tempdir(), "Gaudinski_2001.xlsx"))
 }
+
 }

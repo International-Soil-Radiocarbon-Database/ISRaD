@@ -3,15 +3,12 @@
 #' @description Generates a report of metadata statistics for all entries
 #' @param database ISRaD data object
 #' @import dplyr
-#' @import tidyr
 #' @export
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.entry.stats(database)
 ISRaD.rep.entry.stats <- function(database = NULL) {
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
 
   entry_stats <- data.frame()
   for (entry in unique(database$metadata$entry_name)) {

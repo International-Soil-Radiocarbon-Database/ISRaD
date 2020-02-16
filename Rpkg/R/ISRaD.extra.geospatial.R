@@ -37,6 +37,8 @@
 #' bio18 = Precipitation of Warmest Quarter,\cr
 #' bio19 = Precipitation of Coldest Quarter\cr
 #' @export
+#' @importFrom raster raster crs extract getData
+#' @import rgdal
 #' @return returns updated ISRaD_extra object with new columns at the profile level
 #' @examples
 #' \donttest{
@@ -57,22 +59,18 @@ ISRaD.extra.geospatial <- function(database,
                                    geodata_directory,
                                    crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
                                    fillWorldClim = TRUE) {
-  requireNamespace("raster")
-  requireNamespace("rgdal")
 
   filez <- list.files(geodata_directory)
   list.df <- lapply(filez, function(x) {
     x <- unlist(strsplit(x, "_"))
-    x <- data.frame(t(x))
-    return(x)
+    data.frame(t(x))
   })
   df <- do.call(rbind, list.df)
   df.sp <- unsplit(lapply(split(df, df[1]), function(x) x[order(x[2]), ]), df[1])
   df.sp <- as.data.frame(lapply(df.sp, as.character), stringsAsFactors = FALSE)
   list.list <- lapply(seq_len(nrow(df.sp)), function(x) {
     x <- paste(unlist(as.character(df.sp[x, ])), collapse = "_")
-    x <- file.path(geodata_directory, x)
-    return(x)
+    file.path(geodata_directory, x)
   })
   filez2 <- unlist(list.list)
 
@@ -81,16 +79,16 @@ ISRaD.extra.geospatial <- function(database,
     varName <- substr(shortx, 1, regexpr("\\.[^\\.]*$", shortx)[[1]] - 1)
     rmX <- paste(unlist(strsplit(varName, "_x")), collapse = "")
     columnName <- paste0("pro_", rmX)
-    tifRaster <- raster::raster(x)
+    tifRaster <- raster(x)
     raster::crs(tifRaster) <- crs
-    database$profile <- cbind(database$profile, raster::extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
+    database$profile <- cbind(database$profile, extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
 
   if (fillWorldClim) {
     message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
-    bio <- raster::getData("worldclim", var = "bio", res = 2.5, path = tempdir())
-    bio_extracted <- raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
+    bio <- getData("worldclim", var = "bio", res = 2.5, path = tempdir())
+    bio_extracted <- extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
     colnames(bio_extracted) <- paste("pro", colnames(bio_extracted), sep = "_")
     database$profile <- cbind(database$profile, bio_extracted)
   }

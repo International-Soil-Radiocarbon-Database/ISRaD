@@ -66,7 +66,9 @@ database <- ISRaD.extra.fill_coords(database)
 # Note that geospatial data in pkg is only for the Gaudinski_2001 dataset
 # Users may supply their own geospatial data as long as it can be read by the raster package
 database.x <- ISRaD.extra.geospatial(database,
- geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
- fillWorldClim = TRUE)
+  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
+  fillWorldClim = TRUE
+)
 }
+
 }

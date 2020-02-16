@@ -3,15 +3,12 @@
 #' @description Generates a report of counts of observations at each level of the database
 #' @param database ISRaD data object
 #' @import dplyr
-#' @import tidyr
 #' @export
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.count.all(database)
 ISRaD.rep.count.all <- function(database = NULL) {
-  requireNamespace("dplyr")
-  requireNamespace("tidyr")
 
   entry <- mutate_all(database$metadata, as.character) %>% summarise(entries = n_distinct(.data$entry_name))
   site <- mutate_all(database$site, as.character) %>% summarise(sites = n_distinct(.data$site_name))

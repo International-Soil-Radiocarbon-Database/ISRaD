@@ -19,4 +19,5 @@ database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
 # Generate a map of all ISRaD sites
 ISRaD.rep.site.map(database)
 }
+
 }

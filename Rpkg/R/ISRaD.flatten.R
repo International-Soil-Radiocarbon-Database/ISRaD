@@ -6,6 +6,7 @@
 #' @details ISRaD.extra.flatten generates flat files (2 dimensional matrices) for user-specified ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
 #' @author J. Beem-Miller
 #' @export
+#' @import dplyr
 #' @return Returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),ncol(profile),...,ncol(table))
 #' @examples
 #' # Load example dataset Gaudinski_2001
@@ -13,7 +14,6 @@
 #' fractions <- ISRaD.flatten(database, "fraction")
 #' layers <- ISRaD.flatten(database, "layer")
 ISRaD.flatten <- function(database, table) {
-  requireNamespace("dplyr")
 
   g.flat <- as.data.frame(lapply(database$metadata, as.character), stringsAsFactors = FALSE) %>%
     right_join(as.data.frame(lapply(database$site, as.character), stringsAsFactors = FALSE), by = "entry_name") %>%
@@ -52,6 +52,5 @@ ISRaD.flatten <- function(database, table) {
       }
     }
   }
-  ISRaD_flat <- utils::type.convert(ISRaD_flat)
-  return(ISRaD_flat)
+  utils::type.convert(ISRaD_flat)
 }
