@@ -15,22 +15,22 @@
 #' layers <- ISRaD.flatten(database, "layer")
 ISRaD.flatten <- function(database, table) {
 
-  g.flat <- as.data.frame(lapply(database$metadata, as.character), stringsAsFactors = FALSE) %>%
-    right_join(as.data.frame(lapply(database$site, as.character), stringsAsFactors = FALSE), by = "entry_name") %>%
-    right_join(as.data.frame(lapply(database$profile, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name"))
-  g.lyr <- g.flat %>% right_join(as.data.frame(lapply(database$layer, as.character), stringsAsFactors = FALSE),
+  g.flat <- lapply_df(database$metadata, as.character) %>%
+    right_join(lapply_df(database$site, as.character), by = "entry_name") %>%
+    right_join(lapply_df(database$profile, as.character), by = c("entry_name", "site_name"))
+  g.lyr <- g.flat %>% right_join(lapply_df(database$layer, as.character),
     by = c("entry_name", "site_name", "pro_name")
   )
-  g.flx <- g.flat %>% right_join(as.data.frame(lapply(database$flux, as.character), stringsAsFactors = FALSE),
+  g.flx <- g.flat %>% right_join(lapply_df(database$flux, as.character),
     by = c("entry_name", "site_name", "pro_name")
   )
-  g.ist <- g.flat %>% right_join(as.data.frame(lapply(database$interstitial, as.character), stringsAsFactors = FALSE),
+  g.ist <- g.flat %>% right_join(lapply_df(database$interstitial, as.character),
     by = c("entry_name", "site_name", "pro_name")
   )
-  g.frc <- g.lyr %>% right_join(as.data.frame(lapply(database$fraction, as.character), stringsAsFactors = FALSE),
+  g.frc <- g.lyr %>% right_join(lapply_df(database$fraction, as.character),
     by = c("entry_name", "site_name", "pro_name", "lyr_name")
   )
-  g.inc <- g.lyr %>% right_join(as.data.frame(lapply(database$incubation, as.character), stringsAsFactors = FALSE),
+  g.inc <- g.lyr %>% right_join(lapply_df(database$incubation, as.character),
     by = c("entry_name", "site_name", "pro_name", "lyr_name")
   )
   if (table == "fraction") {

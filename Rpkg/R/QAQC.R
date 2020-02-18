@@ -228,7 +228,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     error <- error + 1
   }
 
-  mismatch.rows <- anti_join(as.data.frame(lapply(data$profile, as.character), stringsAsFactors = FALSE), as.data.frame(lapply(data$site, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name"))
+  mismatch.rows <- anti_join(lapply_df(data$profile, as.character), lapply_df(data$site, as.character), by = c("entry_name", "site_name"))
   if (dim(mismatch.rows)[1] > 0) {
     row.ind <- match(
       data.frame(t(mismatch.rows[, c("entry_name", "site_name")])),
@@ -288,7 +288,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
 
-    mismatch.rows <- anti_join(as.data.frame(lapply(data$flux, as.character), stringsAsFactors = FALSE), as.data.frame(lapply(data$site, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name"))
+    mismatch.rows <- anti_join(lapply_df(data$flux, as.character), lapply_df(data$site, as.character), by = c("entry_name", "site_name"))
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name")])),
@@ -359,7 +359,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       error <- error + 1
     }
 
-    mismatch.rows <- anti_join(as.data.frame(lapply(data$layer, as.character), stringsAsFactors = FALSE), as.data.frame(lapply(data$profile, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name", "pro_name"))
+    mismatch.rows <- anti_join(lapply_df(data$layer, as.character), lapply_df(data$profile, as.character), by = c("entry_name", "site_name", "pro_name"))
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name")])),
@@ -426,7 +426,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       error <- error + 1
     }
 
-    mismatch.rows <- anti_join(as.data.frame(lapply(data$interstitial, as.character), stringsAsFactors = FALSE), as.data.frame(lapply(data$profile, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name", "pro_name"))
+    mismatch.rows <- anti_join(lapply_df(data$interstitial, as.character), lapply_df(data$profile, as.character), by = c("entry_name", "site_name", "pro_name"))
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name")])),
@@ -497,7 +497,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       error <- error + 1
     }
 
-    mismatch.rows <- anti_join(as.data.frame(lapply(data$fraction, as.character), stringsAsFactors = FALSE), as.data.frame(lapply(data$layer, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name", "pro_name", "lyr_name"))
+    mismatch.rows <- anti_join(lapply_df(data$fraction, as.character), lapply_df(data$layer, as.character), by = c("entry_name", "site_name", "pro_name", "lyr_name"))
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name", "lyr_name")])),
@@ -574,7 +574,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       error <- error + 1
     }
 
-    mismatch.rows <- anti_join(as.data.frame(lapply(data$incubation, as.character), stringsAsFactors = FALSE), as.data.frame(lapply(data$layer, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name", "pro_name", "lyr_name"))
+    mismatch.rows <- anti_join(lapply_df(data$incubation, as.character), lapply_df(data$layer, as.character), by = c("entry_name", "site_name", "pro_name", "lyr_name"))
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name", "lyr_name")])),
