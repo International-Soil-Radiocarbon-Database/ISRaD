@@ -39,7 +39,7 @@
 #' @export
 #' @importFrom raster raster crs extract getData
 #' @import rgdal
-#' @return returns updated ISRaD_extra object with new columns at the profile level
+#' @return Updated ISRaD_extra object with new columns at the profile level
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001

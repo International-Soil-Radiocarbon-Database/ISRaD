@@ -4,7 +4,7 @@
 #' @param database ISRaD dataset object.
 #' @author J. Beem-Miller
 #' @export
-#' @return returns ISRaD_data object with filled profile coordinates
+#' @return ISRaD_data object with filled profile coordinates.
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001

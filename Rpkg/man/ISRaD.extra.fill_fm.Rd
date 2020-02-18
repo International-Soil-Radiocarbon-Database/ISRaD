@@ -10,7 +10,7 @@ ISRaD.extra.fill_fm(database)
 \item{database}{ISRaD dataset object.}
 }
 \value{
-returns ISRaD_data object with filled fraction modern columns
+ISRaD_data object with filled fraction modern columns.
 }
 \description{
 Fills fraction modern from delta 14C if fraction modern not reported.

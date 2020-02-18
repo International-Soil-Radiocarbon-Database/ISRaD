@@ -10,7 +10,7 @@ ISRaD.extra.fill_coords(database)
 \item{database}{ISRaD dataset object.}
 }
 \value{
-returns ISRaD_data object with filled profile coordinates
+ISRaD_data object with filled profile coordinates.
 }
 \description{
 Fills profile coordinates from site coordinates if profile coordinates not reported.

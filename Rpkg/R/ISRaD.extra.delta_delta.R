@@ -10,7 +10,7 @@
 #' @references Graven et al. 2017 <https://www.geosci-model-dev.net/10/4405/2017/gmd-10-4405-2017.pdf>;  Sierra, C. "Forecasting atmospheric radiocarbon decline to pre-bomb values", Radiocarbon, Vol 60, Nr 4, 2018, p 1055–1066 DOI:10.1017/RDC.2018.33
 #' @export
 #' @importFrom dplyr left_join
-#' @return returns ISRaD_data object with new delta delta columns in relevant tables
+#' @return ISRaD_data object with new delta delta columns in relevant tables.
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001

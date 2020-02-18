@@ -13,7 +13,7 @@ to standard output.}
 \item{verbose}{if TRUE (default) will print output to specified outfile}
 }
 \value{
-returns NULL
+Nothing (run for side effects).
 }
 \description{
 Check that the template information file and the template file match appropriately.
