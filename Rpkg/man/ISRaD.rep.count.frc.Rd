@@ -4,7 +4,7 @@
 \alias{ISRaD.rep.count.frc}
 \title{ISRaD.rep.count.frc}
 \usage{
-ISRaD.rep.count.frc(database = NULL)
+ISRaD.rep.count.frc(database)
 }
 \arguments{
 \item{database}{ISRaD data object}
