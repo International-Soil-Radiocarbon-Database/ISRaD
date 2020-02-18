@@ -45,9 +45,7 @@ compile <- function(dataset_directory,
   assert_that(is.logical(write_report))
   assert_that(is.logical(write_out))
   assert_that(is.character(return_type))
-  assert_that(is.logical(checkdoi))
-  assert_that(is.logical(verbose))
-  
+
   # Create directories
   if (!dir.exists(file.path(dataset_directory, "QAQC"))) {
     dir.create(file.path(dataset_directory, "QAQC")) # Creates folder for QAQC reports
@@ -98,9 +96,14 @@ compile <- function(dataset_directory,
   data_files <- list.files(dataset_directory, full.names = TRUE)
   data_files <- data_files[grep("\\.xlsx", data_files)]
 
+  if(!length(data_files)) {
+      warning("No data files found!")
+      return(NULL)
+    }
+
   if (verbose) {
     cat("Compiling and checking template files...\n")
-    pb <- txtProgressBar(min = 1, max = length(data_files), style = 3)
+    pb <- txtProgressBar(min = 0, max = length(data_files), style = 3)
   }
 
   # check if previous ISRaD database exists in database directory, and only run QAQC on new templates
