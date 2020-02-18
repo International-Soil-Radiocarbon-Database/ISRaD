@@ -45,7 +45,9 @@ compile <- function(dataset_directory,
   assert_that(is.logical(write_report))
   assert_that(is.logical(write_out))
   assert_that(is.character(return_type))
-
+  assert_that(is.logical(checkdoi))		
+  assert_that(is.logical(verbose))
+  
   # Create directories
   if (!dir.exists(file.path(dataset_directory, "QAQC"))) {
     dir.create(file.path(dataset_directory, "QAQC")) # Creates folder for QAQC reports
