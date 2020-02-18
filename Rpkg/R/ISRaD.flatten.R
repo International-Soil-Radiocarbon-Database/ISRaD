@@ -14,25 +14,28 @@
 #' fractions <- ISRaD.flatten(database, "fraction")
 #' layers <- ISRaD.flatten(database, "layer")
 ISRaD.flatten <- function(database, table) {
-
+  stopifnot(is.list(database))
+  stopifnot(is.character(table))
+  
   g.flat <- lapply_df(database$metadata, as.character) %>%
     right_join(lapply_df(database$site, as.character), by = "entry_name") %>%
     right_join(lapply_df(database$profile, as.character), by = c("entry_name", "site_name"))
-  g.lyr <- g.flat %>% right_join(lapply_df(database$layer, as.character),
-    by = c("entry_name", "site_name", "pro_name")
-  )
-  g.flx <- g.flat %>% right_join(lapply_df(database$flux, as.character),
-    by = c("entry_name", "site_name", "pro_name")
-  )
-  g.ist <- g.flat %>% right_join(lapply_df(database$interstitial, as.character),
-    by = c("entry_name", "site_name", "pro_name")
-  )
-  g.frc <- g.lyr %>% right_join(lapply_df(database$fraction, as.character),
-    by = c("entry_name", "site_name", "pro_name", "lyr_name")
-  )
-  g.inc <- g.lyr %>% right_join(lapply_df(database$incubation, as.character),
-    by = c("entry_name", "site_name", "pro_name", "lyr_name")
-  )
+  g.lyr <- g.flat %>% 
+    right_join(lapply_df(database$layer, as.character),
+               by = c("entry_name", "site_name", "pro_name"))
+  g.flx <- g.flat %>% 
+    right_join(lapply_df(database$flux, as.character),
+               by = c("entry_name", "site_name", "pro_name"))
+  g.ist <- g.flat %>% 
+    right_join(lapply_df(database$interstitial, as.character),
+               by = c("entry_name", "site_name", "pro_name"))
+  g.frc <- g.lyr %>% 
+    right_join(lapply_df(database$fraction, as.character),
+               by = c("entry_name", "site_name", "pro_name", "lyr_name"))
+  g.inc <- g.lyr %>% 
+    right_join(lapply_df(database$incubation, as.character),
+               by = c("entry_name", "site_name", "pro_name", "lyr_name"))
+  
   if (table == "fraction") {
     ISRaD_flat <- g.frc
   } else {
@@ -47,6 +50,8 @@ ISRaD.flatten <- function(database, table) {
         } else {
           if (table == "interstitial") {
             ISRaD_flat <- g.ist
+          } else {
+            stop("Unknown table type ", table)
           }
         }
       }
