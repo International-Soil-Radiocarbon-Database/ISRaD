@@ -74,7 +74,7 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   template_vocab <- template_vocab[c(-1, -2), ]
 
   ## Crunch the vocab in the template
-  Column_Name <- Template_Name <- NULL # silence R CMD CHECK note
+  Column_Name <- Template_Vocab <- NULL # silence R CMD CHECK note
   template_vocab <- template_vocab %>%
     tidyr::gather(Column_Name, Template_Vocab, na.rm = TRUE) %>%
     filter(Template_Vocab != "<NA>") %>%
