@@ -74,10 +74,10 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
 
   ## Crunch the vocab in the template
   template_vocab <- template_vocab %>%
-    tidyr::gather(key = "Column_Name", value = "Template_Vocab", na.rm = TRUE) %>%
-    dplyr::filter(.data$Template_Vocab != "<NA>") %>%
-    dplyr::group_by(.data$Column_Name) %>%
-    dplyr::summarize(Template_Vocab = list(.data$Template_Vocab))
+    tidyr::gather(Column_Name, Template_Vocab, na.rm = TRUE) %>%
+    dplyr::filter(Template_Vocab != "<NA>") %>%
+    dplyr::group_by(Column_Name) %>%
+    dplyr::summarize(Template_Vocab = list(Template_Vocab))
 
   sheetNames <- lapply(template_info, names)
   # for each sheet that has a Variable_class defined
