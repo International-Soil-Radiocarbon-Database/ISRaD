@@ -10,7 +10,7 @@ ISRaD.extra.fill_14c(database)
 \item{database}{ISRaD dataset object.}
 }
 \value{
-returns ISRaD_data object with filled delta 14C columns
+ISRaD_data object with filled delta 14C columns.
 }
 \description{
 Fills delta 14C from fraction modern if delta 14C not reported.

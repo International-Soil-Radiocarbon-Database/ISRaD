@@ -12,7 +12,7 @@ ISRaD.extra.delta_delta(database, future = TRUE)
 \item{future}{Project atmospheric radiocarbon into the future? TRUE/FALSE}
 }
 \value{
-returns ISRaD_data object with new delta delta columns in relevant tables
+ISRaD_data object with new delta delta columns in relevant tables.
 }
 \description{
 Calculates the difference between sample delta 14C and the atmosphere for the year of collection (delta-delta)
