@@ -17,7 +17,6 @@
 #' @export
 #'
 #' @importFrom openxlsx read.xlsx
-#' @importFrom assertthat assert_that
 #' @importFrom utils setTxtProgressBar txtProgressBar
 #' @examples
 #' \donttest{
@@ -41,12 +40,12 @@ compile <- function(dataset_directory,
                     return_type = c("none", "list")[2], checkdoi = FALSE, verbose = TRUE) {
 
   # Check inputs
-  assert_that(dir.exists(dataset_directory))
-  assert_that(is.logical(write_report))
-  assert_that(is.logical(write_out))
-  assert_that(is.character(return_type))
-  assert_that(is.logical(checkdoi))		
-  assert_that(is.logical(verbose))
+  stopifnot(dir.exists(dataset_directory))
+  stopifnot(is.logical(write_report))
+  stopifnot(is.logical(write_out))
+  stopifnot(is.character(return_type))
+  stopifnot(is.logical(checkdoi))		
+  stopifnot(is.logical(verbose))
   
   # Create directories
   if (!dir.exists(file.path(dataset_directory, "QAQC"))) {
