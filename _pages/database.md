@@ -7,15 +7,15 @@ header:
 htmlwidgets: TRUE
 ---
 ## Accessing ISRaD Data
-*   Using R, the compiled database or individual ISRaD datasets can be downloaded (in .xlsx, .csv, and .rda format) and easily loaded into an R session following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website. 
+*   Using R, the compiled database or individual ISRaD datasets can be downloaded (in .xlsx, .csv, and .rda format) and easily loaded into an R session following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website.
 *   For non-R users, ISRaD data is available in .xlsx and .csv formats. Download [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip) (contents of the zip archive are described in detail in the **Data Files** section below).
 
 ## Raw versus "Extra" data
 There are two different versions of the compiled database:
-*   **Raw data files** (with names begining in "ISRaD_data") contain only data ingested from the original source datasets.
-*   **Expanded or "extra" data files** (with names begnining in "ISRaD_extra") include the original raw data as well as additional variables that have either been calculated from existing data or imported based on geospatial coordinates, such as geospatially referenced climate data. ISRaD_extra variables are listed and described in detail [here](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx).
+*   **Raw data files** (with names beginning in "ISRaD_data") contain only data ingested from the original source datasets.
+*   **Expanded or "extra" data files** (with names begnining in "ISRaD_extra") include the original raw data as well as additional variables that have either been calculated from existing data or imported based on geospatial coordinates, such as geospatially referenced land cover, climate, and soil data.
 
-Descriptions of all ISRaD variables are available in the [ISRaD Template Information](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information](https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx) files.
+Descriptions of all ISRaD variables are available in the [ISRaD Template Information](https://soilradiocarbon.org/database_structure/) and [ISRaD_extra Information](https://soilradiocarbon.org/extra_structure/) files.
 
 ## Data Files
 The following files are included in the [ISRaD_database_files.zip](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/ISRaD_database_files.zip) archive
@@ -30,7 +30,7 @@ The following files are included in the [ISRaD_database_files.zip](https://githu
 *   *ISRaD_data_flat_incubation_vX.date.csv* - Incubation data and associated information (Incubation, Layer, Profile, Site, Metadata)
 
 ### Hierarchical *"ISRaD_extra"* data:
-*	*ISRaD_extra_vX.date.xlsx* - Same as *ISRaD_data_vX.date.xlsx*, but with additional calculated/filled data fields 
+*	*ISRaD_extra_vX.date.xlsx* - Same as *ISRaD_data_vX.date.xlsx*, but with additional calculated/filled data fields
 *	*ISRaD_extra_vX.date.rda* - Same but in (binary) R data format
 
 ### Flattened *"ISRaD_extra"* data:
@@ -50,7 +50,7 @@ The names of the data files reflect the version of ISRaD used and the date on wh
 
 ## Data Structure
 
-The ISRaD database is compiled from individual template files, each of which describes a single data set (i.e. linked to a DOI). 
+The ISRaD database is compiled from individual template files, each of which describes a single data set (i.e. linked to a DOI).
 
 In ISRaD we strive to incorporate radicoarbon data collected at many different spatial and temporal scales: from laboratory fractionations to gaseous fluxes and dissolved organics observed in the field. The ISRaD database is structured accordingly as a list of hierarchically-linked tables designed for recording these different kinds of data.
 
@@ -66,7 +66,7 @@ ISRaD data tables (in descending hierarchical order):
 	* **Profile**s are places sampled within the general area of the site (e.g. soil profiles, flux chambers, etc.). Finer scale spatial coordinates should be reported if available. Report general data on vegetation, soil taxonomy, and local climate (mean annual temperature and precipitation) at the profile level.
 * Data associated with an individual **Profile**
 	* **Flux** and **Interstitial** measurements, e.g. CO<sub>2</sub>, methane, dissolved organic matter, etc.
-	* **Layer** %C, %N, bulk density, etc. data from *individual depth layers* of a soil **profile**. 
+	* **Layer** %C, %N, bulk density, etc. data from *individual depth layers* of a soil **profile**.
 * Data associated with a specific **layer** are reported in the following tables:
 	* **Fractions** of soil as defined by physical, chemical, or biological methods
 	* Amount and isotoptic signature of CO<sub>2</sub> or methane produced during laboratory **Incubations**

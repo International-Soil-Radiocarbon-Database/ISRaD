@@ -7,13 +7,10 @@ overlay_image: /assets/images/soil.jpg
 ---
 
 
-For an up to date overview of variables included in the database see table below.
-It can be downloaded as XLSX file from <a
-        href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx?raw=true"
-        download="ISRaD_Template_Info.xlsx">here</a>.
+For an up to date overview of variables included in the ISRaD_extra product, see table below. Information on source, scale, and citations are included. The table can be downloaded as XLSX file from <a
+        href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx?raw=true"
+        download="ISRaD_Extra_Info.xlsx">here</a>.
 
-To view a list of value-added variables, spatial data, and other data products included in "ISRaD Extra", please see the information file [here]('https://soilradiocarbon.org/extra_structure/'
-)
 
 <ul class="database-sheets"></ul>
 
@@ -28,7 +25,7 @@ To view a list of value-added variables, spatial data, and other data products i
 <script src="{{ '/assets/js/database_viewer/canvas-datagrid.js' | relative_url }}"></script>
 <script type="text/javascript">
     // Configuration
-    const DB_STRUCTURE_XLXS_FILE = 'https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx';
+    const DB_STRUCTURE_XLXS_FILE = 'https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx';
     const OUTPUT_ELEM_ID = 'databasePlaceholder';
     const DEFAULT_INDEX_SHEET = 1;
 
@@ -38,7 +35,7 @@ To view a list of value-added variables, spatial data, and other data products i
         parentNode: gridElem,
         allowColumnReordering: false,
         editable: false,
-        name: 'ISRaDDatabase'
+        name: 'ISRaD_Extra'
     });
     grid.style.height = '100%';
     grid.style.width = '100%';
