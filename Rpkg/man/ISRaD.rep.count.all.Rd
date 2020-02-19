@@ -4,10 +4,14 @@
 \alias{ISRaD.rep.count.all}
 \title{ISRaD.rep.count.all}
 \usage{
-ISRaD.rep.count.all(database = NULL)
+ISRaD.rep.count.all(database)
 }
 \arguments{
 \item{database}{ISRaD data object}
+}
+\value{
+A \code{\link{tibble}} of observation counts, one column for each
+database table.
 }
 \description{
 Generates a report of counts of observations at each level of the database

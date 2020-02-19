@@ -10,7 +10,7 @@ ISRaD.rep.count.frc(database = NULL)
 \item{database}{ISRaD data object}
 }
 \description{
-Generates a report of fraction level observations, including fraction scheme and properties
+Generates a report of fraction level observations, including fraction scheme and properties. Note that this function only counts rows, not 14C observations.
 }
 \examples{
 # Load example dataset Gaudinski_2001
