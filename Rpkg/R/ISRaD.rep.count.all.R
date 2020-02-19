@@ -13,7 +13,9 @@
 ISRaD.rep.count.all <- function(database) {
   stopifnot(is.list(database))
   
-  tibble::tibble(
+  entry_name <- site_name <- pro_name <- NULL  # silence R CMD CHECK note otherwise
+  
+  data.frame(
     entries = database$metadata %>% pull(entry_name) %>% n_distinct(),
     sites = database$site %>% pull(site_name) %>% n_distinct(),
     profiles = database$profile %>% pull(pro_name) %>% n_distinct(),
