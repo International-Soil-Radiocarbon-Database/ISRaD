@@ -38,7 +38,7 @@ ISRaD.extra.delta_delta <- function(database, future = TRUE) {
   )
 
   calc_atm14c <- function(df, obs_date_y) {
-    df.pro <- left_join(as.data.frame(lapply(df, as.character), stringsAsFactors = FALSE), as.data.frame(lapply(database$profile, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name", "pro_name"))
+    df.pro <- left_join(lapply_df(df, as.character), lapply_df(database$profile, as.character), by = c("entry_name", "site_name", "pro_name"))
     north.obs <- which(df.pro$pro_lat > 30)
     south.obs <- which(df.pro$pro_lat < (-30))
     tropic.obs <- which(df.pro$pro_lat < 30 & df.pro$pro_lat > (-30))

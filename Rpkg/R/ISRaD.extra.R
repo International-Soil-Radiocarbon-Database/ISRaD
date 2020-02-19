@@ -15,7 +15,6 @@
 #'   geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD")
 #' )
 #' }
-#'
 ISRaD.extra <- function(database, geodata_directory) {
   message("\t filling dates \n")
   database <- ISRaD.extra.fill_dates(database)
@@ -30,7 +29,5 @@ ISRaD.extra <- function(database, geodata_directory) {
   message("\t filling cstocks \n")
   database <- ISRaD.extra.Cstocks(database)
   message("\t filling geospatial data \n")
-  database <- ISRaD.extra.geospatial(database, geodata_directory = geodata_directory, fillWorldClim = TRUE)
-
-  database
+  ISRaD.extra.geospatial(database, geodata_directory = geodata_directory, fillWorldClim = TRUE)
 }
