@@ -8,11 +8,11 @@ header:
 
 
 ## ISRaD R package
-The ISRaD R package provides tools for data manipulation, data enhancement (ISRaD_extra), QA/QC, and making simple queries and reports. ISRaD data are not bundled with the R package, but are maintained under version control on github, and are continuously being updated.
+The ISRaD R package provides tools for data manipulation, data enhancement (ISRaD_extra), QA/QC, and making simple queries and reports. ISRaD data are not bundled with the R package, but are maintained under version control on GitHub, and are continuously being updated.
 
-The latest ISRaD data can be retrieved from the ISRaD github repository using the function "ISRaD.getdata" from within an R session (all package versions ≥ 1.0.0). This will download the most recently compiled version of the database to a user-specified directory. All data will be tagged with the ISRaD version number and the compilation date. 
+The latest ISRaD data can be retrieved from the ISRaD GitHub repository using the function ```ISRaD.getdata``` from within an R session (all package versions ≥ 1.0.0). This will download the most recently compiled version of the database to a user-specified directory. All data will be tagged with the ISRaD version number and the compilation date.
 
-*(For non-R users, the compiled raw data can also be downloaded as a .zip file directly from github). See the [Database](https://soilradiocarbon.org/database/) page for more information.* 
+*(For non-R users, the compiled raw data can also be downloaded as a .zip file directly from GitHub). See the [Database](https://soilradiocarbon.org/database/) page for more information.*
 
 The ISRaD R package provides a number of data enhancement tools ("ISRaD.extra" functions) that calculate or fill in certain fields with missing data, as well as provide ancillary data from various geospatial data sources. Note that in addition to the basic compiled version of the database, you can choose to download a version of the compiled database that already has these data filled and added (i.e. "ISRad_extra") by using the option "extra = TRUE" when running the "ISRaD.getdata" function:
 
@@ -31,12 +31,12 @@ install.packages("ISRaD")
 library(ISRaD)
 ```
 
-Alternatively, for those users willing to risk working with beta code, you can install the development version of ISRaD from github:
+Alternatively, for those users willing to risk working with beta code, you can install the development version of ISRaD from GitHub:
 ```
 devtools::install_github('International-Soil-Radiocarbon-Database/ISRaD/Rpkg')
 ```
 
 ### Looking for step-by-step instructions? [Tutorial here](/user_manual_Aug15_2019.html).
 
-### Code or data-related questions, concerns, suggestions? [Post an issue here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues). 
-### Or contact us at info.israd@gmail.com (slower).
+### Code or data-related questions, concerns, suggestions? [Post an issue here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
+### Or contact us at <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a> (slower).
