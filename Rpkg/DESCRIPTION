@@ -15,16 +15,16 @@ Description: This is the central location for data and tools for the development
     data structure, and simple query and reporting functions for ISRaD. For more detailed 
     information visit the ISRaD website at: <https://soilradiocarbon.org/>.
 Depends: R (>= 3.5.0)
-Imports: openxlsx, 
-    raster, 
-    rgdal, 
-    dplyr, 
-    tidyr, 
-    RCurl, 
-    ggplot2, 
-    maps, 
-    rcrossref, 
-    pangaear, 
+Imports: openxlsx,
+    raster,
+    rgdal,
+    dplyr (>= 0.8), 
+    tidyr (>= 1.0), 
+    RCurl,
+    ggplot2,
+    maps,
+    rcrossref,
+    pangaear,
     stringr
 License: GPL-2
 Encoding: UTF-8
