@@ -7,7 +7,7 @@
 #' @param verbose if TRUE (default) will print output to specified outfile
 #' @importFrom openxlsx read.xlsx
 #' @export
-#' @return returns NULL
+#' @return Nothing (run for side effects).
 #' @examples
 #' checkTemplateFiles()
 checkTemplateFiles <- function(outfile = "", verbose = TRUE) {

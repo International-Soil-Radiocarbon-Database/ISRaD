@@ -6,7 +6,7 @@
 #' @author J. Beem-Miller & A. Hoyt
 #' @references Stuiver and Polach, 1977
 #' @export
-#' @return returns ISRaD_data object with filled delta 14C columns
+#' @return ISRaD_data object with filled delta 14C columns.
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001

@@ -5,7 +5,7 @@
 #' @param geodata_directory directory where geospatial data are found
 #' @details Fills fraction modern, delta 14C, delta-delta, profile coordinates, bulk density, organic C concentration, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
 #' @export
-#' @return Returns new ISRaD_extra object with derived, transformed, and filled columns
+#' @return New ISRaD_extra object with derived, transformed, and filled columns.
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
