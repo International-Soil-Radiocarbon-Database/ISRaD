@@ -7,7 +7,7 @@
 #' For the function to work, the .csv filenames must be identical to the corresponding raster filenames (except for the file extension).
 #' Additionally, the first column of the .csv file must contain the numeric identifier and the second column the corresponding character value.
 #' @export
-#' @return returns updated ISRaD_extra object with recoded columns
+#' @return Updated ISRaD_extra object with recoded columns.
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001

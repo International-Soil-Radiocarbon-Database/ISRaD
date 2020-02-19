@@ -2,7 +2,7 @@
 #'
 #' @description Generates a report of fraction level observations, including fraction scheme and properties. Note that this function only counts rows, not 14C observations.
 #' @param database ISRaD data object
-#' @import dplyr
+#' @importFrom dplyr left_join count
 #' @export
 #' @examples
 #' # Load example dataset Gaudinski_2001

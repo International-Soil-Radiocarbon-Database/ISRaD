@@ -10,7 +10,7 @@
 #' @references Graven et al. 2017 <https://www.geosci-model-dev.net/10/4405/2017/gmd-10-4405-2017.pdf>;  Sierra, C. "Forecasting atmospheric radiocarbon decline to pre-bomb values", Radiocarbon, Vol 60, Nr 4, 2018, p 1055–1066 DOI:10.1017/RDC.2018.33
 #' @export
 #' @importFrom dplyr left_join
-#' @return returns ISRaD_data object with new delta delta columns in relevant tables
+#' @return ISRaD_data object with new delta delta columns in relevant tables.
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
@@ -38,7 +38,7 @@ ISRaD.extra.delta_delta <- function(database, future = TRUE) {
   )
 
   calc_atm14c <- function(df, obs_date_y) {
-    df.pro <- left_join(as.data.frame(lapply(df, as.character), stringsAsFactors = FALSE), as.data.frame(lapply(database$profile, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name", "pro_name"))
+    df.pro <- left_join(lapply_df(df, as.character), lapply_df(database$profile, as.character), by = c("entry_name", "site_name", "pro_name"))
     north.obs <- which(df.pro$pro_lat > 30)
     south.obs <- which(df.pro$pro_lat < (-30))
     tropic.obs <- which(df.pro$pro_lat < 30 & df.pro$pro_lat > (-30))

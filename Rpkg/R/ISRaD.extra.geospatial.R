@@ -39,7 +39,7 @@
 #' @export
 #' @importFrom raster raster crs extract getData
 #' @import rgdal
-#' @return returns updated ISRaD_extra object with new columns at the profile level
+#' @return Updated ISRaD_extra object with new columns at the profile level
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
@@ -67,7 +67,7 @@ ISRaD.extra.geospatial <- function(database,
   })
   df <- do.call(rbind, list.df)
   df.sp <- unsplit(lapply(split(df, df[1]), function(x) x[order(x[2]), ]), df[1])
-  df.sp <- as.data.frame(lapply(df.sp, as.character), stringsAsFactors = FALSE)
+  df.sp <- lapply_df(df.sp, as.character)
   list.list <- lapply(seq_len(nrow(df.sp)), function(x) {
     x <- paste(unlist(as.character(df.sp[x, ])), collapse = "_")
     file.path(geodata_directory, x)
