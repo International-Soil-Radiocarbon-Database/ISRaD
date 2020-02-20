@@ -26,6 +26,8 @@
 #' }
 #'
 ISRaD.extra.geospatial.keys <- function(database, geodata_keys) {
+  stopifnot(is_israd_database(database))
+  
   keys <- list.files(geodata_keys, full.names = TRUE)
   varNames <- lapply(keys, function(x) {
     x <- substr(x, start = nchar(geodata_keys) + 2, stop = nchar(x))

@@ -60,6 +60,8 @@ ISRaD.extra.geospatial <- function(database,
                                    crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
                                    fillWorldClim = TRUE) {
 
+  stopifnot(is_israd_database(database))
+  
   filez <- list.files(geodata_directory)
   list.df <- lapply(filez, function(x) {
     x <- unlist(strsplit(x, "_"))

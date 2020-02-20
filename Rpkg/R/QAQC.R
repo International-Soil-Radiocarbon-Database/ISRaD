@@ -28,7 +28,8 @@
 #' QAQC(file.path(tempdir(), "Gaudinski_2001.xlsx"))
 #' }
 #'
-QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = TRUE, dataReport = FALSE, checkdoi = TRUE, verbose = TRUE) {
+QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = TRUE, 
+                 dataReport = FALSE, checkdoi = TRUE, verbose = TRUE) {
 
   # start error count at 0
   error <- 0

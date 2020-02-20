@@ -4,7 +4,7 @@
 \alias{ISRaD.getdata}
 \title{ISRaD.getdata}
 \usage{
-ISRaD.getdata(directory, dataset = "full", extra = F,
+ISRaD.getdata(directory, dataset = "full", extra = FALSE,
   force_download = FALSE)
 }
 \arguments{

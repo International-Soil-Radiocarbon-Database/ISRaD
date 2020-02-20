@@ -8,8 +8,9 @@
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.count.all(database)
-ISRaD.rep.count.all <- function(database = NULL) {
-
+ISRaD.rep.count.all <- function(database) {
+  stopifnot(is_israd_database(database))
+  
   entry <- mutate_all(database$metadata, as.character) %>% summarise(entries = n_distinct(.data$entry_name))
   site <- mutate_all(database$site, as.character) %>% summarise(sites = n_distinct(.data$site_name))
   profile <- mutate_all(database$profile, as.character) %>% summarise(profiles = n_distinct(.data$pro_name))

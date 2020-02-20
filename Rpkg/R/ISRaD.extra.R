@@ -16,6 +16,8 @@
 #' )
 #' }
 ISRaD.extra <- function(database, geodata_directory) {
+  stopifnot(is_israd_database(database))
+  
   message("\t filling dates \n")
   database <- ISRaD.extra.fill_dates(database)
   message("\t filling 14c \n")
