@@ -4,7 +4,7 @@
 \alias{ISRaD.rep.site.map}
 \title{ISRaD.rep.site.map}
 \usage{
-ISRaD.rep.site.map(database = NULL)
+ISRaD.rep.site.map(database)
 }
 \arguments{
 \item{database}{ISRaD data object}

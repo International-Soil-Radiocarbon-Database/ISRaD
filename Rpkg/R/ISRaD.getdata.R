@@ -15,11 +15,11 @@
 #' ISRaD_extra <- ISRaD.getdata(tempdir(), dataset = "full", extra = TRUE)
 #' # Return only fraction data, including filled fraction data
 #' ISRaD_fractions <- ISRaD.getdata(tempdir(), dataset = "fraction", extra = TRUE)
-ISRaD.getdata <- function(directory, dataset = "full", extra = F, force_download = FALSE) {
+ISRaD.getdata <- function(directory, dataset = "full", extra = FALSE, force_download = FALSE) {
   dataURL <- "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip"
 
   if (!dataset %in% c("full", "flux", "interstitial", "incubation", "fraction", "layer")) {
-    stop('Dataset paramter not recognized. Options are c("full", "flux","interstitial","incubation","fraction","layer")')
+    stop('Dataset parameter not recognized. Options are c("full", "flux", "interstitial", "incubation", "fraction", "layer")')
   }
 
   if (!"ISRaD_database_files" %in% list.files(directory)) {

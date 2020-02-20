@@ -4,7 +4,7 @@
 \alias{ISRaD.rep.entry.stats}
 \title{ISRaD.rep.entry.stats}
 \usage{
-ISRaD.rep.entry.stats(database = NULL)
+ISRaD.rep.entry.stats(database)
 }
 \arguments{
 \item{database}{ISRaD data object}
@@ -15,5 +15,6 @@ Generates a report of metadata statistics for all entries
 \examples{
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
+ISRaD.rep.entry.stats(database)
 ISRaD.rep.entry.stats(database)
 }

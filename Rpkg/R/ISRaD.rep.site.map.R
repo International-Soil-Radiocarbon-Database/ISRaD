@@ -13,8 +13,9 @@
 #' ISRaD.rep.site.map(database)
 #' }
 #'
-ISRaD.rep.site.map <- function(database = NULL) {
-
+ISRaD.rep.site.map <- function(database) {
+  stopifnot(is_israd_database(database))
+  
   latlon <- database$site[, 3:4]
   world <- map_data("world")
   ggplot() +

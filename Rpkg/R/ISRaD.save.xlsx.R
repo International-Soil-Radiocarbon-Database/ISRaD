@@ -22,7 +22,8 @@
 ISRaD.save.xlsx <- function(database,
                             template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
                             outfile) {
-
+  stopifnot(is_israd_database(database))
+  
   template <- lapply(getSheetNames(template_file), function(s) read.xlsx(template_file, sheet = s))
   names(template) <- getSheetNames(template_file)
 
