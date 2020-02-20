@@ -18,7 +18,7 @@ ISRaD.extra.geospatial(database, geodata_directory,
 \item{fillWorldClim}{Option to fill climate data from the Worldclim dataset (downloads data from web)}
 }
 \value{
-returns updated ISRaD_extra object with new columns at the profile level
+Updated ISRaD_extra object with new columns at the profile level
 }
 \description{
 Extracts data from a user-supplied raster file and adds data as a new variable at the profile level

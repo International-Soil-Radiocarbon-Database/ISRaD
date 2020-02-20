@@ -10,7 +10,7 @@ ISRaD.extra.fill_dates(database)
 \item{database}{ISRaD dataset object.}
 }
 \value{
-returns ISRaD_data object with filled frc_obs_date_y and inc_obs_date_y fields.
+ISRaD_data object with filled frc_obs_date_y and inc_obs_date_y fields.
 }
 \description{
 Fills frc_obs_date_y and inc_obs_date_y columns from lyr_obs_date_y if not reported.
