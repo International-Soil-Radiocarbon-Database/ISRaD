@@ -2,6 +2,8 @@
 #'
 #' @description Generates a report of counts of observations at each level of the database
 #' @param database ISRaD data object
+#' @return A \code{\link{tibble}} of observation counts, one column for each
+#' database table.
 #' @import dplyr
 #' @export
 #' @examples
@@ -11,14 +13,16 @@
 ISRaD.rep.count.all <- function(database) {
   stopifnot(is_israd_database(database))
   
-  entry <- mutate_all(database$metadata, as.character) %>% summarise(entries = n_distinct(.data$entry_name))
-  site <- mutate_all(database$site, as.character) %>% summarise(sites = n_distinct(.data$site_name))
-  profile <- mutate_all(database$profile, as.character) %>% summarise(profiles = n_distinct(.data$pro_name))
-  layer <- mutate_all(database$layer, as.character) %>% summarise(layer = n())
-  fraction <- mutate_all(database$fraction, as.character) %>% summarise(fractions = n())
-  incubation <- mutate_all(database$incubation, as.character) %>% summarise(incubations = n())
-  interstitial <- mutate_all(database$interstitial, as.character) %>% summarise(interstitial = n())
-  flux <- mutate_all(database$flux, as.character) %>% summarise(flux = n())
-  count_data <- c(entry, site, profile, layer, fraction, incubation, interstitial, flux)
-  return(tbl_df(count_data))
+  entry_name <- site_name <- pro_name <- NULL  # silence R CMD CHECK note otherwise
+  
+  data.frame(
+    entries = database$metadata %>% pull(entry_name) %>% n_distinct(),
+    sites = database$site %>% pull(site_name) %>% n_distinct(),
+    profiles = database$profile %>% pull(pro_name) %>% n_distinct(),
+    layer = database$layer %>% nrow(),
+    fractions = database$fraction %>% nrow(),
+    incubations = database$incubation %>% nrow(),
+    interstitial = database$interstitial %>% nrow(),
+    flux = database$flux %>% nrow()
+  )
 }
