@@ -19,17 +19,17 @@ lapply_df <- function(...) {
 #' @description A valid ISRaD database is a list with the following elements,
 #' all of which must be \code{\link{data.frame}} objects:
 #' \itemize{
-#' \item{metadata}{Metadata}
-#' \item{site}{Site data}
-#' \item{profile}{Profile data}
-#' \item{flux}{Flux data}
-#' \item{layer}{Layer data}
-#' \item{interstitial}{Interstitial data}
-#' \item{fraction}{Fraction data}
-#' \item{incubation}{Incubation data}
+#' \item{\code{metadata}}{ Metadata}
+#' \item{\code{site}}{ Site data}
+#' \item{\code{profile}}{ Profile data}
+#' \item{\code{flux}}{ Flux data}
+#' \item{\code{layer}}{ Layer data}
+#' \item{\code{interstitial}}{ Interstitial data}
+#' \item{\code{fraction}}{ Fraction data}
+#' \item{\code{incubation}}{ Incubation data}
 #' }
 #' @return TRUE or FALSE.
-#' @export
+#' @keywords internal
 is_israd_database <- function(x) {
   # Database is a list and must have all the following data frames
   tables <- c("metadata", "site", "profile", "flux", "layer", "interstitial",
