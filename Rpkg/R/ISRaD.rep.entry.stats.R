@@ -8,9 +8,8 @@
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.entry.stats(database)
-#' ISRaD.rep.entry.stats(database)
 ISRaD.rep.entry.stats <- function(database) {
-  stopifnot(is.list(database))
+  stopifnot(is_israd_database(database))
   
   entry_name <- NULL  # silence R CMD CHECK note otherwise
   

@@ -24,6 +24,8 @@
 #' database.x <- ISRaD.extra.delta_delta(database.x)
 ISRaD.extra.delta_delta <- function(database, future = TRUE) {
 
+  stopifnot(is_israd_database(database))
+  
   graven <- ISRaD::graven
 
   if (future) {
