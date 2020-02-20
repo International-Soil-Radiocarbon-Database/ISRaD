@@ -37,7 +37,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   if (writeQCreport) {
     if (outfile_QAQC == "") {
-      outfile_QAQC <- file.path(dirname(file), "QAQC", "QAQC_", gsub("\\.xlsx", ".txt", basename(file)))
+      outfile_QAQC <- file.path(dirname(file), "QAQC", paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(file))))
     }
   }
 
