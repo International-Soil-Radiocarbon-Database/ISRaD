@@ -34,7 +34,7 @@ is_israd_database <- function(x) {
   # Database is a list and must have all the following data frames
   tables <- c("metadata", "site", "profile", "flux", "layer", "interstitial",
               "fraction", "incubation")
-  ok <- is.list(x) &&
+  is.list(x) &&
     identical(sort(tables), sort(names(x))) &&
     all(sapply(x, class) == "data.frame")
 }
