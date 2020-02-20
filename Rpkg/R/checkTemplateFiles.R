@@ -6,6 +6,7 @@
 #' to standard output.
 #' @param verbose if TRUE (default) will print output to specified outfile
 #' @importFrom openxlsx read.xlsx
+#' @importFrom dplyr group_by filter summarise
 #' @export
 #' @return Nothing (run for side effects).
 #' @examples
@@ -73,11 +74,13 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   template_vocab <- template_vocab[c(-1, -2), ]
 
   ## Crunch the vocab in the template
+  Column_Name <- Template_Vocab <- NULL # silence R CMD CHECK note
   template_vocab <- template_vocab %>%
-    tidyr::gather(key = "Column_Name", value = "Template_Vocab", na.rm = TRUE) %>%
-    dplyr::filter(.data$Template_Vocab != "<NA>") %>%
-    dplyr::group_by(.data$Column_Name) %>%
-    dplyr::summarize(Template_Vocab = list(.data$Template_Vocab))
+    tidyr::gather(Column_Name, Template_Vocab, na.rm = TRUE) %>%
+    filter(Template_Vocab != "<NA>") %>%
+    group_by(Column_Name) %>%
+    summarise(Template_Vocab = list(Template_Vocab)) %>% 
+    ungroup()
 
   sheetNames <- lapply(template_info, names)
   # for each sheet that has a Variable_class defined
