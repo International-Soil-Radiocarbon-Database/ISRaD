@@ -4,7 +4,7 @@
 \alias{ISRaD.rep.count.all}
 \title{ISRaD.rep.count.all}
 \usage{
-ISRaD.rep.count.all(database = NULL)
+ISRaD.rep.count.all(database)
 }
 \arguments{
 \item{database}{ISRaD data object}

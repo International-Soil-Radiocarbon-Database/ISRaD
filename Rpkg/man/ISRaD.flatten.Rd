@@ -12,7 +12,7 @@ ISRaD.flatten(database, table)
 \item{table}{ISRaD table of interest ("flux", "layer", "interstitial", "fraction", "incubation"). Must be entered with "".}
 }
 \value{
-Returns a dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),ncol(profile),...,ncol(table))
+A dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),ncol(profile),...,ncol(table))
 }
 \description{
 Joins tables in ISRaD based on linking variables and returns "flat" dataframe/s

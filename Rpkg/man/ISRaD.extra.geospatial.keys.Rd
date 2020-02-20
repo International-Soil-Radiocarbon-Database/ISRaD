@@ -12,7 +12,7 @@ ISRaD.extra.geospatial.keys(database, geodata_keys)
 \item{geodata_keys}{directory where geospatial data are found}
 }
 \value{
-returns updated ISRaD_extra object with recoded columns
+Updated ISRaD_extra object with recoded columns.
 }
 \description{
 Recode numeric values from categorical geospatial data products

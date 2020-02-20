@@ -10,7 +10,7 @@ ISRaD.extra.Cstocks(database)
 \item{database}{ISRaD dataset object.}
 }
 \value{
-returns ISRaD_data object with filled columns "lyr_coarse_tot_filled", "lyr_bd_samp_filled", "lyr_c_inorg_filled", "lyr_c_org_filled", "lyr_soc_filled"
+ISRaD_data object with filled columns "lyr_coarse_tot_filled", "lyr_bd_samp_filled", "lyr_c_inorg_filled", "lyr_c_org_filled", "lyr_soc_filled".
 }
 \description{
 Calculates soil organic carbon stock
