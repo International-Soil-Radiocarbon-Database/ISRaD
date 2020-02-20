@@ -14,7 +14,7 @@
 #' fractions <- ISRaD.flatten(database, "fraction")
 #' layers <- ISRaD.flatten(database, "layer")
 ISRaD.flatten <- function(database, table) {
-  stopifnot(is.list(database))
+  stopifnot(is_israd_database(database))
   stopifnot(is.character(table))
   
   g.flat <- lapply_df(database$metadata, as.character) %>%

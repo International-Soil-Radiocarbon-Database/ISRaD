@@ -11,7 +11,7 @@
 #' database <- ISRaD::Gaudinski_2001
 #' ISRaD.rep.count.all(database)
 ISRaD.rep.count.all <- function(database) {
-  stopifnot(is.list(database))
+  stopifnot(is_israd_database(database))
   
   entry_name <- site_name <- pro_name <- NULL  # silence R CMD CHECK note otherwise
   
