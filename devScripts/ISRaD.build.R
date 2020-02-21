@@ -200,7 +200,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
     message("Ok, please fix the issues and confim below when you are ready to run the check again...\n")
     ready<-utils::menu(c("Yes", "No"), title="Are you ready to run the check again?")
     if (ready==1){
-      devtools::check(pkg=paste0(ISRaD_directory,"/Rpkg"), manual = T, cran = T, run_dont_test = T)
+      devtools::check(pkg=file.path(ISRaD_directory,"Rpkg"), manual = T, cran = T, run_dont_test = T)
    }
   }
   }
@@ -212,7 +212,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
       message(paste(length(new_entries), " new entries have been added, so the minor version number will be updated"))
     }
     DESC[3]<-paste(unlist(version), collapse = ".")
-    writeLines(DESC, paste0(ISRaD_directory, "/Rpkg", "/DESCRIPTION"))
+    writeLines(DESC, file.path(ISRaD_directory, "Rpkg", "DESCRIPTION"))
     message("Ok, you can now commit and push this to github!\n You should also then reload R and reinstall ISRaD from github.\n")
   }
 
