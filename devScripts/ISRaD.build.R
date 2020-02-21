@@ -26,9 +26,9 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
 
   message("Compiling the data files in ",  paste0(ISRaD_directory,"/ISRaD_data_files\n"))
   message("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
-  ISRaD_data_compiled<-compile(dataset_directory = paste0(ISRaD_directory,"/ISRaD_data_files/"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
+  ISRaD_data_compiled<-compile(dataset_directory = file.path(ISRaD_directory,"ISRaD_data_files"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
 
-  message("\nISRaD_data.xlsx saved to ", paste0(ISRaD_directory,"/ISRaD_data_files/database\n\n"))
+  message("\nISRaD_data.xlsx saved to ", file.path(ISRaD_directory,"ISRaD_data_files", "database", "\n\n"))
 
   reviewed<-utils::menu(c("Yes", "No"), title="Have you reviewed the compilation report log file? (ISRaD_data_files/database/ISRaD_log.txt). I would suggest using the git commit preview window in R to see changes.")
   if (reviewed==2){
@@ -45,7 +45,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
   message("\nReplacing the ISRaD_data object with the new one...\n")
 
   message("\tChecking the number of new rows in the compiled ISRaD_data object...\n")
-  load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
+  load(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_data.rda"))
   ISRaD_data<-ISRaD_data
   for(t in names(ISRaD_data_compiled)){
     message("\t\t", nrow(ISRaD_data_compiled[[t]])-nrow(ISRaD_data[[t]]), " rows were added to the ", t, " table.\n")
@@ -87,7 +87,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
   message("Replacing the ISRaD_extra object with the new one...\n")
 
   message("\tChecking the number of new columns in the compiled ISRaD_extra object...\n")
-  load(paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
+  load(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_extra.rda"))
   ISRaD_extra<-ISRaD_extra
   for(t in names(ISRaD_extra_compiled)){
     message("\t\t", ncol(ISRaD_extra_compiled[[t]])-ncol(ISRaD_extra[[t]]), " ncol were added to the ", t, " table.\n")
@@ -99,7 +99,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
   }
 
   # tag data w/ version number and date
-  DESC<-readLines(paste0(ISRaD_directory, "/Rpkg", "/DESCRIPTION"))
+  DESC<-readLines(file.path(ISRaD_directory, "Rpkg", "DESCRIPTION"))
   version<-unlist(strsplit(DESC[3],split = "\\:"))
   version<-unlist(strsplit(version,split = "\\."))
   version[4]<-as.numeric(version[4])+1 # updates patch version # (third column), use for codebase changes
@@ -112,12 +112,12 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
 
   ISRaD_data<-ISRaD_data_compiled
   attributes(ISRaD_data)$version<-v
-  save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_data.rda"))
+  save(ISRaD_data, file=file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_data.rda"))
   message("ISRaD_data has been updated...\n\n")
 
   ISRaD_extra<-ISRaD_extra_compiled
   attributes(ISRaD_extra)$version<-v
-  save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_extra.rda"))
+  save(ISRaD_extra, file=file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_extra.rda"))
   message("ISRaD_extra has been updated...\n\n")
 
 
@@ -126,13 +126,13 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
   message("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is ", v,"\n\n")
 
   ISRaD_extra_char<-lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
-  openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files/database", "ISRaD_extra_list.xlsx"))
+  openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_extra_list.xlsx"))
 
-  system(paste0("rm ", paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD*")))
-  openxlsx::write.xlsx(ISRaD_extra_char, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_list_",v,".xlsx"))
-  openxlsx::write.xlsx(ISRaD_data, file = paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_data_list_",v,".xlsx"))
-  save(ISRaD_data, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_data_",v,".rda"))
-  save(ISRaD_extra, file=paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files/ISRaD_extra_",v,".rda"))
+  system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", "ISRaD*")))
+  openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_list_",v,".xlsx")))
+  openxlsx::write.xlsx(ISRaD_data, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_list_",v,".xlsx")))
+  save(ISRaD_data, file=file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_",v,".rda")))
+  save(ISRaD_extra, file=file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_",v,".rda")))
 
 # Flattened data objects --------------------------------------------------
 
@@ -141,21 +141,19 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
     flattened_data<-ISRaD.flatten(database=ISRaD_data, table = tab)
     #flattened_data<-str_replace_all(flattened_data, "[\r\n]" , "")
     message("writing ISRaD_data_flat_", tab, ".csv"," ...\n", sep = "")
-    utils::write.csv(flattened_data, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_data_flat_", tab, ".csv"))
-    utils::write.csv(flattened_data, paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_data_flat_", tab,"_",v, ".csv"))
+    utils::write.csv(flattened_data, file.path(ISRaD_directory,"ISRaD_data_files", "database", paste0("ISRaD_data_flat_", tab, ".csv")))
+    utils::write.csv(flattened_data, file.path(ISRaD_directory,"ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_flat_", tab,"_",v, ".csv")))
 
     flattened_extra<-ISRaD.flatten(database=ISRaD_extra, table = tab)
     #flattened_extra<-str_replace_all(flattened_extra, "[\r\n]" , "")
     message("writing ISRaD_extra_flat_", tab, ".csv"," ...\n", sep = "")
-    utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/", "ISRaD_extra_flat_", tab, ".csv"))
-    utils::write.csv(flattened_extra, paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files/", "ISRaD_extra_flat_", tab,"_",v, ".csv"))
+    utils::write.csv(flattened_extra, file.path(ISRaD_directory,"ISRaD_data_files","database", paste0("ISRaD_extra_flat_", tab, ".csv")))
+    utils::write.csv(flattened_extra, file.path(ISRaD_directory,"ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_flat_", tab,"_",v, ".csv")))
 
   }
-  system(paste0("rm ", paste0(ISRaD_directory, "/ISRaD_data_files/database/ISRaD_database_files.zip")))
+  system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files.zip")))
 
-  setwd(paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files"))
-  utils::zip(zipfile = paste0("../ISRaD_database_files"), files = list.files(paste0(ISRaD_directory,"/ISRaD_data_files/database/ISRaD_database_files"), full.names = F))
-  setwd(ISRaD_directory)
+  utils::zip(zipfile = file.path(ISRaD_directory,"ISRaD_data_files", "database", "ISRaD_database_files"), files = list.files(file.path(ISRaD_directory,"ISRaD_data_files", "database", "ISRaD_database_files", "ISRaD_database_files")), full.names = TRUE), flags = "-j")
 
 # update references -------------------------------------------------------
 
@@ -184,7 +182,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
 
   # Print markdown file for website
   cat(c(h1, p1, " ", paste("* ",mathieu_ref), paste("* ",he_ref), " ",
-        h2, p2, " ", paste("* ",a)), sep="\n", file=file.path(ISRaD_directory,"ISRaD_data_files/database/credits.md"))
+        h2, p2, " ", paste("* ",a)), sep="\n", file=file.path(ISRaD_directory,"ISRaD_data_files", "database", "credits.md"))
 
   }
 
@@ -192,7 +190,7 @@ ISRaD.build<-function(ISRaD_directory, geodata_directory, geodata_keys, citation
 
   message("\tUpdating documentation and running check()...\n")
 
-  setwd(paste0(ISRaD_directory,"Rpkg"))
+  setwd(file.path(ISRaD_directory,"Rpkg"))
   devtools::check(document = T, manual = T, cran = T, run_dont_test = T)
 
   errors<-1
