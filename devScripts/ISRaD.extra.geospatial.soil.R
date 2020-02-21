@@ -16,22 +16,23 @@
 #' # Note that geospatial soil data in pkg is only for the Gaudinski_2001 dataset
 #' # Global soils data may be obtained from SoilGrids (see Details).
 #' database.x <- ISRaD.extra.geospatial.soil(database,
-#'  geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD"))
+#'   geodata_soil_directory = system.file("extdata", "geodata_soil_directory", package = "ISRaD")
+#' )
 #' }
-
-ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory){
-
-  requireNamespace('raster')
+#'
+ISRaD.extra.geospatial.soil <- function(database, geodata_soil_directory) {
+  requireNamespace("raster")
   requireNamespace("rgdal")
 
   extraCoords <- data.frame(database$profile$pro_long, database$profile$pro_lat)
-  for(x in list.files(path = geodata_soil_directory, pattern = 'v0.2.tif', full.names = TRUE)){
-    shortx <- substr(x, start=nchar(geodata_soil_directory)+2, stop=nchar(x))
+  for (x in list.files(path = geodata_soil_directory, pattern = "v0.2.tif", full.names = TRUE)) {
+    shortx <- substr(x, start = nchar(geodata_soil_directory) + 2, stop = nchar(x))
     depth <- substr(shortx,
-                    start=gregexpr(pattern = "_", text = shortx)[[1]][1]+2,
-                    stop=gregexpr(pattern = "cm", text = shortx)[[1]][1]+1)
-    varName <- substr(shortx, 1, gregexpr(pattern = "_", text = shortx)[[1]][1]-1)
-    columnName <- paste0('pro_SG_', varName, "_", depth)
+      start = gregexpr(pattern = "_", text = shortx)[[1]][1] + 2,
+      stop = gregexpr(pattern = "cm", text = shortx)[[1]][1] + 1
+    )
+    varName <- substr(shortx, 1, gregexpr(pattern = "_", text = shortx)[[1]][1] - 1)
+    columnName <- paste0("pro_SG_", varName, "_", depth)
     tifRaster <- raster::raster(x)
     raster::crs(tifRaster) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
     database$profile <- cbind(database$profile, raster::extract(tifRaster, extraCoords))

@@ -15,32 +15,32 @@
 #' ISRaD_full <- ISRaD.getdata(tempdir())
 #' ISRaD.extra.geospatial.Zheng(ISRaD_full)
 #' }
-
-### Start Function ###
-ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory){
-  requireNamespace('raster')
-  requireNamespace('dplyr')
+#'
+#' ### Start Function ###
+ISRaD.extra.geospatial.Zheng <- function(database, geodata_soil_directory) {
+  requireNamespace("raster")
+  requireNamespace("dplyr")
 
   extraCoords <- data.frame(database$profile$pro_long, database$profile$pro_lat)
 
-  #Zheng's 0.5 degree data
-  for(x in list.files(path = geodata_soil_directory, pattern = 'Zheng.tif', full.names = TRUE)){
-    tifType <- unlist(strsplit(x, '/'))
-    tifType <- unlist(strsplit(tifType[length(tifType)], '_Zheng.tif'))
-    columnName <- paste('pro_0.5_', tifType, sep = '')
+  # Zheng's 0.5 degree data
+  for (x in list.files(path = geodata_soil_directory, pattern = "Zheng.tif", full.names = TRUE)) {
+    tifType <- unlist(strsplit(x, "/"))
+    tifType <- unlist(strsplit(tifType[length(tifType)], "_Zheng.tif"))
+    columnName <- paste("pro_0.5_", tifType, sep = "")
     tifRaster <- raster::raster(x)
     raster::crs(tifRaster) <- "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
     tifRaster <- raster::setExtent(tifRaster, raster::extent(-180, 180, -90, 90))
-    #plot(tifRaster)
+    # plot(tifRaster)
     database$profile <- cbind(database$profile, raster::extract(tifRaster, extraCoords))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
 
   pathlength <- nchar(geodata_soil_directory)
-  if(substr(geodata_soil_directory, pathlength-0,pathlength) != '/'){
-    geodata_soil_directory <-paste(geodata_soil_directory, '/', sep='')
+  if (substr(geodata_soil_directory, pathlength - 0, pathlength) != "/") {
+    geodata_soil_directory <- paste(geodata_soil_directory, "/", sep = "")
   }
-  USDA_0.5_key_path <- paste(geodata_soil_directory, 'USDA_soilOrder_0.5degree_key.csv', sep = '')
+  USDA_0.5_key_path <- paste(geodata_soil_directory, "USDA_soilOrder_0.5degree_key.csv", sep = "")
   USDA_0.5_key <- data.frame(utils::read.csv(USDA_0.5_key_path, stringsAsFactors = F))
   database$profile <- dplyr::left_join(database$profile, USDA_0.5_key, by = "pro_0.5_USDA_soilOrder")
   database$profile$pro_0.5_USDA_soilOrder <- NULL

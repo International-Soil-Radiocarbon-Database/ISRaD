@@ -48,29 +48,28 @@
 #' # Note that PET geospatial data in pkg is only for Gaudinski_2001 dataset
 #' # Bioclim variables (temp, precip, etc.) will be downloaded if not found
 #' database.x <- ISRaD.extra.geospatial.climate(database,
-#'  geodata_clim_directory = tempdir(),
-#'  geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD"))
+#'   geodata_clim_directory = tempdir(),
+#'   geodata_pet_directory = system.file("extdata", "geodata_pet_directory", package = "ISRaD")
+#' )
 #' }
-
-ISRaD.extra.geospatial.climate<-function(database, geodata_clim_directory, geodata_pet_directory, fill.PET = TRUE) {
-
+#'
+ISRaD.extra.geospatial.climate <- function(database, geodata_clim_directory, geodata_pet_directory, fill.PET = TRUE) {
   requireNamespace("raster")
   requireNamespace("rgdal")
 
   # extract worldclim vars
   message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
-  bio<-raster::getData("worldclim", var='bio', res=2.5, path=geodata_clim_directory)
-  bio_extracted<-raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
-  colnames(bio_extracted)<-paste("pro",  colnames(bio_extracted), sep="_")
-  database$profile<-cbind(database$profile, bio_extracted)
+  bio <- raster::getData("worldclim", var = "bio", res = 2.5, path = geodata_clim_directory)
+  bio_extracted <- raster::extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
+  colnames(bio_extracted) <- paste("pro", colnames(bio_extracted), sep = "_")
+  database$profile <- cbind(database$profile, bio_extracted)
 
-  if(fill.PET == TRUE) {
+  if (fill.PET == TRUE) {
     # extract PET
-    pet<-raster::raster(paste(geodata_pet_directory, '/', "w001001.adf", sep=""))
-    pet_extracted<-raster::extract(pet, cbind(database$profile$pro_long, database$profile$pro_lat))
-    database$profile$pro_PET<-pet_extracted
+    pet <- raster::raster(paste(geodata_pet_directory, "/", "w001001.adf", sep = ""))
+    pet_extracted <- raster::extract(pet, cbind(database$profile$pro_long, database$profile$pro_lat))
+    database$profile$pro_PET <- pet_extracted
   }
 
   return(database)
-
 }
