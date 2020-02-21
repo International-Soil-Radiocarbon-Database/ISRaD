@@ -18,6 +18,7 @@
 #'
 #' @importFrom openxlsx read.xlsx
 #' @importFrom utils setTxtProgressBar txtProgressBar
+#' @importFrom dplyr mutate_all
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
@@ -47,18 +48,23 @@ compile <- function(dataset_directory,
   stopifnot(is.logical(checkdoi))		
   stopifnot(is.logical(verbose))
   
+  # Constants
+  LIST_FILE <- "ISRaD_list.xlsx"
+  DB_DIR <- "database"
+  QAQC_DIR <- "QAQC"
+  
   # Create directories
-  if (!dir.exists(file.path(dataset_directory, "QAQC"))) {
-    dir.create(file.path(dataset_directory, "QAQC")) # Creates folder for QAQC reports
+  if (!dir.exists(file.path(dataset_directory, QAQC_DIR))) {
+    dir.create(file.path(dataset_directory, QAQC_DIR)) # Creates folder for QAQC reports
   }
-  if (!dir.exists(file.path(dataset_directory, "database"))) {
-    dir.create(file.path(dataset_directory, "database")) # creates folder for final output dump
+  if (!dir.exists(file.path(dataset_directory, DB_DIR))) {
+    dir.create(file.path(dataset_directory, DB_DIR)) # creates folder for final output dump
   }
   
   # Set output file
   outfile <- ""
   if (write_report) {
-    outfile <- file.path(dataset_directory, "database", "ISRaD_log.txt")
+    outfile <- file.path(dataset_directory, DB_DIR, "ISRaD_log.txt")
   }
   
   # Start writing in the output file
@@ -94,9 +100,7 @@ compile <- function(dataset_directory,
     )
   }
   
-  data_files <- list.files(dataset_directory, full.names = TRUE)
-  data_files <- data_files[grep("\\.xlsx", data_files)]
-  
+  data_files <- list.files(dataset_directory, pattern = "\\.xlsx", full.names = TRUE)
   if(!length(data_files)) {
     warning("No data files found!")
     return(NULL)
@@ -108,14 +112,14 @@ compile <- function(dataset_directory,
   }
   
   # check if previous ISRaD database exists in database directory, and only run QAQC on new templates
-  if (file.exists(file.path(dataset_directory, "database", "ISRaD_list.xlsx"))) {
+  if (file.exists(file.path(dataset_directory, DB_DIR, LIST_FILE))) {
     
     # load existing database
     ISRaD_old <- lapply(
-      getSheetNames(file.path(dataset_directory, "database", "ISRaD_list.xlsx"))[1:8],
-      function(s) read.xlsx(file.path(dataset_directory, "database", "ISRaD_list.xlsx"), sheet = s)
+      getSheetNames(file.path(dataset_directory, DB_DIR, LIST_FILE))[1:8],
+      function(s) read.xlsx(file.path(dataset_directory, DB_DIR, LIST_FILE), sheet = s)
     )
-    names(ISRaD_old) <- getSheetNames(file.path(dataset_directory, "database", "ISRaD_list.xlsx"))[1:8]
+    names(ISRaD_old) <- getSheetNames(file.path(dataset_directory, DB_DIR, LIST_FILE))[1:8]
     # convert to character
     ISRaD_old <- lapply(ISRaD_old, function(x) lapply(x, as.character))
     ISRaD_old <- lapply(ISRaD_old, as.data.frame, stringsAsFactors = FALSE)
@@ -177,11 +181,7 @@ compile <- function(dataset_directory,
         suppressWarnings(ISRaD_database <- mapply(bind_rows, ISRaD_database, entry))
       } else {
         if (verbose) cat("\n\n", d, "checking", basename(data_files[d]), "...", file = outfile, append = TRUE)
-        if (checkdoi) {
-          soilcarbon_data <- QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = TRUE, verbose = TRUE)
-        } else {
-          soilcarbon_data <- QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = FALSE, verbose = TRUE)
-        }
+        soilcarbon_data <- QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = checkdoi, verbose = TRUE)
         if (attributes(soilcarbon_data)$error > 0) {
           if (verbose) cat("New data - failed QAQC. Check report in QAQC folder.", file = outfile, append = TRUE)
           next
@@ -199,8 +199,10 @@ compile <- function(dataset_directory,
   } else {
     if (verbose) cat("\nno existing ISRaD database found...", "\n", file = outfile, append = TRUE)
     for (d in seq_along(data_files)) {
-      if (verbose) setTxtProgressBar(pb, d)
-      if (verbose) cat("\n\n", d, "checking", basename(data_files[d]), "...", file = outfile, append = TRUE)
+      if (verbose) {
+        setTxtProgressBar(pb, d)
+        cat("\n\n", d, "checking", basename(data_files[d]), "...", file = outfile, append = TRUE)
+      } 
       
       soilcarbon_data <- QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = checkdoi, verbose = TRUE)
       
@@ -227,38 +229,44 @@ compile <- function(dataset_directory,
   ISRaD_database <- lapply(ISRaD_database, as.data.frame)
   
   # Return database file, logs, and reports ---------------------------------
-  if (verbose) cat("\n\n-------------\n", file = outfile, append = TRUE)
-  if (verbose) cat("\nSummary statistics...\n", file = outfile, append = TRUE)
-  
-  for (t in seq_along(names(ISRaD_database))) {
-    tab <- names(ISRaD_database)[t]
-    data_tab <- ISRaD_database[[tab]]
-    if (verbose) cat("\n", tab, "tab...", file = outfile, append = TRUE)
-    if (verbose) cat(nrow(data_tab), "observations", file = outfile, append = TRUE)
-    if (nrow(data_tab) > 0) {
-      col_counts <- apply(data_tab, 2, function(x) sum(!is.na(x)))
-      col_counts <- col_counts[col_counts > 0]
-      for (c in seq_along(col_counts)) {
-        if (verbose) cat("\n   ", names(col_counts[c]), ":", col_counts[c], file = outfile, append = TRUE)
+  if(verbose) {
+    cat("\n\n-------------\n", file = outfile, append = TRUE)
+    cat("\nSummary statistics...\n", file = outfile, append = TRUE)
+    
+    for (t in seq_along(names(ISRaD_database))) {
+      tab <- names(ISRaD_database)[t]
+      data_tab <- ISRaD_database[[tab]]
+      cat("\n", tab, "tab...", file = outfile, append = TRUE)
+      cat(nrow(data_tab), "observations", file = outfile, append = TRUE)
+      if (nrow(data_tab) > 0) {
+        col_counts <- apply(data_tab, 2, function(x) sum(!is.na(x)))
+        col_counts <- col_counts[col_counts > 0]
+        for (c in seq_along(col_counts)) {
+          cat("\n   ", names(col_counts[c]), ":", col_counts[c], file = outfile, append = TRUE)
+        }
       }
     }
   }
   
-  ISRaD_database_excel <- list()
-  ISRaD_database_excel$metadata <- rbind(template$metadata[-3, ], ISRaD_database$metadata)
-  ISRaD_database_excel$site <- rbind(template$site, ISRaD_database$site)
-  ISRaD_database_excel$profile <- rbind(template$profile, ISRaD_database$profile)
-  ISRaD_database_excel$flux <- rbind(template$flux, ISRaD_database$flux)
-  ISRaD_database_excel$layer <- rbind(template$layer, ISRaD_database$layer)
-  ISRaD_database_excel$interstitial <- rbind(template$interstitial, ISRaD_database$interstitial)
-  ISRaD_database_excel$fraction <- rbind(template$fraction, ISRaD_database$fraction)
-  ISRaD_database_excel$incubation <- rbind(template$incubation, ISRaD_database$incubation)
-  ISRaD_database_excel$`controlled vocabulary` <- template$`controlled vocabulary`
-  ISRaD_database_excel <- lapply(ISRaD_database_excel, function(x) x %>% dplyr::mutate_all(as.character))
+  ISRaD_database_excel <- list(
+    metadata = rbind(template$metadata[-3, ], ISRaD_database$metadata),
+    site = rbind(template$site, ISRaD_database$site),
+    profile = rbind(template$profile, ISRaD_database$profile),
+    flux = rbind(template$flux, ISRaD_database$flux),
+    layer = rbind(template$layer, ISRaD_database$layer),
+    interstitial = rbind(template$interstitial, ISRaD_database$interstitial),
+    fraction = rbind(template$fraction, ISRaD_database$fraction),
+    incubation = rbind(template$incubation, ISRaD_database$incubation),
+    `controlled vocabulary` = template$`controlled vocabulary`
+  )
+  ISRaD_database_excel <- lapply(ISRaD_database_excel, 
+                                 function(x) { 
+                                   if(is.data.frame(x)) x %>% mutate_all(as.character)}
+  )
   
   if (write_out) {
     # suppressMessages call due to use of deprecated "zip" fx use in write.xlsx
-    suppressMessages(openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx")))
+    suppressMessages(openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, DB_DIR, LIST_FILE)))
   }
   
   if (verbose) cat("\n", rep("-", 20), file = outfile, append = TRUE)
@@ -269,5 +277,7 @@ compile <- function(dataset_directory,
   
   if (return_type == "list") {
     return(ISRaD_database)
+  } else {
+    return(NULL)
   }
 }
