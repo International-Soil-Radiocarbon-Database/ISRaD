@@ -48,6 +48,7 @@ compile <- function(dataset_directory,
   stopifnot(is.logical(checkdoi))		
   stopifnot(is.logical(verbose))
   
+  # Constants
   LIST_FILE <- "ISRaD_list.xlsx"
   DB_DIR <- "database"
   QAQC_DIR <- "QAQC"
