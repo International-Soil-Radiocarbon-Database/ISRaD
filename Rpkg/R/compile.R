@@ -48,19 +48,21 @@ compile <- function(dataset_directory,
   stopifnot(is.logical(verbose))
   
   LIST_FILE <- "ISRaD_list.xlsx"
+  DB_DIR <- "database"
+  QAQC_DIR <- "QAQC"
   
   # Create directories
-  if (!dir.exists(file.path(dataset_directory, "QAQC"))) {
-    dir.create(file.path(dataset_directory, "QAQC")) # Creates folder for QAQC reports
+  if (!dir.exists(file.path(dataset_directory, QAQC_DIR))) {
+    dir.create(file.path(dataset_directory, QAQC_DIR)) # Creates folder for QAQC reports
   }
-  if (!dir.exists(file.path(dataset_directory, "database"))) {
-    dir.create(file.path(dataset_directory, "database")) # creates folder for final output dump
+  if (!dir.exists(file.path(dataset_directory, DB_DIR))) {
+    dir.create(file.path(dataset_directory, DB_DIR)) # creates folder for final output dump
   }
   
   # Set output file
   outfile <- ""
   if (write_report) {
-    outfile <- file.path(dataset_directory, "database", "ISRaD_log.txt")
+    outfile <- file.path(dataset_directory, DB_DIR, "ISRaD_log.txt")
   }
   
   # Start writing in the output file
@@ -96,9 +98,7 @@ compile <- function(dataset_directory,
     )
   }
   
-  data_files <- list.files(dataset_directory, full.names = TRUE)
-  data_files <- data_files[grep("\\.xlsx", data_files)]
-  
+  data_files <- list.files(dataset_directory, pattern = "\\.xlsx", full.names = TRUE)
   if(!length(data_files)) {
     warning("No data files found!")
     return(NULL)
@@ -110,14 +110,14 @@ compile <- function(dataset_directory,
   }
   
   # check if previous ISRaD database exists in database directory, and only run QAQC on new templates
-  if (file.exists(file.path(dataset_directory, "database", "ISRaD_list.xlsx"))) {
+  if (file.exists(file.path(dataset_directory, DB_DIR, LIST_FILE))) {
     
     # load existing database
     ISRaD_old <- lapply(
-      getSheetNames(file.path(dataset_directory, "database", "ISRaD_list.xlsx"))[1:8],
-      function(s) read.xlsx(file.path(dataset_directory, "database", "ISRaD_list.xlsx"), sheet = s)
+      getSheetNames(file.path(dataset_directory, DB_DIR, LIST_FILE))[1:8],
+      function(s) read.xlsx(file.path(dataset_directory, DB_DIR, LIST_FILE), sheet = s)
     )
-    names(ISRaD_old) <- getSheetNames(file.path(dataset_directory, "database", "ISRaD_list.xlsx"))[1:8]
+    names(ISRaD_old) <- getSheetNames(file.path(dataset_directory, DB_DIR, LIST_FILE))[1:8]
     # convert to character
     ISRaD_old <- lapply(ISRaD_old, function(x) lapply(x, as.character))
     ISRaD_old <- lapply(ISRaD_old, as.data.frame, stringsAsFactors = FALSE)
@@ -260,7 +260,7 @@ compile <- function(dataset_directory,
   
   if (write_out) {
     # suppressMessages call due to use of deprecated "zip" fx use in write.xlsx
-    suppressMessages(openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, "database", "ISRaD_list.xlsx")))
+    suppressMessages(openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, DB_DIR, LIST_FILE)))
   }
   
   if (verbose) cat("\n", rep("-", 20), file = outfile, append = TRUE)
