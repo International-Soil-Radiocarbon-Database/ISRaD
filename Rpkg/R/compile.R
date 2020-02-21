@@ -195,8 +195,10 @@ compile <- function(dataset_directory,
   } else {
     if (verbose) cat("\nno existing ISRaD database found...", "\n", file = outfile, append = TRUE)
     for (d in seq_along(data_files)) {
-      if (verbose) setTxtProgressBar(pb, d)
-      if (verbose) cat("\n\n", d, "checking", basename(data_files[d]), "...", file = outfile, append = TRUE)
+      if (verbose) {
+        setTxtProgressBar(pb, d)
+        cat("\n\n", d, "checking", basename(data_files[d]), "...", file = outfile, append = TRUE)
+      } 
       
       soilcarbon_data <- QAQC(file = data_files[d], writeQCreport = TRUE, dataReport = TRUE, checkdoi = checkdoi, verbose = TRUE)
       
@@ -223,19 +225,21 @@ compile <- function(dataset_directory,
   ISRaD_database <- lapply(ISRaD_database, as.data.frame)
   
   # Return database file, logs, and reports ---------------------------------
-  if (verbose) cat("\n\n-------------\n", file = outfile, append = TRUE)
-  if (verbose) cat("\nSummary statistics...\n", file = outfile, append = TRUE)
-  
-  for (t in seq_along(names(ISRaD_database))) {
-    tab <- names(ISRaD_database)[t]
-    data_tab <- ISRaD_database[[tab]]
-    if (verbose) cat("\n", tab, "tab...", file = outfile, append = TRUE)
-    if (verbose) cat(nrow(data_tab), "observations", file = outfile, append = TRUE)
-    if (nrow(data_tab) > 0) {
-      col_counts <- apply(data_tab, 2, function(x) sum(!is.na(x)))
-      col_counts <- col_counts[col_counts > 0]
-      for (c in seq_along(col_counts)) {
-        if (verbose) cat("\n   ", names(col_counts[c]), ":", col_counts[c], file = outfile, append = TRUE)
+  if(verbose) {
+    cat("\n\n-------------\n", file = outfile, append = TRUE)
+    cat("\nSummary statistics...\n", file = outfile, append = TRUE)
+    
+    for (t in seq_along(names(ISRaD_database))) {
+      tab <- names(ISRaD_database)[t]
+      data_tab <- ISRaD_database[[tab]]
+      cat("\n", tab, "tab...", file = outfile, append = TRUE)
+      cat(nrow(data_tab), "observations", file = outfile, append = TRUE)
+      if (nrow(data_tab) > 0) {
+        col_counts <- apply(data_tab, 2, function(x) sum(!is.na(x)))
+        col_counts <- col_counts[col_counts > 0]
+        for (c in seq_along(col_counts)) {
+          cat("\n   ", names(col_counts[c]), ":", col_counts[c], file = outfile, append = TRUE)
+        }
       }
     }
   }
@@ -265,5 +269,7 @@ compile <- function(dataset_directory,
   
   if (return_type == "list") {
     return(ISRaD_database)
+  } else {
+    return(NULL)
   }
 }
