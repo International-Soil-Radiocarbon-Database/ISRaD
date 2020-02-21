@@ -18,6 +18,7 @@
 #'
 #' @importFrom openxlsx read.xlsx
 #' @importFrom utils setTxtProgressBar txtProgressBar
+#' @importFrom dplyr mutate_all
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
@@ -246,17 +247,21 @@ compile <- function(dataset_directory,
     }
   }
   
-  ISRaD_database_excel <- list()
-  ISRaD_database_excel$metadata <- rbind(template$metadata[-3, ], ISRaD_database$metadata)
-  ISRaD_database_excel$site <- rbind(template$site, ISRaD_database$site)
-  ISRaD_database_excel$profile <- rbind(template$profile, ISRaD_database$profile)
-  ISRaD_database_excel$flux <- rbind(template$flux, ISRaD_database$flux)
-  ISRaD_database_excel$layer <- rbind(template$layer, ISRaD_database$layer)
-  ISRaD_database_excel$interstitial <- rbind(template$interstitial, ISRaD_database$interstitial)
-  ISRaD_database_excel$fraction <- rbind(template$fraction, ISRaD_database$fraction)
-  ISRaD_database_excel$incubation <- rbind(template$incubation, ISRaD_database$incubation)
-  ISRaD_database_excel$`controlled vocabulary` <- template$`controlled vocabulary`
-  ISRaD_database_excel <- lapply(ISRaD_database_excel, function(x) x %>% dplyr::mutate_all(as.character))
+  ISRaD_database_excel <- list(
+    metadata = rbind(template$metadata[-3, ], ISRaD_database$metadata),
+    site = rbind(template$site, ISRaD_database$site),
+    profile = rbind(template$profile, ISRaD_database$profile),
+    flux = rbind(template$flux, ISRaD_database$flux),
+    layer = rbind(template$layer, ISRaD_database$layer),
+    interstitial = rbind(template$interstitial, ISRaD_database$interstitial),
+    fraction = rbind(template$fraction, ISRaD_database$fraction),
+    incubation = rbind(template$incubation, ISRaD_database$incubation),
+    `controlled vocabulary` = template$`controlled vocabulary`
+  )
+  ISRaD_database_excel <- lapply(ISRaD_database_excel, 
+                                 function(x) { 
+                                   if(is.data.frame(x)) x %>% mutate_all(as.character)}
+  )
   
   if (write_out) {
     # suppressMessages call due to use of deprecated "zip" fx use in write.xlsx

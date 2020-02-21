@@ -16,5 +16,4 @@ Generates a report of metadata statistics for all entries
 # Load example dataset Gaudinski_2001
 database <- ISRaD::Gaudinski_2001
 ISRaD.rep.entry.stats(database)
-ISRaD.rep.entry.stats(database)
 }
