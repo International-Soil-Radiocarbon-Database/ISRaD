@@ -47,6 +47,8 @@ compile <- function(dataset_directory,
   stopifnot(is.logical(checkdoi))		
   stopifnot(is.logical(verbose))
   
+  LIST_FILE <- "ISRaD_list.xlsx"
+  
   # Create directories
   if (!dir.exists(file.path(dataset_directory, "QAQC"))) {
     dir.create(file.path(dataset_directory, "QAQC")) # Creates folder for QAQC reports
