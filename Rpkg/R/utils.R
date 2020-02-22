@@ -46,7 +46,7 @@ is_israd_database <- function(x) {
 #' @param template_info Template info structure read from \code{ISRaD_Template_Info.xlsx}
 #' @param outfile File output is being written to
 #' @return TRUE if any mismatches occur.
-#' @note This is typically called only from \code{\linke{checkTemplateFiles}}.
+#' @note This is typically called only from \code{\link{checkTemplateFiles}}.
 #' @keywords internal
 check_template_info_columns <- function(template, template_info, outfile) {
   stopifnot(is.list(template))
@@ -72,4 +72,18 @@ check_template_info_columns <- function(template, template_info, outfile) {
     }
   }
   mismatch
+}
+
+#' Check that a column is strictly numeric.
+#'
+#' @param x Column values, a vector
+#' @param xname Column name
+#' @return Nothing (run for its warning side effect).
+#' @keywords internal
+check_numeric_minmax <- function(x, xname) {
+  stopifnot(is.character(xname))
+  
+  if (!is.numeric(type.convert(x))) {
+    warning("Non-numeric values in ", xname, " column")
+  }
 }

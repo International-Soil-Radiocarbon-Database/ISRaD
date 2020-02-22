@@ -66,3 +66,13 @@ test_that("check_template_info_columns", {
   })
   expect_true(mismatch)
 })
+
+test_that("check_numeric_minmax", {
+  # Handles bad input
+  expect_error(check_numeric_minmax(1, 1))
+  
+  expect_silent(check_numeric_minmax(1, "1"))
+  expect_silent(check_numeric_minmax("1", "1"))
+  expect_warning(check_numeric_minmax("a", "1"))
+  expect_warning(check_numeric_minmax(c("1", "a", "3"), "1"))
+})

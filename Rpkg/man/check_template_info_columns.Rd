@@ -20,6 +20,6 @@ TRUE if any mismatches occur.
 Check that column names in the info and template files match.
 }
 \note{
-This is typically called only from \code{\linke{checkTemplateFiles}}.
+This is typically called only from \code{\link{checkTemplateFiles}}.
 }
 \keyword{internal}

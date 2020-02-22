@@ -43,10 +43,10 @@ checkTemplateFiles <- function(outfile = "") {
       read.xlsx(template_info_file, sheet = s)
     }
   )
-
+  
   # check that column names in the info and template files match
   check_template_info_columns(template, template_info, outfile)  
-
+  
   cat("\nChecking controlled vocab between ISRaD template and info file...",
       file = outfile, append = TRUE
   )
@@ -111,13 +111,8 @@ checkTemplateFiles <- function(outfile = "") {
     ## Check that the min/max are strictly numeric or NA-------------------
     template_info_num <- template_info[[tab]] %>% # pull the sheet in the info
       filter(Variable_class == "numeric")
-    
-    if (!is.numeric(type.convert(template_info_num$Max))) {
-      warning("Non-numeric values in Max column")
-    }
-    if (!is.numeric(type.convert(template_info_num$Min))) {
-      warning("Non-numeric values in Min column")
-    }
+    check_numeric_minmax(template_info_num$Max, "Max")
+    check_numeric_minmax(template_info_num$Min, "Min")
   }
   
   invisible(NULL)
