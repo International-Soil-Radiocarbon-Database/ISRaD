@@ -49,6 +49,9 @@ checkTemplateFiles <- function(outfile = "") {
     cat("\n", tab, "...", file = outfile, append = TRUE)
     tab_cols <- colnames(template[[tab]])
     ti_colnames <- template_info[[tab]]$Column_Name
+    if(!identical(sort(ti_colnames), sort(tab_cols))) {
+      warning("Info and template file columns do not mnatch")
+    }
     if (any(!(ti_colnames %in% tab_cols))) {
       cat("\n\tWARNING column names unique to info file:",
           setdiff(ti_colnames, tab_cols), file = outfile, append = TRUE
@@ -104,18 +107,22 @@ checkTemplateFiles <- function(outfile = "") {
                                 unlist(Info_Vocab))
       )
     
-    if (!any(unlist(template_info_vocab$InfoInTemplate))) {
-      cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
-          unlist(template_info_vocab$Info_Vocab)[!unlist(template_info_vocab$InfoInTemplate)],
-          file = outfile, append = TRUE
-      )
-    }
-    
-    if (!any(unlist(template_info_vocab$TemplateInInfo))) {
-      cat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
-          unlist(template_info_vocab$Template_Vocab)[!unlist(template_info_vocab$TemplateInInfo)],
-          file = outfile, append = TRUE
-      )
+    iit <- unlist(template_info_vocab$InfoInTemplate)
+    tii <- unlist(template_info_vocab$TemplateInInfo)
+    if (!any(tii) || !any(iit)) {
+      warning("Mismatch between template info vocab column and template controlled vocab")
+      if (!any(iit)) {
+        cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
+            unlist(template_info_vocab$Info_Vocab)[!iit],
+            file = outfile, append = TRUE
+        )
+      }
+      if (!any(tii)) {
+        cat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
+            unlist(template_info_vocab$Template_Vocab)[!tii],
+            file = outfile, append = TRUE
+        )
+      }
     }
     
     ## Check that the min/max are strictly numeric or NA-------------------
@@ -123,15 +130,10 @@ checkTemplateFiles <- function(outfile = "") {
       filter(Variable_class == "numeric")
     
     if (!is.numeric(type.convert(template_info_num$Max))) {
-      cat("\n\tWARNING non-numeric values in Max column",
-          file = outfile, append = TRUE
-      )
+      warning("Non-numeric values in Max column")
     }
-    
     if (!is.numeric(type.convert(template_info_num$Min))) {
-      cat("\n\tWARNING non-numeric values in Min column",
-          file = outfile, append = TRUE
-      )
+      warning("Non-numeric values in Min column")
     }
   }
   
