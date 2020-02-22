@@ -65,13 +65,10 @@ checkTemplateFiles <- function(outfile = "") {
     ungroup()
   
   sheetNames <- lapply(template_info, names)
-  # for each sheet that has a Variable_class defined
-  for (tab in names(sheetNames)[unlist(lapply(
-    sheetNames,
-    function(x) {
-      any("Variable_class" %in% x)
-    }
-  ))]) {
+  # Find sheets that have Variable_class defined
+  vcd <- sapply(sheetNames, function(x) "Variable_class" %in% x)
+  
+  for (tab in names(sheetNames)[vcd]) {
     cat("\n", tab, "...", file = outfile, append = TRUE)
     
     template_info_vocab <- template_info[[tab]] %>% # pull the sheet in the info
