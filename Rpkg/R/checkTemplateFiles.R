@@ -135,5 +135,5 @@ checkTemplateFiles <- function(outfile = "") {
     }
   }
   
-  return(NULL)
+  invisible(NULL)
 }
