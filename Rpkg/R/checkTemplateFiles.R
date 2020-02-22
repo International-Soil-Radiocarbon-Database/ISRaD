@@ -3,7 +3,8 @@
 #' @description Check that the template information file and the template file match appropriately.
 #' @details Used in compile() function, but primarily a development tool
 #' @param outfile file to dump the output report. Defaults to an empty string that will print
-#' to standard output.
+#' to standard output
+#' @param verbose if TRUE (default) will print output to specified outfile
 #' @importFrom openxlsx read.xlsx getSheetNames
 #' @importFrom dplyr group_by filter summarise left_join mutate
 #' @importFrom utils type.convert
@@ -12,12 +13,14 @@
 #' @return Nothing (run for side effects).
 #' @examples
 #' checkTemplateFiles()
-checkTemplateFiles <- function(outfile = "") {
+checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   stopifnot(is.character(outfile))
   
   Column_Name <- Template_Vocab <- Variable_class <- Vocab <- Info_Vocab <- NULL # silence R CMD CHECK note
   
-  cat("\nChecking compatibility between ISRaD template and info file...",
+  vcat <- function(...) if (verbose) cat(...)
+  
+  vcat("\nChecking compatibility between ISRaD template and info file...",
       file = outfile, append = TRUE
   )
   
@@ -45,9 +48,9 @@ checkTemplateFiles <- function(outfile = "") {
   )
   
   # check that column names in the info and template files match
-  check_template_info_columns(template, template_info, outfile)  
+  check_template_info_columns(template, template_info, outfile, verbose)  
   
-  cat("\nChecking controlled vocab between ISRaD template and info file...",
+  vcat("\nChecking controlled vocab between ISRaD template and info file...",
       file = outfile, append = TRUE
   )
   
@@ -69,7 +72,7 @@ checkTemplateFiles <- function(outfile = "") {
   vcd <- sapply(sheetNames, function(x) "Variable_class" %in% x)
   
   for (tab in names(sheetNames)[vcd]) {
-    cat("\n", tab, "...", file = outfile, append = TRUE)
+    vcat("\n", tab, "...", file = outfile, append = TRUE)
     
     template_info_vocab <- template_info[[tab]] %>% # pull the sheet in the info
       filter(
@@ -92,13 +95,13 @@ checkTemplateFiles <- function(outfile = "") {
     if (!any(tii) || !any(iit)) {
       warning("Mismatch between template info vocab column and template controlled vocab")
       if (!any(iit)) {
-        cat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
+        vcat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
             unlist(template_info_vocab$Info_Vocab)[!iit],
             file = outfile, append = TRUE
         )
       }
       if (!any(tii)) {
-        cat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
+        vcat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
             unlist(template_info_vocab$Template_Vocab)[!tii],
             file = outfile, append = TRUE
         )

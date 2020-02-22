@@ -49,6 +49,7 @@ test_that("check_template_info_columns", {
   capture.output({
     expect_output(mismatch <- check_template_info_columns(template, template_info, ""))
     expect_false(mismatch)
+    expect_silent(check_template_info_columns(template, template_info, "", verbose = FALSE))
   })
   
   # Columns in template but not info file

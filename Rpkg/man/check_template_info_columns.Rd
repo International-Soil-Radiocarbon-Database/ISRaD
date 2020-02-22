@@ -4,7 +4,8 @@
 \alias{check_template_info_columns}
 \title{Check that column names in the info and template files match.}
 \usage{
-check_template_info_columns(template, template_info, outfile)
+check_template_info_columns(template, template_info, outfile,
+  verbose = TRUE)
 }
 \arguments{
 \item{template}{Template structure read in from \code{ISRaD_Master_Template.xlsx}}
@@ -12,6 +13,8 @@ check_template_info_columns(template, template_info, outfile)
 \item{template_info}{Template info structure read from \code{ISRaD_Template_Info.xlsx}}
 
 \item{outfile}{File output is being written to}
+
+\item{verbose}{Print output? Logical}
 }
 \value{
 TRUE if any mismatches occur.
