@@ -12,6 +12,9 @@
 #' @examples
 #' checkTemplateFiles()
 checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
+  stopifnot(is.character(outfile))
+  stopifnot(is.logical(verbose))
+  
   if (verbose) {
     cat("\nChecking compatibility between ISRaD template and info file...",
       file = outfile, append = TRUE
