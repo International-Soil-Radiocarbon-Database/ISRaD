@@ -43,27 +43,10 @@ checkTemplateFiles <- function(outfile = "") {
       read.xlsx(template_info_file, sheet = s)
     }
   )
-  
+
   # check that column names in the info and template files match
-  for (tab in names(template)[1:8]) {
-    cat("\n", tab, "...", file = outfile, append = TRUE)
-    tab_cols <- colnames(template[[tab]])
-    ti_colnames <- template_info[[tab]]$Column_Name
-    if(!identical(sort(ti_colnames), sort(tab_cols))) {
-      warning("Info and template file columns do not mnatch")
-    }
-    if (any(!(ti_colnames %in% tab_cols))) {
-      cat("\n\tWARNING column names unique to info file:",
-          setdiff(ti_colnames, tab_cols), file = outfile, append = TRUE
-      )
-    }
-    if (any(!(tab_cols %in% ti_colnames))) {
-      cat("\n\tWARNING column names unique to template file:",
-          setdiff(tab_cols, ti_colnames), file = outfile, append = TRUE
-      )
-    }
-  }
-  
+  check_template_info_columns(template, template_info, outfile)  
+
   cat("\nChecking controlled vocab between ISRaD template and info file...",
       file = outfile, append = TRUE
   )
