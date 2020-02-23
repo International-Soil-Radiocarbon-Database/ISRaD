@@ -18,9 +18,9 @@ library(ISRaD)
 *For more information, and to find out how to get involved, visit our website: [soilradiocarbon.org](www.soilradiocarbon.org)*
 
 # Technical notes 
-ISRaD data is stored here on github, rather than inside of the R package, so you will always be able to access the latest data from (versions v1.0.0 or greater of) the ISRaD package. The version on CRAN is v1.2.3.
+ISRaD data is stored here on github, rather than inside of the R package. You will always be able to access the latest data from (versions v1.0.0 or greater of) the ISRaD package using the "ISRaD.getdata" function. The version of ISRaD on CRAN is v1.2.3.
 
-We are always working to improve the code and provide minor updates. So, if you're interested in using the latest (beta) version of the ISRaD R package, you can download it directly from github. Open an R session and run the following code:
+We are always working to improve the code and provide minor updates. If you're interested in using the latest (beta) version of the ISRaD R package you can download it directly from github. Open an R session and run the following code:
 
 ```
 devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg", ref="master")
