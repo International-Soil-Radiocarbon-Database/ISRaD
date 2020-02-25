@@ -39,7 +39,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   stopifnot(is.logical(checkdoi))
   stopifnot(is.logical(verbose))
   
-  vcat <- function(...) if (verbose) cat(...)
+  vcat <- function(...) if (verbose) cat(..., file = outfile_QAQC, append = TRUE)
   
   # start error count at 0
   error <- 0
@@ -53,15 +53,15 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   vcat("         Thank you for contributing to the ISRaD database! \n", file = outfile_QAQC)
-  vcat("         Please review this quality control report. \n", file = outfile_QAQC, append = TRUE)
-  vcat("         Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/ for more information. \n", file = outfile_QAQC, append = TRUE)
-  vcat(rep("-", 30), "\n\n", file = outfile_QAQC, append = TRUE)
+  vcat("         Please review this quality control report. \n")
+  vcat("         Visit https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/ for more information. \n")
+  vcat(rep("-", 30), "\n\n")
 
-  vcat("\nFile:", basename(file), file = outfile_QAQC, append = TRUE)
+  vcat("\nFile:", basename(file))
   # message("\nTime:", as.character(Sys.time()), "\n", file=outfile_QAQC, append = TRUE)
 
   ##### check file extension #####
-  vcat("\n\nChecking file type...", file = outfile_QAQC, append = TRUE)
+  vcat("\n\nChecking file type...")
   if (!grep(".xlsx", file) == 1) {
     warning(file, " is not the current file type (should have '.xlsx' extension)")
     error <- error + 1
@@ -69,7 +69,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   ##### check template #####
 
-  vcat("\n\nChecking file format compatibility with ISRaD templates...", file = outfile_QAQC, append = TRUE)
+  vcat("\n\nChecking file format compatibility with ISRaD templates...")
 
   # get tabs for data and current template files from R package on github
   template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
@@ -90,8 +90,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   if (all(getSheetNames(file) %in% names(template))) {
-    vcat("\n Template format detected: ", basename(template_file), file = outfile_QAQC, append = TRUE)
-    vcat("\n Template info file to be used for QAQC: ", basename(template_info_file), file = outfile_QAQC, append = TRUE)
+    vcat("\n Template format detected: ", basename(template_file))
+    vcat("\n Template info file to be used for QAQC: ", basename(template_info_file))
 
     data <- lapply(getSheetNames(file)[1:8], function(s) read.xlsx(file, sheet = s))
     names(data) <- getSheetNames(file)[1:8]
@@ -120,18 +120,18 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   data <- lapply(data, as.data.frame)
 
   ##### check for empty tabs ####
-  vcat("\n\nChecking for empty tabs...", file = outfile_QAQC, append = TRUE)
+  vcat("\n\nChecking for empty tabs...")
   emptytabs <- names(data)[unlist(lapply(data, function(x) all(is.na(x))))]
 
   if (length(emptytabs) > 0) {
-    vcat("\n\tNOTE: empty tabs detected (", emptytabs, ")", file = outfile_QAQC, append = TRUE)
+    vcat("\n\tNOTE: empty tabs detected (", emptytabs, ")")
     note <- note + 1
   }
 
 
   ##### check doi --------------------------------------------------------
   if (checkdoi) {
-    vcat("\n\nChecking dataset doi...", file = outfile_QAQC, append = TRUE)
+    vcat("\n\nChecking dataset doi...")
     dois <- data$metadata$doi
     if (is.na(dois)) dois <- ""
     if (length(dois) < 2) {
@@ -143,14 +143,14 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
   } else {
-    vcat("\n\nNot checking dataset doi because 'checkdoi==F'...", file = outfile_QAQC, append = TRUE)
+    vcat("\n\nNot checking dataset doi because 'checkdoi==F'...")
   }
 
   ##### check for extra or misnamed columns ####
-  vcat("\n\nChecking for extra or misspelled column names...", file = outfile_QAQC, append = TRUE)
+  vcat("\n\nChecking for extra or misspelled column names...")
   for (t in seq_along(names(data))) {
     tab <- names(data)[t]
-    vcat("\n", tab, "tab...", file = outfile_QAQC, append = TRUE)
+    vcat("\n", tab, "tab...")
     data_colnames <- colnames(data[[tab]])
     template_colnames <- colnames(template[[tab]])
 
@@ -163,10 +163,10 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   ##### check for missing values in required columns ####
-  if (verbose) cat("\n\nChecking for missing values in required columns...", file = outfile_QAQC, append = TRUE)
+  if (verbose) cat("\n\nChecking for missing values in required columns...")
   for (t in seq_along(names(data))) {
     tab <- names(data)[t]
-    vcat("\n", tab, "tab...", file = outfile_QAQC, append = TRUE)
+    vcat("\n", tab, "tab...")
     required_colnames <- template_info[[tab]]$Column_Name[template_info[[tab]]$Required == "Yes"]
 
     missing_values <- sapply(required_colnames, function(c) NA %in% data[[tab]][[c]])
@@ -180,10 +180,10 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   ##### check levels #####
-  vcat("\n\nChecking that level names match between tabs...", file = outfile_QAQC, append = TRUE)
+  vcat("\n\nChecking that level names match between tabs...")
 
   # check site tab #
-  vcat("\n site tab...", file = outfile_QAQC, append = TRUE)
+  vcat("\n site tab...")
   mismatch <- c() # Entry name
   for (t in seq_along(data$site$entry_name)) {
     item_name <- as.character(data$site$entry_name)[t]
@@ -214,7 +214,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   # check profile tab #
-  vcat("\n profile tab...", file = outfile_QAQC, append = TRUE)
+  vcat("\n profile tab...")
   mismatch <- c() # Entry name
   for (t in seq_along(data$profile$entry_name)) {
     item_name <- as.character(data$profile$entry_name)[t]
@@ -260,7 +260,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
 
   # check flux tab #
-  vcat("\n flux tab...", file = outfile_QAQC, append = TRUE)
+  vcat("\n flux tab...")
   if (length(data$flux$entry_name) > 0) {
     mismatch <- c() # Entry name
     for (t in seq_along(data$flux$entry_name)) {
@@ -332,7 +332,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   # check layer tab #
-  vcat("\n layer tab...", file = outfile_QAQC, append = TRUE)
+  vcat("\n layer tab...")
   if (length(data$layer$entry_name) > 0) {
     mismatch <- c() # Entry name
     for (t in seq_along(data$layer$entry_name)) {
@@ -397,7 +397,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   # check interstitial tab #
-  vcat("\n interstitial tab...", file = outfile_QAQC, append = TRUE)
+  vcat("\n interstitial tab...")
   if (length(data$interstitial$entry_name) > 0) {
     mismatch <- c() # Entry name
     for (t in seq_along(data$interstitial$entry_name)) {
@@ -456,7 +456,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   # check fraction tab #
-  vcat("\n fraction tab...", file = outfile_QAQC, append = TRUE)
+  vcat("\n fraction tab...")
   if (length(data$fraction$entry_name) > 0) {
     mismatch <- c() # Entry name
     for (t in seq_along(data$fraction$entry_name)) {
@@ -533,7 +533,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
   }
   # check incubation tab #
-  vcat("\n incubation tab...", file = outfile_QAQC, append = TRUE)
+  vcat("\n incubation tab...")
   if (length(data$incubation$entry_name) > 0) {
     mismatch <- c() # Entry name
     for (t in seq_along(data$incubation$entry_name)) {
@@ -604,7 +604,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   ##### check numeric values #####
-  vcat("\n\nChecking numeric variable columns for inappropriate values...", file = outfile_QAQC, append = TRUE)
+  vcat("\n\nChecking numeric variable columns for inappropriate values...")
 
   which.nonnum <- function(x) {
     badNum <- is.na(suppressWarnings(as.numeric(as.character(x))))
@@ -614,7 +614,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   for (t in seq_along(names(data))) {
     tab <- names(data)[t]
     tab_info <- template_info[[tab]]
-    vcat("\n", tab, "tab...", file = outfile_QAQC, append = TRUE)
+    vcat("\n", tab, "tab...")
 
     # check for non-numeric values where required
     numeric_columns <- tab_info$Column_Name[tab_info$Variable_class == "numeric"]
@@ -647,10 +647,10 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   ##### check controlled vocab -----------------------------------------------
 
-  vcat("\n\nChecking controlled vocab...", file = outfile_QAQC, append = TRUE)
+  vcat("\n\nChecking controlled vocab...")
   for (t in 2:length(names(data))) {
     tab <- names(data)[t]
-    vcat("\n", tab, "tab...", file = outfile_QAQC, append = TRUE)
+    vcat("\n", tab, "tab...")
     tab_info <- template_info[[tab]]
 
     # check for non-numeric values where required
@@ -675,43 +675,43 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   ##### Summary #####
 
-  vcat("\n", rep("-", 20), file = outfile_QAQC, append = TRUE)
+  vcat("\n", rep("-", 20))
   if (error == 0) {
-    vcat("\nPASSED. Nice work!", file = outfile_QAQC, append = TRUE)
+    vcat("\nPASSED. Nice work!")
   } else {
-    vcat("\n", error, "WARNINGS need to be fixed\n", file = outfile_QAQC, append = TRUE)
+    vcat("\n", error, "WARNINGS need to be fixed\n")
   }
-  vcat("\n\n", rep("-", 20), file = outfile_QAQC, append = TRUE)
+  vcat("\n\n", rep("-", 20))
 
 
   # summary statistics ------------------------------------------------------
   if (summaryStats) {
-    vcat("\n\nIt might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.\n", file = outfile_QAQC, append = TRUE)
-    vcat("\nSummary statistics...\n", file = outfile_QAQC, append = TRUE)
+    vcat("\n\nIt might be useful to manually review the summary statistics and graphical representation of the data hierarchy as shown below.\n")
+    vcat("\nSummary statistics...\n")
 
     for (t in seq_along(names(data))) {
       tab <- names(data)[t]
       data_tab <- data[[tab]]
-      vcat("\n", tab, "tab...", file = outfile_QAQC, append = TRUE)
-      vcat(nrow(data_tab), "observations", file = outfile_QAQC, append = TRUE)
+      vcat("\n", tab, "tab...")
+      vcat(nrow(data_tab), "observations")
       if (nrow(data_tab) > 0) {
         col_counts <- apply(data_tab, 2, function(x) sum(!is.na(x)))
         col_counts <- col_counts[col_counts > 0]
         for (c in seq_along(col_counts)) {
-          vcat("\n   ", names(col_counts[c]), ":", col_counts[c], file = outfile_QAQC, append = TRUE)
+          vcat("\n   ", names(col_counts[c]), ":", col_counts[c])
         }
       }
     }
 
-    vcat("\n", rep("-", 20), file = outfile_QAQC, append = TRUE)
+    vcat("\n", rep("-", 20))
 
 
 
-    vcat("\n\n", file = outfile_QAQC, append = TRUE)
+    vcat("\n\n")
   }
-  vcat("\n\nPlease email info.israd@gmail.com with concerns or suggestions", file = outfile_QAQC, append = TRUE)
+  vcat("\n\nPlease email info.israd@gmail.com with concerns or suggestions")
   vcat("\nIf you think there is a error in the functioning of this code please post to
-                  \nhttps://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues\n", file = outfile_QAQC, append = TRUE)
+                  \nhttps://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues\n")
 
   attributes(data)$error <- error
 
