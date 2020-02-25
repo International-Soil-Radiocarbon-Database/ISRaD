@@ -62,7 +62,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   ##### check file extension #####
   vcat("\n\nChecking file type...")
   if (!grep(".xlsx", file) == 1) {
-    warning(file, " is not the current file type (should have '.xlsx' extension)")
+    vcat("\nWARNING: ", file, " is not the current file type (should have '.xlsx' extension)")
     error <- error + 1
   }
   
@@ -90,7 +90,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   
   if (!(all(lapply(data, function(x) x[1, 1]) == "Entry/Dataset Name") & 
         all(lapply(data, function(x) x[2, 1]) == "Author_year"))) {
-    warning("Description rows in data file not detected. The first two rows of your data file should be the description rows as found in the template file.")
+    vcat("\nWARNING: Description rows in data file not detected. The first two rows of your data file should be the description rows as found in the template file.")
     error <- error + 1
   }
   
@@ -126,7 +126,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     if (length(dois) < 2) {
       for (d in seq_along(dois)) {
         if ((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] == "israd"))) {
-          warning("doi not valid")
+          vcat("\nWARNING: doi not valid")
           error <- error + 1
         }
       }
@@ -146,7 +146,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     # compare column names in data to template column names
     notintemplate <- setdiff(data_colnames, template_colnames)
     if (length(notintemplate > 0)) {
-      warning("Column name mismatch template:", notintemplate)
+      vcat("\nWARNING: Column name mismatch template:", notintemplate)
       error <- error + 1
     }
   }
@@ -163,7 +163,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     which_missing_values <- unlist(sapply(required_colnames[missing_values], function(c) unlist(which(is.na(data[[tab]][[c]])))))
     
     if (T %in% unlist(missing_values)) {
-      warning("Missing values where required:", required_colnames[missing_values], "(rows:", which_missing_values + 3, ")")
+      vcat("\nWARNING: Missing values where required:", required_colnames[missing_values], "(rows:", which_missing_values + 3, ")")
       error <- error + 1
     }
   }
@@ -181,7 +181,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
   }
   if (length(mismatch) > 0) {
-    warning("'entry_name' mismatch between 'site' and 'metadata' tabs. ( rows:", mismatch, ")")
+    vcat("\nWARNING: 'entry_name' mismatch between 'site' and 'metadata' tabs. ( rows:", mismatch, ")")
     error <- error + 1
   }
   
@@ -190,7 +190,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     duplicated() %>%
     which()
   if (length(duplicates) > 0) {
-    warning("Duplicate site coordinates identified. ( row/s:", duplicates + 3, ")")
+    vcat("\nWARNING: Duplicate site coordinates identified. ( row/s:", duplicates + 3, ")")
     error <- error + 1
   }
   duplicates <- data$site %>%
@@ -198,7 +198,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     duplicated() %>%
     which()
   if (length(duplicates) > 0) {
-    warning("Duplicate site names identified. ( row/s:", duplicates + 3, ")")
+    vcat("\nWARNING: Duplicate site names identified. ( row/s:", duplicates + 3, ")")
     error <- error + 1
   }
   
@@ -212,7 +212,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
   }
   if (length(mismatch) > 0) {
-    warning("'entry_name' mismatch between 'profile' and 'metadata' tabs. ( rows:", mismatch, ")")
+    vcat("\nWARNING: 'entry_name' mismatch between 'profile' and 'metadata' tabs. ( rows:", mismatch, ")")
     error <- error + 1
   }
   
@@ -224,7 +224,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
   }
   if (length(mismatch) > 0) {
-    warning("'site_name' mismatch between 'profile' and 'metadata' tabs. ( row/s:", mismatch, ")")
+    vcat("\nWARNING: 'site_name' mismatch between 'profile' and 'metadata' tabs. ( row/s:", mismatch, ")")
     error <- error + 1
   }
   
@@ -236,7 +236,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       data.frame(t(mismatch.rows[, c("entry_name", "site_name")])),
       data.frame(t(data$profile[, c("entry_name", "site_name")]))
     )
-    warning("Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind + 3, ")")
+    vcat("\nWARNING: Name combination mismatch between 'profile' and 'site' tabs. ( row/s:", row.ind + 3, ")")
     error <- error + 1
   }
   
@@ -245,7 +245,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     duplicated() %>%
     which()
   if (length(duplicates) > 0) {
-    warning("Duplicate profile row identified. ( row/s:", duplicates + 3, ")")
+    vcat("\nWARNING: Duplicate profile row identified. ( row/s:", duplicates + 3, ")")
     error <- error + 1
   }
   
@@ -260,7 +260,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'entry_name' mismatch between 'flux' and 'metadata' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'entry_name' mismatch between 'flux' and 'metadata' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -272,7 +272,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'site_name' mismatch between 'flux' and 'site' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'site_name' mismatch between 'flux' and 'site' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -284,7 +284,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'profile_name' mismatch between 'flux' and 'profile' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'profile_name' mismatch between 'flux' and 'profile' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -296,7 +296,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
         data.frame(t(mismatch.rows[, c("entry_name", "site_name")])),
         data.frame(t(data$flux[, c("entry_name", "site_name")]))
       )
-      warning("Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind + 3, ")")
+      vcat("\nWARNING: Name combination mismatch between 'flux' and 'site' tabs. ( row/s:", row.ind + 3, ")")
       error <- error + 1
     }
     
@@ -306,7 +306,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
         duplicated() %>%
         which()
       if (length(duplicates) > 0) {
-        warning("Duplicate flux row identified. ( row/s:", duplicates + 3, ")")
+        vcat("\nWARNING: Duplicate flux row identified. ( row/s:", duplicates + 3, ")")
         error <- error + 1
       }
     } else {
@@ -315,7 +315,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
         duplicated() %>%
         which()
       if (length(duplicates) > 0) {
-        warning("Duplicate flux row identified. Add 'flx_name' column w/ unique identifiers. ( row/s:", duplicates + 3, ")")
+        vcat("\nWARNING: Duplicate flux row identified. Add 'flx_name' column w/ unique identifiers. ( row/s:", duplicates + 3, ")")
         error <- error + 1
       }
     }
@@ -332,7 +332,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'entry_name' mismatch between 'layer' and 'metadata' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'entry_name' mismatch between 'layer' and 'metadata' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -344,7 +344,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'site_name' mismatch between 'layer' and 'site' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'site_name' mismatch between 'layer' and 'site' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -356,7 +356,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'profile_name' mismatch between 'layer' and 'profile' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'profile_name' mismatch between 'layer' and 'profile' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -368,7 +368,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name")])),
         data.frame(t(data$layer[, c("entry_name", "site_name", "pro_name")]))
       )
-      warning("Name combination mismatch between 'layer' and 'profile' tabs. ( row/s:", row.ind + 3, ")")
+      vcat("\nWARNING: Name combination mismatch between 'layer' and 'profile' tabs. ( row/s:", row.ind + 3, ")")
       error <- error + 1
     }
     
@@ -377,13 +377,13 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       duplicated() %>%
       which()
     if (length(duplicates) > 0) {
-      warning("Duplicate layer row identified. ( row/s:", duplicates + 3, ")")
+      vcat("\nWARNING: Duplicate layer row identified. ( row/s:", duplicates + 3, ")")
       error <- error + 1
     }
     
     lyr_depth_err <- which(data$layer$lyr_bot < data$layer$lyr_top)
     if (length(lyr_depth_err > 0)) {
-      warning("lyr_bot < lyr_top. ( row/s:", lyr_depth_err + 3, ")")
+      vcat("\nWARNING: lyr_bot < lyr_top. ( row/s:", lyr_depth_err + 3, ")")
       error <- error + 1
     }
   }
@@ -399,7 +399,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'entry_name' mismatch between 'interstitial' and 'metadata' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'entry_name' mismatch between 'interstitial' and 'metadata' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -411,7 +411,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'site_name' mismatch between 'interstitial' and 'site' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'site_name' mismatch between 'interstitial' and 'site' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -423,7 +423,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'profile_name' mismatch between 'interstitial' and 'profile' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'profile_name' mismatch between 'interstitial' and 'profile' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -435,7 +435,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name")])),
         data.frame(t(data$interstitial[, c("entry_name", "site_name", "pro_name")]))
       )
-      warning("Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind + 3, ")")
+      vcat("\nWARNING: Name combination mismatch between 'interstitial' and 'profile' tabs. ( row/s:", row.ind + 3, ")")
       error <- error + 1
     }
     
@@ -444,7 +444,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       duplicated() %>%
       which()
     if (length(duplicates) > 0) {
-      warning("Duplicate interstitial row identified. ( row/s:", duplicates + 3, ")")
+      vcat("\nWARNING: Duplicate interstitial row identified. ( row/s:", duplicates + 3, ")")
       error <- error + 1
     }
   }
@@ -460,7 +460,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'entry_name' mismatch between 'fraction' and 'metadata' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'entry_name' mismatch between 'fraction' and 'metadata' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -472,7 +472,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'site_name' mismatch between 'fraction' and 'site' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'site_name' mismatch between 'fraction' and 'site' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -484,7 +484,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'profile_name' mismatch between 'fraction' and 'profile' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'profile_name' mismatch between 'fraction' and 'profile' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -496,7 +496,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'lyr_name' mismatch between 'fraction' and 'layer' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'lyr_name' mismatch between 'fraction' and 'layer' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -508,7 +508,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name", "lyr_name")])),
         data.frame(t(data$fraction[, c("entry_name", "site_name", "pro_name", "lyr_name")]))
       )
-      warning("Name combination mismatch between 'fraction' and 'layer' tabs. ( row/s:", row.ind + 3, ")")
+      vcat("\nWARNING: Name combination mismatch between 'fraction' and 'layer' tabs. ( row/s:", row.ind + 3, ")")
       error <- error + 1
     }
     
@@ -524,7 +524,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       duplicated() %>%
       which()
     if (length(duplicates) > 0) {
-      warning("Duplicate fraction row identified. ( row/s:", duplicates + 3, ")")
+      vcat("\nWARNING: Duplicate fraction row identified. ( row/s:", duplicates + 3, ")")
       error <- error + 1
     }
   }
@@ -539,7 +539,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'entry_name' mismatch between 'incubation' and 'metadata' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'entry_name' mismatch between 'incubation' and 'metadata' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -551,7 +551,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'site_name' mismatch between 'incubation' and 'site' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'site_name' mismatch between 'incubation' and 'site' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -563,7 +563,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'profile_name' mismatch between 'incubation' and 'profile' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'profile_name' mismatch between 'incubation' and 'profile' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -575,7 +575,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       }
     }
     if (length(mismatch) > 0) {
-      warning("'lyr_name' mismatch between 'incubation' and 'layer' tabs. ( rows:", mismatch, ")")
+      vcat("\nWARNING: 'lyr_name' mismatch between 'incubation' and 'layer' tabs. ( rows:", mismatch, ")")
       error <- error + 1
     }
     
@@ -587,7 +587,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name", "lyr_name")])),
         data.frame(t(data$incubation[, c("entry_name", "site_name", "pro_name", "lyr_name")]))
       )
-      warning("Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind + 3, ")")
+      vcat("\nWARNING: Name combination mismatch between 'incubation' and 'layer' tabs. ( row/s:", row.ind + 3, ")")
       error <- error + 1
     }
     
@@ -596,7 +596,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       duplicated() %>%
       which()
     if (length(duplicates) > 0) {
-      warning("Duplicate incubation row identified. ( row/s:", duplicates + 3, ")")
+      vcat("\nWARNING: Duplicate incubation row identified. ( row/s:", duplicates + 3, ")")
       error <- error + 1
     }
   }
@@ -618,7 +618,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       if (!column %in% colnames(data[[tab]])) next
       nonnum <- !is.numeric(data[[tab]][, column]) & !is.logical(data[[tab]][, column])
       if (nonnum) {
-        warning("Non-numeric values in", column, "column")
+        vcat("\nWARNING: Non-numeric values in", column, "column")
         error <- error + 1
       } else {
         max <- as.numeric(tab_info$Max[tab_info$Column_Name == column])
@@ -626,12 +626,12 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
         toobig <- data[[tab]][, column] > max
         toosmall <- data[[tab]][, column] < min
         if (sum(toobig, na.rm = TRUE) > 0) {
-          warning("Values greater than accepted max in", column, "column (rows", which(toobig) + 3, ")")
+          vcat("\nWARNING: Values greater than accepted max in", column, "column (rows", which(toobig) + 3, ")")
           error <- error + 1
         }
         
         if (sum(toosmall, na.rm = TRUE) > 0) {
-          warning("Values smaller than accepted min in", column, "column (rows", which(toosmall) + 3, ")")
+          vcat("\nWARNING: Values smaller than accepted min in", column, "column (rows", which(toosmall) + 3, ")")
           error <- error + 1
         }
       }
@@ -658,7 +658,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
       if (controlled_vocab[1] == "must match across levels") next
       vocab_check <- sapply(data[[tab]][, column], function(x) x %in% c(controlled_vocab, NA))
       if (F %in% vocab_check) {
-        warning("Unacceptable values detected in the", column, "column:", unique(as.character(data[[tab]][, column][!vocab_check])))
+        vcat("\nWARNING: Unacceptable values detected in the", column, "column:", unique(as.character(data[[tab]][, column][!vocab_check])))
         error <- error + 1
       }
     }

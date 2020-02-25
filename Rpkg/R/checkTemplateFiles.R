@@ -25,8 +25,8 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   )
   
   # Get the tables stored in the template sheets
-  template <- read_template_file(template_file)
-  template_info <- read_template_info_file(template_info_file)
+  template <- read_template_file()
+  template_info <- read_template_info_file()
   
   # check that column names in the info and template files match
   check_template_info_columns(template, template_info, outfile, verbose)  
