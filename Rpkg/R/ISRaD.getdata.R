@@ -25,33 +25,33 @@ ISRaD.getdata <- function(directory, dataset = "full", extra = FALSE, force_down
   if (!"ISRaD_database_files" %in% list.files(directory)) {
     message("\n ISRaD_database_files not found...")
     message("\n Downloading database files from: ", dataURL, "\n")
-    download.file(dataURL, normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")))
-    message("\n Unzipping database files to", normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), "...\n")
-    unzip(normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files")))
+    download.file(dataURL, file.path(directory, "ISRaD_database_files.zip"))
+    message("\n Unzipping database files to", file.path(directory, "ISRaD_database_files"), "...\n")
+    unzip(file.path(directory, "ISRaD_database_files.zip"), exdir = file.path(directory, "ISRaD_database_files"))
   }
 
   if (force_download) {
     message("\n Replacing ISRaD_database_files ...")
     message("\n Downloading database files from: ", dataURL, "\n")
-    download.file(dataURL, normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files.zip")))
+    download.file(dataURL, file.path(directory, "ISRaD_database_files.zip")))
 
-    message("\n Removing old database files in ", normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), "...\n")
+    message("\n Removing old database files in ", file.path(directory, "ISRaD_database_files"), "...\n")
     reviewed <- menu(c("Yes", "No"), title = "Are you sure you want to replace these with the newest version? You can copy them to a new directory now if you want keep them.")
     print(reviewed)
     if (reviewed == 1) {
-      for (f in list.files(normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files")), full.names = TRUE)) {
+      for (f in list.files(file.path(directory, "ISRaD_database_files"), full.names = TRUE)) {
         file.remove(f)
       }
     } else {
       stop("Ok, keeping the old files. You can run again without force_download=T to load.")
     }
 
-    message("\n Unzipping database files to ", normalizePath(winslash = "\\", paste0(directory, "/ISRaD_database_files")), "...\n")
-    unzip(normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files.zip")), exdir = normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files")))
+    message("\n Unzipping database files to ", file.path(directory, "ISRaD_database_files"), "...\n")
+    unzip(file.path(directory, "ISRaD_database_files.zip"), exdir = file.path(directory, "ISRaD_database_files"))
   }
 
 
-  database_files <- list.files(normalizePath(winslash = "\\", file.path(directory, "ISRaD_database_files")), full.names = TRUE)
+  database_files <- list.files(file.path(directory, "ISRaD_database_files"), full.names = TRUE)
 
   if (extra) {
     data_type <- "ISRaD_extra_"
