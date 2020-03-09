@@ -33,7 +33,7 @@ ISRaD.getdata <- function(directory, dataset = "full", extra = FALSE, force_down
   if (force_download) {
     message("\n Replacing ISRaD_database_files ...")
     message("\n Downloading database files from: ", dataURL, "\n")
-    download.file(dataURL, file.path(directory, "ISRaD_database_files.zip")))
+    download.file(dataURL, file.path(directory, "ISRaD_database_files.zip"))
 
     message("\n Removing old database files in ", file.path(directory, "ISRaD_database_files"), "...\n")
     reviewed <- menu(c("Yes", "No"), title = "Are you sure you want to replace these with the newest version? You can copy them to a new directory now if you want keep them.")
