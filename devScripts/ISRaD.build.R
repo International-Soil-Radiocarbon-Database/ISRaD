@@ -154,8 +154,8 @@ ISRaD.build <- function(ISRaD_directory, geodata_directory, geodata_keys, citati
   system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files.zip")))
 
   utils::zip(
-    zipfile = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"),
-    files = list.files(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", "ISRaD_database_files"), full.names = TRUE), flags = "-j"
+    zipfile = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files.zip"),
+    files = list.files(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"), full.names = TRUE), flags = "-j"
   )
 
   # update references -------------------------------------------------------
