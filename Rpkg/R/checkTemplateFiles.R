@@ -25,27 +25,8 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   )
   
   # Get the tables stored in the template sheets
-  template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx",
-                               package = "ISRaD"
-  )
-  template <- lapply(
-    setNames(nm = getSheetNames(template_file)),
-    function(s) {
-      read.xlsx(template_file,
-                sheet = s
-      )
-    }
-  )
-  
-  template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx",
-                                    package = "ISRaD"
-  )
-  template_info <- lapply(
-    setNames(nm = getSheetNames(template_info_file)),
-    function(s) {
-      read.xlsx(template_info_file, sheet = s)
-    }
-  )
+  template <- read_template_file()
+  template_info <- read_template_info_file()
   
   # check that column names in the info and template files match
   check_template_info_columns(template, template_info, outfile, verbose)  

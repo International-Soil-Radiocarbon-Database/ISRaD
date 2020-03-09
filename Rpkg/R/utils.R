@@ -88,3 +88,41 @@ check_numeric_minmax <- function(x, xname) {
     warning("Non-numeric values in ", xname, " column")
   }
 }
+
+
+#' Read in the template file.
+#'
+#' @param template_file Filename, character; if not provided, load the default from \code{extdata/}
+#' @return A list with sheets of the template info file.
+#' @import openxlsx
+#' @keywords internal
+read_template_file <- function(template_file) {
+  # Get the tables stored in the template sheets
+  if(missing(template_file)) {
+    template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
+  }
+  lapply(
+    setNames(nm = getSheetNames(template_file)),
+    function(s) {
+      read.xlsx(template_file, sheet = s)
+    }
+  )
+}
+
+#' Read in the template info file.
+#'
+#' @param template_info_file Filename, character; if not provided, load the default from \code{extdata/}
+#' @return A list with sheets of the template info file.
+#' @import openxlsx
+#' @keywords internal
+read_template_info_file <- function(template_info_file) {
+  if(missing(template_info_file))  {
+    template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx", package = "ISRaD")
+  }
+  lapply(
+    setNames(nm = getSheetNames(template_info_file)),
+    function(s) {
+      read.xlsx(template_info_file, sheet = s)
+    }
+  )
+}
