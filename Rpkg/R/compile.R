@@ -77,18 +77,7 @@ compile <- function(dataset_directory,
   }
   
   # Get the tables stored in the template sheets
-  template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx",
-                               package = "ISRaD"
-  )
-  template <- lapply(
-    stats::setNames(nm = openxlsx::getSheetNames(template_file)),
-    function(s) {
-      read.xlsx(template_file,
-                sheet = s
-      )
-    }
-  )
-  
+  template <- read_template_file()
   template <- lapply(template[1:8], function(x) x[-c(1, 2, 3), ])
   template <- lapply(template, function(x) x %>% mutate_all(as.character))
   
@@ -266,7 +255,10 @@ compile <- function(dataset_directory,
   
   if (write_out) {
     # suppressMessages call due to use of deprecated "zip" fx use in write.xlsx
-    suppressMessages(openxlsx::write.xlsx(ISRaD_database_excel, file = file.path(dataset_directory, DB_DIR, LIST_FILE)))
+    suppressMessages(openxlsx::write.xlsx(ISRaD_database_excel, 
+                                          file = file.path(dataset_directory, 
+                                                           DB_DIR, 
+                                                           LIST_FILE)))
   }
   
   if (verbose) cat("\n", rep("-", 20), file = outfile, append = TRUE)
