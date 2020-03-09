@@ -215,7 +215,11 @@ ISRaD.build <- function(ISRaD_directory, geodata_directory, geodata_keys, citati
     if (length(new_entries) != 0) {
       message(paste(length(new_entries), " new entries have been added, so the minor version number will be updated"))
     }
-    DESC[3] <- paste(unlist(version), collapse = ".")
+    DESC[3] <- paste0("Version: ",
+                      substr(
+                        paste(version, collapse = "."),
+                        start = 10,
+                        stop = nchar(paste(version, collapse = "."))))
     writeLines(DESC, file.path(ISRaD_directory, "Rpkg", "DESCRIPTION"))
     message("Ok, you can now commit and push this to github!\n You should also then reload R and reinstall ISRaD from github.\n")
   }
