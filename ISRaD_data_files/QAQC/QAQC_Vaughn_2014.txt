@@ -129,6 +129,7 @@ Summary statistics...
     inc_duration : 88
     inc_duration_type : 88
     inc_temp : 88
+    inc_C_respired : 5
     inc_13c : 88
     inc_rc_lab : 88
     inc_rc_year : 88

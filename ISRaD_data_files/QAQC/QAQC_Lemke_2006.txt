@@ -84,11 +84,13 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
+    template_version : 1
  site tab...1 observations
     entry_name : 1
     site_name : 1
     site_lat : 1
     site_long : 1
+    site_datum : 1
     site_elevation : 1
     site_note : 1
  profile tab...15 observations
@@ -101,15 +103,22 @@ Summary statistics...
     pro_reps : 5
     pro_MAT : 15
     pro_MAP : 15
+    pro_usda_soil_order : 15
+    pro_soil_series : 15
     pro_soil_taxon : 15
-    pro_soil_taxon_sys : 14
-    pro_MAST : 14
-    pro_land_cover : 14
-    pro_veg_note : 14
+    pro_soil_taxon_sys : 15
+    pro_MAST : 15
+    pro_land_cover : 15
+    pro_lc_phenology : 15
+    pro_lc_leaf_type : 15
+    pro_lc_photosyn_path : 15
+    pro_veg_note : 15
+    pro_parent_material : 15
+    pro_parent_chem : 15
+    pro_parent_material_notes : 15
  flux tab...8 observations
     entry_name : 8
     site_name : 8
-    plot_name : 8
     pro_name : 8
     flx_name : 8
     flx_obs_date_y : 8
@@ -137,11 +146,12 @@ Summary statistics...
     lyr_bot : 25
     lyr_hzn : 23
     lyr_comp : 7
-    lyr_note : 7
-    lyr_cec_sum : 2
+    lyr_igsn : 7
+    lyr_c_inorg : 25
+    lyr_c_org : 23
     lyr_c_tot : 23
     lyr_n_tot : 23
-    lyr_c_to_n : 5
+    lyr_c_to_n : 23
     lyr_14c : 18
  interstitial tab...2 observations
     entry_name : 2
@@ -158,25 +168,28 @@ Summary statistics...
     ist_storage_method : 2
     ist_concentration : 2
     ist_concentration_units : 2
- fraction tab...48 observations
-    entry_name : 48
-    site_name : 48
-    pro_name : 48
-    lyr_name : 48
-    frc_name : 48
-    frc_input : 48
-    frc_property : 48
-    frc_scheme : 48
-    frc_scheme_units : 48
-    frc_lower : 48
-    frc_upper : 48
-    frc_agent : 48
-    frc_obs_date_y : 48
-    frc_obs_date_m : 48
-    frc_obs_date_d : 48
+ fraction tab...33 observations
+    entry_name : 33
+    site_name : 33
+    pro_name : 33
+    lyr_name : 33
+    frc_name : 33
+    frc_input : 33
+    frc_property : 33
+    frc_scheme : 33
+    frc_scheme_units : 33
+    frc_lower : 33
+    frc_upper : 33
+    frc_agent : 33
+    frc_obs_date_y : 33
+    frc_obs_date_m : 33
+    frc_obs_date_d : 33
     frc_c_perc : 33
     frc_c_tot : 33
+    frc_c_org : 33
+    frc_c_inorg : 33
     frc_n_tot : 33
+    frc_c_to_n : 33
     frc_14c : 33
  incubation tab...7 observations
     entry_name : 7

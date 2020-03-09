@@ -85,23 +85,31 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
- site tab...1 observations
-    entry_name : 1
-    site_name : 1
-    site_lat : 1
-    site_long : 1
-    site_elevation : 1
-    site_note : 1
+ site tab...3 observations
+    entry_name : 3
+    site_name : 3
+    site_lat : 3
+    site_long : 3
+    site_elevation : 3
  profile tab...9 observations
     entry_name : 9
     site_name : 9
     pro_name : 9
+    pro_lat : 9
+    pro_long : 9
     pro_treatment : 9
     pro_MAT : 9
     pro_MAP : 9
     pro_usda_soil_order : 9
+    pro_soil_taxon_sys : 9
     pro_land_cover : 9
     pro_veg_note : 9
+    pro_parent_material : 9
+    pro_parent_chem : 9
+    pro_parent_material_notes : 9
+    pro_aspect : 9
+    pro_aspect_deg : 9
+    pro_slope : 6
  flux tab...0 observations
  layer tab...16 observations
     entry_name : 16

@@ -135,7 +135,7 @@ Summary statistics...
     lyr_bd_tot : 270
     lyr_ph_cacl : 25
     lyr_ph_h2o : 237
-    lyr_c_tot : 245
+    lyr_c_tot : 246
     lyr_soc : 246
     lyr_n_tot : 246
     lyr_c_to_n : 246

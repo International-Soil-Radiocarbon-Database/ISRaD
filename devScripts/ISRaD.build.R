@@ -160,7 +160,7 @@ ISRaD.build <- function(ISRaD_directory, geodata_directory, geodata_keys, citati
 
   # update references -------------------------------------------------------
 
-  if (removed_entries != "none" | new_entries != "none") {
+  if (removed_entries != "none" & new_entries != "none") {
     message("\nUpdating credits.md page...this takes about 5 min")
 
     dois <- as.character(ISRaD_data$metadata$doi)
