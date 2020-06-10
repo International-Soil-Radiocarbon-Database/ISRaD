@@ -17,7 +17,7 @@
 ISRaD.extra.fill_fm <- function(database) {
 
   stopifnot(is_israd_database(database))
-  
+
   # function to calculate delta 14C from fraction modern and obs year if not reported
   calc_fm <- function(df, d14c, obs_date_y, fraction_modern) {
     lambda <- 0.00012097 # = 1/(true mean life of 14C)
