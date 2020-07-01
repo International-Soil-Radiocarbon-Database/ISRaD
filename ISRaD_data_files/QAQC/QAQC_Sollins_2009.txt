@@ -97,6 +97,7 @@ Summary statistics...
     entry_name : 4
     site_name : 4
     pro_name : 4
+    pro_note : 1
     pro_treatment : 4
     pro_comp : 1
     pro_MAT : 2
