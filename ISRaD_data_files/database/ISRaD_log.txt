@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2020-06-30 19:16:20 
+ 2020-07-01 11:05:54 
  - - - - - - - - - - - - - - - 
 
 
@@ -14,7 +14,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  3 compiling Aiken_2014.xlsx ... passed QAQC
 
- 4 checking Allard_1987.xlsx ...New data - passed QAQC
+ 4 compiling Allard_1987.xlsx ... passed QAQC
 
  5 compiling Amon_2004.xlsx ... passed QAQC
 
@@ -244,7 +244,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  118 compiling Hatton_2012.xlsx ... passed QAQC
 
- 119 checking Hayes_2011.xlsx ...New data - passed QAQC
+ 119 compiling Hayes_2011.xlsx ... passed QAQC
 
  120 compiling Heckman_2010.xlsx ... passed QAQC
 
@@ -286,13 +286,13 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  139 compiling Johnston_2014.xlsx ... passed QAQC
 
- 140 checking Jones_2009.xlsx ...New data - passed QAQC
+ 140 compiling Jones_2009.xlsx ... passed QAQC
 
  141 compiling Jones_2012.xlsx ... passed QAQC
 
  142 compiling Jones_2013.xlsx ... passed QAQC
 
- 143 checking Jones_2014.xlsx ...New data - passed QAQC
+ 143 compiling Jones_2014.xlsx ... passed QAQC
 
  144 compiling Kaiser_2007.xlsx ... passed QAQC
 
@@ -304,7 +304,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  148 compiling Kelly_2018.xlsx ... passed QAQC
 
- 149 checking Kettles_2000.xlsx ...New data - passed QAQC
+ 149 compiling Kettles_2000.xlsx ... passed QAQC
 
  150 compiling Kettles_2003.xlsx ... passed QAQC
 
@@ -324,7 +324,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  158 compiling Kogel-Knabner_2008.xlsx ... passed QAQC
 
- 159 checking Kokfelt_2010.xlsx ...New data - passed QAQC
+ 159 compiling Kokfelt_2010.xlsx ... passed QAQC
 
  160 compiling Kondo_2010.xlsx ... passed QAQC
 
@@ -346,7 +346,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  169 compiling Kuhry_1997.xlsx ... passed QAQC
 
- 170 checking Kuhry_1998.xlsx ...New data - passed QAQC
+ 170 compiling Kuhry_1998.xlsx ... passed QAQC
 
  171 compiling Kuhry_2008.xlsx ... passed QAQC
 
@@ -366,7 +366,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  179 compiling Lassey_1996.xlsx ... passed QAQC
 
- 180 checking Lavoie_1995.xlsx ...New data - passed QAQC
+ 180 compiling Lavoie_1995.xlsx ... passed QAQC
 
  181 compiling Lavoie_2011.xlsx ... passed QAQC
 
@@ -478,7 +478,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  235 compiling Ouzilleau Samson_2010.xlsx ... passed QAQC
 
- 236 checking Ovenden_1982.xlsx ...New data - passed QAQC
+ 236 compiling Ovenden_1982.xlsx ... passed QAQC
 
  237 compiling Panova_2010.xlsx ... passed QAQC
 
@@ -516,7 +516,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  254 compiling Rethemeyer_2005.xlsx ... passed QAQC
 
- 255 checking Richter_1999.xlsx ...New data - passed QAQC
+ 255 compiling Richter_1999.xlsx ... passed QAQC
 
  256 compiling Robinson_2006.xlsx ... passed QAQC
 
@@ -562,7 +562,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  277 compiling Sollins_2006.xlsx ... passed QAQC
 
- 278 checking Sollins_2009.xlsx ...New data - passed QAQC
+ 278 compiling Sollins_2009.xlsx ... passed QAQC
 
  279 compiling Stephan_1983.xlsx ... passed QAQC
 
@@ -580,9 +580,9 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  286 compiling Tan_2013.xlsx ... passed QAQC
 
- 287 checking Tarnocai_1973.xlsx ...New data - passed QAQC
+ 287 compiling Tarnocai_1973.xlsx ... passed QAQC
 
- 288 checking Tarnocai_1988.xlsx ...New data - passed QAQC
+ 288 compiling Tarnocai_1988.xlsx ... passed QAQC
 
  289 compiling Tarnocai_2010.xlsx ... passed QAQC
 
@@ -622,7 +622,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  307 compiling Väliranta_2003.xlsx ... passed QAQC
 
- 308 checking van Bellen_2011.xlsx ...New data - passed QAQC
+ 308 compiling van Bellen_2011.xlsx ... passed QAQC
 
  309 compiling van_Dam_1997.xlsx ... passed QAQC
 
@@ -630,7 +630,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  311 compiling van_Mourik_2010.xlsx ... passed QAQC
 
- 312 checking Vardy_1997.xlsx ...New data - passed QAQC
+ 312 compiling Vardy_1997.xlsx ... passed QAQC
 
  313 compiling Vardy_1998.xlsx ... passed QAQC
 
@@ -650,7 +650,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  321 compiling Walter_2016.xlsx ... passed QAQC
 
- 322 checking Wang_1996.xlsx ...New data - passed QAQC
+ 322 compiling Wang_1996.xlsx ... passed QAQC
 
  323 compiling Wang_1999.xlsx ... passed QAQC
 
@@ -674,7 +674,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  333 compiling Zoltai_1971.xlsx ... passed QAQC
 
- 334 checking Zoltai_1985.xlsx ...New data - passed QAQC
+ 334 compiling Zoltai_1985.xlsx ... passed QAQC
 
  335 compiling Zoltai_1993.xlsx ... passed QAQC
 
