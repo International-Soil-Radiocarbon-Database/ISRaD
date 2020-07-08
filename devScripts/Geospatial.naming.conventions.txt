@@ -1,4 +1,4 @@
-All geospatial data that is added/extracted through ISRaD extra functions must follow the following naming conventions to generate column names and sort properly.
+All geospatial data that is added/extracted through ISRaD_Extra functions must follow the following naming conventions to generate column names and sort properly.
 
 All items must be separated by “_”. If no relevant data, use ‘x’ as a placeholder.
 
