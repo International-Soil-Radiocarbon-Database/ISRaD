@@ -19,7 +19,7 @@ All items must be separated by “_”. If no relevant data, use ‘x’ as a pl
     a.	“.tif”
 
 
-Example name:
+Full example name:
 
     “F_0_10_2018_mmyr_AMF.tif”
 
