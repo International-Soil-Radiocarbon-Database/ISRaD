@@ -18,7 +18,7 @@
   //global variable
   var r_cors = false;
   var r_path = document.createElement('a');
-  r_path.href = "../R";
+  r_path.href = "../Rpkg/R";
 
 
   //new Session()
@@ -396,7 +396,7 @@
   //exported functions
   ocpu.call = r_fun_call;
   ocpu.rpc = rpc;
-  ocpu.seturl = seturl("//cloud.opencpu.org/ocpu/library/International-Soil-Radiocarbon-Database/ISRaD/Rpkg/R");
+  ocpu.seturl = seturl;
 
   //exported constructors
   ocpu.Snippet = Snippet;
