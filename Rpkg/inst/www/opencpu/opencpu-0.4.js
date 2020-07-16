@@ -396,7 +396,7 @@
   //exported functions
   ocpu.call = r_fun_call;
   ocpu.rpc = rpc;
-  ocpu.seturl = seturl;
+  ocpu.seturl = seturl("//cloud.opencpu.org/ocpu/library/International-Soil-Radiocarbon-Database/ISRaD/Rpkg/R");
 
   //exported constructors
   ocpu.Snippet = Snippet;
