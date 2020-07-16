@@ -18,7 +18,7 @@
   //global variable
   var r_cors = false;
   var r_path = document.createElement('a');
-  r_path.href = "../Rpkg/R";
+  r_path.href = "../R";
 
 
   //new Session()
