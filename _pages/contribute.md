@@ -71,7 +71,7 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 
 ## 4. Using ISRaD online quality control tool
 
-1. <a href="https://international-soil-radiocarbon-database.ocpu.io/ISRaD/www/" target="_blank"> Open the online tool</a>
+1. <a href="https://soilradiocarbon.shinyapps.io/shinyapp/" target="_blank"> Open the online tool</a>
 1. Upload your file
 1. Run check
 1. If the upload and check was successful, a link to the ISRaD quality control report file will be generated for viewing and download.
