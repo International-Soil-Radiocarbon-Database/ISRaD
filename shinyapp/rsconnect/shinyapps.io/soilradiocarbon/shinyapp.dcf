@@ -1,0 +1,10 @@
+name: shinyapp
+title:
+username:
+account: soilradiocarbon
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2578655
+bundleId: 3399534
+url: https://soilradiocarbon.shinyapps.io/shinyapp/
+when: 1594902362.58388
