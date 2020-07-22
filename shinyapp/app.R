@@ -67,7 +67,6 @@ server = function(input, output){
   #   df = read_xlsx(input$file1$datapath, sheet = input$sheet)
   # })
   
-  
   output$report <- downloadHandler(
     filename = function() {paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(input$file1$name)))},
     #file.path = paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(input$file1$name))),
@@ -79,22 +78,5 @@ server = function(input, output){
   
 }
 
-
-
 # Run the app ----
 shinyApp(ui, server)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
