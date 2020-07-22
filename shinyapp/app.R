@@ -23,32 +23,22 @@ ui <- fluidPage(
       tags$hr(),
       
       # Input: Checkbox if file has header ----
-      checkboxInput("header", "Header", TRUE),
+      # checkboxInput("header", "Header", TRUE),
       
       # Input: Select separator ----
-      radioButtons("sheet", "Sheet",
-                   choices = c(Metadata = "metadata",
-                               Site = "site",
-                               Profile = "profile"),
-                   selected = "metadata"),
+      # radioButtons("sheet", "Sheet",
+      #              choices = c(Metadata = "metadata",
+      #                          Site = "site",
+      #                          Profile = "profile",
+      #                          Layer = 'layer',
+      #                          Interstitial = 'interstitial'),
+      #              selected = "metadata"),
       
-      # Input: Select quotes ----
-      radioButtons("quote", "Quote",
-                   choices = c(None = "",
-                               "Double Quote" = '"',
-                               "Single Quote" = "'"),
-                   selected = '"'),
-      
+
       # Horizontal line ----
       tags$hr(),
       
-      # Input: Select number of rows to display ----
-      radioButtons("disp", "Display",
-                   choices = c(Head = "head",
-                               All = "all"),
-                   selected = "head"),
-      
-      downloadButton('report', "Generate Report")
+      downloadButton('report', "Generate QAQC Report")
     ),
     
     # Main panel for displaying outputs ----
@@ -65,68 +55,29 @@ ui <- fluidPage(
 # Define server logic to read selected file ----
 
 server = function(input, output){
+  
+  # output$table <- renderTable({
+  #   datasetInput()
+  # })
+  
+  # output$contents <- renderTable({
+  #   df = read_xlsx(input$file1$datapath, sheet = input$sheet)
+  # })
+  
+  
   output$report <- downloadHandler(
-    filename = 'report.txt',
+    filename = function() {paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(input$file1$name)))},
+    #file.path = paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(input$file1$name))),
     content = function(file){
-      tempreport <- file.path(tempdir(), 'report2.txt')
-      file.copy('report2.txt', tempreport, overwrite = TRUE)
-      
-      report <- cat(QAQC_shiny(input$file1$datapath))
+      QAQC(input$file1$datapath, TRUE, file)
       
     }
   )
+  
 }
 
 
 
-# server <- function(input, output) {
-#   
-#   
-#   output$contents <- renderTable({
-#   #   
-#   #   # input$file1 will be NULL initially. After the user selects
-#   #   # and uploads a file, head of that data file by default,
-#   #   # or all rows if selected, will be shown.
-#   #   
-#   req(input$file1)
-#   #   
-#   #   df = read_xlsx(input$file1$datapath, sheet = input$sheet)
-#   #   
-#   #   # df <- read.table(input$file1$datapath,
-#   #   #                header = input$header,
-#   #   #                sep = input$sep,
-#   #   #                quote = input$quote)
-#   inFile <- input$file1
-#   #   #textOutput(input$file1$name)
-#   #   #textOutput('Farts')
-#   #   
-#   df <- read_xlsx(inFile$datapath, sheet = input$sheet)
-#   #   
-#   #   
-#   #   if(input$disp == "head") {
-#   #     return(head(df))
-#   #   }
-#   #   else {
-#   #     return(df)
-#   #   }
-#   #   
-#     
-#     
-#   })
-#   
-#   txtname <- file.path(tempdir(), "QAQC", paste0("QAQC_", gsub("\\.xlsx", ".txt", 
-#                                                                basename(input$file1$datapath))))
-#   
-#   QAQC_shiny(inFile$datapath) 
-#   
-#   output$report <- downloadHandler(
-#     filename <- txtname,
-#     content = txtname
-#   )
-#   
-#   
-#   
-# }
 # Run the app ----
 shinyApp(ui, server)
 
