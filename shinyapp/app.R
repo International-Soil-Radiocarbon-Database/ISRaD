@@ -6,7 +6,10 @@ library(ISRaD)
 ui <- fluidPage(
   
   # App title ----
-  titlePanel("Uploading Files"),
+  titlePanel(title = div(img(src = "ISRaDlogoTextBelow_small2.png", 
+                             height = 104, width = 177),
+                         "QA/QC",
+                         style = "font-family:Avenir Roman;font-size:64px;")),
   
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -15,7 +18,7 @@ ui <- fluidPage(
     sidebarPanel(
       
       # Input: Select a file ----
-      fileInput("file1", "Choose .xlsx File",
+      fileInput("file1", "Choose .xlsx file",
                 multiple = TRUE,
                 accept = c(".xlsx")),
       
@@ -38,7 +41,7 @@ ui <- fluidPage(
       # Horizontal line ----
       tags$hr(),
       
-      downloadButton('report', "Generate QAQC Report")
+      downloadButton('report', "Generate QA/QC Report")
     ),
     
     # Main panel for displaying outputs ----
