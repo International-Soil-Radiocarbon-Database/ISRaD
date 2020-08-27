@@ -9,11 +9,14 @@
 #' @param citations T or F. Update citations.
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
 #' @import stringr
+#' @importFrom dplyr mutate_all
 #' @export
 
 ISRaD.build <- function(ISRaD_directory, geodata_directory, geodata_keys, citations = T) {
   requireNamespace("stringr")
   requireNamespace("tidyverse")
+
+  source("./devScripts/ISRaD.extra.fill_expert.R")
 
   # Compile database --------------------------------------------------------
 
