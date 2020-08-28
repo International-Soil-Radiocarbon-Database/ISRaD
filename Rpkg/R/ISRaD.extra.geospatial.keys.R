@@ -28,13 +28,12 @@
 ISRaD.extra.geospatial.keys <- function(database, geodata_keys) {
   stopifnot(is_israd_database(database))
   
-  keys <- list.files(geodata_keys, full.names = TRUE)
+  keys <- list.files(geodata_keys)
   varNames <- lapply(keys, function(x) {
-    x <- substr(x, start = nchar(geodata_keys) + 2, stop = nchar(x))
     x <- substr(x, 1, regexpr("\\.[^\\.]*$", x)[[1]] - 1)
     paste0("pro_", paste(unlist(strsplit(x, "_x")), collapse = ""))
   })
-  key.dfs <- lapply(keys, function(x) data.frame(utils::read.csv(x, stringsAsFactors = FALSE)))
+  key.dfs <- lapply(list.files(geodata_keys, full.names = TRUE), function(x) data.frame(utils::read.csv(x, stringsAsFactors = FALSE)))
   proFactors <- database$profile[, match(unlist(varNames), colnames(database$profile))]
   for (i in seq_along(key.dfs)) {
     database$profile[, colnames(proFactors)[i]] <- key.dfs[[i]][match(unlist(proFactors[i]), unlist(key.dfs[[i]][1])), 2]
