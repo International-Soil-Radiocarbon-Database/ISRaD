@@ -63,10 +63,10 @@ ISRaD.extra.delta_delta <- function(database, future = TRUE) {
       df.pro$atm14C[north.obs] <- atm14C.annual[match(df.pro[north.obs, obs_date_y], atm14C.annual$year), "d14C.n"]
     }
     if (length(south.obs) > 0) {
-      df.pro$atm14C[south.obs] <- atm14C.annual[match(df.pro[south.obs, obs_date_y], atm14C.annual$year), "d14C.n"]
+      df.pro$atm14C[south.obs] <- atm14C.annual[match(df.pro[south.obs, obs_date_y], atm14C.annual$year), "d14C.s"]
     }
     if (length(tropic.obs) > 0) {
-      df.pro$atm14C[tropic.obs] <- atm14C.annual[match(df.pro[tropic.obs, obs_date_y], atm14C.annual$year), "d14C.n"]
+      df.pro$atm14C[tropic.obs] <- atm14C.annual[match(df.pro[tropic.obs, obs_date_y], atm14C.annual$year), "d14C.t"]
     }
     return(df.pro$atm14C)
   }
