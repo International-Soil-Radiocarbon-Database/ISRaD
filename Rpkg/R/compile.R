@@ -18,7 +18,7 @@
 #'
 #' @importFrom openxlsx read.xlsx
 #' @importFrom utils setTxtProgressBar txtProgressBar
-#' @importFrom dplyr mutate_all
+#' @importFrom dplyr mutate_all setdiff
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
