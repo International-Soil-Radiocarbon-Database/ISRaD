@@ -38,32 +38,46 @@ ISRaD.extra.delta_delta <- function(database, future = TRUE) {
     d14C.s = graven$SHc14,
     d14C.t = graven$Tropicsc14
   )
-
-  calc_atm14c <- function(df, obs_date_y) {
-    df.pro <- semi_join(lapply_df(df, as.character), lapply_df(database$profile, as.character), by = c("entry_name", "site_name", "pro_name"))
-    north.obs <- which(df.pro$pro_lat > 30)
-    south.obs <- which(df.pro$pro_lat < (-30))
-    tropic.obs <- which(df.pro$pro_lat < 30 & df.pro$pro_lat > (-30))
-
-    # add in lyr_obs_date_y for calculating del del in inc and frc tables
-    if (obs_date_y == "lyr_obs_date_y" & is.null(df.pro$lyr_obs_date_y)) {
-      df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
-    }
-
-    if (nrow(df.pro) > 0) {
-      df.pro$atm14C <- NA
-      df.pro$atm14C[north.obs] <- atm14C.annual$d14C.n[match(df.pro[north.obs, obs_date_y], atm14C.annual$year)]
-      df.pro$atm14C[south.obs] <- atm14C.annual$d14C.s[match(df.pro[south.obs, obs_date_y], atm14C.annual$year)]
-      df.pro$atm14C[tropic.obs] <- atm14C.annual$d14C.t[match(df.pro[tropic.obs, obs_date_y], atm14C.annual$year)]
-
-      return(df.pro$atm14C)
-    }
-  }
-
+  
+  # add atm zone
   database$profile$pro_graven_zone <- NA
   database$profile$pro_graven_zone[database$profile$pro_lat > 30] <- "north"
   database$profile$pro_graven_zone[database$profile$pro_lat < (-30)] <- "south"
   database$profile$pro_graven_zone[database$profile$pro_lat < 30 & database$profile$pro_lat > -30] <- "tropic"
+
+  calc_atm14c <- function(df, obs_date_y) {
+    df.pro <- left_join(lapply_df(df, as.character), 
+                        lapply_df(database$profile[ , c("entry_name", "site_name", "pro_name", "pro_lat", "pro_long", "pro_graven_zone")], as.character), 
+                        by = c("entry_name", "site_name", "pro_name"))
+    if(nrow(df.pro) > 0) {
+      df.pro$atm14C <- NA
+      
+      # add in lyr_obs_date_y for calculating del del in inc and frc tables
+      if (obs_date_y == "lyr_obs_date_y" & is.null(df.pro$lyr_obs_date_y)) {
+        df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
+      }
+      
+      # split by zone
+      df.pro.n <- df.pro[df.pro$pro_graven_zone == "north", ]
+      df.pro.s <- df.pro[df.pro$pro_graven_zone == "south", ]
+      df.pro.t <- df.pro[df.pro$pro_graven_zone == "tropic", ]
+      
+      if (nrow(df.pro.n) > 0) {
+        df.pro.n$atm14C <- atm14C.annual[match(df.pro.n[ , obs_date_y], atm14C.annual$year), "d14C.n"]
+      }
+      if (nrow(df.pro.s) > 0) {
+        df.pro.n$atm14C <- atm14C.annual[match(df.pro.n[ , obs_date_y], atm14C.annual$year), "d14C.n"]
+      }
+      if (nrow(df.pro.t) > 0) {
+        df.pro.n$atm14C <- atm14C.annual[match(df.pro.n[ , obs_date_y], atm14C.annual$year), "d14C.n"]
+      }
+      df.pro <- rbind(df.pro.n,
+                      df.pro.s,
+                      df.pro.t)
+      return(df.pro$atm14C)
+    }
+  }
+ 
 
   ## calculate del del 14C
   # flux

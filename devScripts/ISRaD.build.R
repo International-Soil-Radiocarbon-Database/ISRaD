@@ -12,10 +12,14 @@
 #' @importFrom dplyr mutate_all
 #' @export
 
-ISRaD.build <- function(ISRaD_directory, geodata_directory, geodata_keys, citations = T) {
+ISRaD.build <- function(ISRaD_directory = getwd(), 
+                        geodata_directory = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_geodata", 
+                        geodata_keys = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_keys", 
+                        citations = T) {
   requireNamespace("stringr")
   requireNamespace("tidyverse")
 
+  # load fill_expert fx
   source("./devScripts/ISRaD.extra.fill_expert.R")
 
   # Compile database --------------------------------------------------------
