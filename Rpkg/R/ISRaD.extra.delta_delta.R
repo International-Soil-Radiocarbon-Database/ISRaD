@@ -51,7 +51,7 @@ ISRaD.extra.delta_delta <- function(database, future = TRUE) {
                     atm14c = NA)
     # add in lyr_obs_date_y for calculating del del in inc and frc tables
     if (obs_date_y == "lyr_obs_date_y" & is.null(df.pro$lyr_obs_date_y)) {
-      df.pro$lyr_obs_date_y <- test$layer[match(df.pro$lyr_name, test$layer$lyr_name), "lyr_obs_date_y"]
+      df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
     }
     
     # split by zone
