@@ -8,8 +8,7 @@
 #' @param geodata_keys directory where geospatial factor keys are found. Necessary to create ISRaD_Extra
 #' @param citations T or F. Update citations.
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
-#' @import stringr
-#' @importFrom dplyr mutate_all
+#' @import stringr dplyr
 #' @export
 
 ISRaD.build <- function(ISRaD_directory = getwd(), 
