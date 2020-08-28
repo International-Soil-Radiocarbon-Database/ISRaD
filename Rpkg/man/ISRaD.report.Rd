@@ -19,8 +19,8 @@ Wrapper for the simple reporting functions ISRaD.rep.count.all, ISRaD.rep.count.
 }
 \examples{
 \donttest{
-# Obtain current ISRaD data
-database <- ISRaD.getdata(tempdir(), dataset = "full", extra = FALSE)
+# Load example dataset Gaudinski_2001
+database <- ISRaD::Gaudinski_2001
 # Report metadata statistics
 ISRaD.report(database, report = "entry.stats")
 # Report summary statistics for all levels of the database
