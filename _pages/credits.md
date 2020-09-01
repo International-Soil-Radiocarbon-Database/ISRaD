@@ -5,725 +5,3179 @@ title: <span style="color:white">**Credits**
 header:
   overlay_image: /assets/images/soil.jpg
 ---
-## Main compilations
+ISRaD Credits
+================
+01-Sep-2020
+
+# Main compilations
+
 ISRaD has been built based on two main compilations:
- 
-*  Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles. Global Change Biology, 21(11), 4278–4292. doi:10.1111/gcb.13012
-*  He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century. Science, 353(6306), 1419–1424. doi:10.1126/science.aad4273
- 
-## Studies within ISRaD
-Currently, there are 304 entries (unique DOIs) in ISRaD, which are from the following publications:
- 
-*  Abbott, M. B., & Stafford, T. W. (1996). Radiocarbon Geochemistry of Modern and Ancient Arctic Lake Systems, Baffin Island, Canada. Quaternary Research, 45(3), 300–311. doi:10.1006/qres.1996.0031
-*  Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The dynamics of organic matter in rock fragments in soil investigated by 14C dating and measurements of 13C. European Journal of Soil Science, 53(1), 147–159. doi:10.1046/j.1365-2389.2002.00432.x
-*  Aiken, G. R., Spencer, R. G. M., Striegl, R. G., Schuster, P. F., & Raymond, P. A. (2014). Influences of glacier melt and permafrost thaw on the age of dissolved organic carbon in the Yukon River basin. Global Biogeochemical Cycles, 28(5), 525–537. doi:10.1002/2013gb004764
-*  Amon, R. M. W., & Meon, B. (2004). The biogeochemistry of dissolved organic matter and nutrients in two large Arctic estuaries and potential implications for our understanding of the Arctic Ocean system. Marine Chemistry, 92(1-4), 311–330. doi:10.1016/j.marchem.2004.06.034
-*  Andersson, R. A., Kuhry, P., Meyers, P., Zebühr, Y., Crill, P., & Mörth, M. (2011). Impacts of paleohydrological changes on n-alkane biomarker compositions of a Holocene peat sequence in the eastern European Russian Arctic. Organic Geochemistry, 42(9), 1065–1075. doi:10.1016/j.orggeochem.2011.06.020
-*  Andreev, A. A., Klimanov, V. A., & Sulerzhitsky, L. D. (1997). Younger Dryas pollen records from central and southern Yakutia. Quaternary International, 41-42, 111–117. doi:10.1016/s1040-6182(96)00042-0
-*  Andreev, A. ., Klimanov, V. ., & Sulerzhitsky, L. . (2001). Vegetation and climate history of the Yana River lowland, Russia, during the last 6400yr. Quaternary Science Reviews, 20(1-3), 259–266. doi:10.1016/s0277-3791(00)00118-9
-*  Andreev, A. A., Tarasov, P. E., Klimanov, V. A., Melles, M., Lisitsyna, O. M., & Hubberten, H.-W. (2004). Vegetation and climate changes around the Lama Lake, Taymyr Peninsula, Russia during the Late Pleistocene and Holocene. Quaternary International, 122(1), 69–84. doi:10.1016/j.quaint.2004.01.032
-*  Aravena, R., Warner, B. G., Charman, D. J., Belyea, L. R., Mathur, S. P., & Dinel, H. (1993). Carbon Isotopic Composition of Deep Carbon Gases in an Ombrogenous Peatland, Northwestern Ontario, Canada. Radiocarbon, 35(2), 271–276. doi:10.1017/s0033822200064948
-*  Arlen-Pouliot, Y., & Bhiry, N. (2005). Palaeoecology of a palsa and a filled thermokarst pond in a permafrost                 peatland, subarctic Québec, Canada. The Holocene, 15(3), 408–419. doi:10.1191/0959683605hl818rp
-*  Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012). Seasonal patterns and control factors of CO2 effluxes from surface litter, soil organic carbon, and root-derived carbon estimated using radiocarbon signatures. Agricultural and Forest Meteorology, 152, 149–158. doi:10.1016/j.agrformet.2011.09.015
-*  Baisden, W. T., Amundson, R., Cook, A. C., & Brenner, D. L. (2002). Turnover and storage of C and N in five density fractions from California annual grassland surface soils. Global Biogeochemical Cycles, 16(4), 64–1–64–16. doi:10.1029/2001gb001822
-*  Baisden, W. T., & Parfitt, R. L. (2007). Bomb 14C enrichment indicates decadal C pool in deep soil? Biogeochemistry, 85(1), 59–68. doi:10.1007/s10533-007-9101-7
-*  Baisden, W. T., Parfitt, R. L., Ross, C., Schipper, L. A., & Canessa, S. (2011). Evaluating 50 years of time-series soil radiocarbon data: towards routine calculation of robust C residence times. Biogeochemistry, 112(1-3), 129–137. doi:10.1007/s10533-011-9675-y
-*  Basile-Doelsch, I., Amundson, R., Stone, W. E. E., Masiello, C. A., Bottero, J. Y., Colin, F., … Meunier, J. D. (2005). Mineralogical control of organic carbon dynamics in a volcanic ash soil on La Reunion. European Journal of Soil Science, 0(0), 050912034650042. doi:10.1111/j.1365-2389.2005.00703.x
-*  BAUER, I. E., & VITT, D. H. (2011). Peatland dynamics in a complex landscape: Development of a fen-bog complex in the Sporadic Discontinuous Permafrost zone of northern Alberta, Canada. Boreas, 40(4), 714–726. doi:10.1111/j.1502-3885.2011.00210.x
-*  Bauters, M., Vercleyen, O., Vanlauwe, B., Six, J., Bonyoma, B., Badjoko, H., … Boeckx, P. (2019). Long‐term recovery of the functional community assembly and carbon pools in an African tropical forest succession. Biotropica, 51(3), 319–329. doi:10.1111/btp.12647
-*  Beaulieu-Audy, V., Garneau, M., Richard, P. J. H., & Asnong, H. (2009). Holocene palaeoecological reconstruction of three boreal peatlands in the La Grande Rivière region, Québec, Canada. The Holocene, 19(3), 459–476. doi:10.1177/0959683608101395
-*  Becker-Heidmann, P., & Scharpenseel, H.-W. (1986). Thin Layer δ13C and D14C Monitoring of “Lessive” Soil Profiles. Radiocarbon, 28(2A), 383–390. doi:10.1017/s0033822200007499
-*  Becker-Heidmann, P., & Scharpenseel, H.-W. (1989). Carbon Isotope Dynamics in Some Tropical Soils. Radiocarbon, 31(03), 672–679. doi:10.1017/s0033822200012273
-*  Becker-Heidmann, P., Andresen, O., Kalmar, D., Scharpenseel, H.-W., & Yaalon, D. H. (2002). Carbon Dynamics in Vertisols as Revealed by High-Resolution Sampling. Radiocarbon, 44(1), 63–73. doi:10.1017/s0033822200064687
-*  Bellisario, L. M., Bubier, J. L., Moore, T. R., & Chanton, J. P. (1999). Controls on CH4emissions from a northern peatland. Global Biogeochemical Cycles, 13(1), 81–91. doi:10.1029/1998gb900021
-*  Benner, R., Benitez-Nelson, B., Kaiser, K., & Amon, R. M. W. (2004). Export of young terrigenous dissolved organic carbon from rivers to the Arctic Ocean. Geophysical Research Letters, 31(5), n/a–n/a. doi:10.1029/2003gl019251
-*  Berg, B., & Gerstberger, P. (2004). Element Fluxes with Litterfall in Mature Stands of Norway Spruce and European Beech in Bavaria, South Germany. Biogeochemistry of Forested Catchments in a Changing Environment, 271–278. doi:10.1007/978-3-662-06073-5_16
-*  Berhe, A. A., Harden, J. W., Torn, M. S., Kleber, M., Burton, S. D., & Harte, J. (2012). Persistence of soil organic matter in eroding versus depositional landform positions. Journal of Geophysical Research: Biogeosciences, 117(G2), n/a–n/a. doi:10.1029/2011jg001790
-*  Bhiry, N., Payette, S., & Robert, É. C. (2007). Peatland development at the arctic tree line (Québec, Canada) influenced by flooding and permafrost. Quaternary Research, 67(3), 426–437. doi:10.1016/j.yqres.2006.11.009
-*  Biedenbender, S. H., McClaran, M. P., Quade, J., & Weltz, M. A. (2004). Landscape patterns of vegetation change indicated by soil carbon isotope composition. Geoderma, 119(1-2), 69–83. doi:10.1016/s0016-7061(03)00234-9
-*  Billings, W. D. (1987). Carbon balance of Alaskan tundra and taiga ecosystems: past, present and future. Quaternary Science Reviews, 6(2), 165–177. doi:10.1016/0277-3791(87)90032-1
-*  Binkley, D., & Resh, S. C. (1999). Rapid Changes in Soils Following Eucalyptus Afforestation in Hawaii. Soil Science Society of America Journal, 63(1), 222–225. doi:10.2136/sssaj1999.03615995006300010032x
-*  Bird, M., Santruckova, H., Lloyd, J., & Lawson, E. (2002). The isotopic composition of soil organic carbon on a north-south transect in western Canada. European Journal of Soil Science, 53(3), 393–403. doi:10.1046/j.1365-2389.2002.00444.x
-*  Blyakharchuk, T. A., & Sulerzhitsky, L. D. (1999). Holocene vegetational and climatic changes in the forest zone of Western                 Siberia according to pollen records from the extrazonal palsa bog Bugristoye. The Holocene, 9(5), 621–628. doi:10.1191/095968399676614561
-*  Blyakharchuk, T. A. (2003). Four new pollen sections tracing the Holocene vegetational development of the                 southern part of the West Siberan Lowland. The Holocene, 13(5), 715–731. doi:10.1191/0959683603hl658rp
-*  BOL, R., HUANG, Y., MERIDITH, J. A., EGLINTON, G., HARKNESS, D. D., & INESON, P. (1996). The 14C age and residence time of organic matter and its lipid constituents in a stagnohumic gley soil. European Journal of Soil Science, 47(2), 215–222. doi:10.1111/j.1365-2389.1996.tb01392.x
-*  Bol, R., Bolger, T., Cully, R., & Little, D. (2003). Recalcitrant soil organic materials mineralize more efficiently at higher temperatures. Journal of Plant Nutrition and Soil Science, 166(3), 300–307. doi:10.1002/jpln.200390047
-*  Bouchard, F., Laurion, I., Pr&amp;amp;#x0117;skienis, V., Fortier, D., Xu, X., & Whiticar, M. J. (2015). Modern to millennium-old greenhouse gases emitted from ponds and lakes of the Eastern Canadian Arctic (Bylot Island, Nunavut). Biogeosciences, 12(23), 7279–7298. doi:10.5194/bg-12-7279-2015
-*  Butman, D., Raymond, P., Oh, N.-H., & Mull, K. (2007). Quantity, 14C age and lability of desorbed soil organic carbon in fresh water and seawater. Organic Geochemistry, 38(9), 1547–1557. doi:10.1016/j.orggeochem.2007.05.011
-*  Butnor, J. R., Samuelson, L. J., Johnsen, K. H., Anderson, P. H., González Benecke, C. A., Boot, C. M., … Zarnoch, S. J. (2017). Vertical distribution and persistence of soil organic carbon in fire-adapted longleaf pine forests. Forest Ecology and Management, 390, 15–26. doi:10.1016/j.foreco.2017.01.014
-*  Caner, L., Toutain, F., Bourgeon, G., & Herbillon, A.-J. (2003). Occurrence of sombric-like subsurface A horizons in some andic soils of the Nilgiri Hills (Southern India) and their palaeoecological significance. Geoderma, 117(3-4), 251–265. doi:10.1016/s0016-7061(03)00127-7
-*  Carbone, M. S., Winston, G. C., & Trumbore, S. E. (2008). Soil respiration in perennial grass and shrub ecosystems: Linking environmental controls with plant and microbial sources on seasonal and diel timescales. Journal of Geophysical Research: Biogeosciences, 113(G2), n/a–n/a. doi:10.1029/2007jg000611
-*  Carbone, M. S., Still, C. J., Ambrose, A. R., Dawson, T. E., Williams, A. P., Boot, C. M., … Schimel, J. P. (2011). Seasonal and episodic moisture controls on plant and microbial contributions to soil respiration. Oecologia, 167(1), 265–278. doi:10.1007/s00442-011-1975-3
-*  Carbone, M. S., Richardson, A. D., Chen, M., Davidson, E. A., Hughes, H., Savage, K. E., & Hollinger, D. Y. (2016). Constrained partitioning of autotrophic and heterotrophic respiration reduces model uncertainties of forest ecosystem carbon fluxes but not stocks. Journal of Geophysical Research: Biogeosciences, 121(9), 2476–2492. doi:10.1002/2016jg003386
-*  Castanha, C., Trumbore, S. E., & Amundso, R. (2012). Mineral and Organic Matter Characterization of Density Fractions of Basalt- and Granite-Derived Soils in Montane California. An Introduction to the Study of Mineralogy. doi:10.5772/36735
-*  Chabbi, A., Kögel-Knabner, I., & Rumpel, C. (2009). Stabilised carbon in subsoil horizons is located in spatially distinct parts of the soil profile. Soil Biology and Biochemistry, 41(2), 256–261. doi:10.1016/j.soilbio.2008.10.033
-*  Chasar, L. S., Chanton, J. P., Glaser, P. H., Siegel, D. I., & Rivers, J. S. (2000). Radiocarbon and stable carbon isotopic evidence for transport and transformation of dissolved organic carbon, dissolved inorganic carbon, and CH4in a northern Minnesota peatland. Global Biogeochemical Cycles, 14(4), 1095–1108. doi:10.1029/1999gb001221
-*  Chen, Q., Sun, Y., Shen, C., Peng, S., Yi, W., Li, Z., & Jiang, M. (2002). Organic matter turnover rates and CO2 flux from organic matter decomposition of mountain soil profiles in the subtropical area, south China. CATENA, 49(3), 217–229. doi:10.1016/s0341-8162(02)00044-9
-*  Cherkinsky, A. E. (1996). 14C Dating and Soil Organic Matter Dynamics in Arctic and Subarctic Ecosystems. Radiocarbon, 38(2), 241–245. doi:10.1017/s0033822200017616
-*  Chiti, T., Neubert, R. E. M., Janssens, I. A., Certini, G., Curiel Yuste, J., & Sirignano, C. (2009). Radiocarbon dating reveals different past managements of adjacent forest soils in the Campine region, Belgium. Geoderma, 149(1-2), 137–142. doi:10.1016/j.geoderma.2008.11.030
-*  Chiti, T., Certini, G., Grieco, E., & Valentini, R. (2010). The role of soil in storing carbon in tropical rainforests: the case of Ankasa Park, Ghana. Plant and Soil, 331(1-2), 453–461. doi:10.1007/s11104-009-0265-x
-*  Chiti, T., Certini, G., Forte, C., Papale, D., & Valentini, R. (2015). Radiocarbon-Based Assessment of Heterotrophic Soil Respiration in Two Mediterranean Forests. Ecosystems, 19(1), 62–72. doi:10.1007/s10021-015-9915-4
-*  Chiti, T., Rey, A., Jeffery, K., Lauteri, M., Mihindou, V., Malhi, Y., … Valentini, R. (2018). Contribution and stability of forest-derived soil organic carbon during woody encroachment in a tropical savanna. A case study in Gabon. Biology and Fertility of Soils, 54(8), 897–907. doi:10.1007/s00374-018-1313-6
-*  Chiti, T., Díaz-Pinés, E., Butterbach-Bahl, K., Marzaioli, F., & Valentini, R. (2017). Soil organic carbon changes following degradation and conversion to cypress and tea plantations in a tropical mountain forest in Kenya. Plant and Soil, 422(1-2), 527–539. doi:10.1007/s11104-017-3489-1
-*  Chorover, J., Amistadi, M. K., & Chadwick, O. A. (2004). Surface charge evolution of mineral-organic complexes during pedogenesis in Hawaiian basalt. Geochimica et Cosmochimica Acta, 68(23), 4859–4876. doi:10.1016/j.gca.2004.06.005
-*  Conen, F., Zimmermann, M., Leifeld, J., Seth, B., & Alewell, C. (2008). Relative stability of soil carbon revealed by shifts in &delta;15N and C:N ratio. Biogeosciences, 5(1), 123–128. doi:10.5194/bg-5-123-2008
-*  Cooper, M. D. A., Estop-Aragonés, C., Fisher, J. P., Thierry, A., Garnett, M. H., Charman, D. J., … Hartley, I. P. (2017). Limited contribution of permafrost carbon to methane release from thawing peatlands. Nature Climate Change, 7(7), 507–511. doi:10.1038/nclimate3328
-*  Crews, T. E., Kitayama, K., Fownes, J. H., Riley, R. H., Herbert, D. A., Mueller-Dombois, D., & Vitousek, P. M. (1995). Changes in Soil Phosphorus Fractions and Ecosystem Dynamics across a Long Chronosequence in Hawaii. Ecology, 76(5), 1407–1424. doi:10.2307/1938144
-*  Crow, S. E., Reeves, M., Schubert, O. S., & Sierra, C. A. (2014). Optimization of method to quantify soil organic matter dynamics and carbon sequestration potential in volcanic ash soils. Biogeochemistry, 123(1-2), 27–47. doi:10.1007/s10533-014-0051-6
-*  CUSACK, D. F., TORN, M. S., McDOWELL, W. H., & SILVER, W. L. (2010). The response of heterotrophic activity and carbon cycling to nitrogen additions and warming in two tropical soils. Global Change Biology. doi:10.1111/j.1365-2486.2009.02131.x
-*  Cusack, D. F., Chadwick, O. A., Hockaday, W. C., & Vitousek, P. M. (2012). Mineralogical controls on soil black carbon preservation. Global Biogeochemical Cycles, 26(2), n/a–n/a. doi:10.1029/2011gb004109
-*  Cusack, D. F., Chadwick, O. A., Ladefoged, T., & Vitousek, P. M. (2012). Long-term effects of agriculture on soil carbon pools and carbon chemistry along a Hawaiian environmental gradient. Biogeochemistry, 112(1-3), 229–243. doi:10.1007/s10533-012-9718-z
-*  Czimczik, C. I., Schmidt, M. W. I., & Schulze, E.-D. (2005). Effects of increasing fire frequency on black carbon and organic matter in Podzols of Siberian Scots pine forests. European Journal of Soil Science, 56(3), 417–428. doi:10.1111/j.1365-2389.2004.00665.x
-*  Czimczik, C. I., & Trumbore, S. E. (2007). Short-term controls on the age of microbial carbon sources in boreal forest soils. Journal of Geophysical Research: Biogeosciences, 112(G3), n/a–n/a. doi:10.1029/2006jg000389
-*  Czimczik, C. I., & Welker, J. M. (2010). Radiocarbon Content of CO2 Respired from High Arctic Tundra in Northwest Greenland. Arctic, Antarctic, and Alpine Research, 42(3), 342–350. doi:10.1657/1938-4246-42.3.342
-*  De Klerk, P., Donner, N., Karpov, N. S., Minke, M., & Joosten, H. (2011). Short-term dynamics of a low-centred ice-wedge polygon near Chokurdakh (NE Yakutia, NE Siberia) and climate change during the last ca 1250 years. Quaternary Science Reviews, 30(21-22), 3013–3031. doi:10.1016/j.quascirev.2011.06.016
-*  De Feudis, M., Cardelli, V., Massaccesi, L., Trumbore, S. E., Vittori Antisari, L., Cocco, S., … Agnelli, A. (2019). Small altitudinal change and rhizosphere affect the SOM light fractions but not the heavy fraction in European beech forest soil. CATENA, 181, 104091. doi:10.1016/j.catena.2019.104091
-*  De Freitas, H. A., Pessenda, L. C. R., Aravena, R., Gouveia, S. E. M., de Souza Ribeiro, A., & Boulet, R. (2001). Late Quaternary Vegetation Dynamics in the Southern Amazon Basin Inferred from Carbon Isotopes in Soil Organic Matter. Quaternary Research, 55(1), 39–46. doi:10.1006/qres.2000.2192
-*  Desjardins, T., Andreux, F., Volkoff, B., & Cerri, C. C. (1994). Organic carbon and 13C contents in soils and soil size-fractions, and their changes due to deforestation and pasture installation in eastern Amazonia. Geoderma, 61(1-2), 103–118. doi:10.1016/0016-7061(94)90013-2
-*  Doetterl, S., Six, J., Van Wesemael, B., & Van Oost, K. (2012). Carbon cycling in eroding landscapes: geomorphic controls on soil organic C pool composition and C stabilization. Global Change Biology, 18(7), 2218–2232. doi:10.1111/j.1365-2486.2012.02680.x
-*  Doetterl, S., Stevens, A., Six, J., Merckx, R., Van Oost, K., Casanova Pinto, M., … Boeckx, P. (2015). Soil carbon storage controlled by interactions between geochemistry and climate. Nature Geoscience, 8(10), 780–783. doi:10.1038/ngeo2516
-*  Dörr, H., & Münnich, K. O. (1980). Carbon-14 and Carbon-13 in Soil Co2. Radiocarbon, 22(3), 909–918. doi:10.1017/s0033822200010316
-*  Dörr, H., & Münnich, K. O. (1986). Annual Variations of the 14C Content of Soil CO2. Radiocarbon, 28(2A), 338–345. doi:10.1017/s0033822200007438
-*  Dörr, H., & Münnich, K. O. (1989). Downward Movement of Soil Organic Matter and Its Influence on Trace-Element Transport (210Pb, 137Cs) in the Soil. Radiocarbon, 31(03), 655–663. doi:10.1017/s003382220001225x
-*  Dredge, L. A., & Mott, R. J. (2005). Holocene Pollen Records and Peatland Development, Northeastern Manitoba*. Géographie Physique et Quaternaire, 57(1), 7–19. doi:10.7202/010328ar
-*  Dümig, A., Schad, P., Rumpel, C., Dignac, M.-F., & Kögel-Knabner, I. (2008). Araucaria forest expansion on grassland in the southern Brazilian highlands as revealed by 14C and δ13C studies. Geoderma, 145(1-2), 143–157. doi:10.1016/j.geoderma.2007.06.005
-*  DUTTA, K., SCHUUR, E. A. G., NEFF, J. C., & ZIMOV, S. A. (2006). Potential carbon release from permafrost soils of Northeastern Siberia. Global Change Biology, 12(12), 2336–2351. doi:10.1111/j.1365-2486.2006.01259.x
-*  Elder, C. D., Xu, X., Walker, J., Schnell, J. L., Hinkel, K. M., Townsend-Small, A., … Czimczik, C. I. (2018). Greenhouse gas emissions from diverse Arctic Alaskan lakes are dominated by young carbon. Nature Climate Change, 8(2), 166–171. doi:10.1038/s41558-017-0066-9
-*  Ellis, C. J., & Rochefort, L. (2004). CENTURY-SCALE DEVELOPMENT OF POLYGON-PATTERNED TUNDRA WETLAND, BYLOT ISLAND (73° N, 80° W). Ecology, 85(4), 963–978. doi:10.1890/02-0614
-*  ELLIS, C. J., & ROCHEFORT, L. (2006). Long-term sensitivity of a High Arctic wetland to Holocene climate change. Journal of Ecology, 94(2), 441–454. doi:10.1111/j.1365-2745.2005.01085.x
-*  Elzein, A., & Balesdent, J. (1995). Mechanistic Simulation of Vertical Distribution of Carbon Concentrations and Residence Times in Soils. Soil Science Society of America Journal, 59(5), 1328–1335. doi:10.2136/sssaj1995.03615995005900050019x
-*  Estop-Aragonés, C., Cooper, M. D. A., Fisher, J. P., Thierry, A., Garnett, M. H., Charman, D. J., … Hartley, I. P. (2018). Limited release of previously-frozen C and increased new peat formation after thaw in permafrost peatlands. Soil Biology and Biochemistry, 118, 115–129. doi:10.1016/j.soilbio.2017.12.010
-*  Eusterhues, K., Rumpel, C., Kleber, M., & Kögel-Knabner, I. (2003). Stabilisation of soil organic matter by interactions with minerals as revealed by mineral dissolution and oxidative degradation. Organic Geochemistry, 34(12), 1591–1600. doi:10.1016/j.orggeochem.2003.08.007
-*  Ewing, S. A., Sanderman, J., Baisden, W. T., Wang, Y., & Amundson, R. (2006). Role of large-scale soil structure in organic carbon turnover: Evidence from California grassland soils. Journal of Geophysical Research, 111(G3). doi:10.1029/2006jg000174
-*  Fernandez, I. J., Rustad, L. E., & Lawrence, G. B. (1993). Estimating total soil mass, nutrient content, and trace metals in soils under a low elevation spruce-fir forest. Canadian Journal of Soil Science, 73(3), 317–328. doi:10.4141/cjss93-034
-*  Fierer, N., Chadwick, O. A., & Trumbore, S. E. (2005). Production of CO2 in Soil Profiles of a California Annual Grassland. Ecosystems, 8(4), 412–429. doi:10.1007/s10021-003-0151-y
-*  Fillion, M.-È., Bhiry, N., & Touazi, M. (2014). Differential Development of Two Palsa Fields in a Peatland Located Near Whapmagoostui-Kuujjuarapik, Northern Québec, Canada. Arctic, Antarctic, and Alpine Research, 46(1), 40–54. doi:10.1657/1938-4246-46.1.40
-*  Fontaine, S., Barot, S., Barré, P., Bdioui, N., Mary, B., & Rumpel, C. (2007). Stability of organic carbon in deep soil layers controlled by fresh carbon supply. Nature, 450(7167), 277–280. doi:10.1038/nature06275
-*  Garneau, M. (2007). Analyses macrofossiles d’un dépot de tourbe dans la région de Hot Weather Creek, péninsule de Fosheim, île d’Ellesmere, Territoires du Nord-Ouest. Géographie Physique et Quaternaire, 46(3), 285–294. doi:10.7202/032915ar
-*  Garneau, M., van Bellen, S., Magnan, G., Beaulieu-Audy, V., Lamarre, A., & Asnong, H. (2014). Holocene carbon dynamics of boreal and subarctic peatlands from Québec, Canada. The Holocene, 24(9), 1043–1053. doi:10.1177/0959683614538076
-*  Gaudinski, J. B., Trumbore, S. E., Davidson, E. A., & Zheng, S. (2000). Biogeochemistry, 51(1), 33–69. doi:10.1023/a:1006301010014
-*  Gentsch, N., Wild, B., Mikutta, R., Čapek, P., Diáková, K., Schrumpf, M., … Guggenberger, G. (2018). Temperature response of permafrost soil carbon is attenuated by mineral protection. Global Change Biology, 24(8), 3401–3415. doi:10.1111/gcb.14316
-*  Gillson, L. (2004). Testing non-equilibrium theories in savannas: 1400 years of vegetation change in Tsavo National Park, Kenya. Ecological Complexity, 1(4), 281–298. doi:10.1016/j.ecocom.2004.06.001
-*  Heckman, K., Lawrence, C. R., & Harden, J. W. (2018). A sequential selective dissolution method to quantify storage and stability of organic carbon associated with Al and Fe hydroxide phases. Geoderma, 312, 24–35. doi:10.1016/j.geoderma.2017.09.043
-*  GOH, K. M., STOUT, J. D., & RAFTER, T. A. (1977). RADIOCARBON ENRICHMENT OF SOIL ORGANIC MATTER FRACTIONS IN NEW ZEALAND SOILS. Soil Science, 123(6), 385–391. doi:10.1097/00010694-197706000-00007
-*  González-Domínguez, B., Niklaus, P. A., Studer, M. S., Hagedorn, F., Wacker, L., Haghipour, N., … Abiven, S. (2019). Temperature and moisture are minor drivers of regional-scale soil organic carbon dynamics. Scientific Reports, 9(1). doi:10.1038/s41598-019-42629-5
-*  Guillet, B., Faivre, P., Mariotti, A., & Khobzi, J. (1988). The 14C dates and 13C/12C ratios of soil organic matter as a means of studying the past vegetation in intertropical regions: Examples from Colombia (South America). Palaeogeography, Palaeoclimatology, Palaeoecology, 65(1-2), 51–58. doi:10.1016/0031-0182(88)90111-3
-*  GUILLET, B., ACHOUNDONG, G., HAPPI, J. Y., BEYALA, V. K. K., BONVALLOT, J., RIERA, B., … SCHWARTZ, D. (2001). Agreement between floristic and soil organic carbon isotope (13C/12C, 14C) indicators of forest invasion of savannas during the last century in Cameroon. Journal of Tropical Ecology, 17(6), 809–832. doi:10.1017/s0266467401001614
-*  Guo, L., Lehner, J. K., White, D. M., & Garland, D. S. (2003). Heterogeneity of natural organic matter from the Chena River, Alaska. Water Research, 37(5), 1015–1022. doi:10.1016/s0043-1354(02)00443-8
-*  Guo, L., & Macdonald, R. W. (2006). Source and transport of terrigenous organic matter in the upper Yukon River: Evidence from isotope (δ13C, Δ14C, and δ15N) composition of dissolved, colloidal, and particulate phases. Global Biogeochemical Cycles, 20(2), n/a–n/a. doi:10.1029/2005gb002593
-*  Guo, L., Ping, C.-L., & Macdonald, R. W. (2007). Mobilization pathways of organic carbon from permafrost to arctic rivers in a changing climate. Geophysical Research Letters, 34(13), n/a–n/a. doi:10.1029/2007gl030689
-*  Hall, S. J., McNicol, G., Natake, T., & Silver, W. L. (2015). Large fluxes and rapid turnover of mineral-associated carbon across topographic gradients in a humid tropical forest: insights from paired 14C analysis. Biogeosciences Discussions, 12(2), 891–932. doi:10.5194/bgd-12-891-2015
-*  Harden, J. W., Fries, T. L., & Pavich, M. J. (2002). Biogeochemistry, 60(3), 317–336. doi:10.1023/a:1020308729553
-*  Hardie, S. M. L., Garnett, M. H., Fallick, A. E., Ostle, N. J., & Rowland, A. P. (2009). Bomb-14C analysis of ecosystem respiration reveals that peatland vegetation facilitates release of old carbon. Geoderma, 153(3-4), 393–401. doi:10.1016/j.geoderma.2009.09.002
-*  Hardie, S. M. L., Garnett, M. H., Fallick, A. E., Rowland, A. P., Ostle, N. J., & Flowers, T. H. (2011). Abiotic drivers and their interactive effect on the flux and carbon isotope (14C and δ13C) composition of peat-respired CO2. Soil Biology and Biochemistry, 43(12), 2432–2440. doi:10.1016/j.soilbio.2011.08.010
-*  Harkness, D. D., Harrison, A. F., & Bacon, P. J. (1986). The Temporal Distribution of “Bomb” 14C in a Forest Soil. Radiocarbon, 28(2A), 328–337. doi:10.1017/s0033822200007426
-*  Harris, S. A., & Schmidt, I. H. (1994). Permafrost aggradation and peat accumulation since 1200 years B.P. in peat plateaus at Tuchitua, Yukon Territory (Canada). Journal of Paleolimnology, 12(1), 3–17. doi:10.1007/bf00677986
-*  Hatton, P.-J., Kleber, M., Zeller, B., Moni, C., Plante, A. F., Townsend, K., … Derrien, D. (2012). Transfer of litter-derived N to soil mineral–organic associations: Evidence from decadal 15N tracer experiments. Organic Geochemistry, 42(12), 1489–1501. doi:10.1016/j.orggeochem.2011.05.002
-*  <!DOCTYPE html><html lang="en" dir="ltr">  <head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">    <meta name="google-site-verification" content="5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s"/>    <meta name="google-site-verification" content="Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4"/><meta name="norton-safeweb-site-verification" content="umenay8zh4kswbi568zqp19bqb-jvngusibub1ygib0x3jne9rig0fnmtofm8abb7lkzgltqp5yhm68s5qz4iqqkm39xl2o-p5foixd-1xfq4yig07ugcd1sp5kmyvpe" />    <title>PEDOGENESIS &amp; CARBON DYNAMICS ACROSS A LITHOSEQUENCE UNDER PONDEROSA PINE | Zenodo</title>    <link rel="shortcut icon" href="/static/favicon.ico"/>    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon-144-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/apple-touch-icon-114-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/apple-touch-icon-72-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/apple-touch-icon-57-precomposed.png"/><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet"><link href="/static/gen/zenodo.e8488af6.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->      <meta name="description" content="A Dissertation Submitted to the Faculty of the DEPARTMENT OF SOIL, WATER &amp; ENVIRONMENTAL SCIENCE In Partial Fulfillment of the Requirements For the Degree of DOCTOR OF PHILOSOPHY In the Graduate College THE UNIVERSITY OF ARIZONA" />    <meta name="citation_title" content="PEDOGENESIS &amp; CARBON DYNAMICS ACROSS A LITHOSEQUENCE UNDER PONDEROSA PINE" />    <meta name="citation_author" content="Heckman, Katherine Ann" />    <meta name="citation_publication_date" content="2010/10/21" />    <meta name="citation_doi" content="10.5281/zenodo.1486081" />    <meta name="citation_abstract_html_url" content="https://zenodo.org/record/1486081" />    <meta name="citation_pdf_url" content="https://zenodo.org/record/1486081/files/Heckman_dissertation_2010.pdf" />    <meta property="og:title" content="PEDOGENESIS &amp; CARBON DYNAMICS ACROSS A LITHOSEQUENCE UNDER PONDEROSA PINE" />    <meta property="og:description" content="A Dissertation Submitted to the Faculty of the DEPARTMENT OF SOIL, WATER &amp; ENVIRONMENTAL SCIENCE In Partial Fulfillment of the Requirements For the Degree of DOCTOR OF PHILOSOPHY In the Graduate College THE UNIVERSITY OF ARIZONA" />    <meta property="og:url" content="https://zenodo.org/record/1486081" />    <meta property="og:site_name" content="Zenodo" />    <meta name="twitter:card" content="summary" />    <meta name="twitter:site" content="@zenodo_org" />    <meta name="twitter:title" content="PEDOGENESIS &amp; CARBON DYNAMICS ACROSS A LITHOSEQUENCE UNDER PONDEROSA PINE" />    <meta name="twitter:description" content="A Dissertation Submitted to the Faculty of the DEPARTMENT OF SOIL, WATER &amp; ENVIRONMENTAL SCIENCE In Partial Fulfillment of the Requirements For the Degree of DOCTOR OF PHILOSOPHY In the Graduate College THE UNIVERSITY OF ARIZONA" />    <link rel="canonical" href="https://zenodo.org/record/1486081">    <link rel="alternate" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" href="https://zenodo.org/record/1486081/files/Heckman_2010.xlsx">    <link rel="alternate" type="application/pdf" href="https://zenodo.org/record/1486081/files/Heckman_dissertation_2010.pdf">  </head>  <body ng-csp  itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".scrollspy-target">    <!--[if lt IE 8]>      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>    <![endif]--><header>  <nav class="navbar navbar-default navbar-static-top">    <div class="container">      <div class="navbar-header">        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">          <span class="sr-only">Toggle navigation</span>          <span class="icon-bar"></span>          <span class="icon-bar"></span>          <span class="icon-bar"></span>        </button>          <a href="/"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>      </div>      <div id="navbar" class="navbar-collapse collapse"><form class="navbar-form navbar-left navbar-search" action="/search" role="search">  <div class="form-group">    <div class="input-group">      <input type="text" class="form-control search" name="q" placeholder="Search">      <div class="input-group-btn">        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>      </div>    </div>  </div></form>        <ul class="nav navbar-nav">            <li><a href="/deposit">Upload</a></li>            <li><a href="/communities/">Communities</a></li>        </ul><form class="navbar-form navbar-right">  <a href="/login/?next=%2Frecord%2F1486081" class="btn btn-default"><i class="fa fa-sign-in"></i> Log in</a>  <a href="/signup/" type="submit" class="btn btn-default btn-warning"><i class="fa fa-edit"></i> Sign up</a></form>      </div>    </div>  </nav></header><div class="container record-detail">  <div class="row">    <div class="col-sm-8 col-md-8 col-left">      <p>        <time datetime="October 21, 2010" data-toggle="tooltip" title="Publication date">October 21, 2010</time>        <span class="pull-right">          <span class="label label-default">Thesis</span>          <span class="label label-success">Open Access</span>        </span>      </p>      <h1>PEDOGENESIS &amp; CARBON DYNAMICS ACROSS A LITHOSEQUENCE UNDER PONDEROSA PINE</h1>      <p><span class="text-muted" data-toggle="tooltip" title="USDA Forest Service">Heckman, Katherine Ann</span></p>      <p><p>A Dissertation Submitted to the Faculty of the<br>DEPARTMENT OF SOIL, WATER &amp; ENVIRONMENTAL SCIENCE<br>In Partial Fulfillment of the Requirements<br>For the Degree of<br>DOCTOR OF PHILOSOPHY<br>In the Graduate College<br>THE UNIVERSITY OF ARIZONA</p></p>  <div class="panel panel-default" id="preview">    <div class="panel-heading">      <a class="panel-toggle" data-toggle="collapse" href="#collapseOne">        Preview        <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>        <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>      </a>    </div>    <div id="collapseOne" class="collapse in">  <iframe   class="preview-iframe"   id="preview-iframe"   width="100%"   height="400"   src="/record/1486081/preview/Heckman_dissertation_2010.pdf"></iframe>    </div>  </div><div class="panel panel-default files-box" id="files">  <div class="panel-heading">    <a class="panel-toggle" data-toggle="collapse" href="#collapseTwo">      Files      <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>      <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>    </a>    <small class="text-muted"> (4.9 MB)</small>  </div>  <div class="collapse in" id="collapseTwo">  <table class="table table-striped" >    <thead>      <tr class="">        <th>Name</th>        <th>Size</th>      </tr>    </thead>    <tbody>      <tr>        <td>          <a class="filename" href="/record/1486081/files/Heckman_2010.xlsx?download=1">Heckman_2010.xlsx</a>          <br/><small class="text-muted nowrap">md5:a6bb6fd67809feb584310bf2bd26f926 <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="This is the file fingerprint (MD5 checksum), which can be used to verify the file integrity."></i></small>        </td>        <td class="nowrap">815.3 kB</td>        <td class="nowrap"><span class="pull-right"><a class="btn btn-xs btn-default" href="/record/1486081/files/Heckman_2010.xlsx?download=1"><i class="fa fa-download"></i> Download</a></span></td>      </tr>      <tr>        <td>          <a class="filename" href="/record/1486081/files/Heckman_dissertation_2010.pdf?download=1">Heckman_dissertation_2010.pdf</a>          <br/><small class="text-muted nowrap">md5:b758dc134d420068f02fa98e43bf6b63 <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="This is the file fingerprint (MD5 checksum), which can be used to verify the file integrity."></i></small>        </td>        <td class="nowrap">4.1 MB</td>        <td class="nowrap"><span class="pull-right"><button class="btn preview-link btn-xs btn-default" data-filename="Heckman_dissertation_2010.pdf"><i class="fa fa-eye"></i> Preview</button> <a class="btn btn-xs btn-default" href="/record/1486081/files/Heckman_dissertation_2010.pdf?download=1"><i class="fa fa-download"></i> Download</a></span></td>      </tr></tbody>    </table>  </div></div><div id="citations">  <invenio-search   disable-url-handler="true"   search-endpoint="https://zenodo-broker.web.cern.ch/api/relationships"   search-extra-params='{"page": 1, "size": "10", "group_by": "version", "id": "10.5281/zenodo.1486081"}'   search-hidden-params='{"relation": "isCitedBy", "scheme": "doi"}'   search-headers='{"Accept": "application/json"}' >    <div class="panel panel-default" id="citation">      <div class="panel-heading">        <!-- Beta ribbon -->        <div class="row" style="margin-bottom: -15px;">          <div class="col-sm-1">            <div class="ribbon-wrapper-green">              <a href="https://help.zenodo.org/#citations" target="_blank" rel="noopener noreferrer">                <div class="corner-ribbon top-left ribbon-green">Beta</div>              </a>            </div>          </div>          <div class="col-sm-11" style="margin-top: 5px;">            <a class="panel-toggle" data-toggle="collapse" href="#collapseCitations" style="margin-left:-25px;">              Citations              <small class="text-muted">                <invenio-search-count                template="/static/templates/citations/count.html">                </invenio-search-count>              </small>              <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>              <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>            </a>          </div>        </div>        <!-- Without beta ribbon -->        <!--<a class="panel-toggle" data-toggle="collapse" href="#collapseCitations">-->          <!--Citations-->          <!--<small class="text-muted">-->            <!--<invenio-search-count-->            <!--template="/static/templates/citations/count.html">-->            <!--</invenio-search-count>-->          <!--</small>-->          <!--<span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>-->          <!--<span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>-->        <!--</a>-->      </div>      <div id="collapseCitations" class="collapse in">        <div class="search-page">          <div class="container-fluid facets">            <div class="row">              <div class="col-sm-9">                <invenio-search-facets                   ng-init="vm.record_id='10.5281/zenodo.1486081'; vm.version_id='10.5281/zenodo.1486080'"                   template="/static/templates/citations/facets.html">                </invenio-search-facets>              </div>              <div class="col-sm-3">                <invenio-search-bar                  template="/static/templates/invenio_search_ui/searchbar.html"                  placeholder="Search">                </invenio-search-bar>              </div>            </div>          </div>          <div class="container-fluid">          <invenio-search-error            template="/static/templates/zenodo_search_ui/error.html"            message="Error">          </invenio-search-error>          </div>          <invenio-search-results           template="/static/templates/citations/results.html">          </invenio-search-results>          <div class="row">            <div class="col-md-2 col-sm-12">            </div>            <div class="col-md-7 col-sm-12 text-center">              <invenio-search-pagination                template="/static/templates/citations/pagination.html">              </invenio-search-pagination>            </div>            <div class="col-md-3 col-sm-12" style="padding-top: 5px;">              <invenio-search-select-box                 sort-key="size"                 available-options='{                  "options": [                     {                       "title": "10",                       "value": "10"                     },                     {                       "title": "20",                       "value": "20"                     },                     {                       "title": "50",                       "value": "50"                     }                  ]}'                 template="/static/templates/citations/selectbox.html">                </invenio-search-select-box>            </div>          </div>      </div>    </div>    </div>  </invenio-search></div>    </div>    <div class="col-sm-4 col-md-4 col-right">            <div class="well"><!-- Stats --><div class="row stats-box">  <div id="accordion">    <!-- Banner --><div class="row">      <div class="col-sm-6">        <span class="stats-data">21</span>      </div>      <div class="col-sm-6">        <span class="stats-data">18</span>      </div>    </div>    <div class="row">      <div class="col-sm-6">        <i class="fa fa-eye " data-toggle="tooltip" tooltip data-placement="top" title="Total views." data-original-title="Total views."></i> views      </div>      <div class="col-sm-6">        <i class="fa fa-download " data-toggle="tooltip" tooltip data-placement="top" title="Total downloads." data-original-title="Total downloads."></i> downloads      </div>    </div>    <!-- Collapsed details -->    <div id="toggle-stats" class="row">      <div class="col-sm-12">        <a style="cursor: pointer;" class="panel-toggle" data-toggle="collapse" data-target="#collapse-stats" aria-expanded="true" aria-controls="collapse-stats">          See more details...        </a>      </div>    </div>    <div id="collapse-stats" class="collapse" aria-labelledby="toggle-stats" data-parent="#accordion">      <table class="table stats-table">        <!-- Skip table header if no versions --><tr>          <th></th>          <th>All versions</th>          <th>This version</th>        </tr><tr>          <td>Views <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total views." data-original-title="Total views."></i></td><td>21</td><td>21</td>        </tr>        <tr>          <td>Downloads <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total downloads." data-original-title="Total downloads."></i></td><td>18</td><td>18</td>        </tr>        <tr>          <td>Data volume <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total download volume." data-original-title="Total download volume."></i></td><td>57.4 MB</td><td>57.4 MB</td>        </tr>        <tr>          <td>Unique views <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Views in one hour user-sessions are counted only once." data-original-title="Views in one hour user-sessions are counted only once."></i></td><td>19</td><td>19</td>        </tr>        <tr>          <td>Unique downloads <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Downloads in one hour user-sessions are counted only once." data-original-title="Downloads in one hour user-sessions are counted only once."></i></td><td>11</td><td>11</td>        </tr>      </table>      <div class="row">        <a href="https://help.zenodo.org/#statistics">More info on how stats are collected.</a>      </div>    </div>  </div></div><!-- Altmetric -->  <div class="altmetric-embed" data-badge-type="donut" data-badge-details="left" data-hide-no-mentions="true" data-doi="10.5281/zenodo.1486081"></div>      </div><div class="well metadata">      <small class="text-muted">Indexed in</small>    <a href="https://explore.openaire.eu/search/publication?articleId=od______2659::8435b804259c29847152949b16968544">      <img src="/static/img/openaire-horizontal-old.png" class="img-thumbnail" width="100%" />    </a></div>      <div class="well metadata"><dl>    <dt>Publication date:</dt>    <dd>October 21, 2010</dd>    <dt>DOI:</dt>    <dd>      <span class="get-badge" data-toggle="toolt  ip" data-placement="bottom"            title="Get the DOI badge!">        <img data-toggle="modal" data-target="[data-modal='10.5281/zenodo.1486081']"              src="/badge/DOI/10.5281/zenodo.1486081.svg" alt="10.5281/zenodo.1486081">        </img>      </span>      <div class="modal fade badge-modal" data-modal="10.5281/zenodo.1486081">        <div class="modal-dialog">          <div class="modal-content">            <div class="modal-body">              <h4>Zenodo DOI Badge</h4>              <h4>                  <small>DOI</small>              </h4>              <h4>                  <pre>10.5281/zenodo.1486081</pre>              </h4>                                <h4>        <small>Markdown</small>    </h4>    <h4>        <pre>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1486081.svg)](https://doi.org/10.5281/zenodo.1486081)</pre>    </h4>    <h4>        <small>reStructedText</small>    </h4>    <h4>        <pre>.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1486081.svg   :target: https://doi.org/10.5281/zenodo.1486081</pre>    </h4>    <h4>        <small>HTML</small>    </h4>    <h4>      <pre>&lt;a href="https://doi.org/10.5281/zenodo.1486081"&gt;&lt;img src="https://zenodo.org/badge/DOI/10.5281/zenodo.1486081.svg" alt="DOI"&gt;&lt;/a&gt;</pre>    </h4>    <h4>        <small>Image URL</small>    </h4>    <h4>      <pre>https://zenodo.org/badge/DOI/10.5281/zenodo.1486081.svg</pre>    </h4>    <h4>        <small>Target URL</small>    </h4>    <h4>      <pre>https://doi.org/10.5281/zenodo.1486081</pre>    </h4>            </div>          </div>        </div>      </div>    </dd>      <dt>License (for files):</dt>    <dd><a rel="license" href="http://creativecommons.org/licenses/by/4.0/legalcode"><i class="fa fa-external-link"></i> Creative Commons Attribution 4.0 International</a></dd>  </dl>      </div>  <div class="well metadata">    <h4>Versions</h4>    <table class="table">      <tr class="info">        <td>          <a href="/record/1486081">Version 1 </a>          <small class="text-muted">10.5281/zenodo.1486081</small>        </td>        <td align="right"><small class="text-muted">Oct 21, 2010</small></td>      </tr>    </table>    <small>      <strong>Cite all versions?</strong> You can cite all versions by using the DOI <a href="https://doi.org/10.5281/zenodo.1486080">10.5281/zenodo.1486080</a>. This DOI represents all versions, and will always resolve to the latest one. <a href="http://help.zenodo.org/#versioning">Read more</a>.    </small>  </div>      <div class="well"><h4>Share</h4>  <!-- AddThis Button BEGIN -->  <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="https://doi.org/10.5281/zenodo.1486081">  <a class="addthis_button_mendeley"></a>  <a class="addthis_button_citeulike"></a>  <a class="addthis_button_twitter"></a>  <a class="addthis_button_preferred_1"></a>  <a class="addthis_button_preferred_2"></a>  <a class="addthis_button_compact"></a>  </div>  <!-- AddThis Button END -->  <h4>Cite as</h4>  <div id='invenio-csl'>        <invenio-csl        ng-init="vm.citationResult = 'Heckman, Katherine Ann. (2010, October 21). PEDOGENESIS &amp; CARBON DYNAMICS ACROSS A LITHOSEQUENCE UNDER PONDEROSA PINE. Zenodo.'"    >      <invenio-csl-citeproc       endpoint="/api/records/1486081"       template="/static/templates/invenio_csl/citeproc.html"></invenio-csl-citeproc>      <invenio-csl-error       template="/static/node_modules/invenio-csl-js/dist/templates/error.html"></invenio-csl-error>      <invenio-csl-loading       template="/static/node_modules/invenio-csl-js/dist/templates/loading.html"></invenio-csl-loading>      <invenio-csl-typeahead       lazy="true"       placeholder="Start typing a citation style..."       remote="/api/csl/styles"       template="/static/node_modules/invenio-csl-js/dist/templates/typeahead.html"       item-template="/static/templates/invenio_csl/item.html">      </invenio-csl-typeahead>    </invenio-csl>  </div>      </div>      <div class="well"><h4>Export</h4><ul class="list-inline">  <li><a href="/record/1486081/export/hx">BibTeX</a></li>  <li><a href="/record/1486081/export/csl">CSL</a></li>  <li><a href="/record/1486081/export/dcite4">DataCite</a></li>  <li><a href="/record/1486081/export/xd">Dublin Core</a></li>  <li><a href="/record/1486081/export/dcat">DCAT</a></li>  <li><a href="/record/1486081/export/json">JSON</a></li>  <li><a href="/record/1486081/export/schemaorg_jsonld">JSON-LD</a></li>  <li><a href="/record/1486081/export/geojson">GeoJSON</a></li>  <li><a href="/record/1486081/export/xm">MARCXML</a></li>  <li><a href="https://www.mendeley.com/import/?url=https://zenodo.org/record/1486081"><i class="fa fa-external-link"></i> Mendeley</a></li></ul>      </div>    </div>  </div></div><footer class="footer">  <div class="menu-wrapper">    <div class="container">      <div class="row footer-menu">        <div class="col-xs-12 col-md-8">          <div class="row">            <div class="col-xs-2 col-md-2">              <h5>About</h5>              <ul class="list-unstyled">                <li><a href="http://about.zenodo.org">About</a></li>                <li><a href="http://about.zenodo.org/policies">Policies</a></li>                <li><a href="http://about.zenodo.org/infrastructure">Infrastructure</a></li>                <li><a href="http://about.zenodo.org/principles">Principles</a></li>                <li><a href="http://about.zenodo.org/contact">Contact</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Blog</h5>              <ul class="list-unstyled">                <li><a href="http://blog.zenodo.org">Blog</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Help</h5>              <ul class="list-unstyled">                <li><a href="http://help.zenodo.org">FAQ</a></li>                <li><a href="http://help.zenodo.org/features">Features</a></li>                <li><a href="http://help.zenodo.org/whatsnew">What's New</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Developers</h5>              <ul class="list-unstyled">              <li><a href="http://developers.zenodo.org">REST API</a></li>              <li><a href="http://developers.zenodo.org#oai-pmh">OAI-PMH</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Contribute</h5>              <ul class="list-unstyled">                <li><a href="http://github.com/zenodo/zenodo"><i class="fa fa-external-link"></i> GitHub</a></li>                <li><a href="/donate"><i class="fa fa-external-link"></i> Donate</a></li>              </ul>            </div>          </div>        </div>        <div class="col-xs-12 col-md-4">          <div class="pull-right-md text-center-sm text-center-xs">            <h5>Funded by</h5>            <ul class="list-inline">              <li><a href="http://home.cern"><img src="/static/img/cern.png" width="60" height="60" /></a></li>              <li><a href="http://www.openaire.eu"><img src="/static/img/openaire.png" width="80" height="60" /></a></li>              <li><a href="https://ec.europa.eu/programmes/horizon2020/"><img src="/static/img/eu.png" width="88" height="60" /></a></li>            </ul>          </div>        </div>      </div>    </div>  </div>  <div class="container">    <div class="row">      <div class="col-xs-12 col-sm-6 col-sm-push-6">        <div class="pull-right-sm text-center-xs">          <ul class="list-inline">            <li><a href="https://status.zenodo.org/">Status</a></li>            <li><a href="http://about.zenodo.org/privacy-policy">Privacy policy</a></li>            <li><a href="http://about.zenodo.org/terms">Terms of Use</a></li>            <li><a href="/support">Support</a></li>          </ul>        </div>      </div>      <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center-xs">        <p>Powered by <a href="http://information-technology.web.cern.ch/about/computer-centre">CERN Data Centre</a> &amp; <a href="http://inveniosoftware.org">Invenio</a></p>      </div>    </div>  </div></footer>  <script type='application/ld+json'>{"@context": "https://schema.org/", "@id": "https://doi.org/10.5281/zenodo.1486081", "@type": "ScholarlyArticle", "creator": [{"@type": "Person", "affiliation": "USDA Forest Service", "name": "Heckman, Katherine Ann"}], "datePublished": "2010-10-21", "description": "\u003cp\u003eA Dissertation Submitted to the Faculty of the\u003cbr\u003e\nDEPARTMENT OF SOIL, WATER \u0026amp; ENVIRONMENTAL SCIENCE\u003cbr\u003e\nIn Partial Fulfillment of the Requirements\u003cbr\u003e\nFor the Degree of\u003cbr\u003e\nDOCTOR OF PHILOSOPHY\u003cbr\u003e\nIn the Graduate College\u003cbr\u003e\nTHE UNIVERSITY OF ARIZONA\u003c/p\u003e", "headline": "PEDOGENESIS \u0026 CARBON DYNAMICS ACROSS A LITHOSEQUENCE UNDER PONDEROSA PINE", "identifier": "https://doi.org/10.5281/zenodo.1486081", "image": "https://zenodo.org/static/img/logos/zenodo-gradient-round.svg", "license": "http://creativecommons.org/licenses/by/4.0/legalcode", "name": "PEDOGENESIS \u0026 CARBON DYNAMICS ACROSS A LITHOSEQUENCE UNDER PONDEROSA PINE", "url": "https://zenodo.org/record/1486081"}</script><script src="/static/gen/zenodo.60c4ee65.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/static/gen/zenodo.search.cd696cd5.js"></script><script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script><script type="text/javascript">  // Bootstrap the Invenio CSL Formatter and invenio-search-js  require([    "jquery",    'typeahead.js',    'bloodhound',    "node_modules/angular/angular",    "node_modules/invenio-csl-js/dist/invenio-csl-js",    "node_modules/invenio-search-js/dist/invenio-search-js",    "js/zenodo/module"    ], function(typeahead, Bloodhound) {      angular.element(document).ready(function() {        // FIXME: This is already defined in js/zenodo_deposit/filters.js.        // It should be moved to a common place...        angular.module('zenodo.filters').filter('limitToEllipsis', function () {          return function(text, n) {            return (text.length > n) ? text.substr(0, n-1) + '&hellip;' : text;          };        });        angular.bootstrap(document.getElementById("citations"), [            'invenioSearch',            'zenodo.filters',            'mgcrea.ngStrap.tooltip',          ]        );        angular.bootstrap(document.getElementById("invenio-csl"), [            'invenioCsl',          ]        );      });    }  );  require([    "jquery",    "js/zenodo/functions",    ], function($, recordCommunityCurate) {      $(function () {        $("#recordCommunityCuration .btn").click(recordCommunityCurate);        $('.preview-link').on('click', function(event) {          $('#preview').show();          var filename = encodeURIComponent($(event.target).data('filename'));          $('#preview-iframe').attr("src","/record/1486081/preview/" + filename);        });      });    }  );  $(function () {    $('[data-toggle="tooltip"]').tooltip();  });</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5137aff66ad9c2a1"></script><script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script type="text/javascript">var _paq = _paq || [];_paq.push(["setDomains", ["*.zenodo.org","*.zenodo.cern.ch","*.zenodo.eu","*.zenodo.net"]]);_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking"]);(function() {  var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.web.cern.ch/";  _paq.push(["setTrackerUrl", u+"piwik.php"]);  _paq.push(["setSiteId", "57"]);  var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";  g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);})();</script>  </body></html>
-*  Hicks Pries, C. E., Schuur, E. A. G., & Crummer, K. G. (2011). Holocene Carbon Stocks and Carbon Accumulation Rates Altered in Soils Undergoing Permafrost Thaw. Ecosystems, 15(1), 162–173. doi:10.1007/s10021-011-9500-4
-*  Hicks Pries, C. E., Schuur, E. A. G., & Crummer, K. G. (2012). Thawing permafrost increases old soil and autotrophic respiration in tundra: Partitioning ecosystem respiration using δ13C and ∆14C. Global Change Biology, 19(2), 649–661. doi:10.1111/gcb.12058
-*  Hicks Pries, C. E., van Logtestijn, R. S. P., Schuur, E. A. G., Natali, S. M., Cornelissen, J. H. C., Aerts, R., & Dorrepaal, E. (2015). Decadal warming causes a consistent and persistent shift from heterotrophic to autotrophic respiration in contrasting permafrost ecosystems. Global Change Biology, 21(12), 4508–4519. doi:10.1111/gcb.13032
-*  Hicks Pries, C. E., Schuur, E. A. G., Natali, S. M., & Crummer, K. G. (2015). Old soil carbon losses increase with ecosystem respiration in experimentally thawed tundra. Nature Climate Change, 6(2), 214–218. doi:10.1038/nclimate2830
-*  Hicks Pries, C. E., Castanha, C., Porras, R. C., & Torn, M. S. (2017). The whole-soil carbon flux in response to warming. Science, 355(6332), 1420–1423. doi:10.1126/science.aal1319
-*  Hicks Pries, C. E., Bird, J. A., Castanha, C., Hatton, P.-J., & Torn, M. S. (2017). Long term decomposition: the influence of litter type and soil horizon on retention of plant carbon and nitrogen in soils. Biogeochemistry, 134(1-2), 5–16. doi:10.1007/s10533-017-0345-6
-*  Hilton, R. G., Galy, V., Gaillardet, J., Dellinger, M., Bryant, C., O’Regan, M., … Calmels, D. (2015). Erosion of organic carbon in the Arctic as a geological carbon dioxide sink. Nature, 524(7563), 84–87. doi:10.1038/nature14653
-*  <!DOCTYPE html><html lang="en" dir="ltr">  <head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">    <meta name="google-site-verification" content="5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s"/>    <meta name="google-site-verification" content="Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4"/><meta name="norton-safeweb-site-verification" content="umenay8zh4kswbi568zqp19bqb-jvngusibub1ygib0x3jne9rig0fnmtofm8abb7lkzgltqp5yhm68s5qz4iqqkm39xl2o-p5foixd-1xfq4yig07ugcd1sp5kmyvpe" />    <title>Soil radiocarbon data from a fire chronosequence near Delta Junction, Alaska | Zenodo</title>    <link rel="shortcut icon" href="/static/favicon.ico"/>    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon-144-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/apple-touch-icon-114-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/apple-touch-icon-72-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/apple-touch-icon-57-precomposed.png"/><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet"><link href="/static/gen/zenodo.e8488af6.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->      <meta name="description" content="Soil radiocarbon data sampled along a crown fire (stand replacing) chronosequence located near Delta Junction, Alaska, USA consisting of three sites that burned in 2010 (Gilles Creek fire), 2004 (Camp Creek fire), and about 100 years ago (control). " />    <meta name="citation_title" content="Soil radiocarbon data from a fire chronosequence near Delta Junction, Alaska" />    <meta name="citation_author" content="Holden, Sandra R." />    <meta name="citation_author" content="Czimczik, Claudia I." />    <meta name="citation_author" content="Xu, Xiaomei" />    <meta name="citation_author" content="Treseder, Kathleen K." />    <meta name="citation_publication_date" content="2019/11/05" />    <meta name="citation_doi" content="10.5281/zenodo.3370057" />    <meta name="citation_abstract_html_url" content="https://zenodo.org/record/3370057" />    <meta property="og:title" content="Soil radiocarbon data from a fire chronosequence near Delta Junction, Alaska" />    <meta property="og:description" content="Soil radiocarbon data sampled along a crown fire (stand replacing) chronosequence located near Delta Junction, Alaska, USA consisting of three sites that burned in 2010 (Gilles Creek fire), 2004 (Camp Creek fire), and about 100 years ago (control). " />    <meta property="og:url" content="https://zenodo.org/record/3370057" />    <meta property="og:site_name" content="Zenodo" />    <meta name="twitter:card" content="summary" />    <meta name="twitter:site" content="@zenodo_org" />    <meta name="twitter:title" content="Soil radiocarbon data from a fire chronosequence near Delta Junction, Alaska" />    <meta name="twitter:description" content="Soil radiocarbon data sampled along a crown fire (stand replacing) chronosequence located near Delta Junction, Alaska, USA consisting of three sites that burned in 2010 (Gilles Creek fire), 2004 (Camp Creek fire), and about 100 years ago (control). " />    <link rel="canonical" href="https://zenodo.org/record/3370057">    <link rel="alternate" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" href="https://zenodo.org/record/3370057/files/Holden_2019.xlsx">  </head>  <body ng-csp  itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".scrollspy-target">    <!--[if lt IE 8]>      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>    <![endif]--><header>  <nav class="navbar navbar-default navbar-static-top">    <div class="container">      <div class="navbar-header">        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">          <span class="sr-only">Toggle navigation</span>          <span class="icon-bar"></span>          <span class="icon-bar"></span>          <span class="icon-bar"></span>        </button>          <a href="/"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>      </div>      <div id="navbar" class="navbar-collapse collapse"><form class="navbar-form navbar-left navbar-search" action="/search" role="search">  <div class="form-group">    <div class="input-group">      <input type="text" class="form-control search" name="q" placeholder="Search">      <div class="input-group-btn">        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>      </div>    </div>  </div></form>        <ul class="nav navbar-nav">            <li><a href="/deposit">Upload</a></li>            <li><a href="/communities/">Communities</a></li>        </ul><form class="navbar-form navbar-right">  <a href="/login/?next=%2Frecord%2F3370057" class="btn btn-default"><i class="fa fa-sign-in"></i> Log in</a>  <a href="/signup/" type="submit" class="btn btn-default btn-warning"><i class="fa fa-edit"></i> Sign up</a></form>      </div>    </div>  </nav></header><div class="container record-detail">  <div class="row">    <div class="col-sm-8 col-md-8 col-left">      <p>        <time datetime="November 5, 2019" data-toggle="tooltip" title="Publication date">November 5, 2019</time>        <span class="pull-right">          <span class="label label-default">Dataset</span>          <span class="label label-success">Open Access</span>        </span>      </p>      <h1>Soil radiocarbon data from a fire chronosequence near Delta Junction, Alaska</h1>      <p><span class="text-muted" data-toggle="tooltip" title="Department of Ecology and Evolutionary Biology, University of California, Irvine, Irvine, CA 92697-2525, USA">Holden, Sandra R.</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Earth System Science, University of California, Irvine, Irvine, CA 92697-3100, USA">Czimczik, Claudia I.</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Earth System Science, University of California, Irvine, Irvine, CA 92697-3100, USA">Xu, Xiaomei</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Ecology and Evolutionary Biology, University of California, Irvine, Irvine, CA 92697-2525, USA">Treseder, Kathleen K.</span></p>      <p><p>Soil radiocarbon data sampled along a crown fire (stand replacing) chronosequence located near Delta Junction, Alaska, USA consisting of three sites that burned in 2010 (Gilles Creek fire), 2004 (Camp Creek fire), and about 100 years ago (control).&nbsp;</p></p><div class="panel panel-default files-box" id="files">  <div class="panel-heading">    <a class="panel-toggle" data-toggle="collapse" href="#collapseTwo">      Files      <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>      <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>    </a>    <small class="text-muted"> (843.6 kB)</small>  </div>  <div class="collapse in" id="collapseTwo">  <table class="table table-striped" >    <thead>      <tr class="">        <th>Name</th>        <th>Size</th>      </tr>    </thead>    <tbody>      <tr>        <td>          <a class="filename" href="/record/3370057/files/Holden_2019.xlsx?download=1">Holden_2019.xlsx</a>          <br/><small class="text-muted nowrap">md5:63e97a90e84e0a0584f5f5e442c8b710 <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="This is the file fingerprint (MD5 checksum), which can be used to verify the file integrity."></i></small>        </td>        <td class="nowrap">843.6 kB</td>        <td class="nowrap"><span class="pull-right"><a class="btn btn-xs btn-default" href="/record/3370057/files/Holden_2019.xlsx?download=1"><i class="fa fa-download"></i> Download</a></span></td>      </tr></tbody>    </table>  </div></div><div id="citations">  <invenio-search   disable-url-handler="true"   search-endpoint="https://zenodo-broker.web.cern.ch/api/relationships"   search-extra-params='{"page": 1, "size": "10", "group_by": "version", "id": "10.5281/zenodo.3370057"}'   search-hidden-params='{"relation": "isCitedBy", "scheme": "doi"}'   search-headers='{"Accept": "application/json"}' >    <div class="panel panel-default" id="citation">      <div class="panel-heading">        <!-- Beta ribbon -->        <div class="row" style="margin-bottom: -15px;">          <div class="col-sm-1">            <div class="ribbon-wrapper-green">              <a href="https://help.zenodo.org/#citations" target="_blank" rel="noopener noreferrer">                <div class="corner-ribbon top-left ribbon-green">Beta</div>              </a>            </div>          </div>          <div class="col-sm-11" style="margin-top: 5px;">            <a class="panel-toggle" data-toggle="collapse" href="#collapseCitations" style="margin-left:-25px;">              Citations              <small class="text-muted">                <invenio-search-count                template="/static/templates/citations/count.html">                </invenio-search-count>              </small>              <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>              <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>            </a>          </div>        </div>        <!-- Without beta ribbon -->        <!--<a class="panel-toggle" data-toggle="collapse" href="#collapseCitations">-->          <!--Citations-->          <!--<small class="text-muted">-->            <!--<invenio-search-count-->            <!--template="/static/templates/citations/count.html">-->            <!--</invenio-search-count>-->          <!--</small>-->          <!--<span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>-->          <!--<span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>-->        <!--</a>-->      </div>      <div id="collapseCitations" class="collapse in">        <div class="search-page">          <div class="container-fluid facets">            <div class="row">              <div class="col-sm-9">                <invenio-search-facets                   ng-init="vm.record_id='10.5281/zenodo.3370057'; vm.version_id='10.5281/zenodo.3370056'"                   template="/static/templates/citations/facets.html">                </invenio-search-facets>              </div>              <div class="col-sm-3">                <invenio-search-bar                  template="/static/templates/invenio_search_ui/searchbar.html"                  placeholder="Search">                </invenio-search-bar>              </div>            </div>          </div>          <div class="container-fluid">          <invenio-search-error            template="/static/templates/zenodo_search_ui/error.html"            message="Error">          </invenio-search-error>          </div>          <invenio-search-results           template="/static/templates/citations/results.html">          </invenio-search-results>          <div class="row">            <div class="col-md-2 col-sm-12">            </div>            <div class="col-md-7 col-sm-12 text-center">              <invenio-search-pagination                template="/static/templates/citations/pagination.html">              </invenio-search-pagination>            </div>            <div class="col-md-3 col-sm-12" style="padding-top: 5px;">              <invenio-search-select-box                 sort-key="size"                 available-options='{                  "options": [                     {                       "title": "10",                       "value": "10"                     },                     {                       "title": "20",                       "value": "20"                     },                     {                       "title": "50",                       "value": "50"                     }                  ]}'                 template="/static/templates/citations/selectbox.html">                </invenio-search-select-box>            </div>          </div>      </div>    </div>    </div>  </invenio-search></div>    </div>    <div class="col-sm-4 col-md-4 col-right">            <div class="well"><!-- Stats --><div class="row stats-box">  <div id="accordion">    <!-- Banner --><div class="row">      <div class="col-sm-6">        <span class="stats-data">18</span>      </div>      <div class="col-sm-6">        <span class="stats-data">2</span>      </div>    </div>    <div class="row">      <div class="col-sm-6">        <i class="fa fa-eye " data-toggle="tooltip" tooltip data-placement="top" title="Total views." data-original-title="Total views."></i> views      </div>      <div class="col-sm-6">        <i class="fa fa-download " data-toggle="tooltip" tooltip data-placement="top" title="Total downloads." data-original-title="Total downloads."></i> downloads      </div>    </div>    <!-- Collapsed details -->    <div id="toggle-stats" class="row">      <div class="col-sm-12">        <a style="cursor: pointer;" class="panel-toggle" data-toggle="collapse" data-target="#collapse-stats" aria-expanded="true" aria-controls="collapse-stats">          See more details...        </a>      </div>    </div>    <div id="collapse-stats" class="collapse" aria-labelledby="toggle-stats" data-parent="#accordion">      <table class="table stats-table">        <!-- Skip table header if no versions --><tr>          <th></th>          <th>All versions</th>          <th>This version</th>        </tr><tr>          <td>Views <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total views." data-original-title="Total views."></i></td><td>18</td><td>18</td>        </tr>        <tr>          <td>Downloads <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total downloads." data-original-title="Total downloads."></i></td><td>2</td><td>2</td>        </tr>        <tr>          <td>Data volume <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total download volume." data-original-title="Total download volume."></i></td><td>1.7 MB</td><td>1.7 MB</td>        </tr>        <tr>          <td>Unique views <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Views in one hour user-sessions are counted only once." data-original-title="Views in one hour user-sessions are counted only once."></i></td><td>14</td><td>14</td>        </tr>        <tr>          <td>Unique downloads <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Downloads in one hour user-sessions are counted only once." data-original-title="Downloads in one hour user-sessions are counted only once."></i></td><td>2</td><td>2</td>        </tr>      </table>      <div class="row">        <a href="https://help.zenodo.org/#statistics">More info on how stats are collected.</a>      </div>    </div>  </div></div><!-- Altmetric -->  <div class="altmetric-embed" data-badge-type="donut" data-badge-details="left" data-hide-no-mentions="true" data-doi="10.5281/zenodo.3370057"></div>      </div><div class="well metadata">      <small class="text-muted">Indexed in</small>    <a href="https://explore.openaire.eu/search/dataset?datasetId=r37b0ad08687::e6136dd6d8ebfa7f5ffd2c57c98b3d25">      <img src="/static/img/openaire-horizontal-old.png" class="img-thumbnail" width="100%" />    </a></div>      <div class="well metadata"><dl>    <dt>Publication date:</dt>    <dd>November 5, 2019</dd>    <dt>DOI:</dt>    <dd>      <span class="get-badge" data-toggle="toolt  ip" data-placement="bottom"            title="Get the DOI badge!">        <img data-toggle="modal" data-target="[data-modal='10.5281/zenodo.3370057']"              src="/badge/DOI/10.5281/zenodo.3370057.svg" alt="10.5281/zenodo.3370057">        </img>      </span>      <div class="modal fade badge-modal" data-modal="10.5281/zenodo.3370057">        <div class="modal-dialog">          <div class="modal-content">            <div class="modal-body">              <h4>Zenodo DOI Badge</h4>              <h4>                  <small>DOI</small>              </h4>              <h4>                  <pre>10.5281/zenodo.3370057</pre>              </h4>                                <h4>        <small>Markdown</small>    </h4>    <h4>        <pre>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3370057.svg)](https://doi.org/10.5281/zenodo.3370057)</pre>    </h4>    <h4>        <small>reStructedText</small>    </h4>    <h4>        <pre>.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.3370057.svg   :target: https://doi.org/10.5281/zenodo.3370057</pre>    </h4>    <h4>        <small>HTML</small>    </h4>    <h4>      <pre>&lt;a href="https://doi.org/10.5281/zenodo.3370057"&gt;&lt;img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3370057.svg" alt="DOI"&gt;&lt;/a&gt;</pre>    </h4>    <h4>        <small>Image URL</small>    </h4>    <h4>      <pre>https://zenodo.org/badge/DOI/10.5281/zenodo.3370057.svg</pre>    </h4>    <h4>        <small>Target URL</small>    </h4>    <h4>      <pre>https://doi.org/10.5281/zenodo.3370057</pre>    </h4>            </div>          </div>        </div>      </div>    </dd>      <dt>License (for files):</dt>    <dd><a rel="license" href="http://creativecommons.org/licenses/by/4.0/legalcode"><i class="fa fa-external-link"></i> Creative Commons Attribution 4.0 International</a></dd>  </dl>      </div>  <div class="well metadata">    <h4>Versions</h4>    <table class="table">      <tr class="info">        <td>          <a href="/record/3370057">Version 1 </a>          <small class="text-muted">10.5281/zenodo.3370057</small>        </td>        <td align="right"><small class="text-muted">Nov 5, 2019</small></td>      </tr>    </table>    <small>      <strong>Cite all versions?</strong> You can cite all versions by using the DOI <a href="https://doi.org/10.5281/zenodo.3370056">10.5281/zenodo.3370056</a>. This DOI represents all versions, and will always resolve to the latest one. <a href="http://help.zenodo.org/#versioning">Read more</a>.    </small>  </div>      <div class="well"><h4>Share</h4>  <!-- AddThis Button BEGIN -->  <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="https://doi.org/10.5281/zenodo.3370057">  <a class="addthis_button_mendeley"></a>  <a class="addthis_button_citeulike"></a>  <a class="addthis_button_twitter"></a>  <a class="addthis_button_preferred_1"></a>  <a class="addthis_button_preferred_2"></a>  <a class="addthis_button_compact"></a>  </div>  <!-- AddThis Button END -->  <h4>Cite as</h4>  <div id='invenio-csl'>        <invenio-csl        ng-init="vm.citationResult = 'Holden, Sandra R., Czimczik, Claudia I., Xu, Xiaomei, &amp; Treseder, Kathleen K. (2019). Soil radiocarbon data from a fire chronosequence near Delta Junction, Alaska [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3370057'"    >      <invenio-csl-citeproc       endpoint="/api/records/3370057"       template="/static/templates/invenio_csl/citeproc.html"></invenio-csl-citeproc>      <invenio-csl-error       template="/static/node_modules/invenio-csl-js/dist/templates/error.html"></invenio-csl-error>      <invenio-csl-loading       template="/static/node_modules/invenio-csl-js/dist/templates/loading.html"></invenio-csl-loading>      <invenio-csl-typeahead       lazy="true"       placeholder="Start typing a citation style..."       remote="/api/csl/styles"       template="/static/node_modules/invenio-csl-js/dist/templates/typeahead.html"       item-template="/static/templates/invenio_csl/item.html">      </invenio-csl-typeahead>    </invenio-csl>  </div>      </div>      <div class="well"><h4>Export</h4><ul class="list-inline">  <li><a href="/record/3370057/export/hx">BibTeX</a></li>  <li><a href="/record/3370057/export/csl">CSL</a></li>  <li><a href="/record/3370057/export/dcite4">DataCite</a></li>  <li><a href="/record/3370057/export/xd">Dublin Core</a></li>  <li><a href="/record/3370057/export/dcat">DCAT</a></li>  <li><a href="/record/3370057/export/json">JSON</a></li>  <li><a href="/record/3370057/export/schemaorg_jsonld">JSON-LD</a></li>  <li><a href="/record/3370057/export/geojson">GeoJSON</a></li>  <li><a href="/record/3370057/export/xm">MARCXML</a></li>  <li><a href="https://www.mendeley.com/import/?url=https://zenodo.org/record/3370057"><i class="fa fa-external-link"></i> Mendeley</a></li></ul>      </div>    </div>  </div></div><footer class="footer">  <div class="menu-wrapper">    <div class="container">      <div class="row footer-menu">        <div class="col-xs-12 col-md-8">          <div class="row">            <div class="col-xs-2 col-md-2">              <h5>About</h5>              <ul class="list-unstyled">                <li><a href="http://about.zenodo.org">About</a></li>                <li><a href="http://about.zenodo.org/policies">Policies</a></li>                <li><a href="http://about.zenodo.org/infrastructure">Infrastructure</a></li>                <li><a href="http://about.zenodo.org/principles">Principles</a></li>                <li><a href="http://about.zenodo.org/contact">Contact</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Blog</h5>              <ul class="list-unstyled">                <li><a href="http://blog.zenodo.org">Blog</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Help</h5>              <ul class="list-unstyled">                <li><a href="http://help.zenodo.org">FAQ</a></li>                <li><a href="http://help.zenodo.org/features">Features</a></li>                <li><a href="http://help.zenodo.org/whatsnew">What's New</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Developers</h5>              <ul class="list-unstyled">              <li><a href="http://developers.zenodo.org">REST API</a></li>              <li><a href="http://developers.zenodo.org#oai-pmh">OAI-PMH</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Contribute</h5>              <ul class="list-unstyled">                <li><a href="http://github.com/zenodo/zenodo"><i class="fa fa-external-link"></i> GitHub</a></li>                <li><a href="/donate"><i class="fa fa-external-link"></i> Donate</a></li>              </ul>            </div>          </div>        </div>        <div class="col-xs-12 col-md-4">          <div class="pull-right-md text-center-sm text-center-xs">            <h5>Funded by</h5>            <ul class="list-inline">              <li><a href="http://home.cern"><img src="/static/img/cern.png" width="60" height="60" /></a></li>              <li><a href="http://www.openaire.eu"><img src="/static/img/openaire.png" width="80" height="60" /></a></li>              <li><a href="https://ec.europa.eu/programmes/horizon2020/"><img src="/static/img/eu.png" width="88" height="60" /></a></li>            </ul>          </div>        </div>      </div>    </div>  </div>  <div class="container">    <div class="row">      <div class="col-xs-12 col-sm-6 col-sm-push-6">        <div class="pull-right-sm text-center-xs">          <ul class="list-inline">            <li><a href="https://status.zenodo.org/">Status</a></li>            <li><a href="http://about.zenodo.org/privacy-policy">Privacy policy</a></li>            <li><a href="http://about.zenodo.org/terms">Terms of Use</a></li>            <li><a href="/support">Support</a></li>          </ul>        </div>      </div>      <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center-xs">        <p>Powered by <a href="http://information-technology.web.cern.ch/about/computer-centre">CERN Data Centre</a> &amp; <a href="http://inveniosoftware.org">Invenio</a></p>      </div>    </div>  </div></footer>  <script type='application/ld+json'>{"@context": "https://schema.org/", "@id": "https://doi.org/10.5281/zenodo.3370057", "@type": "Dataset", "creator": [{"@type": "Person", "affiliation": "Department of Ecology and Evolutionary Biology, University of California, Irvine, Irvine, CA 92697-2525, USA", "name": "Holden, Sandra R."}, {"@type": "Person", "affiliation": "Department of Earth System Science, University of California, Irvine, Irvine, CA 92697-3100, USA", "name": "Czimczik, Claudia I."}, {"@type": "Person", "affiliation": "Department of Earth System Science, University of California, Irvine, Irvine, CA 92697-3100, USA", "name": "Xu, Xiaomei"}, {"@type": "Person", "affiliation": "Department of Ecology and Evolutionary Biology, University of California, Irvine, Irvine, CA 92697-2525, USA", "name": "Treseder, Kathleen K."}], "datePublished": "2019-11-05", "description": "\u003cp\u003eSoil radiocarbon data sampled along a crown fire (stand replacing) chronosequence located near Delta Junction, Alaska, USA consisting of three sites that burned in 2010 (Gilles Creek fire), 2004 (Camp Creek fire), and about 100 years ago (control).\u0026nbsp;\u003c/p\u003e", "distribution": [{"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/files/414fc5e0-b497-4e62-b6b0-cbf8d85708bd/Holden_2019.xlsx", "encodingFormat": "xlsx"}], "identifier": "https://doi.org/10.5281/zenodo.3370057", "license": "http://creativecommons.org/licenses/by/4.0/legalcode", "name": "Soil radiocarbon data from a fire chronosequence near Delta Junction, Alaska", "url": "https://zenodo.org/record/3370057"}</script><script src="/static/gen/zenodo.60c4ee65.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/static/gen/zenodo.search.cd696cd5.js"></script><script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script><script type="text/javascript">  // Bootstrap the Invenio CSL Formatter and invenio-search-js  require([    "jquery",    'typeahead.js',    'bloodhound',    "node_modules/angular/angular",    "node_modules/invenio-csl-js/dist/invenio-csl-js",    "node_modules/invenio-search-js/dist/invenio-search-js",    "js/zenodo/module"    ], function(typeahead, Bloodhound) {      angular.element(document).ready(function() {        // FIXME: This is already defined in js/zenodo_deposit/filters.js.        // It should be moved to a common place...        angular.module('zenodo.filters').filter('limitToEllipsis', function () {          return function(text, n) {            return (text.length > n) ? text.substr(0, n-1) + '&hellip;' : text;          };        });        angular.bootstrap(document.getElementById("citations"), [            'invenioSearch',            'zenodo.filters',            'mgcrea.ngStrap.tooltip',          ]        );        angular.bootstrap(document.getElementById("invenio-csl"), [            'invenioCsl',          ]        );      });    }  );  require([    "jquery",    "js/zenodo/functions",    ], function($, recordCommunityCurate) {      $(function () {        $("#recordCommunityCuration .btn").click(recordCommunityCurate);        $('.preview-link').on('click', function(event) {          $('#preview').show();          var filename = encodeURIComponent($(event.target).data('filename'));          $('#preview-iframe').attr("src","/record/3370057/preview/" + filename);        });      });    }  );  $(function () {    $('[data-toggle="tooltip"]').tooltip();  });</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5137aff66ad9c2a1"></script><script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script type="text/javascript">var _paq = _paq || [];_paq.push(["setDomains", ["*.zenodo.org","*.zenodo.cern.ch","*.zenodo.eu","*.zenodo.net"]]);_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking"]);(function() {  var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.web.cern.ch/";  _paq.push(["setTrackerUrl", u+"piwik.php"]);  _paq.push(["setSiteId", "57"]);  var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";  g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);})();</script>  </body></html>
-*  Hood, E., Fellman, J., Spencer, R. G. M., Hernes, P. J., Edwards, R., D’Amore, D., & Scott, D. (2009). Glaciers as a source of ancient and labile organic matter to the marine environment. Nature, 462(7276), 1044–1047. doi:10.1038/nature08580
-*  Horwath, J. L., Sletten, R. S., Hagedorn, B., & Hallet, B. (2008). Spatial and temporal distribution of soil organic carbon in nonsorted striped patterned ground of the High Arctic. Journal of Geophysical Research, 113(G3). doi:10.1029/2007jg000511
-*  Hsieh, Y.-P. (1996). Soil Organic Carbon Pools of Two Tropical Soils Inferred by Carbon Signatures. Soil Science Society of America Journal, 60(4), 1117–1121. doi:10.2136/sssaj1996.03615995006000040022x
-*  Huang, Y., Bol, R., Harkness, D. D., Ineson, P., & Eglinton, G. (1996). Post-glacial variations in distributions, 13C and 14C contents of aliphatic hydrocarbons and bulk organic matter in three types of British acid upland soils. Organic Geochemistry, 24(3), 273–287. doi:10.1016/0146-6380(96)00039-3
-*  Huang, Y., Li, B., Bryant, C., Bol, R., & Eglinton, G. (1999). Radiocarbon Dating of Aliphatic Hydrocarbons A New Approach for Dating Passive-Fraction Carbon in Soil Horizons. Soil Science Society of America Journal, 63(5), 1181–1187. doi:10.2136/sssaj1999.6351181x
-*  Hugelius, G., Routh, J., Kuhry, P., & Crill, P. (2012). Mapping the degree of decomposition and thaw remobilization potential of soil organic matter in discontinuous permafrost terrain. Journal of Geophysical Research: Biogeosciences, 117(G2), n/a–n/a. doi:10.1029/2011jg001873
-*  Hunt, S., Yu, Z., & Jones, M. (2013). Lateglacial and Holocene climate, disturbance and permafrost peatland dynamics on the Seward Peninsula, western Alaska. Quaternary Science Reviews, 63, 42–58. doi:10.1016/j.quascirev.2012.11.019
-*  JANKOVSKÁ, V., ANDREEV, A. A., & PANOVA, N. K. (2006). Holocene environmental history on the eastern slope of the Polar Ural Mountains, Russia. Boreas, 35(4), 650–661. doi:10.1111/j.1502-3885.2006.tb01171.x
-*  Jasinski, J., Warner, B. G., Andreev, A. A., Aravena, R., Gilbert, S. E., Zeeb, B. A., … Velichko, A. A. (1998). Holocene environmental history of a peatland in the Lena River valley, Siberia. Canadian Journal of Earth Sciences, 35(6), 637–648. doi:10.1139/e98-015
-*  Johnston, C. E., Ewing, S. A., Harden, J. W., Varner, R. K., Wickland, K. P., Koch, J. C., … Jorgenson, M. T. (2014). Effect of permafrost thaw on CO2and CH4exchange in a western Alaska peatland chronosequence. Environmental Research Letters, 9(8), 085004. doi:10.1088/1748-9326/9/8/085004
-*  Jones, M. C., Grosse, G., Jones, B. M., & Walter Anthony, K. (2012). Peat accumulation in drained thermokarst lake basins in continuous, ice-rich permafrost, northern Seward Peninsula, Alaska. Journal of Geophysical Research: Biogeosciences, 117(G2), n/a–n/a. doi:10.1029/2011jg001766
-*  Jones, M. C., Booth, R. K., Yu, Z., & Ferry, P. (2012). A 2200-Year Record of Permafrost Dynamics and Carbon Cycling in a Collapse-Scar Bog, Interior Alaska. Ecosystems, 16(1), 1–19. doi:10.1007/s10021-012-9592-5
-*  Kaiser, C., Meyer, H., Biasi, C., Rusalimova, O., Barsukov, P., & Richter, A. (2007). Conservation of soil organic matter through cryoturbation in arctic soils in Siberia. Journal of Geophysical Research, 112(G2). doi:10.1029/2006jg000258
-*  Karhu, K., Fritze, H., Hämäläinen, K., Vanhala, P., Jungner, H., Oinonen, M., … Liski, J. (2010). Temperature sensitivity of soil carbon fractions in boreal forest soil. Ecology, 91(2), 370–376. doi:10.1890/09-0478.1
-*  Katsuno, K., Miyairi, Y., Tamura, K., Matsuzaki, H., & Fukuda, K. (2010). A study of the carbon dynamics of Japanese grassland and forest using 14C and 13C. Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms, 268(7-8), 1106–1109. doi:10.1016/j.nimb.2009.10.110
-*  NULL
-*  NULL
-*  Kelly, T. J., Lawson, I. T., Roucoux, K. H., Baker, T. R., Honorio-Coronado, E. N., Jones, T. D., & Rivas Panduro, S. (2018). Continuous human presence without extensive reductions in forest cover over the past 2500 years in an aseasonal Amazonian rainforest. Journal of Quaternary Science, 33(4), 369–379. doi:10.1002/jqs.3019
-*  Kettles, I. M., Robinson, S. D., Bastien, D.-F., Garneau, M., & Hall, G. E. M. (2003). Physical, geochemical, macrofossil, and ground penetrating radar information on fourteen permafrost-affected peatlands in the Mackenzie Valley, Northwest Territories. doi:10.4095/214221
-*  Khomo, L., Trumbore, S., Bern, C. R., & Chadwick, O. A. (2017). Timescales of carbon turnover in soils with mixed crystalline mineralogies. SOIL, 3(1), 17–30. doi:10.5194/soil-3-17-2017
-*  Klapstein, S. J., Turetsky, M. R., McGuire, A. D., Harden, J. W., Czimczik, C. I., Xu, X., … Waddington, J. M. (2014). Controls on methane released through ebullition in peatlands affected by permafrost degradation. Journal of Geophysical Research: Biogeosciences, 119(3), 418–431. doi:10.1002/2013jg002441
-*  Kleber, M., Mikutta, R., Torn, M. S., & Jahn, R. (2005). Poorly crystalline mineral phases protect organic matter in acid subsoil horizons. European Journal of Soil Science, 0(0), 050912034650054. doi:10.1111/j.1365-2389.2005.00706.x
-*  KLEBER, M., NICO, P. S., PLANTE, A., FILLEY, T., KRAMER, M., SWANSTON, C., & SOLLINS, P. (2011). Old and stable soil organic matter is not necessarily chemically recalcitrant: implications for modeling concepts and temperature sensitivity. Global Change Biology, 17(2), 1097–1107. doi:10.1111/j.1365-2486.2010.02278.x
-*  Klein, E. S., Yu, Z., & Booth, R. K. (2013). Recent increase in peatland carbon accumulation in a thermokarst lake basin in southwestern Alaska. Palaeogeography, Palaeoclimatology, Palaeoecology, 392, 186–195. doi:10.1016/j.palaeo.2013.09.009
-*  Koarashi, J., Iida, T., & Asano, T. (2005). Radiocarbon and stable carbon isotope compositions of chemically fractionated soil organic matter in a temperate-zone forest. Journal of Environmental Radioactivity, 79(2), 137–156. doi:10.1016/j.jenvrad.2004.06.002
-*  KOARASHI, J., ATARASHI-ANDOH, M., ISHIZUKA, S., MIURA, S., SAITO, T., & HIRAI, K. (2009). Quantitative aspects of heterogeneity in soil organic matter dynamics in a cool-temperate Japanese beech forest: a radiocarbon-based approach. Global Change Biology, 15(3), 631–642. doi:10.1111/j.1365-2486.2008.01745.x
-*  Kögel-Knabner, I., Guggenberger, G., Kleber, M., Kandeler, E., Kalbitz, K., Scheu, S., … Leinweber, P. (2008). Organo-mineral associations in temperate soils: Integrating biology, mineralogy, and organic matter chemistry. Journal of Plant Nutrition and Soil Science, 171(1), 61–82. doi:10.1002/jpln.200700048
-*  Kondo, M., Uchida, M., & Shibata, Y. (2010). Radiocarbon-based residence time estimates of soil organic carbon in a temperate forest: Case study for the density fractionation for Japanese volcanic ash soil. Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms, 268(7-8), 1073–1076. doi:10.1016/j.nimb.2009.10.101
-*  Kramer, M. G., Sanderman, J., Chadwick, O. A., Chorover, J., & Vitousek, P. M. (2012). Long-term carbon storage through retention of dissolved aromatic acids by reactive particles in soil. Global Change Biology, 18(8), 2594–2605. doi:10.1111/j.1365-2486.2012.02681.x
-*  Kramer, M. G., & Chadwick, O. A. (2016). Controls on carbon storage and weathering in volcanic soils across a high-elevation climate gradient on Mauna Kea, Hawaii. Ecology, 97(9), 2384–2395. doi:10.1002/ecy.1467
-*  KREMENETSKI, C., VASCHALOVA, T., GORIACHKIN, S., CHERKINSKY, A., & SULERZHITSKY, L. (2008). Holocene pollen stratigraphy and bog development in the western part of the Kola Peninsula, Russia. Boreas, 26(2), 91–102. doi:10.1111/j.1502-3885.1997.tb00656.x
-*  Krull, E. S., & Skjemstad, J. O. (2003). δ13C and δ15N profiles in 14C-dated Oxisol and Vertisols as a function of soil chemistry and mineralogy. Geoderma, 112(1-2), 1–29. doi:10.1016/s0016-7061(02)00291-4
-*  Krull, E. S., Skjemstad, J. O., Burrows, W. H., Bray, S. G., Wynn, J. G., Bol, R., … Harms, B. (2005). Recent vegetation changes in central Queensland, Australia: Evidence from δ13C and 14C analyses of soil organic matter. Geoderma, 126(3-4), 241–259. doi:10.1016/j.geoderma.2004.09.012
-*  Krull, E. S., Bestland, E. A., Skjemstad, J. O., & Parr, J. F. (2006). Geochemistry (δ13C, δ15N, 13C NMR) and residence times (14C and OSL) of soil organic matter from red-brown earths of South Australia: Implications for soil genesis. Geoderma, 132(3-4), 344–360. doi:10.1016/j.geoderma.2005.06.001
-*  <!DOCTYPE html><html lang="en" dir="ltr">  <head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">    <meta name="google-site-verification" content="5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s"/>    <meta name="google-site-verification" content="Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4"/><meta name="norton-safeweb-site-verification" content="umenay8zh4kswbi568zqp19bqb-jvngusibub1ygib0x3jne9rig0fnmtofm8abb7lkzgltqp5yhm68s5qz4iqqkm39xl2o-p5foixd-1xfq4yig07ugcd1sp5kmyvpe" />    <title>C-isotopic signatures and soil properties of Amazon basin oxisols | Zenodo</title>    <link rel="shortcut icon" href="/static/favicon.ico"/>    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon-144-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/apple-touch-icon-114-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/apple-touch-icon-72-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/apple-touch-icon-57-precomposed.png"/><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet"><link href="/static/gen/zenodo.e8488af6.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->      <meta name="description" content="This dataset presents C isotopic data from two sites (Apuí and Manacapuru) located in the state of Amazonas, Brazil. Soils were sampled at three time periods, under weak raining (March-2016), extreme dry (August-2016), and strong wet (March-2017) conditions. The dataset first presents general information about the site (on the tab &#34;site&#34;), followed by more detailed information (on the tab &#34;profile&#34;) about both sampling locations. The coordinates, altitude, mean annual temperature, mean annual precipitation, soil order in USDA taxonomy and their respective land use categories and vegetation classifications are described.  On the &#39;layer&#39; tab, information about the soil depth, percent sand, silt and clay, pH CaCl2 and H2O, Organic and Total Carbon, total nitrogen and carbon/nitrogen ratio are described. The bulk C-isotopic signature is also listed on this tab as the Bulk Layer Δ14C and its standard deviation, Bulk Layer Fraction Modern and its standard deviation.  The &#34;Incubation&#34; tab describes details of the soil incubations conducted at Apuí and Manacapuru. Information about the material and length of incubation, as well as the CO2 fluxes over the duration of incubation are reported. The respired C-isotopic signature during the incubation is also given on this tab as the incubation Δ14C and its standard deviation, incubation Fraction Modern and its standard deviation. " />    <meta name="citation_title" content="C-isotopic signatures and soil properties of Amazon basin oxisols" />    <meta name="citation_author" content="Kuhnen, Ágatha" />    <meta name="citation_author" content="Matschullat, Jörg" />    <meta name="citation_author" content="Sierra, Carlos A" />    <meta name="citation_author" content="Lima, R. M. B. de" />    <meta name="citation_publication_date" content="2019/11/05" />    <meta name="citation_doi" content="10.5281/zenodo.2645510" />    <meta name="citation_keywords" content="Carbon Isotope" />    <meta name="citation_keywords" content="ISRaD" />    <meta name="citation_keywords" content="Incubation" />    <meta name="citation_keywords" content="Organic Carbon" />    <meta name="citation_keywords" content="Total Carbon" />    <meta name="citation_keywords" content="14C" />    <meta name="citation_keywords" content="Amazon basin" />    <meta name="citation_keywords" content="Oxisols" />    <meta name="citation_abstract_html_url" content="https://zenodo.org/record/2645510" />    <meta property="og:title" content="C-isotopic signatures and soil properties of Amazon basin oxisols" />    <meta property="og:description" content="This dataset presents C isotopic data from two sites (Apuí and Manacapuru) located in the state of Amazonas, Brazil. Soils were sampled at three time periods, under weak raining (March-2016), extreme dry (August-2016), and strong wet (March-2017) conditions. The dataset first presents general information about the site (on the tab &#34;site&#34;), followed by more detailed information (on the tab &#34;profile&#34;) about both sampling locations. The coordinates, altitude, mean annual temperature, mean annual precipitation, soil order in USDA taxonomy and their respective land use categories and vegetation classifications are described.  On the &#39;layer&#39; tab, information about the soil depth, percent sand, silt and clay, pH CaCl2 and H2O, Organic and Total Carbon, total nitrogen and carbon/nitrogen ratio are described. The bulk C-isotopic signature is also listed on this tab as the Bulk Layer Δ14C and its standard deviation, Bulk Layer Fraction Modern and its standard deviation.  The &#34;Incubation&#34; tab describes details of the soil incubations conducted at Apuí and Manacapuru. Information about the material and length of incubation, as well as the CO2 fluxes over the duration of incubation are reported. The respired C-isotopic signature during the incubation is also given on this tab as the incubation Δ14C and its standard deviation, incubation Fraction Modern and its standard deviation. " />    <meta property="og:url" content="https://zenodo.org/record/2645510" />    <meta property="og:site_name" content="Zenodo" />    <meta name="twitter:card" content="summary" />    <meta name="twitter:site" content="@zenodo_org" />    <meta name="twitter:title" content="C-isotopic signatures and soil properties of Amazon basin oxisols" />    <meta name="twitter:description" content="This dataset presents C isotopic data from two sites (Apuí and Manacapuru) located in the state of Amazonas, Brazil. Soils were sampled at three time periods, under weak raining (March-2016), extreme dry (August-2016), and strong wet (March-2017) conditions. The dataset first presents general information about the site (on the tab &#34;site&#34;), followed by more detailed information (on the tab &#34;profile&#34;) about both sampling locations. The coordinates, altitude, mean annual temperature, mean annual precipitation, soil order in USDA taxonomy and their respective land use categories and vegetation classifications are described.  On the &#39;layer&#39; tab, information about the soil depth, percent sand, silt and clay, pH CaCl2 and H2O, Organic and Total Carbon, total nitrogen and carbon/nitrogen ratio are described. The bulk C-isotopic signature is also listed on this tab as the Bulk Layer Δ14C and its standard deviation, Bulk Layer Fraction Modern and its standard deviation.  The &#34;Incubation&#34; tab describes details of the soil incubations conducted at Apuí and Manacapuru. Information about the material and length of incubation, as well as the CO2 fluxes over the duration of incubation are reported. The respired C-isotopic signature during the incubation is also given on this tab as the incubation Δ14C and its standard deviation, incubation Fraction Modern and its standard deviation. " />    <link rel="canonical" href="https://zenodo.org/record/2645510">    <link rel="alternate" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" href="https://zenodo.org/record/2645510/files/Kuhnen_2019.xlsx">  </head>  <body ng-csp  itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".scrollspy-target">    <!--[if lt IE 8]>      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>    <![endif]--><header>  <nav class="navbar navbar-default navbar-static-top">    <div class="container">      <div class="navbar-header">        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">          <span class="sr-only">Toggle navigation</span>          <span class="icon-bar"></span>          <span class="icon-bar"></span>          <span class="icon-bar"></span>        </button>          <a href="/"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>      </div>      <div id="navbar" class="navbar-collapse collapse"><form class="navbar-form navbar-left navbar-search" action="/search" role="search">  <div class="form-group">    <div class="input-group">      <input type="text" class="form-control search" name="q" placeholder="Search">      <div class="input-group-btn">        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>      </div>    </div>  </div></form>        <ul class="nav navbar-nav">            <li><a href="/deposit">Upload</a></li>            <li><a href="/communities/">Communities</a></li>        </ul><form class="navbar-form navbar-right">  <a href="/login/?next=%2Frecord%2F2645510" class="btn btn-default"><i class="fa fa-sign-in"></i> Log in</a>  <a href="/signup/" type="submit" class="btn btn-default btn-warning"><i class="fa fa-edit"></i> Sign up</a></form>      </div>    </div>  </nav></header><div class="container record-detail">  <div class="row">    <div class="col-sm-8 col-md-8 col-left">      <p>        <time datetime="November 5, 2019" data-toggle="tooltip" title="Publication date">November 5, 2019</time>        <span class="pull-right">          <span class="label label-default">Dataset</span>          <span class="label label-success">Open Access</span>        </span>      </p>      <h1>C-isotopic signatures and soil properties of Amazon basin oxisols</h1>      <p><a href="https://orcid.org/0000-0001-8027-7963"><img class="inline-orcid" src="/static/img/orcid.png" /></a><span class="text-muted" data-toggle="tooltip" title="TU Bergakademie Freiberg">Kuhnen, Ágatha</span>; <a href="https://orcid.org/0000-0003-0549-7354"><img class="inline-orcid" src="/static/img/orcid.png" /></a><span class="text-muted" data-toggle="tooltip" title="TU Bergakademie Freiberg">Matschullat, Jörg</span>; <a href="https://orcid.org/0000-0003-0009-4169"><img class="inline-orcid" src="/static/img/orcid.png" /></a><span class="text-muted" data-toggle="tooltip" title="Max Planck Institute for Biogeochemistry">Sierra, Carlos A</span>; <a href="https://orcid.org/0000-0003-1260-447X"><img class="inline-orcid" src="/static/img/orcid.png" /></a><span class="text-muted" data-toggle="tooltip" title="Embrapa Amazônia Ocidental">Lima, R. M. B. de</span></p>      <p><p>This dataset presents C isotopic data from two sites (Apu&iacute; and Manacapuru)&nbsp;located in the state of Amazonas, Brazil. Soils were sampled at three time periods, under weak raining&nbsp;(March-2016), extreme dry (August-2016), and strong&nbsp;wet (March-2017)&nbsp;conditions.&nbsp;The dataset first presents&nbsp;general information about the site (on the tab &quot;site&quot;), followed by&nbsp;more detailed information (on the tab &quot;profile&quot;) about both sampling locations. The&nbsp;coordinates, altitude, mean annual temperature, mean annual precipitation, soil order in USDA taxonomy and their respective land use categories&nbsp;and vegetation classifications&nbsp;are described.&nbsp;</p><p>On the &#39;layer&#39; tab,&nbsp;information about the soil depth, percent sand, silt and clay, pH CaCl2 and H2O, Organic and Total Carbon, total nitrogen and carbon/nitrogen ratio are described. The bulk C-isotopic signature is also listed on this tab as the Bulk Layer &Delta;14C and its standard deviation, Bulk Layer Fraction Modern and its standard deviation.&nbsp;</p><p>The&nbsp;&quot;Incubation&quot; tab describes&nbsp;details of the&nbsp;soil incubations conducted&nbsp;at Apu&iacute; and Manacapuru. Information about the material and length of incubation, as well as the CO2 fluxes over the duration of incubation are reported. The respired C-isotopic signature during the incubation is also given on this tab as the incubation &Delta;14C and its standard deviation, incubation Fraction Modern and its standard deviation.&nbsp;</p></p>      <div class="alert alert-warning">        Supported by: BMZ, Ministério da Educação, DAAD, CAPES, GIZ, MPI      </div><div class="panel panel-default files-box" id="files">  <div class="panel-heading">    <a class="panel-toggle" data-toggle="collapse" href="#collapseTwo">      Files      <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>      <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>    </a>    <small class="text-muted"> (842.3 kB)</small>  </div>  <div class="collapse in" id="collapseTwo">  <table class="table table-striped" >    <thead>      <tr class="">        <th>Name</th>        <th>Size</th>      </tr>    </thead>    <tbody>      <tr>        <td>          <a class="filename" href="/record/2645510/files/Kuhnen_2019.xlsx?download=1">Kuhnen_2019.xlsx</a>          <br/><small class="text-muted nowrap">md5:de943f270343cd7502744a21e4fbf51e <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="This is the file fingerprint (MD5 checksum), which can be used to verify the file integrity."></i></small>        </td>        <td class="nowrap">842.3 kB</td>        <td class="nowrap"><span class="pull-right"><a class="btn btn-xs btn-default" href="/record/2645510/files/Kuhnen_2019.xlsx?download=1"><i class="fa fa-download"></i> Download</a></span></td>      </tr></tbody>    </table>  </div></div><div id="citations">  <invenio-search   disable-url-handler="true"   search-endpoint="https://zenodo-broker.web.cern.ch/api/relationships"   search-extra-params='{"page": 1, "size": "10", "group_by": "version", "id": "10.5281/zenodo.2645510"}'   search-hidden-params='{"relation": "isCitedBy", "scheme": "doi"}'   search-headers='{"Accept": "application/json"}' >    <div class="panel panel-default" id="citation">      <div class="panel-heading">        <!-- Beta ribbon -->        <div class="row" style="margin-bottom: -15px;">          <div class="col-sm-1">            <div class="ribbon-wrapper-green">              <a href="https://help.zenodo.org/#citations" target="_blank" rel="noopener noreferrer">                <div class="corner-ribbon top-left ribbon-green">Beta</div>              </a>            </div>          </div>          <div class="col-sm-11" style="margin-top: 5px;">            <a class="panel-toggle" data-toggle="collapse" href="#collapseCitations" style="margin-left:-25px;">              Citations              <small class="text-muted">                <invenio-search-count                template="/static/templates/citations/count.html">                </invenio-search-count>              </small>              <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>              <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>            </a>          </div>        </div>        <!-- Without beta ribbon -->        <!--<a class="panel-toggle" data-toggle="collapse" href="#collapseCitations">-->          <!--Citations-->          <!--<small class="text-muted">-->            <!--<invenio-search-count-->            <!--template="/static/templates/citations/count.html">-->            <!--</invenio-search-count>-->          <!--</small>-->          <!--<span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>-->          <!--<span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>-->        <!--</a>-->      </div>      <div id="collapseCitations" class="collapse in">        <div class="search-page">          <div class="container-fluid facets">            <div class="row">              <div class="col-sm-9">                <invenio-search-facets                   ng-init="vm.record_id='10.5281/zenodo.2645510'; vm.version_id='10.5281/zenodo.2645509'"                   template="/static/templates/citations/facets.html">                </invenio-search-facets>              </div>              <div class="col-sm-3">                <invenio-search-bar                  template="/static/templates/invenio_search_ui/searchbar.html"                  placeholder="Search">                </invenio-search-bar>              </div>            </div>          </div>          <div class="container-fluid">          <invenio-search-error            template="/static/templates/zenodo_search_ui/error.html"            message="Error">          </invenio-search-error>          </div>          <invenio-search-results           template="/static/templates/citations/results.html">          </invenio-search-results>          <div class="row">            <div class="col-md-2 col-sm-12">            </div>            <div class="col-md-7 col-sm-12 text-center">              <invenio-search-pagination                template="/static/templates/citations/pagination.html">              </invenio-search-pagination>            </div>            <div class="col-md-3 col-sm-12" style="padding-top: 5px;">              <invenio-search-select-box                 sort-key="size"                 available-options='{                  "options": [                     {                       "title": "10",                       "value": "10"                     },                     {                       "title": "20",                       "value": "20"                     },                     {                       "title": "50",                       "value": "50"                     }                  ]}'                 template="/static/templates/citations/selectbox.html">                </invenio-search-select-box>            </div>          </div>      </div>    </div>    </div>  </invenio-search></div>    </div>    <div class="col-sm-4 col-md-4 col-right">            <div class="well"><!-- Stats --><div class="row stats-box">  <div id="accordion">    <!-- Banner --><div class="row">      <div class="col-sm-6">        <span class="stats-data">12</span>      </div>      <div class="col-sm-6">        <span class="stats-data">2</span>      </div>    </div>    <div class="row">      <div class="col-sm-6">        <i class="fa fa-eye " data-toggle="tooltip" tooltip data-placement="top" title="Total views." data-original-title="Total views."></i> views      </div>      <div class="col-sm-6">        <i class="fa fa-download " data-toggle="tooltip" tooltip data-placement="top" title="Total downloads." data-original-title="Total downloads."></i> downloads      </div>    </div>    <!-- Collapsed details -->    <div id="toggle-stats" class="row">      <div class="col-sm-12">        <a style="cursor: pointer;" class="panel-toggle" data-toggle="collapse" data-target="#collapse-stats" aria-expanded="true" aria-controls="collapse-stats">          See more details...        </a>      </div>    </div>    <div id="collapse-stats" class="collapse" aria-labelledby="toggle-stats" data-parent="#accordion">      <table class="table stats-table">        <!-- Skip table header if no versions --><tr>          <th></th>          <th>All versions</th>          <th>This version</th>        </tr><tr>          <td>Views <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total views." data-original-title="Total views."></i></td><td>12</td><td>12</td>        </tr>        <tr>          <td>Downloads <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total downloads." data-original-title="Total downloads."></i></td><td>2</td><td>2</td>        </tr>        <tr>          <td>Data volume <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total download volume." data-original-title="Total download volume."></i></td><td>1.7 MB</td><td>1.7 MB</td>        </tr>        <tr>          <td>Unique views <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Views in one hour user-sessions are counted only once." data-original-title="Views in one hour user-sessions are counted only once."></i></td><td>9</td><td>9</td>        </tr>        <tr>          <td>Unique downloads <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Downloads in one hour user-sessions are counted only once." data-original-title="Downloads in one hour user-sessions are counted only once."></i></td><td>2</td><td>2</td>        </tr>      </table>      <div class="row">        <a href="https://help.zenodo.org/#statistics">More info on how stats are collected.</a>      </div>    </div>  </div></div><!-- Altmetric -->  <div class="altmetric-embed" data-badge-type="donut" data-badge-details="left" data-hide-no-mentions="true" data-doi="10.5281/zenodo.2645510"></div>      </div><div class="well metadata">      <small class="text-muted">Indexed in</small>    <a href="https://explore.openaire.eu/search/dataset?datasetId=r37b0ad08687::88e2085d19c47fc5e2e16cee075ffdf2">      <img src="/static/img/openaire-horizontal-old.png" class="img-thumbnail" width="100%" />    </a></div>      <div class="well metadata"><dl>    <dt>Publication date:</dt>    <dd>November 5, 2019</dd>    <dt>DOI:</dt>    <dd>      <span class="get-badge" data-toggle="toolt  ip" data-placement="bottom"            title="Get the DOI badge!">        <img data-toggle="modal" data-target="[data-modal='10.5281/zenodo.2645510']"              src="/badge/DOI/10.5281/zenodo.2645510.svg" alt="10.5281/zenodo.2645510">        </img>      </span>      <div class="modal fade badge-modal" data-modal="10.5281/zenodo.2645510">        <div class="modal-dialog">          <div class="modal-content">            <div class="modal-body">              <h4>Zenodo DOI Badge</h4>              <h4>                  <small>DOI</small>              </h4>              <h4>                  <pre>10.5281/zenodo.2645510</pre>              </h4>                                <h4>        <small>Markdown</small>    </h4>    <h4>        <pre>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2645510.svg)](https://doi.org/10.5281/zenodo.2645510)</pre>    </h4>    <h4>        <small>reStructedText</small>    </h4>    <h4>        <pre>.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.2645510.svg   :target: https://doi.org/10.5281/zenodo.2645510</pre>    </h4>    <h4>        <small>HTML</small>    </h4>    <h4>      <pre>&lt;a href="https://doi.org/10.5281/zenodo.2645510"&gt;&lt;img src="https://zenodo.org/badge/DOI/10.5281/zenodo.2645510.svg" alt="DOI"&gt;&lt;/a&gt;</pre>    </h4>    <h4>        <small>Image URL</small>    </h4>    <h4>      <pre>https://zenodo.org/badge/DOI/10.5281/zenodo.2645510.svg</pre>    </h4>    <h4>        <small>Target URL</small>    </h4>    <h4>      <pre>https://doi.org/10.5281/zenodo.2645510</pre>    </h4>            </div>          </div>        </div>      </div>    </dd>    <dt>Keyword(s):</dt>    <dd>            <a class="label-link" href="/search?q=keywords%3A%22Carbon+Isotope%22">        <span class="label label-default">Carbon Isotope</span>      </a>            <a class="label-link" href="/search?q=keywords%3A%22ISRaD%22">        <span class="label label-default">ISRaD</span>      </a>            <a class="label-link" href="/search?q=keywords%3A%22Incubation%22">        <span class="label label-default">Incubation</span>      </a>            <a class="label-link" href="/search?q=keywords%3A%22Organic+Carbon%22">        <span class="label label-default">Organic Carbon</span>      </a>            <a class="label-link" href="/search?q=keywords%3A%22Total+Carbon%22">        <span class="label label-default">Total Carbon</span>      </a>            <a class="label-link" href="/search?q=keywords%3A%2214C%22">        <span class="label label-default">14C</span>      </a>            <a class="label-link" href="/search?q=keywords%3A%22Amazon+basin%22">        <span class="label label-default">Amazon basin</span>      </a>            <a class="label-link" href="/search?q=keywords%3A%22Oxisols%22">        <span class="label label-default">Oxisols</span>      </a>    </dd>      <dt>Related identifiers:</dt>    <dd>Part of<br />    <ul class="list-unstyled">      <li>        <a href="https://doi.org/10.5194/soil-2019-16">10.5194/soil-2019-16</a>       </li>    </ul>    </dd>    <dt>License (for files):</dt>    <dd><a rel="license" href="http://creativecommons.org/licenses/by/4.0/legalcode"><i class="fa fa-external-link"></i> Creative Commons Attribution 4.0 International</a></dd>  </dl>      </div>  <div class="well metadata">    <h4>Versions</h4>    <table class="table">      <tr class="info">        <td>          <a href="/record/2645510">Version 1 </a>          <small class="text-muted">10.5281/zenodo.2645510</small>        </td>        <td align="right"><small class="text-muted">Nov 5, 2019</small></td>      </tr>    </table>    <small>      <strong>Cite all versions?</strong> You can cite all versions by using the DOI <a href="https://doi.org/10.5281/zenodo.2645509">10.5281/zenodo.2645509</a>. This DOI represents all versions, and will always resolve to the latest one. <a href="http://help.zenodo.org/#versioning">Read more</a>.    </small>  </div>      <div class="well"><h4>Share</h4>  <!-- AddThis Button BEGIN -->  <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="https://doi.org/10.5281/zenodo.2645510">  <a class="addthis_button_mendeley"></a>  <a class="addthis_button_citeulike"></a>  <a class="addthis_button_twitter"></a>  <a class="addthis_button_preferred_1"></a>  <a class="addthis_button_preferred_2"></a>  <a class="addthis_button_compact"></a>  </div>  <!-- AddThis Button END -->  <h4>Cite as</h4>  <div id='invenio-csl'>        <invenio-csl        ng-init="vm.citationResult = 'Kuhnen, Ágatha, Matschullat, Jörg, Sierra, Carlos A, &amp; Lima, R. M. B. de. (2019). C-isotopic signatures and soil properties of Amazon basin oxisols [Data set]. Zenodo. http://doi.org/10.5281/zenodo.2645510'"    >      <invenio-csl-citeproc       endpoint="/api/records/2645510"       template="/static/templates/invenio_csl/citeproc.html"></invenio-csl-citeproc>      <invenio-csl-error       template="/static/node_modules/invenio-csl-js/dist/templates/error.html"></invenio-csl-error>      <invenio-csl-loading       template="/static/node_modules/invenio-csl-js/dist/templates/loading.html"></invenio-csl-loading>      <invenio-csl-typeahead       lazy="true"       placeholder="Start typing a citation style..."       remote="/api/csl/styles"       template="/static/node_modules/invenio-csl-js/dist/templates/typeahead.html"       item-template="/static/templates/invenio_csl/item.html">      </invenio-csl-typeahead>    </invenio-csl>  </div>      </div>      <div class="well"><h4>Export</h4><ul class="list-inline">  <li><a href="/record/2645510/export/hx">BibTeX</a></li>  <li><a href="/record/2645510/export/csl">CSL</a></li>  <li><a href="/record/2645510/export/dcite4">DataCite</a></li>  <li><a href="/record/2645510/export/xd">Dublin Core</a></li>  <li><a href="/record/2645510/export/dcat">DCAT</a></li>  <li><a href="/record/2645510/export/json">JSON</a></li>  <li><a href="/record/2645510/export/schemaorg_jsonld">JSON-LD</a></li>  <li><a href="/record/2645510/export/geojson">GeoJSON</a></li>  <li><a href="/record/2645510/export/xm">MARCXML</a></li>  <li><a href="https://www.mendeley.com/import/?url=https://zenodo.org/record/2645510"><i class="fa fa-external-link"></i> Mendeley</a></li></ul>      </div>    </div>  </div></div><footer class="footer">  <div class="menu-wrapper">    <div class="container">      <div class="row footer-menu">        <div class="col-xs-12 col-md-8">          <div class="row">            <div class="col-xs-2 col-md-2">              <h5>About</h5>              <ul class="list-unstyled">                <li><a href="http://about.zenodo.org">About</a></li>                <li><a href="http://about.zenodo.org/policies">Policies</a></li>                <li><a href="http://about.zenodo.org/infrastructure">Infrastructure</a></li>                <li><a href="http://about.zenodo.org/principles">Principles</a></li>                <li><a href="http://about.zenodo.org/contact">Contact</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Blog</h5>              <ul class="list-unstyled">                <li><a href="http://blog.zenodo.org">Blog</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Help</h5>              <ul class="list-unstyled">                <li><a href="http://help.zenodo.org">FAQ</a></li>                <li><a href="http://help.zenodo.org/features">Features</a></li>                <li><a href="http://help.zenodo.org/whatsnew">What's New</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Developers</h5>              <ul class="list-unstyled">              <li><a href="http://developers.zenodo.org">REST API</a></li>              <li><a href="http://developers.zenodo.org#oai-pmh">OAI-PMH</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Contribute</h5>              <ul class="list-unstyled">                <li><a href="http://github.com/zenodo/zenodo"><i class="fa fa-external-link"></i> GitHub</a></li>                <li><a href="/donate"><i class="fa fa-external-link"></i> Donate</a></li>              </ul>            </div>          </div>        </div>        <div class="col-xs-12 col-md-4">          <div class="pull-right-md text-center-sm text-center-xs">            <h5>Funded by</h5>            <ul class="list-inline">              <li><a href="http://home.cern"><img src="/static/img/cern.png" width="60" height="60" /></a></li>              <li><a href="http://www.openaire.eu"><img src="/static/img/openaire.png" width="80" height="60" /></a></li>              <li><a href="https://ec.europa.eu/programmes/horizon2020/"><img src="/static/img/eu.png" width="88" height="60" /></a></li>            </ul>          </div>        </div>      </div>    </div>  </div>  <div class="container">    <div class="row">      <div class="col-xs-12 col-sm-6 col-sm-push-6">        <div class="pull-right-sm text-center-xs">          <ul class="list-inline">            <li><a href="https://status.zenodo.org/">Status</a></li>            <li><a href="http://about.zenodo.org/privacy-policy">Privacy policy</a></li>            <li><a href="http://about.zenodo.org/terms">Terms of Use</a></li>            <li><a href="/support">Support</a></li>          </ul>        </div>      </div>      <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center-xs">        <p>Powered by <a href="http://information-technology.web.cern.ch/about/computer-centre">CERN Data Centre</a> &amp; <a href="http://inveniosoftware.org">Invenio</a></p>      </div>    </div>  </div></footer>  <script type='application/ld+json'>{"@context": "https://schema.org/", "@id": "https://doi.org/10.5281/zenodo.2645510", "@type": "Dataset", "creator": [{"@id": "https://orcid.org/0000-0001-8027-7963", "@type": "Person", "affiliation": "TU Bergakademie Freiberg", "name": "Kuhnen, \u00c1gatha"}, {"@id": "https://orcid.org/0000-0003-0549-7354", "@type": "Person", "affiliation": "TU Bergakademie Freiberg", "name": "Matschullat, J\u00f6rg"}, {"@id": "https://orcid.org/0000-0003-0009-4169", "@type": "Person", "affiliation": "Max Planck Institute for Biogeochemistry", "name": "Sierra, Carlos A"}, {"@id": "https://orcid.org/0000-0003-1260-447X", "@type": "Person", "affiliation": "Embrapa Amaz\u00f4nia Ocidental", "name": "Lima, R. M. B. de"}], "datePublished": "2019-11-05", "description": "\u003cp\u003eThis dataset presents C isotopic data from two sites (Apu\u0026iacute; and Manacapuru)\u0026nbsp;located in the state of Amazonas, Brazil. Soils were sampled at three time periods, under weak raining\u0026nbsp;(March-2016), extreme dry (August-2016), and strong\u0026nbsp;wet (March-2017)\u0026nbsp;conditions.\u0026nbsp;The dataset first presents\u0026nbsp;general information about the site (on the tab \u0026quot;site\u0026quot;), followed by\u0026nbsp;more detailed information (on the tab \u0026quot;profile\u0026quot;) about both sampling locations. The\u0026nbsp;coordinates, altitude, mean annual temperature, mean annual precipitation, soil order in USDA taxonomy and their respective land use categories\u0026nbsp;and vegetation classifications\u0026nbsp;are described.\u0026nbsp;\u003c/p\u003e\n\n\u003cp\u003eOn the \u0026#39;layer\u0026#39; tab,\u0026nbsp;information about the soil depth, percent sand, silt and clay, pH CaCl2 and H2O, Organic and Total Carbon, total nitrogen and carbon/nitrogen ratio are described. The bulk C-isotopic signature is also listed on this tab as the Bulk Layer \u0026Delta;14C and its standard deviation, Bulk Layer Fraction Modern and its standard deviation.\u0026nbsp;\u003c/p\u003e\n\n\u003cp\u003eThe\u0026nbsp;\u0026quot;Incubation\u0026quot; tab describes\u0026nbsp;details of the\u0026nbsp;soil incubations conducted\u0026nbsp;at Apu\u0026iacute; and Manacapuru. Information about the material and length of incubation, as well as the CO2 fluxes over the duration of incubation are reported. The respired C-isotopic signature during the incubation is also given on this tab as the incubation \u0026Delta;14C and its standard deviation, incubation Fraction Modern and its standard deviation.\u0026nbsp;\u003c/p\u003e", "distribution": [{"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/files/cf8c363f-ae10-486b-86af-8b7a1b50cf53/Kuhnen_2019.xlsx", "encodingFormat": "xlsx"}], "identifier": "https://doi.org/10.5281/zenodo.2645510", "inLanguage": {"@type": "Language", "alternateName": "eng", "name": "English"}, "isPartOf": [{"@id": "https://doi.org/10.5194/soil-2019-16", "@type": "CreativeWork"}], "keywords": ["Carbon Isotope", "ISRaD", "Incubation", "Organic Carbon", "Total Carbon", "14C", "Amazon basin", "Oxisols"], "license": "http://creativecommons.org/licenses/by/4.0/legalcode", "name": "C-isotopic signatures and soil properties of Amazon basin oxisols", "url": "https://zenodo.org/record/2645510"}</script><script src="/static/gen/zenodo.60c4ee65.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/static/gen/zenodo.search.cd696cd5.js"></script><script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script><script type="text/javascript">  // Bootstrap the Invenio CSL Formatter and invenio-search-js  require([    "jquery",    'typeahead.js',    'bloodhound',    "node_modules/angular/angular",    "node_modules/invenio-csl-js/dist/invenio-csl-js",    "node_modules/invenio-search-js/dist/invenio-search-js",    "js/zenodo/module"    ], function(typeahead, Bloodhound) {      angular.element(document).ready(function() {        // FIXME: This is already defined in js/zenodo_deposit/filters.js.        // It should be moved to a common place...        angular.module('zenodo.filters').filter('limitToEllipsis', function () {          return function(text, n) {            return (text.length > n) ? text.substr(0, n-1) + '&hellip;' : text;          };        });        angular.bootstrap(document.getElementById("citations"), [            'invenioSearch',            'zenodo.filters',            'mgcrea.ngStrap.tooltip',          ]        );        angular.bootstrap(document.getElementById("invenio-csl"), [            'invenioCsl',          ]        );      });    }  );  require([    "jquery",    "js/zenodo/functions",    ], function($, recordCommunityCurate) {      $(function () {        $("#recordCommunityCuration .btn").click(recordCommunityCurate);        $('.preview-link').on('click', function(event) {          $('#preview').show();          var filename = encodeURIComponent($(event.target).data('filename'));          $('#preview-iframe').attr("src","/record/2645510/preview/" + filename);        });      });    }  );  $(function () {    $('[data-toggle="tooltip"]').tooltip();  });</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5137aff66ad9c2a1"></script><script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script type="text/javascript">var _paq = _paq || [];_paq.push(["setDomains", ["*.zenodo.org","*.zenodo.cern.ch","*.zenodo.eu","*.zenodo.net"]]);_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking"]);(function() {  var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.web.cern.ch/";  _paq.push(["setTrackerUrl", u+"piwik.php"]);  _paq.push(["setSiteId", "57"]);  var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";  g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);})();</script>  </body></html>
-*  Kuhry, P., & Vitt, D. H. (1996). Fossil Carbon/Nitrogen Ratios as a Measure of Peat Decomposition. Ecology, 77(1), 271–275. doi:10.2307/2265676
-*  KUHRY, P. (2008). Palsa and peat plateau development in the Hudson Bay Lowlands, Canada: timing, pathways and causes. Boreas, 37(2), 316–327. doi:10.1111/j.1502-3885.2007.00022.x
-*  Kultti, S., Oksanen, P., & Väliranta, M. (2004). Holocene tree line, permafrost, and climate dynamics in the Nenets Region, East European Arctic. Canadian Journal of Earth Sciences, 41(10), 1141–1158. doi:10.1139/e04-058
-*  Ladyman, S. J., & Harkness, D. D. (1980). Carbon Isotope Measurement as An Index of Soil Development. Radiocarbon, 22(3), 885–891. doi:10.1017/s0033822200010286
-*  LÄHTEENOJA, O., RUOKOLAINEN, K., SCHULMAN, L., & OINONEN, M. (2009). Amazonian peatlands: an ignored C sink and potential source. Global Change Biology, 15(9), 2311–2320. doi:10.1111/j.1365-2486.2009.01920.x
-*  Lähteenoja, O., Reátegui, Y. R., Räsänen, M., Torres, D. D. C., Oinonen, M., & Page, S. (2011). The large Amazonian peatland carbon sink in the subsiding Pastaza-Marañón foreland basin, Peru. Global Change Biology, 18(1), 164–178. doi:10.1111/j.1365-2486.2011.02504.x
-*  Lähteenoja, O., Reátegui, Y. R., Räsänen, M., Torres, D. D. C., Oinonen, M., & Page, S. (2011). The large Amazonian peatland carbon sink in the subsiding Pastaza-Marañón foreland basin, Peru. Global Change Biology, 18(1), 164–178. doi:10.1111/j.1365-2486.2011.02504.x
-*  Lamarre, A., Garneau, M., & Asnong, H. (2012). Holocene paleohydrological reconstruction and carbon accumulation of a permafrost peatland using testate amoeba and macrofossil analyses, Kuujjuarapik, subarctic Québec, Canada. Review of Palaeobotany and Palynology, 186, 131–141. doi:10.1016/j.revpalbo.2012.04.009
-*  Laskar, A. H., Yadava, M. G., & Ramesh, R. (2012). Radiocarbon and Stable Carbon Isotopes in Two Soil Profiles from Northeast India. Radiocarbon, 54(1), 81–89. doi:10.2458/azu_js_rc.v54i1.15840
-*  Lassey, K. R., Tate, K. R., Sparks, R. J., & Claydon, J. J. (1996). Historic Measurements of Radiocarbon in New Zealand Soils. Radiocarbon, 38(2), 253–270. doi:10.1017/s003382220001763x
-*  Lavoie, M., Mack, M. C., & Schuur, E. A. G. (2011). Effects of elevated nitrogen and temperature on carbon and nitrogen dynamics in Alaskan arctic and boreal soils. Journal of Geophysical Research, 116(G3). doi:10.1029/2010jg001629
-*  Lawrence, C. R., Harden, J. W., Xu, X., Schulz, M. S., & Trumbore, S. E. (2015). Long-term controls on soil organic carbon with depth and time: A case study from the Cowlitz River Chronosequence, WA USA. Geoderma, 247-248, 73–87. doi:10.1016/j.geoderma.2015.02.005
-*  Leavitt, S. W., Follett, R. F., Kimble, J. M., & Pruessner, E. G. (2007). Radiocarbon and δ13C depth profiles of soil organic carbon in the U.S. Great Plains: A possible spatial record of paleoenvironment and paleovegetation. Quaternary International, 162-163, 21–34. doi:10.1016/j.quaint.2006.10.033
-*  Lee, H., Schuur, E. A. G., Inglett, K. S., Lavoie, M., & Chanton, J. P. (2011). The rate of permafrost carbon release under aerobic and anaerobic conditions and its potential effects on climate. Global Change Biology, 18(2), 515–527. doi:10.1111/j.1365-2486.2011.02519.x
-*  LEIFELD, J., ZIMMERMANN, M., FUHRER, J., & CONEN, F. (2009). Storage and turnover of carbon in grassland soils along an elevation gradient in the Swiss Alps. Global Change Biology, 15(3), 668–679. doi:10.1111/j.1365-2486.2008.01782.x
-*  Leith, F. I., Garnett, M. H., Dinsmore, K. J., Billett, M. F., & Heal, K. V. (2014). Source and age of dissolved and gaseous carbon in a peatland–riparian–stream continuum: a dual isotope (14C and δ13C) analysis. Biogeochemistry, 119(1-3), 415–433. doi:10.1007/s10533-014-9977-y
-*  Li, Y., & Mathews, B. W. (2010). Effect of conversion of sugarcane plantation to forest and pasture on soil carbon in Hawaii. Plant and Soil, 335(1-2), 245–253. doi:10.1007/s11104-010-0412-4
-*  Liu, W., Moriizumi, J., Yamazawa, H., & Iida, T. (2006). Depth profiles of radiocarbon and carbon isotopic compositions of organic matter and CO2 in a forest soil. Journal of Environmental Radioactivity, 90(3), 210–223. doi:10.1016/j.jenvrad.2006.07.003
-*  Loisel, J., & Garneau, M. (2010). Late Holocene paleoecohydrology and carbon accumulation estimates from two boreal peat bogs in eastern Canada: Potential and limits of multi-proxy archives. Palaeogeography, Palaeoclimatology, Palaeoecology, 291(3-4), 493–533. doi:10.1016/j.palaeo.2010.03.020
-*  Loisel, J., Yu, Z., Beilman, D. W., Camill, P., Alm, J., Amesbury, M. J., … Barber, K. (2014). A database and synthesis of northern peatland soil properties and Holocene carbon and nitrogen accumulation. The Holocene, 24(9), 1028–1042. doi:10.1177/0959683614538073
-*  Lupascu, M., Welker, J. M., Seibt, U., Maseyk, K., Xu, X., & Czimczik, C. I. (2013). High Arctic wetting reduces permafrost carbon feedbacks to climate warming. Nature Climate Change, 4(1), 51–55. doi:10.1038/nclimate2058
-*  Lupascu, M., Czimczik, C. I., Welker, M. C., Ziolkowski, L. A., Cooper, E. J., & Welker, J. M. (2018). Winter Ecosystem Respiration and Sources of CO2 From the High Arctic Tundra of Svalbard: Response to a Deeper Snow Experiment. Journal of Geophysical Research: Biogeosciences, 123(8), 2627–2642. doi:10.1029/2018jg004396
-*  Lybrand, R. A., Heckman, K., & Rasmussen, C. (2017). Soil organic carbon partitioning and Δ14C variation in desert and conifer ecosystems of southern Arizona. Biogeochemistry, 134(3), 261–277. doi:10.1007/s10533-017-0360-7
-*  Mann, P. J., Eglinton, T. I., McIntyre, C. P., Zimov, N., Davydova, A., Vonk, J. E., … Spencer, R. G. M. (2015). Utilization of ancient permafrost carbon in headwaters of Arctic fluvial networks. Nature Communications, 6(1). doi:10.1038/ncomms8856
-*  Marín-Spiotta, E., Swanston, C. W., Torn, M. S., Silver, W. L., & Burton, S. D. (2008). Chemical and mineral control of soil carbon turnover in abandoned tropical pastures. Geoderma, 143(1-2), 49–62. doi:10.1016/j.geoderma.2007.10.001
-*  Marin-Spiotta, E., Chadwick, O. A., Kramer, M., & Carbone, M. S. (2011). Carbon delivery to deep mineral horizons in Hawaiian rain forest soils. Journal of Geophysical Research, 116(G3). doi:10.1029/2010jg001587
-*  Mariotti, A., & Peterschmitt, E. (1994). Forest savanna ecotone dynamics in India as revealed by carbon isotope ratios of soil organic matter. Oecologia, 97(4), 475–480. doi:10.1007/bf00325885
-*  Martel, Y. A., & Paul, E. A. (1974). The Use of Radiocarbon Dating of Organic Matter in the Study of Soil Genesis. Soil Science Society of America Journal, 38(3), 501–506. doi:10.2136/sssaj1974.03615995003800030033x
-*  Martens, C. S., Kelley, C. A., Chanton, J. P., & Showers, W. J. (1992). Carbon and hydrogen isotopic characterization of methane from wetlands and lakes of the Yukon-Kuskokwim delta, western Alaska. Journal of Geophysical Research, 97(D15), 16689. doi:10.1029/91jd02885
-*  Masiello, C. A., Chadwick, O. A., Southon, J., Torn, M. S., & Harden, J. W. (2004). Weathering controls on mechanisms of carbon storage in grassland soils. Global Biogeochemical Cycles, 18(4), n/a–n/a. doi:10.1029/2004gb002219
-*  Mayer, S., Schwindt, D., Steffens, M., Völkel, J., & Kögel-Knabner, I. (2018). Drivers of organic carbon allocation in a temperate slope-floodplain catena under agricultural use. Geoderma, 327, 63–72. doi:10.1016/j.geoderma.2018.04.021
-*  McClaran, M. P., & Umlauf, M. (2000). Desert grassland dynamics estimated from carbon isotopes in grass phytoliths and soil organic matter. Journal of Vegetation Science, 11(1), 71–76. doi:10.2307/3236777
-*  De Tapia, E. M., Rubio, I. D., Castro, J. G., Solleiro, E., & Sedov, S. (2005). Radiocarbon Dates from Soil Profiles in the Teotihuacán Valley, Mexico: Indicators of Geomorphological Processes. Radiocarbon, 47(1), 159–175. doi:10.1017/s0033822200052279
-*  McFarlane, K. J., Hanson, P. J., Iversen, C. M., Phillips, J. R., & Brice, D. J. (2018). Local Spatial Heterogeneity of Holocene Carbon Accumulation throughout the Peat Profile of an Ombrotrophic Northern Minnesota Bog. Radiocarbon, 60(3), 941–962. doi:10.1017/rdc.2018.37
-*  McFarlane, K. J., Torn, M. S., Hanson, P. J., Porras, R. C., Swanston, C. W., Callaham, M. A., & Guilderson, T. P. (2012). Comparison of soil organic matter dynamics at five temperate deciduous forests with physical fractionation and radiocarbon measurements. Biogeochemistry, 112(1-3), 457–476. doi:10.1007/s10533-012-9740-1
-*  Porras, R. C., Hicks Pries, C. E., McFarlane, K. J., Hanson, P. J., & Torn, M. S. (2017). Association with pedogenic iron and aluminum: effects on soil organic carbon storage and stability in four temperate forest soils. Biogeochemistry, 133(3), 333–345. doi:10.1007/s10533-017-0337-6
-*  Meyer, S., Leifeld, J., Bahn, M., & Fuhrer, J. (2012). Free and protected soil organic carbon dynamics respond differently to abandonment of mountain grassland. Biogeosciences, 9(2), 853–865. doi:10.5194/bg-9-853-2012
-*  Mikutta, R., Schaumann, G. E., Gildemeister, D., Bonneville, S., Kramer, M. G., Chorover, J., … Guggenberger, G. (2009). Biogeochemistry of mineral–organic associations across a long-term mineralogical soil gradient (0.3–4100kyr), Hawaiian Islands. Geochimica et Cosmochimica Acta, 73(7), 2034–2060. doi:10.1016/j.gca.2008.12.028
-*  Milton, G. M., & Kramer, S. J. (1997). Using 14C as a Tracer of Carbon Accumulation and Turnover in Soils. Radiocarbon, 40(2), 999–1011. doi:10.1017/s003382220001897x
-*  Monreal, C. M., Schulten, H.-R., & Kodama, H. (1997). Age, turnover and molecular diversity of soil organic matter in aggregates of a Gleysol. Canadian Journal of Soil Science, 77(3), 379–388. doi:10.4141/s95-064
-*  Mueller, C. W., Gutsch, M., Kothieringer, K., Leifeld, J., Rethemeyer, J., Brueggemann, N., & Kögel-Knabner, I. (2014). Bioavailability and isotopic composition of CO2 released from incubated soil organic matter fractions. Soil Biology and Biochemistry, 69, 168–178. doi:10.1016/j.soilbio.2013.11.006
-*  Muhr, J., & Borken, W. (2009). Delayed recovery of soil respiration after wetting of dry soil further reduces C losses from a Norway spruce forest soil. Journal of Geophysical Research, 114(G4). doi:10.1029/2009jg000998
-*  Myers-Smith, I. H., Harden, J. W., Wilmking, M., Fuller, C. C., McGuire, A. D., & Chapin, F. S. (2008). Wetland succession in a permafrost collapse: interactions between  fire and thermokarst. Biogeosciences, 5(5), 1273–1286. doi:10.5194/bg-5-1273-2008
-*  Nagy, R. C., Porder, S., Brando, P., Davidson, E. A., Figueira, A. M. e S., Neill, C., … Trumbore, S. (2018). Soil Carbon Dynamics in Soybean Cropland and Forests in Mato Grosso, Brazil. Journal of Geophysical Research: Biogeosciences, 123(1), 18–31. doi:10.1002/2017jg004269
-*  Nakagawa, F., Yoshida, N., Nojiri, Y., & Makarov, V. (2002). Production of methane from alasses in eastern Siberia: Implications from its14C and stable isotopic compositions. Global Biogeochemical Cycles, 16(3), 14–1–14–15. doi:10.1029/2000gb001384
-*  NATALI, S. M., SCHUUR, E. A. G., TRUCCO, C., HICKS PRIES, C. E., CRUMMER, K. G., & BARON LOPEZ, A. F. (2011). Effects of experimental warming of air, soil and permafrost on carbon balance in Alaskan tundra. Global Change Biology, 17(3), 1394–1407. doi:10.1111/j.1365-2486.2010.02303.x
-*  Natali, S. M., Schuur, E. A. G., Mauritz, M., Schade, J. D., Celis, G., Crummer, K. G., … Webb, E. E. (2015). Permafrost thaw and soil moisture driving CO2 and CH4 release from upland tundra. Journal of Geophysical Research: Biogeosciences, 120(3), 525–537. doi:10.1002/2014jg002872
-*  Nave, L. E., Drevnick, P. E., Heckman, K. A., Hofmeister, K. L., Veverica, T. J., & Swanston, C. W. (2017). Soil hydrology, physical and chemical properties and the distribution of carbon and mercury in a postglacial lake-plain wetland. Geoderma, 305, 40–52. doi:10.1016/j.geoderma.2017.05.035
-*  Neff, J. C., Finlay, J. C., Zimov, S. A., Davydov, S. P., Carrasco, J. J., Schuur, E. A. G., & Davydova, A. I. (2006). Seasonal changes in the age and structure of dissolved organic carbon in Siberian rivers and streams. Geophysical Research Letters, 33(23). doi:10.1029/2006gl028222
-*  Negandhi, K., Laurion, I., Whiticar, M. J., Galand, P. E., Xu, X., & Lovejoy, C. (2013). Small Thaw Ponds: An Unaccounted Source of Methane in the Canadian High Arctic. PLoS ONE, 8(11), e78204. doi:10.1371/journal.pone.0078204
-*  Nichols, H. (1967). Pollen Diagrams from Sub-Arctic Central Canada. Science, 155(3770), 1665–1668. doi:10.1126/science.155.3770.1665
-*  Nowinski, N. S., Trumbore, S. E., Jimenez, G., & Fenn, M. E. (2009). Alteration of belowground carbon dynamics by nitrogen addition in southern California mixed conifer forests. Journal of Geophysical Research: Biogeosciences, 114(G2), n/a–n/a. doi:10.1029/2008jg000801
-*  Nowinski, N. S., Taneva, L., Trumbore, S. E., & Welker, J. M. (2010). Decomposition of old organic matter as a result of deeper active layers in a snow depth manipulation experiment. Oecologia, 163(3), 785–792. doi:10.1007/s00442-009-1556-x
-*  O’Donnell, J. A., Aiken, G. R., Walvoord, M. A., Raymond, P. A., Butler, K. D., Dornblaser, M. M., & Heckman, K. (2014). Using dissolved organic matter age and composition to detect permafrost thaw in boreal watersheds of interior Alaska. Journal of Geophysical Research: Biogeosciences, 119(11), 2155–2170. doi:10.1002/2014jg002695
-*  O’DONNELL, J. A., HARDEN, J. W., McGUIRE, A. D., KANEVSKIY, M. Z., JORGENSON, M. T., & XU, X. (2010). The effect of fire and permafrost interactions on soil carbon accumulation in an upland black spruce ecosystem of interior Alaska: implications for post-thaw carbon loss. Global Change Biology, 17(3), 1461–1474. doi:10.1111/j.1365-2486.2010.02358.x
-*  O’Donnell, J. A., Jorgenson, M. T., Harden, J. W., McGuire, A. D., Kanevskiy, M. Z., & Wickland, K. P. (2011). The Effects of Permafrost Thaw on Soil Hydrologic, Thermal, and Carbon Dynamics in an Alaskan Peatland. Ecosystems, 15(2), 213–229. doi:10.1007/s10021-011-9504-0
-*  O’Brien, B. J. (1986). The Use of Natural and Anthropogenic 14C to Investigate the Dynamics of Soil Organic Carbon. Radiocarbon, 28(2A), 358–362. doi:10.1017/s0033822200007463
-*  Ohno, T., Heckman, K. A., Plante, A. F., Fernandez, I. J., & Parr, T. B. (2017). 14 C mean residence time and its relationship with thermal stability and molecular composition of soil organic matter: A case study of deciduous and coniferous forest types. Geoderma, 308, 1–8. doi:10.1016/j.geoderma.2017.08.023
-*  Oksanen, P. O., Kuhry, P., & Alekseeva, R. N. (2001). Holocene development of the Rogovaya River peat plateau, European Russian Arctic. The Holocene, 11(1), 25–40. doi:10.1191/095968301675477157
-*  Oksanen, P. O., Kuhry, P., & Alekseeva, R. N. (2005). Holocene Development and Permafrost History of the Usinsk Mire, Northeast European Russia. Géographie Physique et Quaternaire, 57(2-3), 169–187. doi:10.7202/011312ar
-*  OKSANEN, P. O. (2008). Holocene development of the Vaisjeäggi palsa mire, Finnish Lapland. Boreas, 35(1), 81–95. doi:10.1111/j.1502-3885.2006.tb01114.x
-*  Ouzilleau Samson, D., Bhiry, N., & Lavoie, M. (2010). Late-Holocene palaeoecology of a polygonal peatland on the south shore of Hudson Strait, northern Québec, Canada. The Holocene, 20(4), 525–536. doi:10.1177/0959683609356582
-*  Panova, N. K., Trofimova, S. S., Antipina, T. G., Zinoviev, E. V., Gilev, A. V., & Erokhin, N. G. (2010). Holocene dynamics of vegetation and ecological conditions in the southern Yamal Peninsula according to the results of comprehensive analysis of a relict peat bog deposit. Russian Journal of Ecology, 41(1), 20–27. doi:10.1134/s1067413610010042
-*  Paul, E. A., Follett, R. F., Leavitt, S. W., Halvorson, A., Peterson, G. A., & Lyon, D. J. (1997). Radiocarbon Dating for Determination of Soil Organic Matter Pool Sizes and Dynamics. Soil Science Society of America Journal, 61(4), 1058–1067. doi:10.2136/sssaj1997.03615995006100040011x
-*  <!DOCTYPE html><html lang="en" dir="ltr">  <head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">    <meta name="google-site-verification" content="5fPGCLllnWrvFxH9QWI0l1TadV7byeEvfPcyK2VkS_s"/>    <meta name="google-site-verification" content="Rp5zp04IKW-s1IbpTOGB7Z6XY60oloZD5C3kTM-AiY4"/><meta name="norton-safeweb-site-verification" content="umenay8zh4kswbi568zqp19bqb-jvngusibub1ygib0x3jne9rig0fnmtofm8abb7lkzgltqp5yhm68s5qz4iqqkm39xl2o-p5foixd-1xfq4yig07ugcd1sp5kmyvpe" />    <title>Soil radiocarbon from moist acidic tussock and erect shrub tundra at Toolik Field Station | Zenodo</title>    <link rel="shortcut icon" href="/static/favicon.ico"/>    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon-144-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/apple-touch-icon-114-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/apple-touch-icon-72-precomposed.png"/>    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/apple-touch-icon-57-precomposed.png"/><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet"><link href="/static/gen/zenodo.e8488af6.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->      <meta name="description" content="Soil radiocarbon data from one moist acidic tussock tundra and one erect shrub tundra (Betula glandulosa) site in the northern foothills of the Brooks Range near Toolik Field Station, AK, USA. Data covers the active layer. The tussock site is located on Itkillik I glacial deposits. The shrub site is a palsa within a riparian area, and likely underwent a relatively recent shift in vegetation cover from wet sedge to shrub. (The soil profile is made up of two different soil types within the active layer)." />    <meta name="citation_title" content="Soil radiocarbon from moist acidic tussock and erect shrub tundra at Toolik Field Station" />    <meta name="citation_author" content="Pedron, Shawn" />    <meta name="citation_author" content="Holden, Sandra R." />    <meta name="citation_author" content="Welker, Jeffrey M." />    <meta name="citation_author" content="Ziolkowski, Lori A." />    <meta name="citation_author" content="Mortero, Grace" />    <meta name="citation_author" content="Li, Hongyu" />    <meta name="citation_author" content="Walker, Jennifer" />    <meta name="citation_author" content="Xu, Xiaomei" />    <meta name="citation_author" content="Czimczik, Claudia I." />    <meta name="citation_publication_date" content="2019/11/04" />    <meta name="citation_doi" content="10.5281/zenodo.3370053" />    <meta name="citation_abstract_html_url" content="https://zenodo.org/record/3370053" />    <meta property="og:title" content="Soil radiocarbon from moist acidic tussock and erect shrub tundra at Toolik Field Station" />    <meta property="og:description" content="Soil radiocarbon data from one moist acidic tussock tundra and one erect shrub tundra (Betula glandulosa) site in the northern foothills of the Brooks Range near Toolik Field Station, AK, USA. Data covers the active layer. The tussock site is located on Itkillik I glacial deposits. The shrub site is a palsa within a riparian area, and likely underwent a relatively recent shift in vegetation cover from wet sedge to shrub. (The soil profile is made up of two different soil types within the active layer)." />    <meta property="og:url" content="https://zenodo.org/record/3370053" />    <meta property="og:site_name" content="Zenodo" />    <meta name="twitter:card" content="summary" />    <meta name="twitter:site" content="@zenodo_org" />    <meta name="twitter:title" content="Soil radiocarbon from moist acidic tussock and erect shrub tundra at Toolik Field Station" />    <meta name="twitter:description" content="Soil radiocarbon data from one moist acidic tussock tundra and one erect shrub tundra (Betula glandulosa) site in the northern foothills of the Brooks Range near Toolik Field Station, AK, USA. Data covers the active layer. The tussock site is located on Itkillik I glacial deposits. The shrub site is a palsa within a riparian area, and likely underwent a relatively recent shift in vegetation cover from wet sedge to shrub. (The soil profile is made up of two different soil types within the active layer)." />    <link rel="canonical" href="https://zenodo.org/record/3370053">    <link rel="alternate" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" href="https://zenodo.org/record/3370053/files/Pedron_2019.xlsx">  </head>  <body ng-csp  itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".scrollspy-target">    <!--[if lt IE 8]>      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>    <![endif]--><header>  <nav class="navbar navbar-default navbar-static-top">    <div class="container">      <div class="navbar-header">        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">          <span class="sr-only">Toggle navigation</span>          <span class="icon-bar"></span>          <span class="icon-bar"></span>          <span class="icon-bar"></span>        </button>          <a href="/"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>      </div>      <div id="navbar" class="navbar-collapse collapse"><form class="navbar-form navbar-left navbar-search" action="/search" role="search">  <div class="form-group">    <div class="input-group">      <input type="text" class="form-control search" name="q" placeholder="Search">      <div class="input-group-btn">        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>      </div>    </div>  </div></form>        <ul class="nav navbar-nav">            <li><a href="/deposit">Upload</a></li>            <li><a href="/communities/">Communities</a></li>        </ul><form class="navbar-form navbar-right">  <a href="/login/?next=%2Frecord%2F3370053" class="btn btn-default"><i class="fa fa-sign-in"></i> Log in</a>  <a href="/signup/" type="submit" class="btn btn-default btn-warning"><i class="fa fa-edit"></i> Sign up</a></form>      </div>    </div>  </nav></header><div class="container record-detail">  <div class="row">    <div class="col-sm-8 col-md-8 col-left">      <p>        <time datetime="November 4, 2019" data-toggle="tooltip" title="Publication date">November 4, 2019</time>        <span class="pull-right">          <span class="label label-default">Dataset</span>          <span class="label label-success">Open Access</span>        </span>      </p>      <h1>Soil radiocarbon from moist acidic tussock and erect shrub tundra at Toolik Field Station</h1>      <p><span class="text-muted" data-toggle="tooltip" title="Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA">Pedron, Shawn</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA">Holden, Sandra R.</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Biological Sciences, University of Alaska, Anchorage, AK 99508, USA">Welker, Jeffrey M.</span>; <span class="text-muted" data-toggle="tooltip" title="School of the Earth, Ocean and Environment, University of South Carolina, Columbia, SC 29208, USA">Ziolkowski, Lori A.</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA">Mortero, Grace</span>; <span class="text-muted" data-toggle="tooltip" title="School of the Earth, Ocean and Environment, University of South Carolina, Columbia, SC 29208, USA">Li, Hongyu</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA">Walker, Jennifer</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA">Xu, Xiaomei</span>; <span class="text-muted" data-toggle="tooltip" title="Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA">Czimczik, Claudia I.</span></p>      <p><p>Soil radiocarbon data from one moist acidic tussock tundra and one erect shrub tundra (<em>Betula glandulosa</em>) site&nbsp;in&nbsp;the northern foothills of the Brooks Range near&nbsp;Toolik Field Station, AK, USA. Data covers the active layer. The tussock site is located on Itkillik I glacial deposits. The shrub site is a palsa within a riparian area, and likely underwent a relatively recent shift in vegetation cover from wet sedge to shrub. (The soil profile is made up of two different soil types within the active layer).</p></p><div class="panel panel-default files-box" id="files">  <div class="panel-heading">    <a class="panel-toggle" data-toggle="collapse" href="#collapseTwo">      Files      <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>      <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>    </a>    <small class="text-muted"> (841.7 kB)</small>  </div>  <div class="collapse in" id="collapseTwo">  <table class="table table-striped" >    <thead>      <tr class="">        <th>Name</th>        <th>Size</th>      </tr>    </thead>    <tbody>      <tr>        <td>          <a class="filename" href="/record/3370053/files/Pedron_2019.xlsx?download=1">Pedron_2019.xlsx</a>          <br/><small class="text-muted nowrap">md5:afaceeb014ef18deaf34b2b26d0f55f9 <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="This is the file fingerprint (MD5 checksum), which can be used to verify the file integrity."></i></small>        </td>        <td class="nowrap">841.7 kB</td>        <td class="nowrap"><span class="pull-right"><a class="btn btn-xs btn-default" href="/record/3370053/files/Pedron_2019.xlsx?download=1"><i class="fa fa-download"></i> Download</a></span></td>      </tr></tbody>    </table>  </div></div><div id="citations">  <invenio-search   disable-url-handler="true"   search-endpoint="https://zenodo-broker.web.cern.ch/api/relationships"   search-extra-params='{"page": 1, "size": "10", "group_by": "version", "id": "10.5281/zenodo.3370053"}'   search-hidden-params='{"relation": "isCitedBy", "scheme": "doi"}'   search-headers='{"Accept": "application/json"}' >    <div class="panel panel-default" id="citation">      <div class="panel-heading">        <!-- Beta ribbon -->        <div class="row" style="margin-bottom: -15px;">          <div class="col-sm-1">            <div class="ribbon-wrapper-green">              <a href="https://help.zenodo.org/#citations" target="_blank" rel="noopener noreferrer">                <div class="corner-ribbon top-left ribbon-green">Beta</div>              </a>            </div>          </div>          <div class="col-sm-11" style="margin-top: 5px;">            <a class="panel-toggle" data-toggle="collapse" href="#collapseCitations" style="margin-left:-25px;">              Citations              <small class="text-muted">                <invenio-search-count                template="/static/templates/citations/count.html">                </invenio-search-count>              </small>              <span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>              <span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>            </a>          </div>        </div>        <!-- Without beta ribbon -->        <!--<a class="panel-toggle" data-toggle="collapse" href="#collapseCitations">-->          <!--Citations-->          <!--<small class="text-muted">-->            <!--<invenio-search-count-->            <!--template="/static/templates/citations/count.html">-->            <!--</invenio-search-count>-->          <!--</small>-->          <!--<span class="pull-right show-on-collapsed"><i class="fa fa-chevron-right"></i></span>-->          <!--<span class="pull-right hide-on-collapsed"><i class="fa fa-chevron-down"></i></span>-->        <!--</a>-->      </div>      <div id="collapseCitations" class="collapse in">        <div class="search-page">          <div class="container-fluid facets">            <div class="row">              <div class="col-sm-9">                <invenio-search-facets                   ng-init="vm.record_id='10.5281/zenodo.3370053'; vm.version_id='10.5281/zenodo.3370052'"                   template="/static/templates/citations/facets.html">                </invenio-search-facets>              </div>              <div class="col-sm-3">                <invenio-search-bar                  template="/static/templates/invenio_search_ui/searchbar.html"                  placeholder="Search">                </invenio-search-bar>              </div>            </div>          </div>          <div class="container-fluid">          <invenio-search-error            template="/static/templates/zenodo_search_ui/error.html"            message="Error">          </invenio-search-error>          </div>          <invenio-search-results           template="/static/templates/citations/results.html">          </invenio-search-results>          <div class="row">            <div class="col-md-2 col-sm-12">            </div>            <div class="col-md-7 col-sm-12 text-center">              <invenio-search-pagination                template="/static/templates/citations/pagination.html">              </invenio-search-pagination>            </div>            <div class="col-md-3 col-sm-12" style="padding-top: 5px;">              <invenio-search-select-box                 sort-key="size"                 available-options='{                  "options": [                     {                       "title": "10",                       "value": "10"                     },                     {                       "title": "20",                       "value": "20"                     },                     {                       "title": "50",                       "value": "50"                     }                  ]}'                 template="/static/templates/citations/selectbox.html">                </invenio-search-select-box>            </div>          </div>      </div>    </div>    </div>  </invenio-search></div>    </div>    <div class="col-sm-4 col-md-4 col-right">            <div class="well"><!-- Stats --><div class="row stats-box">  <div id="accordion">    <!-- Banner --><div class="row">      <div class="col-sm-6">        <span class="stats-data">12</span>      </div>      <div class="col-sm-6">        <span class="stats-data">3</span>      </div>    </div>    <div class="row">      <div class="col-sm-6">        <i class="fa fa-eye " data-toggle="tooltip" tooltip data-placement="top" title="Total views." data-original-title="Total views."></i> views      </div>      <div class="col-sm-6">        <i class="fa fa-download " data-toggle="tooltip" tooltip data-placement="top" title="Total downloads." data-original-title="Total downloads."></i> downloads      </div>    </div>    <!-- Collapsed details -->    <div id="toggle-stats" class="row">      <div class="col-sm-12">        <a style="cursor: pointer;" class="panel-toggle" data-toggle="collapse" data-target="#collapse-stats" aria-expanded="true" aria-controls="collapse-stats">          See more details...        </a>      </div>    </div>    <div id="collapse-stats" class="collapse" aria-labelledby="toggle-stats" data-parent="#accordion">      <table class="table stats-table">        <!-- Skip table header if no versions --><tr>          <th></th>          <th>All versions</th>          <th>This version</th>        </tr><tr>          <td>Views <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total views." data-original-title="Total views."></i></td><td>12</td><td>12</td>        </tr>        <tr>          <td>Downloads <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total downloads." data-original-title="Total downloads."></i></td><td>3</td><td>3</td>        </tr>        <tr>          <td>Data volume <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Total download volume." data-original-title="Total download volume."></i></td><td>2.5 MB</td><td>2.5 MB</td>        </tr>        <tr>          <td>Unique views <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Views in one hour user-sessions are counted only once." data-original-title="Views in one hour user-sessions are counted only once."></i></td><td>9</td><td>9</td>        </tr>        <tr>          <td>Unique downloads <i class="fa fa-question-circle text-muted" data-toggle="tooltip" tooltip data-placement="top" title="Downloads in one hour user-sessions are counted only once." data-original-title="Downloads in one hour user-sessions are counted only once."></i></td><td>2</td><td>2</td>        </tr>      </table>      <div class="row">        <a href="https://help.zenodo.org/#statistics">More info on how stats are collected.</a>      </div>    </div>  </div></div><!-- Altmetric -->  <div class="altmetric-embed" data-badge-type="donut" data-badge-details="left" data-hide-no-mentions="true" data-doi="10.5281/zenodo.3370053"></div>      </div><div class="well metadata">      <small class="text-muted">Indexed in</small>    <a href="https://explore.openaire.eu/search/dataset?datasetId=r37b0ad08687::b32f9f3b8a79866f08df8b28c03d733a">      <img src="/static/img/openaire-horizontal-old.png" class="img-thumbnail" width="100%" />    </a></div>      <div class="well metadata"><dl>    <dt>Publication date:</dt>    <dd>November 4, 2019</dd>    <dt>DOI:</dt>    <dd>      <span class="get-badge" data-toggle="toolt  ip" data-placement="bottom"            title="Get the DOI badge!">        <img data-toggle="modal" data-target="[data-modal='10.5281/zenodo.3370053']"              src="/badge/DOI/10.5281/zenodo.3370053.svg" alt="10.5281/zenodo.3370053">        </img>      </span>      <div class="modal fade badge-modal" data-modal="10.5281/zenodo.3370053">        <div class="modal-dialog">          <div class="modal-content">            <div class="modal-body">              <h4>Zenodo DOI Badge</h4>              <h4>                  <small>DOI</small>              </h4>              <h4>                  <pre>10.5281/zenodo.3370053</pre>              </h4>                                <h4>        <small>Markdown</small>    </h4>    <h4>        <pre>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3370053.svg)](https://doi.org/10.5281/zenodo.3370053)</pre>    </h4>    <h4>        <small>reStructedText</small>    </h4>    <h4>        <pre>.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.3370053.svg   :target: https://doi.org/10.5281/zenodo.3370053</pre>    </h4>    <h4>        <small>HTML</small>    </h4>    <h4>      <pre>&lt;a href="https://doi.org/10.5281/zenodo.3370053"&gt;&lt;img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3370053.svg" alt="DOI"&gt;&lt;/a&gt;</pre>    </h4>    <h4>        <small>Image URL</small>    </h4>    <h4>      <pre>https://zenodo.org/badge/DOI/10.5281/zenodo.3370053.svg</pre>    </h4>    <h4>        <small>Target URL</small>    </h4>    <h4>      <pre>https://doi.org/10.5281/zenodo.3370053</pre>    </h4>            </div>          </div>        </div>      </div>    </dd>      <dt>License (for files):</dt>    <dd><a rel="license" href="http://creativecommons.org/licenses/by/4.0/legalcode"><i class="fa fa-external-link"></i> Creative Commons Attribution 4.0 International</a></dd>  </dl>      </div>  <div class="well metadata">    <h4>Versions</h4>    <table class="table">      <tr class="info">        <td>          <a href="/record/3370053">Version 1 </a>          <small class="text-muted">10.5281/zenodo.3370053</small>        </td>        <td align="right"><small class="text-muted">Nov 4, 2019</small></td>      </tr>    </table>    <small>      <strong>Cite all versions?</strong> You can cite all versions by using the DOI <a href="https://doi.org/10.5281/zenodo.3370052">10.5281/zenodo.3370052</a>. This DOI represents all versions, and will always resolve to the latest one. <a href="http://help.zenodo.org/#versioning">Read more</a>.    </small>  </div>      <div class="well"><h4>Share</h4>  <!-- AddThis Button BEGIN -->  <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="https://doi.org/10.5281/zenodo.3370053">  <a class="addthis_button_mendeley"></a>  <a class="addthis_button_citeulike"></a>  <a class="addthis_button_twitter"></a>  <a class="addthis_button_preferred_1"></a>  <a class="addthis_button_preferred_2"></a>  <a class="addthis_button_compact"></a>  </div>  <!-- AddThis Button END -->  <h4>Cite as</h4>  <div id='invenio-csl'>        <invenio-csl        ng-init="vm.citationResult = 'Pedron, Shawn, Holden, Sandra R., Welker, Jeffrey M., Ziolkowski, Lori A., Mortero, Grace, Li, Hongyu, … Czimczik, Claudia I. (2019). Soil radiocarbon from moist acidic tussock and erect shrub tundra at Toolik Field Station [Data set]. Zenodo. http://doi.org/10.5281/zenodo.3370053'"    >      <invenio-csl-citeproc       endpoint="/api/records/3370053"       template="/static/templates/invenio_csl/citeproc.html"></invenio-csl-citeproc>      <invenio-csl-error       template="/static/node_modules/invenio-csl-js/dist/templates/error.html"></invenio-csl-error>      <invenio-csl-loading       template="/static/node_modules/invenio-csl-js/dist/templates/loading.html"></invenio-csl-loading>      <invenio-csl-typeahead       lazy="true"       placeholder="Start typing a citation style..."       remote="/api/csl/styles"       template="/static/node_modules/invenio-csl-js/dist/templates/typeahead.html"       item-template="/static/templates/invenio_csl/item.html">      </invenio-csl-typeahead>    </invenio-csl>  </div>      </div>      <div class="well"><h4>Export</h4><ul class="list-inline">  <li><a href="/record/3370053/export/hx">BibTeX</a></li>  <li><a href="/record/3370053/export/csl">CSL</a></li>  <li><a href="/record/3370053/export/dcite4">DataCite</a></li>  <li><a href="/record/3370053/export/xd">Dublin Core</a></li>  <li><a href="/record/3370053/export/dcat">DCAT</a></li>  <li><a href="/record/3370053/export/json">JSON</a></li>  <li><a href="/record/3370053/export/schemaorg_jsonld">JSON-LD</a></li>  <li><a href="/record/3370053/export/geojson">GeoJSON</a></li>  <li><a href="/record/3370053/export/xm">MARCXML</a></li>  <li><a href="https://www.mendeley.com/import/?url=https://zenodo.org/record/3370053"><i class="fa fa-external-link"></i> Mendeley</a></li></ul>      </div>    </div>  </div></div><footer class="footer">  <div class="menu-wrapper">    <div class="container">      <div class="row footer-menu">        <div class="col-xs-12 col-md-8">          <div class="row">            <div class="col-xs-2 col-md-2">              <h5>About</h5>              <ul class="list-unstyled">                <li><a href="http://about.zenodo.org">About</a></li>                <li><a href="http://about.zenodo.org/policies">Policies</a></li>                <li><a href="http://about.zenodo.org/infrastructure">Infrastructure</a></li>                <li><a href="http://about.zenodo.org/principles">Principles</a></li>                <li><a href="http://about.zenodo.org/contact">Contact</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Blog</h5>              <ul class="list-unstyled">                <li><a href="http://blog.zenodo.org">Blog</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Help</h5>              <ul class="list-unstyled">                <li><a href="http://help.zenodo.org">FAQ</a></li>                <li><a href="http://help.zenodo.org/features">Features</a></li>                <li><a href="http://help.zenodo.org/whatsnew">What's New</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Developers</h5>              <ul class="list-unstyled">              <li><a href="http://developers.zenodo.org">REST API</a></li>              <li><a href="http://developers.zenodo.org#oai-pmh">OAI-PMH</a></li>              </ul>            </div>            <div class="col-xs-2 col-md-2">              <h5>Contribute</h5>              <ul class="list-unstyled">                <li><a href="http://github.com/zenodo/zenodo"><i class="fa fa-external-link"></i> GitHub</a></li>                <li><a href="/donate"><i class="fa fa-external-link"></i> Donate</a></li>              </ul>            </div>          </div>        </div>        <div class="col-xs-12 col-md-4">          <div class="pull-right-md text-center-sm text-center-xs">            <h5>Funded by</h5>            <ul class="list-inline">              <li><a href="http://home.cern"><img src="/static/img/cern.png" width="60" height="60" /></a></li>              <li><a href="http://www.openaire.eu"><img src="/static/img/openaire.png" width="80" height="60" /></a></li>              <li><a href="https://ec.europa.eu/programmes/horizon2020/"><img src="/static/img/eu.png" width="88" height="60" /></a></li>            </ul>          </div>        </div>      </div>    </div>  </div>  <div class="container">    <div class="row">      <div class="col-xs-12 col-sm-6 col-sm-push-6">        <div class="pull-right-sm text-center-xs">          <ul class="list-inline">            <li><a href="https://status.zenodo.org/">Status</a></li>            <li><a href="http://about.zenodo.org/privacy-policy">Privacy policy</a></li>            <li><a href="http://about.zenodo.org/terms">Terms of Use</a></li>            <li><a href="/support">Support</a></li>          </ul>        </div>      </div>      <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center-xs">        <p>Powered by <a href="http://information-technology.web.cern.ch/about/computer-centre">CERN Data Centre</a> &amp; <a href="http://inveniosoftware.org">Invenio</a></p>      </div>    </div>  </div></footer>  <script type='application/ld+json'>{"@context": "https://schema.org/", "@id": "https://doi.org/10.5281/zenodo.3370053", "@type": "Dataset", "creator": [{"@type": "Person", "affiliation": "Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA", "name": "Pedron, Shawn"}, {"@type": "Person", "affiliation": "Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA", "name": "Holden, Sandra R."}, {"@type": "Person", "affiliation": "Department of Biological Sciences, University of Alaska, Anchorage, AK 99508, USA", "name": "Welker, Jeffrey M."}, {"@type": "Person", "affiliation": "School of the Earth, Ocean and Environment, University of South Carolina, Columbia, SC 29208, USA", "name": "Ziolkowski, Lori A."}, {"@type": "Person", "affiliation": "Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA", "name": "Mortero, Grace"}, {"@type": "Person", "affiliation": "School of the Earth, Ocean and Environment, University of South Carolina, Columbia, SC 29208, USA", "name": "Li, Hongyu"}, {"@type": "Person", "affiliation": "Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA", "name": "Walker, Jennifer"}, {"@type": "Person", "affiliation": "Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA", "name": "Xu, Xiaomei"}, {"@type": "Person", "affiliation": "Department of Earth System Science, University of California, Irvine, CA 92697-3100, USA", "name": "Czimczik, Claudia I."}], "datePublished": "2019-11-04", "description": "\u003cp\u003eSoil radiocarbon data from one moist acidic tussock tundra and one erect shrub tundra (\u003cem\u003eBetula glandulosa\u003c/em\u003e) site\u0026nbsp;in\u0026nbsp;the northern foothills of the Brooks Range near\u0026nbsp;Toolik Field Station, AK, USA. Data covers the active layer. The tussock site is located on Itkillik I glacial deposits. The shrub site is a palsa within a riparian area, and likely underwent a relatively recent shift in vegetation cover from wet sedge to shrub. (The soil profile is made up of two different soil types within the active layer).\u003c/p\u003e", "distribution": [{"@type": "DataDownload", "contentUrl": "https://zenodo.org/api/files/0ddd59f9-6729-400c-a552-4bcd64856722/Pedron_2019.xlsx", "encodingFormat": "xlsx"}], "identifier": "https://doi.org/10.5281/zenodo.3370053", "license": "http://creativecommons.org/licenses/by/4.0/legalcode", "name": "Soil radiocarbon from moist acidic tussock and erect shrub tundra at Toolik Field Station", "url": "https://zenodo.org/record/3370053"}</script><script src="/static/gen/zenodo.60c4ee65.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/static/gen/zenodo.search.cd696cd5.js"></script><script type="text/javascript">var addthis_config = {"data_track_addressbar": true};</script><script type="text/javascript">  // Bootstrap the Invenio CSL Formatter and invenio-search-js  require([    "jquery",    'typeahead.js',    'bloodhound',    "node_modules/angular/angular",    "node_modules/invenio-csl-js/dist/invenio-csl-js",    "node_modules/invenio-search-js/dist/invenio-search-js",    "js/zenodo/module"    ], function(typeahead, Bloodhound) {      angular.element(document).ready(function() {        // FIXME: This is already defined in js/zenodo_deposit/filters.js.        // It should be moved to a common place...        angular.module('zenodo.filters').filter('limitToEllipsis', function () {          return function(text, n) {            return (text.length > n) ? text.substr(0, n-1) + '&hellip;' : text;          };        });        angular.bootstrap(document.getElementById("citations"), [            'invenioSearch',            'zenodo.filters',            'mgcrea.ngStrap.tooltip',          ]        );        angular.bootstrap(document.getElementById("invenio-csl"), [            'invenioCsl',          ]        );      });    }  );  require([    "jquery",    "js/zenodo/functions",    ], function($, recordCommunityCurate) {      $(function () {        $("#recordCommunityCuration .btn").click(recordCommunityCurate);        $('.preview-link').on('click', function(event) {          $('#preview').show();          var filename = encodeURIComponent($(event.target).data('filename'));          $('#preview-iframe').attr("src","/record/3370053/preview/" + filename);        });      });    }  );  $(function () {    $('[data-toggle="tooltip"]').tooltip();  });</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5137aff66ad9c2a1"></script><script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script><script type="text/javascript">var _paq = _paq || [];_paq.push(["setDomains", ["*.zenodo.org","*.zenodo.cern.ch","*.zenodo.eu","*.zenodo.net"]]);_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking"]);(function() {  var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.web.cern.ch/";  _paq.push(["setTrackerUrl", u+"piwik.php"]);  _paq.push(["setSiteId", "57"]);  var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";  g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);})();</script>  </body></html>
-*  Pegoraro, E., Mauritz, M., Bracho, R., Ebert, C., Dijkstra, P., Hungate, B. A., … Schuur, E. A. G. (2019). Glucose addition increases the magnitude and decreases the age of soil respired carbon in a long-term permafrost incubation study. Soil Biology and Biochemistry, 129, 201–211. doi:10.1016/j.soilbio.2018.10.009
-*  Pérez, T., Garcia-Montiel, D., Trumbore, S., Tyler, S., Camargo, P. de, Moreira, M., … Cerri, C. (2006). NITROUS OXIDE NITRIFICATION AND DENITRIFICATION15N ENRICHMENT FACTORS FROM AMAZON FOREST SOILS. Ecological Applications, 16(6), 2153–2167. doi:10.1890/1051-0761(2006)016[2153:nonadn]2.0.co;2
-*  Pessenda, L. C. R., Valencia, E. P. E., Camargo, P. B., Telles, E. C. C., Martinelli, L. A., Cerri, C. C., … Rozanski, K. (1996). Natural Radiocarbon Measurements in Brazilian Soils Developed on Basic Rocks. Radiocarbon, 38(2), 203–208. doi:10.1017/s0033822200017574
-*  Pessenda, L. C. R., Gouveia, S. E. M., & Aravena, R. (2001). Radiocarbon Dating of Total Soil Organic Matter and Humin Fraction and Its Comparison with 14C Ages of Fossil Charcoal. Radiocarbon, 43(2B), 595–601. doi:10.1017/s0033822200041242
-*  PETEET, D., ANDREEV, A., BARDEEN, W., & MISTRETTA, F. (2008). Long-term Arctic peatland dynamics, vegetation and climate history of the Pur-Taz region, Western Siberia. Boreas, 27(2), 115–126. doi:10.1111/j.1502-3885.1998.tb00872.x
-*  Phillips, C. L., McFarlane, K. J., Risk, D., & Desai, A. R. (2013). Biological and physical influences on soil 14CO2 seasonal dynamics in a temperate hardwood forest. Biogeosciences, 10(12), 7999–8012. doi:10.5194/bg-10-7999-2013
-*  Posada, J. M., & Schuur, E. A. G. (2011). Relationships among precipitation regime, nutrient availability, and carbon turnover in tropical rain forests. Oecologia, 165(3), 783–795. doi:10.1007/s00442-010-1881-0
-*  Quideau, S. A., Chadwick, O. A., Trumbore, S. E., Johnson-Maynard, J. L., Graham, R. C., & Anderson, M. A. (2001). Vegetation control on soil organic matter dynamics. Organic Geochemistry, 32(2), 247–252. doi:10.1016/s0146-6380(00)00171-6
-*  Rabbi, S. M. F., Hua, Q., Daniel, H., Lockwood, P. V., Wilson, B. R., & Young, I. M. (2013). Mean Residence Time of Soil Organic Carbon in Aggregates Under Contrasting Land Uses Based on Radiocarbon Measurements. Radiocarbon, 55(1), 127–139. doi:10.2458/azu_js_rc.v55i1.16179
-*  Rasmussen, C., Torn, M. S., & Southard, R. J. (2005). Mineral Assemblage and Aggregates Control Carbon Dynamics in a California Conifer Forest. Soil Science Society of America Journal, 69(6), 1711–1721. doi:10.2136/sssaj2005.0040
-*  Rasmussen, C., & White, D. A. (2010). Vegetation Effects on Soil Organic Carbon Quality in an Arid Hyperthermic Ecosystem. Soil Science, 175(9), 438–446. doi:10.1097/ss.0b013e3181f38400
-*  Rasmussen, C., Throckmorton, H., Liles, G., Heckman, K., Meding, S., & Horwath, W. (2018). Controls on Soil Organic Carbon Partitioning and Stabilization in the California Sierra Nevada. Soil Systems, 2(3), 41. doi:10.3390/soilsystems2030041
-*  Resh, S. C., Binkley, D., & Parrotta, J. A. (2002). Greater Soil Carbon Sequestration under Nitrogen-fixing Trees Compared with Eucalyptus Species. Ecosystems, 5(3), 217–231. doi:10.1007/s10021-001-0067-3
-*  Rethemeyer, J., Kramer, C., Gleixner, G., John, B., Yamashita, T., Flessa, H., … Grootes, P. M. (2005). Transformation of organic matter in agricultural soils: radiocarbon concentration versus soil depth. Geoderma, 128(1-2), 94–105. doi:10.1016/j.geoderma.2004.12.017
-*  Richter, D. D., Markewitz, D., Trumbore, S. E., & Wells, C. G. (1999). Rapid accumulation and turnover of soil carbon in a re-establishing forest. Nature, 400(6739), 56–58. doi:10.1038/21867
-*  Robinson, S. D. (2006). Carbon accumulation in peatlands, southwestern Northwest Territories, Canada. Canadian Journal of Soil Science, 86(Special Issue), 305–319. doi:10.4141/s05-086
-*  Rogers, B. M., Veraverbeke, S., Azzari, G., Czimczik, C. I., Holden, S. R., Mouteva, G. O., … Randerson, J. T. (2014). Quantifying fire-wide carbon emissions in interior Alaska using field measurements and Landsat imagery. Journal of Geophysical Research: Biogeosciences, 119(8), 1608–1629. doi:10.1002/2014jg002657
-*  Rumpel, C., Kögel-Knabner, I., & Bruhn, F. (2002). Vertical distribution, age, and chemical composition of organic carbon in two forest soils of different pedogenesis. Organic Geochemistry, 33(10), 1131–1142. doi:10.1016/s0146-6380(02)00088-8
-*  Rumpel, C., Chaplot, V., Chabbi, A., Largeau, C., & Valentin, C. (2008). Stabilisation of HF soluble and HCl resistant organic matter in sloping tropical soils under slash and burn agriculture. Geoderma, 145(3-4), 347–354. doi:10.1016/j.geoderma.2008.04.001
-*  Saiz, G., Bird, M., Wurster, C., Quesada, C. A., Ascough, P., Domingues, T., … Lloyd, J. (2015). The influence of C3 and C4 vegetation on soil organic matter dynamics in contrasting semi-natural tropical ecosystems. Biogeosciences, 12(16), 5041–5059. doi:10.5194/bg-12-5041-2015
-*  Sanderman, J., Creamer, C., Baisden, W. T., Farrell, M., & Fallon, S. (2017). Greater soil carbon stocks and faster turnover rates with increasing agricultural productivity. SOIL, 3(1), 1–16. doi:10.5194/soil-3-1-2017
-*  NULL
-*  Scharpenseel, H. W., & Pietig, F. (1973). University of Bonn Natural Radiocarbon Measurements V. Radiocarbon, 15(1), 13–41. doi:10.1017/s0033822200058586
-*  Schimel, J. P., Wetterstedt, J. Å. M., Holden, P. A., & Trumbore, S. E. (2011). Drying/rewetting cycles mobilize old C from deep soils from a California annual grassland. Soil Biology and Biochemistry, 43(5), 1101–1103. doi:10.1016/j.soilbio.2011.01.008
-*  Schöning, I., & Kögel-Knabner, I. (2006). Chemical composition of young and old carbon pools throughout Cambisol and Luvisol profiles under forests. Soil Biology and Biochemistry, 38(8), 2411–2424. doi:10.1016/j.soilbio.2006.03.005
-*  Schulze, K., Borken, W., Muhr, J., & Matzner, E. (2009). Stock, turnover time and accumulation of organic matter in bulk and density fractions of a Podzol soil. European Journal of Soil Science, 60(4), 567–577. doi:10.1111/j.1365-2389.2009.01134.x
-*  Schulze, K., Borken, W., & Matzner, E. (2010). Dynamics of dissolved organic 14C in throughfall and soil solution of a Norway spruce forest. Biogeochemistry, 106(3), 461–473. doi:10.1007/s10533-010-9526-2
-*  Schuur, E. A. G., Chadwick, O. A., & Matson, P. A. (2001). CARBON CYCLING AND SOIL CARBON STORAGE IN MESIC TO WET HAWAIIAN MONTANE FORESTS. Ecology, 82(11), 3182–3196. doi:10.1890/0012-9658(2001)082[3182:ccascs]2.0.co;2
-*  Schuur, E. A. G., & Trumbore, S. E. (2006). Partitioning sources of soil respiration in boreal black spruce forest using radiocarbon. Global Change Biology, 12(2), 165–176. doi:10.1111/j.1365-2486.2005.01066.x
-*  Schuur, E. A. G., Vogel, J. G., Crummer, K. G., Lee, H., Sickman, J. O., & Osterkamp, T. E. (2009). The effect of permafrost thaw on old carbon release and net carbon exchange from tundra. Nature, 459(7246), 556–559. doi:10.1038/nature08031
-*  Schwartz, D., de Foresta, H., Mariotti, A., Balesdent, J., Massimba, J. P., & Girardin, C. (1996). Present dynamics of the savanna-forest boundary in the Congolese Mayombe: a pedological, botanical and isotopic (13C and 14C) study. Oecologia, 106(4), 516–524. doi:10.1007/bf00329710
-*  Shaw, D., Franklin, J., Bible, K., Klopatek, J., Freeman, E., Greene, S., & Parker, G. (2004). Ecological Setting of the Wind River Old-growth Forest. Ecosystems, 7(5). doi:10.1007/s10021-004-0135-6
-*  Shen, C., Yi, W., Sun, Y., Xing, C., Yang, Y., Yuan, C., … Liu, T. (2001). Distribution of 14C and 13C in Forest Soils of the Dinghushan Biosphere Reserve. Radiocarbon, 43(2B), 671–678. doi:10.1017/s0033822200041321
-*  Sierra, C. A., Trumbore, S. E., Davidson, E. A., Frey, S. D., Savage, K. E., & Hopkins, F. M. (2012). Predicting decadal trends and transient responses of radiocarbon storage and fluxes in a temperate forest soil. Biogeosciences, 9(8), 3013–3028. doi:10.5194/bg-9-3013-2012
-*  Sierra, C. A., Jiménez, E. M., Reu, B., Peñuela, M. C., Thuille, A., & Quesada, C. A. (2013). Low vertical transfer rates of carbon inferred from radiocarbon analysis in an Amazon Podzol. Biogeosciences, 10(6), 3455–3464. doi:10.5194/bg-10-3455-2013
-*  Sollins, P., Swanston, C., Kleber, M., Filley, T., Kramer, M., Crow, S., … Bowden, R. (2006). Organic C and N stabilization in a forest soil: Evidence from sequential density fractionation. Soil Biology and Biochemistry, 38(11), 3313–3324. doi:10.1016/j.soilbio.2006.04.014
-*  Sollins, P., Kramer, M. G., Swanston, C., Lajtha, K., Filley, T., Aufdenkampe, A. K., … Bowden, R. D. (2009). Sequential density fractionation across soils of contrasting mineralogy: evidence for both microbial- and mineral-controlled soil organic matter stabilization. Biogeochemistry, 96(1-3), 209–231. doi:10.1007/s10533-009-9359-z
-*  Stephan, S., Berrier, J., De Petre, A. A., Jeanson, C., Kooistra, M. J., Scharpenseel, H. W., & Schiffmann, H. (1983). Characterization of in situ organic matter constituents in vertisols from Argentina, using submicroscopic and cytochemical methods — first report. Geoderma, 30(1-4), 21–34. doi:10.1016/0016-7061(83)90054-x
-*  Stout, J. D., & Goh, K. M. (1980). The Use of Radiocarbon to Measure the Effects of Earthworms On Soil Development. Radiocarbon, 22(3), 892–896. doi:10.1017/s0033822200010298
-*  Striegl, R. G., Dornblaser, M. M., Aiken, G. R., Wickland, K. P., & Raymond, P. A. (2007). Carbon export and cycling by the Yukon, Tanana, and Porcupine rivers, Alaska, 2001-2005. Water Resources Research, 43(2). doi:10.1029/2006wr005201
-*  Stubbins, A., Hood, E., Raymond, P. A., Aiken, G. R., Sleighter, R. L., Hernes, P. J., … Spencer, R. G. M. (2012). Anthropogenic aerosols as a source of ancient dissolved organic matter in glaciers. Nature Geoscience, 5(3), 198–201. doi:10.1038/ngeo1403
-*  Swanston, C. W., Torn, M. S., Hanson, P. J., Southon, J. R., Garten, C. T., Hanlon, E. M., & Ganio, L. (2005). Initial characterization of processes of soil carbon stabilization using forest stand-level radiocarbon enrichment. Geoderma, 128(1-2), 52–62. doi:10.1016/j.geoderma.2004.12.015
-*  Swindles, G. T., Morris, P. J., Whitney, B., Galloway, J. M., Gałka, M., Gallego‐Sala, A., … Lähteenoja, O. (2017). Ecosystem state shifts during long‐term development of an Amazonian peatland. Global Change Biology, 24(2), 738–757. doi:10.1111/gcb.13950
-*  Szymanski, L. M., Sanford, G. R., Heckman, K. A., Jackson, R. D., & Marín-Spiotta, E. (2019). Conversion to bioenergy crops alters the amount and age of microbially-respired soil carbon. Soil Biology and Biochemistry, 128, 35–44. doi:10.1016/j.soilbio.2018.08.025
-*  Tan, W., Zhou, L., & Liu, K. (2013). Soil aggregate fraction-based 14C analysis and its application in the study of soil organic carbon turnover under forests of different ages. Chinese Science Bulletin, 58(16), 1936–1947. doi:10.1007/s11434-012-5660-7
-*  NULL
-*  Taylor, A. J., Lai, C.-T., Hopkins, F. M., Wharton, S., Bible, K., Xu, X., … Ehleringer, J. R. (2015). Radiocarbon-Based Partitioning of Soil Respiration in an Old-Growth Coniferous Forest. Ecosystems, 18(3), 459–470. doi:10.1007/s10021-014-9839-4
-*  Tefs, C., & Gleixner, G. (2012). Importance of root derived carbon for soil organic matter storage in a temperate old-growth beech forest – Evidence from C, N and 14C content. Forest Ecology and Management, 263, 131–137. doi:10.1016/j.foreco.2011.09.010
-*  Tegen, I., & Dörr, H. (1996). 14C Measurements of Soil Organic Matter, Soil Co2 and Dissolved Organic Carbon (1987–1992). Radiocarbon, 38(2), 247–251. doi:10.1017/s0033822200017628
-*  Martinelli, I. A., Pessenda, L. C. R., Espinoza, E., Camargo, P. B., Telles, F. C., Cerri, C. C., … Trumbore, S. (1996). Carbon-13 variation with depth in soils of Brazil and climate change during the Quaternary. Oecologia, 106(3), 376–381. doi:10.1007/bf00334565
-*  Tifafi, M., Camino-Serrano, M., Hatté, C., Morras, H., Moretti, L., Barbaro, S., … Guenet, B. (2018). The use of radiocarbon 14C to constrain carbon dynamics in the soil module of the land surface model ORCHIDEE (SVN r5165). Geoscientific Model Development, 11(12), 4711–4726. doi:10.5194/gmd-11-4711-2018
-*  Tonneijck, F. H., van der Plicht, J., Jansen, B., Verstraten, J. M., & Hooghiemstra, H. (2006). Radiocarbon Dating of Soil Organic Matter Fractions in Andosols in Northern Ecuador. Radiocarbon, 48(3), 337–353. doi:10.1017/s0033822200038790
-*  Torn, M. S., Trumbore, S. E., Chadwick, O. A., Vitousek, P. M., & Hendricks, D. M. (1997). Mineral control of soil organic carbon storage and turnover. Nature, 389(6647), 170–173. doi:10.1038/38260
-*  Torn, M. S., Lapenis, A. G., Timofeev, A., Fischer, M. L., Babikov, B. V., & Harden, J. W. (2002). Organic carbon and carbon isotopes in modern and 100-year-old-soil archives of the Russian steppe. Global Change Biology, 8(10), 941–953. doi:10.1046/j.1365-2486.2002.00477.x
-*  Torn, M. S., Vitousek, P. M., & Trumbore, S. E. (2005). The Influence of Nutrient Availability on Soil Organic Matter Turnover Estimated by Incubations and Radiocarbon Modeling. Ecosystems, 8(4), 352–372. doi:10.1007/s10021-004-0259-8
-*  Tremblay, S., Bhiry, N., & Lavoie, M. (2014). Long-term dynamics of a palsa in the sporadic permafrost zone of northwestern Quebec (Canada). Canadian Journal of Earth Sciences, 51(5), 500–509. doi:10.1139/cjes-2013-0123
-*  Trumbore, S. E. (1993). Comparison of carbon dynamics in tropical and temperate soils using radiocarbon measurements. Global Biogeochemical Cycles, 7(2), 275–290. doi:10.1029/93gb00468
-*  Trumbore, S. E., Davidson, E. A., Barbosa de Camargo, P., Nepstad, D. C., & Martinelli, L. A. (1995). Belowground cycling of carbon in forests and pastures of eastern Amazonia. Global Biogeochemical Cycles, 9(4), 515–528. doi:10.1029/95gb02148
-*  De Camargo, P. B., Trumbore, S. E., Martinelli, L. A., Davidson, E. A., Nepstad, D. C., & Victoria, R. L. (1999). Soil carbon dynamics in regrowing forest of eastern Amazonia. Global Change Biology, 5(6), 693–702. doi:10.1046/j.1365-2486.1999.00259.x
-*  <!DOCTYPE html><html lang="en-US"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="ORNL DAAC: This data set contains carbon isotope signatures from soil organic matter collected from the following sites: the forests of the ZF-2 INPA reserve approximately 80 km north of the city of Manaus, Amazon; the Tapajos National Forest approximately 83 km south of the city of Santarem, Para; and the Fazenda Vitoria, a ranch near the city of Paragominas, Para. Samples from the Fazenda Vitoria were from degraded and managed pasture sites as well as mature and secondary forests. In addition,carbon isotope signatures from roots sorted by size class, hand-picked from soil pits in the Flona Tapajos and Fazenda Vitoria, are included, as are carbon isotope signatures from soil gases from samples collected at the Fazenda Vitoria. There are 4 ASCII data files with this data set.
 
-"><meta name="keywords" content="C14,C13,CARBON13,ROOTS,CARBON ISOTOPES,RADIOCARBON,SOIL ORGANIC MATTER,SOIL CARBON,LAND SURFACE > SOILS > CARBON,LAND SURFACE > SOILS > SOIL GAS/AIR,SOLID EARTH > GEOCHEMISTRY > GEOCHEMICAL PROPERTIES > ISOTOPES,LABORATORY > MASS SPECTROMETERS,LABORATORY > CHN ANALYZERS"><title>LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil , https://doi.org/10.3334/ORNLDAAC/1025</title><link rel="stylesheet" href="/js/datatables/datatables.ornldaacCustom.min.css"><link rel="stylesheet" href="/css/new.css"><link rel="stylesheet" href="/css/datasetlister.min.css"><script type="application/ld+json">{"provider":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"sourceOrganization":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"creator":[{"name":"TELLES, E.D.C.","@type":"Person"},{"name":"DE CAMARGO, P.B.","@type":"Person"},{"name":"MARTINELLI, L.A.","@type":"Person"},{"name":"TRUMBORE, S.E.","@type":"Person"},{"name":"DA COSTA, E.S.","@type":"Person"},{"name":"SANTOS, J.","@type":"Person"},{"name":"HIGUCHI, N.","@type":"Person"},{"name":"OLIVEIRA, R.C.D.","@type":"Person"},{"name":"MARKEWITZ, D.","@type":"Person"}],"publishingPrinciples":"https://daac.ornl.gov/submit/","isAccessibleForFree":"true","keywords":["C14","C13","CARBON13","ROOTS","CARBON ISOTOPES","RADIOCARBON","SOIL ORGANIC MATTER","SOIL CARBON","LAND SURFACE > SOILS > CARBON","LAND SURFACE > SOILS > SOIL GAS/AIR","SOLID EARTH > GEOCHEMISTRY > GEOCHEMICAL PROPERTIES > ISOTOPES","LABORATORY > MASS SPECTROMETERS","LABORATORY > CHN ANALYZERS"],"spatialCoverage":{"geo":{"box":"-3.017 -60.2091 -2.5 -47.516","@type":"GeoShape"},"@type":"Place"},"url":"https://doi.org/10.3334/ORNLDAAC/1025","about":{"url":"https://daac.ornl.gov/LBA/guides/CD08_C_Isotopes_Belowground.html","name":"User Guide","image":"https://daac.ornl.gov/daac_logo.png","@type":"WebPage"},"publisher":{"logo":"https://daac.ornl.gov/daac_logo.png","contactPoint":{"email":"uso@daac.ornl.gov","telephone":"+18652413952","contactType":"customer support","name":"ORNL DAAC User Support Office","@type":"ContactPoint"},"name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"@type":"DataSet","citation":"Telles, E.D.C., P.B. de Camargo, L.A. Martinelli, S.E. Trumbore, E.S. da Costa, J. Santos, N. Higuchi, R.C.D. Oliveira, and D. Markewitz. 2011. LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil. ORNL DAAC, Oak Ridge, Tennessee, USA. http://dx.doi.org/10.3334/ORNLDAAC/1025","dateCreated":"2011-08-22","locationCreated":"Oak Ridge, Tennessee, USA","thumbnailUrl":"","temporalCoverage":"1992-05-01/1999-07-05","version":"1","name":"LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil ","description":"This data set contains carbon isotope signatures from soil organic matter collected from the following sites: the forests of the ZF-2 INPA reserve approximately 80 km north of the city of Manaus, Amazon; the Tapajos National Forest approximately 83 km south of the city of Santarem, Para; and the Fazenda Vitoria, a ranch near the city of Paragominas, Para. Samples from the Fazenda Vitoria were from degraded and managed pasture sites as well as mature and secondary forests. In addition,carbon isotope signatures from roots sorted by size class, hand-picked from soil pits in the Flona Tapajos and Fazenda Vitoria, are included, as are carbon isotope signatures from soil gases from samples collected at the Fazenda Vitoria. There are 4 ASCII data files with this data set.\r\n\r\n","sameAs":"https://daac.ornl.gov/cgi-bin/dsviewer.pl?ds_id=1025","distribution":[{"provider":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"url":"https://daac.ornl.gov/daacdata/lba/carbon_dynamics/CD08_C_Isotopes_Belowground/","name":"Direct Access: LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil ","publisher":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"encodingFormat":null,"description":"This link allows direct data access via Earthdata Login to: LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil ","@type":"DataDownload"},{"provider":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"contentSize":"22.1 KB","name":"Download Dataset: LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil ","description":"Download entire dataset bundle: LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil ","url":"https://daac.ornl.gov/cgi-bin/download.pl?ds_id=1025&source=schema_org_metadata","encodingFormat":null,"publisher":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"@type":"DataDownload"}],"datePublished":"2011-08-22","includedInDataCatalog":[{"provider":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"url":"https://daac.ornl.gov/cgi-bin/dataset_lister.pl?p=11","name":"Large Scale Biosphere-Atmosphere Experiment (LBA-ECO)","publisher":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"@type":"DataCatalog"},{"provider":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"url":"https://search.earthdata.nasa.gov/search","name":"NASA Earthdata Search","publisher":{"logo":"https://daac.ornl.gov/daac_logo.png","name":"ORNL DAAC","url":"https://daac.ornl.gov","@type":"Organization"},"@type":"DataCatalog"}],"@context":"https://schema.org","@id":"https://doi.org/10.3334/ORNLDAAC/1025"}</script><script type="application/ld+json">{"@context": "http://schema.org/","@type": "Organization","url": "https://daac.ornl.gov","logo": "https://daac.ornl.gov/daac_logo.png"}</script><meta name="citation_publication_date" content="2011-08-22"><meta name="citation_author" content="TELLES, E.D.C.;DE CAMARGO, P.B.;MARTINELLI, L.A.;TRUMBORE, S.E.;DA COSTA, E.S.;SANTOS, J.;HIGUCHI, N.;OLIVEIRA, R.C.D.;MARKEWITZ, D."><meta name="citation_title" content="LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil "><meta name="citation_keywords" content="C14,C13,CARBON13,ROOTS,CARBON ISOTOPES,RADIOCARBON,SOIL ORGANIC MATTER,SOIL CARBON,LAND SURFACE > SOILS > CARBON,LAND SURFACE > SOILS > SOIL GAS/AIR,SOLID EARTH > GEOCHEMISTRY > GEOCHEMICAL PROPERTIES > ISOTOPES,LABORATORY > MASS SPECTROMETERS,LABORATORY > CHN ANALYZERS"><meta name="citation_doi" content="https://doi.org/10.3334/ORNLDAAC/1025"><meta name="citation_journal_title" content="ORNL DAAC"></head><body><div class="pagebox"><script>  var dataLayer = window.dataLayer = window.dataLayer || [];  dataLayer.push({      'event': 'ipAddress',      'ipAddress': '77.183.187.236'  });</script><a id="skip-nav" href="#main-content">Skip to main content</a><header class="headerbox"> <!-- begin headerbox container div --><div class="headerpicbox"><a id="daac-link" href="/" title="ORNL DAAC">ORNL DAAC Home</a><a id="nasa-link" href="https://www.nasa.gov" title="NASA" target="_blank">NASA Home</a><nav class="menubox"><ul class="nav">	<li class="top first home"><a class="top_link" href="/" title="ORNL DAAC home"><span class="fa fa-home fa-fw"></span><span class="home_text down">Home</span></a>	</li>	<li class="top"><a href="/about/" class="top_link"><span class="down">About Us</span></a>		<ul class="sub">			<!-- <li><a href="/about_us.shtml"><span>About ORNL DAAC</span></a></li> -->			<!-- <li><a href="/who.shtml"><span>Who We Are</span></a></li> -->			<!-- <li><a href="/partners.html"><span>Partners</span></a></li> -->			<!-- <li><a href="/UWG/publicuwg.shtml"><span>User Working Group</span></a></li> -->			<!-- <li><a href="/about/biogeochem/"><span>Biogeochemical Dynamics</span></a></li> -->			<li><a href="/about#mission"><span>Mission</span></a></li>			<li><a href="/about#citation_policy"><span>Data Use and Citation Policy</span></a></li>			<li><a href="/about#uwg"><span>User Working Group</span></a></li>			<li><a href="/about#partners"><span>Partners</span></a></li>		</ul>	</li>	<!-- <li class="top"><a href="/about/about_us.html"><span>About Us</span></a></li> -->	<li class="top"><a href="/get_data/" class="top_link"><span class="down">Get Data</span></a>		<ul class="sub">			<!--<li><a href="/get_data#datasearch" class="fly"><span>Search for Data</span></a>				<ul>					<li><a href="/doi_search_page.shtml"><span>Search by DOI</span></a></li>					<li><a href="/doi.pl"><span>DOI Search Results</span></a></li>					<li><a href="/daacdata"><span>Browse Data</span></a></li>				</ul>			</li>-->			<li><a href="/get_data#themes" class="fly"><span>Science Themes</span></a>				<ul>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=1"><span>Vegetation and Forests</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=2"><span>Arctic Ecosystems</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=3"><span>Soils</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=4"><span>Carbon Cycle</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=5"><span>Biomass</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=6"><span>Land Use and Human Dimensions</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=7"><span>Hydrology and Cryosphere</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=8"><span>Fire</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=9"><span>Climate</span></a></li>				</ul>			</li>			<li><a href="/get_data#projects" class="fly"><span>NASA Projects</span></a>				<ul>					<li><a href="/cgi-bin/dataset_lister.pl?p=1"><span>BigFoot</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=10"><span>Hydroclimatology Collection</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=11"><span>Large Scale Biosphere-Atmosphere Experiment (LBA-ECO)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=12"><span>MODIS Land Products Subsets</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=13"><span>Net Primary Productivity (NPP)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=14"><span>Oregon Transect Ecosystem Research Project (OTTER)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=15"><span>Prototype Validation Exercise (PROVE)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=16"><span>River Discharge (RIVDIS)</span></a></li> -->					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=17"><span>Russian Land Cover (RLC)</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=18"><span>Southern African Regional Science Initiative Project (SAFARI 2000)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=19"><span>Soil Collection</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=2"><span>Boreal Ecosystem-Atmosphere Study (BOREAS)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=20"><span>Superior National Forest</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=21"><span>Vegetation Collection</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=22"><span>Vegetation-Ecosystem Modeling and Analysis Project (VEMAP)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=25"><span>Unknown</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=27"><span>Model Archive</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=28"><span>North American Carbon Program (NACP)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=29"><span>International Satellite Land Surface Climatology Project (ISLSCP II)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=3"><span>Boreal Ecosystem-Atmosphere Study (BOREAS) Follow On</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=30"><span>Atmospheric Tracer Transport Model Intercomparison Project (TransCom)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=31"><span>Services</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=32"><span>Daymet</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=33"><span>Carbon Monitoring System (CMS)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=34"><span>Arctic-Boreal Vulnerability Experiment (ABoVE)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=35"><span>Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=36"><span>Airborne Microwave Observatory of Subcanopy and Subsurface (AirMOSS)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=37"><span>Atmospheric Carbon and Transport - America (ACT-America)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=38"><span>AfriSAR</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=39"><span>Atmospheric Tomography Mission (ATom)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=4"><span>Accelerated Canopy Chemistry Program (ACCP)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=40"><span>Global Ecosystem Dynamics Investigation (GEDI)</span></a></li> -->					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=41"><span>Delta-X</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=42"><span>MEaSUREs</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=5"><span>Climate Collection</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=6"><span>EOS Land Validation</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=7"><span>First ISLSCP Field Experiment (FIFE)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=8"><span>First ISLSCP Field Experiment (FIFE)  Follow On</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=9"><span>FLUXNET</span></a></li>				</ul>			</li>			<li><a href="/get_data#datasets" class="fly">All Datasets</a></li>		</ul>	</li>	<!-- <li class="top"><a href="/get_data/get_data.html"><span>Get Data</span></a></li> -->	<li class="top"><a href="/submit/" class="top_link"><span class="down">Submit Data</span></a>		<ul class="sub">			<li><a href="/submit/form/form.html"><span>Submit Data Form</span></a></li>			<li><a href="/submit/#scope_and_acceptance_policy"><span>Data Scope and Acceptance</span></a></li>			<li><a href="/submit/#authorship"><span>Data Authorship Policy</span></a></li>			<li><a href="/submit/#timeline"><span>Data Publication Timeline</span></a></li>			<li><a href="/submit/#guidelines"><span>Detailed Submission Guidelines</span></a></li>		</ul>	</li>	<!-- <li class="top"><a href="/submit/submit.html"><span>Submit Data</span></a>		<ul class="sub">			<li><a href="/submit/form/form.html"><span>Submit Data Form</span></a></li>			<li><a href="/submit/#scope_and_acceptance_policy"><span>Data Scope and Acceptance Policy</span></a></li>			<li><a href="/submit/#authorship"><span>Data Authorship Policy</span></a></li>			<li><a href="/submit/#timeline"><span>Data Publication Timeline</span></a></li>			<li><a href="/submit/#guidelines"><span>Detailed Submission Guidelines</span></a></li>			<li><a href="/submit/questions/questions.html"><span>Data Provider Questions</span></a></li>			<li><a href="/submit/qachecklist/qachecklist.html"><span>Data Quality Review Checklist</span></a></li>			<li><a href="/submit/csvstandards/csvstandards.html"><span>CSV Standards</span></a></li>			<li><a href="/submit/netcdfrequirements/netcdfrequirements.html"><span>NetCDF Data Requirements</span></a></li>			<li><a href="/submit/help/helpsub.html"><span>Submission Help</span></a></li>		</ul>	</li> -->	<li class="top"><a href="/tools/" class="top_link"><span class="down">Tools</span></a>		<ul class="sub">			<!-- <li><a href="/tools/"><span>Data Tools</span></a></li> -->			<li><a href="https://modis.ornl.gov/data.html" class="fly"><span>MODIS</span></a>				<ul>					<li><a href="/modisfixedsite/"><span>MODIS Fixed Site Subsets</span></a></li>					<li><a href="/modisglobal/"><span>MODIS Global Subsets</span></a></li>					<li><a href="/modiswebservice/"><span>MODIS Web service</span></a></li>				</ul></li>			<li><a href="https://thredds.daac.ornl.gov/thredds/catalogs/ornldaac/ornldaac.html"><span>THREDDS</span></a></li>			<li><a href="https://webmap.ornl.gov/ogc"><span>SDAT</span></a></li>			<li><a href="https://daymet.ornl.gov"><span>Daymet</span></a></li>			<li><a href="https://carve.ornl.gov/visualize/"><span>CARVE Data Viewer</span></a></li>			<li><a href="https://airmoss.ornl.gov/visualize/"><span>Soil Moisture Visualizer</span></a></li>			<li><a href="https://webmap.ornl.gov/qaqc/landwater/"><span>Land - Water Checker</span></a></li>			<!-- <li><a href="/cgi-bin/service_dataset_lister.pl?svc_id=1"><span>Spatial Data Access</span></a></li> -->			<!-- <li><a href="/cgi-bin/service_dataset_lister.pl?svc_id=2"><span>Spatial Data Access</span></a></li> -->			<!-- <li><a href="/spatial_data_access.shtml"><span>Spatial Data Access</span></a></li> -->			<!-- <li><a href="/webgis.shtml"><span>WebGIS</span></a></li> -->			<!-- <li><a href="/thredds.shtml"><span>THREDDS</span></a></li> -->			<!-- <li><a href="/cgi-bin/service_dataset_lister.pl?svc_id=4"><span>THREDDS</span></a></li> -->		</ul>	</li>	<!-- <li class="top"><a href="/tools/tools.html"><span>Tools</span></a></li> -->	<li class="top"><a href="/resources/" class="top_link"><span class="down">Resources</span></a>		<ul class="sub">			<li><a href="/resources/learning/"><span>Learning</span></a></li>			<li><a href="/datamanagement/"><span>Data Management</span></a></li>			<li><a href="https://daac-news.ornl.gov/"><span>News</span></a></li>		</ul>	</li>	<!-- <li class="top"><a href="/resources/resources.html"><span>Resources</span></a>		<ul class="sub">			<li><a href="/resources/learning/learning.html"><span>Learning</span></a></li>			<li><a href="/datamanagement/datamanagement.html"><span>Data Management</span></a></li>		</ul>	</li> -->	<li class="top nofoot"><a href="/help/" class="top_link"><span class="down">Help</span></a></li>	<!-- <li class="top"><a href="/help/help.html">Help</a></li> -->	<li class="top notab"><a href="javascript:feedback.showForm();" class="top_link" title="User's Service Office" id="Contact"><span class="fa fa-comment fa-flip-horizontal fa-fw"></span><span class="down">Contact Us</span></a></li></ul></nav> <!-- end of menubox --><div id="signin" class="signin"><a class="top_link" title="sign in" href="/cgi-bin/urs/urs_logon_initiate.pl"><span><span class="icon-signin"></span>Sign in</span></a></div></div> <!-- end of headerpicbox --><div class="menuBar"></div></header> <!-- end of headerbox container --><!-- Start Overlay --><div id="overlay"></div><!-- End Overlay --><!-- Start Special Centered Box --><div id="specialBox">  <span class="remove" onmousedown="toggleOverlay()" title="close search results overlay"> <span class="icon-remove"></span></span>  <div id="tabs">    <ul>      <li><a href="#cmr">Data</a></li>      <li id="websiteTab"><a href="#website">Website</a></li>      <li id="mercuryTab"><a href="#mercury">Mercury</a></li>      <li><a href="#doi">DOI</a></li>    </ul>    <!-- CMR search results -->    <div id="cmr">      <div class="container">        <div class="content">          <div class="adv-link">            <a class="eui-btn--green" id="cmr-link" href="https://search.earthdata.nasa.gov/portal/ornldaac/search">Earthdata Search<span              class="icon-external-link pad-left" title="external link"></span></a>          </div>          <div id="cmr-results" class="results"></div>        </div>      </div>    </div>    <!-- CMR search results -->    <!-- Google CSE search results -->    <div id="website">      <div class="search">        <div class="search-results">          <div id="gcs-results" class="results"></div>          <hr>        </div>      </div>    </div>    <!-- Google CSE search results -->    <!-- Mercury search results -->    <div id="mercury">      <div class="container">        <div class="content">          <div class="adv-link">            <a class="button" id="hg-link" href="javascript:M3Link('&');">Advanced Data Search</a>          </div>          <div id="hg-results" class="results"></div>        </div>      </div>    </div>    <!-- Mercury search results -->    <!-- DOI search results -->    <div id="doi">      <div class="doi-search">        <div class="doi-search-results">          <div class="adv-link">            <a class="eui-btn--green" id="doi-link" href="/cgi-bin/daac_doi/doi_search_proc.pl">DOI Search Page</a>          </div>          <div id="doi-results" class="results"></div>          <hr>        </div>      </div>    </div>    <!-- DOI search results -->  </div></div><!-- End Special Centered Box --><div id="searchWrapper" class="headWrapper">  <div id="searchFrame" class="rightFrameSearch">    <form id="searchform" method="GET" action="https://search.earthdata.nasa.gov/search/" onsubmit="return getValue();">      <table id="searchTable" class="iconbar">        <tbody>          <tr>            <td>              <label for="term1" class="hidden">Search ORNL DAAC</label>              <input class="iconitem" type="text" id="term1" name="term1" size="30" placeholder="Search ORNL DAAC">              <label for="term1attribute" class="hidden">Use fullText search (only for fallback)</label>              <input type=hidden id="term1attribute" name="term1attribute" value="fullText">              <label for="term6attribute" class="hidden">datasource (only for fallback)</label>              <input type=hidden id="term6attribute" name="term6attribute" value="datasource">            </td>            <td>              <label for="term6" class="hidden">select source (only for fallback)</label>              <select id="term6" name="term6" size="1" class="iconitem" style="width: auto;">                <option value="daac">Data</option>                <option value="daacweb">Website</option>                <option value="doi">DOI</option>              </select>            </td>            <td><button id="go" type="submit" class="go eui-btn--green"><span class="icon-search pad-right"></span>Search</button></td>          </tr>        </tbody>      </table>    </form>  </div>  <hr /></div><div id="crumbs" class="crumbs"><a href="/">DAAC Home</a> > <a href="/get_data/">Get Data</a> > <a href="/get_data#projects">NASA Projects</a> > <a href="/cgi-bin/dataset_lister.pl?p=11">Large Scale Biosphere-Atmosphere Experiment (LBA-ECO)</a> > Landing page</div><span id="main-content"></span><script>var tabToHighlight = "Get Data";</script>    <div class="textarea">    <h1 class="pagetitle">LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil </h1>    <div class="mainarea"><aside id="dataset_graphics"><h2 class="eui-sr-only">Spatial and Temporal Coverage</h2><div id="bounding_box_div"><div id="map"></div></div><h3 class="coverage">Spatial Coverage</h3> <ol class="coordinates" id="coordinates"><li class="label">Bounding rectangle</li><li class="coverage-badge eui-badge--md">N: -2.50</li><li class="coverage-badge eui-badge--md">S: -3.02</li><li class="coverage-badge eui-badge--md">E: -47.52</li><li class="coverage-badge eui-badge--md">W: -60.21</li></ol><h3 class="coverage">Temporal Coverage</h3><span class="coverage-badge eui-badge--md">1992-05-01 to 1999-07-05</span></aside>    <h2 class="dsoverview">Overview</h2>    <div class="dsoverview">    <table id="ds_overview_table"><tbody><tr><th scope="row">DOI</th><td>https://doi.org/10.3334/ORNLDAAC/1025</td></tr><tr><th scope="row">Version</th><td>1</td></tr><tr><th scope="row">Project</th><td><ul class="associated-projects"><li><a href="/cgi-bin/dataset_lister.pl?p=11"><span class="eui-badge--md primary-project">LBA-ECO</span></a></li></ul></td></tr><tr><th scope="row">Published</th><td>2011-08-22</td></tr><tr><th scope="row">Updated</th><td>2011-08-22</td></tr><tr><th scope="row">Usage</th><td title="383 total files since 2011-08-30">95 downloads</td></tr>    </tbody></table>    </div><div class="action_links"><a class="eui-btn--green eui-btn--pill eui-btn--lg" title="Sign-in to download" href="javascript:alert('Sign-in to download data')"><i class="fa fa-download pad-right" aria-hidden="true"></i>Download Data<span>22.1 KB</span></a><a class="eui-btn--blue eui-btn--lg" title="" href="/LBA/guides/CD08_C_Isotopes_Belowground.html"><i class="fa fa-file-text pad-right" aria-hidden="true"></i>User Guide</a></div>    <h2 class="map_wrap">Description</h2>    <p id="description" class="map_wrap">This data set contains carbon isotope signatures from soil organic matter collected from the following sites: the forests of the ZF-2 INPA reserve approximately 80 km north of the city of Manaus, Amazon; the Tapajos National Forest approximately 83 km south of the city of Santarem, Para; and the Fazenda Vitoria, a ranch near the city of Paragominas, Para. Samples from the Fazenda Vitoria were from degraded and managed pasture sites as well as mature and secondary forests. In addition,carbon isotope signatures from roots sorted by size class, hand-picked from soil pits in the Flona Tapajos and Fazenda Vitoria, are included, as are carbon isotope signatures from soil gases from samples collected at the Fazenda Vitoria. There are 4 ASCII data files with this data set.
+  - He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J.
+    S., Allison, S. D., & Randerson, J. T. (2016). Radiocarbon
+    constraints imply reduced carbon uptake by soils during the 21st
+    century. Science, 353(6306), 1419–1424.
+    <doi:10.1126/science.aad4273>
+  - Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). Deep
+    soil carbon dynamics are driven more by soil type than by climate: a
+    worldwide meta-analysis of radiocarbon profiles. Global Change
+    Biology, 21(11), 4278–4292. <doi:10.1111/gcb.13012>
 
-</p><h2>Science Keywords</h2><div id="science_keywords"><ul class="arrow-tag-group-list"><li class="arrow-tag-group-item">LAND SURFACE</li><li class="arrow-tag-group-item">SOILS</li><li class="arrow-tag-group-item">CARBON</li></ul><ul class="arrow-tag-group-list"><li class="arrow-tag-group-item">LAND SURFACE</li><li class="arrow-tag-group-item">SOILS</li><li class="arrow-tag-group-item">SOIL GAS/AIR</li></ul><ul class="arrow-tag-group-list"><li class="arrow-tag-group-item">SOLID EARTH</li><li class="arrow-tag-group-item">GEOCHEMISTRY</li><li class="arrow-tag-group-item">GEOCHEMICAL PROPERTIES</li><li class="arrow-tag-group-item">ISOTOPES</li></ul></div><h2>Data Use and Citation</h2><p class="map_wrap">This dataset is openly shared, without restriction, in accordance with the <a href="https://science.nasa.gov/earth-science/earth-science-data/data-information-policy">NASA Data and Information Policy<span class="icon-external-link line-icon pad-left" title="external link"></span></a>.</p><div class="citation_formats"><strong>Download citation from Datacite</strong><br><a href="https://api.datacite.org/dois/application/x-research-info-systems/10.3334/ORNLDAAC/1025" download="1025.ris"            class="eui-btn--blue eui-btn--sm" title="download RIS formatted citation">RIS<i            class="fa fa-download pad-left" aria-hidden="true"></i></a><a href="https://api.datacite.org/dois/application/x-bibtex/10.3334/ORNLDAAC/1025" class="eui-btn--blue eui-btn--sm"            title="download BibTex formatted citation">BibTex<i class="fa fa-download pad-left" aria-hidden="true"></i></a><a href="https://search.datacite.org/works/10.3334/ORNLDAAC/1025" class="pad-left" title="DataCite Search result">Other<span            class="fa fa-external-link pad-left line-icon" title="external link" aria-hidden="true"></span></a><br><a href="http://citation.crosscite.org/">Crosscite Citation Formatter<span            class="fa fa-external-link pad-left line-icon" title="external link" aria-hidden="true"></span></a><br></div><div class="citation_div">Telles, E.D.C., P.B. de Camargo, L.A. Martinelli, S.E. Trumbore, E.S. da Costa, J. Santos, N. Higuchi, R.C.D. Oliveira, and D. Markewitz. 2011. LBA-ECO CD-08 Carbon Isotopes in Belowground Carbon Pools, Amazonas and Para, Brazil. ORNL DAAC, Oak Ridge, Tennessee, USA. https://doi.org/10.3334/ORNLDAAC/1025<p>See our <a href="/about/#citation_policy">Data Use and Citation Policy</a> for more information.</p></div><h2 class="clear_both">Data Files</h2>        <p>        <a href="/cgi-bin/urs/urs_logon_initiate.pl">Sign in</a> to download files.        </p><table class="table table1 dataTable no-footer" id="datafiles"></table><div class="preview-collection eui-accordion is-closed"><div class="eui-accordion__header"><h2 class="eui-accordion__title">Companion Files</h2><div class="eui-accordion__note">Expand for companion files</div><div class="eui-accordion__icon" tabindex="0"><i class="eui-icon eui-fa-chevron-circle-down"></i><span class="eui-sr-only">Toggle Companion Files</span></div></div><div class="eui-accordion__body"><p><a href="/cgi-bin/urs/urs_logon_initiate.pl">Sign in</a> to download files.</p><h3 class="hidden">Dataset Companion Files</h3><p>Dataset has 1 companion files.</p><ul><li>CD08_C_Isotopes_Belowground.pdf</li></ul></div></div><script>function initMap() {            var map = new google.maps.Map(document.getElementById('map'), {              zoom: 1,              center: {lat: -2.7585, lng: -53.86255},              mapTypeId: 'terrain',              disableDefaultUI: true            });            var bounds = {                north: -2.5,                south: -3.017,                east: -47.516,                west: -60.2091            };            /* draw spatial coverage */            var rectangle = new google.maps.Rectangle({              strokeColor: "#ff0000",              strokeOpacity: 0.8,              strokeWeight: 2,              fillColor: "#ff0000",              fillOpacity: 0.1,              map: map,              bounds: bounds            });            map.fitBounds(bounds);            /* add zoom event listener to re-zoom after bounds are set */            google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {              if (this.getZoom() < 1) {                this.setZoom(1);              }            });          }</script><script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD9fBPKHua7BDy7QrgSHzlnFwR6PhF-M4&callback=initMap"></script></div>  <!-- mainarea --></div>  <!-- textarea --><footer>  <div class="headWrapper" id="footerWrapper">    <div id="main-footer">      <!-- left section -->      <div class="mainFooterLeft">        <a href="https://www.ornl.gov" title="www.ornl.gov">          <!-- <object type="image/svg+xml" alt="ORNL home page" data="/graphics/logos/ORNL_33_opt.svg"> -->          <img alt="ORNL home page" src="/graphics/logos/ORNL_twoline.png"> <!-- </object> -->        </a>      </div>      <!-- middle section -->      <div class="mainFooterMiddle">        <a href="https://www.nasa.gov/about/highlights/HP_Privacy.html" class="foot-link">Privacy Policy</a><span class="foot-link">          | </span> <a href="javascript:feedback.showForm();" class="foot-link">Feedback</a><span class="foot-link"> |        </span> <a href="/help/" class="foot-link">Help</a>      </div>      <!-- right section -->      <div class="mainFooterRight">        <a class="usa-link-twitter" href="https://twitter.com/ORNLDAAC" title="Follow us @ORNLDAAC"> <span class="fa fa-twitter-square" aria-hidden="true"></span><span class="sr-only">Follow us @ORNLDAAC</span></a>        <a class="usa-link-youtube" href="https://www.youtube.com/channel/UCAcCSHRVGSn7f82_sPx57gw" title="ORNL DAAC Videos on YouTube">          <span class="fa fa-youtube-square" aria-hidden="true"></span><span class="sr-only">ORNL DAAC Videos on            YouTube</span></a>        <a class="usa-link-facebook" href="https://www.facebook.com/OakRidgeDAAC" title="Like us on Facebook"> <span class="fa fa-facebook-square" aria-hidden="true"></span><span class="sr-only">Like us on Facebook</span></a>        <a class="usa-social_link" href="https://github.com/ornldaac" title="ORNL DAAC on GitHub"> <span class="fa fa-github-square" aria-hidden="true"></span><span class="sr-only">ORNL DAAC on GitHub</span></a>        <a class="usa-link-rss" href="https://daac-news.ornl.gov/rss.xml" title="ORNL DAAC News RSS Feed"> <span class="fa fa-rss-square" aria-hidden="true"></span><span class="sr-only">ORNL DAAC News RSS Feed</span></a>      </div>    </div>    <!--main-footer-->    <div class="big-foot"><ul class="nav">	<li class="top first home"><a class="top_link" href="/" title="ORNL DAAC home"><span class="fa fa-home fa-fw"></span><span class="home_text down">Home</span></a>	</li>	<li class="top"><a href="/about/" class="top_link"><span class="down">About Us</span></a>		<ul class="sub">			<!-- <li><a href="/about_us.shtml"><span>About ORNL DAAC</span></a></li> -->			<!-- <li><a href="/who.shtml"><span>Who We Are</span></a></li> -->			<!-- <li><a href="/partners.html"><span>Partners</span></a></li> -->			<!-- <li><a href="/UWG/publicuwg.shtml"><span>User Working Group</span></a></li> -->			<!-- <li><a href="/about/biogeochem/"><span>Biogeochemical Dynamics</span></a></li> -->			<li><a href="/about#mission"><span>Mission</span></a></li>			<li><a href="/about#citation_policy"><span>Data Use and Citation Policy</span></a></li>			<li><a href="/about#uwg"><span>User Working Group</span></a></li>			<li><a href="/about#partners"><span>Partners</span></a></li>		</ul>	</li>	<!-- <li class="top"><a href="/about/about_us.html"><span>About Us</span></a></li> -->	<li class="top"><a href="/get_data/" class="top_link"><span class="down">Get Data</span></a>		<ul class="sub">			<!--<li><a href="/get_data#datasearch" class="fly"><span>Search for Data</span></a>				<ul>					<li><a href="/doi_search_page.shtml"><span>Search by DOI</span></a></li>					<li><a href="/doi.pl"><span>DOI Search Results</span></a></li>					<li><a href="/daacdata"><span>Browse Data</span></a></li>				</ul>			</li>-->			<li><a href="/get_data#themes" class="fly"><span>Science Themes</span></a>				<ul>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=1"><span>Vegetation and Forests</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=2"><span>Arctic Ecosystems</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=3"><span>Soils</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=4"><span>Carbon Cycle</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=5"><span>Biomass</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=6"><span>Land Use and Human Dimensions</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=7"><span>Hydrology and Cryosphere</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=8"><span>Fire</span></a></li>					<li><a href="/cgi-bin/theme_dataset_lister.pl?theme_id=9"><span>Climate</span></a></li>				</ul>			</li>			<li><a href="/get_data#projects" class="fly"><span>NASA Projects</span></a>				<ul>					<li><a href="/cgi-bin/dataset_lister.pl?p=1"><span>BigFoot</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=10"><span>Hydroclimatology Collection</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=11"><span>Large Scale Biosphere-Atmosphere Experiment (LBA-ECO)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=12"><span>MODIS Land Products Subsets</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=13"><span>Net Primary Productivity (NPP)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=14"><span>Oregon Transect Ecosystem Research Project (OTTER)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=15"><span>Prototype Validation Exercise (PROVE)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=16"><span>River Discharge (RIVDIS)</span></a></li> -->					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=17"><span>Russian Land Cover (RLC)</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=18"><span>Southern African Regional Science Initiative Project (SAFARI 2000)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=19"><span>Soil Collection</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=2"><span>Boreal Ecosystem-Atmosphere Study (BOREAS)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=20"><span>Superior National Forest</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=21"><span>Vegetation Collection</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=22"><span>Vegetation-Ecosystem Modeling and Analysis Project (VEMAP)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=25"><span>Unknown</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=27"><span>Model Archive</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=28"><span>North American Carbon Program (NACP)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=29"><span>International Satellite Land Surface Climatology Project (ISLSCP II)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=3"><span>Boreal Ecosystem-Atmosphere Study (BOREAS) Follow On</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=30"><span>Atmospheric Tracer Transport Model Intercomparison Project (TransCom)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=31"><span>Services</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=32"><span>Daymet</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=33"><span>Carbon Monitoring System (CMS)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=34"><span>Arctic-Boreal Vulnerability Experiment (ABoVE)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=35"><span>Carbon in Arctic Reservoirs Vulnerability Experiment (CARVE)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=36"><span>Airborne Microwave Observatory of Subcanopy and Subsurface (AirMOSS)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=37"><span>Atmospheric Carbon and Transport - America (ACT-America)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=38"><span>AfriSAR</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=39"><span>Atmospheric Tomography Mission (ATom)</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=4"><span>Accelerated Canopy Chemistry Program (ACCP)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=40"><span>Global Ecosystem Dynamics Investigation (GEDI)</span></a></li> -->					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=41"><span>Delta-X</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=42"><span>MEaSUREs</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=5"><span>Climate Collection</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=6"><span>EOS Land Validation</span></a></li>					<li><a href="/cgi-bin/dataset_lister.pl?p=7"><span>First ISLSCP Field Experiment (FIFE)</span></a></li>					<!-- <li><a href="/cgi-bin/dataset_lister.pl?p=8"><span>First ISLSCP Field Experiment (FIFE)  Follow On</span></a></li> -->					<li><a href="/cgi-bin/dataset_lister.pl?p=9"><span>FLUXNET</span></a></li>				</ul>			</li>			<li><a href="/get_data#datasets" class="fly">All Datasets</a></li>		</ul>	</li>	<!-- <li class="top"><a href="/get_data/get_data.html"><span>Get Data</span></a></li> -->	<li class="top"><a href="/submit/" class="top_link"><span class="down">Submit Data</span></a>		<ul class="sub">			<li><a href="/submit/form/form.html"><span>Submit Data Form</span></a></li>			<li><a href="/submit/#scope_and_acceptance_policy"><span>Data Scope and Acceptance</span></a></li>			<li><a href="/submit/#authorship"><span>Data Authorship Policy</span></a></li>			<li><a href="/submit/#timeline"><span>Data Publication Timeline</span></a></li>			<li><a href="/submit/#guidelines"><span>Detailed Submission Guidelines</span></a></li>		</ul>	</li>	<!-- <li class="top"><a href="/submit/submit.html"><span>Submit Data</span></a>		<ul class="sub">			<li><a href="/submit/form/form.html"><span>Submit Data Form</span></a></li>			<li><a href="/submit/#scope_and_acceptance_policy"><span>Data Scope and Acceptance Policy</span></a></li>			<li><a href="/submit/#authorship"><span>Data Authorship Policy</span></a></li>			<li><a href="/submit/#timeline"><span>Data Publication Timeline</span></a></li>			<li><a href="/submit/#guidelines"><span>Detailed Submission Guidelines</span></a></li>			<li><a href="/submit/questions/questions.html"><span>Data Provider Questions</span></a></li>			<li><a href="/submit/qachecklist/qachecklist.html"><span>Data Quality Review Checklist</span></a></li>			<li><a href="/submit/csvstandards/csvstandards.html"><span>CSV Standards</span></a></li>			<li><a href="/submit/netcdfrequirements/netcdfrequirements.html"><span>NetCDF Data Requirements</span></a></li>			<li><a href="/submit/help/helpsub.html"><span>Submission Help</span></a></li>		</ul>	</li> -->	<li class="top"><a href="/tools/" class="top_link"><span class="down">Tools</span></a>		<ul class="sub">			<!-- <li><a href="/tools/"><span>Data Tools</span></a></li> -->			<li><a href="https://modis.ornl.gov/data.html" class="fly"><span>MODIS</span></a>				<ul>					<li><a href="/modisfixedsite/"><span>MODIS Fixed Site Subsets</span></a></li>					<li><a href="/modisglobal/"><span>MODIS Global Subsets</span></a></li>					<li><a href="/modiswebservice/"><span>MODIS Web service</span></a></li>				</ul></li>			<li><a href="https://thredds.daac.ornl.gov/thredds/catalogs/ornldaac/ornldaac.html"><span>THREDDS</span></a></li>			<li><a href="https://webmap.ornl.gov/ogc"><span>SDAT</span></a></li>			<li><a href="https://daymet.ornl.gov"><span>Daymet</span></a></li>			<li><a href="https://carve.ornl.gov/visualize/"><span>CARVE Data Viewer</span></a></li>			<li><a href="https://airmoss.ornl.gov/visualize/"><span>Soil Moisture Visualizer</span></a></li>			<li><a href="https://webmap.ornl.gov/qaqc/landwater/"><span>Land - Water Checker</span></a></li>			<!-- <li><a href="/cgi-bin/service_dataset_lister.pl?svc_id=1"><span>Spatial Data Access</span></a></li> -->			<!-- <li><a href="/cgi-bin/service_dataset_lister.pl?svc_id=2"><span>Spatial Data Access</span></a></li> -->			<!-- <li><a href="/spatial_data_access.shtml"><span>Spatial Data Access</span></a></li> -->			<!-- <li><a href="/webgis.shtml"><span>WebGIS</span></a></li> -->			<!-- <li><a href="/thredds.shtml"><span>THREDDS</span></a></li> -->			<!-- <li><a href="/cgi-bin/service_dataset_lister.pl?svc_id=4"><span>THREDDS</span></a></li> -->		</ul>	</li>	<!-- <li class="top"><a href="/tools/tools.html"><span>Tools</span></a></li> -->	<li class="top"><a href="/resources/" class="top_link"><span class="down">Resources</span></a>		<ul class="sub">			<li><a href="/resources/learning/"><span>Learning</span></a></li>			<li><a href="/datamanagement/"><span>Data Management</span></a></li>			<li><a href="https://daac-news.ornl.gov/"><span>News</span></a></li>		</ul>	</li>	<!-- <li class="top"><a href="/resources/resources.html"><span>Resources</span></a>		<ul class="sub">			<li><a href="/resources/learning/learning.html"><span>Learning</span></a></li>			<li><a href="/datamanagement/datamanagement.html"><span>Data Management</span></a></li>		</ul>	</li> -->	<li class="top nofoot"><a href="/help/" class="top_link"><span class="down">Help</span></a></li>	<!-- <li class="top"><a href="/help/help.html">Help</a></li> -->	<li class="top notab"><a href="javascript:feedback.showForm();" class="top_link" title="User's Service Office" id="Contact"><span class="fa fa-comment fa-flip-horizontal fa-fw"></span><span class="down">Contact Us</span></a></li></ul>    </div>    <!--big-foot-->    <hr>  </div>  <!-- headWrapper --></footer><!-- Add utils.js --><script src="/js/jquery.js"></script><script src="/js/utils.js?1.2"></script><script>highlight(tabToHighlight);</script><!-- integrated search bar js --><script src="/js/jquery-ui/jquery-ui.min.js"></script><script src="/js/succinct-master/jQuery.succinct.min.js"></script><script src="/js/integrated-search/integrated-search.min.js"></script><!-- Add Tophat --><script src="https://cdn.earthdata.nasa.gov/tophat2/tophat2.js" id="earthdata-tophat-script" data-current-daac="ORNL DAAC" data-show-fbm="true" data-width="950"></script><!-- NetTracker --><script src="/js/NetTracker/ntpagetag.js"></script><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNP7MLF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- Add Kayako feedback module --><script src="https://fbm.earthdata.nasa.gov/for/ORNL/feedback.js"></script><!-- Add Status App --><script src="https://status.earthdata.nasa.gov/assets/banner_widget.js"></script><!-- common.js includes highlight current tab, Google Analytics, DAP UA, Initialize Kayako feedback module --><script src="/js/common.min.js"></script><!-- add EUI js --><script src="/js/eui/custom/javascript/eui.min.js"></script></div>  <!-- pagebox --><script src="/js/listers.js"></script><script src="/js/jquery.tablesorter.min.js"></script><script src="/js/datatables/datatables.min.js"></script><script src="/js/datatables/file-size.min.js"></script><script src="/js/datatables/dataTables.conditionalPaging.min.js"></script><script src="/js/granule-lister.min.js?v1.1.1"></script><script>    USE_SERVER_SIDE_PAGINATION = 0;    DS_IN_CART = 0;    USER_IS_LOGGED_IN = 00;    INGEST_HOST = '';    GRANULE_NAME_CUTOFF = 58;</script></body></html>
-*  Trumbore, S. E., Chadwick, O. A., & Amundson, R. (1996). Rapid Exchange Between Soil Carbon and Atmospheric Carbon Dioxide Driven by Temperature Change. Science, 272(5260), 393–396. doi:10.1126/science.272.5260.393
-*  Koarashi, J., Hockaday, W. C., Masiello, C. A., & Trumbore, S. E. (2012). Dynamics of decadally cycling carbon in subsurface soils. Journal of Geophysical Research: Biogeosciences, 117(G3), n/a–n/a. doi:10.1029/2012jg002034
-*  Marzaioli, F., Lubritto, C., Galdo, I. D., D’Onofrio, A., Cotrufo, M. F., & Terrasi, F. (2010). Comparison of different soil organic matter fractionation methodologies: Evidences from ultrasensitive 14C measurements. Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials and Atoms, 268(7-8), 1062–1066. doi:10.1016/j.nimb.2009.10.098
-*  Trumbore, S. E., & Harden, J. W. (1997). Accumulation and turnover of carbon in organic and mineral soils of the BOREAS northern study area. Journal of Geophysical Research: Atmospheres, 102(D24), 28817–28830. doi:10.1029/97jd02231
-*  Trumbore, S. E., Bubier, J. L., Harden, J. W., & Crill, P. M. (1999). Carbon cycling in boreal wetlands: A comparison of three approaches. Journal of Geophysical Research: Atmospheres, 104(D22), 27673–27682. doi:10.1029/1999jd900433
-*  Väliranta, M., Kaakinen, A., & Kuhry, P. (2003). Holocene climate and landscape evolution East of the Pechora Delta, East-European Russian Arctic. Quaternary Research, 59(3), 335–344. doi:10.1016/s0033-5894(03)00041-3
-*  Van Dam, D., van Breemen, N., & Veldkamp, E. (1997). Biogeochemistry, 39(3), 343–375. doi:10.1023/a:1005880031579
-*  Van der Voort, T. S., Hagedorn, F., McIntyre, C., Zell, C., Walthert, L., Schleppi, P., … Eglinton, T. I. (2016). Variability in 14C contents of soil organic matter at the plot and  regional scale across climatic and geologic gradients. Biogeosciences, 13(11), 3427–3439. doi:10.5194/bg-13-3427-2016
-*  Van Mourik, J. M., Nierop, K. G. J., & Vandenberghe, D. A. G. (2010). Radiocarbon and optically stimulated luminescence dating based chronology of a polycyclic driftsand sequence at Weerterbergen (SE Netherlands). CATENA, 80(3), 170–181. doi:10.1016/j.catena.2009.11.004
-*  Vardy, S. R., Warner, B. G., & Aravena, R. (1998). Climatic Change, 40(2), 285–313. doi:10.1023/a:1005473021115
-*  Vardy, S. R., Warner, B. G., Turunen, J., & Aravena, R. (2000). Carbon accumulation in permafrost peatlands in the Northwest Territories and                 Nunavut, Canada. The Holocene, 10(2), 273–280. doi:10.1191/095968300671749538
-*  VARDY, S. R., WARNER, B. G., & ASADA, T. (2008). Holocene environmental change in two polygonal peatlands, south-central Nunavut, Canada. Boreas, 34(3), 324–334. doi:10.1111/j.1502-3885.2005.tb01104.x
-*  <!DOCTYPE html>
+# Studies within ISRaD
 
-<html>
-  <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">.</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">.</script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">.</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="https://ngee-arctic.ornl.gov/data/css/tsc_ribbons.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js">.</script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-    <script>$(document).ready(function() {
-            console.log('jquery is working');
-            $(".bluebox").addClass("shadow p-3 mb-5 rounded");
-        });</script>
-    <style>pre {
-        display: block;
-        font-family: "Times New Roman", Times, serif;
-        white-space: pre;
-        margin: 1em 0;
-        width:1050px;
-        word-wrap: break-word;
-        }
-        .bod {
-        width: 1100px;
-        background:#F8F8F8;
-        }
-        .tab {
-        padding-left:5em;
-        }
-        .graybox {
-        background:#eeeeee;
-        }
+Currently, there are 362 entries (unique DOIs) in ISRaD, which are from
+the following publications:
 
-        .bluebox {
-        background:#dbf8ff;
-        margin-right:100px;
-        /*background:#bff2ff;*/
-        }
+<div id="refs" class="references">
 
-        .container {
-        max-width:1000px;
-        width:100%;
-        padding-left:0px;
-        padding-right:0px;
-        margin-left:auto;
-        margin-right:auto;
-        }
+<div id="ref-Abbott_1996">
 
-        img {
-        max-width: 100%;
-        height: auto;
-        }
+Abbott, M. B., & Stafford, T. W. (1996). Radiocarbon geochemistry of
+modern and ancient arctic lake systems, baffin island, canada.
+*Quaternary Research*, *45*(3), 300–311. Cambridge University Press
+(CUP). Retrieved from <https://doi.org/10.1006%2Fqres.1996.0031>
 
-        body {
-        -webkit-font-smoothing: antialiased;
-        background-color: #000;
-        background: url("https://ngee-arctic.ornl.gov/sites/all/themes/bootstrap/ngee_bootstrap/img/sitebgrd.jpg");
-        background-repeat: repeat-x;
-        }
+</div>
 
-        .topBar {
-        background: url("https://ngee-arctic.ornl.gov/sites/all/themes/bootstrap/ngee_bootstrap/img/siteBanner.jpg");
-        margin-bottom: 10px;
-        padding-bottom: 4px;
-        background-size: cover;
-        text-align:left;
-        margin-left:0px;
-        margin-right:0px;
-        }
+<div id="ref-Agnelli_2002">
 
-        .center-logo {
-        margin: auto;
-        font-family: Myriad Pro, Myriad Web Pro Regular, Lucida Grande, Geneva, Trebuchet MS, sans-serif;
-        }
+Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The
+dynamics of organic matter in rock fragments in soil investigated by 14C
+dating and measurements of 13C. *European Journal of Soil Science*,
+*53*(1), 147–159. Wiley. Retrieved from
+<https://doi.org/10.1046%2Fj.1365-2389.2002.00432.x>
 
-        .center-logo h1 {
-        font-weight: 500;
-        color: #458ec0;
-        font-size: 3.0em;
-        margin-top: 10px;
-        margin-bottom: 0px;
-        text-transform: none;
-        margin-left: -15px;
-        text-shadow: 1px 1px rgba(58, 58, 58, 0.75);
-        }
+</div>
 
-        .center-logo p {
-        text-transform: none;
-        font-size: 0.95em;
-        /*color: #fff;*/
-        font-style: italic;
-        line-height: 1.1em;
-        margin-left: -15px;
-        text-shadow: 1px 1px rgba(115, 115, 115, 0.6);
-        }
+<div id="ref-Aiken_2014">
 
-        .navbar {
-        border-radius: 0px;
+Aiken, G. R., Spencer, R. G. M., Striegl, R. G., Schuster, P. F., &
+Raymond, P. A. (2014). Influences of glacier melt and permafrost thaw on
+the age of dissolved organic carbon in the yukon river basin. *Global
+Biogeochemical Cycles*, *28*(5), 525–537. American Geophysical Union
+(AGU). Retrieved from <https://doi.org/10.1002%2F2013gb004764>
 
-        margin-bottom: 0px;
-        min-height: 44px;
-        }
+</div>
 
-        .navbar-inverse {
-        border: none;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: normal;
-        text-transform: uppercase;
-        font-size: 16px;
-        background-color: #458ec0;
-        }
+<div id="ref-Allard_1987">
 
-        .ccsiLogo {
-        height: 130px;
-        margin: 5px 0px 0px 5px;
-        }
-        .center-logo h3 {
-        margin-left: -15px;
-        font-size: 1.2em;
-        text-transform: none;
-        color: #33b3cc;
-        margin-top: 0px;
-        margin-bottom: 5px;
-        /*text-shadow: 1px 1px rgba(58, 58, 58, 0.75);*/
-        font-weight: 300; /* increased font weight in place of shadow for greater readability. vdk 2/26 */
-        }
-        .siteTitle {
-        margin-left: 4px;
-        margin-top: -20px;
-        }
-        .ornlLeaf {
-        height: 20px;
-        width: 14px;
-        }
+Allard, M., & Seguin, M. K. (1987). The holocene evolution of permafrost
+near the tree line, on the eastern coast of hudson bay (northern
+quebec). *Canadian Journal of Earth Sciences*, *24*(11), 2206–2222.
+Canadian Science Publishing. Retrieved from
+<https://doi.org/10.1139%2Fe87-209>
 
-        #myNavbar {
-        margin-top: -10px;
-        margin-left: 0px;
-        margin-right: 0px;
-        max-height:40px;
-        }
+</div>
 
-        .ornlLogo {
-        height: 32px;
-        margin: 5px 20px;
-        }
-        #brandingBar {
-        background-color: #346b90;
-        height: 40px;
-        margin: 0 -15px;
-        }
+<div id="ref-Amon_2004">
 
-        .ornlLogoBanner {
-        background-color:#346b90;
-        text-align:left;
-        }
+Amon, R. M., & Meon, B. (2004). The biogeochemistry of dissolved organic
+matter and nutrients in two large arctic estuaries and potential
+implications for our understanding of the arctic ocean system. *Marine
+Chemistry*, *92*(1-4), 311–330. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.marchem.2004.06.034>
 
-        .pagebox { /* standard page container */
-        clear: both;
-        margin:0 auto 3rem auto;
-        
-        height:auto;
-        background-color: #FFFFFF;
-        box-shadow: 0px 0px 25px #555;
-        padding-bottom: 10px;
-        }
+</div>
 
-        .fancybox-slide--iframe .fancybox-content {
-        width  : 800px;
-        height : 600px;
-        max-width  : 80%;
-        max-height : 80%;
-        margin: 0;
-        }
+<div id="ref-Andersson_2011">
 
+Andersson, R. A., Kuhry, P., Meyers, P., Zebühr, Y., Crill, P., & Mörth,
+M. (2011). Impacts of paleohydrological changes on n-alkane biomarker
+compositions of a holocene peat sequence in the eastern european russian
+arctic. *Organic Geochemistry*, *42*(9), 1065–1075. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.orggeochem.2011.06.020>
 
-        footer {
-        max-width: 960px;
-        margin: 0 -15px;
-        background-color: #458ec0;
-        color: #fff;
-        min-height: 120px;
-        text-align: center;
-        line-height: 1.1em;
-        }
+</div>
 
-        #manageBar {
-        background-color: #346b90;
-        font-family: 'Open Sans Condensed',sans-serif;
-        width: auto;
-        text-align: center;
-        color: #fff;
-        font-size: 14px;
-        font-style: italic;
-        line-height: 1.5em;
-        padding: 0px 0;
-        /* font-weight: 100; */
-        height: 25px;
-        }
+<div id="ref-Andreev_1997">
 
-        .brandingBox{margin-top:20px;padding:0 40px;margin-bottom:20px;line-height:1.3em;}
-        .brandingBox p{margin-left:20px;margin-top:7px;} .brandingBox div{padding:0px;} .brandingBox img{padding:5px;margin-left:10px;}
-        @media(max-width:991px) {.brandingBox{padding:0px;text-align:center;} .brandingBox img{width:90%;padding:5px;margin-top:7px;} }
+Andreev, A., Klimanov, V., & Sulerzhitsky, L. (1997). Younger dryas
+pollen records from central and southern yakutia. *Quaternary
+International*, *41-42*, 111–117. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fs1040-6182%2896%2900042-0>
 
-        .brandingBox div a {
-        background: transparent;
-        text-decoration: none;
-        color: #77BEE0;
-        }
-        .brandingLinks { font-size:14px; }
-        .brandingLinks a:hover { color: blue; }
+</div>
 
-        strong { font-weight: bold; }</style>
-    <script type="application/ld+json">
-      {"sourceOrganization": {"name": "In collaboration with Oak Ridge National Laboratory", "@type": "Organization"},"publisher": {"name":"Next Generation Ecosystem Experiments - Arctic", "@type":"Organization"},"keywords":["Delta14CO2", "volumetric water content", , , "Barrow, Alaska", "Intensive Site 0", "Area A", "Area C", "Intensive Site 1", "Barrow Environmental Observatory", "Utqiagvik, Alaska", "Area B", "AB Transects"],"spatialCoverage":{"geo":{"box":"71.2 -156.7 71.35 -156.4","@type":"GeoShape"},"@type":"Place"},"url":"","temporalCoverage":"20120808/20140908","name":"Radiocarbon in Ecosystem Respiration and Soil Pore-Space CO2 with Surface Gas Flux, Air Temperature, and Soil Temperature and Moisture, Barrow, Alaska, 2012-2014","description":"
-      
-      Dataset includes Delta14C measurements made from CO2 that was collected and purified in 2012-2014 from surface soil chambers, soil pore space, and background atmosphere.  In addition to 14CO2 data, dataset includes co-located measurements of CO2 and CH4 flux, soil and air temperature, and soil moisture.  Measurements and field samples were taken from intensive study site 1 areas A, B, and C, and the site 0 and AB transects, from specified positions in high-centered, flat-centered, and low centered polygons. The column &quot;sample_size&quot; was added to &quot;radiocarbon_field_Barrow_2012_2013_2014.csv&quot; September 2018 with no changes to other data. Dataset DOI:10.5440/1364062; https://doi.org/10.5440/1364062
-      
-      ","@id":"None","creator": [{"name":"Lydia Vaughn (lydiajsmith@lbl.gov)", "@type":"Person"}, {"name":"Margaret Torn (mstorn@lbl.gov)", "@type":"Person"}, {"name":"Rachel Porras (rcporras@lbl.gov)", "@type":"Person"}, {"name":"Bryan Curtis (John.Curtis@colorado.edu)", "@type":"Person"}, {"name":"Oriana Chafe (oechafe@lbl.gov)", "@type":"Person"}],"includedInDataCatalog": {"url": "https://ngee-arctic.ornl.gov/data", "name": "Next Generation Ecosystem Experiments - Arctic", "@type": "DataCatalog"}, "@type":"Dataset", "@context":"https://schema.org"}
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="ornlLogoBanner">
-        <a href="https://www.ornl.gov" target="_blank">
-          <img src="https://ngee-arctic.ornl.gov/sites/default/files/img/ORNL-two-line.png" class="ornlLogo" />
-        </a>
-      </div>
-      <div class="topBar center-logo row">
-        <div class="col-2">
-          <a href="https://ngee-arctic.ornl.gov" title="Home" target="_blank">
-            <img src="https://ngee-arctic.ornl.gov/sites/default/files/img/site-logo.png" class="ccsiLogo" />
-          </a>
-        </div>
-        <div class="col-10">
-          <h1 id="banner_title">NGEE Arctic</h1>
-          <h3>Next-Generation Ecosystem Experiments</h3>
-          <p>Advancing the predictive power of Earth system models through understanding
-                    of the structure and function of Arctic terrestrial ecosystems</p>
-        </div>
-      </div>
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand mr-auto" href="https://ngee-arctic.ornl.gov">
-          <i class="fas fa-home">NGEE Arctic Website</i>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">.</span>
-        </button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <div class="navbar-nav ml-auto mt-1">
-            <a class="nav-link" href="https://ngee-arctic.ornl.gov/data">
-              <i class="fas fa-external-link-alt">NGEE Arctic Data Search</i>
-            </a>
-          </div>
-          <div class="navbar-nav ml-auto mt-1">
-            <a class="nav-item nav-link" href="https://ngee.ornl.gov/contact?edit[cid]=5&amp;edit[subject]=Data%20Assistance%20Request">
-              <i class="fas fa-info">Help</i>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <div class="container">
-      <div class="pagebox">
-        <div class="p-4">
-          <div class="row pb-4 text-center">
-            <div class="col-4">
-              <a href="https://ngee-arctic.ornl.gov/data/download.jsp?title=Radiocarbon in Ecosystem Respiration and Soil Pore-Space CO2 with Surface Gas Flux, Air Temperature, and Soil Temperature and Moisture, Barrow, Alaska, 2012-2014&amp;author_email=lydiajsmith@lbl.gov&amp;links=ftp://ngee.ornl.gov/data/outgoing/NGA148_radiocarbon_soil_and_CO2_surface_gas_flux_temp_moisture_barrow/documentation,https://doi.org/10.5440/1364062,ftp://ngee.ornl.gov/data/outgoing/NGA148_radiocarbon_soil_and_CO2_surface_gas_flux_temp_moisture_barrow/data" class="btn btn-primary" data-fancybox="" data-type="iframe">Data and Documentation Download</a>
-            </div>
-            <div class="col-4">
-              <a href="https://ngee-arctic.ornl.gov/data/full.jsp?fileid=ngee-arctic.ornl.gov/data/outgoing/metadata/Radiocarbon_in_Ecosystem_Respiration_and_Soil_Pore_Space_CO2_with_Surface_Gas_Flux_Air_Temperature_and_Soil_Temperature_and_Moisture_Barrow_Alaska_2012_2014.NGA148.xml&amp;datasource=NGEE-Arctic" class="btn btn-info" data-fancybox="" data-type="iframe">View Metadata</a>
-            </div>
-            <div class="col-4 tsc_ribbon_wrap edge">
-              <div class="ribbon-wrap right-edge fork lblue">
-                <span>NGEE Public Dataset</span>
-              </div>
-            </div>
-          </div>
-          <h2 class="py-1">
-            <b>Radiocarbon in Ecosystem Respiration and Soil Pore-Space CO2 with Surface Gas Flux, Air Temperature, and Soil Temperature and Moisture, Barrow, Alaska, 2012-2014</b>
-          </h2>
-          <div class="row mb-3">
-            <h5 class="col">DOI: https://doi.org/10.5440/1364062</h5>
-            <h5 class="col text-right">NGEE Arctic Record ID: NGA148</h5>
-          </div>
-          <fieldset class="graybox mb-4">
-            <h4 class="p-3">
-              <b>Abstract</b>
-            </h4>
-            <div class="px-5 pb-3">Dataset includes Delta14C measurements made from CO2 that was collected and purified in 2012-2014 from surface soil chambers, soil pore space, and background atmosphere.  In addition to 14CO2 data, dataset includes co-located measurements of CO2 and CH4 flux, soil and air temperature, and soil moisture.  Measurements and field samples were taken from intensive study site 1 areas A, B, and C, and the site 0 and AB transects, from specified positions in high-centered, flat-centered, and low centered polygons. The column "sample_size" was added to "radiocarbon_field_Barrow_2012_2013_2014.csv" September 2018 with no changes to other data. Dataset DOI:10.5440/1364062; https://doi.org/10.5440/1364062</div>
-          </fieldset>
-          <fieldset class="graybox mb-5">
-            <h4 class="p-3">
-              <b>Dataset Citation</b>
-            </h4>
-            <div class="px-5 pb-3">Lydia Vaughn, Margaret Torn, Rachel Porras, Bryan Curtis, Oriana Chafe. 2018. Radiocarbon in Ecosystem Respiration and Soil Pore-Space CO2 with Surface Gas Flux, Air Temperature, and Soil Temperature and Moisture, Barrow, Alaska, 2012-2014. Next Generation Ecosystem Experiments Arctic Data Collection, Oak Ridge National Laboratory, U.S. Department of Energy, Oak Ridge, Tennessee, USA. Dataset accessed on [insert_date] at https://doi.org/10.5440/1364062.</div>
-          </fieldset>
-          <fieldset class="graybox mb-2">
-            <div class="row p-2">
-              <h4 class="col-3">
-                <b>Dates:</b>
-              </h4>
-              <div class="col-9">20120808 - 20140908</div>
-            </div>
-          </fieldset>
-          <fieldset class="graybox mb-2">
-            <div class="row p-2">
-              <h4 class="col-3">
-                <b>Geographic Location:</b>
-              </h4>
-              <div class="col-9">NGEE Arctic Barrow Study Site</div>
-            </div>
-          </fieldset>
-          <fieldset class="graybox mb-2">
-            <div class="row p-2">
-              <h4 class="col-3">
-                <b>Bounding Coordinates:</b>
-              </h4>
-              <div class="col-2">N:71.35</div>
-              <div class="col-2">S:71.2</div>
-              <div class="col-2">E:-156.4</div>
-              <div class="col-2">W:-156.7</div>
-            </div>
-          </fieldset>
-          <fieldset class="graybox mb-2">
-            <div class="row p-2">
-              <h4 class="col-3">
-                <b>Place Keywords:</b>
-              </h4>
-              <div class="col-8 word-wrap">Barrow, Alaska; Intensive Site 0; Area A; Area C; Intensive Site 1; Barrow Environmental Observatory; Utqiagvik, Alaska; Area B; AB Transects</div>
-            </div>
-          </fieldset>
-          <fieldset class="graybox mb-5">
-            <div class="row p-2">
-              <h4 class="col-3">
-                <b>Subject Keywords:</b>
-              </h4>
-              <div class="col-8 word-wrap">GEOCHEMISTRY, Delta14CO2, Soil moisture, volumetric water content, soil temperature, thaw depth,</div>
-            </div>
-          </fieldset>
-          <fieldset class="graybox pt-3">
-            <h5 class="p-2">
-              <b>Dataset Usage Rights</b>
-            </h5>
-            <div class="pl-4">
-              <u>Public Datasets</u>
-              <p class="px-4 ">
-                This work is licensed under the Creative Commons Attribution 4.0 International License.
-                                To view a copy of this license, visit
-                <a href="https://creativecommons.org/licenses/by/4.0">https://creativecommons.org/licenses/by/4.0</a>
-                .
-              </p>
-            </div>
-            <p class="pl-4">
-              See the NGEE Arctic Data Policies for more details
-              <a href="https://ngee-arctic.ornl.gov/data-policies">https://ngee-arctic.ornl.gov/data-policies</a>
-              .
-            </p>
-          </fieldset>
-        </div>
-      </div>
-      <footer class="footer container">
-        <div id="manageBar">
-          <p>Oak Ridge National Laboratory is managed by UT-Battelle for the Department of Energy</p>
-        </div>
-        <div class="region region-footer">
-          <section id="block-block-10" class="block block-block contextual-links-region clearfix">
-            <div class="row brandingBox clearfix pb-3">
-              <div class="col-5 text-center">
-                <a href="http://science.energy.gov" target="_blank">
-                  <img alt="" src="https://ngee-arctic.ornl.gov/sites/default/files/img/doeLogoHoriz.png" />
-                </a>
-              </div>
-              <div class="col-7 brandingLinks">
-                <p>
-                  <strong>
-                    Next-Generation Ecosystem Experiments
-                    <br />
-                    <a href="http://ngee.ornl.gov">NGEE Home</a>
-                    |
-                    <a href="http://energy.gov/" target="_blank">DOE</a>
-                    |
-                    <a href="http://www.ornl.gov/" target="_blank">ORNL</a>
-                    |
-                    <a href="http://www.esd.ornl.gov/" target="_blank">ESD</a>
-                    |
-                    <a href="http://ccsi.ornl.gov/" target="_blank">Climate Change Science Institute</a>
-                  </strong>
-                  <br />
-                  <a href="http://www.ornl.gov/ornl/contact-us/Security--Privacy-Notice" target="_blank">Security Notice</a>
-                  |
-                  <a href="https://www.ornl.gov/content/accessibility" target="_blank">Accessibility</a>
-                  |
-                  <a href="/contact?edit[cid]=1&amp;edit[subject]=Contacting NGEE Arctic">Website Contact</a>
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+<div id="ref-Andreev_2001">
 
-*  Wagai, R., Kajiura, M., Asano, M., & Hiradate, S. (2015). Nature of soil organo-mineral assemblage examined by sequential density fractionation with and without sonication: Is allophanic soil different? Geoderma, 241-242, 295–305. doi:10.1016/j.geoderma.2014.11.028
-*  WAHLEN, M., TANAKA, N., HENRY, R., DECK, B., ZEGLEN, J., VOGEL, J. S., … BROECKER, W. (1989). Carbon-14 in Methane Sources and in Atmospheric Methane: The Contribution from Fossil Carbon. Science, 245(4915), 286–290. doi:10.1126/science.245.4915.286
-*  Waldrop, M. P., Harden, J. W., Turetsky, M. R., Petersen, D. G., McGuire, A. D., Briones, M. J. I., … Pruett, L. E. (2012). Bacterial and enchytraeid abundance accelerate soil carbon turnover along a lowland vegetation gradient in interior Alaska. Soil Biology and Biochemistry, 50, 188–198. doi:10.1016/j.soilbio.2012.02.032
-*  Walter, K. M., Chanton, J. P., Chapin, F. S., Schuur, E. A. G., & Zimov, S. A. (2008). Methane production and bubble emissions from arctic lakes: Isotopic implications for source pathways and ages. Journal of Geophysical Research, 113. doi:10.1029/2007jg000569
-*  Walter Anthony, K., Daanen, R., Anthony, P., Schneider von Deimling, T., Ping, C.-L., Chanton, J. P., & Grosse, G. (2016). Methane emissions proportional to permafrost carbon thawed in Arctic lakes since the 1950s. Nature Geoscience, 9(9), 679–682. doi:10.1038/ngeo2795
-*  Wang, Y., Amundson, R., & Trumbore, S. (1996). Radiocarbon Dating of Soil Organic Matter. Quaternary Research, 45(3), 282–288. doi:10.1006/qres.1996.0029
-*  Wang, Y., Amundson, R., & Trumbore, S. (1999). The impact of land use change on C turnover in soils. Global Biogeochemical Cycles, 13(1), 47–57. doi:10.1029/1998gb900005
-*  Wang, Y., Amundson, R., & Niu, X.-F. (2000). Seasonal and altitudinal variation in decomposition of soil organic matter inferred from radiocarbon measurements of soil CO2flux. Global Biogeochemical Cycles, 14(1), 199–211. doi:10.1029/1999gb900074
-*  WANG, L., OUYANG, H., ZHOUM, C.-P., ZHANG, F., SONG, M.-H., & TIAN, Y.-Q. (2005). Soil Organic Matter Dynamics Along a Vertical Vegetation Gradient in the Gongga Mountain on the Tibetan Plateau. Journal of Integrative Plant Biology, 47(4), 411–420. doi:10.1111/j.1744-7909.2005.00085.x
-*  WERNER, K., TARASOV, P. E., ANDREEV, A. A., MÃLLER, S., KIENAST, F., ZECH, M., … DIEKMANN, B. (2010). A 12.5-kyr history of vegetation dynamics and mire development with evidence of Younger Dryas larch presence in the Verkhoyansk Mountains, East Siberia, Russia. Boreas, 39(1), 56–68. doi:10.1111/j.1502-3885.2009.00116.x
-*  Wunderlich, S., & Borken, W. (2012). Partitioning of soil CO2 efflux in un-manipulated and experimentally flooded plots of a temperate fen. Biogeosciences, 9(8), 3477–3489. doi:10.5194/bg-9-3477-2012
-*  Yu, Z., Campbell, I. D., Campbell, C., Vitt, D. H., Bond, G. C., & Apps, M. J. (2003). Carbon sequestration in western Canadian peat highly sensitive to Holocene                 wet-dry climate cycles at millennial timescales. The Holocene, 13(6), 801–808. doi:10.1191/0959683603hl667ft
-*  Zhang, H., Gallego-Sala, A. V., Amesbury, M. J., Charman, D. J., Piilo, S. R., & Väliranta, M. M. (2018). Inconsistent Response of Arctic Permafrost Peatland Carbon Accumulation to Warm Climate Phases. Global Biogeochemical Cycles, 32(10), 1605–1620. doi:10.1029/2018gb005980
-*  Zibulski, R., Herzschuh, U., Pestryakova, L. A., Wolter, J., Müller, S., Schilling, N., … Tian, F. (2013). River flooding as a driver of polygon dynamics: modern vegetation data and a millennial peat record from the Anabar River lowlands (Arctic Siberia). Biogeosciences Discussions, 10(3), 4067–4125. doi:10.5194/bgd-10-4067-2013
-*  Zimmermann, C., & Lavoie, C. (2001). A paleoecological analysis of a southern permafrost peatland, Charlevoix, Quebec. Canadian Journal of Earth Sciences, 38(6), 909–919. doi:10.1139/e00-110
-*  Zimov, S. A. (1997). North Siberian Lakes: A Methane Source Fueled by Pleistocene Carbon. Science, 277(5327), 800–802. doi:10.1126/science.277.5327.800
-*  Zuidhoff, F. S., & Kolstrup, E. (2000). Changes in palsa distribution in relation to climate change in Laivadalen, northern Sweden, especially 1960-1997. Permafrost and Periglacial Processes, 11(1), 55–69. doi:10.1002/(sici)1099-1530(200001/03)11:1<55::aid-ppp338>3.0.co;2-t
+Andreev, A., Klimanov, V., & Sulerzhitsky, L. (2001). Vegetation and
+climate history of the yana river lowland, russia, during the last
+6400yr. *Quaternary Science Reviews*, *20*(1-3), 259–266. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fs0277-3791%2800%2900118-9>
+
+</div>
+
+<div id="ref-Andreev_2004">
+
+Andreev, A., Tarasov, P., Klimanov, V., Melles, M., Lisitsyna, O., &
+Hubberten, H.-W. (2004). Vegetation and climate changes around the lama
+lake, taymyr peninsula, russia during the late pleistocene and holocene.
+*Quaternary International*, *122*(1), 69–84. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.quaint.2004.01.032>
+
+</div>
+
+<div id="ref-Walter_Anthony_2016">
+
+Anthony, K. W., Daanen, R., Anthony, P., Deimling, T. S. von, Ping,
+C.-L., Chanton, J. P., & Grosse, G. (2016). Methane emissions
+proportional to permafrost carbon thawed in arctic lakes since the
+1950s. *Nature Geoscience*, *9*(9), 679–682. Springer Science; Business
+Media LLC. Retrieved from <https://doi.org/10.1038%2Fngeo2795>
+
+</div>
+
+<div id="ref-Aravena_1993">
+
+Aravena, R., Warner, B. G., Charman, D. J., Belyea, L. R., Mathur, S.
+P., & Dinel, H. (1993). Carbon isotopic composition of deep carbon gases
+in an ombrogenous peatland, northwestern ontario, canada. *Radiocarbon*,
+*35*(2), 271–276. Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200064948>
+
+</div>
+
+<div id="ref-Arlen_Pouliot_2005">
+
+Arlen-Pouliot, Y., & Bhiry, N. (2005). Palaeoecology of a palsa and a
+filled thermokarst pond in a permafrost peatland, subarctic québec,
+canada. *The Holocene*, *15*(3), 408–419. SAGE Publications. Retrieved
+from <https://doi.org/10.1191%2F0959683605hl818rp>
+
+</div>
+
+<div id="ref-Atarashi_Andoh_2012">
+
+Atarashi-Andoh, M., Koarashi, J., Ishizuka, S., & Hirai, K. (2012).
+Seasonal patterns and control factors of CO2 effluxes from surface
+litter, soil organic carbon, and root-derived carbon estimated using
+radiocarbon signatures. *Agricultural and Forest Meteorology*, *152*,
+149–158. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.agrformet.2011.09.015>
+
+</div>
+
+<div id="ref-Baied_1993">
+
+Baied, C. A., & Wheeler, J. C. (1993). Evolution of high andean puna
+ecosystems: Environment, climate, and culture change over the last
+12,000 years in the central andes. *Mountain Research and Development*,
+*13*(2), 145. JSTOR. Retrieved from <https://doi.org/10.2307%2F3673632>
+
+</div>
+
+<div id="ref-Baisden_2002">
+
+Baisden, W. T., Amundson, R., Cook, A. C., & Brenner, D. L. (2002).
+Turnover and storage of c and n in five density fractions from
+california annual grassland surface soils. *Global Biogeochemical
+Cycles*, *16*(4), 64–1–64–16. American Geophysical Union (AGU).
+Retrieved from <https://doi.org/10.1029%2F2001gb001822>
+
+</div>
+
+<div id="ref-Baisden_2007">
+
+Baisden, W. T., & Parfitt, R. L. (2007). Bomb 14C enrichment indicates
+decadal c pool in deep soil? *Biogeochemistry*, *85*(1), 59–68. Springer
+Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10533-007-9101-7>
+
+</div>
+
+<div id="ref-Baisden_2011">
+
+Baisden, W. T., Parfitt, R. L., Ross, C., Schipper, L. A., & Canessa, S.
+(2011). Evaluating 50 years of time-series soil radiocarbon data:
+Towards routine calculation of robust c residence times.
+*Biogeochemistry*, *112*(1-3), 129–137. Springer Science; Business Media
+LLC. Retrieved from <https://doi.org/10.1007%2Fs10533-011-9675-y>
+
+</div>
+
+<div id="ref-Basile_Doelsch_2005">
+
+Basile-Doelsch, I., Amundson, R., Stone, W. E. E., Masiello, C. A.,
+Bottero, J. Y., Colin, F., Masin, F., et al. (2005). Mineralogical
+control of organic carbon dynamics in a volcanic ash soil on la reunion.
+*European Journal of Soil Science*, *0*(0), 050912034650042. Wiley.
+Retrieved from <https://doi.org/10.1111%2Fj.1365-2389.2005.00703.x>
+
+</div>
+
+<div id="ref-BAUER_2011">
+
+BAUER, I. E., & VITT, D. H. (2011). Peatland dynamics in a complex
+landscape: Development of a fen-bog complex in the sporadic
+discontinuous permafrost zone of northern alberta, canada. *Boreas*,
+*40*(4), 714–726. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1502-3885.2011.00210.x>
+
+</div>
+
+<div id="ref-Bauters_2019">
+
+Bauters, M., Vercleyen, O., Vanlauwe, B., Six, J., Bonyoma, B., Badjoko,
+H., Hubau, W., et al. (2019). Long-term recovery of the functional
+community assembly and carbon pools in an african tropical forest
+succession. *Biotropica*, *51*(3), 319–329. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fbtp.12647>
+
+</div>
+
+<div id="ref-Beaulieu_Audy_2009">
+
+Beaulieu-Audy, V., Garneau, M., Richard, P. J., & Asnong, H. (2009).
+Holocene palaeoecological reconstruction of three boreal peatlands in
+the la grande rivière region, québec, canada. *The Holocene*, *19*(3),
+459–476. SAGE Publications. Retrieved from
+<https://doi.org/10.1177%2F0959683608101395>
+
+</div>
+
+<div id="ref-Becker_Heidmann_2002">
+
+Becker-Heidmann, P., Andresen, O., Kalmar, D., Scharpenseel, H.-W., &
+Yaalon, D. H. (2002). Carbon dynamics in vertisols as revealed by
+high-resolution sampling. *Radiocarbon*, *44*(1), 63–73. Cambridge
+University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200064687>
+
+</div>
+
+<div id="ref-Becker_Heidmann_1986">
+
+Becker-Heidmann, P., & Scharpenseel, H.-W. (1986). Thin layer
+\(\updelta\)13C and d14c monitoring of “Lessive” soil profiles.
+*Radiocarbon*, *28*(2A), 383–390. Cambridge University Press (CUP).
+Retrieved from <https://doi.org/10.1017%2Fs0033822200007499>
+
+</div>
+
+<div id="ref-Becker_Heidmann_1989">
+
+Becker-Heidmann, P., & Scharpenseel, H.-W. (1989). Carbon isotope
+dynamics in some tropical soils. *Radiocarbon*, *31*(03), 672–679.
+Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200012273>
+
+</div>
+
+<div id="ref-Behling_1995">
+
+Behling, H. (1995). Investigations into the late pleistocene and
+holocene history of vegetation and climate in santa catarina (s brazil).
+*Vegetation History and Archaeobotany*, *4*(3). Springer Science;
+Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fbf00203932>
+
+</div>
+
+<div id="ref-Behling_2006">
+
+Behling, H., & Pillar, V. D. (2006). Late quaternary vegetation,
+biodiversity and fire dynamics on the southern brazilian highland and
+their implication for conservation and management of modern araucaria
+forest and grassland ecosystems. *Philosophical Transactions of the
+Royal Society B: Biological Sciences*, *362*(1478), 243–251. The Royal
+Society. Retrieved from <https://doi.org/10.1098%2Frstb.2006.1984>
+
+</div>
+
+<div id="ref-Bellisario_1999">
+
+Bellisario, L. M., Bubier, J. L., Moore, T. R., & Chanton, J. P. (1999).
+Controls on CH4emissions from a northern peatland. *Global
+Biogeochemical Cycles*, *13*(1), 81–91. American Geophysical Union
+(AGU). Retrieved from <https://doi.org/10.1029%2F1998gb900021>
+
+</div>
+
+<div id="ref-Benner_2004">
+
+Benner, R., Benitez-Nelson, B., Kaiser, K., & Amon, R. M. W. (2004).
+Export of young terrigenous dissolved organic carbon from rivers to the
+arctic ocean. *Geophysical Research Letters*, *31*(5), n/a–n/a. American
+Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2003gl019251>
+
+</div>
+
+<div id="ref-Berg_2004">
+
+Berg, B., & Gerstberger, P. (2004). Element fluxes with litterfall in
+mature stands of norway spruce and european beech in bavaria, south
+germany. In *Ecological studies* (pp. 271–278). Springer Berlin
+Heidelberg. Retrieved from
+<https://doi.org/10.1007%2F978-3-662-06073-5_16>
+
+</div>
+
+<div id="ref-Berhe_2012">
+
+Berhe, A. A., Harden, J. W., Torn, M. S., Kleber, M., Burton, S. D., &
+Harte, J. (2012). Persistence of soil organic matter in eroding versus
+depositional landform positions. *Journal of Geophysical Research:
+Biogeosciences*, *117*(G2), n/a–n/a. American Geophysical Union (AGU).
+Retrieved from <https://doi.org/10.1029%2F2011jg001790>
+
+</div>
+
+<div id="ref-Bhiry_2007">
+
+Bhiry, N., Payette, S., & C. Robert. (2007). Peatland development at the
+arctic tree line (québec, canada) influenced by flooding and permafrost.
+*Quaternary Research*, *67*(3), 426–437. Cambridge University Press
+(CUP). Retrieved from <https://doi.org/10.1016%2Fj.yqres.2006.11.009>
+
+</div>
+
+<div id="ref-Biedenbender_2004">
+
+Biedenbender, S. H., McClaran, M. P., Quade, J., & Weltz, M. A. (2004).
+Landscape patterns of vegetation change indicated by soil carbon isotope
+composition. *Geoderma*, *119*(1-2), 69–83. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fs0016-7061%2803%2900234-9>
+
+</div>
+
+<div id="ref-Billings_1987">
+
+Billings, W. (1987). Carbon balance of alaskan tundra and taiga
+ecosystems: Past, present and future. *Quaternary Science Reviews*,
+*6*(2), 165–177. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2F0277-3791%2887%2990032-1>
+
+</div>
+
+<div id="ref-Binkley_1999">
+
+Binkley, D., & Resh, S. C. (1999). Rapid changes in soils following
+eucalyptus afforestation in hawaii. *Soil Science Society of America
+Journal*, *63*(1), 222–225. Wiley. Retrieved from
+<https://doi.org/10.2136%2Fsssaj1999.03615995006300010032x>
+
+</div>
+
+<div id="ref-Bird_2002">
+
+Bird, M., Santruckova, H., Lloyd, J., & Lawson, E. (2002). The isotopic
+composition of soil organic carbon on a north-south transect in western
+canada. *European Journal of Soil Science*, *53*(3), 393–403. Wiley.
+Retrieved from <https://doi.org/10.1046%2Fj.1365-2389.2002.00444.x>
+
+</div>
+
+<div id="ref-Blyakharchuk_2003">
+
+Blyakharchuk, T. A. (2003). Four new pollen sections tracing the
+holocene vegetational development of the southern part of the west
+siberan lowland. *The Holocene*, *13*(5), 715–731. SAGE Publications.
+Retrieved from <https://doi.org/10.1191%2F0959683603hl658rp>
+
+</div>
+
+<div id="ref-Blyakharchuk_1999">
+
+Blyakharchuk, T. A., & Sulerzhitsky, L. D. (1999). Holocene vegetational
+and climatic changes in the forest zone of western siberia according to
+pollen records from the extrazonal palsa bog bugristoye. *The Holocene*,
+*9*(5), 621–628. SAGE Publications. Retrieved from
+<https://doi.org/10.1191%2F095968399676614561>
+
+</div>
+
+<div id="ref-Bol_2003">
+
+Bol, R., Bolger, T., Cully, R., & Little, D. (2003). Recalcitrant soil
+organic materials mineralize more efficiently at higher temperatures.
+*Journal of Plant Nutrition and Soil Science*, *166*(3), 300–307. Wiley.
+Retrieved from <https://doi.org/10.1002%2Fjpln.200390047>
+
+</div>
+
+<div id="ref-BOL_1996">
+
+BOL, R., HUANG, Y., MERIDITH, J., EGLINTON, G., HARKNESS, D., & INESON,
+P. (1996). The 14C age and residence time of organic matter and its
+lipid constituents in a stagnohumic gley soil. *European Journal of Soil
+Science*, *47*(2), 215–222. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2389.1996.tb01392.x>
+
+</div>
+
+<div id="ref-Bouchard_2015">
+
+Bouchard, F., Laurion, I.,
+Pr\&amp\(\mathsemicolon\)\#x0117\(\mathsemicolon\)skienis, V., Fortier,
+D., Xu, X., & Whiticar, M. J. (2015). Modern to millennium-old
+greenhouse gases emitted from ponds and lakes of the eastern canadian
+arctic (bylot island, nunavut). *Biogeosciences*, *12*(23), 7279–7298.
+Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fbg-12-7279-2015>
+
+</div>
+
+<div id="ref-Butman_2007">
+
+Butman, D., Raymond, P., Oh, N.-H., & Mull, K. (2007). Quantity, 14C age
+and lability of desorbed soil organic carbon in fresh water and
+seawater. *Organic Geochemistry*, *38*(9), 1547–1557. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.orggeochem.2007.05.011>
+
+</div>
+
+<div id="ref-Butnor_2017">
+
+Butnor, J. R., Samuelson, L. J., Johnsen, K. H., Anderson, P. H.,
+Benecke, C. A. G., Boot, C. M., Cotrufo, M. F., et al. (2017). Vertical
+distribution and persistence of soil organic carbon in fire-adapted
+longleaf pine forests. *Forest Ecology and Management*, *390*, 15–26.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.foreco.2017.01.014>
+
+</div>
+
+<div id="ref-De_Camargo_1999">
+
+Camargo, P. B. D., Trumbore, S. E., Martinelli, L. A., Davidson, E. A.,
+Nepstad, D. C., & Victoria, R. L. (1999). Soil carbon dynamics in
+regrowing forest of eastern amazonia. *Global Change Biology*, *5*(6),
+693–702. Wiley. Retrieved from
+<https://doi.org/10.1046%2Fj.1365-2486.1999.00259.x>
+
+</div>
+
+<div id="ref-Caner_2003">
+
+Caner, L., Toutain, F., Bourgeon, G., & Herbillon, A.-J. (2003).
+Occurrence of sombric-like subsurface a horizons in some andic soils of
+the nilgiri hills (southern india) and their palaeoecological
+significance. *Geoderma*, *117*(3-4), 251–265. Elsevier BV. Retrieved
+from <https://doi.org/10.1016%2Fs0016-7061%2803%2900127-7>
+
+</div>
+
+<div id="ref-Carbone_2016">
+
+Carbone, M. S., Richardson, A. D., Chen, M., Davidson, E. A., Hughes,
+H., Savage, K. E., & Hollinger, D. Y. (2016). Constrained partitioning
+of autotrophic and heterotrophic respiration reduces model uncertainties
+of forest ecosystem carbon fluxes but not stocks. *Journal of
+Geophysical Research: Biogeosciences*, *121*(9), 2476–2492. American
+Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1002%2F2016jg003386>
+
+</div>
+
+<div id="ref-Carbone_2011">
+
+Carbone, M. S., Still, C. J., Ambrose, A. R., Dawson, T. E., Williams,
+A. P., Boot, C. M., Schaeffer, S. M., et al. (2011). Seasonal and
+episodic moisture controls on plant and microbial contributions to soil
+respiration. *Oecologia*, *167*(1), 265–278. Springer Science; Business
+Media LLC. Retrieved from <https://doi.org/10.1007%2Fs00442-011-1975-3>
+
+</div>
+
+<div id="ref-Carbone_2008">
+
+Carbone, M. S., Winston, G. C., & Trumbore, S. E. (2008). Soil
+respiration in perennial grass and shrub ecosystems: Linking
+environmental controls with plant and microbial sources on seasonal and
+diel timescales. *Journal of Geophysical Research: Biogeosciences*,
+*113*(G2), n/a–n/a. American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2007jg000611>
+
+</div>
+
+<div id="ref-Castanha_2012">
+
+Castanha, C., Trumbore, S., & Amundso, R. (2012). Mineral and organic
+matter characterization of density fractions of basalt- and
+granite-derived soils in montane california. In *An introduction to the
+study of mineralogy*. InTech. Retrieved from
+<https://doi.org/10.5772%2F36735>
+
+</div>
+
+<div id="ref-Chabbi_2009">
+
+Chabbi, A., Kögel-Knabner, I., & Rumpel, C. (2009). Stabilised carbon in
+subsoil horizons is located in spatially distinct parts of the soil
+profile. *Soil Biology and Biochemistry*, *41*(2), 256–261. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.soilbio.2008.10.033>
+
+</div>
+
+<div id="ref-Chasar_2000">
+
+Chasar, L. S., Chanton, J. P., Glaser, P. H., Siegel, D. I., & Rivers,
+J. S. (2000). Radiocarbon and stable carbon isotopic evidence for
+transport and transformation of dissolved organic carbon, dissolved
+inorganic carbon, and CH4in a northern minnesota peatland. *Global
+Biogeochemical Cycles*, *14*(4), 1095–1108. American Geophysical Union
+(AGU). Retrieved from <https://doi.org/10.1029%2F1999gb001221>
+
+</div>
+
+<div id="ref-Chen_2002">
+
+Chen, Q., Sun, Y., Shen, C., Peng, S., Yi, W., Li, Z., & Jiang, M.
+(2002). Organic matter turnover rates and CO2 flux from organic matter
+decomposition of mountain soil profiles in the subtropical area, south
+china. *CATENA*, *49*(3), 217–229. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fs0341-8162%2802%2900044-9>
+
+</div>
+
+<div id="ref-Cherkinsky_1996">
+
+Cherkinsky, A. E. (1996). 14C dating and soil organic matter dynamics in
+arctic and subarctic ecosystems. *Radiocarbon*, *38*(2), 241–245.
+Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200017616>
+
+</div>
+
+<div id="ref-Chiti_2015">
+
+Chiti, T., Certini, G., Forte, C., Papale, D., & Valentini, R. (2015).
+Radiocarbon-based assessment of heterotrophic soil respiration in two
+mediterranean forests. *Ecosystems*, *19*(1), 62–72. Springer Science;
+Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10021-015-9915-4>
+
+</div>
+
+<div id="ref-Chiti_2010">
+
+Chiti, T., Certini, G., Grieco, E., & Valentini, R. (2010). The role of
+soil in storing carbon in tropical rainforests: The case of ankasa park,
+ghana. *Plant and Soil*, *331*(1-2), 453–461. Springer Science; Business
+Media LLC. Retrieved from <https://doi.org/10.1007%2Fs11104-009-0265-x>
+
+</div>
+
+<div id="ref-Chiti_2017">
+
+Chiti, T., Dı'az-Pinés, E., Butterbach-Bahl, K., Marzaioli, F., &
+Valentini, R. (2017). Soil organic carbon changes following degradation
+and conversion to cypress and tea plantations in a tropical mountain
+forest in kenya. *Plant and Soil*, *422*(1-2), 527–539. Springer
+Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs11104-017-3489-1>
+
+</div>
+
+<div id="ref-Chiti_2009">
+
+Chiti, T., Neubert, R., Janssens, I., Certini, G., Yuste, J. C., &
+Sirignano, C. (2009). Radiocarbon dating reveals different past
+managements of adjacent forest soils in the campine region, belgium.
+*Geoderma*, *149*(1-2), 137–142. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2008.11.030>
+
+</div>
+
+<div id="ref-Chiti_2018">
+
+Chiti, T., Rey, A., Jeffery, K., Lauteri, M., Mihindou, V., Malhi, Y.,
+Marzaioli, F., et al. (2018). Contribution and stability of
+forest-derived soil organic carbon during woody encroachment in a
+tropical savanna. A case study in gabon. *Biology and Fertility of
+Soils*, *54*(8), 897–907. Springer Science; Business Media LLC.
+Retrieved from <https://doi.org/10.1007%2Fs00374-018-1313-6>
+
+</div>
+
+<div id="ref-Chorover_2004">
+
+Chorover, J., Amistadi, M. K., & Chadwick, O. A. (2004). Surface charge
+evolution of mineral-organic complexes during pedogenesis in hawaiian
+basalt. *Geochimica et Cosmochimica Acta*, *68*(23), 4859–4876. Elsevier
+BV. Retrieved from <https://doi.org/10.1016%2Fj.gca.2004.06.005>
+
+</div>
+
+<div id="ref-Conen_2008">
+
+Conen, F., Zimmermann, M., Leifeld, J., Seth, B., & Alewell, C. (2008).
+Relative stability of soil carbon revealed by shifts in
+\(\updelta\)\&lt\(\mathsemicolon\)sup\&gt\(\mathsemicolon\)15\&lt\(\mathsemicolon\)/sup\&gt\(\mathsemicolon\)N
+and c:N ratio. *Biogeosciences*, *5*(1), 123–128. Copernicus GmbH.
+Retrieved from <https://doi.org/10.5194%2Fbg-5-123-2008>
+
+</div>
+
+<div id="ref-Cooper_2017">
+
+Cooper, M. D. A., Estop-Aragonés, C., Fisher, J. P., Thierry, A.,
+Garnett, M. H., Charman, D. J., Murton, J. B., et al. (2017). Limited
+contribution of permafrost carbon to methane release from thawing
+peatlands. *Nature Climate Change*, *7*(7), 507–511. Springer Science;
+Business Media LLC. Retrieved from
+<https://doi.org/10.1038%2Fnclimate3328>
+
+</div>
+
+<div id="ref-Crews_1995">
+
+Crews, T. E., Kitayama, K., Fownes, J. H., Riley, R. H., Herbert, D. A.,
+Mueller-Dombois, D., & Vitousek, P. M. (1995). Changes in soil
+phosphorus fractions and ecosystem dynamics across a long chronosequence
+in hawaii. *Ecology*, *76*(5), 1407–1424. Wiley. Retrieved from
+<https://doi.org/10.2307%2F1938144>
+
+</div>
+
+<div id="ref-Crow_2014">
+
+Crow, S. E., Reeves, M., Schubert, O. S., & Sierra, C. A. (2014).
+Optimization of method to quantify soil organic matter dynamics and
+carbon sequestration potential in volcanic ash soils. *Biogeochemistry*,
+*123*(1-2), 27–47. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10533-014-0051-6>
+
+</div>
+
+<div id="ref-Cusack_2012">
+
+Cusack, D. F., Chadwick, O. A., Hockaday, W. C., & Vitousek, P. M.
+(2012). Mineralogical controls on soil black carbon preservation.
+*Global Biogeochemical Cycles*, *26*(2), n/a–n/a. American Geophysical
+Union (AGU). Retrieved from <https://doi.org/10.1029%2F2011gb004109>
+
+</div>
+
+<div id="ref-CUSACK_2010">
+
+CUSACK, D. F., TORN, M. S., McDOWELL, W. H., & SILVER, W. L. (2010). The
+response of heterotrophic activity and carbon cycling to nitrogen
+additions and warming in two tropical soils. *Global Change Biology*.
+Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2009.02131.x>
+
+</div>
+
+<div id="ref-Czimczik_2005">
+
+Czimczik, C. I., Schmidt, M. W. I., & Schulze, E.-D. (2005). Effects of
+increasing fire frequency on black carbon and organic matter in podzols
+of siberian scots pine forests. *European Journal of Soil Science*,
+*56*(3), 417–428. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2389.2004.00665.x>
+
+</div>
+
+<div id="ref-Czimczik_2007">
+
+Czimczik, C. I., & Trumbore, S. E. (2007). Short-term controls on the
+age of microbial carbon sources in boreal forest soils. *Journal of
+Geophysical Research: Biogeosciences*, *112*(G3), n/a–n/a. American
+Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2006jg000389>
+
+</div>
+
+<div id="ref-Czimczik_2010">
+
+Czimczik, C. I., & Welker, J. M. (2010). Radiocarbon content of CO2
+respired from high arctic tundra in northwest greenland. *Arctic,
+Antarctic, and Alpine Research*, *42*(3), 342–350. Informa UK Limited.
+Retrieved from <https://doi.org/10.1657%2F1938-4246-42.3.342>
+
+</div>
+
+<div id="ref-van_Dam_1997">
+
+Dam, D. van, Breemen, N. van, & Veldkamp, E. (1997). *Biogeochemistry*,
+*39*(3), 343–375. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1023%2Fa%3A1005880031579>
+
+</div>
+
+<div id="ref-Desjardins_1994">
+
+Desjardins, T., Andreux, F., Volkoff, B., & Cerri, C. (1994). Organic
+carbon and 13C contents in soils and soil size-fractions, and their
+changes due to deforestation and pasture installation in eastern
+amazonia. *Geoderma*, *61*(1-2), 103–118. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2F0016-7061%2894%2990013-2>
+
+</div>
+
+<div id="ref-Doetterl_2012">
+
+Doetterl, S., Six, J., Wesemael, B. V., & Oost, K. V. (2012). Carbon
+cycling in eroding landscapes: Geomorphic controls on soil organic c
+pool composition and c stabilization. *Global Change Biology*, *18*(7),
+2218–2232. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2012.02680.x>
+
+</div>
+
+<div id="ref-Doetterl_2015">
+
+Doetterl, S., Stevens, A., Six, J., Merckx, R., Oost, K. V., Pinto, M.
+C., Casanova-Katny, A., et al. (2015). Soil carbon storage controlled by
+interactions between geochemistry and climate. *Nature Geoscience*,
+*8*(10), 780–783. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1038%2Fngeo2516>
+
+</div>
+
+<div id="ref-D_rr_1980">
+
+Dörr, H., & Münnich, K. O. (1980). Carbon-14 and carbon-13 in soil co2.
+*Radiocarbon*, *22*(3), 909–918. Cambridge University Press (CUP).
+Retrieved from <https://doi.org/10.1017%2Fs0033822200010316>
+
+</div>
+
+<div id="ref-D_rr_1986">
+
+Dörr, H., & Münnich, K. O. (1986). Annual variations of the 14C content
+of soil CO2. *Radiocarbon*, *28*(2A), 338–345. Cambridge University
+Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200007438>
+
+</div>
+
+<div id="ref-D_rr_1989">
+
+Dörr, H., & Münnich, K. O. (1989). Downward movement of soil organic
+matter and its influence on trace-element transport (210Pb, 137Cs) in
+the soil. *Radiocarbon*, *31*(03), 655–663. Cambridge University Press
+(CUP). Retrieved from <https://doi.org/10.1017%2Fs003382220001225x>
+
+</div>
+
+<div id="ref-Dredge_2005">
+
+Dredge, L. A., & Mott, R. J. (2005). Holocene pollen records and
+peatland development, northeastern manitoba. *Géographie physique et
+Quaternaire*, *57*(1), 7–19. Consortium Erudit. Retrieved from
+<https://doi.org/10.7202%2F010328ar>
+
+</div>
+
+<div id="ref-DUTTA_2006">
+
+DUTTA, K., SCHUUR, E. A. G., NEFF, J. C., & ZIMOV, S. A. (2006).
+Potential carbon release from permafrost soils of northeastern siberia.
+*Global Change Biology*, *12*(12), 2336–2351. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2006.01259.x>
+
+</div>
+
+<div id="ref-D_mig_2008">
+
+Dümig, A., Schad, P., Rumpel, C., Dignac, M.-F., & Kögel-Knabner, I.
+(2008). Araucaria forest expansion on grassland in the southern
+brazilian highlands as revealed by 14C and \(\updelta\)13C studies.
+*Geoderma*, *145*(1-2), 143–157. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2007.06.005>
+
+</div>
+
+<div id="ref-Elder_2018">
+
+Elder, C. D., Xu, X., Walker, J., Schnell, J. L., Hinkel, K. M.,
+Townsend-Small, A., Arp, C. D., et al. (2018). Greenhouse gas emissions
+from diverse arctic alaskan lakes are dominated by young carbon. *Nature
+Climate Change*, *8*(2), 166–171. Springer Science; Business Media LLC.
+Retrieved from <https://doi.org/10.1038%2Fs41558-017-0066-9>
+
+</div>
+
+<div id="ref-Ellis_2004">
+
+Ellis, C. J., & Rochefort, L. (2004). CENTURY-SCALE DEVELOPMENT OF
+POLYGON-PATTERNED TUNDRA WETLAND, BYLOT ISLAND (73 n, 80 w). *Ecology*,
+*85*(4), 963–978. Wiley. Retrieved from
+<https://doi.org/10.1890%2F02-0614>
+
+</div>
+
+<div id="ref-ELLIS_2006">
+
+ELLIS, C. J., & ROCHEFORT, L. (2006). Long-term sensitivity of a high
+arctic wetland to holocene climate change. *Journal of Ecology*,
+*94*(2), 441–454. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2745.2005.01085.x>
+
+</div>
+
+<div id="ref-Elzein_1995">
+
+Elzein, A., & Balesdent, J. (1995). Mechanistic simulation of vertical
+distribution of carbon concentrations and residence times in soils.
+*Soil Science Society of America Journal*, *59*(5), 1328–1335. Wiley.
+Retrieved from
+<https://doi.org/10.2136%2Fsssaj1995.03615995005900050019x>
+
+</div>
+
+<div id="ref-Estop_Aragon_s_2018">
+
+Estop-Aragonés, C., Cooper, M. D., Fisher, J. P., Thierry, A., Garnett,
+M. H., Charman, D. J., Murton, J. B., et al. (2018). Limited release of
+previously-frozen c and increased new peat formation after thaw in
+permafrost peatlands. *Soil Biology and Biochemistry*, *118*, 115–129.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.soilbio.2017.12.010>
+
+</div>
+
+<div id="ref-Eusterhues_2003">
+
+Eusterhues, K., Rumpel, C., Kleber, M., & Kögel-Knabner, I. (2003).
+Stabilisation of soil organic matter by interactions with minerals as
+revealed by mineral dissolution and oxidative degradation. *Organic
+Geochemistry*, *34*(12), 1591–1600. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.orggeochem.2003.08.007>
+
+</div>
+
+<div id="ref-Ewing_2006">
+
+Ewing, S. A., Sanderman, J., Baisden, W. T., Wang, Y., & Amundson, R.
+(2006). Role of large-scale soil structure in organic carbon turnover:
+Evidence from california grassland soils. *Journal of Geophysical
+Research*, *111*(G3). American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2006jg000174>
+
+</div>
+
+<div id="ref-Fernandez_1993">
+
+Fernandez, I. J., Rustad, L. E., & Lawrence, G. B. (1993). Estimating
+total soil mass, nutrient content, and trace metals in soils under a low
+elevation spruce-fir forest. *Canadian Journal of Soil Science*,
+*73*(3), 317–328. Canadian Science Publishing. Retrieved from
+<https://doi.org/10.4141%2Fcjss93-034>
+
+</div>
+
+<div id="ref-De_Feudis_2019">
+
+Feudis, M. D., Cardelli, V., Massaccesi, L., Trumbore, S., Antisari, L.
+V., Cocco, S., Corti, G., et al. (2019). Small altitudinal change and
+rhizosphere affect the SOM light fractions but not the heavy fraction in
+european beech forest soil. *CATENA*, *181*, 104091. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.catena.2019.104091>
+
+</div>
+
+<div id="ref-Fierer_2005">
+
+Fierer, N., Chadwick, O. A., & Trumbore, S. E. (2005). Production of CO2
+in soil profiles of a california annual grassland. *Ecosystems*, *8*(4),
+412–429. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10021-003-0151-y>
+
+</div>
+
+<div id="ref-Fillion_2014">
+
+Fillion, M.-È., Bhiry, N., & Touazi, M. (2014). Differential development
+of two palsa fields in a peatland located near
+whapmagoostui-kuujjuarapik, northern québec, canada. *Arctic, Antarctic,
+and Alpine Research*, *46*(1), 40–54. Informa UK Limited. Retrieved from
+<https://doi.org/10.1657%2F1938-4246-46.1.40>
+
+</div>
+
+<div id="ref-Fontaine_2007">
+
+Fontaine, S., Barot, S., Barré, P., Bdioui, N., Mary, B., & Rumpel, C.
+(2007). Stability of organic carbon in deep soil layers controlled by
+fresh carbon supply. *Nature*, *450*(7167), 277–280. Springer Science;
+Business Media LLC. Retrieved from
+<https://doi.org/10.1038%2Fnature06275>
+
+</div>
+
+<div id="ref-de_Freitas_2001">
+
+Freitas, H. A. de, Pessenda, L. C. R., Aravena, R., Gouveia, S. E. M.,
+Souza Ribeiro, A. de, & Boulet, R. (2001). Late quaternary vegetation
+dynamics in the southern amazon basin inferred from carbon isotopes in
+soil organic matter. *Quaternary Research*, *55*(1), 39–46. Cambridge
+University Press (CUP). Retrieved from
+<https://doi.org/10.1006%2Fqres.2000.2192>
+
+</div>
+
+<div id="ref-Garneau_2007">
+
+Garneau, M. (2007). Analyses macrofossiles d’un dépot de tourbe dans la
+région de hot weather creek, péninsule de fosheim, ı^le d’Ellesmere,
+territoires du nord-ouest. *Géographie physique et Quaternaire*,
+*46*(3), 285–294. Consortium Erudit. Retrieved from
+<https://doi.org/10.7202%2F032915ar>
+
+</div>
+
+<div id="ref-Garneau_2014">
+
+Garneau, M., Bellen, S. van, Magnan, G., Beaulieu-Audy, V., Lamarre, A.,
+& Asnong, H. (2014). Holocene carbon dynamics of boreal and subarctic
+peatlands from québec, canada. *The Holocene*, *24*(9), 1043–1053. SAGE
+Publications. Retrieved from
+<https://doi.org/10.1177%2F0959683614538076>
+
+</div>
+
+<div id="ref-Gaudinski_2000">
+
+Gaudinski, J. B., Trumbore, S. E., Davidson, E. A., & Zheng, S. (2000).
+*Biogeochemistry*, *51*(1), 33–69. Springer Science; Business Media LLC.
+Retrieved from <https://doi.org/10.1023%2Fa%3A1006301010014>
+
+</div>
+
+<div id="ref-Gentsch_2018">
+
+Gentsch, N., Wild, B., Mikutta, R., Čapek, P., Diáková, K., Schrumpf,
+M., Turner, S., et al. (2018). Temperature response of permafrost soil
+carbon is attenuated by mineral protection. *Global Change Biology*,
+*24*(8), 3401–3415. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fgcb.14316>
+
+</div>
+
+<div id="ref-Gillson_2004">
+
+Gillson, L. (2004). Testing non-equilibrium theories in savannas: 1400
+years of vegetation change in tsavo national park, kenya. *Ecological
+Complexity*, *1*(4), 281–298. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.ecocom.2004.06.001>
+
+</div>
+
+<div id="ref-GOH_1977">
+
+GOH, K. M., STOUT, J. D., & RAFTER, T. A. (1977). RADIOCARBON ENRICHMENT
+OF SOIL ORGANIC MATTER FRACTIONS IN NEW ZEALAND SOILS. *Soil Science*,
+*123*(6), 385–391. Ovid Technologies (Wolters Kluwer Health). Retrieved
+from <https://doi.org/10.1097%2F00010694-197706000-00007>
+
+</div>
+
+<div id="ref-Gonz_lez_Dom_nguez_2019">
+
+González-Domı'nguez, B., Niklaus, P. A., Studer, M. S., Hagedorn, F.,
+Wacker, L., Haghipour, N., Zimmermann, S., et al. (2019). Temperature
+and moisture are minor drivers of regional-scale soil organic carbon
+dynamics. *Scientific Reports*, *9*(1). Springer Science; Business Media
+LLC. Retrieved from <https://doi.org/10.1038%2Fs41598-019-42629-5>
+
+</div>
+
+<div id="ref-GUILLET_2001">
+
+GUILLET, B., ACHOUNDONG, G., HAPPI, J. Y., BEYALA, V. K. K., BONVALLOT,
+J., RIERA, B., MARIOTTI, A., et al. (2001). Agreement between floristic
+and soil organic carbon isotope (13C/12C, 14C) indicators of forest
+invasion of savannas during the last century in cameroon. *Journal of
+Tropical Ecology*, *17*(6), 809–832. Cambridge University Press (CUP).
+Retrieved from <https://doi.org/10.1017%2Fs0266467401001614>
+
+</div>
+
+<div id="ref-Guillet_1988">
+
+Guillet, B., Faivre, P., Mariotti, A., & Khobzi, J. (1988). The 14C
+dates and 13C/12C ratios of soil organic matter as a means of studying
+the past vegetation in intertropical regions: Examples from colombia
+(south america). *Palaeogeography, Palaeoclimatology, Palaeoecology*,
+*65*(1-2), 51–58. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2F0031-0182%2888%2990111-3>
+
+</div>
+
+<div id="ref-Guo_2003">
+
+Guo, L., Lehner, J. K., White, D. M., & Garland, D. (2003).
+Heterogeneity of natural organic matter from the chena river, alaska.
+*Water Research*, *37*(5), 1015–1022. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fs0043-1354%2802%2900443-8>
+
+</div>
+
+<div id="ref-Guo_2006">
+
+Guo, L., & Macdonald, R. W. (2006). Source and transport of terrigenous
+organic matter in the upper yukon river: Evidence from isotope
+(\(\updelta\)13C, \(\upDelta\)14C, and \(\updelta\)15N) composition of
+dissolved, colloidal, and particulate phases. *Global Biogeochemical
+Cycles*, *20*(2), n/a–n/a. American Geophysical Union (AGU). Retrieved
+from <https://doi.org/10.1029%2F2005gb002593>
+
+</div>
+
+<div id="ref-Guo_2007">
+
+Guo, L., Ping, C.-L., & Macdonald, R. W. (2007). Mobilization pathways
+of organic carbon from permafrost to arctic rivers in a changing
+climate. *Geophysical Research Letters*, *34*(13), n/a–n/a. American
+Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2007gl030689>
+
+</div>
+
+<div id="ref-Hall_2015">
+
+Hall, S. J., McNicol, G., Natake, T., & Silver, W. L. (2015). Large
+fluxes and rapid turnover of mineral-associated carbon across
+topographic gradients in a humid tropical forest: Insights from paired
+\&lt\(\mathsemicolon\)sup\&gt\(\mathsemicolon\)14\&lt\(\mathsemicolon\)/sup\&gt\(\mathsemicolon\)C
+analysis. *Biogeosciences Discussions*, *12*(2), 891–932. Copernicus
+GmbH. Retrieved from <https://doi.org/10.5194%2Fbgd-12-891-2015>
+
+</div>
+
+<div id="ref-Harden_2002">
+
+Harden, J., Fries, T., & Pavich, M. (2002). *Biogeochemistry*, *60*(3),
+317–336. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1023%2Fa%3A1020308729553>
+
+</div>
+
+<div id="ref-Hardie_2009">
+
+Hardie, S., Garnett, M., Fallick, A., Ostle, N., & Rowland, A. (2009).
+Bomb-14C analysis of ecosystem respiration reveals that peatland
+vegetation facilitates release of old carbon. *Geoderma*, *153*(3-4),
+393–401. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2009.09.002>
+
+</div>
+
+<div id="ref-Hardie_2011">
+
+Hardie, S., Garnett, M., Fallick, A., Rowland, A., Ostle, N., & Flowers,
+T. (2011). Abiotic drivers and their interactive effect on the flux and
+carbon isotope (14C and \(\updelta\)13C) composition of peat-respired
+CO2. *Soil Biology and Biochemistry*, *43*(12), 2432–2440. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.soilbio.2011.08.010>
+
+</div>
+
+<div id="ref-Harkness_1986">
+
+Harkness, D. D., Harrison, A. F., & Bacon, P. J. (1986). The temporal
+distribution of “bomb” 14C in a forest soil. *Radiocarbon*, *28*(2A),
+328–337. Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200007426>
+
+</div>
+
+<div id="ref-Harris_1994">
+
+Harris, S. A., & Schmidt, I. H. (1994). Permafrost aggradation and peat
+accumulation since 1200 years b.p. In peat plateaus at tuchitua, yukon
+territory (canada). *Journal of Paleolimnology*, *12*(1), 3–17. Springer
+Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fbf00677986>
+
+</div>
+
+<div id="ref-Hatton_2012">
+
+Hatton, P.-J., Kleber, M., Zeller, B., Moni, C., Plante, A. F.,
+Townsend, K., Gelhaye, L., et al. (2012). Transfer of litter-derived n
+to soil mineralorganic associations: Evidence from decadal 15N tracer
+experiments. *Organic Geochemistry*, *42*(12), 1489–1501. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.orggeochem.2011.05.002>
+
+</div>
+
+<div id="ref-https://doi.org/10.5281/zenodo.1486081">
+
+Heckman, K. A. (2010). Pedogenesis \&amp; carbon dynamics across a
+lithosequence under ponderosa pine. Zenodo. Retrieved from
+<https://zenodo.org/record/1486081>
+
+</div>
+
+<div id="ref-Heckman_2018">
+
+Heckman, K., Lawrence, C. R., & Harden, J. W. (2018). A sequential
+selective dissolution method to quantify storage and stability of
+organic carbon associated with al and fe hydroxide phases. *Geoderma*,
+*312*, 24–35. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2017.09.043>
+
+</div>
+
+<div id="ref-Hilton_2015">
+
+Hilton, R. G., Galy, V., Gaillardet, J., Dellinger, M., Bryant, C.,
+ORegan, M., Gröcke, D. R., et al. (2015). Erosion of organic carbon in
+the arctic as a geological carbon dioxide sink. *Nature*, *524*(7563),
+84–87. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1038%2Fnature14653>
+
+</div>
+
+<div id="ref-https://doi.org/10.5281/zenodo.3370057">
+
+Holden, S. R., Czimczik, C. I., Xu, X., & Treseder, K. K. (2019). Soil
+radiocarbon data from a fire chronosequence near delta junction, alaska.
+Zenodo. Retrieved from <https://zenodo.org/record/3370057>
+
+</div>
+
+<div id="ref-Hood_2009">
+
+Hood, E., Fellman, J., Spencer, R. G. M., Hernes, P. J., Edwards, R.,
+D’Amore, D., & Scott, D. (2009). Glaciers as a source of ancient and
+labile organic matter to the marine environment. *Nature*, *462*(7276),
+1044–1047. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1038%2Fnature08580>
+
+</div>
+
+<div id="ref-Horwath_2008">
+
+Horwath, J. L., Sletten, R. S., Hagedorn, B., & Hallet, B. (2008).
+Spatial and temporal distribution of soil organic carbon in nonsorted
+striped patterned ground of the high arctic. *Journal of Geophysical
+Research*, *113*(G3). American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2007jg000511>
+
+</div>
+
+<div id="ref-Hribljan_2016">
+
+Hribljan, J. A., Suárez, E., Heckman, K. A., Lilleskov, E. A., &
+Chimner, R. A. (2016). Peatland carbon stocks and accumulation rates in
+the ecuadorian páramo. *Wetlands Ecology and Management*, *24*(2),
+113–127. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs11273-016-9482-2>
+
+</div>
+
+<div id="ref-Hsieh_1996">
+
+Hsieh, Y.-P. (1996). Soil organic carbon pools of two tropical soils
+inferred by carbon signatures. *Soil Science Society of America
+Journal*, *60*(4), 1117–1121. Wiley. Retrieved from
+<https://doi.org/10.2136%2Fsssaj1996.03615995006000040022x>
+
+</div>
+
+<div id="ref-Huang_1996">
+
+Huang, Y., Bol, R., Harkness, D. D., Ineson, P., & Eglinton, G. (1996).
+Post-glacial variations in distributions, 13C and 14C contents of
+aliphatic hydrocarbons and bulk organic matter in three types of british
+acid upland soils. *Organic Geochemistry*, *24*(3), 273–287. Elsevier
+BV. Retrieved from <https://doi.org/10.1016%2F0146-6380%2896%2900039-3>
+
+</div>
+
+<div id="ref-Huang_1999">
+
+Huang, Y., Li, B., Bryant, C., Bol, R., & Eglinton, G. (1999).
+Radiocarbon dating of aliphatic hydrocarbons a new approach for dating
+passive-fraction carbon in soil horizons. *Soil Science Society of
+America Journal*, *63*(5), 1181–1187. Wiley. Retrieved from
+<https://doi.org/10.2136%2Fsssaj1999.6351181x>
+
+</div>
+
+<div id="ref-Hugelius_2012">
+
+Hugelius, G., Routh, J., Kuhry, P., & Crill, P. (2012). Mapping the
+degree of decomposition and thaw remobilization potential of soil
+organic matter in discontinuous permafrost terrain. *Journal of
+Geophysical Research: Biogeosciences*, *117*(G2), n/a–n/a. American
+Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2011jg001873>
+
+</div>
+
+<div id="ref-Hunt_2013">
+
+Hunt, S., Yu, Z., & Jones, M. (2013). Lateglacial and holocene climate,
+disturbance and permafrost peatland dynamics on the seward peninsula,
+western alaska. *Quaternary Science Reviews*, *63*, 42–58. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.quascirev.2012.11.019>
+
+</div>
+
+<div id="ref-1990">
+
+International conference on soils and the greenhouse effect. (1990).
+*COSPAR Information Bulletin*, *1990*(118), 6–7. Elsevier BV. Retrieved
+from <https://doi.org/10.1016%2F0045-8732%2890%2990051-o>
+
+</div>
+
+<div id="ref-JANKOVSK__2006">
+
+JANKOVSKÁ, V., ANDREEV, A. A., & PANOVA, N. K. (2006). Holocene
+environmental history on the eastern slope of the polar ural mountains,
+russia. *Boreas*, *35*(4), 650–661. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1502-3885.2006.tb01171.x>
+
+</div>
+
+<div id="ref-Jasinski_1998">
+
+Jasinski, J., Warner, B. G., Andreev, A. A., Aravena, R., Gilbert, S.
+E., Zeeb, B. A., Smol, J. P., et al. (1998). Holocene environmental
+history of a peatland in the lena river valley, siberia. *Canadian
+Journal of Earth Sciences*, *35*(6), 637–648. Canadian Science
+Publishing. Retrieved from <https://doi.org/10.1139%2Fe98-015>
+
+</div>
+
+<div id="ref-Johnston_2014">
+
+Johnston, C. E., Ewing, S. A., Harden, J. W., Varner, R. K., Wickland,
+K. P., Koch, J. C., Fuller, C. C., et al. (2014). Effect of permafrost
+thaw on CO 2 and CH 4 exchange in a western alaska peatland
+chronosequence. *Environmental Research Letters*, *9*(8), 085004. IOP
+Publishing. Retrieved from
+<https://doi.org/10.1088%2F1748-9326%2F9%2F8%2F085004>
+
+</div>
+
+<div id="ref-Jones_2012">
+
+Jones, M. C., Grosse, G., Jones, B. M., & Anthony, K. W. (2012). Peat
+accumulation in drained thermokarst lake basins in continuous, ice-rich
+permafrost, northern seward peninsula, alaska. *Journal of Geophysical
+Research: Biogeosciences*, *117*(G2), n/a–n/a. American Geophysical
+Union (AGU). Retrieved from <https://doi.org/10.1029%2F2011jg001766>
+
+</div>
+
+<div id="ref-Jones_2009">
+
+Jones, M. C., Peteet, D. M., Kurdyla, D., & Guilderson, T. (2009).
+Climate and vegetation history from a 14,000-year peatland record, kenai
+peninsula, alaska. *Quaternary Research*, *72*(2), 207–217. Cambridge
+University Press (CUP). Retrieved from
+<https://doi.org/10.1016%2Fj.yqres.2009.04.002>
+
+</div>
+
+<div id="ref-Jones_2014">
+
+Jones, M. C., Wooller, M., & Peteet, D. M. (2014). A deglacial and
+holocene record of climate variability in south-central alaska from
+stable oxygen isotopes and plant macrofossils in peat. *Quaternary
+Science Reviews*, *87*, 1–11. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.quascirev.2013.12.025>
+
+</div>
+
+<div id="ref-Kaiser_2007">
+
+Kaiser, C., Meyer, H., Biasi, C., Rusalimova, O., Barsukov, P., &
+Richter, A. (2007). Conservation of soil organic matter through
+cryoturbation in arctic soils in siberia. *Journal of Geophysical
+Research*, *112*(G2). American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2006jg000258>
+
+</div>
+
+<div id="ref-Karhu_2010">
+
+Karhu, K., Fritze, H., Hämäläinen, K., Vanhala, P., Jungner, H.,
+Oinonen, M., Sonninen, E., et al. (2010). Temperature sensitivity of
+soil carbon fractions in boreal forest soil. *Ecology*, *91*(2),
+370–376. Wiley. Retrieved from <https://doi.org/10.1890%2F09-0478.1>
+
+</div>
+
+<div id="ref-Katsuno_2010">
+
+Katsuno, K., Miyairi, Y., Tamura, K., Matsuzaki, H., & Fukuda, K.
+(2010). A study of the carbon dynamics of japanese grassland and forest
+using 14C and 13C. *Nuclear Instruments and Methods in Physics Research
+Section B: Beam Interactions with Materials and Atoms*, *268*(7-8),
+1106–1109. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.nimb.2009.10.110>
+
+</div>
+
+<div id="ref-Kelly_2018">
+
+Kelly, T. J., Lawson, I. T., Roucoux, K. H., Baker, T. R.,
+Honorio-Coronado, E. N., Jones, T. D., & Panduro, S. R. (2018).
+Continuous human presence without extensive reductions in forest cover
+over the past 2500 years in an aseasonal amazonian rainforest. *Journal
+of Quaternary Science*, *33*(4), 369–379. Wiley. Retrieved from
+<https://doi.org/10.1002%2Fjqs.3019>
+
+</div>
+
+<div id="ref-Kettles_2000">
+
+Kettles, I. M., Garneau, M., & Jetté, H. (2000). *Macrofossil, pollen,
+and geochemical records of peatlands in the knosheo lake and detour lake
+areas, northern ontario*. Natural Resources Canada/ESS/Scientific;
+Technical Publishing Services. Retrieved from
+<https://doi.org/10.4095%2F211326>
+
+</div>
+
+<div id="ref-Kettles_2003">
+
+Kettles, I. M., Robinson, S. D., Bastien, D. -F, Garneau, M., & Hall, G.
+E. M. (2003). *Physical, geochemical, macrofossil, and ground
+penetrating radar information on fourteen permafrost-affected peatlands
+in the mackenzie valley, northwest territories*. Natural Resources
+Canada/ESS/Scientific; Technical Publishing Services. Retrieved from
+<https://doi.org/10.4095%2F214221>
+
+</div>
+
+<div id="ref-Khomo_2017">
+
+Khomo, L., Trumbore, S., Bern, C. R., & Chadwick, O. A. (2017).
+Timescales of carbon turnover in soils with mixed crystalline
+mineralogies. *SOIL*, *3*(1), 17–30. Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fsoil-3-17-2017>
+
+</div>
+
+<div id="ref-Klapstein_2014">
+
+Klapstein, S. J., Turetsky, M. R., McGuire, A. D., Harden, J. W.,
+Czimczik, C. I., Xu, X., Chanton, J. P., et al. (2014). Controls on
+methane released through ebullition in peatlands affected by permafrost
+degradation. *Journal of Geophysical Research: Biogeosciences*,
+*119*(3), 418–431. American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1002%2F2013jg002441>
+
+</div>
+
+<div id="ref-Kleber_2005">
+
+Kleber, M., Mikutta, R., Torn, M. S., & Jahn, R. (2005). Poorly
+crystalline mineral phases protect organic matter in acid subsoil
+horizons. *European Journal of Soil Science*, *0*(0), 050912034650054.
+Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2389.2005.00706.x>
+
+</div>
+
+<div id="ref-KLEBER_2011">
+
+KLEBER, M., NICO, P. S., PLANTE, A., FILLEY, T., KRAMER, M., SWANSTON,
+C., & SOLLINS, P. (2011). Old and stable soil organic matter is not
+necessarily chemically recalcitrant: Implications for modeling concepts
+and temperature sensitivity. *Global Change Biology*, *17*(2),
+1097–1107. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2010.02278.x>
+
+</div>
+
+<div id="ref-Klein_2013">
+
+Klein, E. S., Yu, Z., & Booth, R. K. (2013). Recent increase in peatland
+carbon accumulation in a thermokarst lake basin in southwestern alaska.
+*Palaeogeography, Palaeoclimatology, Palaeoecology*, *392*, 186–195.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.palaeo.2013.09.009>
+
+</div>
+
+<div id="ref-de_Klerk_2011">
+
+Klerk, P. de, Donner, N., Karpov, N. S., Minke, M., & Joosten, H.
+(2011). Short-term dynamics of a low-centred ice-wedge polygon near
+chokurdakh (NE yakutia, NE siberia) and climate change during the last
+ca 1250 years. *Quaternary Science Reviews*, *30*(21-22), 3013–3031.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.quascirev.2011.06.016>
+
+</div>
+
+<div id="ref-KOARASHI_2009">
+
+KOARASHI, J., ATARASHI-ANDOH, M., ISHIZUKA, S., MIURA, S., SAITO, T., &
+HIRAI, K. (2009). Quantitative aspects of heterogeneity in soil organic
+matter dynamics in a cool-temperate japanese beech forest: A
+radiocarbon-based approach. *Global Change Biology*, *15*(3), 631–642.
+Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2008.01745.x>
+
+</div>
+
+<div id="ref-Koarashi_2012">
+
+Koarashi, J., Hockaday, W. C., Masiello, C. A., & Trumbore, S. E.
+(2012). Dynamics of decadally cycling carbon in subsurface soils.
+*Journal of Geophysical Research: Biogeosciences*, *117*(G3), n/a–n/a.
+American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2012jg002034>
+
+</div>
+
+<div id="ref-Koarashi_2005">
+
+Koarashi, J., Iida, T., & Asano, T. (2005). Radiocarbon and stable
+carbon isotope compositions of chemically fractionated soil organic
+matter in a temperate-zone forest. *Journal of Environmental
+Radioactivity*, *79*(2), 137–156. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.jenvrad.2004.06.002>
+
+</div>
+
+<div id="ref-Kokfelt_2010">
+
+Kokfelt, U., Reuss, N., Struyf, E., Sonesson, M., Rundgren, M., Skog,
+G., Rosén, P., et al. (2010). Wetland development, permafrost history
+and nutrient cycling inferred from late holocene peat and lake sediment
+records in subarctic sweden. *Journal of Paleolimnology*, *44*(1),
+327–342. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10933-010-9406-8>
+
+</div>
+
+<div id="ref-Kondo_2010">
+
+Kondo, M., Uchida, M., & Shibata, Y. (2010). Radiocarbon-based residence
+time estimates of soil organic carbon in a temperate forest: Case study
+for the density fractionation for japanese volcanic ash soil. *Nuclear
+Instruments and Methods in Physics Research Section B: Beam Interactions
+with Materials and Atoms*, *268*(7-8), 1073–1076. Elsevier BV. Retrieved
+from <https://doi.org/10.1016%2Fj.nimb.2009.10.101>
+
+</div>
+
+<div id="ref-K_gel_Knabner_2008">
+
+Kögel-Knabner, I., Guggenberger, G., Kleber, M., Kandeler, E., Kalbitz,
+K., Scheu, S., Eusterhues, K., et al. (2008). Organo-mineral
+associations in temperate soils: Integrating biology, mineralogy, and
+organic matter chemistry. *Journal of Plant Nutrition and Soil Science*,
+*171*(1), 61–82. Wiley. Retrieved from
+<https://doi.org/10.1002%2Fjpln.200700048>
+
+</div>
+
+<div id="ref-Kramer_2016">
+
+Kramer, M. G., & Chadwick, O. A. (2016). Controls on carbon storage and
+weathering in volcanic soils across a high-elevation climate gradient on
+mauna kea, hawaii. *Ecology*, *97*(9), 2384–2395. Wiley. Retrieved from
+<https://doi.org/10.1002%2Fecy.1467>
+
+</div>
+
+<div id="ref-Kramer_2012">
+
+Kramer, M. G., Sanderman, J., Chadwick, O. A., Chorover, J., & Vitousek,
+P. M. (2012). Long-term carbon storage through retention of dissolved
+aromatic acids by reactive particles in soil. *Global Change Biology*,
+*18*(8), 2594–2605. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2012.02681.x>
+
+</div>
+
+<div id="ref-KREMENETSKI_2008">
+
+KREMENETSKI, C., VASCHALOVA, T., GORIACHKIN, S., CHERKINSKY, A., &
+SULERZHITSKY, L. (2008). Holocene pollen stratigraphy and bog
+development in the western part of the kola peninsula, russia. *Boreas*,
+*26*(2), 91–102. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1502-3885.1997.tb00656.x>
+
+</div>
+
+<div id="ref-Krull_2006">
+
+Krull, E. S., Bestland, E. A., Skjemstad, J. O., & Parr, J. F. (2006).
+Geochemistry (\(\updelta\)13C, \(\updelta\)15N, 13C NMR) and residence
+times (14C and OSL) of soil organic matter from red-brown earths of
+south australia: Implications for soil genesis. *Geoderma*, *132*(3-4),
+344–360. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2005.06.001>
+
+</div>
+
+<div id="ref-Krull_2003">
+
+Krull, E. S., & Skjemstad, J. O. (2003). \(\updelta\)13C and
+\(\updelta\)15N profiles in 14C-dated oxisol and vertisols as a function
+of soil chemistry and mineralogy. *Geoderma*, *112*(1-2), 1–29. Elsevier
+BV. Retrieved from <https://doi.org/10.1016%2Fs0016-7061%2802%2900291-4>
+
+</div>
+
+<div id="ref-Krull_2005">
+
+Krull, E. S., Skjemstad, J. O., Burrows, W. H., Bray, S. G., Wynn, J.
+G., Bol, R., Spouncer, L., et al. (2005). Recent vegetation changes in
+central queensland, australia: Evidence from \(\updelta\)13C and 14C
+analyses of soil organic matter. *Geoderma*, *126*(3-4), 241–259.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2004.09.012>
+
+</div>
+
+<div id="ref-https://doi.org/10.5281/zenodo.2645510">
+
+Kuhnen, Á., Matschullat, J., Sierra, C. A., & Lima, R. M. B. de. (2019).
+C-isotopic signatures and soil properties of amazon basin oxisols.
+Zenodo. Retrieved from <https://zenodo.org/record/2645510>
+
+</div>
+
+<div id="ref-KUHRY_2008">
+
+KUHRY, P. (2008). Palsa and peat plateau development in the hudson bay
+lowlands, canada: Timing, pathways and causes. *Boreas*, *37*(2),
+316–327. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1502-3885.2007.00022.x>
+
+</div>
+
+<div id="ref-Kuhry_1996">
+
+Kuhry, P., & Vitt, D. H. (1996). Fossil carbon/nitrogen ratios as a
+measure of peat decomposition. *Ecology*, *77*(1), 271–275. Wiley.
+Retrieved from <https://doi.org/10.2307%2F2265676>
+
+</div>
+
+<div id="ref-Kultti_2004">
+
+Kultti, S., Oksanen, P., & Väliranta, M. (2004). Holocene tree line,
+permafrost, and climate dynamics in the nenets region, east european
+arctic. *Canadian Journal of Earth Sciences*, *41*(10), 1141–1158.
+Canadian Science Publishing. Retrieved from
+<https://doi.org/10.1139%2Fe04-058>
+
+</div>
+
+<div id="ref-Ladyman_1980">
+
+Ladyman, S. J., & Harkness, D. D. (1980). Carbon isotope measurement as
+an index of soil development. *Radiocarbon*, *22*(3), 885–891. Cambridge
+University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200010286>
+
+</div>
+
+<div id="ref-Lamarre_2012">
+
+Lamarre, A., Garneau, M., & Asnong, H. (2012). Holocene
+paleohydrological reconstruction and carbon accumulation of a permafrost
+peatland using testate amoeba and macrofossil analyses, kuujjuarapik,
+subarctic québec, canada. *Review of Palaeobotany and Palynology*,
+*186*, 131–141. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.revpalbo.2012.04.009>
+
+</div>
+
+<div id="ref-Laskar_2012">
+
+Laskar, A. H., Yadava, M. G., & Ramesh, R. (2012). Radiocarbon and
+stable carbon isotopes in two soil profiles from northeast india.
+*Radiocarbon*, *54*(1), 81–89. Cambridge University Press (CUP).
+Retrieved from <https://doi.org/10.2458%2Fazu_js_rc.v54i1.15840>
+
+</div>
+
+<div id="ref-Lassey_1996">
+
+Lassey, K. R., Tate, K. R., Sparks, R. J., & Claydon, J. J. (1996).
+Historic measurements of radiocarbon in new zealand soils.
+*Radiocarbon*, *38*(2), 253–270. Cambridge University Press (CUP).
+Retrieved from <https://doi.org/10.1017%2Fs003382220001763x>
+
+</div>
+
+<div id="ref-Lavoie_1995">
+
+Lavoie, C., & Payette, S. (1995). Analyse macrofossile dune palse
+subarctique (québec nordique). *Canadian Journal of Botany*, *73*(4),
+527–537. Canadian Science Publishing. Retrieved from
+<https://doi.org/10.1139%2Fb95-054>
+
+</div>
+
+<div id="ref-Lavoie_2011">
+
+Lavoie, M., Mack, M. C., & Schuur, E. A. G. (2011). Effects of elevated
+nitrogen and temperature on carbon and nitrogen dynamics in alaskan
+arctic and boreal soils. *Journal of Geophysical Research*, *116*(G3).
+American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2010jg001629>
+
+</div>
+
+<div id="ref-Lawrence_2015">
+
+Lawrence, C. R., Harden, J. W., Xu, X., Schulz, M. S., & Trumbore, S. E.
+(2015). Long-term controls on soil organic carbon with depth and time: A
+case study from the cowlitz river chronosequence, WA USA. *Geoderma*,
+*247-248*, 73–87. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2015.02.005>
+
+</div>
+
+<div id="ref-L_hteenoja_2011">
+
+Lähteenoja, O., Reátegui, Y. R., Räsänen, M., Torres, D. D. C., Oinonen,
+M., & Page, S. (2011). The large amazonian peatland carbon sink in the
+subsiding pastaza-marañón foreland basin, peru. *Global Change Biology*,
+*18*(1), 164–178. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2011.02504.x>
+
+</div>
+
+<div id="ref-L_HTEENOJA_2009">
+
+LÄHTEENOJA, O., RUOKOLAINEN, K., SCHULMAN, L., & OINONEN, M. (2009).
+Amazonian peatlands: An ignored c sink and potential source. *Global
+Change Biology*, *15*(9), 2311–2320. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2009.01920.x>
+
+</div>
+
+<div id="ref-Leavitt_2007">
+
+Leavitt, S., Follett, R., Kimble, J., & Pruessner, E. (2007).
+Radiocarbon and \(\updelta\)13C depth profiles of soil organic carbon in
+the u.s. Great plains: A possible spatial record of paleoenvironment and
+paleovegetation. *Quaternary International*, *162-163*, 21–34. Elsevier
+BV. Retrieved from <https://doi.org/10.1016%2Fj.quaint.2006.10.033>
+
+</div>
+
+<div id="ref-Ledru_2001">
+
+Ledru, M.-P. (2001). Late holocene rainforest disturbance in french
+guiana. *Review of Palaeobotany and Palynology*, *115*(3-4), 161–170.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fs0034-6667%2801%2900068-9>
+
+</div>
+
+<div id="ref-Lee_2011">
+
+Lee, H., Schuur, E. A. G., Inglett, K. S., Lavoie, M., & Chanton, J. P.
+(2011). The rate of permafrost carbon release under aerobic and
+anaerobic conditions and its potential effects on climate. *Global
+Change Biology*, *18*(2), 515–527. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2011.02519.x>
+
+</div>
+
+<div id="ref-LEIFELD_2009">
+
+LEIFELD, J., ZIMMERMANN, M., FUHRER, J., & CONEN, F. (2009). Storage and
+turnover of carbon in grassland soils along an elevation gradient in the
+swiss alps. *Global Change Biology*, *15*(3), 668–679. Wiley. Retrieved
+from <https://doi.org/10.1111%2Fj.1365-2486.2008.01782.x>
+
+</div>
+
+<div id="ref-Leith_2014">
+
+Leith, F. I., Garnett, M. H., Dinsmore, K. J., Billett, M. F., & Heal,
+K. V. (2014). Source and age of dissolved and gaseous carbon in a
+peatlandriparianstream continuum: A dual isotope (14C and
+\(\updelta\)13C) analysis. *Biogeochemistry*, *119*(1-3), 415–433.
+Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10533-014-9977-y>
+
+</div>
+
+<div id="ref-Li_2010">
+
+Li, Y., & Mathews, B. W. (2010). Effect of conversion of sugarcane
+plantation to forest and pasture on soil carbon in hawaii. *Plant and
+Soil*, *335*(1-2), 245–253. Springer Science; Business Media LLC.
+Retrieved from <https://doi.org/10.1007%2Fs11104-010-0412-4>
+
+</div>
+
+<div id="ref-Liu_2006">
+
+Liu, W., Moriizumi, J., Yamazawa, H., & Iida, T. (2006). Depth profiles
+of radiocarbon and carbon isotopic compositions of organic matter and
+CO2 in a forest soil. *Journal of Environmental Radioactivity*, *90*(3),
+210–223. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.jenvrad.2006.07.003>
+
+</div>
+
+<div id="ref-Loisel_2010">
+
+Loisel, J., & Garneau, M. (2010). Late holocene paleoecohydrology and
+carbon accumulation estimates from two boreal peat bogs in eastern
+canada: Potential and limits of multi-proxy archives. *Palaeogeography,
+Palaeoclimatology, Palaeoecology*, *291*(3-4), 493–533. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.palaeo.2010.03.020>
+
+</div>
+
+<div id="ref-Loisel_2014">
+
+Loisel, J., Yu, Z., Beilman, D. W., Camill, P., Alm, J., Amesbury, M.
+J., Anderson, D., et al. (2014). A database and synthesis of northern
+peatland soil properties and holocene carbon and nitrogen accumulation.
+*The Holocene*, *24*(9), 1028–1042. SAGE Publications. Retrieved from
+<https://doi.org/10.1177%2F0959683614538073>
+
+</div>
+
+<div id="ref-Lupascu_2018">
+
+Lupascu, M., Czimczik, C. I., Welker, M. C., Ziolkowski, L. A., Cooper,
+E. J., & Welker, J. M. (2018). Winter ecosystem respiration and sources
+of CO2 from the high arctic tundra of svalbard: Response to a deeper
+snow experiment. *Journal of Geophysical Research: Biogeosciences*,
+*123*(8), 2627–2642. American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2018jg004396>
+
+</div>
+
+<div id="ref-Lupascu_2013">
+
+Lupascu, M., Welker, J. M., Seibt, U., Maseyk, K., Xu, X., & Czimczik,
+C. I. (2013). High arctic wetting reduces permafrost carbon feedbacks to
+climate warming. *Nature Climate Change*, *4*(1), 51–55. Springer
+Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1038%2Fnclimate2058>
+
+</div>
+
+<div id="ref-Lybrand_2017">
+
+Lybrand, R. A., Heckman, K., & Rasmussen, C. (2017). Soil organic carbon
+partitioning and \(\upDelta\)14C variation in desert and conifer
+ecosystems of southern arizona. *Biogeochemistry*, *134*(3), 261–277.
+Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10533-017-0360-7>
+
+</div>
+
+<div id="ref-Mann_2015">
+
+Mann, P. J., Eglinton, T. I., McIntyre, C. P., Zimov, N., Davydova, A.,
+Vonk, J. E., Holmes, R. M., et al. (2015). Utilization of ancient
+permafrost carbon in headwaters of arctic fluvial networks. *Nature
+Communications*, *6*(1). Springer Science; Business Media LLC. Retrieved
+from <https://doi.org/10.1038%2Fncomms8856>
+
+</div>
+
+<div id="ref-Marin_Spiotta_2011">
+
+Marin-Spiotta, E., Chadwick, O. A., Kramer, M., & Carbone, M. S. (2011).
+Carbon delivery to deep mineral horizons in hawaiian rain forest soils.
+*Journal of Geophysical Research*, *116*(G3). American Geophysical Union
+(AGU). Retrieved from <https://doi.org/10.1029%2F2010jg001587>
+
+</div>
+
+<div id="ref-Mar_n_Spiotta_2008">
+
+Marı'n-Spiotta, E., Swanston, C. W., Torn, M. S., Silver, W. L., &
+Burton, S. D. (2008). Chemical and mineral control of soil carbon
+turnover in abandoned tropical pastures. *Geoderma*, *143*(1-2), 49–62.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2007.10.001>
+
+</div>
+
+<div id="ref-Mariotti_1994">
+
+Mariotti, A., & Peterschmitt, E. (1994). Forest savanna ecotone dynamics
+in india as revealed by carbon isotope ratios of soil organic matter.
+*Oecologia*, *97*(4), 475–480. Springer Science; Business Media LLC.
+Retrieved from <https://doi.org/10.1007%2Fbf00325885>
+
+</div>
+
+<div id="ref-Martel_1974">
+
+Martel, Y. A., & Paul, E. A. (1974). The use of radiocarbon dating of
+organic matter in the study of soil genesis. *Soil Science Society of
+America Journal*, *38*(3), 501–506. Wiley. Retrieved from
+<https://doi.org/10.2136%2Fsssaj1974.03615995003800030033x>
+
+</div>
+
+<div id="ref-Martens_1992">
+
+Martens, C. S., Kelley, C. A., Chanton, J. P., & Showers, W. J. (1992).
+Carbon and hydrogen isotopic characterization of methane from wetlands
+and lakes of the yukon-kuskokwim delta, western alaska. *Journal of
+Geophysical Research*, *97*(D15), 16689. American Geophysical Union
+(AGU). Retrieved from <https://doi.org/10.1029%2F91jd02885>
+
+</div>
+
+<div id="ref-Martinelli_1996">
+
+Martinelli, I. A., Pessenda, L. C. R., Espinoza, E., Camargo, P. B.,
+Telles, F. C., Cerri, C. C., Victoria, R. L., et al. (1996). Carbon-13
+variation with depth in soils of brazil and climate change during the
+quaternary. *Oecologia*, *106*(3), 376–381. Springer Science; Business
+Media LLC. Retrieved from <https://doi.org/10.1007%2Fbf00334565>
+
+</div>
+
+<div id="ref-Marzaioli_2010">
+
+Marzaioli, F., Lubritto, C., Galdo, I. D., D’Onofrio, A., Cotrufo, M.
+F., & Terrasi, F. (2010). Comparison of different soil organic matter
+fractionation methodologies: Evidences from ultrasensitive 14C
+measurements. *Nuclear Instruments and Methods in Physics Research
+Section B: Beam Interactions with Materials and Atoms*, *268*(7-8),
+1062–1066. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.nimb.2009.10.098>
+
+</div>
+
+<div id="ref-Masiello_2004">
+
+Masiello, C. A., Chadwick, O. A., Southon, J., Torn, M. S., & Harden, J.
+W. (2004). Weathering controls on mechanisms of carbon storage in
+grassland soils. *Global Biogeochemical Cycles*, *18*(4), n/a–n/a.
+American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2004gb002219>
+
+</div>
+
+<div id="ref-Mayer_2018">
+
+Mayer, S., Schwindt, D., Steffens, M., Völkel, J., & Kögel-Knabner, I.
+(2018). Drivers of organic carbon allocation in a temperate
+slope-floodplain catena under agricultural use. *Geoderma*, *327*,
+63–72. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2018.04.021>
+
+</div>
+
+<div id="ref-McClaran_2000">
+
+McClaran, M. P., & Umlauf, M. (2000). Desert grassland dynamics
+estimated from carbon isotopes in grass phytoliths and soil organic
+matter. *Journal of Vegetation Science*, *11*(1), 71–76. Wiley.
+Retrieved from <https://doi.org/10.2307%2F3236777>
+
+</div>
+
+<div id="ref-McFarlane_2018">
+
+McFarlane, K. J., Hanson, P. J., Iversen, C. M., Phillips, J. R., &
+Brice, D. J. (2018). Local spatial heterogeneity of holocene carbon
+accumulation throughout the peat profile of an ombrotrophic northern
+minnesota bog. *Radiocarbon*, *60*(3), 941–962. Cambridge University
+Press (CUP). Retrieved from <https://doi.org/10.1017%2Frdc.2018.37>
+
+</div>
+
+<div id="ref-McFarlane_2012">
+
+McFarlane, K. J., Torn, M. S., Hanson, P. J., Porras, R. C., Swanston,
+C. W., Callaham, M. A., & Guilderson, T. P. (2012). Comparison of soil
+organic matter dynamics at five temperate deciduous forests with
+physical fractionation and radiocarbon measurements. *Biogeochemistry*,
+*112*(1-3), 457–476. Springer Science; Business Media LLC. Retrieved
+from <https://doi.org/10.1007%2Fs10533-012-9740-1>
+
+</div>
+
+<div id="ref-Meyer_2012">
+
+Meyer, S., Leifeld, J., Bahn, M., & Fuhrer, J. (2012). Free and
+protected soil organic carbon dynamics respond differently to
+abandonment of mountain grassland. *Biogeosciences*, *9*(2), 853–865.
+Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fbg-9-853-2012>
+
+</div>
+
+<div id="ref-Mikutta_2009">
+
+Mikutta, R., Schaumann, G. E., Gildemeister, D., Bonneville, S., Kramer,
+M. G., Chorover, J., Chadwick, O. A., et al. (2009). Biogeochemistry of
+mineralorganic associations across a long-term mineralogical soil
+gradient (0.34100kyr), hawaiian islands. *Geochimica et Cosmochimica
+Acta*, *73*(7), 2034–2060. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.gca.2008.12.028>
+
+</div>
+
+<div id="ref-Milton_1997">
+
+Milton, G. M., & Kramer, S. J. (1997). Using 14C as a tracer of carbon
+accumulation and turnover in soils. *Radiocarbon*, *40*(2), 999–1011.
+Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs003382220001897x>
+
+</div>
+
+<div id="ref-Monreal_1997">
+
+Monreal, C. M., Schulten, H.-R., & Kodama, H. (1997). Age, turnover and
+molecular diversity of soil organic matter in aggregates of a gleysol.
+*Canadian Journal of Soil Science*, *77*(3), 379–388. Canadian Science
+Publishing. Retrieved from <https://doi.org/10.4141%2Fs95-064>
+
+</div>
+
+<div id="ref-van_Mourik_2010">
+
+Mourik, J. van, Nierop, K., & Vandenberghe, D. (2010). Radiocarbon and
+optically stimulated luminescence dating based chronology of a
+polycyclic driftsand sequence at weerterbergen (SE netherlands).
+*CATENA*, *80*(3), 170–181. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.catena.2009.11.004>
+
+</div>
+
+<div id="ref-Mueller_2014">
+
+Mueller, C. W., Gutsch, M., Kothieringer, K., Leifeld, J., Rethemeyer,
+J., Brueggemann, N., & Kögel-Knabner, I. (2014). Bioavailability and
+isotopic composition of CO2 released from incubated soil organic matter
+fractions. *Soil Biology and Biochemistry*, *69*, 168–178. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.soilbio.2013.11.006>
+
+</div>
+
+<div id="ref-Muhr_2009">
+
+Muhr, J., & Borken, W. (2009). Delayed recovery of soil respiration
+after wetting of dry soil further reduces c losses from a norway spruce
+forest soil. *Journal of Geophysical Research*, *114*(G4). American
+Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2009jg000998>
+
+</div>
+
+<div id="ref-Myers_Smith_2008">
+
+Myers-Smith, I. H., Harden, J. W., Wilmking, M., Fuller, C. C., McGuire,
+A. D., & Chapin, F. S. (2008). Wetland succession in a permafrost
+collapse: Interactions between fire and thermokarst. *Biogeosciences*,
+*5*(5), 1273–1286. Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fbg-5-1273-2008>
+
+</div>
+
+<div id="ref-Nagy_2018">
+
+Nagy, R. C., Porder, S., Brando, P., Davidson, E. A., Silva Figueira, A.
+M. e, Neill, C., Riskin, S., et al. (2018). Soil carbon dynamics in
+soybean cropland and forests in mato grosso, brazil. *Journal of
+Geophysical Research: Biogeosciences*, *123*(1), 18–31. American
+Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1002%2F2017jg004269>
+
+</div>
+
+<div id="ref-Nakagawa_2002">
+
+Nakagawa, F., Yoshida, N., Nojiri, Y., & Makarov, V. (2002). Production
+of methane from alasses in eastern siberia: Implications from its14C and
+stable isotopic compositions. *Global Biogeochemical Cycles*, *16*(3),
+14–1–14–15. American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2000gb001384>
+
+</div>
+
+<div id="ref-Natali_2015">
+
+Natali, S. M., Schuur, E. A. G., Mauritz, M., Schade, J. D., Celis, G.,
+Crummer, K. G., Johnston, C., et al. (2015). Permafrost thaw and soil
+moisture driving CO2 and CH4 release from upland tundra. *Journal of
+Geophysical Research: Biogeosciences*, *120*(3), 525–537. American
+Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1002%2F2014jg002872>
+
+</div>
+
+<div id="ref-NATALI_2011">
+
+NATALI, S. M., SCHUUR, E. A. G., TRUCCO, C., PRIES, C. E. H., CRUMMER,
+K. G., & LOPEZ, A. F. B. (2011). Effects of experimental warming of air,
+soil and permafrost on carbon balance in alaskan tundra. *Global Change
+Biology*, *17*(3), 1394–1407. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2010.02303.x>
+
+</div>
+
+<div id="ref-Nave_2017">
+
+Nave, L. E., Drevnick, P. E., Heckman, K. A., Hofmeister, K. L.,
+Veverica, T. J., & Swanston, C. W. (2017). Soil hydrology, physical and
+chemical properties and the distribution of carbon and mercury in a
+postglacial lake-plain wetland. *Geoderma*, *305*, 40–52. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.geoderma.2017.05.035>
+
+</div>
+
+<div id="ref-Neff_2006">
+
+Neff, J. C., Finlay, J. C., Zimov, S. A., Davydov, S. P., Carrasco, J.
+J., Schuur, E. A. G., & Davydova, A. I. (2006). Seasonal changes in the
+age and structure of dissolved organic carbon in siberian rivers and
+streams. *Geophysical Research Letters*, *33*(23). American Geophysical
+Union (AGU). Retrieved from <https://doi.org/10.1029%2F2006gl028222>
+
+</div>
+
+<div id="ref-Negandhi_2013">
+
+Negandhi, K., Laurion, I., Whiticar, M. J., Galand, P. E., Xu, X., &
+Lovejoy, C. (2013). Small thaw ponds: An unaccounted source of methane
+in the canadian high arctic. (V. Shah, Ed.)*PLoS ONE*, *8*(11), e78204.
+Public Library of Science (PLoS). Retrieved from
+<https://doi.org/10.1371%2Fjournal.pone.0078204>
+
+</div>
+
+<div id="ref-Nichols_1967">
+
+Nichols, H. (1967). Pollen diagrams from sub-arctic central canada.
+*Science*, *155*(3770), 1665–1668. American Association for the
+Advancement of Science (AAAS). Retrieved from
+<https://doi.org/10.1126%2Fscience.155.3770.1665>
+
+</div>
+
+<div id="ref-Nowinski_2010">
+
+Nowinski, N. S., Taneva, L., Trumbore, S. E., & Welker, J. M. (2010).
+Decomposition of old organic matter as a result of deeper active layers
+in a snow depth manipulation experiment. *Oecologia*, *163*(3), 785–792.
+Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs00442-009-1556-x>
+
+</div>
+
+<div id="ref-Nowinski_2009">
+
+Nowinski, N. S., Trumbore, S. E., Jimenez, G., & Fenn, M. E. (2009).
+Alteration of belowground carbon dynamics by nitrogen addition in
+southern california mixed conifer forests. *Journal of Geophysical
+Research: Biogeosciences*, *114*(G2), n/a–n/a. American Geophysical
+Union (AGU). Retrieved from <https://doi.org/10.1029%2F2008jg000801>
+
+</div>
+
+<div id="ref-O_Brien_1986">
+
+OBrien, B. J. (1986). The use of natural and anthropogenic 14C to
+investigate the dynamics of soil organic carbon. *Radiocarbon*,
+*28*(2A), 358–362. Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200007463>
+
+</div>
+
+<div id="ref-O_Brien_2011">
+
+O’Brien, S. L., Jastrow, J. D., McFarlane, K. J., Guilderson, T. P., &
+Gonzalez-Meler, M. A. (2011). Decadal cycling within long-lived carbon
+pools revealed by dual isotopic analysis of mineral-associated soil
+organic matter. *Biogeochemistry*, *112*(1-3), 111–125. Springer
+Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10533-011-9673-0>
+
+</div>
+
+<div id="ref-O_Donnell_2014">
+
+ODonnell, J. A., Aiken, G. R., Walvoord, M. A., Raymond, P. A., Butler,
+K. D., Dornblaser, M. M., & Heckman, K. (2014). Using dissolved organic
+matter age and composition to detect permafrost thaw in boreal
+watersheds of interior alaska. *Journal of Geophysical Research:
+Biogeosciences*, *119*(11), 2155–2170. American Geophysical Union (AGU).
+Retrieved from <https://doi.org/10.1002%2F2014jg002695>
+
+</div>
+
+<div id="ref-O_DONNELL_2010">
+
+ODONNELL, J. A., HARDEN, J. W., McGUIRE, A. D., KANEVSKIY, M. Z.,
+JORGENSON, M. T., & XU, X. (2010). The effect of fire and permafrost
+interactions on soil carbon accumulation in an upland black spruce
+ecosystem of interior alaska: Implications for post-thaw carbon loss.
+*Global Change Biology*, *17*(3), 1461–1474. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2010.02358.x>
+
+</div>
+
+<div id="ref-O_Donnell_2011">
+
+O’Donnell, J. A., Jorgenson, M. T., Harden, J. W., McGuire, A. D.,
+Kanevskiy, M. Z., & Wickland, K. P. (2011). The effects of permafrost
+thaw on soil hydrologic, thermal, and carbon dynamics in an alaskan
+peatland. *Ecosystems*, *15*(2), 213–229. Springer Science; Business
+Media LLC. Retrieved from <https://doi.org/10.1007%2Fs10021-011-9504-0>
+
+</div>
+
+<div id="ref-Ohno_2017">
+
+Ohno, T., Heckman, K. A., Plante, A. F., Fernandez, I. J., & Parr, T. B.
+(2017). 14 c mean residence time and its relationship with thermal
+stability and molecular composition of soil organic matter: A case study
+of deciduous and coniferous forest types. *Geoderma*, *308*, 1–8.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2017.08.023>
+
+</div>
+
+<div id="ref-OKSANEN_2008">
+
+OKSANEN, P. O. (2008). Holocene development of the vaisjeäggi palsa
+mire, finnish lapland. *Boreas*, *35*(1), 81–95. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1502-3885.2006.tb01114.x>
+
+</div>
+
+<div id="ref-Oksanen_2001">
+
+Oksanen, P. O., Kuhry, P., & Alekseeva, R. N. (2001). Holocene
+development of the rogovaya river peat plateau, european russian arctic.
+*The Holocene*, *11*(1), 25–40. SAGE Publications. Retrieved from
+<https://doi.org/10.1191%2F095968301675477157>
+
+</div>
+
+<div id="ref-Oksanen_2005">
+
+Oksanen, P. O., Kuhry, P., & Alekseeva, R. N. (2005). Holocene
+development and permafrost history of the usinsk mire, northeast
+european russia. *Géographie physique et Quaternaire*, *57*(2-3),
+169–187. Consortium Erudit. Retrieved from
+<https://doi.org/10.7202%2F011312ar>
+
+</div>
+
+<div id="ref-OVENDEN_2008">
+
+OVENDEN, L. (2008). Vegetation history of a polygonal peatland,
+northern, yukon. *Boreas*, *11*(3), 209–224. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1502-3885.1982.tb00715.x>
+
+</div>
+
+<div id="ref-Panova_2010">
+
+Panova, N. K., Trofimova, S. S., Antipina, T. G., Zinoviev, E. V.,
+Gilev, A. V., & Erokhin, N. G. (2010). Holocene dynamics of vegetation
+and ecological conditions in the southern yamal peninsula according to
+the results of comprehensive analysis of a relict peat bog deposit.
+*Russian Journal of Ecology*, *41*(1), 20–27. Pleiades Publishing Ltd.
+Retrieved from <https://doi.org/10.1134%2Fs1067413610010042>
+
+</div>
+
+<div id="ref-Paul_1997">
+
+Paul, E. A., Follett, R. F., Leavitt, S. W., Halvorson, A., Peterson, G.
+A., & Lyon, D. J. (1997). Radiocarbon dating for determination of soil
+organic matter pool sizes and dynamics. *Soil Science Society of America
+Journal*, *61*(4), 1058–1067. Wiley. Retrieved from
+<https://doi.org/10.2136%2Fsssaj1997.03615995006100040011x>
+
+</div>
+
+<div id="ref-Paul_2001">
+
+Paul, E., Collins, H., & Leavitt, S. (2001). Dynamics of resistant soil
+carbon of midwestern agricultural soils measured by naturally occurring
+14C abundance. *Geoderma*, *104*(3-4), 239–256. Elsevier BV. Retrieved
+from <https://doi.org/10.1016%2Fs0016-7061%2801%2900083-0>
+
+</div>
+
+<div id="ref-https://doi.org/10.5281/zenodo.3370053">
+
+Pedron, S., Holden, S. R., Welker, J. M., Ziolkowski, L. A., Mortero,
+G., Li, H., Walker, J., et al. (2019). Soil radiocarbon from moist
+acidic tussock and erect shrub tundra at toolik field station. Zenodo.
+Retrieved from <https://zenodo.org/record/3370053>
+
+</div>
+
+<div id="ref-Pegoraro_2019">
+
+Pegoraro, E., Mauritz, M., Bracho, R., Ebert, C., Dijkstra, P., Hungate,
+B. A., Konstantinidis, K. T., et al. (2019). Glucose addition increases
+the magnitude and decreases the age of soil respired carbon in a
+long-term permafrost incubation study. *Soil Biology and Biochemistry*,
+*129*, 201–211. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.soilbio.2018.10.009>
+
+</div>
+
+<div id="ref-Pessenda_2001">
+
+Pessenda, L. C. R., Gouveia, S. E. M., & Aravena, R. (2001). Radiocarbon
+dating of total soil organic matter and humin fraction and its
+comparison with 14C ages of fossil charcoal. *Radiocarbon*, *43*(2B),
+595–601. Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200041242>
+
+</div>
+
+<div id="ref-Pessenda_1996">
+
+Pessenda, L. C. R., Valencia, E. P. E., Camargo, P. B., Telles, E. C.
+C., Martinelli, L. A., Cerri, C. C., Aravena, R., et al. (1996). Natural
+radiocarbon measurements in brazilian soils developed on basic rocks.
+*Radiocarbon*, *38*(2), 203–208. Cambridge University Press (CUP).
+Retrieved from <https://doi.org/10.1017%2Fs0033822200017574>
+
+</div>
+
+<div id="ref-PETEET_2008">
+
+PETEET, D., ANDREEV, A., BARDEEN, W., & MISTRETTA, F. (2008). Long-term
+arctic peatland dynamics, vegetation and climate history of the pur-taz
+region, western siberia. *Boreas*, *27*(2), 115–126. Wiley. Retrieved
+from <https://doi.org/10.1111%2Fj.1502-3885.1998.tb00872.x>
+
+</div>
+
+<div id="ref-P_rez_2006">
+
+Pérez, T., Garcia-Montiel, D., Trumbore, S., Tyler, S., Camargo, P. de,
+Moreira, M., Piccolo, M., et al. (2006). NITROUS OXIDE NITRIFICATION AND
+DENITRIFICATION15N ENRICHMENT FACTORS FROM AMAZON FOREST SOILS.
+*Ecological Applications*, *16*(6), 2153–2167. Wiley. Retrieved from
+<https://doi.org/10.1890%2F1051-0761%282006%29016%5B2153%3Anonadn%5D2.0.co%3B2>
+
+</div>
+
+<div id="ref-Phillips_2013">
+
+Phillips, C. L., McFarlane, K. J., Risk, D., & Desai, A. R. (2013).
+Biological and physical influences on soil
+\&lt\(\mathsemicolon\)sup\&gt\(\mathsemicolon\)14\&lt\(\mathsemicolon\)/sup\&gt\(\mathsemicolon\)CO\&lt\(\mathsemicolon\)sub\&gt\(\mathsemicolon\)2\&lt\(\mathsemicolon\)/sub\&gt\(\mathsemicolon\)
+seasonal dynamics in a temperate hardwood forest. *Biogeosciences*,
+*10*(12), 7999–8012. Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fbg-10-7999-2013>
+
+</div>
+
+<div id="ref-Phillips_1996">
+
+Phillips, S., & Bustin, R. M. (1996). Sedimentology of the changuinola
+peat deposit: Organic and clastic sedimentary response to punctuated
+coastal subsidence. *Geological Society of America Bulletin*, *108*(7),
+794–814. Geological Society of America. Retrieved from
+<https://doi.org/10.1130%2F0016-7606%281996%29108%3C0794%3Asotcpd%3E2.3.co%3B2>
+
+</div>
+
+<div id="ref-Porras_2017">
+
+Porras, R. C., Pries, C. E. H., McFarlane, K. J., Hanson, P. J., & Torn,
+M. S. (2017). Association with pedogenic iron and aluminum: Effects on
+soil organic carbon storage and stability in four temperate forest
+soils. *Biogeochemistry*, *133*(3), 333–345. Springer Science; Business
+Media LLC. Retrieved from <https://doi.org/10.1007%2Fs10533-017-0337-6>
+
+</div>
+
+<div id="ref-Posada_2011">
+
+Posada, J. M., & Schuur, E. A. G. (2011). Relationships among
+precipitation regime, nutrient availability, and carbon turnover in
+tropical rain forests. *Oecologia*, *165*(3), 783–795. Springer Science;
+Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs00442-010-1881-0>
+
+</div>
+
+<div id="ref-Hicks_Pries_2017">
+
+Pries, C. E. H., Castanha, C., Porras, R. C., & Torn, M. S. (2017). The
+whole-soil carbon flux in response to warming. *Science*, *355*(6332),
+1420–1423. American Association for the Advancement of Science (AAAS).
+Retrieved from <https://doi.org/10.1126%2Fscience.aal1319>
+
+</div>
+
+<div id="ref-Hicks_Pries_2015">
+
+Pries, C. E. H., Logtestijn, R. S. P. van, Schuur, E. A. G., Natali, S.
+M., Cornelissen, J. H. C., Aerts, R., & Dorrepaal, E. (2015). Decadal
+warming causes a consistent and persistent shift from heterotrophic to
+autotrophic respiration in contrasting permafrost ecosystems. *Global
+Change Biology*, *21*(12), 4508–4519. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fgcb.13032>
+
+</div>
+
+<div id="ref-Hicks_Pries_2011">
+
+Pries, C. E. H., Schuur, E. A. G., & Crummer, K. G. (2011). Holocene
+carbon stocks and carbon accumulation rates altered in soils undergoing
+permafrost thaw. *Ecosystems*, *15*(1), 162–173. Springer Science;
+Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10021-011-9500-4>
+
+</div>
+
+<div id="ref-Hicks_Pries_2012">
+
+Pries, C. E. H., Schuur, E. A. G., & Crummer, K. G. (2012). Thawing
+permafrost increases old soil and autotrophic respiration in tundra:
+Partitioning ecosystem respiration using \(\updelta\)13C and ∆14C.
+*Global Change Biology*, *19*(2), 649–661. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fgcb.12058>
+
+</div>
+
+<div id="ref-Quideau_2001">
+
+Quideau, S., Chadwick, O., Trumbore, S., Johnson-Maynard, J., Graham,
+R., & Anderson, M. (2001). Vegetation control on soil organic matter
+dynamics. *Organic Geochemistry*, *32*(2), 247–252. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fs0146-6380%2800%2900171-6>
+
+</div>
+
+<div id="ref-Rabbi_2013">
+
+Rabbi, S. M. F., Hua, Q., Daniel, H., Lockwood, P. V., Wilson, B. R., &
+Young, I. M. (2013). Mean residence time of soil organic carbon in
+aggregates under contrasting land uses based on radiocarbon
+measurements. *Radiocarbon*, *55*(1), 127–139. Cambridge University
+Press (CUP). Retrieved from
+<https://doi.org/10.2458%2Fazu_js_rc.v55i1.16179>
+
+</div>
+
+<div id="ref-Rasmussen_2018">
+
+Rasmussen, C., Throckmorton, H., Liles, G., Heckman, K., Meding, S., &
+Horwath, W. (2018). Controls on soil organic carbon partitioning and
+stabilization in the california sierra nevada. *Soil Systems*, *2*(3),
+41. MDPI AG. Retrieved from
+<https://doi.org/10.3390%2Fsoilsystems2030041>
+
+</div>
+
+<div id="ref-Rasmussen_2005">
+
+Rasmussen, C., Torn, M. S., & Southard, R. J. (2005). Mineral assemblage
+and aggregates control carbon dynamics in a california conifer forest.
+*Soil Science Society of America Journal*, *69*(6), 1711–1721. Wiley.
+Retrieved from <https://doi.org/10.2136%2Fsssaj2005.0040>
+
+</div>
+
+<div id="ref-Rasmussen_2010">
+
+Rasmussen, C., & White, D. A. (2010). Vegetation effects on soil organic
+carbon quality in an arid hyperthermic ecosystem. *Soil Science*,
+*175*(9), 438–446. Ovid Technologies (Wolters Kluwer Health). Retrieved
+from <https://doi.org/10.1097%2Fss.0b013e3181f38400>
+
+</div>
+
+<div id="ref-Resh_2002">
+
+Resh, S. C., Binkley, D., & Parrotta, J. A. (2002). Greater soil carbon
+sequestration under nitrogen-fixing trees compared with eucalyptus
+species. *Ecosystems*, *5*(3), 217–231. Springer Science; Business Media
+LLC. Retrieved from <https://doi.org/10.1007%2Fs10021-001-0067-3>
+
+</div>
+
+<div id="ref-Rethemeyer_2005">
+
+Rethemeyer, J., Kramer, C., Gleixner, G., John, B., Yamashita, T.,
+Flessa, H., Andersen, N., et al. (2005). Transformation of organic
+matter in agricultural soils: Radiocarbon concentration versus soil
+depth. *Geoderma*, *128*(1-2), 94–105. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2004.12.017>
+
+</div>
+
+<div id="ref-Richter_1999">
+
+Richter, D. D., Markewitz, D., Trumbore, S. E., & Wells, C. G. (1999).
+Rapid accumulation and turnover of soil carbon in a re-establishing
+forest. *Nature*, *400*(6739), 56–58. Springer Science; Business Media
+LLC. Retrieved from <https://doi.org/10.1038%2F21867>
+
+</div>
+
+<div id="ref-Robinson_2006">
+
+Robinson, S. D. (2006). Carbon accumulation in peatlands, southwestern
+northwest territories, canada. *Canadian Journal of Soil Science*,
+*86*(Special Issue), 305–319. Canadian Science Publishing. Retrieved
+from <https://doi.org/10.4141%2Fs05-086>
+
+</div>
+
+<div id="ref-Rogers_2014">
+
+Rogers, B. M., Veraverbeke, S., Azzari, G., Czimczik, C. I., Holden, S.
+R., Mouteva, G. O., Sedano, F., et al. (2014). Quantifying fire-wide
+carbon emissions in interior alaska using field measurements and landsat
+imagery. *Journal of Geophysical Research: Biogeosciences*, *119*(8),
+1608–1629. American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1002%2F2014jg002657>
+
+</div>
+
+<div id="ref-Rumpel_2008">
+
+Rumpel, C., Chaplot, V., Chabbi, A., Largeau, C., & Valentin, C. (2008).
+Stabilisation of HF soluble and HCl resistant organic matter in sloping
+tropical soils under slash and burn agriculture. *Geoderma*, *145*(3-4),
+347–354. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2008.04.001>
+
+</div>
+
+<div id="ref-Rumpel_2002">
+
+Rumpel, C., Kögel-Knabner, I., & Bruhn, F. (2002). Vertical
+distribution, age, and chemical composition of organic carbon in two
+forest soils of different pedogenesis. *Organic Geochemistry*, *33*(10),
+1131–1142. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fs0146-6380%2802%2900088-8>
+
+</div>
+
+<div id="ref-Saiz_2015">
+
+Saiz, G., Bird, M., Wurster, C., Quesada, C. A., Ascough, P., Domingues,
+T., Schrodt, F., et al. (2015). The influence of
+c\&lt\(\mathsemicolon\)sub\&gt\(\mathsemicolon\)3\&lt\(\mathsemicolon\)/sub\&gt\(\mathsemicolon\)
+and
+c\&lt\(\mathsemicolon\)sub\&gt\(\mathsemicolon\)4\&lt\(\mathsemicolon\)/sub\&gt\(\mathsemicolon\)
+vegetation on soil organic matter dynamics in contrasting semi-natural
+tropical ecosystems. *Biogeosciences*, *12*(16), 5041–5059. Copernicus
+GmbH. Retrieved from <https://doi.org/10.5194%2Fbg-12-5041-2015>
+
+</div>
+
+<div id="ref-Ouzilleau_Samson_2010">
+
+Samson, D. O., Bhiry, N., & Lavoie, M. (2010). Late-holocene
+palaeoecology of a polygonal peatland on the south shore of hudson
+strait, northern québec, canada. *The Holocene*, *20*(4), 525–536. SAGE
+Publications. Retrieved from
+<https://doi.org/10.1177%2F0959683609356582>
+
+</div>
+
+<div id="ref-Sanderman_2017">
+
+Sanderman, J., Creamer, C., Baisden, W. T., Farrell, M., & Fallon, S.
+(2017). Greater soil carbon stocks and faster turnover rates with
+increasing agricultural productivity. *SOIL*, *3*(1), 1–16. Copernicus
+GmbH. Retrieved from <https://doi.org/10.5194%2Fsoil-3-1-2017>
+
+</div>
+
+<div id="ref-Scharpenseel_1973">
+
+Scharpenseel, H. W., & Pietig, F. (1973). University of bonn natural
+radiocarbon measurements v. *Radiocarbon*, *15*(1), 13–41. Cambridge
+University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200058586>
+
+</div>
+
+<div id="ref-Schimel_2011">
+
+Schimel, J. P., Wetterstedt, J. M., Holden, P. A., & Trumbore, S. E.
+(2011). Drying/rewetting cycles mobilize old c from deep soils from a
+california annual grassland. *Soil Biology and Biochemistry*, *43*(5),
+1101–1103. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.soilbio.2011.01.008>
+
+</div>
+
+<div id="ref-Sch_ning_2006">
+
+Schöning, I., & Kögel-Knabner, I. (2006). Chemical composition of young
+and old carbon pools throughout cambisol and luvisol profiles under
+forests. *Soil Biology and Biochemistry*, *38*(8), 2411–2424. Elsevier
+BV. Retrieved from <https://doi.org/10.1016%2Fj.soilbio.2006.03.005>
+
+</div>
+
+<div id="ref-Schrumpf_2013">
+
+Schrumpf, M., Kaiser, K., Guggenberger, G., Persson, T., Kögel-Knabner,
+I., & Schulze, E.-D. (2013). Storage and stability of organic carbon in
+soils as related to depth, occlusion within aggregates, and attachment
+to minerals. *Biogeosciences*, *10*(3), 1675–1691. Copernicus GmbH.
+Retrieved from <https://doi.org/10.5194%2Fbg-10-1675-2013>
+
+</div>
+
+<div id="ref-Schulze_2010">
+
+Schulze, K., Borken, W., & Matzner, E. (2010). Dynamics of dissolved
+organic 14C in throughfall and soil solution of a norway spruce forest.
+*Biogeochemistry*, *106*(3), 461–473. Springer Science; Business Media
+LLC. Retrieved from <https://doi.org/10.1007%2Fs10533-010-9526-2>
+
+</div>
+
+<div id="ref-Schulze_2009">
+
+Schulze, K., Borken, W., Muhr, J., & Matzner, E. (2009). Stock, turnover
+time and accumulation of organic matter in bulk and density fractions of
+a podzol soil. *European Journal of Soil Science*, *60*(4), 567–577.
+Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2389.2009.01134.x>
+
+</div>
+
+<div id="ref-Schuur_2001">
+
+Schuur, E. A. G., Chadwick, O. A., & Matson, P. A. (2001). CARBON
+CYCLING AND SOIL CARBON STORAGE IN MESIC TO WET HAWAIIAN MONTANE
+FORESTS. *Ecology*, *82*(11), 3182–3196. Wiley. Retrieved from
+<https://doi.org/10.1890%2F0012-9658%282001%29082%5B3182%3Accascs%5D2.0.co%3B2>
+
+</div>
+
+<div id="ref-Schuur_2009">
+
+Schuur, E. A. G., Vogel, J. G., Crummer, K. G., Lee, H., Sickman, J. O.,
+& Osterkamp, T. E. (2009). The effect of permafrost thaw on old carbon
+release and net carbon exchange from tundra. *Nature*, *459*(7246),
+556–559. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1038%2Fnature08031>
+
+</div>
+
+<div id="ref-Schuur_2006">
+
+Schuur, E. A., & Trumbore, S. E. (2006). Partitioning sources of soil
+respiration in boreal black spruce forest using radiocarbon. *Global
+Change Biology*, *12*(2), 165–176. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2486.2005.01066.x>
+
+</div>
+
+<div id="ref-Schwartz_1996">
+
+Schwartz, D., Foresta, H. de, Mariotti, A., Balesdent, J., Massimba, J.
+P., & Girardin, C. (1996). Present dynamics of the savanna-forest
+boundary in the congolese mayombe: A pedological, botanical and isotopic
+(13C and 14C) study. *Oecologia*, *106*(4), 516–524. Springer Science;
+Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fbf00329710>
+
+</div>
+
+<div id="ref-Shaw_2004">
+
+Shaw, D., Franklin, J., Bible, K., Klopatek, J., Freeman, E., Greene,
+S., & Parker, G. (2004). Ecological setting of the wind river old-growth
+forest. *Ecosystems*, *7*(5). Springer Science; Business Media LLC.
+Retrieved from <https://doi.org/10.1007%2Fs10021-004-0135-6>
+
+</div>
+
+<div id="ref-Shen_2001">
+
+Shen, C., Yi, W., Sun, Y., Xing, C., Yang, Y., Yuan, C., Li, Z., et al.
+(2001). Distribution of 14C and 13C in forest soils of the dinghushan
+biosphere reserve. *Radiocarbon*, *43*(2B), 671–678. Cambridge
+University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200041321>
+
+</div>
+
+<div id="ref-Sierra_2013">
+
+Sierra, C. A., Jiménez, E. M., Reu, B., Peñuela, M. C., Thuille, A., &
+Quesada, C. A. (2013). Low vertical transfer rates of carbon inferred
+from radiocarbon analysis in an amazon podzol. *Biogeosciences*,
+*10*(6), 3455–3464. Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fbg-10-3455-2013>
+
+</div>
+
+<div id="ref-Sierra_2012">
+
+Sierra, C. A., Trumbore, S. E., Davidson, E. A., Frey, S. D., Savage, K.
+E., & Hopkins, F. M. (2012). Predicting decadal trends and transient
+responses of radiocarbon storage and fluxes in a temperate forest soil.
+*Biogeosciences*, *9*(8), 3013–3028. Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fbg-9-3013-2012>
+
+</div>
+
+<div id="ref-1987">
+
+*Soils developed in granitic alluvium near merced, california*. (1987)..
+US Geological Survey. Retrieved from <https://doi.org/10.3133%2Fb1590a>
+
+</div>
+
+<div id="ref-Sollins_2009">
+
+Sollins, P., Kramer, M. G., Swanston, C., Lajtha, K., Filley, T.,
+Aufdenkampe, A. K., Wagai, R., et al. (2009). Sequential density
+fractionation across soils of contrasting mineralogy: Evidence for both
+microbial- and mineral-controlled soil organic matter stabilization.
+*Biogeochemistry*, *96*(1-3), 209–231. Springer Science; Business Media
+LLC. Retrieved from <https://doi.org/10.1007%2Fs10533-009-9359-z>
+
+</div>
+
+<div id="ref-Sollins_2006">
+
+Sollins, P., Swanston, C., Kleber, M., Filley, T., Kramer, M., Crow, S.,
+Caldwell, B. A., et al. (2006). Organic c and n stabilization in a
+forest soil: Evidence from sequential density fractionation. *Soil
+Biology and Biochemistry*, *38*(11), 3313–3324. Elsevier BV. Retrieved
+from <https://doi.org/10.1016%2Fj.soilbio.2006.04.014>
+
+</div>
+
+<div id="ref-Spielvogel_2008">
+
+Spielvogel, S., Prietzel, J., & Kgel-Knabner, I. (2008). Soil organic
+matter stabilization in acidic forest soils is preferential and soil
+type-specific. *European Journal of Soil Science*, *59*(4), 674–692.
+Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1365-2389.2008.01030.x>
+
+</div>
+
+<div id="ref-Stephan_1983">
+
+Stephan, S., Berrier, J., Petre, A. D., Jeanson, C., Kooistra, M.,
+Scharpenseel, H., & Schiffmann, H. (1983). Characterization of in situ
+organic matter constituents in vertisols from argentina, using
+submicroscopic and cytochemical methods first report. *Geoderma*,
+*30*(1-4), 21–34. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2F0016-7061%2883%2990054-x>
+
+</div>
+
+<div id="ref-Stout_1980">
+
+Stout, J. D., & Goh, K. M. (1980). The use of radiocarbon to measure the
+effects of earthworms on soil development. *Radiocarbon*, *22*(3),
+892–896. Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200010298>
+
+</div>
+
+<div id="ref-Striegl_2007">
+
+Striegl, R. G., Dornblaser, M. M., Aiken, G. R., Wickland, K. P., &
+Raymond, P. A. (2007). Carbon export and cycling by the yukon, tanana,
+and porcupine rivers, alaska, 2001-2005. *Water Resources Research*,
+*43*(2). American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F2006wr005201>
+
+</div>
+
+<div id="ref-Stubbins_2012">
+
+Stubbins, A., Hood, E., Raymond, P. A., Aiken, G. R., Sleighter, R. L.,
+Hernes, P. J., Butman, D., et al. (2012). Anthropogenic aerosols as a
+source of ancient dissolved organic matter in glaciers. *Nature
+Geoscience*, *5*(3), 198–201. Springer Science; Business Media LLC.
+Retrieved from <https://doi.org/10.1038%2Fngeo1403>
+
+</div>
+
+<div id="ref-Swanston_2005">
+
+Swanston, C. W., Torn, M. S., Hanson, P. J., Southon, J. R., Garten, C.
+T., Hanlon, E. M., & Ganio, L. (2005). Initial characterization of
+processes of soil carbon stabilization using forest stand-level
+radiocarbon enrichment. *Geoderma*, *128*(1-2), 52–62. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.geoderma.2004.12.015>
+
+</div>
+
+<div id="ref-Swindles_2018">
+
+Swindles, G. T., Kelly, T. J., Roucoux, K. H., & Lawson, I. T. (2018).
+Response of testate amoebae to a late holocene ecosystem shift in an
+amazonian peatland. *European Journal of Protistology*, *64*, 13–19.
+Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.ejop.2018.03.002>
+
+</div>
+
+<div id="ref-Swindles_2017">
+
+Swindles, G. T., Morris, P. J., Whitney, B., Galloway, J. M., Gałka, M.,
+Gallego-Sala, A., Macumber, A. L., et al. (2017). Ecosystem state shifts
+during long-term development of an amazonian peatland. *Global Change
+Biology*, *24*(2), 738–757. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fgcb.13950>
+
+</div>
+
+<div id="ref-Szymanski_2019">
+
+Szymanski, L. M., Sanford, G. R., Heckman, K. A., Jackson, R. D., &
+Marı'n-Spiotta, E. (2019). Conversion to bioenergy crops alters the
+amount and age of microbially-respired soil carbon. *Soil Biology and
+Biochemistry*, *128*, 35–44. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.soilbio.2018.08.025>
+
+</div>
+
+<div id="ref-Tan_2013">
+
+Tan, W., Zhou, L., & Liu, K. (2013). Soil aggregate fraction-based 14C
+analysis and its application in the study of soil organic carbon
+turnover under forests of different ages. *Chinese Science Bulletin*,
+*58*(16), 1936–1947. Springer Science; Business Media LLC. Retrieved
+from <https://doi.org/10.1007%2Fs11434-012-5660-7>
+
+</div>
+
+<div id="ref-de_Tapia_2005">
+
+Tapia, E. M. de, Rubio, I. D., Castro, J. G., Solleiro, E., & Sedov, S.
+(2005). Radiocarbon dates from soil profiles in the teotihuacán valley,
+mexico: Indicators of geomorphological processes. *Radiocarbon*,
+*47*(1), 159–175. Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200052279>
+
+</div>
+
+<div id="ref-Taylor_2015">
+
+Taylor, A. J., Lai, C.-T., Hopkins, F. M., Wharton, S., Bible, K., Xu,
+X., Phillips, C., et al. (2015). Radiocarbon-based partitioning of soil
+respiration in an old-growth coniferous forest. *Ecosystems*, *18*(3),
+459–470. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10021-014-9839-4>
+
+</div>
+
+<div id="ref-Tefs_2012">
+
+Tefs, C., & Gleixner, G. (2012). Importance of root derived carbon for
+soil organic matter storage in a temperate old-growth beech forest
+evidence from c, n and 14C content. *Forest Ecology and Management*,
+*263*, 131–137. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.foreco.2011.09.010>
+
+</div>
+
+<div id="ref-Tegen_1996">
+
+Tegen, I., & Dörr, H. (1996). 14C measurements of soil organic matter,
+soil co2 and dissolved organic carbon (19871992). *Radiocarbon*,
+*38*(2), 247–251. Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200017628>
+
+</div>
+
+<div id="ref-Tifafi_2018">
+
+Tifafi, M., Camino-Serrano, M., Hatté, C., Morras, H., Moretti, L.,
+Barbaro, S., Cornu, S., et al. (2018). The use of radiocarbon
+\&lt\(\mathsemicolon\)sup\&gt\(\mathsemicolon\)14\&lt\(\mathsemicolon\)/sup\&gt\(\mathsemicolon\)C
+to constrain carbon dynamics in the soil module of the land surface
+model ORCHIDEE (SVN r5165). *Geoscientific Model Development*, *11*(12),
+4711–4726. Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fgmd-11-4711-2018>
+
+</div>
+
+<div id="ref-Tonneijck_2006">
+
+Tonneijck, F. H., Plicht, J. van der, Jansen, B., Verstraten, J. M., &
+Hooghiemstra, H. (2006). Radiocarbon dating of soil organic matter
+fractions in andosols in northern ecuador. *Radiocarbon*, *48*(3),
+337–353. Cambridge University Press (CUP). Retrieved from
+<https://doi.org/10.1017%2Fs0033822200038790>
+
+</div>
+
+<div id="ref-Torn_2002">
+
+Torn, M. S., Lapenis, A. G., Timofeev, A., Fischer, M. L., Babikov, B.
+V., & Harden, J. W. (2002). Organic carbon and carbon isotopes in modern
+and 100-year-old-soil archives of the russian steppe. *Global Change
+Biology*, *8*(10), 941–953. Wiley. Retrieved from
+<https://doi.org/10.1046%2Fj.1365-2486.2002.00477.x>
+
+</div>
+
+<div id="ref-Torn_1997">
+
+Torn, M. S., Trumbore, S. E., Chadwick, O. A., Vitousek, P. M., &
+Hendricks, D. M. (1997). Mineral control of soil organic carbon storage
+and turnover. *Nature*, *389*(6647), 170–173. Springer Science; Business
+Media LLC. Retrieved from <https://doi.org/10.1038%2F38260>
+
+</div>
+
+<div id="ref-Torn_2005">
+
+Torn, M. S., Vitousek, P. M., & Trumbore, S. E. (2005). The influence of
+nutrient availability on soil organic matter turnover estimated by
+incubations and radiocarbon modeling. *Ecosystems*, *8*(4), 352–372.
+Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1007%2Fs10021-004-0259-8>
+
+</div>
+
+<div id="ref-https://doi.org/10.1594/pangaea.863689">
+
+Treat, C. C., Jones, M. C., Camill, P., Gallego-Sala, A., Garneau, M.,
+Harden, J. W., Hugelius, G., et al. (2016). (Table s1) site locations of
+cores and descriptions. PANGAEA - Data Publisher for Earth &
+Environmental Science. Retrieved from
+<https://doi.pangaea.de/10.1594/PANGAEA.863689>
+
+</div>
+
+<div id="ref-Tremblay_2014">
+
+Tremblay, S., Bhiry, N., & Lavoie, M. (2014). Long-term dynamics of a
+palsa in the sporadic permafrost zone of northwestern quebec (canada).
+(A. de Vernal, Ed.)*Canadian Journal of Earth Sciences*, *51*(5),
+500–509. Canadian Science Publishing. Retrieved from
+<https://doi.org/10.1139%2Fcjes-2013-0123>
+
+</div>
+
+<div id="ref-Trumbore_1993">
+
+Trumbore, S. E. (1993). Comparison of carbon dynamics in tropical and
+temperate soils using radiocarbon measurements. *Global Biogeochemical
+Cycles*, *7*(2), 275–290. American Geophysical Union (AGU). Retrieved
+from <https://doi.org/10.1029%2F93gb00468>
+
+</div>
+
+<div id="ref-Trumbore_1999">
+
+Trumbore, S. E., Bubier, J. L., Harden, J. W., & Crill, P. M. (1999).
+Carbon cycling in boreal wetlands: A comparison of three approaches.
+*Journal of Geophysical Research: Atmospheres*, *104*(D22), 27673–27682.
+American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F1999jd900433>
+
+</div>
+
+<div id="ref-Trumbore_1996">
+
+Trumbore, S. E., Chadwick, O. A., & Amundson, R. (1996). Rapid exchange
+between soil carbon and atmospheric carbon dioxide driven by temperature
+change. *Science*, *272*(5260), 393–396. American Association for the
+Advancement of Science (AAAS). Retrieved from
+<https://doi.org/10.1126%2Fscience.272.5260.393>
+
+</div>
+
+<div id="ref-Trumbore_1995">
+
+Trumbore, S. E., Davidson, E. A., Camargo, P. B. de, Nepstad, D. C., &
+Martinelli, L. A. (1995). Belowground cycling of carbon in forests and
+pastures of eastern amazonia. *Global Biogeochemical Cycles*, *9*(4),
+515–528. American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F95gb02148>
+
+</div>
+
+<div id="ref-Trumbore_1997">
+
+Trumbore, S. E., & Harden, J. W. (1997). Accumulation and turnover of
+carbon in organic and mineral soils of the BOREAS northern study area.
+*Journal of Geophysical Research: Atmospheres*, *102*(D24), 28817–28830.
+American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F97jd02231>
+
+</div>
+
+<div id="ref-Upton_2018">
+
+Upton, A., Vane, C. H., Girkin, N., Turner, B. L., & Sjögersten, S.
+(2018). Does litter input determine carbon storage and peat organic
+chemistry in tropical peatlands? *Geoderma*, *326*, 76–87. Elsevier BV.
+Retrieved from <https://doi.org/10.1016%2Fj.geoderma.2018.03.030>
+
+</div>
+
+<div id="ref-Vardy_1997">
+
+Vardy, S. R., Warner, B. G., & Aravena, R. (1997). Holocene climate
+effects on the development of a peatland on the tuktoyaktuk peninsula,
+northwest territories. *Quaternary Research*, *47*(1), 90–104. Cambridge
+University Press (CUP). Retrieved from
+<https://doi.org/10.1006%2Fqres.1996.1869>
+
+</div>
+
+<div id="ref-Vardy_1998">
+
+Vardy, S. R., Warner, B. G., & Aravena, R. (1998). *Climatic Change*,
+*40*(2), 285–313. Springer Science; Business Media LLC. Retrieved from
+<https://doi.org/10.1023%2Fa%3A1005473021115>
+
+</div>
+
+<div id="ref-VARDY_2008">
+
+VARDY, S. R., WARNER, B. G., & ASADA, T. (2008). Holocene environmental
+change in two polygonal peatlands, south-central nunavut, canada.
+*Boreas*, *34*(3), 324–334. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1502-3885.2005.tb01104.x>
+
+</div>
+
+<div id="ref-Vardy_2000">
+
+Vardy, S. R., Warner, B. G., Turunen, J., & Aravena, R. (2000). Carbon
+accumulation in permafrost peatlands in the northwest territories and
+nunavut, canada. *The Holocene*, *10*(2), 273–280. SAGE Publications.
+Retrieved from <https://doi.org/10.1191%2F095968300671749538>
+
+</div>
+
+<div id="ref-https://doi.org/10.5440/1364062">
+
+Vaughn, L., Torn, M., Porras, R., Curtis, B., & Chafe, O. (2018).
+Radiocarbon in ecosystem respiration and soil pore-space co2 with
+surface gas flux, air temperature, and soil temperature and moisture,
+barrow, alaska, 2012-2014. Next Generation Ecosystems Experiment -
+Arctic, Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (US); NGEE
+Arctic, Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United
+States). Retrieved from <https://www.osti.gov/servlets/purl/1364062/>
+
+</div>
+
+<div id="ref-V_liranta_2003">
+
+Väliranta, M., Kaakinen, A., & Kuhry, P. (2003). Holocene climate and
+landscape evolution east of the pechora delta, east-european russian
+arctic. *Quaternary Research*, *59*(3), 335–344. Cambridge University
+Press (CUP). Retrieved from
+<https://doi.org/10.1016%2Fs0033-5894%2803%2900041-3>
+
+</div>
+
+<div id="ref-van_der_Voort_2016">
+
+Voort, T. S. van der, Hagedorn, F., McIntyre, C., Zell, C., Walthert,
+L., Schleppi, P., Feng, X., et al. (2016). Variability in
+\&lt\(\mathsemicolon\)sup\&gt\(\mathsemicolon\)14\&lt\(\mathsemicolon\)/sup\&gt\(\mathsemicolon\)C
+contents of soil organic matter at the plot and regional scale across
+climatic and geologic gradients. *Biogeosciences*, *13*(11), 3427–3439.
+Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fbg-13-3427-2016>
+
+</div>
+
+<div id="ref-Wagai_2015">
+
+Wagai, R., Kajiura, M., Asano, M., & Hiradate, S. (2015). Nature of soil
+organo-mineral assemblage examined by sequential density fractionation
+with and without sonication: Is allophanic soil different? *Geoderma*,
+*241-242*, 295–305. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.geoderma.2014.11.028>
+
+</div>
+
+<div id="ref-WAHLEN_1989">
+
+WAHLEN, M., TANAKA, N., HENRY, R., DECK, B., ZEGLEN, J., VOGEL, J. S.,
+SOUTHON, J., et al. (1989). Carbon-14 in methane sources and in
+atmospheric methane: The contribution from fossil carbon. *Science*,
+*245*(4915), 286–290. American Association for the Advancement of
+Science (AAAS). Retrieved from
+<https://doi.org/10.1126%2Fscience.245.4915.286>
+
+</div>
+
+<div id="ref-Waldrop_2012">
+
+Waldrop, M., Harden, J., Turetsky, M., Petersen, D., McGuire, A.,
+Briones, M., Churchill, A., et al. (2012). Bacterial and enchytraeid
+abundance accelerate soil carbon turnover along a lowland vegetation
+gradient in interior alaska. *Soil Biology and Biochemistry*, *50*,
+188–198. Elsevier BV. Retrieved from
+<https://doi.org/10.1016%2Fj.soilbio.2012.02.032>
+
+</div>
+
+<div id="ref-Walter_2008">
+
+Walter, K. M., Chanton, J. P., Chapin, F. S., Schuur, E. A. G., & Zimov,
+S. A. (2008). Methane production and bubble emissions from arctic lakes:
+Isotopic implications for source pathways and ages. *Journal of
+Geophysical Research*, *113*. American Geophysical Union (AGU).
+Retrieved from <https://doi.org/10.1029%2F2007jg000569>
+
+</div>
+
+<div id="ref-WANG_2005">
+
+WANG, L., OUYANG, H., ZHOUM, C.-P., ZHANG, F., SONG, M.-H., & TIAN,
+Y.-Q. (2005). Soil organic matter dynamics along a vertical vegetation
+gradient in the gongga mountain on the tibetan plateau. *Journal of
+Integrative Plant Biology*, *47*(4), 411–420. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1744-7909.2005.00085.x>
+
+</div>
+
+<div id="ref-Wang_2000">
+
+Wang, Y., Amundson, R., & Niu, X.-F. (2000). Seasonal and altitudinal
+variation in decomposition of soil organic matter inferred from
+radiocarbon measurements of soil CO2flux. *Global Biogeochemical
+Cycles*, *14*(1), 199–211. American Geophysical Union (AGU). Retrieved
+from <https://doi.org/10.1029%2F1999gb900074>
+
+</div>
+
+<div id="ref-Wang_1996">
+
+Wang, Y., Amundson, R., & Trumbore, S. (1996). Radiocarbon dating of
+soil organic matter. *Quaternary Research*, *45*(3), 282–288. Cambridge
+University Press (CUP). Retrieved from
+<https://doi.org/10.1006%2Fqres.1996.0029>
+
+</div>
+
+<div id="ref-Wang_1999">
+
+Wang, Y., Amundson, R., & Trumbore, S. (1999). The impact of land use
+change on c turnover in soils. *Global Biogeochemical Cycles*, *13*(1),
+47–57. American Geophysical Union (AGU). Retrieved from
+<https://doi.org/10.1029%2F1998gb900005>
+
+</div>
+
+<div id="ref-WERNER_2010">
+
+WERNER, K., TARASOV, P. E., ANDREEV, A. A., MÃLLER, S., KIENAST, F.,
+ZECH, M., ZECH, W., et al. (2010). A 12.5-kyr history of vegetation
+dynamics and mire development with evidence of younger dryas larch
+presence in the verkhoyansk mountains, east siberia, russia. *Boreas*,
+*39*(1), 56–68. Wiley. Retrieved from
+<https://doi.org/10.1111%2Fj.1502-3885.2009.00116.x>
+
+</div>
+
+<div id="ref-Wooller_2007">
+
+Wooller, M. J., Morgan, R., Fowell, S., Behling, H., & Fogel, M. (2007).
+A multiproxy peat record of holocene mangrove palaeoecology from twin
+cays, belize. *The Holocene*, *17*(8), 1129–1139. SAGE Publications.
+Retrieved from <https://doi.org/10.1177%2F0959683607082553>
+
+</div>
+
+<div id="ref-Wunderlich_2012">
+
+Wunderlich, S., & Borken, W. (2012). Partitioning of soil
+CO\&lt\(\mathsemicolon\)sub\&gt\(\mathsemicolon\)2\&lt\(\mathsemicolon\)/sub\&gt\(\mathsemicolon\)
+efflux in un-manipulated and experimentally flooded plots of a temperate
+fen. *Biogeosciences*, *9*(8), 3477–3489. Copernicus GmbH. Retrieved
+from <https://doi.org/10.5194%2Fbg-9-3477-2012>
+
+</div>
+
+<div id="ref-Yu_2003">
+
+Yu, Z., Campbell, I. D., Campbell, C., Vitt, D. H., Bond, G. C., & Apps,
+M. J. (2003). Carbon sequestration in western canadian peat highly
+sensitive to holocene wet-dry climate cycles at millennial timescales.
+*The Holocene*, *13*(6), 801–808. SAGE Publications. Retrieved from
+<https://doi.org/10.1191%2F0959683603hl667ft>
+
+</div>
+
+<div id="ref-Zhang_2018">
+
+Zhang, H., Gallego-Sala, A. V., Amesbury, M. J., Charman, D. J., Piilo,
+S. R., & Väliranta, M. M. (2018). Inconsistent response of arctic
+permafrost peatland carbon accumulation to warm climate phases. *Global
+Biogeochemical Cycles*, *32*(10), 1605–1620. American Geophysical Union
+(AGU). Retrieved from <https://doi.org/10.1029%2F2018gb005980>
+
+</div>
+
+<div id="ref-Zibulski_2013">
+
+Zibulski, R., Herzschuh, U., Pestryakova, L. A., Wolter, J., Müller, S.,
+Schilling, N., Wetterich, S., et al. (2013). River flooding as a driver
+of polygon dynamics: Modern vegetation data and a millennial peat record
+from the anabar river lowlands (arctic siberia). *Biogeosciences
+Discussions*, *10*(3), 4067–4125. Copernicus GmbH. Retrieved from
+<https://doi.org/10.5194%2Fbgd-10-4067-2013>
+
+</div>
+
+<div id="ref-Zimmermann_2001">
+
+Zimmermann, C., & Lavoie, C. (2001). A paleoecological analysis of a
+southern permafrost peatland, charlevoix, quebec. *Canadian Journal of
+Earth Sciences*, *38*(6), 909–919. Canadian Science Publishing.
+Retrieved from <https://doi.org/10.1139%2Fe00-110>
+
+</div>
+
+<div id="ref-Zimov_1997">
+
+Zimov, S. A. (1997). North siberian lakes: A methane source fueled by
+pleistocene carbon. *Science*, *277*(5327), 800–802. American
+Association for the Advancement of Science (AAAS). Retrieved from
+<https://doi.org/10.1126%2Fscience.277.5327.800>
+
+</div>
+
+<div id="ref-Zoltai_1985">
+
+Zoltai, S. C., & Johnson, J. D. (1985). Development of a treed bog
+island in a minerotrophic fen. *Canadian Journal of Botany*, *63*(6),
+1076–1085. Canadian Science Publishing. Retrieved from
+<https://doi.org/10.1139%2Fb85-148>
+
+</div>
+
+<div id="ref-Zoltai_1975">
+
+Zoltai, S. C., & Tarnocai, C. (1975). Perennially frozen peatlands in
+the western arctic and subarctic of canada. *Canadian Journal of Earth
+Sciences*, *12*(1), 28–43. Canadian Science Publishing. Retrieved from
+<https://doi.org/10.1139%2Fe75-004>
+
+</div>
+
+<div id="ref-Zuidhoff_2000">
+
+Zuidhoff, F. S., & Kolstrup, E. (2000). Changes in palsa distribution in
+relation to climate change in laivadalen, northern sweden, especially
+1960-1997. *Permafrost and Periglacial Processes*, *11*(1), 55–69.
+Wiley. Retrieved from
+<https://doi.org/10.1002%2F%28sici%291099-1530%28200001%2F03%2911%3A1%3C55%3A%3Aaid-ppp338%3E3.0.co%3B2-t>
+
+</div>
+
+</div>
