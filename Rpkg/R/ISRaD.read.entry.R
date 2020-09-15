@@ -5,39 +5,38 @@
 #' @param template_file Directory path and name of template file to use (defaults to the ISRaD_Master_Template file built into the package). Not recommended to change this.
 #' @author J. Beem-Miller
 #' @export
-#' @importFrom readxl read_excel
-#' @importFrom dplyr bind_rows
+#' @importFrom readxl read_excel excel_sheets
 #' @importFrom utils type.convert
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
-#' database <- ISRaD::Gaudinski_2001
-#' ISRaD.save.xlsx(
-#'   database = database,
+#' entry <- ISRaD::Gaudinski_2001
+#' ISRaD.save.entry(
+#'   entry = entry,
 #'   template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
 #'   outfile = file.path(tempdir(), "Gaudinski_2001.xlsx")
 #' )
 #' # Read in .xlsx file
 #' ISRaD.read.entry(file.path(tempdir(), "Gaudinski_2001.xlsx"))
 #' }
-ISRaD.read.entry <- function(entry, 
-                             template_file = system.file("extdata", 
-                                                         "ISRaD_Master_Template.xlsx", 
+ISRaD.read.entry <- function(entry,
+                             template_file = system.file("extdata",
+                                                         "ISRaD_Master_Template.xlsx",
                                                          package = "ISRaD")) {
-  
+
 # Get the tables stored in the template sheets
 template <- read_template_file()
 template <- lapply(template[1:8], function(x) x[-c(1, 2, 3), ])
 template <- lapply(template, function(x) x %>% mutate_all(as.character))
 
 # read in data
-entryR <- lapply(excel_sheets(entry[1:8], function(s) data.frame(read_excel(entry, sheet = s))))
+entryR <- lapply(excel_sheets(entry)[1:8], function(s) data.frame(read_excel(entry, s)))
 names(entryR) <- excel_sheets(entry)[1:8]
 
 # trim description/empty rows/empty cols
 entryR <- lapply(entryR, function(x) x <- x[-1:-2, ])
 for (i in seq_along(entryR)) {
-  tab <- soilcarbon_data[[i]]
+  tab <- entryR[[i]]
   for (j in seq_len(ncol(tab))) {
     tab[, j][grep("^[ ]+$", tab[, j])] <- NA
   }
@@ -52,8 +51,10 @@ entryR <- lapply(entryR, function(x) lapply(x, as.character))
 entryR <- lapply(entryR, function(x) lapply(x, type.convert))
 entryR <- lapply(entryR, as.data.frame)
 
-# # extract list element to envr to preserve name
-# listToEnv()
+# put in list to name appropriately
+new_list <- list(entryR)
+names(new_list) <- sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(entry))
 
-return(entryR)
+# extract list element to .GlobalEnv to preserve name
+invisible(list2env(new_list, envir = .GlobalEnv))
 }
