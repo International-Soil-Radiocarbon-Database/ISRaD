@@ -49,7 +49,6 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
 
   message("\tChecking the number of new rows in the compiled ISRaD_data object...\n")
   load(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_data.rda"))
-  ISRaD_data <- ISRaD_data
   for (t in names(ISRaD_data_compiled)) {
     message("\t\t", nrow(ISRaD_data_compiled[[t]]) - nrow(ISRaD_data[[t]]), " rows were added to the ", t, " table.\n")
   }
@@ -91,7 +90,6 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
 
   message("\tChecking the number of new columns in the compiled ISRaD_extra object...\n")
   load(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_extra.rda"))
-  ISRaD_extra <- ISRaD_extra
   for (t in names(ISRaD_extra_compiled)) {
     message("\t\t", ncol(ISRaD_extra_compiled[[t]]) - ncol(ISRaD_extra[[t]]), " ncol were added to the ", t, " table.\n")
   }
@@ -161,38 +159,6 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
     zipfile = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files.zip"),
     files = list.files(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"), full.names = TRUE), flags = "-j"
   )
-
-  # update references -------------------------------------------------------
-
-  if (removed_entries != "none" | new_entries != "none") {
-    message("\nUpdating credits.md page...this takes about 5 min")
-
-    dois <- as.character(ISRaD_data$metadata$doi)
-    cleandois <- dois[dois[] != "israd"]
-
-    he_doi <- "10.1126/science.aad4273"
-    mathieu_doi <- "10.1111/gcb.13012"
-
-    # References from clean dois
-    a <- sapply(cleandois, FUN = rcrossref::cr_cn, format = "text", style = "apa", USE.NAMES = FALSE)
-
-    he_ref <- rcrossref::cr_cn(he_doi, format = "text", style = "apa")
-    mathieu_ref <- rcrossref::cr_cn(mathieu_doi, format = "text", style = "apa")
-
-    # Body
-    h1 <- "## Main compilations"
-    p1 <- "ISRaD has been built based on two main compilations:"
-
-    h2 <- "## Studies within ISRaD"
-    n <- length(cleandois)
-    p2 <- paste("Currently, there are", n, "entries (unique DOIs) in ISRaD, which are from the following publications:")
-
-    # Print markdown file for website
-    cat(c(
-      h1, p1, " ", paste("* ", mathieu_ref), paste("* ", he_ref), " ",
-      h2, p2, " ", paste("* ", a)
-    ), sep = "\n", file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "credits.md"))
-  }
 
   # document and check ------------------------------------------------------
 
