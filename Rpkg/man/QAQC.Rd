@@ -32,10 +32,10 @@ This function can also be called from the ISRaD website (<http://soilradiocarbon
 \examples{
 \donttest{
 # Load example dataset Gaudinski_2001
-database <- ISRaD::Gaudinski_2001
+entry <- ISRaD::Gaudinski_2001
 # Save as .xlsx file
-ISRaD.save.xlsx(
-  database = database,
+ISRaD.save.entry(
+  entry = entry,
   template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
   outfile = file.path(tempdir(), "Gaudinski_2001.xlsx")
 )

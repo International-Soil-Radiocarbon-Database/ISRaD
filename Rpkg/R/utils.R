@@ -53,10 +53,10 @@ check_template_info_columns <- function(template, template_info, outfile, verbos
   stopifnot(is.list(template))
   stopifnot(is.list(template_info))
   stopifnot(is.character(outfile))
-  
+
   mismatch <- FALSE
   tmp_names <- names(template)[names(template) != "controlled vocabulary"]
-  
+
   for (tab in tmp_names) {
     if (verbose) cat("\n", tab, "...", file = outfile, append = TRUE)
     tab_cols <- colnames(template[[tab]])
@@ -83,7 +83,7 @@ check_template_info_columns <- function(template, template_info, outfile, verbos
 #' @keywords internal
 check_numeric_minmax <- function(x, xname) {
   stopifnot(is.character(xname))
-  
+
   if (!is.numeric(type.convert(x))) {
     warning("Non-numeric values in ", xname, " column")
   }
@@ -94,7 +94,7 @@ check_numeric_minmax <- function(x, xname) {
 #'
 #' @param template_file Filename, character; if not provided, load the default from \code{extdata/}
 #' @return A list with sheets of the template info file.
-#' @import openxlsx
+#' @importFrom readxl excel_sheets read_excel
 #' @keywords internal
 read_template_file <- function(template_file) {
   # Get the tables stored in the template sheets
@@ -102,9 +102,9 @@ read_template_file <- function(template_file) {
     template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
   }
   lapply(
-    setNames(nm = getSheetNames(template_file)),
+    setNames(nm = excel_sheets(template_file)),
     function(s) {
-      read.xlsx(template_file, sheet = s)
+      data.frame(suppressMessages(read_excel(template_file, sheet = s)))
     }
   )
 }
@@ -113,16 +113,16 @@ read_template_file <- function(template_file) {
 #'
 #' @param template_info_file Filename, character; if not provided, load the default from \code{extdata/}
 #' @return A list with sheets of the template info file.
-#' @import openxlsx
+#' @importFrom readxl excel_sheets read_excel
 #' @keywords internal
 read_template_info_file <- function(template_info_file) {
   if(missing(template_info_file))  {
     template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx", package = "ISRaD")
   }
   lapply(
-    setNames(nm = getSheetNames(template_info_file)),
+    setNames(nm = excel_sheets(template_info_file)),
     function(s) {
-      read.xlsx(template_info_file, sheet = s)
+      data.frame(suppressMessages(read_excel(template_info_file, sheet = s)))
     }
   )
 }

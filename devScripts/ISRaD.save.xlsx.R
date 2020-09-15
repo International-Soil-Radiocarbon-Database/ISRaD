@@ -6,8 +6,8 @@
 #' @param template_file Directory path and name of template file to use (defaults to the ISRaD_Master_Template file built into the package). Not recommended to change this.
 #' @author J Grey Monroe
 #' @export
-#' @importFrom openxlsx saveWorkbook
-#' @import dplyr
+#' @importFrom openxlsx saveWorkbook loadWorkbook writeData
+#' @importFrom dplyr bind_rows
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
@@ -23,7 +23,7 @@ ISRaD.save.xlsx <- function(database,
                             template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
                             outfile) {
   stopifnot(is_israd_database(database))
-  
+
   template <- read_template_file(template_file)
 
   loaded_template <- loadWorkbook(template_file)
@@ -37,7 +37,7 @@ ISRaD.save.xlsx <- function(database,
     if (tab == "controlled vocabulary") {
       database[[tab]] <- template[[tab]]
     } else {
-      database[[tab]] <- dplyr::bind_rows(template[[tab]][c(1:2), ], database[[tab]])
+      database[[tab]] <- bind_rows(template[[tab]][c(1:2), ], database[[tab]])
     }
 
     writeData(loaded_template, sheet = i, database[[tab]], rowNames = FALSE)

@@ -12,14 +12,15 @@
 #' @param verbose Set to TRUE to print results of function to console. Default is TRUE.
 #' @import dplyr
 #' @importFrom RCurl url.exists
+#' @importFrom readxl read_excel excel_sheets
 #' @export
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
-#' database <- ISRaD::Gaudinski_2001
+#' entry <- ISRaD::Gaudinski_2001
 #' # Save as .xlsx file
-#' ISRaD.save.xlsx(
-#'   database = database,
+#' ISRaD.save.entry(
+#'   entry = entry,
 #'   template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
 #'   outfile = file.path(tempdir(), "Gaudinski_2001.xlsx")
 #' )
@@ -78,12 +79,12 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   check_template_info_columns(template, template_info, outfile_QAQC, verbose)
 
-  if (all(getSheetNames(file) %in% names(template))) {
+  if (all(excel_sheets(file) %in% names(template))) {
     vcat("\n Template format detected: ", basename(template_file))
     vcat("\n Template info file to be used for QAQC: ", basename(template_info_file))
 
-    data <- lapply(getSheetNames(file)[1:8], function(s) read.xlsx(file, sheet = s))
-    names(data) <- getSheetNames(file)[1:8]
+    data <- lapply(excel_sheets(file)[1:8], function(s) data.frame(read_excel(file, sheet = s)))
+    names(data) <- excel_sheets(file)[1:8]
   }
 
   ##### check for description rows #####

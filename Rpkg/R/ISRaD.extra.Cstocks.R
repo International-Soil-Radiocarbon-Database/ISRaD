@@ -13,7 +13,7 @@
 ISRaD.extra.Cstocks <- function(database) {
 
   stopifnot(is_israd_database(database))
-  
+
   # make new filled vars
   database$layer$lyr_coarse_tot_filled <- database$layer[, "lyr_coarse_tot"]
   database$layer$lyr_bd_samp_filled <- database$layer[, "lyr_bd_samp"]

@@ -21,4 +21,3 @@ convert_fm_d14c <- function(fm = NA, d14c = NA, obs_date_y) {
     ((d14c/1000) + 1)/exp(lambda * (1950 - obs_date_y))
   }
 }
-
