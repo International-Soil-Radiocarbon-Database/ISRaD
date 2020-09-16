@@ -38,7 +38,6 @@
 #' bio19 = Precipitation of Coldest Quarter\cr
 #' @export
 #' @importFrom raster raster crs extract getData
-#' @import rgdal
 #' @return Updated ISRaD_extra object with new columns at the profile level
 #' @examples
 #' \donttest{

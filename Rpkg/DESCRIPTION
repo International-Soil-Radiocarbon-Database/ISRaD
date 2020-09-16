@@ -18,15 +18,11 @@ Depends: R (>= 3.5.0)
 Imports: readxl,
     writexl,
     raster,
-    rgdal,
     dplyr (>= 0.8),
     tidyr (>= 1.0),
     RCurl,
     ggplot2,
-    maps,
-    rcrossref,
-    pangaear,
-    stringr
+    maps
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
@@ -34,4 +30,5 @@ RoxygenNote: 6.1.1
 Suggests:
     devtools,
     knitr,
-    rmarkdown
+    rmarkdown,
+    rgdal

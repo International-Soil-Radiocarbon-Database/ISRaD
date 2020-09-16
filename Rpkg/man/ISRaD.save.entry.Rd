@@ -20,6 +20,17 @@ Saves ISRaD data object to .xlsx file
 \details{
 This function can be used to save a single entry (or a compiled database in the standard template format) to a .xlsx file. Replaces the function "ISRaD.save.xlsx" as that function depended on the package openxlsx, which was unstable at the time. This a simpler function and does not maintain the formatting of the template file. The code for the original function is available in the ISRaD github repository in the \href{https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/devScripts}{devScripts} directory.
 }
+\examples{
+\donttest{
+# Load example dataset Gaudinski_2001
+entry <- ISRaD::Gaudinski_2001
+ISRaD.save.entry(
+  entry = entry,
+  template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
+  outfile = file.path(tempdir(), "Gaudinski_2001.xlsx")
+)
+}
+}
 \author{
 J. Beem-Miller
 }

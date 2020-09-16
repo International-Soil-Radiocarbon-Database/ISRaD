@@ -35,7 +35,7 @@ database.x <- ISRaD.extra.fill_14c(database.x)
 database.x <- ISRaD.extra.delta_delta(database.x)
 }
 \references{
-Graven et al. 2017 <https://www.geosci-model-dev.net/10/4405/2017/gmd-10-4405-2017.pdf>;  Sierra, C. "Forecasting atmospheric radiocarbon decline to pre-bomb values", Radiocarbon, Vol 60, Nr 4, 2018, p 1055–1066 DOI:10.1017/RDC.2018.33
+Graven et al. 2017 <https://www.geosci-model-dev.net/10/4405/2017/gmd-10-4405-2017.pdf>;  Sierra, C. "Forecasting atmospheric radiocarbon decline to pre-bomb values", Radiocarbon, Vol 60, Nr 4, 2018, p 1055.1066 DOI:10.1017/RDC.2018.33
 }
 \author{
 J. Beem-Miller and C. Hicks-Pries

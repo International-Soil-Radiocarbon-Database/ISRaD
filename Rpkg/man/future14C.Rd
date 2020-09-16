@@ -9,6 +9,6 @@
 future14C
 }
 \description{
-Data from: Sierra, C. "Forecasting atmospheric radiocarbon decline to pre-bomb values", Radiocarbon, Vol 60, Nr 4, 2018, p 1055–1066 DOI:10.1017/RDC.2018.33
+Data from: Sierra, C. "Forecasting atmospheric radiocarbon decline to pre-bomb values", Radiocarbon, Vol 60, Nr 4, 2018, p 1055.1066 DOI:10.1017/RDC.2018.33
 }
 \keyword{datasets}
