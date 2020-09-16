@@ -22,7 +22,7 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   vcat <- function(...) if (verbose) cat(...)
 
   vcat("\nChecking compatibility between ISRaD template and info file...",
-      file = outfile, append = TRUE
+    file = outfile, append = TRUE
   )
 
   # Get the tables stored in the template sheets
@@ -33,7 +33,7 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
   check_template_info_columns(template, template_info, outfile, verbose)
 
   vcat("\nChecking controlled vocab between ISRaD template and info file...",
-      file = outfile, append = TRUE
+    file = outfile, append = TRUE
   )
 
   ## Strip out the extra header
@@ -67,9 +67,9 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
       left_join(template_vocab, by = "Column_Name") %>%
       mutate(
         InfoInTemplate = list(unlist(Info_Vocab) %in%
-                                unlist(Template_Vocab)),
+          unlist(Template_Vocab)),
         TemplateInInfo = list(unlist(Template_Vocab) %in%
-                                unlist(Info_Vocab))
+          unlist(Info_Vocab))
       )
 
     iit <- unlist(template_info_vocab$InfoInTemplate)
@@ -78,14 +78,14 @@ checkTemplateFiles <- function(outfile = "", verbose = TRUE) {
       warning("Mismatch between template info vocab column and template controlled vocab")
       if (!any(iit)) {
         vcat("\n\tWARNING controlled vocab column from template info not found in controlled vocab tab of template:",
-            unlist(template_info_vocab$Info_Vocab)[!iit],
-            file = outfile, append = TRUE
+          unlist(template_info_vocab$Info_Vocab)[!iit],
+          file = outfile, append = TRUE
         )
       }
       if (!any(tii)) {
         vcat("\n\tWARNING controlled vocab tab of template not found in controlled vocab column from template info:",
-            unlist(template_info_vocab$Template_Vocab)[!tii],
-            file = outfile, append = TRUE
+          unlist(template_info_vocab$Template_Vocab)[!tii],
+          file = outfile, append = TRUE
         )
       }
     }

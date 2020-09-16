@@ -71,9 +71,9 @@ compile <- function(dataset_directory,
   # Start writing in the output file
   if (verbose) {
     cat("ISRaD Compilation Log \n",
-        "\n", as.character(Sys.time()),
-        "\n", rep("-", 15), "\n",
-        file = outfile
+      "\n", as.character(Sys.time()),
+      "\n", rep("-", 15), "\n",
+      file = outfile
     )
   }
 
@@ -87,12 +87,12 @@ compile <- function(dataset_directory,
 
   if (verbose) {
     cat("\n\nCompiling data files in", dataset_directory, "\n", rep("-", 30), "\n",
-        file = outfile, append = TRUE
+      file = outfile, append = TRUE
     )
   }
 
   data_files <- list.files(dataset_directory, pattern = "\\.xlsx", full.names = TRUE)
-  if(!length(data_files)) {
+  if (!length(data_files)) {
     warning("No data files found!")
     return(NULL)
   }
@@ -108,8 +108,8 @@ compile <- function(dataset_directory,
     # load existing database
     ISRaD_old <- lapply(
       excel_sheets(file.path(dataset_directory, DB_DIR, LIST_FILE))[1:8],
-      function(s) data.frame(read_excel(file.path(dataset_directory, DB_DIR, LIST_FILE), sheet = s)
-    ))
+      function(s) data.frame(read_excel(file.path(dataset_directory, DB_DIR, LIST_FILE), sheet = s))
+    )
     names(ISRaD_old) <- excel_sheets(file.path(dataset_directory, DB_DIR, LIST_FILE))[1:8]
     # convert to character
     ISRaD_old <- lapply(ISRaD_old, function(x) lapply(x, as.character))
@@ -220,7 +220,7 @@ compile <- function(dataset_directory,
   ISRaD_database <- lapply(ISRaD_database, as.data.frame)
 
   # Return database file, logs, and reports ---------------------------------
-  if(verbose) {
+  if (verbose) {
     cat("\n\n-------------\n", file = outfile, append = TRUE)
     cat("\nSummary statistics...\n", file = outfile, append = TRUE)
 
@@ -250,14 +250,17 @@ compile <- function(dataset_directory,
     incubation = rbind(template$incubation, ISRaD_database$incubation),
     `controlled vocabulary` <- controlled_vocab
   )
-  ISRaD_database_excel <- lapply(ISRaD_database_excel,
-                                 function(x) {
-                                   if(is.data.frame(x)) x %>% mutate_all(as.character)}
+  ISRaD_database_excel <- lapply(
+    ISRaD_database_excel,
+    function(x) {
+      if (is.data.frame(x)) x %>% mutate_all(as.character)
+    }
   )
 
   if (write_out) {
     write_xlsx(ISRaD_database_excel,
-      path = file.path(dataset_directory, DB_DIR, LIST_FILE))
+      path = file.path(dataset_directory, DB_DIR, LIST_FILE)
+    )
   }
 
   if (verbose) cat("\n", rep("-", 20), file = outfile, append = TRUE)

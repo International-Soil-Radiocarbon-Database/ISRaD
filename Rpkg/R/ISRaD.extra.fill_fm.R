@@ -15,7 +15,6 @@
 #' # Fill fraction modern from delta 14C
 #' database.x <- ISRaD.extra.fill_fm(database.x)
 ISRaD.extra.fill_fm <- function(database) {
-
   stopifnot(is_israd_database(database))
 
   # function to calculate delta 14C from fraction modern and obs year if not reported

@@ -21,7 +21,7 @@
 ISRaD.report <- function(database, report) {
   stopifnot(is_israd_database(database))
   stopifnot(is.character(report))
-  
+
   if (report == "entry.stats") {
     out <- ISRaD.rep.entry.stats(database)
   } else if (report == "count.all") {

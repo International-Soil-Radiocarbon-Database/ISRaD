@@ -13,7 +13,7 @@
 #' # Fraction table now has lyr_obs_date_y values in frc_obs_date_y field
 ISRaD.extra.fill_dates <- function(database) {
   stopifnot(is_israd_database(database))
-  
+
   if (dim(database$incubation)[1] > 0) {
     inc_date_fill <- function(x) {
       for (r in seq_len(nrow(x$incubation))) {

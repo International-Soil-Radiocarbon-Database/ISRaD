@@ -21,14 +21,6 @@ There were 2 NOTES:
   ISRaD (5:169, 5:177, 5:376, 5:419, 5:486, 5:533)
   * These are not misspelled
 
-  Found the following (possibly) invalid URLs:
-  URL: https://soilradiocarbon.org/
-    From: DESCRIPTION
-    Status: Error
-    Message: libcurl error code 35:
-      	OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to soilradiocarbon.org:443
-  * The annual url fee needs to be paid for 2020 and will be within the next week
-
   checking examples ...
   Examples with CPU (user + system) or elapsed time > 5s
                      user system elapsed
@@ -41,12 +33,8 @@ There were 2 NOTES:
 ## r-hub builder
 Building ISRaD with r-hub (using check_rhub() fails on Ubuntu because gdal is not available on the r-hub build system. The rgdal package is a dependency of the raster package, which is a dependency of ISRaD. rgdal documentations explains in detail how to install gdal on all platforms, so this seems more an rgdal issue than an ISRaD issue.
 
-* The following requested changes have been made since prior submission:
-  * Function examples are now executable; donttest calls removed if runtime <5s
-  * Toy datasets now included for running examples
-  * Calls to write to local machine removed or changed to tempdir()
-  * Description updated to describe package more clearly and include url
-  * pdf manual updated
+* The main motivation for this update was to remove the dependency on openxlsx, which was slated to be archived.
+* There are a few new functions, a basic test framework, and improvements to code readability and efficiency (e.g. internal utility functions, code styled, etc.)
 
 ## Additional notes:
   * R CMD check run with "run_dont_test" set to TRUE and passed with no issues

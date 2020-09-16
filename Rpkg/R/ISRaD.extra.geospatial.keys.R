@@ -27,7 +27,7 @@
 #'
 ISRaD.extra.geospatial.keys <- function(database, geodata_keys) {
   stopifnot(is_israd_database(database))
-  
+
   keys <- list.files(geodata_keys)
   varNames <- lapply(keys, function(x) {
     x <- substr(x, 1, regexpr("\\.[^\\.]*$", x)[[1]] - 1)

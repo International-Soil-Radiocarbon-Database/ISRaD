@@ -9,7 +9,7 @@
 #' @importFrom writexl write_xlsx
 #' @importFrom dplyr bind_rows
 #' @importFrom utils type.convert
-#' @details This function can be used to save a single entry (or a compiled database in the standard template format) to a .xlsx file. Replaces the function "ISRaD.save.xlsx" as that function depended on the package openxlsx, which was unstable at the time. This a simpler function and does not maintain the formating of the template file. The code for the original function is available in the ISRaD github repository in the \href{https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/devScripts}{devScripts} directory.
+#' @details This function can be used to save a single entry (or a compiled database in the standard template format) to a .xlsx file. Replaces the function "ISRaD.save.xlsx" as that function depended on the package openxlsx, which was unstable at the time. This a simpler function and does not maintain the formatting of the template file. The code for the original function is available in the ISRaD github repository in the \href{https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/devScripts}{devScripts} directory.
 #' @examples
 #' \donttest{
 #' # Load example dataset Gaudinski_2001
@@ -19,6 +19,7 @@
 #'   template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
 #'   outfile = file.path(tempdir(), "Gaudinski_2001.xlsx")
 #' )
+#' }
 ISRaD.save.entry <- function(entry,
                              template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD"),
                              outfile) {
@@ -34,11 +35,19 @@ ISRaD.save.entry <- function(entry,
   template[["controlled vocabulary"]] <- NULL
 
   # fill template with data from entry, converting to chr to enable merge
-  template_filled <- mapply(bind_rows,
-                            lapply(template, function(x) as.data.frame(sapply(x, as.character),
-                                                                            stringsAsFactors = FALSE)),
-                            lapply(entry, function(x) as.data.frame(sapply(x, as.character, simplify = FALSE),
-                                                                         stringsAsFactors = FALSE)))
+  template_filled <- mapply(
+    bind_rows,
+    lapply(template, function(x) {
+      as.data.frame(sapply(x, as.character),
+        stringsAsFactors = FALSE
+      )
+    }),
+    lapply(entry, function(x) {
+      as.data.frame(sapply(x, as.character, simplify = FALSE),
+        stringsAsFactors = FALSE
+      )
+    })
+  )
 
   # append controlled vocabulary table and template version
   template_filled[["controlled vocabulary"]] <- controlled_vocab
@@ -46,5 +55,6 @@ ISRaD.save.entry <- function(entry,
 
   # write to .xlsx
   write_xlsx(template_filled,
-             path = outfile)
+    path = outfile
+  )
 }

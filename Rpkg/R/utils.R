@@ -32,8 +32,10 @@ lapply_df <- function(...) {
 #' @keywords internal
 is_israd_database <- function(x) {
   # Database is a list and must have all the following data frames
-  tables <- c("metadata", "site", "profile", "flux", "layer", "interstitial",
-              "fraction", "incubation")
+  tables <- c(
+    "metadata", "site", "profile", "flux", "layer", "interstitial",
+    "fraction", "incubation"
+  )
   is.list(x) &&
     identical(sort(tables), sort(names(x))) &&
     all(sapply(x, class) == "data.frame")
@@ -66,9 +68,13 @@ check_template_info_columns <- function(template, template_info, outfile, verbos
       mismatch <- TRUE
       if (verbose) {
         cat("\n\tColumn names unique to info file:",
-            setdiff(ti_colnames, tab_cols), file = outfile, append = TRUE)
+          setdiff(ti_colnames, tab_cols),
+          file = outfile, append = TRUE
+        )
         cat("\n\tColumn names unique to template file:",
-            setdiff(tab_cols, ti_colnames), file = outfile, append = TRUE)
+          setdiff(tab_cols, ti_colnames),
+          file = outfile, append = TRUE
+        )
       }
     }
   }
@@ -98,7 +104,7 @@ check_numeric_minmax <- function(x, xname) {
 #' @keywords internal
 read_template_file <- function(template_file) {
   # Get the tables stored in the template sheets
-  if(missing(template_file)) {
+  if (missing(template_file)) {
     template_file <- system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
   }
   lapply(
@@ -116,7 +122,7 @@ read_template_file <- function(template_file) {
 #' @importFrom readxl excel_sheets read_excel
 #' @keywords internal
 read_template_info_file <- function(template_info_file) {
-  if(missing(template_info_file))  {
+  if (missing(template_info_file)) {
     template_info_file <- system.file("extdata", "ISRaD_Template_Info.xlsx", package = "ISRaD")
   }
   lapply(

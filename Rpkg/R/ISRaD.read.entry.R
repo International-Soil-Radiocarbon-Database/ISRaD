@@ -21,40 +21,41 @@
 #' }
 ISRaD.read.entry <- function(entry,
                              template_file = system.file("extdata",
-                                                         "ISRaD_Master_Template.xlsx",
-                                                         package = "ISRaD")) {
+                               "ISRaD_Master_Template.xlsx",
+                               package = "ISRaD"
+                             )) {
 
-# Get the tables stored in the template sheets
-template <- read_template_file()
-template <- lapply(template[1:8], function(x) x[-c(1, 2, 3), ])
-template <- lapply(template, function(x) x %>% mutate_all(as.character))
+  # Get the tables stored in the template sheets
+  template <- read_template_file()
+  template <- lapply(template[1:8], function(x) x[-c(1, 2, 3), ])
+  template <- lapply(template, function(x) x %>% mutate_all(as.character))
 
-# read in data
-entryR <- lapply(excel_sheets(entry)[1:8], function(s) data.frame(read_excel(entry, s)))
-names(entryR) <- excel_sheets(entry)[1:8]
+  # read in data
+  entryR <- lapply(excel_sheets(entry)[1:8], function(s) data.frame(read_excel(entry, s)))
+  names(entryR) <- excel_sheets(entry)[1:8]
 
-# trim description/empty rows/empty cols
-entryR <- lapply(entryR, function(x) x <- x[-1:-2, ])
-for (i in seq_along(entryR)) {
-  tab <- entryR[[i]]
-  for (j in seq_len(ncol(tab))) {
-    tab[, j][grep("^[ ]+$", tab[, j])] <- NA
+  # trim description/empty rows/empty cols
+  entryR <- lapply(entryR, function(x) x <- x[-1:-2, ])
+  for (i in seq_along(entryR)) {
+    tab <- entryR[[i]]
+    for (j in seq_len(ncol(tab))) {
+      tab[, j][grep("^[ ]+$", tab[, j])] <- NA
+    }
+    entryR[[i]] <- tab
+    entryR[[i]] <- entryR[[i]][rowSums(is.na(entryR[[i]])) != ncol(entryR[[i]]), ]
   }
-  entryR[[i]] <- tab
-  entryR[[i]] <- entryR[[i]][rowSums(is.na(entryR[[i]])) != ncol(entryR[[i]]), ]
-}
 
-# remove excel formating by converting to character
-entryR <- lapply(entryR, function(x) lapply(x, as.character))
+  # remove excel formating by converting to character
+  entryR <- lapply(entryR, function(x) lapply(x, as.character))
 
-# convert back to type values and reduce list back to dataframes
-entryR <- lapply(entryR, function(x) lapply(x, type.convert))
-entryR <- lapply(entryR, as.data.frame)
+  # convert back to type values and reduce list back to dataframes
+  entryR <- lapply(entryR, function(x) lapply(x, type.convert))
+  entryR <- lapply(entryR, as.data.frame)
 
-# put in list to name appropriately
-new_list <- list(entryR)
-names(new_list) <- sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(entry))
+  # put in list to name appropriately
+  new_list <- list(entryR)
+  names(new_list) <- sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(entry))
 
-# extract list element to .GlobalEnv to preserve name
-invisible(list2env(new_list, envir = .GlobalEnv))
+  # extract list element to .GlobalEnv to preserve name
+  invisible(list2env(new_list, envir = .GlobalEnv))
 }

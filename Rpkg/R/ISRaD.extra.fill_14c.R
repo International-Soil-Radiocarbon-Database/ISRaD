@@ -19,9 +19,8 @@
 #' # Column flx_14c in the "flux" table is now filled
 #' is.na(database$flux$flx_14c)
 ISRaD.extra.fill_14c <- function(database) {
-
   stopifnot(is_israd_database(database))
-  
+
   # function to calculate delta 14C from fraction modern and obs year if not reported
   calc_14c <- function(df, d14c, obs_date_y, fraction_modern) {
     lambda <- 0.00012097 # = 1/(true mean life of 14C)

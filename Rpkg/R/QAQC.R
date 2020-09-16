@@ -30,7 +30,6 @@
 #'
 QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = TRUE,
                  dataReport = FALSE, checkdoi = TRUE, verbose = TRUE) {
-
   stopifnot(is.character(file))
   stopifnot(is.logical(writeQCreport))
   stopifnot(is.character(outfile_QAQC))
@@ -90,7 +89,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   ##### check for description rows #####
 
   if (!(all(lapply(data, function(x) x[1, 1]) == "Entry/Dataset Name") &
-        all(lapply(data, function(x) x[2, 1]) == "Author_year"))) {
+    all(lapply(data, function(x) x[2, 1]) == "Author_year"))) {
     vcat("\nWARNING: Description rows in data file not detected. The first two rows of your data file should be the description rows as found in the template file.")
     error <- error + 1
   }
@@ -230,8 +229,9 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   mismatch.rows <- anti_join(lapply_df(data$profile, as.character),
-                             lapply_df(data$site, as.character),
-                             by = c("entry_name", "site_name"))
+    lapply_df(data$site, as.character),
+    by = c("entry_name", "site_name")
+  )
   if (dim(mismatch.rows)[1] > 0) {
     row.ind <- match(
       data.frame(t(mismatch.rows[, c("entry_name", "site_name")])),
@@ -290,8 +290,9 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$flux, as.character),
-                               lapply_df(data$site, as.character),
-                               by = c("entry_name", "site_name"))
+      lapply_df(data$site, as.character),
+      by = c("entry_name", "site_name")
+    )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name")])),
@@ -362,8 +363,9 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$layer, as.character),
-                               lapply_df(data$profile, as.character),
-                               by = c("entry_name", "site_name", "pro_name"))
+      lapply_df(data$profile, as.character),
+      by = c("entry_name", "site_name", "pro_name")
+    )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name")])),
@@ -429,8 +431,9 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$interstitial, as.character),
-                               lapply_df(data$profile, as.character),
-                               by = c("entry_name", "site_name", "pro_name"))
+      lapply_df(data$profile, as.character),
+      by = c("entry_name", "site_name", "pro_name")
+    )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name")])),
@@ -502,8 +505,9 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$fraction, as.character),
-                               lapply_df(data$layer, as.character),
-                               by = c("entry_name", "site_name", "pro_name", "lyr_name"))
+      lapply_df(data$layer, as.character),
+      by = c("entry_name", "site_name", "pro_name", "lyr_name")
+    )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name", "lyr_name")])),
@@ -581,8 +585,9 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$incubation, as.character),
-                               lapply_df(data$layer, as.character),
-                               by = c("entry_name", "site_name", "pro_name", "lyr_name"))
+      lapply_df(data$layer, as.character),
+      by = c("entry_name", "site_name", "pro_name", "lyr_name")
+    )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
         data.frame(t(mismatch.rows[, c("entry_name", "site_name", "pro_name", "lyr_name")])),

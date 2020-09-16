@@ -11,7 +11,6 @@
 #' database <- ISRaD::Gaudinski_2001
 #' database.x <- ISRaD.extra.Cstocks(database)
 ISRaD.extra.Cstocks <- function(database) {
-
   stopifnot(is_israd_database(database))
 
   # make new filled vars

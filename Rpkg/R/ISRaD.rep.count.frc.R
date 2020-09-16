@@ -10,7 +10,7 @@
 #' ISRaD.rep.count.frc(database)
 ISRaD.rep.count.frc <- function(database) {
   stopifnot(is_israd_database(database))
-  
+
   frc_data <- as.data.frame(lapply(database$metadata, as.character), stringsAsFactors = FALSE) %>%
     right_join(as.data.frame(lapply(database$site, as.character), stringsAsFactors = FALSE), by = "entry_name") %>%
     right_join(as.data.frame(lapply(database$profile, as.character), stringsAsFactors = FALSE), by = c("entry_name", "site_name")) %>%
