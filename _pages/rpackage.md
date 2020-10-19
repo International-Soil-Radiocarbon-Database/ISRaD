@@ -18,7 +18,7 @@ The ISRaD R package provides a number of data enhancement tools (```ISRaD.extra`
 
 ```
 # set 'directory' argument to local path
-ISRaD.getdata(directory = "~", dataset" = "full, extra = "TRUE", force_download = "TRUE")
+ISRaD.getdata(directory = "~", dataset = "full", extra = "TRUE", force_download = "TRUE")
 ```
 
 For more information, please read the [user manual](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD.pdf).
@@ -32,7 +32,7 @@ library(ISRaD)
 ```
 Most up-to-date data can be retrieved:
 ```
-ISRaD.getdata(directory = "~", dataset" = "full, force_download = "TRUE")
+ISRaD.getdata(directory = "~", dataset = "full", force_download = "TRUE")
 ```
 
 Alternatively, for those users willing to risk working with beta code, you can install the development version of ISRaD from GitHub:
