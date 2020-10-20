@@ -6,7 +6,7 @@ library(ISRaD)
 ui <- fluidPage(
   
   # App title ----
-  titlePanel(title = div(img(src = "ISRaDlogoTextBelow_small2.png", 
+  titlePanel(title = div(img(src = "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/shinyapp/www/ISRaDlogoTextBelow_small2.png?raw=true", 
                              height = 104, width = 177),
                          "QA/QC",
                          style = "font-family:Avenir Roman;font-size:64px;")),
