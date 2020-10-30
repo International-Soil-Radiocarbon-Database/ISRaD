@@ -13,6 +13,7 @@
 #' @import dplyr
 #' @importFrom RCurl url.exists
 #' @importFrom readxl read_excel excel_sheets
+#' @importFrom httr HEAD
 #' @export
 #' @examples
 #' \donttest{
@@ -122,12 +123,17 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   if (checkdoi) {
     vcat("\n\nChecking dataset doi...")
     dois <- data$metadata$doi
-    if (is.na(dois)) dois <- ""
-    if (length(dois) < 2) {
-      for (d in seq_along(dois)) {
-        if ((!(RCurl::url.exists(paste0("https://www.doi.org/", dois[d])) | dois[d] == "israd"))) {
-          vcat("\nWARNING: doi not valid")
-          error <- error + 1
+    for(d in seq_along(dois)) {
+      if (is.na(dois[d])) {
+        vcat("\nWARNING: doi not valid")
+        error <- error + 1
+      } else {
+        if ((!(unlist(httr::HEAD(paste0("https://www.doi.org/",
+                                        dois[d]))[2]) == 200 | 403 | dois[d] == "israd"))) {
+          if(!url.exists(paste0('https://www.doi.org/', dois[d]))){
+            vcat("\nWARNING: doi not valid")
+            error <- error + 1
+          }
         }
       }
     }
@@ -363,8 +369,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$layer, as.character),
-      lapply_df(data$profile, as.character),
-      by = c("entry_name", "site_name", "pro_name")
+                               lapply_df(data$profile, as.character),
+                               by = c("entry_name", "site_name", "pro_name")
     )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
@@ -431,8 +437,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$interstitial, as.character),
-      lapply_df(data$profile, as.character),
-      by = c("entry_name", "site_name", "pro_name")
+                               lapply_df(data$profile, as.character),
+                               by = c("entry_name", "site_name", "pro_name")
     )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
@@ -505,8 +511,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$fraction, as.character),
-      lapply_df(data$layer, as.character),
-      by = c("entry_name", "site_name", "pro_name", "lyr_name")
+                               lapply_df(data$layer, as.character),
+                               by = c("entry_name", "site_name", "pro_name", "lyr_name")
     )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
@@ -585,8 +591,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$incubation, as.character),
-      lapply_df(data$layer, as.character),
-      by = c("entry_name", "site_name", "pro_name", "lyr_name")
+                               lapply_df(data$layer, as.character),
+                               by = c("entry_name", "site_name", "pro_name", "lyr_name")
     )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
@@ -673,12 +679,6 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   ##### Summary #####
 
-  vcat("\n", rep("-", 20))
-  if (error == 0) {
-    vcat("\nPASSED. Nice work!")
-  } else {
-    vcat("\n", error, "WARNINGS need to be fixed\n")
-  }
   vcat("\n\n", rep("-", 20))
 
   # summary statistics ------------------------------------------------------
@@ -703,6 +703,14 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     vcat("\n", rep("-", 20))
     vcat("\n\n")
   }
+
+  vcat("\n", rep("-", 20))
+  if (error == 0) {
+    vcat("\nPASSED. Nice work!")
+  } else {
+    vcat("\n", error, "WARNINGS need to be fixed\n")
+  }
+
   vcat("\n\nPlease email info.israd@gmail.com with concerns or suggestions")
   vcat("\nIf you think there is a error in the functioning of this code please post to
                   \nhttps://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues\n")
