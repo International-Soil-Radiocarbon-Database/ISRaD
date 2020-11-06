@@ -23,6 +23,7 @@
 #' # Fill delta delta
 #' database.x <- ISRaD.extra.delta_delta(database.x)
 ISRaD.extra.delta_delta <- function(database, future = TRUE) {
+
   stopifnot(is_israd_database(database))
 
   graven <- ISRaD::graven
@@ -38,6 +39,11 @@ ISRaD.extra.delta_delta <- function(database, future = TRUE) {
     d14C.t = graven$Tropicsc14
   )
 
+  # check for NA values in profile coordinates
+  if (any(is.na(database$profile$pro_lat), is.na(database$profile$pro_long))) {
+    database <- ISRaD.extra.fill_coords(database)
+  }
+
   # add atm zone
   database$profile$pro_graven_zone <- NA
   database$profile$pro_graven_zone[database$profile$pro_lat > 30] <- "north"
@@ -45,30 +51,35 @@ ISRaD.extra.delta_delta <- function(database, future = TRUE) {
   database$profile$pro_graven_zone[database$profile$pro_lat < 30 & database$profile$pro_lat > -30] <- "tropic"
 
   calc_atm14c <- function(df, obs_date_y) {
-    df.pro <- cbind(df,
-      pro_graven_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_graven_zone"],
-      atm14c = NA
-    )
-    # add in lyr_obs_date_y for calculating del del in inc and frc tables
-    if (obs_date_y == "lyr_obs_date_y" & is.null(df.pro$lyr_obs_date_y)) {
-      df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
-    }
 
-    # split by zone
-    north.obs <- which(df.pro$pro_graven_zone == "north")
-    south.obs <- which(df.pro$pro_graven_zone == "south")
-    tropic.obs <- which(df.pro$pro_graven_zone == "tropic")
+    # skip empty tables
+    if (nrow(df) != 0) {
 
-    if (length(north.obs) > 0) {
-      df.pro$atm14C[north.obs] <- atm14C.annual[match(df.pro[north.obs, obs_date_y], atm14C.annual$year), "d14C.n"]
+      df.pro <- cbind(df,
+        pro_graven_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_graven_zone"],
+        atm14c = NA
+      )
+      # add in lyr_obs_date_y for calculating del del in inc and frc tables
+      if (obs_date_y == "lyr_obs_date_y" & is.null(df.pro$lyr_obs_date_y)) {
+        df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
+      }
+
+      # split by zone
+      north.obs <- which(df.pro$pro_graven_zone == "north")
+      south.obs <- which(df.pro$pro_graven_zone == "south")
+      tropic.obs <- which(df.pro$pro_graven_zone == "tropic")
+
+      if (length(north.obs) > 0) {
+        df.pro$atm14C[north.obs] <- atm14C.annual[match(df.pro[north.obs, obs_date_y], atm14C.annual$year), "d14C.n"]
+      }
+      if (length(south.obs) > 0) {
+        df.pro$atm14C[south.obs] <- atm14C.annual[match(df.pro[south.obs, obs_date_y], atm14C.annual$year), "d14C.s"]
+      }
+      if (length(tropic.obs) > 0) {
+        df.pro$atm14C[tropic.obs] <- atm14C.annual[match(df.pro[tropic.obs, obs_date_y], atm14C.annual$year), "d14C.t"]
+      }
+      return(df.pro$atm14C)
     }
-    if (length(south.obs) > 0) {
-      df.pro$atm14C[south.obs] <- atm14C.annual[match(df.pro[south.obs, obs_date_y], atm14C.annual$year), "d14C.s"]
-    }
-    if (length(tropic.obs) > 0) {
-      df.pro$atm14C[tropic.obs] <- atm14C.annual[match(df.pro[tropic.obs, obs_date_y], atm14C.annual$year), "d14C.t"]
-    }
-    return(df.pro$atm14C)
   }
 
   ## calculate del del 14C
