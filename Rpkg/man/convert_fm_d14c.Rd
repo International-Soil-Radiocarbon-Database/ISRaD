@@ -4,7 +4,7 @@
 \alias{convert_fm_d14c}
 \title{convert_fm_d14c}
 \usage{
-convert_fm_d14c(fm = NA, d14c = NA, obs_date_y)
+convert_fm_d14c(fm = NA, d14c = NA, obs_date_y, verbose = TRUE)
 }
 \arguments{
 \item{fm}{fraction modern (default NA)}
@@ -12,12 +12,14 @@ convert_fm_d14c(fm = NA, d14c = NA, obs_date_y)
 \item{d14c}{delta 14C in per mille (default NA)}
 
 \item{obs_date_y}{year of observation/sample collection}
+
+\item{verbose}{prints message stating which conversion was performed}
 }
 \description{
 convert fraction modern to d14c and d14c to fraction modern
 }
 \details{
-convenience function for radiocarbon unit conversions
+Convenience function for radiocarbon unit conversions. Recommended to set verbose = FALSE for batch conversions.
 }
 \examples{
 convert_fm_d14c(fm = 0.97057, obs_date_y = 2005)

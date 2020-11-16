@@ -4,9 +4,14 @@
 \alias{compile}
 \title{Compile ISRaD data product}
 \usage{
-compile(dataset_directory, write_report = FALSE, write_out = FALSE,
-  return_type = c("none", "list")[2], checkdoi = FALSE,
-  verbose = TRUE)
+compile(
+  dataset_directory,
+  write_report = FALSE,
+  write_out = FALSE,
+  return_type = c("none", "list")[2],
+  checkdoi = FALSE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{dataset_directory}{Directory where completed QAQCed template files are stored.}

@@ -4,7 +4,9 @@
 \name{graven}
 \alias{graven}
 \title{Graven dataset for delta delta calculation}
-\format{dataframe}
+\format{
+dataframe
+}
 \usage{
 graven
 }

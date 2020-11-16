@@ -4,9 +4,12 @@
 \alias{ISRaD.extra.geospatial}
 \title{ISRaD.extra.geospatial}
 \usage{
-ISRaD.extra.geospatial(database, geodata_directory,
+ISRaD.extra.geospatial(
+  database,
+  geodata_directory,
   crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
-  fillWorldClim = TRUE)
+  fillWorldClim = TRUE
+)
 }
 \arguments{
 \item{database}{ISRaD dataset object}

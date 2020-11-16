@@ -4,8 +4,7 @@
 \alias{check_template_info_columns}
 \title{Check that column names in the info and template files match.}
 \usage{
-check_template_info_columns(template, template_info, outfile,
-  verbose = TRUE)
+check_template_info_columns(template, template_info, outfile, verbose = TRUE)
 }
 \arguments{
 \item{template}{Template structure read in from \code{ISRaD_Master_Template.xlsx}}

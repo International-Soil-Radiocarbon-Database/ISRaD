@@ -4,8 +4,11 @@
 \alias{ISRaD.read.entry}
 \title{ISRaD.read.entry}
 \usage{
-ISRaD.read.entry(entry, template_file = system.file("extdata",
-  "ISRaD_Master_Template.xlsx", package = "ISRaD"))
+ISRaD.read.entry(
+  entry,
+  template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package =
+    "ISRaD")
+)
 }
 \arguments{
 \item{entry}{ISRaD data object.}

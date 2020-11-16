@@ -4,8 +4,12 @@
 \alias{ISRaD.save.entry}
 \title{ISRaD.save.entry}
 \usage{
-ISRaD.save.entry(entry, template_file = system.file("extdata",
-  "ISRaD_Master_Template.xlsx", package = "ISRaD"), outfile)
+ISRaD.save.entry(
+  entry,
+  template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package =
+    "ISRaD"),
+  outfile
+)
 }
 \arguments{
 \item{entry}{ISRaD data object}

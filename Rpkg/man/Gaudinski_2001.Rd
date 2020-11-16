@@ -4,7 +4,9 @@
 \name{Gaudinski_2001}
 \alias{Gaudinski_2001}
 \title{Gaudinski Harvard Forest example dataset}
-\format{list}
+\format{
+list
+}
 \usage{
 Gaudinski_2001
 }

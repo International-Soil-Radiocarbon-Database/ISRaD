@@ -4,9 +4,15 @@
 \alias{QAQC}
 \title{QAQC}
 \usage{
-QAQC(file, writeQCreport = FALSE, outfile_QAQC = "",
-  summaryStats = TRUE, dataReport = FALSE, checkdoi = TRUE,
-  verbose = TRUE)
+QAQC(
+  file,
+  writeQCreport = FALSE,
+  outfile_QAQC = "",
+  summaryStats = TRUE,
+  dataReport = FALSE,
+  checkdoi = TRUE,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{file}{File path for template file to be checked}
