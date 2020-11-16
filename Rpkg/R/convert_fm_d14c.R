@@ -4,8 +4,9 @@
 #' @param fm fraction modern (default NA)
 #' @param d14c delta 14C in per mille (default NA)
 #' @param obs_date_y year of observation/sample collection
+#' @param verbose prints message stating which conversion was performed
 #' @author J. Beem-Miller
-#' @details convenience function for radiocarbon unit conversions
+#' @details Convenience function for radiocarbon unit conversions. Recommended to set verbose = FALSE for batch conversions.
 #' @export
 #' @examples
 #' convert_fm_d14c(fm = 0.97057, obs_date_y = 2005)
@@ -16,11 +17,11 @@ convert_fm_d14c <- function(fm = NA, d14c = NA, obs_date_y, verbose = TRUE) {
     if(verbose) {
       message("calculating ", "\U0394", "14C from fraction modern")
     }
-    (fm * exp(lambda * (1950 - obs_date_y)) - 1) * 1000
+    (fm * exp(lambda * (-obs_date_y + 1950)) - 1) * 1000
   } else {
     if(verbose) {
       message("calculating fraction modern from ", paste0("\U0394", "14C"))
     }
-    ((d14c / 1000) + 1) / exp(lambda * (1950 - obs_date_y))
+    ((d14c / 1000) + 1) / exp(lambda * (-obs_date_y + 1950))
   }
 }
