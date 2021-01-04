@@ -72,8 +72,6 @@ Checking controlled vocab...
  interstitial tab...
  fraction tab...
  incubation tab...
- - - - - - - - - - - - - - - - - - - - -
-PASSED. Nice work!
 
  - - - - - - - - - - - - - - - - - - - -
 
@@ -134,7 +132,7 @@ Summary statistics...
     lyr_c_tot : 21
     lyr_rc_lab : 24
     lyr_rc_year : 24
-    lyr_fraction_modern : 22
+    lyr_fraction_modern : 21
     lyr_14c_fill_extra : 23
     lyr_fill_notes_extra : 24
  interstitial tab...0 observations
@@ -160,6 +158,8 @@ Summary statistics...
  - - - - - - - - - - - - - - - - - - - -
 
 
+ - - - - - - - - - - - - - - - - - - - -
+PASSED. Nice work!
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to

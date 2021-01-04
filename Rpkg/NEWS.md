@@ -1,3 +1,9 @@
+# Updated release for CRAN, early January 2021
+ISRaD 1.6.7
+
+## Notes
+* "convert_fm_d14c" function had an error in the unicode message which was fixed
+
 # New package version for CRAN, mid September 2020
 ISRaD 1.5.6
 
