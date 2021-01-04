@@ -56,42 +56,38 @@
 #'
 ISRaD.extra.geospatial <- function(database,
                                    geodata_directory,
-                                   crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
-                                   fillWorldClim = TRUE) {
+                                   crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0") {
   stopifnot(is_israd_database(database))
 
-  filez <- list.files(geodata_directory)
-  list.df <- lapply(filez, function(x) {
+  list.df <- lapply(list.files(geodata_directory), function(x) {
     x <- unlist(strsplit(x, "_"))
     data.frame(t(x))
   })
   df <- do.call(rbind, list.df)
-  df.sp <- unsplit(lapply(split(df, df[1]), function(x) x[order(x[2]), ]), df[1])
-  df.sp <- lapply_df(df.sp, as.character)
-  list.list <- lapply(seq_len(nrow(df.sp)), function(x) {
+  df.sp <- lapply_df(unsplit(lapply(split(df, df[1]), 
+                    function(x) x[order(x[2]), ]), df[1]), as.character)
+  gs.files.list <- unlist(lapply(seq_len(nrow(df.sp)), function(x) {
     x <- paste(unlist(as.character(df.sp[x, ])), collapse = "_")
     file.path(geodata_directory, x)
-  })
-  filez2 <- unlist(list.list)
+  }))
 
-  for (x in filez2) {
+  for (x in gs.files.list) {
     shortx <- substr(x, start = nchar(geodata_directory) + 2, stop = nchar(x))
     varName <- substr(shortx, 1, regexpr("\\.[^\\.]*$", shortx)[[1]] - 1)
-    rmX <- paste(unlist(strsplit(varName, "_x")), collapse = "")
-    columnName <- paste0("pro_", rmX)
+    columnName <- paste0("pro_", paste(unlist(strsplit(varName, "_x")), collapse = ""))
     tifRaster <- raster(x)
     raster::crs(tifRaster) <- crs
     database$profile <- cbind(database$profile, extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
 
-  if (fillWorldClim) {
-    message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
-    bio <- getData("worldclim", var = "bio", res = 2.5, path = tempdir())
-    bio_extracted <- extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
-    colnames(bio_extracted) <- paste("pro", colnames(bio_extracted), sep = "_")
-    database$profile <- cbind(database$profile, bio_extracted)
-  }
+  # if (fillWorldClim) {
+  #   message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
+  #   bio <- getData("worldclim", var = "bio", res = 2.5, path = tempdir())
+  #   bio_extracted <- extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
+  #   colnames(bio_extracted) <- paste("pro", colnames(bio_extracted), sep = "_")
+  #   database$profile <- cbind(database$profile, bio_extracted)
+  # }
 
   return(database)
 }
