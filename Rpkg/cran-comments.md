@@ -3,8 +3,6 @@
 * Windows Server 2008 R2 SP1, R-devel, 32/64 bit
 * Ubuntu Linux 16.04.6 LTS, R-release, GCC (Travis CI)
 
-# Note that rhub builder did not seem to be running the checks on Ubuntu or Fedora
-
 ## Travis CI log
 * Passes build
 <https://travis-ci.com/International-Soil-Radiocarbon-Database/ISRaD>
@@ -17,7 +15,7 @@ There were no ERRORs, WARNINGs, or NOTEs.
                             user system elapsed
    ISRaD.getdata           1.849  0.267   7.416
 
-  * The examples that exceed 5s elapsed time are wrapped with \donttest
+  * The examples that consistently exceed 5s elapsed time are wrapped with \donttest
 
 ## Additional notes:
   * R CMD check run with "run_dont_test" set to TRUE and passed with no issues

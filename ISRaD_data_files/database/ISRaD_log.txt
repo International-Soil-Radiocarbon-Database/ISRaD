@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2021-01-04 16:34:01 
+ 2021-01-04 23:23:52 
  - - - - - - - - - - - - - - - 
 
 
@@ -126,7 +126,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  59 checking Clark_2002.xlsx ...New data - passed QAQC
 
- 60 checking Cole_2015.xlsx ...New data - passed QAQC
+ 60 compiling Cole_2015.xlsx ... passed QAQC
 
  61 compiling Conen_2008.xlsx ... passed QAQC
 
@@ -164,7 +164,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  78 checking Doetterl_2015.xlsx ...New data - passed QAQC
 
- 79 checking Dommain_2015.xlsx ...New data - passed QAQC
+ 79 compiling Dommain_2015.xlsx ... passed QAQC
 
  80 compiling Dorr_1980.xlsx ... passed QAQC
 
@@ -204,7 +204,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  98 checking Fontaine_2007.xlsx ...New data - passed QAQC
 
- 99 checking Gandois_2014.xlsx ...New data - passed QAQC
+ 99 compiling Gandois_2014.xlsx ... passed QAQC
 
  100 compiling Gandois_2016.xlsx ... passed QAQC
 
@@ -326,7 +326,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  159 compiling Kelly_2018.xlsx ... passed QAQC
 
- 160 checking Kelly_2020.xlsx ...New data - passed QAQC
+ 160 compiling Kelly_2020.xlsx ... passed QAQC
 
  161 compiling Kettles_2000.xlsx ... passed QAQC
 
@@ -398,7 +398,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  195 checking Lawrence_2015.xlsx ...New data - passed QAQC
 
- 196 checking Leavitt_2007.xlsx ...New data - passed QAQC
+ 196 compiling Leavitt_2007.xlsx ... passed QAQC
 
  197 checking Ledru_2001.xlsx ...New data - passed QAQC
 
@@ -566,7 +566,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  279 checking Rumpel_2008.xlsx ...New data - passed QAQC
 
- 280 checking Ruwaimana_2020.xlsx ...New data - passed QAQC
+ 280 compiling Ruwaimana_2020.xlsx ... passed QAQC
 
  281 checking Saiz_2015.xlsx ...New data - passed QAQC
 
@@ -674,7 +674,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  333 compiling Väliranta_2003.xlsx ... passed QAQC
 
- 334 checking van Bellen_2011.xlsx ...New data - passed QAQC
+ 334 compiling van Bellen_2011.xlsx ... passed QAQC
 
  335 checking van_Dam_1997.xlsx ...New data - passed QAQC
 
