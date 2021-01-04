@@ -3,7 +3,7 @@
 #' @description Extracts data from a user-supplied raster file and adds data as a new variable at the profile level
 #' @param database ISRaD dataset object
 #' @param geodata_directory Directory where geospatial data are found
-#' @param crs Coordinate reference system used for geospatial datasets
+#' @param CRS Coordinate reference system used for geospatial datasets
 #' @details Generic function that uses geographic coordinates of profiles to extract data from one or more raster files.
 #' Raster data will be added as new variables at the profile level.\cr\cr
 #' The new variable name will be a concatenation of "pro_", and the file name (excluding the file extension).
@@ -14,7 +14,7 @@
 #' 4) Year of data observation (numeric)\cr
 #' 5) Data units (e.g. mmyr for mean annual precipitation)\cr
 #' 6) Any relevant notes\cr\cr
-#' Coordinate reference system can be specified with the "crs" argument; default is WGS84. Note that all files in geodata_directory must use the same crs.\cr\cr
+#' Coordinate reference system can be specified with the "CRS" argument; default is WGS84. Note that all files in geodata_directory must use the same CRS.\cr\cr
 #' @importFrom raster raster extract crs
 #' @export
 #' @return Updated ISRaD_extra object with new columns at the profile level
@@ -34,7 +34,7 @@
 #'
 ISRaD.extra.geospatial <- function(database,
                                    geodata_directory,
-                                   crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0") {
+                                   CRS = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0") {
   stopifnot(is_israd_database(database))
 
   list.df <- lapply(list.files(geodata_directory), function(x) {
@@ -56,7 +56,7 @@ ISRaD.extra.geospatial <- function(database,
     varName <- substr(shortx, 1, regexpr("\\.[^\\.]*$", shortx)[[1]] - 1)
     columnName <- paste0("pro_", paste(unlist(strsplit(varName, "_x")), collapse = ""))
     tifRaster <- raster(x)
-    crs(tifRaster) <- crs
+    raster::crs(tifRaster) <- CRS
     database$profile <- cbind(database$profile, extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }

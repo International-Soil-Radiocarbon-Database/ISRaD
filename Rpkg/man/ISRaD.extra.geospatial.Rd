@@ -7,8 +7,7 @@
 ISRaD.extra.geospatial(
   database,
   geodata_directory,
-  crs = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0",
-  fillWorldClim = TRUE
+  CRS = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
 )
 }
 \arguments{
@@ -16,9 +15,7 @@ ISRaD.extra.geospatial(
 
 \item{geodata_directory}{Directory where geospatial data are found}
 
-\item{crs}{Coordinate reference system used for geospatial datasets}
-
-\item{fillWorldClim}{Option to fill climate data from the Worldclim dataset (downloads data from web)}
+\item{CRS}{Coordinate reference system used for geospatial datasets}
 }
 \value{
 Updated ISRaD_extra object with new columns at the profile level
@@ -37,27 +34,7 @@ The ISRaD file name convention for geospatial files uses a 6 component string, s
 4) Year of data observation (numeric)\cr
 5) Data units (e.g. mmyr for mean annual precipitation)\cr
 6) Any relevant notes\cr\cr
-Coordinate reference system can be specified with the "crs" argument; default is WGS84. Note that all files in geodata_directory must use the same crs.\cr\cr
-Option "fillWorldClim" fills climate data from worldclim V1.4 at 2.5 resolution (http://www.worldclim.org/bioclim). Variable descriptions are as follows:\cr
-bio1 = Annual Mean Temperature,\cr
-bio2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),\cr
-bio3 = Isothermality (BIO2/BIO7) (* 100),\cr
-bio4 = Temperature Seasonality (standard deviation *100),\cr
-bio5 = Max Temperature of Warmest Month,\cr
-bio6 = Min Temperature of Coldest Month,\cr
-bio7 = Temperature Annual Range (BIO5-BIO6),\cr
-bio8 = Mean Temperature of Wettest Quarter,\cr
-bio9 = Mean Temperature of Driest Quarter,\cr
-bio10 = Mean Temperature of Warmest Quarter,\cr
-bio11 = Mean Temperature of Coldest Quarter,\cr
-bio12 = Annual Precipitation,\cr
-bio13 = Precipitation of Wettest Month,\cr
-bio14 = Precipitation of Driest Month,\cr
-bio15 = Precipitation Seasonality (Coefficient of Variation),\cr
-bio16 = Precipitation of Wettest Quarter,\cr
-bio17 = Precipitation of Driest Quarter,\cr
-bio18 = Precipitation of Warmest Quarter,\cr
-bio19 = Precipitation of Coldest Quarter\cr
+Coordinate reference system can be specified with the "CRS" argument; default is WGS84. Note that all files in geodata_directory must use the same CRS.\cr\cr
 }
 \examples{
 \donttest{
@@ -69,8 +46,7 @@ database <- ISRaD.extra.fill_coords(database)
 # Note that geospatial data in pkg is only for the Gaudinski_2001 dataset
 # Users may supply their own geospatial data as long as it can be read by the raster package
 database.x <- ISRaD.extra.geospatial(database,
-  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
-  fillWorldClim = TRUE
+  geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD")
 )
 }
 
