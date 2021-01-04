@@ -4,7 +4,6 @@
 #' @param database ISRaD dataset object
 #' @param geodata_directory Directory where geospatial data are found
 #' @param crs Coordinate reference system used for geospatial datasets
-#' @param fillWorldClim Option to fill climate data from the Worldclim dataset (downloads data from web)
 #' @details Generic function that uses geographic coordinates of profiles to extract data from one or more raster files.
 #' Raster data will be added as new variables at the profile level.\cr\cr
 #' The new variable name will be a concatenation of "pro_", and the file name (excluding the file extension).
@@ -16,28 +15,8 @@
 #' 5) Data units (e.g. mmyr for mean annual precipitation)\cr
 #' 6) Any relevant notes\cr\cr
 #' Coordinate reference system can be specified with the "crs" argument; default is WGS84. Note that all files in geodata_directory must use the same crs.\cr\cr
-#' Option "fillWorldClim" fills climate data from worldclim V1.4 at 2.5 resolution (http://www.worldclim.org/bioclim). Variable descriptions are as follows:\cr
-#' bio1 = Annual Mean Temperature,\cr
-#' bio2 = Mean Diurnal Range (Mean of monthly (max temp - min temp)),\cr
-#' bio3 = Isothermality (BIO2/BIO7) (* 100),\cr
-#' bio4 = Temperature Seasonality (standard deviation *100),\cr
-#' bio5 = Max Temperature of Warmest Month,\cr
-#' bio6 = Min Temperature of Coldest Month,\cr
-#' bio7 = Temperature Annual Range (BIO5-BIO6),\cr
-#' bio8 = Mean Temperature of Wettest Quarter,\cr
-#' bio9 = Mean Temperature of Driest Quarter,\cr
-#' bio10 = Mean Temperature of Warmest Quarter,\cr
-#' bio11 = Mean Temperature of Coldest Quarter,\cr
-#' bio12 = Annual Precipitation,\cr
-#' bio13 = Precipitation of Wettest Month,\cr
-#' bio14 = Precipitation of Driest Month,\cr
-#' bio15 = Precipitation Seasonality (Coefficient of Variation),\cr
-#' bio16 = Precipitation of Wettest Quarter,\cr
-#' bio17 = Precipitation of Driest Quarter,\cr
-#' bio18 = Precipitation of Warmest Quarter,\cr
-#' bio19 = Precipitation of Coldest Quarter\cr
+#' @importFrom raster raster extract crs
 #' @export
-#' @importFrom raster raster crs extract getData
 #' @return Updated ISRaD_extra object with new columns at the profile level
 #' @examples
 #' \donttest{
@@ -77,7 +56,7 @@ ISRaD.extra.geospatial <- function(database,
     varName <- substr(shortx, 1, regexpr("\\.[^\\.]*$", shortx)[[1]] - 1)
     columnName <- paste0("pro_", paste(unlist(strsplit(varName, "_x")), collapse = ""))
     tifRaster <- raster(x)
-    raster::crs(tifRaster) <- crs
+    crs(tifRaster) <- crs
     database$profile <- cbind(database$profile, extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }

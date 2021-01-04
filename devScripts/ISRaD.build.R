@@ -9,11 +9,12 @@
 #' @param citations T or F. Update citations.
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
 #' @import stringr dplyr
+#' @importFrom writexl write_xlsx
 #' @export
 
-ISRaD.build <- function(ISRaD_directory = getwd(), 
-                        geodata_directory = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_geodata", 
-                        geodata_keys = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_keys", 
+ISRaD.build <- function(ISRaD_directory = getwd(),
+                        geodata_directory = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_geodata",
+                        geodata_keys = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_keys",
                         citations = T) {
 
   # load fill_expert fx
@@ -129,11 +130,11 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   message("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is ", v, "\n\n")
 
   ISRaD_extra_char <- lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
-  openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_extra_list.xlsx"))
+  write_xlsx(ISRaD_extra_char, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_extra_list.xlsx"))
 
   system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", "ISRaD*")))
-  openxlsx::write.xlsx(ISRaD_extra_char, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_list_", v, ".xlsx")))
-  openxlsx::write.xlsx(ISRaD_data, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_list_", v, ".xlsx")))
+  write_xlsx(ISRaD_extra_char, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_list_", v, ".xlsx")))
+  write_xlsx(ISRaD_data, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_list_", v, ".xlsx")))
   save(ISRaD_data, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_", v, ".rda")))
   save(ISRaD_extra, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_", v, ".rda")))
 

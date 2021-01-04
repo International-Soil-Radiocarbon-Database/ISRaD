@@ -219,7 +219,7 @@ Organic carbon stock data: https://zenodo.org/record/2536040#.XhWkmBdKiu4
 Köppen-Geiger Climate Classifications
   - Citation: Beck, H., Zimmermann, N., McVicar, T. et al. Present and future Köppen-Geiger climate classification maps at 1-km resolution. Sci Data 5, 180214 (2018) doi:10.1038/sdata.2018.214
   - Download URL: https://doi.org/10.6084/m9.figshare.6396959
-  1. Projectedn Future Climate Classifications (2071-2100)
+  1. Projected Future Climate Classifications (2071-2100)
       - Original File Name: Beck_KG_V1_future_0p5.tif
       - Current File Name: KG_x_x_x_x_future.tif
       - Resolution: 0.5 degree
@@ -230,13 +230,29 @@ Köppen-Geiger Climate Classifications
 
 MODIS Land Cover Classifications
 
-Mean Annual Temperature (MAT) and Mean Annual Precipitation (MAP)
-1. MAT: https://catalogue.ceda.ac.uk/uuid/5dca9487dc614711a3a933e44a933ad3
+University of East Anglia Climatic Research Unit climatology data (CRU TS3.10)
+- Citation: 
+ 1. Harris, I.C.; Jones, P.D. (2015): CRU TS3.23: Climatic Research Unit (CRU) Time-Series (TS) Version 3.23 of High Resolution Gridded Data of Month-by-month Variation in Climate (Jan. 1901- Dec. 2014). Centre for Environmental Data Analysis, 09 November 2015. doi:10.5285/4c7fdfa6-f176-4c58-acee-683d5e9d2ed5. http://dx.doi.org/10.5285/4c7fdfa6-f176-4c58-acee-683d5e9d2ed5
+ 2. Shi, Z., Allison, S.D., He, Y. et al. The age distribution of global soil carbon inferred from radiocarbon measurements. Nat. Geosci. 13, 555–559 (2020). https://doi.org/10.1038/s41561-020-0596-z
+- Download URL: https://catalogue.ceda.ac.uk/uuid/5dca9487dc614711a3a933e44a933ad3
+- Notes: data processed by Z. Shi (cf. citation number 2, above) and used in cited manuscript
+1. MAT:
       - Original File Name:
       - Current File Name: MAT_x_x_x_x_CRUTSv323.tif
-      - Citations:
-        1. University of East Anglia Climatic Research Unit; Harris, I.C.; Jones, P.D. (2015): CRU TS3.23: Climatic Research Unit (CRU) Time-Series (TS) Version 3.23 of High Resolution Gridded Data of Month-by-month Variation in Climate (Jan. 1901- Dec. 2014). Centre for Environmental Data Analysis, 09 November 2015. doi:10.5285/4c7fdfa6-f176-4c58-acee-683d5e9d2ed5. http://dx.doi.org/10.5285/4c7fdfa6-f176-4c58-acee-683d5e9d2ed5
-        2. Shi, Z., Allison, S.D., He, Y. et al. The age distribution of global soil carbon inferred from radiocarbon measurements. Nat. Geosci. 13, 555–559 (2020). https://doi.org/10.1038/s41561-020-0596-z
+      - Units: degrees C
+2. MAP:
+      - Original File Name:
+      - Current File Name: MAP_x_x_x_x_CRUTSv323.tif
+      - Units: mm/yr
+
+TerraClim
+- Citation: Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958-2015, Scientific Data, https://doi.org/10.1038/sdata.2017.191
+- Download URL: http://thredds.northwestknowledge.net:8080/thredds/catalog/TERRACLIMATE_ALL/summaries/catalog.html?dataset=TERRACLIMATE_ALL_SCAN/summaries/TerraClimate19812010_soil.nc
+- Resolution: 2.5' (ca. 4 km)
+1. soilMoist: Total Column Soil Moisture
+      - Original File Name: TerraClimate19812010_soil.nc
+      - Current File Name: soilMoist_x_x_x_mm_TC.tif
+      - Units: mm water
 
 WorldClim Bioclimatic Variables, version 2.1
 - Citation: Fick, S.E. and R.J. Hijmans, 2017. WorldClim 2: new 1km spatial resolution climate surfaces for global land areas. International Journal of Climatology 37 (12): 4302-4315.
