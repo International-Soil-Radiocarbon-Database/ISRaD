@@ -15,12 +15,12 @@ convert_fm_d14c <- function(fm = NA, d14c = NA, obs_date_y, verbose = TRUE) {
   lambda <- 0.00012097
   if (is.na(d14c)) {
     if(verbose) {
-      message("calculating ", "\U0394", "14C from fraction modern")
+      message("calculating ", "\u0394", "14C from fraction modern")
     }
     (fm * exp(lambda * (-obs_date_y + 1950)) - 1) * 1000
   } else {
     if(verbose) {
-      message("calculating fraction modern from ", paste0("\U0394", "14C"))
+      message("calculating fraction modern from ", paste0("\u0394", "14C"))
     }
     ((d14c / 1000) + 1) / exp(lambda * (-obs_date_y + 1950))
   }
