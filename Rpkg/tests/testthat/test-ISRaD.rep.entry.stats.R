@@ -2,7 +2,7 @@
 test_that("ISRaD.rep.entry.stats", {
   # Errors with bad input
   expect_error(ISRaD.rep.entry.stats(1))
-  
+
   # Should return a data.frame with one column per table, plus entry_name and doi
   database <- ISRaD::Gaudinski_2001
   x <- ISRaD.rep.entry.stats(database)

@@ -2,6 +2,7 @@
 ISRaD 1.6.7
 
 ## Notes
+* "ISRaD.extra.geospatial" function now fills from WorldClim v2 data
 * "convert_fm_d14c" function had an error in the unicode message which was fixed
 
 # New package version for CRAN, mid September 2020

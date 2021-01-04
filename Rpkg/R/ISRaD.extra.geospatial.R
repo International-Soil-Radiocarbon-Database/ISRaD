@@ -49,8 +49,7 @@
 #' # Note that geospatial data in pkg is only for the Gaudinski_2001 dataset
 #' # Users may supply their own geospatial data as long as it can be read by the raster package
 #' database.x <- ISRaD.extra.geospatial(database,
-#'   geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD"),
-#'   fillWorldClim = TRUE
+#'   geodata_directory = system.file("extdata", "geodata_directory", package = "ISRaD")
 #' )
 #' }
 #'
@@ -64,8 +63,10 @@ ISRaD.extra.geospatial <- function(database,
     data.frame(t(x))
   })
   df <- do.call(rbind, list.df)
-  df.sp <- lapply_df(unsplit(lapply(split(df, df[1]), 
-                    function(x) x[order(x[2]), ]), df[1]), as.character)
+  df.sp <- lapply_df(unsplit(lapply(
+    split(df, df[1]),
+    function(x) x[order(x[2]), ]
+  ), df[1]), as.character)
   gs.files.list <- unlist(lapply(seq_len(nrow(df.sp)), function(x) {
     x <- paste(unlist(as.character(df.sp[x, ])), collapse = "_")
     file.path(geodata_directory, x)
@@ -80,14 +81,6 @@ ISRaD.extra.geospatial <- function(database,
     database$profile <- cbind(database$profile, extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
-
-  # if (fillWorldClim) {
-  #   message("\t filling bioclim variables (http://www.worldclim.org/bioclim for details)... \n")
-  #   bio <- getData("worldclim", var = "bio", res = 2.5, path = tempdir())
-  #   bio_extracted <- extract(bio, cbind(database$profile$pro_long, database$profile$pro_lat))
-  #   colnames(bio_extracted) <- paste("pro", colnames(bio_extracted), sep = "_")
-  #   database$profile <- cbind(database$profile, bio_extracted)
-  # }
 
   return(database)
 }

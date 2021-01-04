@@ -123,14 +123,16 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   if (checkdoi) {
     vcat("\n\nChecking dataset doi...")
     dois <- data$metadata$doi
-    for(d in seq_along(dois)) {
+    for (d in seq_along(dois)) {
       if (is.na(dois[d])) {
         vcat("\nWARNING: doi not valid")
         error <- error + 1
       } else {
-        if ((!(unlist(httr::HEAD(paste0("https://www.doi.org/",
-                                        dois[d]))[2]) == 200 | 403 | dois[d] == "israd"))) {
-          if(!url.exists(paste0('https://www.doi.org/', dois[d]))){
+        if ((!(unlist(httr::HEAD(paste0(
+          "https://www.doi.org/",
+          dois[d]
+        ))[2]) == 200 | 403 | dois[d] == "israd"))) {
+          if (!url.exists(paste0("https://www.doi.org/", dois[d]))) {
             vcat("\nWARNING: doi not valid")
             error <- error + 1
           }
@@ -369,8 +371,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$layer, as.character),
-                               lapply_df(data$profile, as.character),
-                               by = c("entry_name", "site_name", "pro_name")
+      lapply_df(data$profile, as.character),
+      by = c("entry_name", "site_name", "pro_name")
     )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
@@ -437,8 +439,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$interstitial, as.character),
-                               lapply_df(data$profile, as.character),
-                               by = c("entry_name", "site_name", "pro_name")
+      lapply_df(data$profile, as.character),
+      by = c("entry_name", "site_name", "pro_name")
     )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
@@ -511,8 +513,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$fraction, as.character),
-                               lapply_df(data$layer, as.character),
-                               by = c("entry_name", "site_name", "pro_name", "lyr_name")
+      lapply_df(data$layer, as.character),
+      by = c("entry_name", "site_name", "pro_name", "lyr_name")
     )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(
@@ -591,8 +593,8 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     }
 
     mismatch.rows <- anti_join(lapply_df(data$incubation, as.character),
-                               lapply_df(data$layer, as.character),
-                               by = c("entry_name", "site_name", "pro_name", "lyr_name")
+      lapply_df(data$layer, as.character),
+      by = c("entry_name", "site_name", "pro_name", "lyr_name")
     )
     if (dim(mismatch.rows)[1] > 0) {
       row.ind <- match(

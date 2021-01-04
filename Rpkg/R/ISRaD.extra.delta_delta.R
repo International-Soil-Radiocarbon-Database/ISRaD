@@ -23,7 +23,6 @@
 #' # Fill delta delta
 #' database.x <- ISRaD.extra.delta_delta(database.x)
 ISRaD.extra.delta_delta <- function(database, future = TRUE) {
-
   stopifnot(is_israd_database(database))
 
   graven <- ISRaD::graven
@@ -54,7 +53,6 @@ ISRaD.extra.delta_delta <- function(database, future = TRUE) {
 
     # skip empty tables
     if (nrow(df) != 0) {
-
       df.pro <- cbind(df,
         pro_graven_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_graven_zone"],
         atm14c = NA
