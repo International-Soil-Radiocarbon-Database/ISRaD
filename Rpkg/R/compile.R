@@ -125,14 +125,16 @@ compile <- function(dataset_directory,
       soilcarbon_data <- lapply(excel_sheets(data_files[d])[1:8], function(s) data.frame(read_excel(data_files[d], sheet = s)))
       names(soilcarbon_data) <- excel_sheets(data_files[d])[1:8]
 
-      # trim description/empty rows/empty cols
+      # trim description rows
       soilcarbon_data <- lapply(soilcarbon_data, function(x) x <- x[-1:-2, ])
+      # trim trailing spaces
       for (i in seq_along(soilcarbon_data)) {
         tab <- soilcarbon_data[[i]]
         for (j in seq_len(ncol(tab))) {
           tab[, j][grep("^[ ]+$", tab[, j])] <- NA
         }
         soilcarbon_data[[i]] <- tab
+        # trim empty rows
         soilcarbon_data[[i]] <- soilcarbon_data[[i]][rowSums(is.na(soilcarbon_data[[i]])) != ncol(soilcarbon_data[[i]]), ]
       }
 
