@@ -102,6 +102,7 @@ Summary statistics...
     entry_name : 16
     site_name : 16
     pro_name : 16
+    pro_note : 16
     pro_lat : 16
     pro_long : 16
     pro_treatment : 16
@@ -109,6 +110,8 @@ Summary statistics...
     pro_MAP : 15
     pro_soil_taxon : 14
     pro_soil_taxon_sys : 15
+    pro_land_cover : 16
+    pro_veg_note : 16
     pro_parent_material : 16
     pro_parent_chem : 16
     pro_parent_material_notes : 16

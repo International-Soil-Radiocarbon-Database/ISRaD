@@ -55,11 +55,19 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   }
 
   new_entries <- setdiff(ISRaD_data_compiled$metadata$entry_name, ISRaD_data$metadata$entry_name)
-  if (length(new_entries) == 0) new_entries <- "none"
+  if (length(new_entries) == 0) {
+    new_entries <- "none"
+  } else {
+    new_entries <- paste(unlist(new_entries))
+  }
   message("\t\t New entry_name values added to the data: ", new_entries, "\n")
 
   removed_entries <- setdiff(ISRaD_data$metadata$entry_name, ISRaD_data_compiled$metadata$entry_name)
-  if (length(removed_entries) == 0) removed_entries <- "none"
+  if (length(removed_entries) == 0) {
+    removed_entries <- "none"
+  } else {
+    removed_entries <- paste(unlist(removed_entries))
+  }
   message("\t\t entry_name values removed from the data: ", removed_entries, "\n")
 
   reviewed <- utils::menu(c("Yes", "No"), title = "Are these differences what you expected?")
