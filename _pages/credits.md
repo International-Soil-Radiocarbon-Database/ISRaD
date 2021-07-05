@@ -28,6 +28,10 @@ ISRaD has been built based on many individual studies and the following compilat
     of 14C measurements from the northern permafrost region. Global 
     Biogeochemical Cycles, 34, e2020GB006672. 
     <https://doi.org/10.1029/2020GB006672>
+  - Treat, C. C., Jones, M.C., Camill, P., Gallego-Sala, A., et al. (2016). 
+    Effects of permafrost aggradation on peat properties as determined 
+    from a pan-Arctic synthesis of plant macrofossils, J. Geophys. Res. 
+    Biogeosciences, 121, 78–94. <https://doi:10.1002/2015JG003061>
 
 # Studies within ISRaD
 
