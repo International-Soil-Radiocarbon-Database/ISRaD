@@ -52,8 +52,7 @@ Our goals are:
 * To produce tools to make the repository useful
 
 ISRaD has been developed as a collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry.
-
-### See what people are [already doing](https://essd.copernicus.org/articles/12/61/2020/essd-12-61-2020-metrics.html) with ISRaD data!
+### <p>See what people are <a href="https://essd.copernicus.org/articles/12/61/2020/essd-12-61-2020-metrics.html" target="_blank" rel="noopener noreferrer" >already doing</a> with ISRaD data!</p>
 
 <p align="center">
   <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg" width="300">|
