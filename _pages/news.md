@@ -9,7 +9,12 @@ header:
 ISRaD is an active community effort. Here are the latest updates!
 
 #### Comments, questions or concerns? [Post an issue](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues)
-  If you'd like to receive period updates from ISRaD, such as features, workshops, or publications, <a href = "mailto: info.israd@gmail.com">send us an email</a>.
+#### If you'd like to receive period updates from ISRaD, such as features, workshops, or publications, <a href = "mailto: info.israd@gmail.com">send us an email</a>.
+  
+## News - Updates 2021
+* **5 July**: The first in-person ISRaD Hackathon of 2021 is live in Jena, Germany.
+* **11 March**: Chen et al. from the Chinese Academy of Sciences published a [study](https://doi.org/10.1111/ele.13723) titled "Soil carbon persistence governed by plant input and mineral protection at regional and global scales" using ISRaD data!
+* **9 March**: Wang et al. from CSIRO published a [study](https://doi.org/10.1029/2020JG006205) titled "Microbial Activity and Root Carbon Inputs Are More Important than Soil Carbon Diffusion in Simulating Soil Carbon Profiles" using ISRaD data!
 
 ## News - Updates 2020
 * **30 October**: Thermal fractionation, or "dirt burner", data can now be ingested into ISRaD! Be sure to use the [latest version](https://github.com/International-Soil-Radiocarbon-Database/ISRaD) of the ISRaD R package for updated fraction vocabulary, and take a look at [this list](https://github.com/FluvialSeds/RPO_Database) to find examples of dirt burner data already in ISRaD.
