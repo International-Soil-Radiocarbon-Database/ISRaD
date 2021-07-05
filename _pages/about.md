@@ -43,11 +43,14 @@ Anyone may share or adapt the ISRaD dataset, provided they do so in accordance w
 2. When users interpret their own data in the context of data accessed from ISRaD, they should submit those new data for inclusion in ISRaD after they have published their results and/or obtained a DOI for their dataset.
 
 ## Getting involved
+	
 To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute</a> page.
 
 If you are interested in contributing to the development of the ISRaD R package or website, please contact info.israd@gmail.com or make a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) to our [github repository](https://github.com/International-Soil-Radiocarbon-Database/ISRaD).
 
 Please report issues (data, code, etc.) by posting to the ISRaD [issues](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) page on github.
+	
+If you'd like to receive updates on features, workshops, publications, etc. <a href = "mailto: info.israd@gmail.com">send us an email</a> to join our mailing list.
 
 ## Steering committee
 The steering committee provides scientific leadership for the project and sets the main goals and vision.
