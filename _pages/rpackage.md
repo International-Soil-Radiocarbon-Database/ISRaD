@@ -21,7 +21,7 @@ The ISRaD R package provides a number of data enhancement tools (```ISRaD.extra`
 ISRaD.getdata(directory = "~", dataset = "full", extra = "TRUE", force_download = "TRUE")
 ```
 
-For more information, please read the [user manual](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD.pdf).
+For more information, please read the [user manual](/user_manual_Aug15_2019.html).
 
 ## R package installation, data download and user manual
 The ISRaD R package (version 1.2.3) is on CRAN. Users can install the package from inside an R session in the normal fashion:
