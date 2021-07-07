@@ -5,17 +5,16 @@ title: <span style="color:white">**Credits**
 header:
   overlay_image: /assets/images/soil.jpg
 ---
-<p align = "center">
-    <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/30d27709a43b0f51493bc44f2e4fada7d5998f5a/assets/images/ISRaDmapFinalJuly72021smaller.png"
-     alt="ISRaD Site Map"
-     width ="370"
-     height = "305"
-     style="float: right; margin-right: 10px; margin-left: 20 px" />
-</p>
   
-ISRaD Credits
-================
+# ISRaD Credits
 Updated: 01-Sep-2020
+  
+<p align = "right">
+  <img src="/assets/images/ISRaDmapFinalJuly72021smaller.png"
+     alt="ISRaD Site Map 2021"
+     width ="400"
+     style="float: right; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
+</p>
   
 # Main compilations
 
