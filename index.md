@@ -42,7 +42,7 @@ A new manuscript detailing the construction and utilization of ISRaD was just pu
      style="float: center; margin-right: 10px; margin-left: 10px" />
 </p>
 
-[ISRaD [news] & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
+[ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
 
 ## What is ISRaD?
 ISRaD is a open community repository for soil radiocarbon data.
