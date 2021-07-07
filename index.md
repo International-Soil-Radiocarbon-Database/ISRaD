@@ -31,10 +31,10 @@ feature_row:
 <img src="assets/images/ISRaDmapFinalJuly72021smaller.png"
      alt="ISRaD Site Map 2021"
      width ="600"
-     style="float: center; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
+     style="float: center; margin-right: 30px; margin-left: 30px; margin-bottom: 10" />
 </p>
 
-[ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
+<p align = "center"> [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)</p>
 
 ## Introducing ISRaD Version 1.0!
 A new manuscript detailing the construction and utilization of ISRaD was just published in <a href="https://www.earth-system-science-data.net/">Earth System Science Data</a>. Hear we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript <a href="https://earth-syst-sci-data.net/12/61/2020/">here</a>.
