@@ -25,9 +25,11 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 ---
+
+# Welcome to ISRaD
 <p align = "center">
 <img src="assets/images/ISRaDmapFinalJuly72021smaller.png"
-     alt="Earth System Science Data"
+     alt="ISRaD Site Map 2021"
      width ="600"
      style="float: center; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
 </p>
