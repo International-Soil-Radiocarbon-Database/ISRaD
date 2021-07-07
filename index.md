@@ -28,8 +28,8 @@ feature_row:
 <p align = "center">
 <img src="assets/images/ISRaDmapFinalJuly72021smaller.png"
      alt="Earth System Science Data"
-     width ="500"
-     style="float: right; margin-right: 10px; margin-left: 10px" />
+     width ="600"
+     style="float: center; margin-right: 30px; margin-left: 30px" />
 </p>
 
 [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
