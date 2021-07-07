@@ -27,14 +27,6 @@ The database is described in detail in the following publication from the core I
 
 * Lawrence, C. R., Beem-Miller, J., Hoyt, A. M., Monroe, G., Sierra, C. A., Stoner, S., Heckman, K., Blankinship, J. C., Crow, S. E., McNicol, G., Trumbore, S., Levine, P. A., Vindušková, O., Todd-Brown, K., Rasmussen, C., Hicks Pries, C. E., Schädel, C., McFarlane, K., Doetterl, S., Hatté, C., He, Y., Treat, C., Harden, J. W., Torn, M. S., Estop-Aragonés, C., Asefaw Berhe, A., Keiluweit, M., Della Rosa Kuhnen, Á., Marin-Spiotta, E., Plante, A. F., Thompson, A., Shi, Z., Schimel, J. P., Vaughn, L. J. S., von Fromm, S. F., and Wagai, R. (2020). **An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0**, Earth Syst. Sci. Data, 12, 61–76. [https://doi.org/10.5194/essd-12-61-2020](https://www.earth-syst-sci-data.net/12/61/2020/).
 
-ISRaD builds on previously published compilcations of soil radiocarbon measurements but also includes data ingested from individual studies not captured by those prior efforts. The following compilation studies served as our starting point for data ingestion:
-
-* Mathieu, J. A., Hatté, C., Balesdent, J., & Parent, É. (2015). **Deep soil carbon dynamics are driven more by soil type than by climate: a worldwide meta-analysis of radiocarbon profiles**. Global Change Biology, 21(11), 4278–4292. <a href="http://doi.org/10.1111/gcb.13012">http://doi.org/10.1111/gcb.13012</a>
-
-* He, Y., Trumbore, S. E., Torn, M. S., Harden, J. W., Vaughn, L. J. S., Allison, S. D., & Randerson, J. T. (2016). **Radiocarbon constraints imply reduced carbon uptake by soils during the 21st century**. Science, 355(6306), 1419–1424. <a href="http://doi.org/10.1126/science.aad4273">http://doi.org/10.1126/science.aad4273</a>
-
-Prior to ingenstion of data included in these past efforts we fixed a number of errors, added missing data, and verified DOIs for all original source studies. Please also see the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/credits/">Credits</a> page for a full list of all original data sources included in the current version of ISRaD.
-
 ## Terms of Use and Citing ISRaD
 Anyone may share or adapt the ISRaD dataset, provided they do so in accordance with the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), also referred to as CC BY. In addition, we strongly encourage ISRaD users to follow two simple guidelines for use:
 
@@ -65,46 +57,33 @@ The ISRaD steering committe includes:
 * Katherine Heckman, US Forest Service
 
 ### Contributors
-Contributors are individuals who contribute data and code for the database.
-Current contributors to include:
-
-* Corey Lawrence
-* Susan Trumbore
-* Jennifer Harden
-* Christine Hatte
-* Alison Hoyt
-* Jeffrey Beem-Miller
-* Grey Monroe
-* Paul Levine
-* Shane Stoner
-* Olga Vinduskova
-* Karis McFarlane
-* Caitlin Hicks-Pries
-* Kathe Todd-Brown
-* USGS Powell Center group
+We have a wide community who contribute data and code for the database.
 
 ### Maintainers
 Maintainers are in charge of the integrity of the code. Currently, they are:
 
-* Grey Monroe
 * Carlos Sierra
 * Alison Hoyt
 * Shane Stoner
 * Jeffrey Beem-Miller (R package maintainer)
 * Corey Lawrence
+* Sophie von Fromm
 
 ### Expert Reviewers
 Expert reviewers review all data submitted to ISRaD. Currently, they are:
 
 * Sophie von Fromm
 * Jeffrey Beem-Miller
-* Kate Heckman
+* Katherine Heckman
 * Olga Vinduskova
 * Gavin McNicol
 * Karis MacFarlane
 * Alison Hoyt
 * Shane Stoner
 * Corey Lawrence
+* Ágatha Della Rosa Kuhnen
+* Caitlin Hicks Pries
+* Susan Trumbore
 
 ## Community
 
