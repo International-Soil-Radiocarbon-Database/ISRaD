@@ -6,7 +6,7 @@ header:
   overlay_image: /assets/images/soil.jpg
 ---
 <p align = "center">
-    <img src="assets/images/ISRaDmapFinalJuly72021smaller.png"
+    <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/30d27709a43b0f51493bc44f2e4fada7d5998f5a/assets/images/ISRaDmapFinalJuly72021smaller.png"
      alt="ISRaD Site Map"
      width ="370"
      height = "305"
