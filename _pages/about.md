@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /about/
-title: <span style="color:white">**About ISRaD**
+title: <span style="color:white">**About ISRaD**</span>
 header:
   overlay_image: /assets/images/GradientSnip.jpg
 ---

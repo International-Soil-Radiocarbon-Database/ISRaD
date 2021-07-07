@@ -3,7 +3,7 @@ layout: splash
 permalink: /news/
 title: <span style="color:white">**ISRaD News**
 header:
-  overlay_image: /assets/images/GradientSnip.png
+  overlay_image: /assets/images/GradientSnip.jpg
 ---
 
 ISRaD is an active community effort. Here are the latest updates!

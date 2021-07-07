@@ -1,21 +1,21 @@
 ---
 layout: splash
 permalink: /credits/
-title: <span style="color:white">**Credits**
+title: <span style="color:white">**Credits**</span>
 header:
-  overlay_image: /assets/images/GradientSnip.png
+  overlay_image: /assets/images/GradientSnip.jpg
 ---
-  
+
 # ISRaD Credits
 Updated: 01-Sep-2020
-  
+
 <p align = "right">
   <img src="/assets/images/ISRaDmapFinalJuly72021smaller.png"
      alt="ISRaD Site Map 2021"
      width ="400"
      style="float: right; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
 </p>
-  
+
 # Main compilations
 
 ISRaD has been built based on many individual studies and the following compilations:
@@ -29,15 +29,15 @@ ISRaD has been built based on many individual studies and the following compilat
     soil carbon dynamics are driven more by soil type than by climate: a
     worldwide meta-analysis of radiocarbon profiles. Global Change
     Biology, 21(11), 4278–4292. <https://doi:10.1111/gcb.13012>
-  - Estop‐Aragonés, C., Olefeldt, D., Abbott, B. W., Chanton, J. P., 
+  - Estop‐Aragonés, C., Olefeldt, D., Abbott, B. W., Chanton, J. P.,
     Czimczik, C. I., Dean, J. F., et al. (2020). Assessing the potential
     for mobilization of old soil carbon after permafrost thaw: A synthesis
-    of 14C measurements from the northern permafrost region. Global 
-    Biogeochemical Cycles, 34, e2020GB006672. 
+    of 14C measurements from the northern permafrost region. Global
+    Biogeochemical Cycles, 34, e2020GB006672.
     <https://doi.org/10.1029/2020GB006672>
-  - Treat, C. C., Jones, M.C., Camill, P., Gallego-Sala, A., et al. (2016). 
-    Effects of permafrost aggradation on peat properties as determined 
-    from a pan-Arctic synthesis of plant macrofossils, J. Geophys. Res. 
+  - Treat, C. C., Jones, M.C., Camill, P., Gallego-Sala, A., et al. (2016).
+    Effects of permafrost aggradation on peat properties as determined
+    from a pan-Arctic synthesis of plant macrofossils, J. Geophys. Res.
     Biogeosciences, 121, 78–94. <https://doi:10.1002/2015JG003061>
 
 # Studies within ISRaD

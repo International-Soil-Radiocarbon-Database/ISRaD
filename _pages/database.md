@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /database/
-title: <span style="color:white">**ISRaD Database**
+title: <span style="color:white">**ISRaD Database**</span>
 header:
   overlay_image: /assets/images/GoodPhotos/Soilprofiles.jpg
 htmlwidgets: TRUE

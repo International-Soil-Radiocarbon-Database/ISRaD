@@ -3,7 +3,7 @@ layout: splash
 permalink: /contribute/
 title: <span style="color:white">**Contribute to ISRaD**</span>
 header:
-  overlay_image: /assets/images/GradientSnip.png
+  overlay_image: /assets/images/GradientSnip.jpg
 ---
 
 Thank you for your interest in contributing data to ISRaD!
