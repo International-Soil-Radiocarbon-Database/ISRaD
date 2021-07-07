@@ -6,7 +6,7 @@ header:
   overlay_image: /assets/images/soil.jpg
 ---
 <p align = "center">
-    <img src="assets/images/ISRaDmapFinalJuly72021.png"
+    <img src="assets/images/ISRaDmapFinalJuly72021smaller.png"
      alt="ISRaD Site Map"
      width ="370"
      height = "305"
