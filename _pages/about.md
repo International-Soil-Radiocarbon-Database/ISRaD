@@ -27,13 +27,6 @@ The database is described in detail in the following publication from the core I
 
 * Lawrence, C. R., Beem-Miller, J., Hoyt, A. M., Monroe, G., Sierra, C. A., Stoner, S., Heckman, K., Blankinship, J. C., Crow, S. E., McNicol, G., Trumbore, S., Levine, P. A., Vindušková, O., Todd-Brown, K., Rasmussen, C., Hicks Pries, C. E., Schädel, C., McFarlane, K., Doetterl, S., Hatté, C., He, Y., Treat, C., Harden, J. W., Torn, M. S., Estop-Aragonés, C., Asefaw Berhe, A., Keiluweit, M., Della Rosa Kuhnen, Á., Marin-Spiotta, E., Plante, A. F., Thompson, A., Shi, Z., Schimel, J. P., Vaughn, L. J. S., von Fromm, S. F., and Wagai, R. (2020). **An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0**, Earth Syst. Sci. Data, 12, 61–76. [https://doi.org/10.5194/essd-12-61-2020](https://www.earth-syst-sci-data.net/12/61/2020/).
 
-## Terms of Use and Citing ISRaD
-Anyone may share or adapt the ISRaD dataset, provided they do so in accordance with the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), also referred to as CC BY. In addition, we strongly encourage ISRaD users to follow two simple guidelines for use:
-
-1. When utilizing the resources provided by ISRaD, including the complete dataset, individually curated entries, or value-added calculations included in the R-package, users should cite the source publication ([Lawrence, et al. 2019](https://earth-syst-sci-data.net/12/61/2020/), citation given above) and reference the version of ISRaD data that was used for their work (e.g. ISRaD_data_v1.2.3.2020-01-30). Additionally, if users leverage individual data entries from the database, they should also cite the original source dataset and/or paper.
-
-2. When users interpret their own data in the context of data accessed from ISRaD, they should submit those new data for inclusion in ISRaD after they have published their results and/or obtained a DOI for their dataset.
-
 ## Getting involved
 	
 To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute</a> page.
