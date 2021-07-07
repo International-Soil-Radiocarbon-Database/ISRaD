@@ -3,7 +3,7 @@ layout: splash
 permalink: /credits/
 title: <span style="color:white">**Credits**
 header:
-  overlay_image: /assets/images/SoilGradientBlack.png
+  overlay_image: /assets/images/GradientSnip.png
 ---
   
 # ISRaD Credits
