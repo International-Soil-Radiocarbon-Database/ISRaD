@@ -7,8 +7,16 @@ header:
 ---
 ISRaD Credits
 ================
-01-Sep-2020
-
+Updated: 01-Sep-2020
+  
+<p align = "center">
+    <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/492087bb42e16bc1a725e043a9aaef10d79ca95c/assets/images/ISRaDmapFinalJuly72021.png"
+     alt="ISRaD Site Map"
+     width ="370a"
+     height = "305"
+     style="float: right; margin-right: 10px;" />
+</p>
+  
 # Main compilations
 
 ISRaD has been built based on many individual studies and the following compilations:
