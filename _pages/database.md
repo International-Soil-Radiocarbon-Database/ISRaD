@@ -10,6 +10,13 @@ htmlwidgets: TRUE
 *   Using R, the compiled database or individual ISRaD datasets can be downloaded (in .xlsx, .csv, and .rda format) and easily loaded into an R session following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website.
 *   For non-R users, ISRaD data is available in .xlsx and .csv formats. Download [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip) (contents of the zip archive are described in detail in the **Data Files** section below).
 
+## Terms of Use and Citing ISRaD
+Anyone may share or adapt the ISRaD dataset, provided they do so in accordance with the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), also referred to as CC BY. In addition, we strongly encourage ISRaD users to follow two simple guidelines for use:
+
+1. **Cite Publication and Version:** When utilizing the resources provided by ISRaD, including the complete dataset, individually curated entries, or value-added calculations included in the R-package, users should cite the source publication ([Lawrence, et al. 2020](https://earth-syst-sci-data.net/12/61/2020/), citation given above) and reference the version of ISRaD data that was used for their work (e.g. ISRaD_data_v1.2.3.2020-01-30). Additionally, if users leverage individual data entries from the database, they should also cite the original source dataset and/or paper.
+
+2. **Contribute data:** When users interpret their own data in the context of data accessed from ISRaD, they should submit those new data for inclusion in ISRaD after they have published their results and/or obtained a DOI for their dataset. New entries should be submitted to: info.israd@gmail.com
+
 ## Raw versus "Extra" data
 There are two different versions of the compiled database:
 *   **Raw data files** (with names beginning in "ISRaD_data") contain only data ingested from the original source datasets.
