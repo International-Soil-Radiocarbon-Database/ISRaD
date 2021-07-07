@@ -25,8 +25,8 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 ---
+<h1 style="font-size:30px; text-align:center;">Welcome to ISRaD</h1> 
 
-# Welcome to ISRaD
 <p align = "center">
 <img src="assets/images/ISRaDmapFinalJuly72021smaller.png"
      alt="ISRaD Site Map 2021"
