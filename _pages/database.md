@@ -13,7 +13,7 @@ htmlwidgets: TRUE
 ## Terms of Use and Citing ISRaD
 Anyone may share or adapt the ISRaD dataset, provided they do so in accordance with the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), also referred to as CC BY. In addition, we strongly encourage ISRaD users to follow two simple guidelines for use:
 
-1. **Cite Publication and Version:** When utilizing the resources provided by ISRaD, including the complete dataset, individually curated entries, or value-added calculations included in the R-package, users should cite the source publication ([Lawrence, et al. 2020](https://earth-syst-sci-data.net/12/61/2020/), citation given above) and reference the version of ISRaD data that was used for their work (e.g. ISRaD_data_v1.2.3.2020-01-30). Additionally, if users leverage individual data entries from the database, they should also cite the original source dataset and/or paper.
+1. **Cite Publication and Version:** When utilizing the resources provided by ISRaD, including the complete dataset, individually curated entries, or value-added calculations included in the R-package, users should cite the source publication ([Lawrence, et al. 2020](https://earth-syst-sci-data.net/12/61/2020/)) and reference the version of ISRaD data that was used for their work (e.g. ISRaD_data_v1.2.3.2020-01-30). Additionally, if users leverage individual data entries from the database, they should also cite the original source dataset and/or paper.
 
 2. **Contribute data:** When users interpret their own data in the context of data accessed from ISRaD, they should submit those new data for inclusion in ISRaD after they have published their results and/or obtained a DOI for their dataset. New entries should be submitted to: info.israd@gmail.com
 
@@ -82,11 +82,11 @@ ISRaD data tables (in descending hierarchical order):
 An overview of variables included in ISRaD can be found [here](https://international-soil-radiocarbon-database.github.io/ISRaD/database_structure/).
 
 ## Current ISRaD Data
-### List of datasets in ISRaD (development version):
-* Complete list [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/credits.md)
+### List of datasets in ISRaD:
+* Complete list [here](https://soilradiocarbon.org/credits/)
 
 ### In progress datasets:
 * Visit [this google doc](https://docs.google.com/spreadsheets/d/1lezUOJjYnB7KtXGDDFO_PKWLtx_7NZ3WaOubP2zUX-g/edit?usp=sharing) to see the status of different datasets
 
 
-Photo credit to Dr. Asmeret Berhe.
+Photo credit to Dr. Asmeret Asefaw Berhe.
