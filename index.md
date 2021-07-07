@@ -25,6 +25,17 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 ---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta property="og:image" content="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/50e6434dffd7d0c3905238c66204633317e52046/assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png" />
+</head>
+</html>
+  
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
+
 <h1 style="font-size:40px; text-align:center;">Welcome to ISRaD</h1>
 
 <p align = "center">
@@ -66,3 +77,5 @@ ISRaD has been developed as a collaboration between the U.S. Geological Survey P
 ## Contact
 
 Please direct comments, concerns and suggestions to <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>.
+
+<link rel="image_src" href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/50e6434dffd7d0c3905238c66204633317e52046/assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png"/>
