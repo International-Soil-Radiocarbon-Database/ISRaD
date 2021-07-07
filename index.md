@@ -25,12 +25,11 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 ---
-<p align = "right">
-<img src="https://www.earth-system-science-data.net/essd_cover_huge.jpg"
+<p align = "center">
+<img src="assets/images/ISRaDmapFinalJuly72021smaller.png"
      alt="Earth System Science Data"
-     width ="154.5"
-     height = "200"
-     style="float: right; margin-right: 10px;" />
+     width ="500"
+     style="float: right; margin-right: 10px; margin-left: 10px" />
 </p>
 
 [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
