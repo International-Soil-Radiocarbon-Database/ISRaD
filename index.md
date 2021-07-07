@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: <span style="color:orange">**I**</span>nternational <span style="color:orange">**S**</span>oil <span style="color:orange">**Ra**</span>diocarbon <span style="color:orange">**D**</span>atabase
+title: <span style="color:#6a59cd">**I**</span>nternational <span style="color:#6a59cd">**S**</span>oil <span style="color:#6a59cd">**Ra**</span>diocarbon <span style="color:#6a59cd">**D**</span>atabase
 header:
   overlay_image: /assets/images/soil.jpg
 feature_row:
@@ -25,7 +25,7 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn More"
 ---
-<h1 style="color: #6a59cd; font-size:30px; text-align:center;">Welcome to ISRaD</h1> 
+<h1 style="color:#6a59cd; font-size:30px; text-align:center;">Welcome to ISRaD</h1>
 
 <p align = "center">
 <img src="assets/images/ISRaDmapFinalJuly72021smaller.png"

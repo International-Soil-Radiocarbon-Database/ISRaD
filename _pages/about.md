@@ -3,7 +3,7 @@ layout: splash
 permalink: /about/
 title: <span style="color:white">**About ISRaD**
 header:
-  overlay_image: /assets/images/soil.jpg
+  overlay_image: /assets/images/GradientSnip.jpg
 ---
 ## What is ISRaD?
 ISRaD is an **open community repository** for **soil radiocarbon data**.
@@ -28,13 +28,13 @@ The database is described in detail in the following publication from the core I
 * Lawrence, C. R., Beem-Miller, J., Hoyt, A. M., Monroe, G., Sierra, C. A., Stoner, S., Heckman, K., Blankinship, J. C., Crow, S. E., McNicol, G., Trumbore, S., Levine, P. A., Vindušková, O., Todd-Brown, K., Rasmussen, C., Hicks Pries, C. E., Schädel, C., McFarlane, K., Doetterl, S., Hatté, C., He, Y., Treat, C., Harden, J. W., Torn, M. S., Estop-Aragonés, C., Asefaw Berhe, A., Keiluweit, M., Della Rosa Kuhnen, Á., Marin-Spiotta, E., Plante, A. F., Thompson, A., Shi, Z., Schimel, J. P., Vaughn, L. J. S., von Fromm, S. F., and Wagai, R. (2020). **An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0**, Earth Syst. Sci. Data, 12, 61–76. [https://doi.org/10.5194/essd-12-61-2020](https://www.earth-syst-sci-data.net/12/61/2020/).
 
 ## Getting involved
-	
+
 To contribute data, please visit the <a href="https://international-soil-radiocarbon-database.github.io/ISRaD/contribute/">Contribute</a> page.
 
 If you are interested in contributing to the development of the ISRaD R package or website, please contact info.israd@gmail.com or make a [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) to our [github repository](https://github.com/International-Soil-Radiocarbon-Database/ISRaD).
 
 Please report issues (data, code, etc.) by posting to the ISRaD [issues](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) page on github.
-	
+
 If you'd like to receive updates on features, workshops, publications, etc. <a href = "mailto: info.israd@gmail.com">send us an email</a> to join our mailing list.
 
 ## Steering committee

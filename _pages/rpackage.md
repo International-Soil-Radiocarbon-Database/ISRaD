@@ -3,7 +3,7 @@ layout: splash
 permalink: /rpackage/
 title: <span style="color:white">**ISRaD R Package**
 header:
-  overlay_image: /assets/images/soil.jpg
+  overlay_image: /assets/images/GradientSnip.png
 ---
 
 

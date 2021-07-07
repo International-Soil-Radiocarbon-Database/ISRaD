@@ -3,7 +3,7 @@ layout: splash
 permalink: /template_faq/
 title: <span style="color:white">**Template FAQ**
 header:
-  overlay_image: /assets/images/soil.jpg
+  overlay_image: /assets/images/GradientSnip.png
 ---
 
 

@@ -3,7 +3,7 @@ layout: splash
 permalink: /contribute/
 title: <span style="color:white">**Contribute to ISRaD**</span>
 header:
-  overlay_image: /assets/images/soil.jpg
+  overlay_image: /assets/images/GradientSnip.png
 ---
 
 Thank you for your interest in contributing data to ISRaD!
@@ -49,7 +49,7 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 * **Controlled vocabulary** – We use this to standardize the data entry process. These are captured with dropdown menus, and are also listed on the “controlled vocabulary” tab.
 * **Defining Site vs Profile (vs Plot)** – Use Site & Profile tabs to capture the spatial structure of your data. Samples collected in a similar location (within approx. 5km of each other) should be grouped under the same “Site” designation. More detailed sampling locations should be listed as “Profiles”. Each site must have a unique set of coordinates for the general location. Profiles can also have more specific coordinates (optional).
 * **Depth Convention** – Zero is defined as the mineral-organic interface. Positive depths increase into the mineral soil. Organic horizons have negative depths. Please convert your data to follow this convention. If data must be reported from the soil surface, use the “lyr_all_org_neg” column to flag this.
-* **Peatlands** – If depths are reported from the peat surface, use the “lyr_all_org_neg” column to flag this. Macrofossil data should be entered on the fraction tab. Use "lyr_basal" to indicate the bottom of the peat layer. 
+* **Peatlands** – If depths are reported from the peat surface, use the “lyr_all_org_neg” column to flag this. Macrofossil data should be entered on the fraction tab. Use "lyr_basal" to indicate the bottom of the peat layer.
 * **Control/Treatment** – Please designate if this data is from a manipulation experiment (e.g. fertilizer application, warming study, etc). Naturally burned areas and agricultural sites are considered “Control” unless additionally manipulated.
 * **Coordinates** – Follow [this convention](https://en.wikipedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg). Don’t forget the negatives! Unsure? [Test your coordinates](https://www.google.com/maps/) to make sure they are not in the ocean.
 * **Naming Convention & Unique Names** – You can choose any names for your sites, profiles, etc. Names can repeat, but each sequence of names “Site/Profile/Layer/etc” must be unique. (e.g. “HarvardForest/Profile1/AHorizon” and “HarvardForest/Profile2/AHorizon” are acceptable combinations, although “AHorizon” is a repeated layer name.)
