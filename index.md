@@ -3,7 +3,7 @@ layout: splash
 permalink: /
 title: <span style="color:#6a59cd">**I**</span>nternational <span style="color:#6a59cd">**S**</span>oil <span style="color:#6a59cd">**Ra**</span>diocarbon <span style="color:#6a59cd">**D**</span>atabase
 header:
-  overlay_image: /assets/images/GradientSnip.png
+  overlay_image: /assets/images/GradientSnip.jpg
 feature_row:
   - image_path: /assets/images/structure_new.png
     title: "Database"
