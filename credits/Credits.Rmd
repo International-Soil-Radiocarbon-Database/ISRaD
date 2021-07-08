@@ -1,6 +1,6 @@
 ---
 title: "ISRaD Credits"
-date: "01-Sep-2020"
+date: \textit{\today}
 output:
   html_document:
   pdf_document:
@@ -12,17 +12,29 @@ nocite: '@*'
 header_includes:
 - \usepackage[utf8]{inputenc}
 - \usepackage{float}
+- \usepackage{was}
+- \usepackage{textcomp}
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r refs, include = FALSE}
+# Notes:
+# 1) Guo_2006 has curly brackets around greek symbols that will cause pandoc error 83
+# 2) Lybrand_2017 has curly brackets around greek symbols that will cause pandoc error 83
+# Errors 1 & 2 need to be manually edited, or a regex/gsub needs to be written to fix them on the fly
+# 3) all "upgreek" symbols fail to render, as do "\mathsemicolon"s
+
+# load libraries
 library(curl)
 library(dplyr)
 library(purrr)
+
+# load ISRaD data
 load("../ISRaD_data_files/database/ISRaD_data.rda")
 
+# get DOIs and clean up
 dois <- ISRaD_data$metadata$doi
 cleandois <- as.character(dois[dois[] != "israd"])
 
@@ -30,22 +42,25 @@ cleandois <- as.character(dois[dois[] != "israd"])
 h <- new_handle()
 handle_setheaders(h, "accept" = "application/x-bibtex")
 
+# .bib fx
 doi.bib <- function(doi, .bib) {
   url <- paste0("https://doi.org/", doi)
   try(
     walk(url, ~ {
       curl(., handle = h) %>%
-        readLines(warn = FALSE) %>%
+        readLines(warn = FALSE, encoding = "UTF-8") %>%
         write(file = .bib, append = TRUE)
     }))
 }
 
+# remove old .bib
 if(file.exists(file.path("./credits.bib"))) {
   file.remove(file.path("./credits.bib"))
 }
 
+# generate new .bib
 lapply(seq_along(cleandois), function(i) {
-  doi.bib(cleandois[i], .bib = "credits.bib") 
+  doi.bib(cleandois[i], .bib = "credits.bib")
 })
 ```
 
