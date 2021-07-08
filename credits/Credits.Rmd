@@ -2,10 +2,10 @@
 title: "ISRaD Credits"
 date: "01-Sep-2020"
 output:
-  github_document:
-  html_document: default
+  html_document:
   pdf_document:
     latex_engine: xelatex
+  github_document:
 csl: apa-7th-edition.csl
 bibliography: credits.bib
 nocite: '@*'
@@ -19,10 +19,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```{r refs, include = FALSE}
 library(curl)
+library(dplyr)
+library(purrr)
 load("../ISRaD_data_files/database/ISRaD_data.rda")
 
 dois <- ISRaD_data$metadata$doi
-cleandois <- dois[dois[] != "israd"]
+cleandois <- as.character(dois[dois[] != "israd"])
 
 # cf. <ttps://users.aalto.fi/~mkouhia/2016/bibtex-from-dx-doi-org/>
 h <- new_handle()
@@ -30,19 +32,21 @@ handle_setheaders(h, "accept" = "application/x-bibtex")
 
 doi.bib <- function(doi, .bib) {
   url <- paste0("https://doi.org/", doi)
-  try(curl_download(url, destfile = .bib, handle = h, mode = "a"))
+  try(
+    walk(url, ~ {
+      curl(., handle = h) %>%
+        readLines(warn = FALSE) %>%
+        write(file = .bib, append = TRUE)
+    }))
 }
 
 if(file.exists(file.path("./credits.bib"))) {
   file.remove(file.path("./credits.bib"))
-  lapply(seq_along(cleandois), function(i) {
-    doi.bib(cleandois[i], .bib = "credits.bib") 
-  })
-} else {
-  lapply(seq_along(cleandois), function(i) {
-    doi.bib(cleandois[i], .bib = "credits.bib") 
-  })
 }
+
+lapply(seq_along(cleandois), function(i) {
+  doi.bib(cleandois[i], .bib = "credits.bib") 
+})
 ```
 
 # Main compilations
@@ -52,4 +56,4 @@ ISRaD has been built based on two main compilations:
 * `r {rcrossref::cr_cn("10.1111/gcb.13012", format = "text", style = "apa")}`
 
 # Studies within ISRaD
-Currently there are `r {length(dois)}` entries (unique DOIs) in ISRaD, which are from the following publications:
+Currently there are `r {length(dois)}` entries in ISRaD, which are from the following publications:
