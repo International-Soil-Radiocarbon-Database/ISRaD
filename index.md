@@ -41,7 +41,7 @@ feature_row:
 <p align = "center">
 <img src="/assets/images/ISRaD_Map_July2021.jpg"
      alt="ISRaD Site Map 2021"
-     width ="600"
+     width ="900"
      style="float: center; margin-right: 30px; margin-left: 30px; margin-bottom: 10px" />
 </p>
 
