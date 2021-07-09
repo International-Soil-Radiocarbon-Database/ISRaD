@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Andersson_2011.xlsx
+File: Holmquist_2014.xlsx
 
 Checking file type...
 
@@ -101,60 +101,57 @@ Summary statistics...
     site_long : 1
     site_elevation : 1
     site_note : 1
- profile tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    pro_note : 2
-    pro_lat : 2
-    pro_long : 2
-    pro_elevation : 2
-    pro_treatment : 2
-    pro_MAT : 2
-    pro_MAP : 2
-    pro_land_cover : 2
-    pro_veg_note : 2
-    pro_thaw_depth : 2
-    pro_2d_position : 2
-    pro_permafrost : 2
-    pro_thermokarst : 2
-    pro_water_body : 2
+ profile tab...12 observations
+    entry_name : 12
+    site_name : 12
+    pro_name : 12
+    pro_note : 12
+    pro_lat : 12
+    pro_long : 12
+    pro_elevation : 12
+    pro_treatment : 12
+    pro_treatment_note : 5
+    pro_MAT : 12
+    pro_MAP : 12
+    pro_peatland : 12
+    pro_usda_soil_order : 7
+    pro_land_cover : 12
+    pro_veg_note : 12
+    pro_permafrost : 7
  flux tab...0 observations
- layer tab...28 observations
-    entry_name : 28
-    site_name : 28
-    pro_name : 28
-    lyr_name : 28
-    lyr_obs_date_y : 28
-    lyr_obs_date_m : 28
-    lyr_obs_date_d : 28
-    lyr_all_org_neg : 28
-    lyr_top : 28
-    lyr_bot : 28
-    lyr_hzn : 14
-    lyr_c_tot : 19
-    lyr_n_tot : 19
-    lyr_rc_lab_number : 3
-    lyr_fraction_modern : 3
-    lyr_fraction_modern_sigma : 3
+ layer tab...2013 observations
+    entry_name : 2013
+    site_name : 2013
+    pro_name : 2013
+    lyr_name : 2013
+    lyr_obs_date_y : 2013
+    lyr_all_org_neg : 2013
+    lyr_top : 2013
+    lyr_bot : 2013
+    lyr_hzn : 1924
+    lyr_bd_samp : 1895
+    lyr_loi : 1901
+    lyr_rc_lab_number : 29
+    lyr_fraction_modern : 29
+    lyr_fraction_modern_sigma : 29
  interstitial tab...0 observations
- fraction tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    lyr_name : 2
-    frc_name : 2
-    frc_input : 2
-    frc_property : 2
-    frc_scheme : 2
-    frc_scheme_units : 2
-    frc_lower : 2
-    frc_upper : 2
-    frc_agent : 2
-    frc_note : 2
-    frc_rc_lab_number : 2
-    frc_fraction_modern : 2
-    frc_fraction_modern_sigma : 2
+ fraction tab...60 observations
+    entry_name : 60
+    site_name : 60
+    pro_name : 60
+    lyr_name : 60
+    frc_name : 60
+    frc_input : 60
+    frc_property : 60
+    frc_scheme : 60
+    frc_scheme_units : 60
+    frc_lower : 60
+    frc_upper : 60
+    frc_agent : 60
+    frc_note : 60
+    frc_rc_lab_number : 60
+    frc_fraction_modern : 60
+    frc_fraction_modern_sigma : 60
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

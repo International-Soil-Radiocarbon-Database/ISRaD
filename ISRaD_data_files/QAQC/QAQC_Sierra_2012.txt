@@ -72,8 +72,6 @@ Checking controlled vocab...
  interstitial tab...
  fraction tab...
  incubation tab...
- - - - - - - - - - - - - - - - - - - - -
-PASSED. Nice work!
 
  - - - - - - - - - - - - - - - - - - - -
 
@@ -157,6 +155,8 @@ Summary statistics...
  - - - - - - - - - - - - - - - - - - - -
 
 
+ - - - - - - - - - - - - - - - - - - - -
+PASSED. Nice work!
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to

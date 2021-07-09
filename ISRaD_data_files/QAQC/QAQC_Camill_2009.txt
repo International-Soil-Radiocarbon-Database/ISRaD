@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Andersson_2011.xlsx
+File: Camill_2009.xlsx
 
 Checking file type...
 
@@ -99,62 +99,54 @@ Summary statistics...
     site_name : 1
     site_lat : 1
     site_long : 1
-    site_elevation : 1
     site_note : 1
- profile tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    pro_note : 2
-    pro_lat : 2
-    pro_long : 2
-    pro_elevation : 2
-    pro_treatment : 2
-    pro_MAT : 2
-    pro_MAP : 2
-    pro_land_cover : 2
-    pro_veg_note : 2
-    pro_thaw_depth : 2
-    pro_2d_position : 2
-    pro_permafrost : 2
-    pro_thermokarst : 2
-    pro_water_body : 2
+ profile tab...23 observations
+    entry_name : 23
+    site_name : 23
+    plot_name : 23
+    pro_name : 23
+    pro_note : 23
+    pro_lat : 23
+    pro_long : 23
+    pro_elevation : 23
+    pro_treatment : 23
+    pro_peatland : 23
+    pro_usda_soil_order : 23
+    pro_land_cover : 23
+    pro_permafrost : 23
  flux tab...0 observations
- layer tab...28 observations
-    entry_name : 28
-    site_name : 28
-    pro_name : 28
-    lyr_name : 28
-    lyr_obs_date_y : 28
-    lyr_obs_date_m : 28
-    lyr_obs_date_d : 28
-    lyr_all_org_neg : 28
-    lyr_top : 28
-    lyr_bot : 28
-    lyr_hzn : 14
-    lyr_c_tot : 19
-    lyr_n_tot : 19
-    lyr_rc_lab_number : 3
-    lyr_fraction_modern : 3
-    lyr_fraction_modern_sigma : 3
+ layer tab...1490 observations
+    entry_name : 1490
+    site_name : 1490
+    pro_name : 1490
+    lyr_name : 1490
+    lyr_obs_date_y : 1490
+    lyr_obs_date_m : 1490
+    lyr_all_org_neg : 1490
+    lyr_top : 1490
+    lyr_bot : 1490
+    lyr_hzn : 6
+    lyr_bd_samp : 1346
+    lyr_c_tot : 1346
+    lyr_n_tot : 1346
  interstitial tab...0 observations
- fraction tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    lyr_name : 2
-    frc_name : 2
-    frc_input : 2
-    frc_property : 2
-    frc_scheme : 2
-    frc_scheme_units : 2
-    frc_lower : 2
-    frc_upper : 2
-    frc_agent : 2
-    frc_note : 2
-    frc_rc_lab_number : 2
-    frc_fraction_modern : 2
-    frc_fraction_modern_sigma : 2
+ fraction tab...144 observations
+    entry_name : 144
+    site_name : 144
+    pro_name : 144
+    lyr_name : 144
+    frc_name : 144
+    frc_input : 144
+    frc_property : 144
+    frc_scheme : 144
+    frc_scheme_units : 144
+    frc_lower : 144
+    frc_upper : 144
+    frc_agent : 144
+    frc_note : 144
+    frc_rc_lab_number : 144
+    frc_fraction_modern : 144
+    frc_fraction_modern_sigma : 144
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

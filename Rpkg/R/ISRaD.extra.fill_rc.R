@@ -28,16 +28,21 @@ ISRaD.extra.fill_rc <- function(database) {
     # constants
     DF <- database[[table_name]]
     PREFIX <- ifelse(table_name == "flux", "flx",
-                     ifelse(table_name == "layer", "lyr",
-                            ifelse(table_name == "interstitial", "ist",
-                                   ifelse(table_name == "fraction", "frc", "inc"))))
-    NAMES <- mapply(paste0, list(PREFIX), list("_14c",
-                                               "_14c_sigma",
-                                               "_14c_sd",
-                                               "_fraction_modern",
-                                               "_fraction_modern_sigma",
-                                               "_fraction_modern_sd",
-                                               "_obs_date_y"))
+      ifelse(table_name == "layer", "lyr",
+        ifelse(table_name == "interstitial", "ist",
+          ifelse(table_name == "fraction", "frc", "inc")
+        )
+      )
+    )
+    NAMES <- mapply(paste0, list(PREFIX), list(
+      "_14c",
+      "_14c_sigma",
+      "_14c_sd",
+      "_fraction_modern",
+      "_fraction_modern_sigma",
+      "_fraction_modern_sd",
+      "_obs_date_y"
+    ))
 
     ## rc data
     VARS <- lapply(NAMES, function(rc) {
@@ -46,23 +51,27 @@ ISRaD.extra.fill_rc <- function(database) {
 
     # lists
     rc.list.fx <- function(vars) {
-      list(unlist(vars[1]),
-           unlist(vars[1]) + unlist(vars[2]),
-           unlist(vars[1]) + unlist(vars[3]))
+      list(
+        unlist(vars[1]),
+        unlist(vars[1]) + unlist(vars[2]),
+        unlist(vars[1]) + unlist(vars[3])
+      )
     }
     D14C.ls <- rc.list.fx(VARS[1:3])
     FM.ls <- rc.list.fx(VARS[4:6])
 
     # converted data extraction fx
     rc.extract.fx <- function(ls) {
-      list(unlist(ls[1]),
-           abs(unlist(ls[1]) - unlist(ls[2])),
-           abs(unlist(ls[1]) - unlist(ls[3])))
+      list(
+        unlist(ls[1]),
+        abs(unlist(ls[1]) - unlist(ls[2])),
+        abs(unlist(ls[1]) - unlist(ls[3]))
+      )
     }
 
     # convert
     rc.ls <- c(
-      rc.extract.fx(lapply(seq_along(D14C.ls), function(i)
+      rc.extract.fx(lapply(seq_along(D14C.ls), function(i) {
         unlist(lapply(seq_along(D14C.ls[[i]]), function(j) {
           if (is.na(D14C.ls[[i]][j]) & !is.na(FM.ls[[i]][j])) {
             convert_fm_d14c(fm = FM.ls[[i]][j], obs_date_y = VARS[[7]][j], verbose = FALSE)
@@ -70,8 +79,8 @@ ISRaD.extra.fill_rc <- function(database) {
             D14C.ls[[i]][j]
           }
         }))
-      )),
-      rc.extract.fx(lapply(seq_along(FM.ls), function(i)
+      })),
+      rc.extract.fx(lapply(seq_along(FM.ls), function(i) {
         unlist(lapply(seq_along(FM.ls[[i]]), function(j) {
           if (is.na(FM.ls[[i]][j]) & !is.na(D14C.ls[[i]][j])) {
             convert_fm_d14c(d14c = D14C.ls[[i]][j], obs_date_y = VARS[[7]][j], verbose = FALSE)
@@ -79,11 +88,12 @@ ISRaD.extra.fill_rc <- function(database) {
             FM.ls[[i]][j]
           }
         }))
-      )))
+      }))
+    )
 
     # fill
     for (i in seq(1:6)) {
-      DF[ , NAMES[i]] <- rc.ls[[i]]
+      DF[, NAMES[i]] <- rc.ls[[i]]
     }
     return(DF)
   }

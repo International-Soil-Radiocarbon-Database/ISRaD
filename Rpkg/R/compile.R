@@ -165,9 +165,10 @@ compile <- function(dataset_directory,
             diffs[i] <- ifelse(nrow(setdiff(entry[[i]], table)) == 0, 0, 1)
           } else {
             diffs[i] <- ifelse(nrow(entry[[i]]) == 0, 0, 1)
-          }} else {
-            diffs[i] <- ifelse(nrow(entry[[i]]) == 0, 0, 1)
           }
+        } else {
+          diffs[i] <- ifelse(nrow(entry[[i]]) == 0, 0, 1)
+        }
       }
 
       # Run QAQC as needed

@@ -15,8 +15,10 @@
 #' # Fill fraction modern from delta 14C
 #' database.x <- ISRaD.extra.fill_fm(database.x)
 ISRaD.extra.fill_fm <- function(database) {
-  .Deprecated(new = "ISRaD.extra.fill_rc",
-              msg = "'ISRaD.extra.fill_fm' will be removed in the next major version. Note that this function erroneously fills sigma/sd data with 14C and fm data.")
+  .Deprecated(
+    new = "ISRaD.extra.fill_rc",
+    msg = "'ISRaD.extra.fill_fm' will be removed in the next major version. Note that this function erroneously fills sigma/sd data with 14C and fm data."
+  )
   stopifnot(is_israd_database(database))
 
   # function to calculate delta 14C from fraction modern and obs year if not reported

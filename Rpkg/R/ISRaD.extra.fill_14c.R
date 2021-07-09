@@ -19,8 +19,10 @@
 #' # Column flx_14c in the "flux" table is now filled
 #' is.na(database$flux$flx_14c)
 ISRaD.extra.fill_14c <- function(database) {
-  .Deprecated(new = "ISRaD.extra.fill_rc",
-              msg = "'ISRaD.extra.fill_14c' will be removed in the next major version. Note that this function erroneously fills sigma/sd data with 14C and fm data.")
+  .Deprecated(
+    new = "ISRaD.extra.fill_rc",
+    msg = "'ISRaD.extra.fill_14c' will be removed in the next major version. Note that this function erroneously fills sigma/sd data with 14C and fm data."
+  )
   stopifnot(is_israd_database(database))
 
   # function to calculate delta 14C from fraction modern and obs year if not reported
