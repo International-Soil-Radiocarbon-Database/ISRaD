@@ -162,8 +162,8 @@ compile <- function(dataset_directory,
         if (unique(entry[["metadata"]]["entry_name"]) %in% names(ISRaD_old_list[[i]])) {
           table <- ISRaD_old_list[[i]][[match(unique(entry[["metadata"]]["entry_name"]), names(ISRaD_old_list[[i]]))]]
           if (ncol(table) == ncol(entry[[i]])) {
-            diffs[i] <- ifelse(nrow(setdiff(entry[[i]], table)) == 0, 0, 1)
-          } else {
+          diffs[i] <- ifelse(nrow(setdiff(entry[[i]], table)) == 0, 0, 1)
+          }} else {
             diffs[i] <- ifelse(nrow(entry[[i]]) == 0, 0, 1)
         }
       }
