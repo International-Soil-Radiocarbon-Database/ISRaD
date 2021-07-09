@@ -156,16 +156,18 @@ compile <- function(dataset_directory,
 
       # Compare entry against data in existing database, "ISRaD_old"
       diffs <- vector()
-      for (i in seq_along(ISRaD_old)) {
+      for (i in seq_along(ISRaD_old_list)) {
 
         # Check for entry, verify tables w/ nrow = 0, and ID diffs
         if (unique(entry[["metadata"]]["entry_name"]) %in% names(ISRaD_old_list[[i]])) {
           table <- ISRaD_old_list[[i]][[match(unique(entry[["metadata"]]["entry_name"]), names(ISRaD_old_list[[i]]))]]
           if (ncol(table) == ncol(entry[[i]])) {
-          diffs[i] <- ifelse(nrow(setdiff(entry[[i]], table)) == 0, 0, 1)
+            diffs[i] <- ifelse(nrow(setdiff(entry[[i]], table)) == 0, 0, 1)
+          } else {
+            diffs[i] <- ifelse(nrow(entry[[i]]) == 0, 0, 1)
           }} else {
             diffs[i] <- ifelse(nrow(entry[[i]]) == 0, 0, 1)
-        }
+          }
       }
 
       # Run QAQC as needed
