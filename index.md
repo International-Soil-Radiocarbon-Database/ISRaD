@@ -31,7 +31,7 @@ feature_row:
   <meta property="og:image" content="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/50e6434dffd7d0c3905238c66204633317e52046/assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png" />
 </head>
 </html>
-  
+
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:fb="http://ogp.me/ns/fb#">
@@ -39,7 +39,7 @@ feature_row:
 <h1 style="font-size:40px; text-align:center;">Welcome to ISRaD</h1>
 
 <p align = "center">
-<img src="assets/images/ISRaDmapFinalJuly72021smaller.png"
+<img src="/assets/images/ISRaD_Map_July2021.jpg"
      alt="ISRaD Site Map 2021"
      width ="600"
      style="float: center; margin-right: 30px; margin-left: 30px; margin-bottom: 10px" />

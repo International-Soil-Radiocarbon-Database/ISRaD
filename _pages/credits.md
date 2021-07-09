@@ -10,7 +10,7 @@ header:
 Updated: 01-Sep-2020
 
 <p align = "right">
-  <img src="/assets/images/ISRaDmapFinalJuly72021smaller.png"
+  <img src="/assets/images/ISRaD_Map_July2021.jpg"
      alt="ISRaD Site Map 2021"
      width ="400"
      style="float: right; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
