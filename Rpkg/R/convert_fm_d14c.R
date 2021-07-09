@@ -18,7 +18,7 @@ convert_fm_d14c <- function(fm = NA, d14c = NA, obs_date_y, verbose = TRUE) {
       message("calculating ", "\u0394", "14C from fraction modern")
     }
     (fm * exp(lambda * (-obs_date_y + 1950)) - 1) * 1000
-  } else {
+  } else if (is.na(fm)) {
     if (verbose) {
       message("calculating fraction modern from ", paste0("\u0394", "14C"))
     }

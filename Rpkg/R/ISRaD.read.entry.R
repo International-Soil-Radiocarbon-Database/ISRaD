@@ -55,7 +55,5 @@ ISRaD.read.entry <- function(entry,
   # put in list to name appropriately
   new_list <- list(entryR)
   names(new_list) <- sub(pattern = "(.*)\\..*$", replacement = "\\1", basename(entry))
-
-  # extract list element to .GlobalEnv to preserve name
-  invisible(list2env(new_list, envir = .GlobalEnv))
+  return(new_list)
 }
