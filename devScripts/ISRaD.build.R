@@ -71,7 +71,7 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   message("\t filling dates \n")
   ISRaD_extra_compiled <- ISRaD.extra.fill_dates(ISRaD_data_compiled)
   message("\t filling radiocarbon data \n")
-  ISRaD_extra_compiled <- ISRaD.extra.fill_rc(ISRaD_data_compiled)
+  ISRaD_extra_compiled <- ISRaD.extra.fill_rc(ISRaD_extra_compiled)
   message("\t filling coordinates \n")
   ISRaD_extra_compiled <- ISRaD.extra.fill_coords(ISRaD_extra_compiled)
   message("\t filling delta delta \n")
