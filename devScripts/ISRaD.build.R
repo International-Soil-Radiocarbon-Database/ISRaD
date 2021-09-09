@@ -128,9 +128,6 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   message("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is ", v, "\n\n")
 
   ISRaD_extra_char <- lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
-  write_xlsx(ISRaD_extra_char, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_extra_list.xlsx"))
-
-  system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", "ISRaD*")))
   write_xlsx(ISRaD_extra_char, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_list_", v, ".xlsx")))
   write_xlsx(ISRaD_data, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_list_", v, ".xlsx")))
   save(ISRaD_data, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_", v, ".rda")))
@@ -143,21 +140,25 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
     flattened_data <- ISRaD.flatten(database = ISRaD_data, table = tab)
     # flattened_data<-str_replace_all(flattened_data, "[\r\n]" , "")
     message("writing ISRaD_data_flat_", tab, ".csv", " ...\n", sep = "")
-    utils::write.csv(flattened_data, file.path(ISRaD_directory, "ISRaD_data_files", "database", paste0("ISRaD_data_flat_", tab, ".csv")))
     utils::write.csv(flattened_data, file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_flat_", tab, "_", v, ".csv")))
 
     flattened_extra <- ISRaD.flatten(database = ISRaD_extra, table = tab)
     # flattened_extra<-str_replace_all(flattened_extra, "[\r\n]" , "")
     message("writing ISRaD_extra_flat_", tab, ".csv", " ...\n", sep = "")
-    utils::write.csv(flattened_extra, file.path(ISRaD_directory, "ISRaD_data_files", "database", paste0("ISRaD_extra_flat_", tab, ".csv")))
     utils::write.csv(flattened_extra, file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_flat_", tab, "_", v, ".csv")))
   }
+
+  # remove old zip file
   system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files.zip")))
 
+  # create new zip file
   utils::zip(
     zipfile = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files.zip"),
     files = list.files(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"), full.names = TRUE), flags = "-j"
   )
+
+  # remove intermediate files
+  system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", "ISRaD*")))
 
   # document and check ------------------------------------------------------
 
