@@ -123,10 +123,14 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   message("ISRaD_extra has been updated...\n\n")
 
 
-  # Save ISRaD extra object as Excel file --------------------------------------------------
+  # Save ISRaD extra object as Excel object --------------------------------------------------
 
   message("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is ", v, "\n\n")
 
+  # create dir
+  dir.create(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"))
+
+  # save .xlsx and .rda objects
   ISRaD_extra_char <- lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
   write_xlsx(ISRaD_extra_char, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_list_", v, ".xlsx")))
   write_xlsx(ISRaD_data, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_list_", v, ".xlsx")))
@@ -157,8 +161,8 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
     files = list.files(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"), full.names = TRUE), flags = "-j"
   )
 
-  # remove intermediate files
-  system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", "ISRaD*")))
+  # remove intermediate files and directory
+  unlink(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"), recursive = TRUE)
 
   # document and check ------------------------------------------------------
 
