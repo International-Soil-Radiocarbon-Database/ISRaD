@@ -32,8 +32,6 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   message("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
   ISRaD_data_compiled <- compile(dataset_directory = file.path(ISRaD_directory, "ISRaD_data_files"), write_report = T, write_out = F, return_type = "list", checkdoi = F)
 
-  message("\nISRaD_data.xlsx saved to ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "\n\n"))
-
   reviewed <- utils::menu(c("Yes", "No"), title = "Have you reviewed the compilation report log file? (ISRaD_data_files/database/ISRaD_log.txt). I would suggest using the git commit preview window in R to see changes.")
   if (reviewed == 2) {
     stop("You cannot build the ISRaD database without reviewing the compilation report log file...")
