@@ -30,9 +30,7 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
 
   message("Compiling the data files in ", paste0(ISRaD_directory, "/ISRaD_data_files\n"))
   message("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
-  ISRaD_data_compiled <- compile(dataset_directory = file.path(ISRaD_directory, "ISRaD_data_files"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
-
-  message("\nISRaD_data.xlsx saved to ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "\n\n"))
+  ISRaD_data_compiled <- compile(dataset_directory = file.path(ISRaD_directory, "ISRaD_data_files"), write_report = T, write_out = F, return_type = "list", checkdoi = F)
 
   reviewed <- utils::menu(c("Yes", "No"), title = "Have you reviewed the compilation report log file? (ISRaD_data_files/database/ISRaD_log.txt). I would suggest using the git commit preview window in R to see changes.")
   if (reviewed == 2) {
@@ -55,11 +53,9 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   }
 
   new_entries <- setdiff(ISRaD_data_compiled$metadata$entry_name, ISRaD_data$metadata$entry_name)
-  if (length(new_entries) == 0) new_entries <- "none"
   message("\t\t New entry_name values added to the data: ", cat(new_entries), "\n")
 
   removed_entries <- setdiff(ISRaD_data$metadata$entry_name, ISRaD_data_compiled$metadata$entry_name)
-  if (length(removed_entries) == 0) removed_entries <- "none"
   message("\t\t entry_name values removed from the data: ", cat(removed_entries), "\n")
 
   reviewed <- utils::menu(c("Yes", "No"), title = "Are these differences what you expected?")
@@ -123,14 +119,15 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   message("ISRaD_extra has been updated...\n\n")
 
 
-  # Save ISRaD extra object as Excel file --------------------------------------------------
+  # Save ISRaD extra object as Excel object --------------------------------------------------
 
   message("Replacing data files in /ISRaD_data_files/database/ISRaD_database_files/ ... new version number is ", v, "\n\n")
 
-  ISRaD_extra_char <- lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
-  write_xlsx(ISRaD_extra_char, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_extra_list.xlsx"))
+  # create dir
+  dir.create(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"))
 
-  system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", "ISRaD*")))
+  # save .xlsx and .rda objects
+  ISRaD_extra_char <- lapply(ISRaD_extra, function(x) x %>% dplyr::mutate_all(as.character))
   write_xlsx(ISRaD_extra_char, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_list_", v, ".xlsx")))
   write_xlsx(ISRaD_data, path = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_list_", v, ".xlsx")))
   save(ISRaD_data, file = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_", v, ".rda")))
@@ -143,21 +140,25 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
     flattened_data <- ISRaD.flatten(database = ISRaD_data, table = tab)
     # flattened_data<-str_replace_all(flattened_data, "[\r\n]" , "")
     message("writing ISRaD_data_flat_", tab, ".csv", " ...\n", sep = "")
-    utils::write.csv(flattened_data, file.path(ISRaD_directory, "ISRaD_data_files", "database", paste0("ISRaD_data_flat_", tab, ".csv")))
     utils::write.csv(flattened_data, file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_data_flat_", tab, "_", v, ".csv")))
 
     flattened_extra <- ISRaD.flatten(database = ISRaD_extra, table = tab)
     # flattened_extra<-str_replace_all(flattened_extra, "[\r\n]" , "")
     message("writing ISRaD_extra_flat_", tab, ".csv", " ...\n", sep = "")
-    utils::write.csv(flattened_extra, file.path(ISRaD_directory, "ISRaD_data_files", "database", paste0("ISRaD_extra_flat_", tab, ".csv")))
     utils::write.csv(flattened_extra, file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files", paste0("ISRaD_extra_flat_", tab, "_", v, ".csv")))
   }
+
+  # remove old zip file
   system(paste0("rm ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files.zip")))
 
+  # create new zip file
   utils::zip(
     zipfile = file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files.zip"),
     files = list.files(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"), full.names = TRUE), flags = "-j"
   )
+
+  # remove intermediate files and directory
+  unlink(file.path(ISRaD_directory, "ISRaD_data_files", "database", "ISRaD_database_files"), recursive = TRUE)
 
   # document and check ------------------------------------------------------
 
@@ -183,6 +184,8 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
     message("Ok, the DESCRIPTION file is being updated with a new version...\n")
     if (length(new_entries) != 0) {
       message(paste(length(new_entries), " new entries have been added, so the minor version number will be updated"))
+    } else {
+      message("No new entries have been added, so the minor version number will not be updated")
     }
     DESC[3] <- paste0("Version: ",
                       substr(
