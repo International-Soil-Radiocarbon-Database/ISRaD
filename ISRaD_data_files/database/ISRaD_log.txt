@@ -1,806 +1,808 @@
 ISRaD Compilation Log 
  
- 2021-07-13 11:49:16 
+ 2021-09-12 09:41:04 
  - - - - - - - - - - - - - - - 
 
 
 Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
+no existing ISRaD database found... 
 
- 1 compiling Abbot_1996.xlsx ... passed QAQC
 
- 2 compiling Agnelli_2002.xlsx ... passed QAQC
+ 1 checking Abbot_1996.xlsx ...New template - passed QAQC
 
- 3 compiling Aiken_2014.xlsx ... passed QAQC
+ 2 checking Agnelli_2002.xlsx ...New template - passed QAQC
 
- 4 compiling Allard_1987.xlsx ... passed QAQC
+ 3 checking Aiken_2014.xlsx ...New template - passed QAQC
 
- 5 compiling Amon_2004.xlsx ... passed QAQC
+ 4 checking Allard_1987.xlsx ...New template - passed QAQC
 
- 6 compiling Anderson_1975.xlsx ... passed QAQC
+ 5 checking Amon_2004.xlsx ...New template - passed QAQC
 
- 7 compiling Andersson_2011.xlsx ... passed QAQC
+ 6 checking Anderson_1975.xlsx ...New template - passed QAQC
 
- 8 compiling Andreev_1997.xlsx ... passed QAQC
+ 7 checking Andersson_2011.xlsx ...New template - passed QAQC
 
- 9 compiling Andreev_2001.xlsx ... passed QAQC
+ 8 checking Andreev_1997.xlsx ...New template - passed QAQC
 
- 10 compiling Andreev_2004.xlsx ... passed QAQC
+ 9 checking Andreev_2001.xlsx ...New template - passed QAQC
 
- 11 compiling Angst_2018.xlsx ... passed QAQC
+ 10 checking Andreev_2004.xlsx ...New template - passed QAQC
 
- 12 compiling Anshari_2004.xlsx ... passed QAQC
+ 11 checking Angst_2018.xlsx ...New template - passed QAQC
 
- 13 compiling Anshari_2010.xlsx ... passed QAQC
+ 12 checking Anshari_2004.xlsx ...New template - passed QAQC
 
- 14 compiling Aravena_1993.xlsx ... passed QAQC
+ 13 checking Anshari_2010.xlsx ...New template - passed QAQC
 
- 15 compiling Arlen-Pouliot_2005.xlsx ... passed QAQC
+ 14 checking Aravena_1993.xlsx ...New template - passed QAQC
 
- 16 compiling Atarashi-Andoh_2012.xlsx ... passed QAQC
+ 15 checking Arlen-Pouliot_2005.xlsx ...New template - passed QAQC
 
- 17 compiling Baied_1993.xlsx ... passed QAQC
+ 16 checking Atarashi-Andoh_2012.xlsx ...New template - passed QAQC
 
- 18 compiling Baisden_2002.xlsx ... passed QAQC
+ 17 checking Baied_1993.xlsx ...New template - passed QAQC
 
- 19 compiling Baisden_2007.xlsx ... passed QAQC
+ 18 checking Baisden_2002.xlsx ...New template - passed QAQC
 
- 20 compiling Baisden_2013.xlsx ... passed QAQC
+ 19 checking Baisden_2007.xlsx ...New template - passed QAQC
 
- 21 compiling Basile_Doelsch_2005.xlsx ... passed QAQC
+ 20 checking Baisden_2013.xlsx ...New template - passed QAQC
 
- 22 compiling Bauer_2011.xlsx ... passed QAQC
+ 21 checking Basile_Doelsch_2005.xlsx ...New template - passed QAQC
 
- 23 compiling Bauters_2019.xlsx ... passed QAQC
+ 22 checking Bauer_2011.xlsx ...New template - passed QAQC
 
- 24 compiling Beaulieu-Audy_2009.xlsx ... passed QAQC
+ 23 checking Bauters_2019.xlsx ...New template - passed QAQC
 
- 25 compiling Becker-Heidmann_1986.xlsx ... passed QAQC
+ 24 checking Beaulieu-Audy_2009.xlsx ...New template - passed QAQC
 
- 26 compiling Becker-Heidmann_1989.xlsx ... passed QAQC
+ 25 checking Becker-Heidmann_1986.xlsx ...New template - passed QAQC
 
- 27 compiling Becker-Heidmann_2002.xlsx ... passed QAQC
+ 26 checking Becker-Heidmann_1989.xlsx ...New template - passed QAQC
 
- 28 compiling Behling_1995.xlsx ... passed QAQC
+ 27 checking Becker-Heidmann_2002.xlsx ...New template - passed QAQC
 
- 29 compiling Behling_1997.xlsx ... passed QAQC
+ 28 checking Behling_1995.xlsx ...New template - passed QAQC
 
- 30 compiling Beilman_2019.xlsx ... passed QAQC
+ 29 checking Behling_1997.xlsx ...New template - passed QAQC
 
- 31 compiling Bellisario_1999.xlsx ... passed QAQC
+ 30 checking Beilman_2019.xlsx ...New template - passed QAQC
 
- 32 compiling Benfield_2021.xlsx ... passed QAQC
+ 31 checking Bellisario_1999.xlsx ...New template - passed QAQC
 
- 33 compiling Benner_2004.xlsx ... passed QAQC
+ 32 checking Benfield_2021.xlsx ...New template - passed QAQC
 
- 34 compiling Berg_2004.xlsx ... passed QAQC
+ 33 checking Benner_2004.xlsx ...New template - passed QAQC
 
- 35 checking Berhe_2012.xlsx ...New data - passed QAQC
+ 34 checking Berg_2004.xlsx ...New template - passed QAQC
 
- 36 compiling Bhiry_2006.xlsx ... passed QAQC
+ 35 checking Berhe_2012.xlsx ...New template - passed QAQC
 
- 37 compiling Bhiry_2007.xlsx ... passed QAQC
+ 36 checking Bhiry_2006.xlsx ...New template - passed QAQC
 
- 38 compiling Biedenbender_2004.xlsx ... passed QAQC
+ 37 checking Bhiry_2007.xlsx ...New template - passed QAQC
 
- 39 compiling Billings_1987.xlsx ... passed QAQC
+ 38 checking Biedenbender_2004.xlsx ...New template - passed QAQC
 
- 40 checking Binkley_1999.xlsx ...New data - passed QAQC
+ 39 checking Billings_1987.xlsx ...New template - passed QAQC
 
- 41 checking Bird_2002.xlsx ...New data - passed QAQC
+ 40 checking Binkley_1999.xlsx ...New template - passed QAQC
 
- 42 compiling Blyakharchuk_1999.xlsx ... passed QAQC
+ 41 checking Bird_2002.xlsx ...New template - passed QAQC
 
- 43 compiling Blyakharchuk_2003.xlsx ... passed QAQC
+ 42 checking Blyakharchuk_1999.xlsx ...New template - passed QAQC
 
- 44 compiling Bol_1996.xlsx ... passed QAQC
+ 43 checking Blyakharchuk_2003.xlsx ...New template - passed QAQC
 
- 45 compiling Bol_2003.xlsx ... passed QAQC
+ 44 checking Bol_1996.xlsx ...New template - passed QAQC
 
- 46 compiling Bouchard_2015.xlsx ... passed QAQC
+ 45 checking Bol_2003.xlsx ...New template - passed QAQC
 
- 47 compiling Butman_2007.xlsx ... passed QAQC
+ 46 checking Bouchard_2015.xlsx ...New template - passed QAQC
 
- 48 checking Butnor_2017.xlsx ...New data - passed QAQC
+ 47 checking Butman_2007.xlsx ...New template - passed QAQC
 
- 49 compiling Camill_2009.xlsx ... passed QAQC
+ 48 checking Butnor_2017.xlsx ...New template - passed QAQC
 
- 50 checking Caner_2003.xlsx ...New data - passed QAQC
+ 49 checking Camill_2009.xlsx ...New template - passed QAQC
 
- 51 compiling Carbone_2008.xlsx ... passed QAQC
+ 50 checking Caner_2003.xlsx ...New template - passed QAQC
 
- 52 checking Carbone_2011.xlsx ...New data - passed QAQC
+ 51 checking Carbone_2008.xlsx ...New template - passed QAQC
 
- 53 compiling Carbone_2016.xlsx ... passed QAQC
+ 52 checking Carbone_2011.xlsx ...New template - passed QAQC
 
- 54 compiling Castanha_2012.xlsx ... passed QAQC
+ 53 checking Carbone_2016.xlsx ...New template - passed QAQC
 
- 55 compiling Chabbi_2009.xlsx ... passed QAQC
+ 54 checking Castanha_2012.xlsx ...New template - passed QAQC
 
- 56 compiling Charman_1994.xlsx ... passed QAQC
+ 55 checking Chabbi_2009.xlsx ...New template - passed QAQC
 
- 57 compiling Chasar_2000.xlsx ... passed QAQC
+ 56 checking Charman_1994.xlsx ...New template - passed QAQC
 
- 58 compiling Chen_2002.xlsx ... passed QAQC
+ 57 checking Chasar_2000.xlsx ...New template - passed QAQC
 
- 59 checking Chen_2021.xlsx ...New data - passed QAQC
+ 58 checking Chen_2002.xlsx ...New template - passed QAQC
 
- 60 checking Cherkinsky_1996.xlsx ...New data - passed QAQC
+ 59 checking Chen_2021.xlsx ...New template - passed QAQC
 
- 61 compiling Chiti_2009.xlsx ... passed QAQC
+ 60 checking Cherkinsky_1996.xlsx ...New template - passed QAQC
 
- 62 checking Chiti_2010.xlsx ...New data - passed QAQC
+ 61 checking Chiti_2009.xlsx ...New template - passed QAQC
 
- 63 checking Chiti_2016.xlsx ...New data - passed QAQC
+ 62 checking Chiti_2010.xlsx ...New template - passed QAQC
 
- 64 checking Chiti_2018a.xlsx ...New data - passed QAQC
+ 63 checking Chiti_2016.xlsx ...New template - passed QAQC
 
- 65 checking Chiti_2018b.xlsx ...New data - passed QAQC
+ 64 checking Chiti_2018a.xlsx ...New template - passed QAQC
 
- 66 checking Chorover_2004.xlsx ...New data - passed QAQC
+ 65 checking Chiti_2018b.xlsx ...New template - passed QAQC
 
- 67 checking Clark_2002.xlsx ...New data - passed QAQC
+ 66 checking Chorover_2004.xlsx ...New template - passed QAQC
 
- 68 compiling Cobb_2016.xlsx ... passed QAQC
+ 67 checking Clark_2002.xlsx ...New template - passed QAQC
 
- 69 compiling Cole_2015.xlsx ... passed QAQC
+ 68 checking Cobb_2016.xlsx ...New template - passed QAQC
 
- 70 compiling Conen_2008.xlsx ... passed QAQC
+ 69 checking Cole_2015.xlsx ...New template - passed QAQC
 
- 71 compiling Cook_2018.xlsx ... passed QAQC
+ 70 checking Conen_2008.xlsx ...New template - passed QAQC
 
- 72 compiling Cooper_2017.xlsx ... passed QAQC
+ 71 checking Cook_2018.xlsx ...New template - passed QAQC
 
- 73 checking Crews_1995.xlsx ...New data - passed QAQC
+ 72 checking Cooper_2017.xlsx ...New template - passed QAQC
 
- 74 checking Crow_2015.xlsx ...New data - passed QAQC
+ 73 checking Crews_1995.xlsx ...New template - passed QAQC
 
- 75 compiling Cusack_2010.xlsx ... passed QAQC
+ 74 checking Crow_2015.xlsx ...New template - passed QAQC
 
- 76 checking Cusack_2012.xlsx ...New data - passed QAQC
+ 75 checking Cusack_2010.xlsx ...New template - passed QAQC
 
- 77 checking Cusack_2013.xlsx ...New data - passed QAQC
+ 76 checking Cusack_2012.xlsx ...New template - passed QAQC
 
- 78 checking Czimczik_2005.xlsx ...New data - passed QAQC
+ 77 checking Cusack_2013.xlsx ...New template - passed QAQC
 
- 79 checking Czimczik_2007.xlsx ...New data - passed QAQC
+ 78 checking Czimczik_2005.xlsx ...New template - passed QAQC
 
- 80 checking Czimczik_2010.xlsx ...New data - passed QAQC
+ 79 checking Czimczik_2007.xlsx ...New template - passed QAQC
 
- 81 compiling Czimczik_Thesis_2003.xlsx ... passed QAQC
+ 80 checking Czimczik_2010.xlsx ...New template - passed QAQC
 
- 82 compiling Czimczik_Unpublished.xlsx ... passed QAQC
+ 81 checking Czimczik_Thesis_2003.xlsx ...New template - passed QAQC
 
- 83 compiling Dargie_2017.xlsx ... passed QAQC
+ 82 checking Czimczik_Unpublished.xlsx ...New template - passed QAQC
 
- 84 compiling de Klerket_2011.xlsx ... passed QAQC
+ 83 checking Dargie_2017.xlsx ...New template - passed QAQC
 
- 85 checking De_Feudis_2019.xlsx ...New data - passed QAQC
+ 84 checking de Klerket_2011.xlsx ...New template - passed QAQC
 
- 86 compiling de_Freitas_2001.xlsx ... passed QAQC
+ 85 checking De_Feudis_2019.xlsx ...New template - passed QAQC
 
- 87 checking Dejardins_1994.xlsx ...New data - passed QAQC
+ 86 checking de_Freitas_2001.xlsx ...New template - passed QAQC
 
- 88 compiling Diemont_1987.xlsx ... passed QAQC
+ 87 checking Dejardins_1994.xlsx ...New template - passed QAQC
 
- 89 checking Doetterl_2012.xlsx ...New data - passed QAQC
+ 88 checking Diemont_1987.xlsx ...New template - passed QAQC
 
- 90 checking Doetterl_2015.xlsx ...New data - passed QAQC
+ 89 checking Doetterl_2012.xlsx ...New template - passed QAQC
 
- 91 checking Doetterl_2021_Bukombe_2021_Reichenbach_2021.xlsx ...New data - passed QAQC
+ 90 checking Doetterl_2015.xlsx ...New template - passed QAQC
 
- 92 compiling Dommain_2015.xlsx ... passed QAQC
+ 91 checking Doetterl_2021_Bukombe_2021_Reichenbach_2021.xlsx ...New template - passed QAQC
 
- 93 compiling Dorr_1980.xlsx ... passed QAQC
+ 92 checking Dommain_2015.xlsx ...New template - passed QAQC
 
- 94 checking Dorr_1986.xlsx ...New data - passed QAQC
+ 93 checking Dorr_1980.xlsx ...New template - passed QAQC
 
- 95 compiling Dorr_1989.xlsx ... passed QAQC
+ 94 checking Dorr_1986.xlsx ...New template - passed QAQC
 
- 96 compiling Drake_2019.xlsx ... passed QAQC
+ 95 checking Dorr_1989.xlsx ...New template - passed QAQC
 
- 97 compiling Dredge_2003.xlsx ... passed QAQC
+ 96 checking Drake_2019.xlsx ...New template - passed QAQC
 
- 98 checking Duemig_2008.xlsx ...New data - passed QAQC
+ 97 checking Dredge_2003.xlsx ...New template - passed QAQC
 
- 99 checking Dutta_2006.xlsx ...New data - passed QAQC
+ 98 checking Duemig_2008.xlsx ...New template - passed QAQC
 
- 100 compiling Elder_2018.xlsx ... passed QAQC
+ 99 checking Dutta_2006.xlsx ...New template - passed QAQC
 
- 101 compiling Elias_1982.xlsx ... passed QAQC
+ 100 checking Elder_2018.xlsx ...New template - passed QAQC
 
- 102 compiling Ellis_2004.xlsx ... passed QAQC
+ 101 checking Elias_1982.xlsx ...New template - passed QAQC
 
- 103 compiling Ellis_2006.xlsx ... passed QAQC
+ 102 checking Ellis_2004.xlsx ...New template - passed QAQC
 
- 104 compiling Elzein_1995.xlsx ... passed QAQC
+ 103 checking Ellis_2006.xlsx ...New template - passed QAQC
 
- 105 compiling Estop-Aragonés_2018.xlsx ... passed QAQC
+ 104 checking Elzein_1995.xlsx ...New template - passed QAQC
 
- 106 checking Eusterhues_2003.xlsx ...New data - passed QAQC
+ 105 checking Estop-Aragonés_2018.xlsx ...New template - passed QAQC
 
- 107 compiling Ewing_2006.xlsx ... passed QAQC
+ 106 checking Eusterhues_2003.xlsx ...New template - passed QAQC
 
- 108 checking Favilli_2008.xlsx ...New data - passed QAQC
+ 107 checking Ewing_2006.xlsx ...New template - passed QAQC
 
- 109 compiling Fekete_2020.xlsx ... passed QAQC
+ 108 checking Favilli_2008.xlsx ...New template - passed QAQC
 
- 110 checking Fernandez_1993.xlsx ...New data - passed QAQC
+ 109 checking Fekete_2020.xlsx ...New template - passed QAQC
 
- 111 checking Fierer_2005.xlsx ...New data - passed QAQC
+ 110 checking Fernandez_1993.xlsx ...New template - passed QAQC
 
- 112 compiling Fillion_2014.xlsx ... passed QAQC
+ 111 checking Fierer_2005.xlsx ...New template - passed QAQC
 
- 113 checking Finstad_2020.xlsx ...New data - passed QAQC
+ 112 checking Fillion_2014.xlsx ...New template - passed QAQC
 
- 114 checking Fontaine_2007.xlsx ...New data - passed QAQC
+ 113 checking Finstad_2020.xlsx ...New template - passed QAQC
 
- 115 compiling Gandois_2014.xlsx ... passed QAQC
+ 114 checking Fontaine_2007.xlsx ...New template - passed QAQC
 
- 116 compiling Gandois_2016.xlsx ... passed QAQC
+ 115 checking Gandois_2014.xlsx ...New template - passed QAQC
 
- 117 compiling Garneau_1992.xlsx ... passed QAQC
+ 116 checking Gandois_2016.xlsx ...New template - passed QAQC
 
- 118 compiling Garneau_2014.xlsx ... passed QAQC
+ 117 checking Garneau_1992.xlsx ...New template - passed QAQC
 
- 119 checking Gaudinski_2000.xlsx ...New data - passed QAQC
+ 118 checking Garneau_2014.xlsx ...New template - passed QAQC
 
- 120 checking Gaudinski_2001.xlsx ...New data - passed QAQC
+ 119 checking Gaudinski_2000.xlsx ...New template - passed QAQC
 
- 121 checking Gentsch_2018.xlsx ...New data - passed QAQC
+ 120 checking Gaudinski_2001.xlsx ...New template - passed QAQC
 
- 122 checking Giardina_2014.xlsx ...New data - passed QAQC
+ 121 checking Gentsch_2018.xlsx ...New template - passed QAQC
 
- 123 compiling Gillson_2004.xlsx ... passed QAQC
+ 122 checking Giardina_2014.xlsx ...New template - passed QAQC
 
- 124 compiling Godin_2014.xlsx ... passed QAQC
+ 123 checking Gillson_2004.xlsx ...New template - passed QAQC
 
- 125 checking Goh_1976.xlsx ...New data - passed QAQC
+ 124 checking Godin_2014.xlsx ...New template - passed QAQC
 
- 126 checking Goh_1977.xlsx ...New data - passed QAQC
+ 125 checking Goh_1976.xlsx ...New template - passed QAQC
 
- 127 checking Gonzalez-Dominguez_2019.xlsx ...New data - passed QAQC
+ 126 checking Goh_1977.xlsx ...New template - passed QAQC
 
- 128 checking Guillet_1988.xlsx ...New data - passed QAQC
+ 127 checking Gonzalez-Dominguez_2019.xlsx ...New template - passed QAQC
 
- 129 compiling Guillet_2001.xlsx ... passed QAQC
+ 128 checking Guillet_1988.xlsx ...New template - passed QAQC
 
- 130 compiling Guillet_2010.xlsx ... passed QAQC
+ 129 checking Guillet_2001.xlsx ...New template - passed QAQC
 
- 131 compiling Guo_2003.xlsx ... passed QAQC
+ 130 checking Guillet_2010.xlsx ...New template - passed QAQC
 
- 132 compiling Guo_2006.xlsx ... passed QAQC
+ 131 checking Guo_2003.xlsx ...New template - passed QAQC
 
- 133 compiling Guo_2007.xlsx ... passed QAQC
+ 132 checking Guo_2006.xlsx ...New template - passed QAQC
 
- 134 checking Hall_2015.xlsx ...New data - passed QAQC
+ 133 checking Guo_2007.xlsx ...New template - passed QAQC
 
- 135 checking Harden_1987.xlsx ...New data - passed QAQC
+ 134 checking Hall_2015.xlsx ...New template - passed QAQC
 
- 136 checking Harden_1999.xlsx ...New data - passed QAQC
+ 135 checking Harden_1987.xlsx ...New template - passed QAQC
 
- 137 checking Harden_2002.xlsx ...New data - passed QAQC
+ 136 checking Harden_1999.xlsx ...New template - passed QAQC
 
- 138 checking Hardie_2009.xlsx ...New data - passed QAQC
+ 137 checking Harden_2002.xlsx ...New template - passed QAQC
 
- 139 checking Hardie_2011.xlsx ...New data - passed QAQC
+ 138 checking Hardie_2009.xlsx ...New template - passed QAQC
 
- 140 compiling Harkness_1986.xlsx ... passed QAQC
+ 139 checking Hardie_2011.xlsx ...New template - passed QAQC
 
- 141 compiling Harris_1994.xlsx ... passed QAQC
+ 140 checking Harkness_1986.xlsx ...New template - passed QAQC
 
- 142 compiling Harrison_1993.xlsx ... passed QAQC
+ 141 checking Harris_1994.xlsx ...New template - passed QAQC
 
- 143 checking Hatton_2012.xlsx ...New data - passed QAQC
+ 142 checking Harrison_1993.xlsx ...New template - passed QAQC
 
- 144 compiling Hayes_2011.xlsx ... passed QAQC
+ 143 checking Hatton_2012.xlsx ...New template - passed QAQC
 
- 145 checking Heckman_2010.xlsx ...New data - passed QAQC
+ 144 checking Hayes_2011.xlsx ...New template - passed QAQC
 
- 146 checking Heckman_2018.xlsx ...New data - passed QAQC
+ 145 checking Heckman_2010.xlsx ...New template - passed QAQC
 
- 147 compiling Hedgpeth_2021.xlsx ... passed QAQC
+ 146 checking Heckman_2018.xlsx ...New template - passed QAQC
 
- 148 checking Hicks-Pries_2012.xlsx ...New data - passed QAQC
+ 147 checking Hedgpeth_2021.xlsx ...New template - passed QAQC
 
- 149 checking Hicks-Pries_2013.xlsx ...New data - passed QAQC
+ 148 checking Hicks-Pries_2012.xlsx ...New template - passed QAQC
 
- 150 checking Hicks-Pries_2015.xlsx ...New data - passed QAQC
+ 149 checking Hicks-Pries_2013.xlsx ...New template - passed QAQC
 
- 151 checking Hicks-Pries_2016.xlsx ...New data - passed QAQC
+ 150 checking Hicks-Pries_2015.xlsx ...New template - passed QAQC
 
- 152 checking Hicks-Pries_2017.xlsx ...New data - passed QAQC
+ 151 checking Hicks-Pries_2016.xlsx ...New template - passed QAQC
 
- 153 checking Hicks-Pries_2017b.xlsx ...New data - passed QAQC
+ 152 checking Hicks-Pries_2017.xlsx ...New template - passed QAQC
 
- 154 compiling Hilton_2015.xlsx ... passed QAQC
+ 153 checking Hicks-Pries_2017b.xlsx ...New template - passed QAQC
 
- 155 checking Holden_2019.xlsx ...New data - passed QAQC
+ 154 checking Hilton_2015.xlsx ...New template - passed QAQC
 
- 156 compiling Holmquist_2014.xlsx ... passed QAQC
+ 155 checking Holden_2019.xlsx ...New template - passed QAQC
 
- 157 compiling Hood_2009.xlsx ... passed QAQC
+ 156 checking Holmquist_2014.xlsx ...New template - passed QAQC
 
- 158 compiling Hope_2005.xlsx ... passed QAQC
+ 157 checking Hood_2009.xlsx ...New template - passed QAQC
 
- 159 compiling Horwath_2008.xlsx ... passed QAQC
+ 158 checking Hope_2005.xlsx ...New template - passed QAQC
 
- 160 compiling Horwath_Thesis_2007.xlsx ... passed QAQC
+ 159 checking Horwath_2008.xlsx ...New template - passed QAQC
 
- 161 compiling Hribljan_2016.xlsx ... passed QAQC
+ 160 checking Horwath_Thesis_2007.xlsx ...New template - passed QAQC
 
- 162 checking Hsieh_1996.xlsx ...New data - passed QAQC
+ 161 checking Hribljan_2016.xlsx ...New template - passed QAQC
 
- 163 compiling Huang_1996.xlsx ... passed QAQC
+ 162 checking Hsieh_1996.xlsx ...New template - passed QAQC
 
- 164 compiling Huang_1999.xlsx ... passed QAQC
+ 163 checking Huang_1996.xlsx ...New template - passed QAQC
 
- 165 compiling Hugelius_2012, Routh_2014.xlsx ... passed QAQC
+ 164 checking Huang_1999.xlsx ...New template - passed QAQC
 
- 166 compiling Hunt_2013.xlsx ... passed QAQC
+ 165 checking Hugelius_2012, Routh_2014.xlsx ...New template - passed QAQC
 
- 167 checking James_2019.xlsx ...New data - passed QAQC
+ 166 checking Hunt_2013.xlsx ...New template - passed QAQC
 
- 168 compiling Jankovská_2006.xlsx ... passed QAQC
+ 167 checking James_2019.xlsx ...New template - passed QAQC
 
- 169 compiling Jasinski_1999.xlsx ... passed QAQC
+ 168 checking Jankovská_2006.xlsx ...New template - passed QAQC
 
- 170 compiling Johnston_2014.xlsx ... passed QAQC
+ 169 checking Jasinski_1999.xlsx ...New template - passed QAQC
 
- 171 compiling Jones_2009.xlsx ... passed QAQC
+ 170 checking Johnston_2014.xlsx ...New template - passed QAQC
 
- 172 compiling Jones_2012.xlsx ... passed QAQC
+ 171 checking Jones_2009.xlsx ...New template - passed QAQC
 
- 173 compiling Jones_2013.xlsx ... passed QAQC
+ 172 checking Jones_2012.xlsx ...New template - passed QAQC
 
- 174 compiling Jones_2014.xlsx ... passed QAQC
+ 173 checking Jones_2013.xlsx ...New template - passed QAQC
 
- 175 compiling Kaiser_2007.xlsx ... passed QAQC
+ 174 checking Jones_2014.xlsx ...New template - passed QAQC
 
- 176 checking Karhu_2010.xlsx ...New data - passed QAQC
+ 175 checking Kaiser_2007.xlsx ...New template - passed QAQC
 
- 177 compiling Katsuno_2010.xlsx ... passed QAQC
+ 176 checking Karhu_2010.xlsx ...New template - passed QAQC
 
- 178 checking Kelly_2017_Swindles_2018.xlsx ...New data - passed QAQC
+ 177 checking Katsuno_2010.xlsx ...New template - passed QAQC
 
- 179 compiling Kelly_2018.xlsx ... passed QAQC
+ 178 checking Kelly_2017_Swindles_2018.xlsx ...New template - passed QAQC
 
- 180 compiling Kelly_2020.xlsx ... passed QAQC
+ 179 checking Kelly_2018.xlsx ...New template - passed QAQC
 
- 181 compiling Kettles_2000.xlsx ... passed QAQC
+ 180 checking Kelly_2020.xlsx ...New template - passed QAQC
 
- 182 compiling Kettles_2003.xlsx ... passed QAQC
+ 181 checking Kettles_2000.xlsx ...New template - passed QAQC
 
- 183 checking Khomo_2017.xlsx ...New data - passed QAQC
+ 182 checking Kettles_2003.xlsx ...New template - passed QAQC
 
- 184 compiling Klapstein_2014.xlsx ... passed QAQC
+ 183 checking Khomo_2017.xlsx ...New template - passed QAQC
 
- 185 compiling Kleber_2005.xlsx ... passed QAQC
+ 184 checking Klapstein_2014.xlsx ...New template - passed QAQC
 
- 186 checking Kleber_2011.xlsx ...New data - passed QAQC
+ 185 checking Kleber_2005.xlsx ...New template - passed QAQC
 
- 187 compiling Klein_2013.xlsx ... passed QAQC
+ 186 checking Kleber_2011.xlsx ...New template - passed QAQC
 
- 188 compiling Koarashi_2005.xlsx ... passed QAQC
+ 187 checking Klein_2013.xlsx ...New template - passed QAQC
 
- 189 checking Koarashi_2009.xlsx ...New data - passed QAQC
+ 188 checking Koarashi_2005.xlsx ...New template - passed QAQC
 
- 190 compiling Kogel-Knabner_2008.xlsx ... passed QAQC
+ 189 checking Koarashi_2009.xlsx ...New template - passed QAQC
 
- 191 compiling Kokfelt_2010.xlsx ... passed QAQC
+ 190 checking Kogel-Knabner_2008.xlsx ...New template - passed QAQC
 
- 192 checking Kondo_2010.xlsx ...New data - passed QAQC
+ 191 checking Kokfelt_2010.xlsx ...New template - passed QAQC
 
- 193 checking Kovda_2001.xlsx ...New data - passed QAQC
+ 192 checking Kondo_2010.xlsx ...New template - passed QAQC
 
- 194 checking Kramer_2012.xlsx ...New data - passed QAQC
+ 193 checking Kovda_2001.xlsx ...New template - passed QAQC
 
- 195 checking Kramer_2016.xlsx ...New data - passed QAQC
+ 194 checking Kramer_2012.xlsx ...New template - passed QAQC
 
- 196 compiling Kremenetski_1997.xlsx ... passed QAQC
+ 195 checking Kramer_2016.xlsx ...New template - passed QAQC
 
- 197 compiling Krull_2003.xlsx ... passed QAQC
+ 196 checking Kremenetski_1997.xlsx ...New template - passed QAQC
 
- 198 compiling Krull_2005.xlsx ... passed QAQC
+ 197 checking Krull_2003.xlsx ...New template - passed QAQC
 
- 199 compiling Krull_2006.xlsx ... passed QAQC
+ 198 checking Krull_2005.xlsx ...New template - passed QAQC
 
- 200 checking Kuhnen_2019.xlsx ...New data - passed QAQC
+ 199 checking Krull_2006.xlsx ...New template - passed QAQC
 
- 201 compiling Kuhry_1996.xlsx ... passed QAQC
+ 200 checking Kuhnen_2019.xlsx ...New template - passed QAQC
 
- 202 compiling Kuhry_1997.xlsx ... passed QAQC
+ 201 checking Kuhry_1996.xlsx ...New template - passed QAQC
 
- 203 compiling Kuhry_1998.xlsx ... passed QAQC
+ 202 checking Kuhry_1997.xlsx ...New template - passed QAQC
 
- 204 compiling Kuhry_2008.xlsx ... passed QAQC
+ 203 checking Kuhry_1998.xlsx ...New template - passed QAQC
 
- 205 compiling Kultti_2004.xlsx ... passed QAQC
+ 204 checking Kuhry_2008.xlsx ...New template - passed QAQC
 
- 206 checking Kwon_2019.xlsx ...New data - passed QAQC
+ 205 checking Kultti_2004.xlsx ...New template - passed QAQC
 
- 207 compiling Ladyman_1980.xlsx ... passed QAQC
+ 206 checking Kwon_2019.xlsx ...New template - passed QAQC
 
- 208 compiling LaFarge-England_1991.xlsx ... passed QAQC
+ 207 checking Ladyman_1980.xlsx ...New template - passed QAQC
 
- 209 checking Lähteenoja_2009.xlsx ...New data - passed QAQC
+ 208 checking LaFarge-England_1991.xlsx ...New template - passed QAQC
 
- 210 checking Lähteenoja_2012_Lähteenoja_unpublished.xlsx ...New data - passed QAQC
+ 209 checking Lähteenoja_2009.xlsx ...New template - passed QAQC
 
- 211 compiling Lamarre_2012.xlsx ... passed QAQC
+ 210 checking Lähteenoja_2012_Lähteenoja_unpublished.xlsx ...New template - passed QAQC
 
- 212 compiling Laskar_2012.xlsx ... passed QAQC
+ 211 checking Lamarre_2012.xlsx ...New template - passed QAQC
 
- 213 checking Lassey_1996.xlsx ...New data - passed QAQC
+ 212 checking Laskar_2012.xlsx ...New template - passed QAQC
 
- 214 compiling Lavoie_1995.xlsx ... passed QAQC
+ 213 checking Lassey_1996.xlsx ...New template - passed QAQC
 
- 215 checking Lavoie_2011.xlsx ...New data - passed QAQC
+ 214 checking Lavoie_1995.xlsx ...New template - passed QAQC
 
- 216 checking Lawrence_2015.xlsx ...New data - passed QAQC
+ 215 checking Lavoie_2011.xlsx ...New template - passed QAQC
 
- 217 compiling Leavitt_2007.xlsx ... passed QAQC
+ 216 checking Lawrence_2015.xlsx ...New template - passed QAQC
 
- 218 compiling Ledru_2001.xlsx ... passed QAQC
+ 217 checking Leavitt_2007.xlsx ...New template - passed QAQC
 
- 219 compiling Lee_2012.xlsx ... passed QAQC
+ 218 checking Ledru_2001.xlsx ...New template - passed QAQC
 
- 220 checking Leifeld_2009.xlsx ...New data - passed QAQC
+ 219 checking Lee_2012.xlsx ...New template - passed QAQC
 
- 221 checking Leith_2014.xlsx ...New data - passed QAQC
+ 220 checking Leifeld_2009.xlsx ...New template - passed QAQC
 
- 222 checking Lemke_2006.xlsx ...New data - passed QAQC
+ 221 checking Leith_2014.xlsx ...New template - passed QAQC
 
- 223 checking Li_2010.xlsx ...New data - passed QAQC
+ 222 checking Lemke_2006.xlsx ...New template - passed QAQC
 
- 224 compiling Liu_2006.xlsx ... passed QAQC
+ 223 checking Li_2010.xlsx ...New template - passed QAQC
 
- 225 compiling Loisel_2010.xlsx ... passed QAQC
+ 224 checking Liu_2006.xlsx ...New template - passed QAQC
 
- 226 compiling Loisel_2014.xlsx ... passed QAQC
+ 225 checking Loisel_2010.xlsx ...New template - passed QAQC
 
- 227 compiling Lupascu_2013.xlsx ... passed QAQC
+ 226 checking Loisel_2014.xlsx ...New template - passed QAQC
 
- 228 checking Lupascu_2018.xlsx ...New data - passed QAQC
+ 227 checking Lupascu_2013.xlsx ...New template - passed QAQC
 
- 229 checking Lupascu_2020.xlsx ...New data - passed QAQC
+ 228 checking Lupascu_2018.xlsx ...New template - passed QAQC
 
- 230 checking Lybrand_2017.xlsx ...New data - passed QAQC
+ 229 checking Lupascu_2020.xlsx ...New template - passed QAQC
 
- 231 compiling MacDonald_1983.xlsx ... passed QAQC
+ 230 checking Lybrand_2017.xlsx ...New template - passed QAQC
 
- 232 checking Manies_2004.xlsx ...New data - passed QAQC
+ 231 checking MacDonald_1983.xlsx ...New template - passed QAQC
 
- 233 compiling Mann_2015.xlsx ... passed QAQC
+ 232 checking Manies_2004.xlsx ...New template - passed QAQC
 
- 234 checking Marin-Spiotta_2008.xlsx ...New data - passed QAQC
+ 233 checking Mann_2015.xlsx ...New template - passed QAQC
 
- 235 checking Marin-Spiotta_2011.xlsx ...New data - passed QAQC
+ 234 checking Marin-Spiotta_2008.xlsx ...New template - passed QAQC
 
- 236 checking Mariotti_1994.xlsx ...New data - passed QAQC
+ 235 checking Marin-Spiotta_2011.xlsx ...New template - passed QAQC
 
- 237 compiling Marohnic_2020.xlsx ... passed QAQC
+ 236 checking Mariotti_1994.xlsx ...New template - passed QAQC
 
- 238 checking Martel_1974.xlsx ...New data - passed QAQC
+ 237 checking Marohnic_2020.xlsx ...New template - passed QAQC
 
- 239 compiling Martens_1992.xlsx ... passed QAQC
+ 238 checking Martel_1974.xlsx ...New template - passed QAQC
 
- 240 checking Masiello_2004.xlsx ...New data - passed QAQC
+ 239 checking Martens_1992.xlsx ...New template - passed QAQC
 
- 241 compiling Massa_2021.xlsx ... passed QAQC
+ 240 checking Masiello_2004.xlsx ...New template - passed QAQC
 
- 242 checking Mayer_2018.xlsx ...New data - passed QAQC
+ 241 checking Massa_2021.xlsx ...New template - passed QAQC
 
- 243 compiling McClaran_2000.xlsx ... passed QAQC
+ 242 checking Mayer_2018.xlsx ...New template - passed QAQC
 
- 244 compiling McClung_de_Tapia_2005.xlsx ... passed QAQC
+ 243 checking McClaran_2000.xlsx ...New template - passed QAQC
 
- 245 checking McFarlane_2013_TrumboreUnp_inc.xlsx ...New data - passed QAQC
+ 244 checking McClung_de_Tapia_2005.xlsx ...New template - passed QAQC
 
- 246 checking McFarlane_2018.xlsx ...New data - passed QAQC
+ 245 checking McFarlane_2013_TrumboreUnp_inc.xlsx ...New template - passed QAQC
 
- 247 checking Meyer_2012.xlsx ...New data - passed QAQC
+ 246 checking McFarlane_2018.xlsx ...New template - passed QAQC
 
- 248 checking Mikutta_2009.xlsx ...New data - passed QAQC
+ 247 checking Meyer_2012.xlsx ...New template - passed QAQC
 
- 249 compiling Milton_1998.xlsx ... passed QAQC
+ 248 checking Mikutta_2009.xlsx ...New template - passed QAQC
 
- 250 checking Monreal_1997.xlsx ...New data - passed QAQC
+ 249 checking Milton_1998.xlsx ...New template - passed QAQC
 
- 251 compiling Morris_unpub.xlsx ... passed QAQC
+ 250 checking Monreal_1997.xlsx ...New template - passed QAQC
 
- 252 checking Mueller_2014.xlsx ...New data - passed QAQC
+ 251 checking Morris_unpub.xlsx ...New template - passed QAQC
 
- 253 compiling Muhr_2009.xlsx ... passed QAQC
+ 252 checking Mueller_2014.xlsx ...New template - passed QAQC
 
- 254 checking Myers-Smith_2008.xlsx ...New data - passed QAQC
+ 253 checking Muhr_2009.xlsx ...New template - passed QAQC
 
- 255 checking Nagy_2017.xlsx ...New data - passed QAQC
+ 254 checking Myers-Smith_2008.xlsx ...New template - passed QAQC
 
- 256 compiling Nakagawa_2002.xlsx ... passed QAQC
+ 255 checking Nagy_2017.xlsx ...New template - passed QAQC
 
- 257 compiling Natali_2011.xlsx ... passed QAQC
+ 256 checking Nakagawa_2002.xlsx ...New template - passed QAQC
 
- 258 compiling Natali_2015.xlsx ... passed QAQC
+ 257 checking Natali_2011.xlsx ...New template - passed QAQC
 
- 259 compiling Nave_2017.xlsx ... passed QAQC
+ 258 checking Natali_2015.xlsx ...New template - passed QAQC
 
- 260 compiling Neff_2006.xlsx ... passed QAQC
+ 259 checking Nave_2017.xlsx ...New template - passed QAQC
 
- 261 compiling Negandhi_2013.xlsx ... passed QAQC
+ 260 checking Neff_2006.xlsx ...New template - passed QAQC
 
- 262 checking Neuzil_1993_Diemont_1987(b).xlsx ...New data - passed QAQC
+ 261 checking Negandhi_2013.xlsx ...New template - passed QAQC
 
- 263 compiling Nichols_1967.xlsx ... passed QAQC
+ 262 checking Neuzil_1993_Diemont_1987(b).xlsx ...New template - passed QAQC
 
- 264 compiling Notohadiprawiro_2006.xlsx ... passed QAQC
+ 263 checking Nichols_1967.xlsx ...New template - passed QAQC
 
- 265 checking Nowinski_2009.xlsx ...New data - passed QAQC
+ 264 checking Notohadiprawiro_2006.xlsx ...New template - passed QAQC
 
- 266 compiling Nowinski_2010.xlsx ... passed QAQC
+ 265 checking Nowinski_2009.xlsx ...New template - passed QAQC
 
- 267 compiling O-Donnell_2014.xlsx ... passed QAQC
+ 266 checking Nowinski_2010.xlsx ...New template - passed QAQC
 
- 268 checking O'Donnell_2011.xlsx ...New data - passed QAQC
+ 267 checking O-Donnell_2014.xlsx ...New template - passed QAQC
 
- 269 compiling O'Donnell_2012.xlsx ... passed QAQC
+ 268 checking O'Donnell_2011.xlsx ...New template - passed QAQC
 
- 270 checking OBrien_1986.xlsx ...New data - passed QAQC
+ 269 checking O'Donnell_2012.xlsx ...New template - passed QAQC
 
- 271 checking OBrien_2013.xlsx ...New data - passed QAQC
+ 270 checking OBrien_1986.xlsx ...New template - passed QAQC
 
- 272 checking Ohno_2017.xlsx ...New data - passed QAQC
+ 271 checking OBrien_2013.xlsx ...New template - passed QAQC
 
- 273 compiling Oksanen_2001.xlsx ... passed QAQC
+ 272 checking Ohno_2017.xlsx ...New template - passed QAQC
 
- 274 compiling Oksanen_2002.xlsx ... passed QAQC
+ 273 checking Oksanen_2001.xlsx ...New template - passed QAQC
 
- 275 compiling Oksanen_2003.xlsx ... passed QAQC
+ 274 checking Oksanen_2002.xlsx ...New template - passed QAQC
 
- 276 compiling Oksanen_2006.xlsx ... passed QAQC
+ 275 checking Oksanen_2003.xlsx ...New template - passed QAQC
 
- 277 compiling Ouzilleau Samson_2010.xlsx ... passed QAQC
+ 276 checking Oksanen_2006.xlsx ...New template - passed QAQC
 
- 278 compiling Ovenden_1982.xlsx ... passed QAQC
+ 277 checking Ouzilleau Samson_2010.xlsx ...New template - passed QAQC
 
- 279 checking Page_2004.xlsx ...New data - passed QAQC
+ 278 checking Ovenden_1982.xlsx ...New template - passed QAQC
 
- 280 compiling Panova_2010.xlsx ... passed QAQC
+ 279 checking Page_2004.xlsx ...New template - passed QAQC
 
- 281 checking Paul_1997.xlsx ...New data - passed QAQC
+ 280 checking Panova_2010.xlsx ...New template - passed QAQC
 
- 282 checking Paul_2001.xlsx ...New data - passed QAQC
+ 281 checking Paul_1997.xlsx ...New template - passed QAQC
 
- 283 compiling Payette_1988.xlsx ... passed QAQC
+ 282 checking Paul_2001.xlsx ...New template - passed QAQC
 
- 284 compiling Pedron_2019.xlsx ... passed QAQC
+ 283 checking Payette_1988.xlsx ...New template - passed QAQC
 
- 285 checking Pegoraro_2019.xlsx ...New data - passed QAQC
+ 284 checking Pedron_2019.xlsx ...New template - passed QAQC
 
- 286 checking Pegoraro_2021.xlsx ...New data - passed QAQC
+ 285 checking Pegoraro_2019.xlsx ...New template - passed QAQC
 
- 287 checking Perez_2006.xlsx ...New data - passed QAQC
+ 286 checking Pegoraro_2021.xlsx ...New template - passed QAQC
 
- 288 checking Pessenda_1996.xlsx ...New data - passed QAQC
+ 287 checking Perez_2006.xlsx ...New template - passed QAQC
 
- 289 checking Pessenda_1997.xlsx ...New data - passed QAQC
+ 288 checking Pessenda_1996.xlsx ...New template - passed QAQC
 
- 290 checking Pessenda_2001.xlsx ...New data - passed QAQC
+ 289 checking Pessenda_1997.xlsx ...New template - passed QAQC
 
- 291 compiling Peteet_1998.xlsx ... passed QAQC
+ 290 checking Pessenda_2001.xlsx ...New template - passed QAQC
 
- 292 compiling Phillips_1996.xlsx ... passed QAQC
+ 291 checking Peteet_1998.xlsx ...New template - passed QAQC
 
- 293 checking Phillips_2013.xlsx ...New data - passed QAQC
+ 292 checking Phillips_1996.xlsx ...New template - passed QAQC
 
- 294 compiling Posada_2011.xlsx ... passed QAQC
+ 293 checking Phillips_2013.xlsx ...New template - passed QAQC
 
- 295 checking Quideau_2001.xlsx ...New data - passed QAQC
+ 294 checking Posada_2011.xlsx ...New template - passed QAQC
 
- 296 checking Rabbi_2013.xlsx ...New data - passed QAQC
+ 295 checking Quideau_2001.xlsx ...New template - passed QAQC
 
- 297 checking Rasmussen_2005.xlsx ...New data - passed QAQC
+ 296 checking Rabbi_2013.xlsx ...New template - passed QAQC
 
- 298 checking Rasmussen_2010.xlsx ...New data - passed QAQC
+ 297 checking Rasmussen_2005.xlsx ...New template - passed QAQC
 
- 299 checking Rasmussen_2018.xlsx ...New data - passed QAQC
+ 298 checking Rasmussen_2010.xlsx ...New template - passed QAQC
 
- 300 checking Resh_2002.xlsx ...New data - passed QAQC
+ 299 checking Rasmussen_2018.xlsx ...New template - passed QAQC
 
- 301 checking Rethemeyer_2005.xlsx ...New data - passed QAQC
+ 300 checking Resh_2002.xlsx ...New template - passed QAQC
 
- 302 checking Richter_1999.xlsx ...New data - passed QAQC
+ 301 checking Rethemeyer_2005.xlsx ...New template - passed QAQC
 
- 303 compiling Robinson_2006.xlsx ... passed QAQC
+ 302 checking Richter_1999.xlsx ...New template - passed QAQC
 
- 304 compiling Rogers_2014.xlsx ... passed QAQC
+ 303 checking Robinson_2006.xlsx ...New template - passed QAQC
 
- 305 compiling Rumpel_2002.xlsx ... passed QAQC
+ 304 checking Rogers_2014.xlsx ...New template - passed QAQC
 
- 306 checking Rumpel_2008.xlsx ...New data - passed QAQC
+ 305 checking Rumpel_2002.xlsx ...New template - passed QAQC
 
- 307 compiling Ruwaimana_2020.xlsx ... passed QAQC
+ 306 checking Rumpel_2008.xlsx ...New template - passed QAQC
 
- 308 checking Saiz_2015.xlsx ...New data - passed QAQC
+ 307 checking Ruwaimana_2020.xlsx ...New template - passed QAQC
 
- 309 compiling Sanaiotti_2002.xlsx ... passed QAQC
+ 308 checking Saiz_2015.xlsx ...New template - passed QAQC
 
- 310 checking Sanderman_2017.xlsx ...New data - passed QAQC
+ 309 checking Sanaiotti_2002.xlsx ...New template - passed QAQC
 
- 311 compiling Sangok_2020.xlsx ... passed QAQC
+ 310 checking Sanderman_2017.xlsx ...New template - passed QAQC
 
- 312 compiling Sannel_2008.xlsx ... passed QAQC
+ 311 checking Sangok_2020.xlsx ...New template - passed QAQC
 
- 313 compiling Scharpenseel_1973a.xlsx ... passed QAQC
+ 312 checking Sannel_2008.xlsx ...New template - passed QAQC
 
- 314 checking Schimel_2011.xlsx ...New data - passed QAQC
+ 313 checking Scharpenseel_1973a.xlsx ...New template - passed QAQC
 
- 315 checking Schoening_2006.xlsx ...New data - passed QAQC
+ 314 checking Schimel_2011.xlsx ...New template - passed QAQC
 
- 316 checking Schrumpf_2013.xlsx ...New data - passed QAQC
+ 315 checking Schoening_2006.xlsx ...New template - passed QAQC
 
- 317 checking Schulze_2009.xlsx ...New data - passed QAQC
+ 316 checking Schrumpf_2013.xlsx ...New template - passed QAQC
 
- 318 compiling Schulze_2011.xlsx ... passed QAQC
+ 317 checking Schulze_2009.xlsx ...New template - passed QAQC
 
- 319 checking Schuur_2001.xlsx ...New data - passed QAQC
+ 318 checking Schulze_2011.xlsx ...New template - passed QAQC
 
- 320 checking Schuur_2006.xlsx ...New data - passed QAQC
+ 319 checking Schuur_2001.xlsx ...New template - passed QAQC
 
- 321 compiling Schuur_2009.xlsx ... passed QAQC
+ 320 checking Schuur_2006.xlsx ...New template - passed QAQC
 
- 322 compiling Schwartz_1992.xlsx ... passed QAQC
+ 321 checking Schuur_2009.xlsx ...New template - passed QAQC
 
- 323 checking Schwartz_1996.xlsx ...New data - passed QAQC
+ 322 checking Schwartz_1992.xlsx ...New template - passed QAQC
 
- 324 checking Shaw_2004.xlsx ...New data - passed QAQC
+ 323 checking Schwartz_1996.xlsx ...New template - passed QAQC
 
- 325 compiling Shen_2001.xlsx ... passed QAQC
+ 324 checking Shaw_2004.xlsx ...New template - passed QAQC
 
- 326 compiling Sierra_2012.xlsx ... passed QAQC
+ 325 checking Shen_2001.xlsx ...New template - passed QAQC
 
- 327 checking Sierra_2013.xlsx ...New data - passed QAQC
+ 326 checking Sierra_2012.xlsx ...New template - passed QAQC
 
- 328 checking Sollins_2006.xlsx ...New data - passed QAQC
+ 327 checking Sierra_2013.xlsx ...New template - passed QAQC
 
- 329 checking Sollins_2009.xlsx ...New data - passed QAQC
+ 328 checking Sollins_2006.xlsx ...New template - passed QAQC
 
- 330 checking Spielvogel_2008.xlsx ...New data - passed QAQC
+ 329 checking Sollins_2009.xlsx ...New template - passed QAQC
 
- 331 checking Staub_2003_Staub_1994_Staub_1993.xlsx ...New data - passed QAQC
+ 330 checking Spielvogel_2008.xlsx ...New template - passed QAQC
 
- 332 checking Stephan_1983.xlsx ...New data - passed QAQC
+ 331 checking Staub_2003_Staub_1994_Staub_1993.xlsx ...New template - passed QAQC
 
- 333 compiling Stout_1980.xlsx ... passed QAQC
+ 332 checking Stephan_1983.xlsx ...New template - passed QAQC
 
- 334 compiling Striegl_2007.xlsx ... passed QAQC
+ 333 checking Stout_1980.xlsx ...New template - passed QAQC
 
- 335 checking Strobel_2019.xlsx ...New data - passed QAQC
+ 334 checking Striegl_2007.xlsx ...New template - passed QAQC
 
- 336 compiling Stubbins_2012.xlsx ... passed QAQC
+ 335 checking Strobel_2019.xlsx ...New template - passed QAQC
 
- 337 compiling Swanston_2005.xlsx ... passed QAQC
+ 336 checking Stubbins_2012.xlsx ...New template - passed QAQC
 
- 338 checking Swindles_2017.xlsx ...New data - passed QAQC
+ 337 checking Swanston_2005.xlsx ...New template - passed QAQC
 
- 339 checking Szymanski_2019.xlsx ...New data - passed QAQC
+ 338 checking Swindles_2017.xlsx ...New template - passed QAQC
 
- 340 checking Tan_2013.xlsx ...New data - passed QAQC
+ 339 checking Szymanski_2019.xlsx ...New template - passed QAQC
 
- 341 compiling Tarnocai_1973.xlsx ... passed QAQC
+ 340 checking Tan_2013.xlsx ...New template - passed QAQC
 
- 342 compiling Tarnocai_1988.xlsx ... passed QAQC
+ 341 checking Tarnocai_1973.xlsx ...New template - passed QAQC
 
- 343 compiling Tarnocai_2010.xlsx ... passed QAQC
+ 342 checking Tarnocai_1988.xlsx ...New template - passed QAQC
 
- 344 compiling Taylor_2015.xlsx ... passed QAQC
+ 343 checking Tarnocai_2010.xlsx ...New template - passed QAQC
 
- 345 checking Tefs_2012.xlsx ...New data - passed QAQC
+ 344 checking Taylor_2015.xlsx ...New template - passed QAQC
 
- 346 checking Tegen_1996.xlsx ...New data - passed QAQC
+ 345 checking Tefs_2012.xlsx ...New template - passed QAQC
 
- 347 checking Telles_2003.xlsx ...New data - passed QAQC
+ 346 checking Tegen_1996.xlsx ...New template - passed QAQC
 
- 348 compiling Tifafi_2018.xlsx ... passed QAQC
+ 347 checking Telles_2003.xlsx ...New template - passed QAQC
 
- 349 compiling Tonnejick_2006.xlsx ... passed QAQC
+ 348 checking Tifafi_2018.xlsx ...New template - passed QAQC
 
- 350 checking Torn_1997.xlsx ...New data - passed QAQC
+ 349 checking Tonnejick_2006.xlsx ...New template - passed QAQC
 
- 351 checking Torn_2002.xlsx ...New data - passed QAQC
+ 350 checking Torn_1997.xlsx ...New template - passed QAQC
 
- 352 checking Torn_2005.xlsx ...New data - passed QAQC
+ 351 checking Torn_2002.xlsx ...New template - passed QAQC
 
- 353 compiling Tremblay_2014.xlsx ... passed QAQC
+ 352 checking Torn_2005.xlsx ...New template - passed QAQC
 
- 354 checking Trumbore_1990.xlsx ...New data - passed QAQC
+ 353 checking Tremblay_2014.xlsx ...New template - passed QAQC
 
- 355 checking Trumbore_1993.xlsx ...New data - passed QAQC
+ 354 checking Trumbore_1990.xlsx ...New template - passed QAQC
 
- 356 checking Trumbore_1995_Camargo_1999_Telles_2011.xlsx ...New data - passed QAQC
+ 355 checking Trumbore_1993.xlsx ...New template - passed QAQC
 
- 357 checking Trumbore_1996_Koarashi_2012_Trumbore_unpublished.xlsx ...New data - passed QAQC
+ 356 checking Trumbore_1995_Camargo_1999_Telles_2011.xlsx ...New template - passed QAQC
 
- 358 checking Trumbore_1997.xlsx ...New data - passed QAQC
+ 357 checking Trumbore_1996_Koarashi_2012_Trumbore_unpublished.xlsx ...New template - passed QAQC
 
- 359 checking Trumbore_1999.xlsx ...New data - passed QAQC
+ 358 checking Trumbore_1997.xlsx ...New template - passed QAQC
 
- 360 checking Trumbore_2006.xlsx ...New data - passed QAQC
+ 359 checking Trumbore_1999.xlsx ...New template - passed QAQC
 
- 361 compiling Upton_2018.xlsx ... passed QAQC
+ 360 checking Trumbore_2006.xlsx ...New template - passed QAQC
 
- 362 compiling Valiranta_2003.xlsx ... passed QAQC
+ 361 checking Upton_2018.xlsx ...New template - passed QAQC
 
- 363 compiling Väliranta_2003.xlsx ... passed QAQC
+ 362 checking Valiranta_2003.xlsx ...New template - passed QAQC
 
- 364 compiling van Bellen_2011.xlsx ... passed QAQC
+ 363 checking Väliranta_2003.xlsx ...New template - passed QAQC
 
- 365 checking van_Dam_1997.xlsx ...New data - passed QAQC
+ 364 checking van Bellen_2011.xlsx ...New template - passed QAQC
 
- 366 compiling van_der_Voort_2016.xlsx ... passed QAQC
+ 365 checking van_Dam_1997.xlsx ...New template - passed QAQC
 
- 367 checking van_Mourik_2010.xlsx ...New data - passed QAQC
+ 366 checking van_der_Voort_2016.xlsx ...New template - passed QAQC
 
- 368 compiling Vardy_1997.xlsx ... passed QAQC
+ 367 checking van_Mourik_2010.xlsx ...New template - passed QAQC
 
- 369 compiling Vardy_1998.xlsx ... passed QAQC
+ 368 checking Vardy_1997.xlsx ...New template - passed QAQC
 
- 370 compiling Vardy_2000.xlsx ... passed QAQC
+ 369 checking Vardy_1998.xlsx ...New template - passed QAQC
 
- 371 compiling Vardy_2005.xlsx ... passed QAQC
+ 370 checking Vardy_2000.xlsx ...New template - passed QAQC
 
- 372 checking Vaughn_2018_Vaughn_2019.xlsx ...New data - passed QAQC
+ 371 checking Vardy_2005.xlsx ...New template - passed QAQC
 
- 373 checking Wagai_2015.xlsx ...New data - passed QAQC
+ 372 checking Vaughn_2018_Vaughn_2019.xlsx ...New template - passed QAQC
 
- 374 compiling Wahlen_1989.xlsx ... passed QAQC
+ 373 checking Wagai_2015.xlsx ...New template - passed QAQC
 
- 375 checking Waldron_2019.xlsx ...New data - passed QAQC
+ 374 checking Wahlen_1989.xlsx ...New template - passed QAQC
 
- 376 compiling Waldrop_2012.xlsx ... passed QAQC
+ 375 checking Waldron_2019.xlsx ...New template - passed QAQC
 
- 377 compiling Walter_2008.xlsx ... passed QAQC
+ 376 checking Waldrop_2012.xlsx ...New template - passed QAQC
 
- 378 compiling Walter_2016.xlsx ... passed QAQC
+ 377 checking Walter_2008.xlsx ...New template - passed QAQC
 
- 379 compiling Wang_1996.xlsx ... passed QAQC
+ 378 checking Walter_2016.xlsx ...New template - passed QAQC
 
- 380 compiling Wang_1999.xlsx ... passed QAQC
+ 379 checking Wang_1996.xlsx ...New template - passed QAQC
 
- 381 compiling Wang_2000.xlsx ... passed QAQC
+ 380 checking Wang_1999.xlsx ...New template - passed QAQC
 
- 382 compiling Wang_2005.xlsx ... passed QAQC
+ 381 checking Wang_2000.xlsx ...New template - passed QAQC
 
- 383 compiling Werner_2010.xlsx ... passed QAQC
+ 382 checking Wang_2005.xlsx ...New template - passed QAQC
 
- 384 compiling Wooller_2007.xlsx ... passed QAQC
+ 383 checking Werner_2010.xlsx ...New template - passed QAQC
 
- 385 compiling Wunderlich_2012.xlsx ... passed QAQC
+ 384 checking Wooller_2007.xlsx ...New template - passed QAQC
 
- 386 compiling Yu_2003.xlsx ... passed QAQC
+ 385 checking Wunderlich_2012.xlsx ...New template - passed QAQC
 
- 387 compiling Yulianto_2005.xlsx ... passed QAQC
+ 386 checking Yu_2003.xlsx ...New template - passed QAQC
 
- 388 compiling Zhang_2018.xlsx ... passed QAQC
+ 387 checking Yulianto_2005.xlsx ...New template - passed QAQC
 
- 389 compiling Zibulski_2013.xlsx ... passed QAQC
+ 388 checking Zhang_2018.xlsx ...New template - passed QAQC
 
- 390 compiling Zimmermann_2001.xlsx ... passed QAQC
+ 389 checking Zibulski_2013.xlsx ...New template - passed QAQC
 
- 391 compiling Zimov_1997.xlsx ... passed QAQC
+ 390 checking Zimmermann_2001.xlsx ...New template - passed QAQC
 
- 392 compiling Zoltai_1971.xlsx ... passed QAQC
+ 391 checking Zimov_1997.xlsx ...New template - passed QAQC
 
- 393 compiling Zoltai_1975.xlsx ... passed QAQC
+ 392 checking Zoltai_1971.xlsx ...New template - passed QAQC
 
- 394 compiling Zoltai_1985.xlsx ... passed QAQC
+ 393 checking Zoltai_1975.xlsx ...New template - passed QAQC
 
- 395 compiling Zoltai_1993.xlsx ... passed QAQC
+ 394 checking Zoltai_1985.xlsx ...New template - passed QAQC
 
- 396 compiling Zoltai_2000.xlsx ... passed QAQC
+ 395 checking Zoltai_1993.xlsx ...New template - passed QAQC
 
- 397 compiling Zuidhoff_2000.xlsx ... passed QAQC
+ 396 checking Zoltai_2000.xlsx ...New template - passed QAQC
+
+ 397 checking Zuidhoff_2000.xlsx ...New template - passed QAQC
 
 -------------
 
