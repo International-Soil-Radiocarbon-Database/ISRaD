@@ -30,7 +30,7 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
 
   message("Compiling the data files in ", paste0(ISRaD_directory, "/ISRaD_data_files\n"))
   message("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
-  ISRaD_data_compiled <- compile(dataset_directory = file.path(ISRaD_directory, "ISRaD_data_files"), write_report = T, write_out = T, return_type = "list", checkdoi = F)
+  ISRaD_data_compiled <- compile(dataset_directory = file.path(ISRaD_directory, "ISRaD_data_files"), write_report = T, write_out = F, return_type = "list", checkdoi = F)
 
   message("\nISRaD_data.xlsx saved to ", file.path(ISRaD_directory, "ISRaD_data_files", "database", "\n\n"))
 

@@ -50,7 +50,7 @@ compile <- function(dataset_directory,
   stopifnot(is.logical(verbose))
 
   # Constants
-  LIST_FILE <- "ISRaD_list.xlsx"
+  LIST_FILE <- "ISRaD_data.rda"
   DB_DIR <- "database"
   QAQC_DIR <- "QAQC"
 
@@ -106,14 +106,10 @@ compile <- function(dataset_directory,
   if (file.exists(file.path(dataset_directory, DB_DIR, LIST_FILE))) {
 
     # load existing database
-    ISRaD_old <- lapply(
-      excel_sheets(file.path(dataset_directory, DB_DIR, LIST_FILE))[1:8],
-      function(s) data.frame(read_excel(file.path(dataset_directory, DB_DIR, LIST_FILE), sheet = s))
-    )
-    names(ISRaD_old) <- excel_sheets(file.path(dataset_directory, DB_DIR, LIST_FILE))[1:8]
+    ISRaD_old <- load(file.path(dataset_directory, DB_DIR, LIST_FILE))
     # convert to character
-    ISRaD_old <- lapply(ISRaD_old, function(x) lapply(x, as.character))
-    ISRaD_old <- lapply(ISRaD_old, as.data.frame, stringsAsFactors = FALSE)
+    #ISRaD_old <- lapply(ISRaD_old, function(x) lapply(x, as.character))
+    #ISRaD_old <- lapply(ISRaD_old, as.data.frame, stringsAsFactors = FALSE)
 
     # Split each table by entry_name
     ISRaD_old_list <- lapply(ISRaD_old, function(x) split(x, x$entry_name))
