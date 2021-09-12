@@ -53,11 +53,9 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   }
 
   new_entries <- setdiff(ISRaD_data_compiled$metadata$entry_name, ISRaD_data$metadata$entry_name)
-  if (length(new_entries) == 0) new_entries <- "none"
   message("\t\t New entry_name values added to the data: ", cat(new_entries), "\n")
 
   removed_entries <- setdiff(ISRaD_data$metadata$entry_name, ISRaD_data_compiled$metadata$entry_name)
-  if (length(removed_entries) == 0) removed_entries <- "none"
   message("\t\t entry_name values removed from the data: ", cat(removed_entries), "\n")
 
   reviewed <- utils::menu(c("Yes", "No"), title = "Are these differences what you expected?")
@@ -186,6 +184,8 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
     message("Ok, the DESCRIPTION file is being updated with a new version...\n")
     if (length(new_entries) != 0) {
       message(paste(length(new_entries), " new entries have been added, so the minor version number will be updated"))
+    } else {
+      message("No new entries have been added, so the minor version number will not be updated")
     }
     DESC[3] <- paste0("Version: ",
                       substr(
