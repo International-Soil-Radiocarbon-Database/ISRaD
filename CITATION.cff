@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Beem-Miller"
+  given-names: "Jeffrey"
+- family-names: "Monroe"
+  given-names: "J. Grey"
+- family-names: "Stoner"
+  given-names: "Shane"
+- family-names: "Hoyt"
+  given-names: "Alison M."
+- family-names: "Lawrence"
+  given-names: "Corey R."
+- family-names: "Sierra"
+  given-names: "Carlos A."
+title: "ISRaD"
+version: 1.0
+doi: 10.5281/zenodo.2613911
+date-released: 2019-03-28
+url: "https://github.com/github/International-Soil-Radiocarbon-Database/ISRaD"
