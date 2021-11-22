@@ -5,7 +5,7 @@ version](https://www.r-pkg.org/badges/version/ISRaD)](https://cran.r-project.org
 # ISRaD
 This is the central repository for the development and release of ISRaD data and tools. For more information about the ISRaD project please read our peer-reviewed open-access manuscript: 
 
-["An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0"](https://doi.org/10.5194/essd-12-61-2020). 
+["An open-source database for the synthesis of soil radiocarbon data: International Soil Radiocarbon Database (ISRaD) version 1.0"](https://doi.org/10.5194/essd-12-61-2020) 
 
 You can also visit our website ([soilradiocarbon.org](www.soilradiocarbon.org)) for an overview of the project and to find out how you can get involved.
 
