@@ -121,7 +121,7 @@ Summary statistics...
     lyr_hzn : 41
     lyr_note : 8
     lyr_c_tot : 41
-    lyr_fraction_modern : 41
+    lyr_fraction_modern : 33
     lyr_fraction_modern_sigma : 33
  interstitial tab...0 observations
  fraction tab...0 observations
