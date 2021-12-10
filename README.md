@@ -31,4 +31,4 @@ devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg", r
 ```
 
 ## Citations
-To cite the database, please cite our [original manuscript](https://doi.org/10.5194/essd-12-61-2020) as well as the [repository](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/CITATION.cff), which will link to the most recent data release.
+To cite the database, please cite our [original manuscript](https://doi.org/10.5194/essd-12-61-2020) as well as the respository (click the "cite this repository" link above to view or download the citation for the most recent data release in your preferred format).
