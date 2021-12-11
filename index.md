@@ -47,7 +47,7 @@ feature_row:
 </p>
 
 ## Introducing ISRaD Version 1.0
-A new manuscript detailing the construction and utilization of ISRaD was just published in <a href="https://www.earth-system-science-data.net/">Earth System Science Data</a>. Hear we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript <a href="https://earth-syst-sci-data.net/12/61/2020/">here</a>.
+A new manuscript detailing the construction and utilization of ISRaD was just published in <a href="https://www.earth-system-science-data.net/">Earth System Science Data</a>. Here we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript <a href="https://earth-syst-sci-data.net/12/61/2020/">here</a>.
 
 <p align = "center">
 <img src="assets/images/ManuscriptHeader.png"
