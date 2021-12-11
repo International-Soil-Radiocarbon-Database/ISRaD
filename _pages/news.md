@@ -12,6 +12,7 @@ ISRaD is an active community effort. Here are the latest updates!
 #### If you'd like to receive period updates from ISRaD, such as features, workshops, or publications, <a href = "mailto: info.israd@gmail.com">send us an email</a>.
 
 ## News - Updates 2021
+* **10-12 December**: ISRaD Workshop in New Orleans - remote updates, collaborations, fraction tab overhaul, and peatlands
 * **5 July**: The first in-person ISRaD Hackathon of 2021 is live in Jena, Germany.
 * **11 March**: Chen et al. from the Chinese Academy of Sciences published a [study](https://doi.org/10.1111/ele.13723) titled "Soil carbon persistence governed by plant input and mineral protection at regional and global scales" using ISRaD data!
 * **9 March**: Wang et al. from CSIRO published a [study](https://doi.org/10.1029/2020JG006205) titled "Microbial Activity and Root Carbon Inputs Are More Important than Soil Carbon Diffusion in Simulating Soil Carbon Profiles" using ISRaD data!
