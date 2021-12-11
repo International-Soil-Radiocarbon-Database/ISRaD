@@ -37,7 +37,7 @@ feature_row:
       xmlns:fb="http://ogp.me/ns/fb#">
 
 <h1 style="font-size:40px; text-align:center;">Welcome to ISRaD</h1>
-<h3 style="font-size:18px; text-align:center;">Version 1.17</h3>
+<h3 style="font-size:18px; text-align:center;">Version 1.14</h3>
 
 <p align = "center">
 <img src="/assets/images/ISRaD_Map_July2021.jpg"
