@@ -15,6 +15,6 @@ template_file <- "./New fraction data/ISRaD_Master_Template_NewFRC.xlsx"
 template_info_file <- "./New fraction data/ISRaD_Template_Info_NewFRC.xlsx"
 
 # run QAQC! 
-QAQC_frc("/Users/jeff/ISRaD/New fraction data/Agnelli_2002.xlsx",
+QAQC_frc("",
          template_file = template_file,
          template_info_file = template_info_file)
