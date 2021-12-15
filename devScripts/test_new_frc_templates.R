@@ -15,6 +15,6 @@ template_file <- "./New fraction data/ISRaD_Master_Template_NewFRC.xlsx"
 template_info_file <- "./New fraction data/ISRaD_Template_Info_NewFRC.xlsx"
 
 # Change "file" argument to the path for the file you want to run QAQC on, and go! 
-QAQC_frc(file = "./New fraction data/Agnelli_2002.xlsx",
+QAQC_frc(file = "./New fraction data/Dutta_2006 copy.xlsx",
          template_file = template_file,
          template_info_file = template_info_file)
