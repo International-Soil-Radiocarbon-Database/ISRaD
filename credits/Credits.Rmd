@@ -2,9 +2,9 @@
 title: "ISRaD Credits"
 date: \textit{\today}
 output:
+  html_document:
   pdf_document:
     latex_engine: xelatex
-  html_document:
   github_document:
 csl: apa-7th-edition.csl
 bibliography: credits.bib
@@ -14,6 +14,7 @@ header_includes:
 - \usepackage{float}
 - \usepackage{was}
 - \usepackage{textcomp}
+- \usepackage{upgreek}
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -66,6 +67,10 @@ lapply(seq_along(cleandois), function(i) {
 # clean up .bib file
 .bib <- readLines("credits.bib")
 clean.bib <- gsub("\\{upDelta}", "upDelta", .bib)
+
+# replace upgreek symbols with regular greek symbols
+clean.bib <- gsub("upDelta", "Delta", clean.bib)
+clean.bib <- gsub("updelta", "delta", clean.bib)
 
 # save
 cat(clean.bib, sep = "\n", file = "credits.bib")
