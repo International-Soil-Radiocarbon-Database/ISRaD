@@ -121,8 +121,8 @@ Summary statistics...
     lyr_bot : 55
     lyr_c_org : 55
     lyr_13c : 53
-    lyr_14c : 37
-    lyr_14c_sigma : 37
+    lyr_fraction_modern : 37
+    lyr_fraction_modern_sigma : 37
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...0 observations

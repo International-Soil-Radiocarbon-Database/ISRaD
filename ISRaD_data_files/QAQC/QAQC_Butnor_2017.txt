@@ -159,12 +159,13 @@ Summary statistics...
     lyr_name : 56
     frc_name : 56
     frc_input : 56
-    frc_property : 56
+    frc_aggregate_dis : 56
     frc_scheme : 56
+    frc_agent : 56
+    frc_property : 56
     frc_scheme_units : 56
     frc_lower : 56
     frc_upper : 56
-    frc_agent : 56
     frc_note : 56
     frc_c_perc : 56
     frc_13c : 56

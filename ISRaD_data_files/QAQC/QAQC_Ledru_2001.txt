@@ -132,11 +132,15 @@ Summary statistics...
     lyr_name : 8
     frc_name : 8
     frc_input : 8
+    frc_aggregate_dis : 8
+    frc_property : 8
     frc_scheme : 8
     frc_scheme_units : 8
     frc_lower : 8
     frc_upper : 8
     frc_agent : 8
+    frc_note : 8
+    frc_aba : 8
     frc_rc_lab : 8
     frc_rc_lab_number : 8
     frc_rc_year : 8

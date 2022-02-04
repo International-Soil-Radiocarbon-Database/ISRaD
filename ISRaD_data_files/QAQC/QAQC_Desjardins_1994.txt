@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Camill_2009.xlsx
+File: Desjardins_1994.xlsx
 
 Checking file type...
 
@@ -82,7 +82,6 @@ Summary statistics...
  metadata tab...1 observations
     entry_name : 1
     doi : 1
-    compilation_doi : 1
     curator_name : 1
     curator_organization : 1
     curator_email : 1
@@ -92,62 +91,67 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
-    metadata_note : 1
-    template_version : 1
  site tab...1 observations
     entry_name : 1
     site_name : 1
     site_lat : 1
     site_long : 1
-    site_note : 1
- profile tab...23 observations
-    entry_name : 23
-    site_name : 23
-    plot_name : 23
-    pro_name : 23
-    pro_note : 23
-    pro_lat : 23
-    pro_long : 23
-    pro_elevation : 23
-    pro_treatment : 23
-    pro_peatland : 23
-    pro_usda_soil_order : 23
-    pro_land_cover : 23
-    pro_permafrost : 23
+ profile tab...2 observations
+    entry_name : 2
+    site_name : 2
+    pro_name : 2
+    pro_note : 2
+    pro_treatment : 2
+    pro_soil_taxon : 2
+    pro_land_cover : 2
+    pro_veg_note : 1
+    pro_parent_material : 2
  flux tab...0 observations
- layer tab...1490 observations
-    entry_name : 1490
-    site_name : 1490
-    pro_name : 1490
-    lyr_name : 1490
-    lyr_obs_date_y : 1490
-    lyr_obs_date_m : 1490
-    lyr_all_org_neg : 1490
-    lyr_top : 1490
-    lyr_bot : 1490
-    lyr_hzn : 6
-    lyr_bd_samp : 1346
-    lyr_c_tot : 1346
-    lyr_n_tot : 1346
+ layer tab...8 observations
+    entry_name : 8
+    site_name : 8
+    pro_name : 8
+    lyr_name : 8
+    lyr_obs_date_y : 8
+    lyr_top : 8
+    lyr_bot : 8
+    lyr_hzn : 8
+    lyr_note : 8
+    lyr_burn_ev : 4
+    lyr_bd_samp : 8
+    lyr_sand_tot_psa : 6
+    lyr_silt_tot_psa : 6
+    lyr_clay_tot_psa : 6
+    lyr_texture_class : 6
+    lyr_ph_h2o : 8
+    lyr_c_tot : 8
+    lyr_n_tot : 8
+    lyr_c_to_n : 8
+    lyr_13c : 8
+    lyr_rc_lab : 4
+    lyr_14c : 4
+    lyr_14c_sigma : 4
  interstitial tab...0 observations
- fraction tab...144 observations
-    entry_name : 144
-    site_name : 144
-    pro_name : 144
-    lyr_name : 144
-    frc_name : 144
-    frc_input : 144
-    frc_scheme_units : 144
-    frc_lower : 144
-    frc_upper : 144
-    frc_scheme : 144
-    frc_agent : 144
-    frc_property : 144
-    frc_aggregate_dis : 144
-    frc_note : 144
-    frc_rc_lab_number : 144
-    frc_fraction_modern : 144
-    frc_fraction_modern_sigma : 144
+ fraction tab...48 observations
+    entry_name : 48
+    site_name : 48
+    pro_name : 48
+    lyr_name : 48
+    frc_name : 48
+    frc_input : 48
+    frc_aggregate_dis : 48
+    frc_scheme : 48
+    frc_agent : 48
+    frc_property : 48
+    frc_scheme_units : 48
+    frc_lower : 48
+    frc_upper : 48
+    frc_note : 48
+    frc_mass_perc : 48
+    frc_c_perc : 48
+    frc_c_tot : 48
+    frc_13c : 48
+    frc_rc_lab : 48
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

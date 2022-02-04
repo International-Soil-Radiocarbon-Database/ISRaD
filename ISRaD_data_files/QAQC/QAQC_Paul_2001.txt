@@ -136,21 +136,22 @@ Summary statistics...
     lyr_14c_fill_extra : 23
     lyr_fill_notes_extra : 24
  interstitial tab...0 observations
- fraction tab...44 observations
-    entry_name : 44
-    site_name : 44
-    pro_name : 44
-    lyr_name : 44
-    frc_name : 44
-    frc_input : 44
-    frc_property : 44
-    frc_scheme : 44
-    frc_scheme_units : 44
-    frc_lower : 44
-    frc_upper : 44
-    frc_agent : 44
+ fraction tab...66 observations
+    entry_name : 66
+    site_name : 66
+    pro_name : 66
+    lyr_name : 66
+    frc_name : 66
+    frc_input : 66
+    frc_aggregate_dis : 66
+    frc_property : 66
+    frc_scheme : 66
+    frc_scheme_units : 66
+    frc_lower : 66
+    frc_upper : 66
+    frc_agent : 66
     frc_scheme_conc : 44
-    frc_c_perc : 44
+    frc_c_perc : 22
     frc_rc_lab : 44
     frc_rc_year : 44
     frc_fraction_modern : 44

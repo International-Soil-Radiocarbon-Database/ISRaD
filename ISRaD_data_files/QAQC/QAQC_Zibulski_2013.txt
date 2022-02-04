@@ -99,48 +99,49 @@ Summary statistics...
     site_name : 1
     site_lat : 1
     site_long : 1
- profile tab...1 observations
-    entry_name : 1
-    site_name : 1
-    pro_name : 1
-    pro_note : 1
+ profile tab...3 observations
+    entry_name : 3
+    site_name : 3
+    pro_name : 3
+    pro_note : 3
     pro_lat : 1
     pro_long : 1
-    pro_treatment : 1
-    pro_peatland : 1
-    pro_land_cover : 1
+    pro_treatment : 3
+    pro_peatland : 3
+    pro_land_cover : 3
     pro_permafrost : 1
     pro_water_body : 1
     pro_water_body_name : 1
  flux tab...0 observations
- layer tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    lyr_name : 2
-    lyr_obs_date_y : 2
-    lyr_obs_date_m : 2
-    lyr_all_org_neg : 2
-    lyr_top : 2
-    lyr_bot : 2
+ layer tab...12 observations
+    entry_name : 12
+    site_name : 12
+    pro_name : 12
+    lyr_name : 12
+    lyr_obs_date_y : 12
+    lyr_obs_date_m : 12
+    lyr_all_org_neg : 3
+    lyr_top : 12
+    lyr_bot : 12
  interstitial tab...0 observations
- fraction tab...2 observations
-    entry_name : 2
-    site_name : 2
-    pro_name : 2
-    lyr_name : 2
-    frc_name : 2
-    frc_input : 2
-    frc_property : 2
-    frc_scheme : 2
-    frc_scheme_units : 2
-    frc_lower : 2
-    frc_upper : 2
-    frc_agent : 2
-    frc_note : 2
+ fraction tab...12 observations
+    entry_name : 12
+    site_name : 12
+    pro_name : 12
+    lyr_name : 12
+    frc_name : 12
+    frc_input : 12
+    frc_scheme_units : 12
+    frc_lower : 12
+    frc_upper : 12
+    frc_scheme : 12
+    frc_property : 12
+    frc_agent : 12
+    frc_aggregate_dis : 12
+    frc_note : 12
     frc_rc_lab_number : 2
-    frc_fraction_modern : 2
-    frc_fraction_modern_sigma : 2
+    frc_fraction_modern : 12
+    frc_fraction_modern_sigma : 12
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

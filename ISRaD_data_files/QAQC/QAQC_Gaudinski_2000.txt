@@ -156,12 +156,13 @@ Summary statistics...
     lyr_name : 17
     frc_name : 17
     frc_input : 17
-    frc_property : 17
+    frc_aggregate_dis : 17
     frc_scheme : 17
+    frc_agent : 17
+    frc_property : 17
     frc_scheme_units : 17
     frc_lower : 17
     frc_upper : 17
-    frc_agent : 17
     frc_rc_year : 17
     frc_14c : 17
  incubation tab...0 observations

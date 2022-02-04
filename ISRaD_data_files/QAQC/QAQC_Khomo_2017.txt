@@ -71,6 +71,7 @@ Checking controlled vocab...
  layer tab...
  interstitial tab...
  fraction tab...
+WARNING: Unacceptable values detected in the frc_agent column: gravity
  incubation tab...
 
  - - - - - - - - - - - - - - - - - - - -
@@ -157,19 +158,20 @@ Summary statistics...
     lyr_fe_oxides : 36
     lyr_calcite_dolomite : 36
  interstitial tab...0 observations
- fraction tab...169 observations
-    entry_name : 169
-    site_name : 169
-    pro_name : 169
-    lyr_name : 169
-    frc_name : 169
-    frc_input : 169
-    frc_property : 169
-    frc_scheme : 169
-    frc_scheme_units : 169
-    frc_lower : 169
-    frc_upper : 169
-    frc_agent : 169
+ fraction tab...195 observations
+    entry_name : 195
+    site_name : 195
+    pro_name : 195
+    lyr_name : 195
+    frc_name : 195
+    frc_input : 195
+    frc_aggregate_dis : 195
+    frc_scheme : 195
+    frc_agent : 195
+    frc_property : 195
+    frc_scheme_units : 195
+    frc_lower : 195
+    frc_upper : 195
     frc_mass_perc : 68
     frc_c_perc : 64
     frc_c_org : 144
@@ -205,7 +207,8 @@ Summary statistics...
 
 
  - - - - - - - - - - - - - - - - - - - -
-PASSED. Nice work!
+ 1 WARNINGS need to be fixed
+
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to

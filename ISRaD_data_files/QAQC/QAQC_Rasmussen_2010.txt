@@ -146,12 +146,13 @@ Summary statistics...
     lyr_name : 6
     frc_name : 6
     frc_input : 6
-    frc_property : 6
-    frc_scheme : 6
     frc_scheme_units : 6
     frc_lower : 6
     frc_upper : 6
+    frc_aggregate_dis : 6
+    frc_scheme : 6
     frc_agent : 6
+    frc_property : 6
     frc_mass_perc : 6
     frc_obs_date_y : 6
     frc_c_perc : 6

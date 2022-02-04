@@ -21,7 +21,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( interstitial )
+	NOTE: empty tabs detected ( interstitial fraction )
 
 Not checking dataset doi because 'checkdoi is FALSE'...
 
@@ -150,23 +150,9 @@ Summary statistics...
     lyr_p_units : 12
     lyr_fe_al_py : 9
     lyr_py_notes : 9
+    lyr_noncrystalline_ox : 12
  interstitial tab...0 observations
- fraction tab...24 observations
-    entry_name : 24
-    site_name : 24
-    pro_name : 24
-    lyr_name : 24
-    frc_name : 24
-    frc_input : 24
-    frc_property : 12
-    frc_scheme : 24
-    frc_scheme_units : 24
-    frc_lower : 24
-    frc_upper : 24
-    frc_agent : 24
-    frc_scheme_conc : 24
-    frc_note : 24
-    frc_noncrystalline_ox : 12
+ fraction tab...0 observations
  incubation tab...12 observations
     entry_name : 12
     site_name : 12

@@ -141,12 +141,13 @@ Summary statistics...
     lyr_name : 15
     frc_name : 15
     frc_input : 15
-    frc_property : 15
+    frc_aggregate_dis : 15
     frc_scheme : 15
+    frc_agent : 15
+    frc_property : 15
     frc_scheme_units : 15
     frc_lower : 15
     frc_upper : 15
-    frc_agent : 15
     frc_note : 15
     frc_rc_lab_number : 15
     frc_fraction_modern : 15

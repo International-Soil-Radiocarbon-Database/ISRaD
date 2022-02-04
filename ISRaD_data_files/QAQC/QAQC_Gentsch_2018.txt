@@ -157,12 +157,13 @@ Summary statistics...
     lyr_name : 72
     frc_name : 72
     frc_input : 72
-    frc_property : 72
-    frc_scheme : 72
     frc_scheme_units : 72
     frc_lower : 72
     frc_upper : 72
+    frc_scheme : 72
     frc_agent : 72
+    frc_property : 72
+    frc_aggregate_dis : 72
     frc_note : 1
     frc_c_org : 59
     frc_n_tot : 52

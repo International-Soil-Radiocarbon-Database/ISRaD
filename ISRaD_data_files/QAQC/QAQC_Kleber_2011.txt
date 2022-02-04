@@ -154,6 +154,7 @@ Summary statistics...
     lyr_name : 3
     frc_name : 3
     frc_input : 3
+    frc_aggregate_dis : 3
     frc_property : 3
     frc_scheme : 3
     frc_scheme_units : 3
@@ -161,14 +162,17 @@ Summary statistics...
     frc_upper : 3
     frc_agent : 3
     frc_mass_perc : 3
-    frc_obs_date_d : 3
+    frc_bet_surface_area : 3
     frc_c_perc : 3
-    frc_c_org : 3
-    frc_c_inorg : 3
+    frc_c_tot : 3
     frc_n_tot : 3
     frc_c_to_n : 3
-    frc_rc_lab : 3
-    frc_rc_lab_number : 3
+    frc_15n : 3
+    frc_13c : 3
+    frc_rc_year : 3
+    frc_14c : 3
+    frc_fe_ox : 3
+    frc_al_ox : 3
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

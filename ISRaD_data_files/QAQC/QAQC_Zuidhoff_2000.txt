@@ -101,29 +101,29 @@ Summary statistics...
     site_long : 1
     site_elevation : 1
     site_note : 1
- profile tab...1 observations
-    entry_name : 1
-    site_name : 1
-    pro_name : 1
-    pro_lat : 1
-    pro_long : 1
-    pro_treatment : 1
-    pro_MAT : 1
-    pro_peatland : 1
+ profile tab...3 observations
+    entry_name : 3
+    site_name : 3
+    pro_name : 3
+    pro_lat : 3
+    pro_long : 3
+    pro_treatment : 3
+    pro_MAT : 3
+    pro_peatland : 3
     pro_land_cover : 1
     pro_permafrost : 1
     pro_water_body : 1
     pro_water_body_name : 1
  flux tab...0 observations
- layer tab...3 observations
-    entry_name : 3
-    site_name : 3
-    pro_name : 3
-    lyr_name : 3
-    lyr_obs_date_y : 3
-    lyr_all_org_neg : 3
-    lyr_top : 3
-    lyr_bot : 3
+ layer tab...4 observations
+    entry_name : 4
+    site_name : 4
+    pro_name : 4
+    lyr_name : 4
+    lyr_obs_date_y : 4
+    lyr_all_org_neg : 4
+    lyr_top : 4
+    lyr_bot : 4
  interstitial tab...0 observations
  fraction tab...4 observations
     entry_name : 4
@@ -138,7 +138,9 @@ Summary statistics...
     frc_lower : 4
     frc_upper : 4
     frc_agent : 4
+    frc_aggregate_dis : 4
     frc_note : 4
+    frc_13c : 4
     frc_rc_lab_number : 4
     frc_fraction_modern : 4
     frc_fraction_modern_sigma : 4

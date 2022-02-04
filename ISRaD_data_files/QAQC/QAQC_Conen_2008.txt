@@ -122,7 +122,6 @@ Summary statistics...
     lyr_obs_date_y : 35
     lyr_top : 35
     lyr_bot : 35
-    lyr_hzn : 2
     lyr_bd_samp : 22
     lyr_c_tot : 22
     lyr_14c : 22
@@ -137,12 +136,13 @@ Summary statistics...
     lyr_name : 26
     frc_name : 26
     frc_input : 26
-    frc_property : 26
+    frc_aggregate_dis : 26
     frc_scheme : 26
+    frc_agent : 26
+    frc_property : 26
     frc_scheme_units : 26
     frc_lower : 26
     frc_upper : 26
-    frc_agent : 26
     frc_c_perc : 26
     frc_c_org : 26
     frc_c_to_n : 26

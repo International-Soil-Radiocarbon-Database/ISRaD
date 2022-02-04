@@ -148,6 +148,7 @@ Summary statistics...
     pro_name : 378
     lyr_name : 378
     frc_name : 378
+    frc_aggregate_dis : 378
     frc_input : 378
     frc_property : 378
     frc_scheme : 378

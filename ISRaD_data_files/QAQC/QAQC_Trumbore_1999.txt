@@ -144,12 +144,13 @@ Summary statistics...
     lyr_name : 77
     frc_name : 77
     frc_input : 77
-    frc_property : 77
-    frc_scheme : 77
     frc_scheme_units : 77
     frc_lower : 77
     frc_upper : 77
+    frc_aggregate_dis : 77
+    frc_scheme : 77
     frc_agent : 77
+    frc_property : 77
     frc_note : 77
     frc_rc_lab : 77
     frc_rc_lab_number : 77

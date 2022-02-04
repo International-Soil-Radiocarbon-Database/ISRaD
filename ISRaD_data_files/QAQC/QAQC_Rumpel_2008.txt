@@ -144,6 +144,7 @@ Summary statistics...
     lyr_name : 27
     frc_name : 27
     frc_input : 27
+    frc_aggregate_dis : 27
     frc_property : 27
     frc_scheme : 27
     frc_scheme_units : 27
@@ -152,7 +153,7 @@ Summary statistics...
     frc_agent : 27
     frc_scheme_conc : 9
     frc_comp : 27
-    frc_note : 20
+    frc_note : 27
     frc_c_perc : 27
     frc_rc_lab : 9
     frc_fraction_modern : 9

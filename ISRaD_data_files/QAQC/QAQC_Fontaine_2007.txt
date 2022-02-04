@@ -130,7 +130,6 @@ Summary statistics...
     lyr_c_org : 2
     lyr_13c : 2
     lyr_rc_lab : 2
-    lyr_rc_year : 2
     lyr_fraction_modern : 2
     lyr_fraction_modern_sd : 2
     lyr_mbc_method : 2
@@ -148,6 +147,7 @@ Summary statistics...
     lyr_name : 2
     frc_name : 2
     frc_input : 2
+    frc_aggregate_dis : 2
     frc_property : 2
     frc_scheme : 2
     frc_scheme_units : 2
@@ -159,7 +159,6 @@ Summary statistics...
     frc_c_org : 2
     frc_c_inorg : 2
     frc_rc_lab : 2
-    frc_rc_year : 2
     frc_fraction_modern_sigma : 1
     frc_fraction_modern_sd : 1
  incubation tab...2 observations

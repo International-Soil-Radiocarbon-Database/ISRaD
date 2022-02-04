@@ -145,13 +145,15 @@ Summary statistics...
     lyr_name : 24
     frc_name : 24
     frc_input : 24
+    frc_aggregate_dis : 24
     frc_property : 12
     frc_scheme : 24
     frc_scheme_units : 24
     frc_lower : 24
     frc_upper : 24
     frc_agent : 24
-    frc_note : 12
+    frc_scheme_conc : 6
+    frc_note : 18
     frc_c_perc : 18
     frc_c_tot : 24
     frc_n_tot : 18

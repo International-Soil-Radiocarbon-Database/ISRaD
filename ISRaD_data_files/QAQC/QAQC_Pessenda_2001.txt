@@ -129,6 +129,7 @@ Summary statistics...
     lyr_name : 26
     frc_name : 26
     frc_input : 26
+    frc_aggregate_dis : 26
     frc_property : 26
     frc_scheme : 26
     frc_scheme_units : 26
@@ -137,6 +138,7 @@ Summary statistics...
     frc_agent : 26
     frc_scheme_conc : 20
     frc_note : 26
+    frc_aba : 26
     frc_obs_date_y : 26
     frc_14c : 14
     frc_14c_sigma : 14

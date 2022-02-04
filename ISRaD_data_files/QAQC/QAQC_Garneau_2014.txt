@@ -140,12 +140,13 @@ Summary statistics...
     lyr_name : 19
     frc_name : 19
     frc_input : 19
-    frc_property : 19
+    frc_aggregate_dis : 19
     frc_scheme : 19
+    frc_agent : 19
+    frc_property : 19
     frc_scheme_units : 19
     frc_lower : 19
     frc_upper : 19
-    frc_agent : 19
     frc_note : 19
     frc_rc_lab_number : 19
     frc_fraction_modern : 19

@@ -142,12 +142,14 @@ Summary statistics...
     lyr_name : 60
     frc_name : 60
     frc_input : 60
-    frc_property : 60
+    frc_aba : 60
+    frc_aggregate_dis : 60
     frc_scheme : 60
+    frc_agent : 60
+    frc_property : 60
     frc_scheme_units : 60
     frc_lower : 60
     frc_upper : 60
-    frc_agent : 60
     frc_note : 60
     frc_rc_lab_number : 60
     frc_fraction_modern : 60

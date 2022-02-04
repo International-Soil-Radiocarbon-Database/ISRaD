@@ -126,20 +126,22 @@ Summary statistics...
     lyr_bd_samp : 1082
     lyr_loi : 1082
  interstitial tab...0 observations
- fraction tab...33 observations
-    entry_name : 33
-    site_name : 33
-    pro_name : 33
-    lyr_name : 33
-    frc_name : 33
-    frc_input : 33
-    frc_property : 33
-    frc_scheme : 33
-    frc_scheme_units : 33
-    frc_lower : 33
-    frc_upper : 33
-    frc_agent : 33
+ fraction tab...66 observations
+    entry_name : 66
+    site_name : 66
+    pro_name : 66
+    lyr_name : 66
+    frc_name : 66
+    frc_input : 66
+    frc_aggregate_dis : 66
+    frc_property : 66
+    frc_scheme : 66
+    frc_scheme_units : 66
+    frc_lower : 66
+    frc_upper : 66
+    frc_agent : 66
     frc_note : 33
+    frc_aba : 33
     frc_rc_lab_number : 33
     frc_fraction_modern : 33
     frc_fraction_modern_sigma : 33

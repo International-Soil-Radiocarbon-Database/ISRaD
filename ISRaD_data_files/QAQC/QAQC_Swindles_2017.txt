@@ -129,11 +129,14 @@ Summary statistics...
     lyr_name : 5
     frc_name : 5
     frc_input : 5
+    frc_aba : 5
+    frc_aggregate_dis : 5
     frc_scheme : 5
+    frc_agent : 5
+    frc_property : 5
     frc_scheme_units : 5
     frc_lower : 5
     frc_upper : 5
-    frc_agent : 5
     frc_note : 5
     frc_obs_date_y : 5
     frc_13c : 5

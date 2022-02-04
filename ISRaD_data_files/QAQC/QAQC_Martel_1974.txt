@@ -138,14 +138,15 @@ Summary statistics...
     lyr_name : 10
     frc_name : 10
     frc_input : 10
-    frc_property : 8
+    frc_aggregate_dis : 10
+    frc_property : 10
     frc_scheme : 10
     frc_scheme_units : 10
     frc_lower : 10
     frc_upper : 10
     frc_agent : 10
     frc_scheme_conc : 6
-    frc_note : 2
+    frc_note : 6
     frc_c_org : 10
     frc_n_tot : 10
     frc_14c : 9

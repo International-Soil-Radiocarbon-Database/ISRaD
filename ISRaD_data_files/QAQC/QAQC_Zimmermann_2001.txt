@@ -33,6 +33,7 @@ Checking for extra or misspelled column names...
  layer tab...
  interstitial tab...
  fraction tab...
+WARNING: Column name mismatch template: frc_agent...10 frc_agent...16
  incubation tab...
 
 Checking for missing values in required columns...
@@ -136,13 +137,15 @@ Summary statistics...
     lyr_name : 3
     frc_name : 3
     frc_input : 3
-    frc_property : 3
-    frc_scheme : 3
     frc_scheme_units : 3
     frc_lower : 3
     frc_upper : 3
-    frc_agent : 3
+    frc_agent...10 : 3
     frc_note : 3
+    frc_property : 3
+    frc_scheme : 3
+    frc_agent...16 : 3
+    frc_aggregate_dis : 3
     frc_rc_lab_number : 3
     frc_fraction_modern : 3
     frc_fraction_modern_sigma : 3
@@ -151,7 +154,8 @@ Summary statistics...
 
 
  - - - - - - - - - - - - - - - - - - - -
-PASSED. Nice work!
+ 1 WARNINGS need to be fixed
+
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to

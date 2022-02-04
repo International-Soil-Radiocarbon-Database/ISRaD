@@ -143,12 +143,13 @@ Summary statistics...
     lyr_name : 57
     frc_name : 57
     frc_input : 57
-    frc_property : 57
+    frc_aggregate_dis : 57
     frc_scheme : 57
+    frc_agent : 57
+    frc_property : 57
     frc_scheme_units : 57
     frc_lower : 57
     frc_upper : 57
-    frc_agent : 57
  incubation tab...62 observations
     entry_name : 62
     site_name : 62

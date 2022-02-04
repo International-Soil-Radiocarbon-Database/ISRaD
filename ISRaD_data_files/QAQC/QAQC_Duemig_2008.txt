@@ -152,13 +152,14 @@ Summary statistics...
     lyr_name : 24
     frc_name : 24
     frc_input : 24
+    frc_aggregate_dis : 24
     frc_property : 24
     frc_scheme : 24
     frc_scheme_units : 24
     frc_lower : 24
     frc_upper : 24
     frc_agent : 24
-    frc_note : 1
+    frc_note : 24
     frc_rc_lab : 24
     frc_fraction_modern : 24
  incubation tab...0 observations

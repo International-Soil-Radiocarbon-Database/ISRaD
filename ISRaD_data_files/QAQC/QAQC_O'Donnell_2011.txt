@@ -159,6 +159,7 @@ Summary statistics...
     lyr_name : 24
     frc_name : 24
     frc_input : 24
+    frc_aggregate_dis : 24
     frc_property : 24
     frc_scheme : 24
     frc_scheme_units : 24

@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Camill_2009.xlsx
+File: Lawrence_2021.xlsx
 
 Checking file type...
 
@@ -21,7 +21,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( flux interstitial incubation )
+	NOTE: empty tabs detected ( flux interstitial fraction incubation )
 
 Not checking dataset doi because 'checkdoi is FALSE'...
 
@@ -91,63 +91,74 @@ Summary statistics...
     modification_date_d : 1
     contact_name : 1
     contact_email : 1
+    contact_orcid_id : 1
     bibliographical_reference : 1
-    metadata_note : 1
     template_version : 1
- site tab...1 observations
-    entry_name : 1
-    site_name : 1
-    site_lat : 1
-    site_long : 1
-    site_note : 1
- profile tab...23 observations
-    entry_name : 23
-    site_name : 23
-    plot_name : 23
-    pro_name : 23
-    pro_note : 23
-    pro_lat : 23
-    pro_long : 23
-    pro_elevation : 23
-    pro_treatment : 23
-    pro_peatland : 23
-    pro_usda_soil_order : 23
-    pro_land_cover : 23
-    pro_permafrost : 23
+ site tab...2 observations
+    entry_name : 2
+    site_name : 2
+    site_lat : 2
+    site_long : 2
+    site_datum : 2
+ profile tab...8 observations
+    entry_name : 8
+    site_name : 8
+    pro_name : 8
+    pro_lat : 8
+    pro_long : 8
+    pro_elevation : 8
+    pro_treatment : 8
+    pro_MAT : 8
+    pro_MAP : 8
+    pro_usda_soil_order : 8
+    pro_soil_age : 8
+    pro_soil_age_note : 8
+    pro_land_cover : 8
+    pro_veg_note : 8
+    pro_parent_material : 8
+    pro_parent_chem : 8
+    pro_parent_material_notes : 8
+    pro_slope : 8
+    pro_slope_shape : 8
+    pro_drainage_class : 8
+    pro_soc : 8
+    pro_soc_depth : 8
  flux tab...0 observations
- layer tab...1490 observations
-    entry_name : 1490
-    site_name : 1490
-    pro_name : 1490
-    lyr_name : 1490
-    lyr_obs_date_y : 1490
-    lyr_obs_date_m : 1490
-    lyr_all_org_neg : 1490
-    lyr_top : 1490
-    lyr_bot : 1490
-    lyr_hzn : 6
-    lyr_bd_samp : 1346
-    lyr_c_tot : 1346
-    lyr_n_tot : 1346
+ layer tab...124 observations
+    entry_name : 124
+    site_name : 124
+    pro_name : 124
+    lyr_name : 124
+    lyr_obs_date_y : 124
+    lyr_top : 124
+    lyr_bot : 124
+    lyr_bd_tot : 124
+    lyr_sand_tot_psa : 123
+    lyr_silt_tot_psa : 123
+    lyr_clay_tot_psa : 123
+    lyr_bet_surface_area : 122
+    lyr_ph_h2o : 122
+    lyr_c_org : 124
+    lyr_soc : 124
+    lyr_n_tot : 124
+    lyr_son : 124
+    lyr_c_to_n : 124
+    lyr_13c : 123
+    lyr_14c : 124
+    lyr_fraction_modern : 124
+    lyr_fe_py : 76
+    lyr_al_py : 76
+    lyr_fe_al_py : 76
+    lyr_fe_ox : 76
+    lyr_al_ox : 76
+    lyr_fe_dith : 76
+    lyr_al_dith : 76
+    lyr_quartz : 123
+    lyr_alkali_feldspar : 123
+    lyr_plag_feldspar : 123
+    lyr_kaol_halloy : 123
  interstitial tab...0 observations
- fraction tab...144 observations
-    entry_name : 144
-    site_name : 144
-    pro_name : 144
-    lyr_name : 144
-    frc_name : 144
-    frc_input : 144
-    frc_scheme_units : 144
-    frc_lower : 144
-    frc_upper : 144
-    frc_scheme : 144
-    frc_agent : 144
-    frc_property : 144
-    frc_aggregate_dis : 144
-    frc_note : 144
-    frc_rc_lab_number : 144
-    frc_fraction_modern : 144
-    frc_fraction_modern_sigma : 144
+ fraction tab...0 observations
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

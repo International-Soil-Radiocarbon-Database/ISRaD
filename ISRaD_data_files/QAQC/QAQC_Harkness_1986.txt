@@ -110,18 +110,18 @@ Summary statistics...
     pro_land_cover : 12
     pro_veg_note : 12
  flux tab...0 observations
- layer tab...35 observations
-    entry_name : 35
-    site_name : 35
-    pro_name : 35
-    lyr_name : 35
-    lyr_obs_date_y : 35
-    lyr_obs_date_m : 34
-    lyr_top : 35
-    lyr_bot : 35
+ layer tab...30 observations
+    entry_name : 30
+    site_name : 30
+    pro_name : 30
+    lyr_name : 30
+    lyr_obs_date_y : 30
+    lyr_obs_date_m : 29
+    lyr_top : 30
+    lyr_bot : 30
     lyr_bd_samp : 21
     lyr_c_tot : 21
-    lyr_fraction_modern : 31
+    lyr_fraction_modern : 26
  interstitial tab...0 observations
  fraction tab...38 observations
     entry_name : 38
@@ -130,12 +130,14 @@ Summary statistics...
     lyr_name : 38
     frc_name : 38
     frc_input : 38
+    frc_aggregate_dis : 38
     frc_scheme : 38
+    frc_agent : 38
+    frc_property : 38
     frc_scheme_units : 38
     frc_lower : 38
     frc_upper : 38
-    frc_agent : 38
-    frc_scheme_conc : 31
+    frc_scheme_conc : 35
     frc_fraction_modern : 38
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -

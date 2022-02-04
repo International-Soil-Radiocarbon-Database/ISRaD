@@ -164,12 +164,14 @@ Summary statistics...
     lyr_name : 47
     frc_name : 47
     frc_input : 47
-    frc_property : 47
+    frc_aba : 47
+    frc_aggregate_dis : 47
     frc_scheme : 47
+    frc_agent : 47
+    frc_property : 47
     frc_scheme_units : 47
     frc_lower : 47
     frc_upper : 47
-    frc_agent : 47
     frc_note : 47
     frc_rc_lab_number : 47
     frc_rc_year : 47

@@ -144,12 +144,13 @@ Summary statistics...
     lyr_name : 90
     frc_name : 90
     frc_input : 90
-    frc_property : 90
+    frc_aggregate_dis : 90
     frc_scheme : 90
+    frc_agent : 90
+    frc_property : 90
     frc_scheme_units : 90
     frc_lower : 90
     frc_upper : 90
-    frc_agent : 90
     frc_c_perc : 90
     frc_rc_year : 61
     frc_14c : 61

@@ -133,6 +133,7 @@ Summary statistics...
     lyr_name : 9
     frc_name : 9
     frc_input : 9
+    frc_aggregate_dis : 9
     frc_property : 9
     frc_scheme : 9
     frc_scheme_units : 9
@@ -141,6 +142,7 @@ Summary statistics...
     frc_agent : 9
     frc_scheme_conc : 9
     frc_note : 9
+    frc_aba : 9
     frc_obs_date_y : 8
     frc_c_perc : 8
     frc_13c : 8

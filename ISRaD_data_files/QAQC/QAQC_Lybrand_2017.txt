@@ -140,6 +140,7 @@ Summary statistics...
     pro_name : 48
     lyr_name : 48
     frc_name : 48
+    frc_aggregate_dis : 48
     frc_input : 48
     frc_property : 48
     frc_scheme : 48

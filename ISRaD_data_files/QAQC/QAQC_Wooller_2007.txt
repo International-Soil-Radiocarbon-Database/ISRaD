@@ -128,11 +128,14 @@ Summary statistics...
     lyr_name : 7
     frc_name : 7
     frc_input : 7
+    frc_aggregate_dis : 7
     frc_scheme : 7
+    frc_agent : 7
+    frc_property : 7
     frc_scheme_units : 7
     frc_lower : 7
     frc_upper : 7
-    frc_agent : 7
+    frc_note : 7
     frc_rc_lab : 7
     frc_rc_lab_number : 7
     frc_fraction_modern : 7

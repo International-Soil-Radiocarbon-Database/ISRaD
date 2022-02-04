@@ -142,6 +142,7 @@ Summary statistics...
     lyr_name : 11
     frc_name : 11
     frc_input : 11
+    frc_aggregate_dis : 11
     frc_property : 11
     frc_scheme : 11
     frc_scheme_units : 11

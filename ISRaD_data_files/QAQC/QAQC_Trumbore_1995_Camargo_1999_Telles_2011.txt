@@ -171,17 +171,18 @@ Summary statistics...
     lyr_name : 181
     frc_name : 181
     frc_input : 181
-    frc_property : 181
+    frc_aggregate_dis : 181
     frc_scheme : 181
+    frc_agent : 181
+    frc_property : 181
     frc_scheme_units : 181
     frc_lower : 181
     frc_upper : 181
-    frc_agent : 181
-    frc_note : 1
+    frc_note : 57
     frc_mass_perc : 4
-    frc_obs_date_y : 180
-    frc_obs_date_m : 180
-    frc_obs_date_d : 180
+    frc_obs_date_y : 181
+    frc_obs_date_m : 181
+    frc_obs_date_d : 181
     frc_c_tot : 40
     frc_c_org : 99
     frc_n_tot : 40

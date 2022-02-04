@@ -133,12 +133,14 @@ Summary statistics...
     lyr_name : 50
     frc_name : 50
     frc_input : 50
-    frc_property : 50
+    frc_aba : 10
+    frc_aggregate_dis : 50
     frc_scheme : 50
+    frc_agent : 50
+    frc_property : 50
     frc_scheme_units : 50
     frc_lower : 50
     frc_upper : 50
-    frc_agent : 50
     frc_scheme_conc : 35
     frc_note : 50
     frc_rc_lab : 50

@@ -137,9 +137,9 @@ Summary statistics...
     lyr_c_to_n : 47
     lyr_14c : 70
     lyr_fraction_modern : 56
-    lyr_py_notes : 50
     lyr_fe_ox : 50
     lyr_al_ox : 50
+    lyr_si_ox : 50
     lyr_ox_notes : 50
  interstitial tab...0 observations
  fraction tab...0 observations

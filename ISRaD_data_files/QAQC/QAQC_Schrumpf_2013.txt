@@ -134,12 +134,13 @@ Summary statistics...
     lyr_name : 225
     frc_name : 225
     frc_input : 225
-    frc_property : 225
+    frc_aggregate_dis : 225
     frc_scheme : 225
+    frc_agent : 225
+    frc_property : 225
     frc_scheme_units : 225
     frc_lower : 225
     frc_upper : 225
-    frc_agent : 225
     frc_c_perc : 225
     frc_rc_year : 95
     frc_14c : 95

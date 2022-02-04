@@ -71,6 +71,7 @@ Checking controlled vocab...
  layer tab...
  interstitial tab...
  fraction tab...
+WARNING: Unacceptable values detected in the frc_agent column: gravity
  incubation tab...
 
  - - - - - - - - - - - - - - - - - - - -
@@ -140,6 +141,8 @@ Summary statistics...
     lyr_name : 36
     frc_name : 36
     frc_input : 36
+    frc_aggregate_dis : 36
+    frc_property : 36
     frc_scheme : 36
     frc_scheme_units : 36
     frc_lower : 36
@@ -154,7 +157,8 @@ Summary statistics...
 
 
  - - - - - - - - - - - - - - - - - - - -
-PASSED. Nice work!
+ 1 WARNINGS need to be fixed
+
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to

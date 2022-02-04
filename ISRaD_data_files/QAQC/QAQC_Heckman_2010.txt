@@ -197,12 +197,13 @@ Summary statistics...
     lyr_name : 177
     frc_name : 177
     frc_input : 177
-    frc_property : 177
+    frc_aggregate_dis : 177
     frc_scheme : 177
+    frc_agent : 177
+    frc_property : 177
     frc_scheme_units : 177
     frc_lower : 177
     frc_upper : 177
-    frc_agent : 177
     frc_comp : 45
     frc_mass_perc : 177
     frc_obs_date_y : 177

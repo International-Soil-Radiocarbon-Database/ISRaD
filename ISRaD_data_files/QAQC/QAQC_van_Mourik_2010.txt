@@ -130,12 +130,14 @@ Summary statistics...
     lyr_name : 30
     frc_name : 30
     frc_input : 30
+    frc_aggregate_dis : 30
     frc_property : 30
     frc_scheme : 30
     frc_scheme_units : 30
     frc_lower : 30
     frc_upper : 30
     frc_agent : 30
+    frc_aba : 6
     frc_obs_date_y : 30
     frc_fraction_modern : 18
     frc_fraction_modern_sigma : 18

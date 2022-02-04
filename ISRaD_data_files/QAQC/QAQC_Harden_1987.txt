@@ -165,15 +165,16 @@ Summary statistics...
     lyr_name : 325
     frc_name : 325
     frc_input : 325
-    frc_property : 325
+    frc_aggregate_dis : 325
     frc_scheme : 325
+    frc_agent : 325
+    frc_property : 325
     frc_scheme_units : 325
     frc_lower : 325
     frc_upper : 325
-    frc_agent : 325
-    frc_scheme_conc : 155
-    frc_note : 167
-    frc_mass_perc : 300
+    frc_scheme_conc : 154
+    frc_note : 25
+    frc_mass_perc : 292
     frc_c_org : 274
     frc_rc_lab : 27
     frc_rc_lab_number : 27

@@ -164,6 +164,7 @@ Summary statistics...
     lyr_name : 150
     frc_name : 150
     frc_input : 150
+    frc_aggregate_dis : 150
     frc_property : 150
     frc_scheme : 150
     frc_scheme_units : 150

@@ -139,22 +139,25 @@ Summary statistics...
     lyr_fraction_modern : 12
     lyr_fraction_modern_sigma : 12
  interstitial tab...0 observations
- fraction tab...12 observations
-    entry_name : 12
-    site_name : 12
-    pro_name : 12
-    lyr_name : 12
-    frc_name : 12
-    frc_input : 12
-    frc_scheme : 12
-    frc_scheme_units : 12
-    frc_lower : 12
-    frc_upper : 12
-    frc_agent : 12
-    frc_comp : 12
-    frc_rc_lab : 12
-    frc_fraction_modern : 12
-    frc_fraction_modern_sigma : 12
+ fraction tab...36 observations
+    entry_name : 36
+    site_name : 36
+    pro_name : 36
+    lyr_name : 36
+    frc_name : 36
+    frc_input : 36
+    frc_aggregate_dis : 36
+    frc_property : 36
+    frc_scheme : 36
+    frc_scheme_units : 36
+    frc_lower : 36
+    frc_upper : 36
+    frc_agent : 36
+    frc_comp : 36
+    frc_note : 12
+    frc_rc_lab : 36
+    frc_fraction_modern : 24
+    frc_fraction_modern_sigma : 24
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

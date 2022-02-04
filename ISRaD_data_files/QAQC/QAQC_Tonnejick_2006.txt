@@ -108,6 +108,7 @@ Summary statistics...
     pro_long : 8
     pro_treatment : 8
     pro_comp : 2
+    pro_peatland : 3
     pro_reps : 2
     pro_soil_taxon : 8
     pro_soil_taxon_sys : 8
@@ -133,12 +134,14 @@ Summary statistics...
     lyr_name : 81
     frc_name : 81
     frc_input : 81
-    frc_property : 81
+    frc_aba : 27
+    frc_aggregate_dis : 81
     frc_scheme : 81
+    frc_agent : 81
+    frc_property : 81
     frc_scheme_units : 81
     frc_lower : 81
     frc_upper : 81
-    frc_agent : 81
     frc_13c : 54
     frc_rc_lab : 54
     frc_rc_lab_number : 3

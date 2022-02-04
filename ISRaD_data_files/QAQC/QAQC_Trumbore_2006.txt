@@ -178,12 +178,13 @@ Summary statistics...
     lyr_name : 12
     frc_name : 12
     frc_input : 12
-    frc_property : 12
-    frc_scheme : 12
     frc_scheme_units : 12
     frc_lower : 12
     frc_upper : 12
+    frc_aggregate_dis : 12
+    frc_scheme : 12
     frc_agent : 12
+    frc_property : 12
     frc_note : 12
  incubation tab...44 observations
     entry_name : 44

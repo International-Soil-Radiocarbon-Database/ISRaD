@@ -145,12 +145,14 @@ Summary statistics...
     lyr_name : 144
     frc_name : 144
     frc_input : 144
-    frc_property : 48
+    frc_aggregate_dis : 144
     frc_scheme : 144
+    frc_agent : 144
+    frc_property : 144
     frc_scheme_units : 144
     frc_lower : 144
     frc_upper : 144
-    frc_agent : 144
+    frc_scheme_conc : 96
     frc_mass_perc : 48
     frc_c_perc : 138
     frc_c_org : 93

@@ -136,6 +136,8 @@ Summary statistics...
     pro_name : 18
     lyr_name : 18
     frc_name : 18
+    frc_aggregate_dis : 18
+    frc_aba : 18
     frc_input : 18
     frc_property : 18
     frc_scheme : 18

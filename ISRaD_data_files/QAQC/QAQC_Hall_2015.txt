@@ -145,12 +145,13 @@ Summary statistics...
     lyr_name : 54
     frc_name : 54
     frc_input : 54
-    frc_property : 54
+    frc_aggregate_dis : 54
     frc_scheme : 54
+    frc_agent : 54
+    frc_property : 54
     frc_scheme_units : 54
     frc_lower : 54
     frc_upper : 54
-    frc_agent : 54
     frc_comp : 24
     frc_note : 24
     frc_mass_perc : 18

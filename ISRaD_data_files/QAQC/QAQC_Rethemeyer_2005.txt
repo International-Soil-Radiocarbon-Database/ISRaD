@@ -136,11 +136,13 @@ Summary statistics...
     lyr_name : 22
     frc_name : 22
     frc_input : 22
-    frc_property : 22
-    frc_scheme : 22
     frc_scheme_units : 22
     frc_lower : 22
     frc_upper : 22
+    frc_property : 22
+    frc_aba : 22
+    frc_aggregate_dis : 22
+    frc_scheme : 22
     frc_agent : 22
     frc_note : 22
     frc_rc_lab : 22

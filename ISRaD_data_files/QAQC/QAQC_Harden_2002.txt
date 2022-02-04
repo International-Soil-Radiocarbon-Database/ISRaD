@@ -179,14 +179,14 @@ Summary statistics...
     lyr_name : 24
     frc_name : 24
     frc_input : 24
-    frc_property : 24
+    frc_aggregate_dis : 24
     frc_scheme : 24
+    frc_agent : 24
+    frc_property : 24
     frc_scheme_units : 24
     frc_lower : 24
     frc_upper : 24
-    frc_agent : 24
     frc_comp : 9
-    frc_note : 8
     frc_mass_perc : 24
     frc_obs_date_y : 24
     frc_c_perc : 24

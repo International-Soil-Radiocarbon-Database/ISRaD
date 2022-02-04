@@ -140,6 +140,7 @@ Summary statistics...
     frc_lower : 5
     frc_upper : 5
     frc_agent : 5
+    frc_aggregate_dis : 5
     frc_note : 5
     frc_rc_lab_number : 5
     frc_fraction_modern : 5

@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Camill_2009.xlsx
+File: Zazovskaya_2017_Mergelov_2020.xlsx
 
 Checking file type...
 
@@ -79,75 +79,78 @@ It might be useful to manually review the summary statistics and graphical repre
 
 Summary statistics...
 
- metadata tab...1 observations
-    entry_name : 1
-    doi : 1
-    compilation_doi : 1
-    curator_name : 1
-    curator_organization : 1
-    curator_email : 1
-    modification_date_y : 1
-    modification_date_m : 1
-    modification_date_d : 1
-    contact_name : 1
-    contact_email : 1
-    bibliographical_reference : 1
-    metadata_note : 1
+ metadata tab...2 observations
+    entry_name : 2
+    doi : 2
+    curator_name : 2
+    curator_organization : 2
+    curator_email : 2
+    modification_date_y : 2
+    modification_date_m : 2
+    modification_date_d : 2
+    contact_name : 2
+    contact_email : 2
+    bibliographical_reference : 2
     template_version : 1
- site tab...1 observations
-    entry_name : 1
-    site_name : 1
-    site_lat : 1
-    site_long : 1
+ site tab...5 observations
+    entry_name : 5
+    site_name : 5
+    site_lat : 5
+    site_long : 5
     site_note : 1
- profile tab...23 observations
-    entry_name : 23
-    site_name : 23
-    plot_name : 23
-    pro_name : 23
-    pro_note : 23
-    pro_lat : 23
-    pro_long : 23
-    pro_elevation : 23
-    pro_treatment : 23
-    pro_peatland : 23
-    pro_usda_soil_order : 23
-    pro_land_cover : 23
-    pro_permafrost : 23
+ profile tab...18 observations
+    entry_name : 18
+    site_name : 18
+    plot_name : 9
+    pro_name : 18
+    pro_lat : 18
+    pro_long : 18
+    pro_treatment : 18
+    pro_treatment_note : 3
+    pro_MAP : 18
+    pro_peatland : 1
+    pro_usda_soil_order : 18
+    pro_soil_taxon : 16
+    pro_land_cover : 18
+    pro_veg_note : 10
+    pro_permafrost : 12
  flux tab...0 observations
- layer tab...1490 observations
-    entry_name : 1490
-    site_name : 1490
-    pro_name : 1490
-    lyr_name : 1490
-    lyr_obs_date_y : 1490
-    lyr_obs_date_m : 1490
-    lyr_all_org_neg : 1490
-    lyr_top : 1490
-    lyr_bot : 1490
-    lyr_hzn : 6
-    lyr_bd_samp : 1346
-    lyr_c_tot : 1346
-    lyr_n_tot : 1346
+ layer tab...37 observations
+    entry_name : 37
+    site_name : 37
+    pro_name : 37
+    lyr_name : 37
+    lyr_obs_date_y : 37
+    lyr_all_org_neg : 37
+    lyr_top : 37
+    lyr_bot : 37
+    lyr_hzn : 32
+    lyr_note : 37
+    lyr_rc_lab : 28
+    lyr_rc_lab_number : 28
+    lyr_fraction_modern : 28
+    lyr_fraction_modern_sigma : 28
  interstitial tab...0 observations
- fraction tab...144 observations
-    entry_name : 144
-    site_name : 144
-    pro_name : 144
-    lyr_name : 144
-    frc_name : 144
-    frc_input : 144
-    frc_scheme_units : 144
-    frc_lower : 144
-    frc_upper : 144
-    frc_scheme : 144
-    frc_agent : 144
-    frc_property : 144
-    frc_aggregate_dis : 144
-    frc_note : 144
-    frc_rc_lab_number : 144
-    frc_fraction_modern : 144
-    frc_fraction_modern_sigma : 144
+ fraction tab...9 observations
+    entry_name : 9
+    site_name : 9
+    pro_name : 9
+    lyr_name : 9
+    frc_name : 9
+    frc_input : 9
+    frc_aba : 6
+    frc_aggregate_dis : 9
+    frc_scheme : 9
+    frc_agent : 9
+    frc_property : 9
+    frc_scheme_units : 9
+    frc_lower : 9
+    frc_upper : 9
+    frc_note : 9
+    frc_rc_lab : 9
+    frc_rc_lab_number : 9
+    frc_fraction_modern : 9
+    frc_fraction_modern_sigma : 9
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

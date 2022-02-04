@@ -146,13 +146,15 @@ Summary statistics...
     lyr_name : 20
     frc_name : 20
     frc_input : 20
-    frc_property : 20
+    frc_aggregate_dis : 20
     frc_scheme : 20
+    frc_agent : 20
+    frc_property : 20
     frc_scheme_units : 20
     frc_lower : 20
     frc_upper : 20
-    frc_agent : 20
     frc_scheme_conc : 20
+    frc_note : 20
     frc_obs_date_y : 20
     frc_obs_date_m : 20
     frc_c_org : 20

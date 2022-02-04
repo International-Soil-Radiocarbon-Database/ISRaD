@@ -131,12 +131,13 @@ Summary statistics...
     lyr_name : 28
     frc_name : 28
     frc_input : 28
-    frc_property : 28
+    frc_aggregate_dis : 28
     frc_scheme : 28
+    frc_agent : 28
+    frc_property : 28
     frc_scheme_units : 28
     frc_lower : 28
     frc_upper : 28
-    frc_agent : 28
     frc_mass_perc : 28
     frc_c_perc : 28
     frc_c_org : 28
