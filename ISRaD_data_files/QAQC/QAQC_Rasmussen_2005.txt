@@ -43,7 +43,6 @@ Checking for missing values in required columns...
  layer tab...
  interstitial tab...
  fraction tab...
-WARNING: Missing values where required: frc_aggregate_dis (rows: 4 5 6 13 14 15 )
  incubation tab...
 
 Checking that level names match between tabs...
@@ -160,7 +159,7 @@ Summary statistics...
     frc_name : 18
     frc_input : 18
     frc_property : 18
-    frc_aggregate_dis : 12
+    frc_aggregate_dis : 18
     frc_scheme : 18
     frc_scheme_units : 18
     frc_lower : 18
@@ -184,8 +183,7 @@ Summary statistics...
 
 
  - - - - - - - - - - - - - - - - - - - -
- 1 WARNINGS need to be fixed
-
+PASSED. Nice work!
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to

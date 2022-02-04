@@ -22,3 +22,6 @@ QAQC_frc(file = "./Väliranta_2003.xlsx",
          template_file = template_file,
          template_info_file = template_info_file,
          checkdoi = FALSE)
+
+# updated QAQC
+QAQC("/Users/jeff/ISRaD/ISRaD_data_files/Zimmermann_2001.xlsx")
