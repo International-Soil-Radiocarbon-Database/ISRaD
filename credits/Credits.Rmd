@@ -2,9 +2,9 @@
 title: "ISRaD Credits"
 date: \textit{\today}
 output:
-  html_document:
   pdf_document:
     latex_engine: xelatex
+  html_document:
   github_document:
 csl: apa-7th-edition.csl
 bibliography: credits.bib
@@ -62,6 +62,13 @@ if(file.exists(file.path("./credits.bib"))) {
 lapply(seq_along(cleandois), function(i) {
   doi.bib(cleandois[i], .bib = "credits.bib")
 })
+
+# clean up .bib file
+.bib <- readLines("credits.bib")
+clean.bib <- gsub("\\{upDelta}", "upDelta", .bib)
+
+# save
+cat(clean.bib, sep = "\n", file = "credits.bib")
 ```
 
 # Main compilations
