@@ -6,7 +6,6 @@
 #' @param ISRaD_directory directory where the ISRaD package is found
 #' @param geodata_directory directory where geospatial datasets are found. Necessary to create ISRaD_Extra
 #' @param geodata_keys directory where geospatial factor keys are found. Necessary to create ISRaD_Extra
-#' @param citations T or F. Update citations.
 #' @return runs QAQC on all datafiles, moves files that fail QAQC, updates ISRaD_Data, updates ISRaD_Extra
 #' @import stringr dplyr
 #' @importFrom writexl write_xlsx
@@ -14,8 +13,7 @@
 
 ISRaD.build <- function(ISRaD_directory = getwd(),
                         geodata_directory = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_geodata",
-                        geodata_keys = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_keys",
-                        citations = T) {
+                        geodata_keys = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_keys") {
 
   # load fill_expert fx
   source("./devScripts/ISRaD.extra.fill_expert.R")

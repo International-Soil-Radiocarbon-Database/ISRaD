@@ -1,3 +1,6 @@
+# Updated release with fraction data overhaul, early February 2022
+ISRaD 2.0.0
+
 # Updated release for CRAN, early January 2021
 ISRaD 1.7.8
 
