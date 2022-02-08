@@ -1,5 +1,15 @@
-ISRaD Credits
-================
+# ISRaD Credits
+
+*2022-02-08*
+
+<p align="right">
+
+<img src="/../gh-pages/assets/images/ISRaD_Map_July2021.jpg"
+     alt="ISRaD Site Map 2021"
+     width ="400"
+     style="float: right; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
+
+</p>
 
 # Main compilations
 
