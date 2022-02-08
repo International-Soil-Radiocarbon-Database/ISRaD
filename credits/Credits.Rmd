@@ -2,10 +2,10 @@
 title: "ISRaD Credits"
 date: \textit{\today}
 output:
-  html_document:
+  github_document:
   pdf_document:
     latex_engine: xelatex
-  github_document:
+  html_document:
 csl: apa-7th-edition.csl
 bibliography: credits.bib
 nocite: '@*'
