@@ -78,16 +78,6 @@ cleandois <- as.character(dois[dois[] != "israd"])
 # # save
 # cat(clean.bib, sep = "\n", file = "credits.bib") 
 ```
-
-# ISRaD Credits
-*`r {Sys.Date()}`*
-<p align = "right">
-  <img src="/../gh-pages/assets/images/ISRaD_Map_July2021.jpg"
-     alt="ISRaD Site Map 2021"
-     width ="400"
-     style="float: right; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
-</p>
-
 # Main compilations
 ISRaD has been built based on two main compilations: 
 
