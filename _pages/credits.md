@@ -7,7 +7,7 @@ header:
 ---
 
 # ISRaD Credits
-Updated: 01-Sep-2020
+Updated: 04-Feb-2022
 
 <p align = "right">
   <img src="/assets/images/ISRaD_Map_July2021.jpg"
@@ -15,6 +15,8 @@ Updated: 01-Sep-2020
      width ="400"
      style="float: right; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
 </p>
+
+<src="../master/credits/credits.md">
 
 # Main compilations
 
@@ -42,8 +44,8 @@ ISRaD has been built based on many individual studies and the following compilat
 
 # Studies within ISRaD
 
-Currently, there are 362 entries (unique DOIs) in ISRaD, which are from
-the following publications:
+Currently there are 417 entries in ISRaD from the following
+publications:
 
 <div id="refs" class="references">
 
@@ -59,8 +61,8 @@ modern and ancient arctic lake systems, baffin island, canada.
 <div id="ref-Agnelli_2002">
 
 Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The
-dynamics of organic matter in rock fragments in soil investigated by 14C
-dating and measurements of 13C. *European Journal of Soil Science*,
+dynamics of organic matter in rock fragments in soil investigated by 14
+c dating and measurements of 13 c. *European Journal of Soil Science*,
 *53*(1), 147–159. <https://doi.org/10.1046/j.1365-2389.2002.00432.x>
 
 </div>
@@ -91,6 +93,15 @@ matter and nutrients in two large arctic estuaries and potential
 implications for our understanding of the arctic ocean system. *Marine
 Chemistry*, *92*(1-4), 311–330.
 <https://doi.org/10.1016/j.marchem.2004.06.034>
+
+</div>
+
+<div id="ref-Anderson_1975">
+
+Anderson, J., & Muller, J. (1975). Palynological study of a holocene
+peat and a miocene coal deposit from NW borneo. *Review of Palaeobotany
+and Palynology*, *19*(4), 291–351.
+<https://doi.org/10.1016/0034-6667(75)90049-4>
 
 </div>
 
@@ -129,6 +140,26 @@ Hubberten, H.-W. (2004). Vegetation and climate changes around the lama
 lake, taymyr peninsula, russia during the late pleistocene and holocene.
 *Quaternary International*, *122*(1), 69–84.
 <https://doi.org/10.1016/j.quaint.2004.01.032>
+
+</div>
+
+<div id="ref-Anshari_2004">
+
+Anshari, G., Kershaw, A. P., Kaars, S. V. D., & Jacobsen, G. (2004).
+Environmental change and peatland forest dynamics in the lake sentarum
+area, west kalimantan, indonesia. *Journal of Quaternary Science*,
+*19*(7), 637–655. <https://doi.org/10.1002/jqs.879>
+
+</div>
+
+<div id="ref-Anshari_2010">
+
+Anshari, G. Z., Afifudin, M., Nuriman, M., Gusmayanti, E., Arianie, L.,
+Susana, R., Nusantara, R. W., Sugardjito, J., & Rafiastanto, A. (2010).
+Drainage and land use impacts on changes in selected peat properties and
+peat degradation in west kalimantan province, indonesia.
+*Biogeosciences*, *7*(11), 3403–3419.
+<https://doi.org/10.5194/bg-7-3403-2010>
 
 </div>
 
@@ -256,7 +287,7 @@ high-resolution sampling. *Radiocarbon*, *44*(1), 63–73.
 <div id="ref-Becker_Heidmann_1986">
 
 Becker-Heidmann, P., & Scharpenseel, H.-W. (1986). Thin layer
-\(\updelta\)13C and d14c monitoring of “Lessive” soil profiles.
+\(\delta\)13C and d14c monitoring of “Lessive” soil profiles.
 *Radiocarbon*, *28*(2A), 383–390.
 <https://doi.org/10.1017/s0033822200007499>
 
@@ -290,12 +321,41 @@ Royal Society B: Biological Sciences*, *362*(1478), 243–251.
 
 </div>
 
+<div id="ref-Beilman_2019">
+
+Beilman, D. W., Massa, C., Nichols, J. E., Timm, O. E., Kallstrom, R., &
+Dunbar-Co, S. (2019). Dynamic holocene vegetation and north pacific
+hydroclimate recorded in a mountain peatland, moloka‘i, hawai‘i.
+*Frontiers in Earth Science*, *7*.
+<https://doi.org/10.3389/feart.2019.00188>
+
+</div>
+
+<div id="ref-van_Bellen_2011">
+
+Bellen, S. van, Garneau, M., & Booth, R. K. (2011). Holocene carbon
+accumulation rates from three ombrotrophic peatlands in boreal quebec,
+canada: Impact of climate-driven ecohydrological change. *The Holocene*,
+*21*(8), 1217–1231. <https://doi.org/10.1177/0959683611405243>
+
+</div>
+
 <div id="ref-Bellisario_1999">
 
 Bellisario, L. M., Bubier, J. L., Moore, T. R., & Chanton, J. P. (1999).
 Controls on CH4emissions from a northern peatland. *Global
 Biogeochemical Cycles*, *13*(1), 81–91.
 <https://doi.org/10.1029/1998gb900021>
+
+</div>
+
+<div id="ref-Benfield_2021">
+
+Benfield, A. J., Yu, Z., & Benavides, J. C. (2021). Environmental
+controls over holocene carbon accumulation in distichia
+muscoides-dominated peatlands in the eastern andes of colombia.
+*Quaternary Science Reviews*, *251*, 106687.
+<https://doi.org/10.1016/j.quascirev.2020.106687>
 
 </div>
 
@@ -364,7 +424,7 @@ Journal*, *63*(1), 222–225.
 
 <div id="ref-Bird_2002">
 
-Bird, M., Santruckova, H., Lloyd, J., & Lawson, E. (2002). The isotopic
+Bird, M., Santrùcková, H., Lloyd, J., & Lawson, E. (2002). The isotopic
 composition of soil organic carbon on a north-south transect in western
 canada. *European Journal of Soil Science*, *53*(3), 393–403.
 <https://doi.org/10.1046/j.1365-2389.2002.00444.x>
@@ -408,6 +468,15 @@ Science*, *47*(2), 215–222.
 
 </div>
 
+<div id="ref-BORKEN_2005">
+
+BORKEN, W., SAVAGE, K., DAVIDSON, E. A., & TRUMBORE, S. E. (2005).
+Effects of experimental drought on soil respiration and radiocarbon
+efflux from a temperate forest soil. *Global Change Biology*, *12*(2),
+177–193. <https://doi.org/10.1111/j.1365-2486.2005.001058.x>
+
+</div>
+
 <div id="ref-Bouchard_2015">
 
 Bouchard, F., Laurion, I.,
@@ -416,6 +485,15 @@ D., Xu, X., & Whiticar, M. J. (2015). Modern to millennium-old
 greenhouse gases emitted from ponds and lakes of the eastern canadian
 arctic (bylot island, nunavut). *Biogeosciences*, *12*(23), 7279–7298.
 <https://doi.org/10.5194/bg-12-7279-2015>
+
+</div>
+
+<div id="ref-Bukombe_2021">
+
+Bukombe, B., Fiener, P., Hoyt, A. M., & Doetterl, S. (2021). *Controls
+on heterotrophic soil respiration and carbon cycling in geochemically
+distinct african tropical forest soils*.
+<https://doi.org/10.5194/soil-2020-96>
 
 </div>
 
@@ -445,6 +523,16 @@ Camargo, P. B. D., Trumbore, S. E., Martinelli, L. A., Davidson, E. A.,
 Nepstad, D. C., & Victoria, R. L. (1999). Soil carbon dynamics in
 regrowing forest of eastern amazonia. *Global Change Biology*, *5*(6),
 693–702. <https://doi.org/10.1046/j.1365-2486.1999.00259.x>
+
+</div>
+
+<div id="ref-Camill_2009">
+
+Camill, P., Barry, A., Williams, E., Andreassi, C., Limmer, J., &
+Solick, D. (2009). Climate-vegetation-fire interactions and their impact
+on long-term carbon dynamics in a boreal peatland landscape in northern
+manitoba, canada. *Journal of Geophysical Research*, *114*(G4).
+<https://doi.org/10.1029/2009jg001071>
 
 </div>
 
@@ -515,6 +603,15 @@ transport and transformation of dissolved organic carbon, dissolved
 inorganic carbon, and CH4in a northern minnesota peatland. *Global
 Biogeochemical Cycles*, *14*(4), 1095–1108.
 <https://doi.org/10.1029/1999gb001221>
+
+</div>
+
+<div id="ref-Chen_2021">
+
+Chen, L., Fang, K., Wei, B., Qin, S., Feng, X., Hu, T., Ji, C., & Yang,
+Y. (2021). Soil carbon persistence governed by plant input and mineral
+protection at regional and global scales. *Ecology Letters*, *24*(5),
+1018–1028. <https://doi.org/10.1111/ele.13723>
 
 </div>
 
@@ -594,13 +691,42 @@ basalt. *Geochimica et Cosmochimica Acta*, *68*(23), 4859–4876.
 
 </div>
 
+<div id="ref-Cobb_2017">
+
+Cobb, A. R., Hoyt, A. M., Gandois, L., Eri, J., Dommain, R., Salim, K.
+A., Kai, F. M., Su’ut, N. S. H., & Harvey, C. F. (2017). How temporal
+patterns in rainfall determine the geomorphology and carbon fluxes of
+tropical peatlands. *Proceedings of the National Academy of Sciences*,
+201701090. <https://doi.org/10.1073/pnas.1701090114>
+
+</div>
+
+<div id="ref-Cole_2015">
+
+Cole, L. E. S., Bhagwat, S. A., & Willis, K. J. (2015). Long-term
+disturbance dynamics and resilience of tropical peat swamp forests.
+*Journal of Ecology*, *103*(1), 16–30.
+<https://doi.org/10.1111/1365-2745.12329>
+
+</div>
+
 <div id="ref-Conen_2008">
 
 Conen, F., Zimmermann, M., Leifeld, J., Seth, B., & Alewell, C. (2008).
 Relative stability of soil carbon revealed by shifts in
-\(\updelta\)\&lt\(\mathsemicolon\)sup\&gt\(\mathsemicolon\)15\&lt\(\mathsemicolon\)/sup\&gt\(\mathsemicolon\)N
+\(\delta\)\&lt\(\mathsemicolon\)sup\&gt\(\mathsemicolon\)15\&lt\(\mathsemicolon\)/sup\&gt\(\mathsemicolon\)N
 and c:N ratio. *Biogeosciences*, *5*(1), 123–128.
 <https://doi.org/10.5194/bg-5-123-2008>
+
+</div>
+
+<div id="ref-Cook_2018">
+
+Cook, S., Whelan, M. J., Evans, C. D., Gauci, V., Peacock, M., Garnett,
+M. H., Kho, L. K., Teh, Y. A., & Page, S. E. (2018). Fluvial organic
+carbon fluxes from oil palm plantations on tropical peatland.
+*Biogeosciences*, *15*(24), 7435–7450.
+<https://doi.org/10.5194/bg-15-7435-2018>
 
 </div>
 
@@ -686,6 +812,15 @@ Dam, D. van, Breemen, N. van, & Veldkamp, E. (1997). *Biogeochemistry*,
 
 </div>
 
+<div id="ref-Dargie_2017">
+
+Dargie, G. C., Lewis, S. L., Lawson, I. T., Mitchard, E. T. A., Page, S.
+E., Bocko, Y. E., & Ifo, S. A. (2017). Age, extent and carbon storage of
+the central congo basin peatland complex. *Nature*, *542*(7639), 86–90.
+<https://doi.org/10.1038/nature21048>
+
+</div>
+
 <div id="ref-Desjardins_1994">
 
 Desjardins, T., Andreux, F., Volkoff, B., & Cerri, C. (1994). Organic
@@ -715,6 +850,28 @@ geochemistry and climate. *Nature Geoscience*, *8*(10), 780–783.
 
 </div>
 
+<div id="ref-Dommain_2020">
+
+Dommain, R., Andama, M., McDonough, M. M., Prado, N. A., Goldhammer, T.,
+Potts, R., Maldonado, J. E., Nkurunungi, J. B., & Campana, M. G. (2020).
+The challenges of reconstructing tropical biodiversity with sedimentary
+ancient DNA: A 2200-year-long metagenomic record from bwindi
+impenetrable forest, uganda. *Frontiers in Ecology and Evolution*, *8*.
+<https://doi.org/10.3389/fevo.2020.00218>
+
+</div>
+
+<div id="ref-Dommain_2015">
+
+Dommain, R., Cobb, A. R., Joosten, H., Glaser, P. H., Chua, A. F. L.,
+Gandois, L., Kai, F.-M., Noren, A., Salim, K. A., Suut, N. S. H., &
+Harvey, C. F. (2015). Forest dynamics and tip-up pools drive pulses of
+high carbon accumulation rates in a tropical peat dome in borneo
+(southeast asia). *Journal of Geophysical Research: Biogeosciences*,
+*120*(4), 617–640. <https://doi.org/10.1002/2014jg002796>
+
+</div>
+
 <div id="ref-D_rr_1980">
 
 Dörr, H., & Münnich, K. O. (1980). Carbon-14 and carbon-13 in soil co2.
@@ -740,6 +897,16 @@ the soil. *Radiocarbon*, *31*(03), 655–663.
 
 </div>
 
+<div id="ref-Drake_2019">
+
+Drake, T. W., Oost, K. V., Barthel, M., Bauters, M., Hoyt, A. M.,
+Podgorski, D. C., Six, J., Boeckx, P., Trumbore, S. E., Ntaboba, L. C.,
+& Spencer, R. G. M. (2019). Mobilization of aged and biolabile soil
+carbon by tropical deforestation. *Nature Geoscience*, *12*(7), 541–546.
+<https://doi.org/10.1038/s41561-019-0384-9>
+
+</div>
+
 <div id="ref-Dredge_2005">
 
 Dredge, L. A., & Mott, R. J. (2005). Holocene pollen records and
@@ -761,7 +928,7 @@ Potential carbon release from permafrost soils of northeastern siberia.
 
 Dümig, A., Schad, P., Rumpel, C., Dignac, M.-F., & Kögel-Knabner, I.
 (2008). Araucaria forest expansion on grassland in the southern
-brazilian highlands as revealed by 14C and \(\updelta\)13C studies.
+brazilian highlands as revealed by 14C and \(\delta\)13C studies.
 *Geoderma*, *145*(1-2), 143–157.
 <https://doi.org/10.1016/j.geoderma.2007.06.005>
 
@@ -833,6 +1000,26 @@ Research*, *111*(G3). <https://doi.org/10.1029/2006jg000174>
 
 </div>
 
+<div id="ref-Favilli_2008">
+
+Favilli, F., Egli, M., Cherubini, P., Sartori, G., Haeberli, W., &
+Delbos, E. (2008). Comparison of different methods of obtaining a
+resilient organic matter fraction in alpine soils. *Geoderma*,
+*145*(3-4), 355–369. <https://doi.org/10.1016/j.geoderma.2008.04.002>
+
+</div>
+
+<div id="ref-Fekete_2020">
+
+Fekete, I., Berki, I., Lajtha, K., Trumbore, S., Francioso, O.,
+Gioacchini, P., Montecchio, D., Várbı'ró, G., Béni, Makádi, M., Demeter,
+I., Madarász, B., Juhos, K., & Kotroczó, Z. (2020). How will a drier
+climate change carbon sequestration in soils of the deciduous forests of
+central europe? *Biogeochemistry*, *152*(1), 13–32.
+<https://doi.org/10.1007/s10533-020-00728-w>
+
+</div>
+
 <div id="ref-Fernandez_1993">
 
 Fernandez, I. J., Rustad, L. E., & Lawrence, G. B. (1993). Estimating
@@ -870,6 +1057,15 @@ and Alpine Research*, *46*(1), 40–54.
 
 </div>
 
+<div id="ref-Finstad_2020">
+
+Finstad, K., Straaten, O., Veldkamp, E., & McFarlane, K. (2020). Soil
+carbon dynamics following land use changes and conversion to oil palm
+plantations in tropical lowlands inferred from radiocarbon. *Global
+Biogeochemical Cycles*, *34*(9). <https://doi.org/10.1029/2019gb006461>
+
+</div>
+
 <div id="ref-Fontaine_2007">
 
 Fontaine, S., Barot, S., Barré, P., Bdioui, N., Mary, B., & Rumpel, C.
@@ -886,6 +1082,16 @@ Souza Ribeiro, A. de, & Boulet, R. (2001). Late quaternary vegetation
 dynamics in the southern amazon basin inferred from carbon isotopes in
 soil organic matter. *Quaternary Research*, *55*(1), 39–46.
 <https://doi.org/10.1006/qres.2000.2192>
+
+</div>
+
+<div id="ref-Gandois_2014">
+
+Gandois, L., Teisserenc, R., Cobb, A., Chieng, H., Lim, L., Kamariah,
+A., Hoyt, A., & Harvey, C. (2014). Origin, composition, and
+transformation of dissolved organic matter in tropical peatlands.
+*Geochimica et Cosmochimica Acta*, *137*, 35–47.
+<https://doi.org/10.1016/j.gca.2014.03.012>
 
 </div>
 
@@ -927,12 +1133,31 @@ protection. *Global Change Biology*, *24*(8), 3401–3415.
 
 </div>
 
+<div id="ref-Giardina_2014">
+
+Giardina, C. P., Litton, C. M., Crow, S. E., & Asner, G. P. (2014).
+Warming-related increases in soil CO2 efflux are explained by increased
+below-ground carbon flux. *Nature Climate Change*, *4*(9), 822–827.
+<https://doi.org/10.1038/nclimate2322>
+
+</div>
+
 <div id="ref-Gillson_2004">
 
 Gillson, L. (2004). Testing non-equilibrium theories in savannas: 1400
 years of vegetation change in tsavo national park, kenya. *Ecological
 Complexity*, *1*(4), 281–298.
 <https://doi.org/10.1016/j.ecocom.2004.06.001>
+
+</div>
+
+<div id="ref-GOH_1976">
+
+GOH, K. M., RAFTER, T. A., STOUT, J. D., & WALKER, T. W. (1976). THE
+ACCUMULATION OF SOIL ORGANIC MATTER AND ITS CARBON ISOTOPE CONTENT IN a
+CHRONOSEQUENCE OF SOILS DEVELOPED ON AEOLIAN SAND IN NEW ZEALAND.
+*Journal of Soil Science*, *27*(1), 89–100.
+<https://doi.org/10.1111/j.1365-2389.1976.tb01979.x>
 
 </div>
 
@@ -988,7 +1213,7 @@ Heterogeneity of natural organic matter from the chena river, alaska.
 
 Guo, L., & Macdonald, R. W. (2006). Source and transport of terrigenous
 organic matter in the upper yukon river: Evidence from isotope
-(\(\updelta\)13C, \(\upDelta\)14C, and \(\updelta\)15N) composition of
+(\(\delta\)13C, \(\Delta\)14C, and \(\delta\)15N) composition of
 dissolved, colloidal, and particulate phases. *Global Biogeochemical
 Cycles*, *20*(2), n/a–n/a. <https://doi.org/10.1029/2005gb002593>
 
@@ -1005,12 +1230,11 @@ climate. *Geophysical Research Letters*, *34*(13), n/a–n/a.
 
 <div id="ref-Hall_2015">
 
-Hall, S. J., McNicol, G., Natake, T., & Silver, W. L. (2015). Large
+Hall, S. J., McNicol, G., Natake, T., & Silver, W. L. (2015). *Large
 fluxes and rapid turnover of mineral-associated carbon across
 topographic gradients in a humid tropical forest: Insights from paired
 \&lt\(\mathsemicolon\)sup\&gt\(\mathsemicolon\)14\&lt\(\mathsemicolon\)/sup\&gt\(\mathsemicolon\)C
-analysis. *Biogeosciences Discussions*, *12*(2), 891–932.
-<https://doi.org/10.5194/bgd-12-891-2015>
+analysis*. <https://doi.org/10.5194/bgd-12-891-2015>
 
 </div>
 
@@ -1034,8 +1258,8 @@ vegetation facilitates release of old carbon. *Geoderma*, *153*(3-4),
 
 Hardie, S., Garnett, M., Fallick, A., Rowland, A., Ostle, N., & Flowers,
 T. (2011). Abiotic drivers and their interactive effect on the flux and
-carbon isotope (14C and \(\updelta\)13C) composition of peat-respired
-CO2. *Soil Biology and Biochemistry*, *43*(12), 2432–2440.
+carbon isotope (14C and \(\delta\)13C) composition of peat-respired CO2.
+*Soil Biology and Biochemistry*, *43*(12), 2432–2440.
 <https://doi.org/10.1016/j.soilbio.2011.08.010>
 
 </div>
@@ -1102,12 +1326,30 @@ alaska*. Zenodo. <https://doi.org/10.5281/ZENODO.3370057>
 
 </div>
 
+<div id="ref-Holmquist_2014">
+
+Holmquist, J. R., MacDonald, G. M., & Gallego-Sala, A. (2014). Peatland
+initiation, carbon accumulation, and 2 ka depth in the james bay lowland
+and adjacent regions. *Arctic, Antarctic, and Alpine Research*, *46*(1),
+19–39. <https://doi.org/10.1657/1938-4246-46.1.19>
+
+</div>
+
 <div id="ref-Hood_2009">
 
 Hood, E., Fellman, J., Spencer, R. G. M., Hernes, P. J., Edwards, R.,
 D’Amore, D., & Scott, D. (2009). Glaciers as a source of ancient and
 labile organic matter to the marine environment. *Nature*, *462*(7276),
 1044–1047. <https://doi.org/10.1038/nature08580>
+
+</div>
+
+<div id="ref-Hope_2005">
+
+Hope, G., Chokkalingam, U., & Anwar, S. (2005). The stratigraphy and
+fire history of the kutai peatlands, kalimantan, indonesia. *Quaternary
+Research*, *64*(3), 407–417.
+<https://doi.org/10.1016/j.yqres.2005.08.009>
 
 </div>
 
@@ -1182,6 +1424,17 @@ western alaska. *Quaternary Science Reviews*, *63*, 42–58.
 International conference on soils and the greenhouse effect. (1990).
 *COSPAR Information Bulletin*, *1990*(118), 6–7.
 <https://doi.org/10.1016/0045-8732(90)90051-o>
+
+</div>
+
+<div id="ref-James_2019">
+
+James, J. N., Gross, C. D., Dwivedi, P., Myers, T., Santos, F.,
+Bernardi, R., Faria, M. F. de, Guerrini, I. A., Harrison, R., & Butman,
+D. (2019). Land use change alters the radiocarbon age and composition of
+soil and water-soluble organic matter in the brazilian cerrado.
+*Geoderma*, *345*, 38–50.
+<https://doi.org/10.1016/j.geoderma.2019.03.019>
 
 </div>
 
@@ -1272,6 +1525,15 @@ Section B: Beam Interactions with Materials and Atoms*, *268*(7-8),
 
 </div>
 
+<div id="ref-Kelly_2020">
+
+Kelly, T. J., Lawson, I. T., Roucoux, K. H., Baker, T. R., & Coronado,
+E. N. H. (2020). Patterns and drivers of development in a west amazonian
+peatland during the late holocene. *Quaternary Science Reviews*, *230*,
+106168. <https://doi.org/10.1016/j.quascirev.2020.106168>
+
+</div>
+
 <div id="ref-Kelly_2018">
 
 Kelly, T. J., Lawson, I. T., Roucoux, K. H., Baker, T. R.,
@@ -1283,12 +1545,21 @@ of Quaternary Science*, *33*(4), 369–379.
 
 </div>
 
+<div id="ref-Kelly_2017">
+
+Kelly, T. J., Lawson, I. T., Roucoux, K. H., Baker, T. R., Jones, T. D.,
+& Sanderson, N. K. (2017). The vegetation history of an amazonian domed
+peatland. *Palaeogeography, Palaeoclimatology, Palaeoecology*, *468*,
+129–141. <https://doi.org/10.1016/j.palaeo.2016.11.039>
+
+</div>
+
 <div id="ref-Kettles_2000">
 
 Kettles, I. M., Garneau, M., & Jetté, H. (2000). *Macrofossil, pollen,
 and geochemical records of peatlands in the knosheo lake and detour lake
-areas, northern ontario*. Natural Resources Canada/ESS/Scientific;
-Technical Publishing Services. <https://doi.org/10.4095/211326>
+areas, northern ontario*. Natural Resources Canada/CMSS/Information
+Management. <https://doi.org/10.4095/211326>
 
 </div>
 
@@ -1298,8 +1569,7 @@ Kettles, I. M., Robinson, S. D., Bastien, D. -F, Garneau, M., & Hall, G.
 E. M. (2003). *Physical, geochemical, macrofossil, and ground
 penetrating radar information on fourteen permafrost-affected peatlands
 in the mackenzie valley, northwest territories*. Natural Resources
-Canada/ESS/Scientific; Technical Publishing Services.
-<https://doi.org/10.4095/214221>
+Canada/CMSS/Information Management. <https://doi.org/10.4095/214221>
 
 </div>
 
@@ -1411,6 +1681,15 @@ with Materials and Atoms*, *268*(7-8), 1073–1076.
 
 </div>
 
+<div id="ref-Kovda_2001">
+
+Kovda, I., Lynn, W., Williams, D., & Chichagova, O. (2001). Radiocarbon
+age of vertisols and its interpretation using data on gilgai complex in
+the north caucasus. *Radiocarbon*, *43*(2B), 603–610.
+<https://doi.org/10.1017/s0033822200041254>
+
+</div>
+
 <div id="ref-K_gel_Knabner_2008">
 
 Kögel-Knabner, I., Guggenberger, G., Kleber, M., Kandeler, E., Kalbitz,
@@ -1451,18 +1730,18 @@ development in the western part of the kola peninsula, russia. *Boreas*,
 <div id="ref-Krull_2006">
 
 Krull, E. S., Bestland, E. A., Skjemstad, J. O., & Parr, J. F. (2006).
-Geochemistry (\(\updelta\)13C, \(\updelta\)15N, 13C NMR) and residence
-times (14C and OSL) of soil organic matter from red-brown earths of
-south australia: Implications for soil genesis. *Geoderma*, *132*(3-4),
+Geochemistry (\(\delta\)13C, \(\delta\)15N, 13C NMR) and residence times
+(14C and OSL) of soil organic matter from red-brown earths of south
+australia: Implications for soil genesis. *Geoderma*, *132*(3-4),
 344–360. <https://doi.org/10.1016/j.geoderma.2005.06.001>
 
 </div>
 
 <div id="ref-Krull_2003">
 
-Krull, E. S., & Skjemstad, J. O. (2003). \(\updelta\)13C and
-\(\updelta\)15N profiles in 14C-dated oxisol and vertisols as a function
-of soil chemistry and mineralogy. *Geoderma*, *112*(1-2), 1–29.
+Krull, E. S., & Skjemstad, J. O. (2003). \(\delta\)13C and \(\delta\)15N
+profiles in 14C-dated oxisol and vertisols as a function of soil
+chemistry and mineralogy. *Geoderma*, *112*(1-2), 1–29.
 <https://doi.org/10.1016/s0016-7061(02)00291-4>
 
 </div>
@@ -1471,7 +1750,7 @@ of soil chemistry and mineralogy. *Geoderma*, *112*(1-2), 1–29.
 
 Krull, E. S., Skjemstad, J. O., Burrows, W. H., Bray, S. G., Wynn, J.
 G., Bol, R., Spouncer, L., & Harms, B. (2005). Recent vegetation changes
-in central queensland, australia: Evidence from \(\updelta\)13C and 14C
+in central queensland, australia: Evidence from \(\delta\)13C and 14C
 analyses of soil organic matter. *Geoderma*, *126*(3-4), 241–259.
 <https://doi.org/10.1016/j.geoderma.2004.09.012>
 
@@ -1482,6 +1761,15 @@ analyses of soil organic matter. *Geoderma*, *126*(3-4), 241–259.
 Kuhnen, Á., Matschullat, J., Sierra, C. A., & Lima, R. M. B. de. (2019).
 *C-isotopic signatures and soil properties of amazon basin oxisols*.
 Zenodo. <https://doi.org/10.5281/ZENODO.2645510>
+
+</div>
+
+<div id="ref-Kuhry_1997">
+
+Kuhry, P. (1997). The palaeoecology of a treed bog in western boreal
+canada: A study based on microfossils, macrofossils and physico-chemical
+properties. *Review of Palaeobotany and Palynology*, *96*(1-2), 183–224.
+<https://doi.org/10.1016/s0034-6667(96)00018-8>
 
 </div>
 
@@ -1507,6 +1795,17 @@ Kultti, S., Oksanen, P., & Väliranta, M. (2004). Holocene tree line,
 permafrost, and climate dynamics in the nenets region, east european
 arctic. *Canadian Journal of Earth Sciences*, *41*(10), 1141–1158.
 <https://doi.org/10.1139/e04-058>
+
+</div>
+
+<div id="ref-Kwon_2019">
+
+Kwon, M. J., Natali, S. M., Pries, C. E. H., Schuur, E. A. G., Steinhof,
+A., Crummer, K. G., Zimov, N., Zimov, S. A., Heimann, M., Kolle, O., &
+Göckede, M. (2019). Drainage enhances modern soil carbon contribution
+but reduces old soil carbon contribution to ecosystem respiration in
+tundra ecosystems. *Global Change Biology*, *25*(4), 1315–1325.
+<https://doi.org/10.1111/gcb.14578>
 
 </div>
 
@@ -1572,6 +1871,15 @@ case study from the cowlitz river chronosequence, WA USA. *Geoderma*,
 
 </div>
 
+<div id="ref-Lawrence_2021">
+
+Lawrence, C. R., Schulz, M. S., Masiello, C. A., Chadwick, O. A., &
+Harden, J. W. (2021). The trajectory of soil development and its
+relationship to soil carbon dynamics. *Geoderma*, *403*, 115378.
+<https://doi.org/10.1016/j.geoderma.2021.115378>
+
+</div>
+
 <div id="ref-L_hteenoja_2011">
 
 Lähteenoja, O., Reátegui, Y. R., Räsänen, M., Torres, D. D. C., Oinonen,
@@ -1593,7 +1901,7 @@ Change Biology*, *15*(9), 2311–2320.
 <div id="ref-Leavitt_2007">
 
 Leavitt, S., Follett, R., Kimble, J., & Pruessner, E. (2007).
-Radiocarbon and \(\updelta\)13C depth profiles of soil organic carbon in
+Radiocarbon and \(\delta\)13C depth profiles of soil organic carbon in
 the u.s. Great plains: A possible spatial record of paleoenvironment and
 paleovegetation. *Quaternary International*, *162-163*, 21–34.
 <https://doi.org/10.1016/j.quaint.2006.10.033>
@@ -1631,8 +1939,8 @@ swiss alps. *Global Change Biology*, *15*(3), 668–679.
 
 Leith, F. I., Garnett, M. H., Dinsmore, K. J., Billett, M. F., & Heal,
 K. V. (2014). Source and age of dissolved and gaseous carbon in a
-peatlandriparianstream continuum: A dual isotope (14C and
-\(\updelta\)13C) analysis. *Biogeochemistry*, *119*(1-3), 415–433.
+peatlandriparianstream continuum: A dual isotope (14C and \(\delta\)13C)
+analysis. *Biogeochemistry*, *119*(1-3), 415–433.
 <https://doi.org/10.1007/s10533-014-9977-y>
 
 </div>
@@ -1677,11 +1985,20 @@ Holocene*, *24*(9), 1028–1042.
 
 </div>
 
+<div id="ref-Lupascu_2020">
+
+Lupascu, M., Akhtar, H., Smith, T. E. L., & Sukri, R. S. (2020).
+Post-fire carbon dynamics in the tropical peat swamp forests of brunei
+reveal long-term elevated CH 4 flux. *Global Change Biology*, *26*(9),
+5125–5145. <https://doi.org/10.1111/gcb.15195>
+
+</div>
+
 <div id="ref-Lupascu_2018">
 
 Lupascu, M., Czimczik, C. I., Welker, M. C., Ziolkowski, L. A., Cooper,
 E. J., & Welker, J. M. (2018). Winter ecosystem respiration and sources
-of CO2 from the high arctic tundra of svalbard: Response to a deeper
+of CO 2 from the high arctic tundra of svalbard: Response to a deeper
 snow experiment. *Journal of Geophysical Research: Biogeosciences*,
 *123*(8), 2627–2642. <https://doi.org/10.1029/2018jg004396>
 
@@ -1699,7 +2016,7 @@ climate warming. *Nature Climate Change*, *4*(1), 51–55.
 <div id="ref-Lybrand_2017">
 
 Lybrand, R. A., Heckman, K., & Rasmussen, C. (2017). Soil organic carbon
-partitioning and \(\upDelta\)14C variation in desert and conifer
+partitioning and \(\Delta\)14C variation in desert and conifer
 ecosystems of southern arizona. *Biogeochemistry*, *134*(3), 261–277.
 <https://doi.org/10.1007/s10533-017-0360-7>
 
@@ -1769,23 +2086,22 @@ and climate change during the quaternary. *Oecologia*, *106*(3),
 
 </div>
 
-<div id="ref-Marzaioli_2010">
-
-Marzaioli, F., Lubritto, C., Galdo, I. D., D’Onofrio, A., Cotrufo, M.
-F., & Terrasi, F. (2010). Comparison of different soil organic matter
-fractionation methodologies: Evidences from ultrasensitive 14C
-measurements. *Nuclear Instruments and Methods in Physics Research
-Section B: Beam Interactions with Materials and Atoms*, *268*(7-8),
-1062–1066. <https://doi.org/10.1016/j.nimb.2009.10.098>
-
-</div>
-
 <div id="ref-Masiello_2004">
 
 Masiello, C. A., Chadwick, O. A., Southon, J., Torn, M. S., & Harden, J.
 W. (2004). Weathering controls on mechanisms of carbon storage in
 grassland soils. *Global Biogeochemical Cycles*, *18*(4), n/a–n/a.
 <https://doi.org/10.1029/2004gb002219>
+
+</div>
+
+<div id="ref-Massa_2021">
+
+Massa, C., Beilman, D. W., Nichols, J. E., & Timm, O. E. (2021). Central
+pacific hydroclimate over the last 45,000 years: Molecular-isotopic
+evidence from leaf wax in a hawaiʻi peatland. *Quaternary Science
+Reviews*, *253*, 106744.
+<https://doi.org/10.1016/j.quascirev.2020.106744>
 
 </div>
 
@@ -1824,6 +2140,16 @@ C. W., Callaham, M. A., & Guilderson, T. P. (2012). Comparison of soil
 organic matter dynamics at five temperate deciduous forests with
 physical fractionation and radiocarbon measurements. *Biogeochemistry*,
 *112*(1-3), 457–476. <https://doi.org/10.1007/s10533-012-9740-1>
+
+</div>
+
+<div id="ref-Mergelov_2020">
+
+Mergelov, N., Dolgikh, A., Shorkunov, I., Zazovskaya, E., Soina, V.,
+Yakushev, A., Fedorov-Davydov, D., Pryakhin, S., & Dobryansky, A.
+(2020). Hypolithic communities shape soils and organic matter reservoirs
+in the ice-free landscapes of east antarctica. *Scientific Reports*,
+*10*(1). <https://doi.org/10.1038/s41598-020-67248-3>
 
 </div>
 
@@ -1925,8 +2251,8 @@ stable isotopic compositions. *Global Biogeochemical Cycles*, *16*(3),
 
 Natali, S. M., Schuur, E. A. G., Mauritz, M., Schade, J. D., Celis, G.,
 Crummer, K. G., Johnston, C., Krapek, J., Pegoraro, E., Salmon, V. G., &
-Webb, E. E. (2015). Permafrost thaw and soil moisture driving CO2 and
-CH4 release from upland tundra. *Journal of Geophysical Research:
+Webb, E. E. (2015). Permafrost thaw and soil moisture driving CO 2 and
+CH 4 release from upland tundra. *Journal of Geophysical Research:
 Biogeosciences*, *120*(3), 525–537.
 <https://doi.org/10.1002/2014jg002872>
 
@@ -2051,7 +2377,7 @@ peatland. *Ecosystems*, *15*(2), 213–229.
 <div id="ref-Ohno_2017">
 
 Ohno, T., Heckman, K. A., Plante, A. F., Fernandez, I. J., & Parr, T. B.
-(2017). 14 c mean residence time and its relationship with thermal
+(2017). 14C mean residence time and its relationship with thermal
 stability and molecular composition of soil organic matter: A case study
 of deciduous and coniferous forest types. *Geoderma*, *308*, 1–8.
 <https://doi.org/10.1016/j.geoderma.2017.08.023>
@@ -2089,6 +2415,17 @@ european russia. *Géographie Physique et Quaternaire*, *57*(2-3),
 OVENDEN, L. (2008). Vegetation history of a polygonal peatland,
 northern, yukon. *Boreas*, *11*(3), 209–224.
 <https://doi.org/10.1111/j.1502-3885.1982.tb00715.x>
+
+</div>
+
+<div id="ref-Page_2004">
+
+Page, S. E., Wűst, R. A. J., Weiss, D., Rieley, J. O., Shotyk, W., &
+Limin, S. H. (2004). A record of late pleistocene and holocene carbon
+accumulation and climate change from an equatorial peat bog(Kalimantan,
+indonesia): Implications for past, present and future carbon dynamics.
+*Journal of Quaternary Science*, *19*(7), 625–635.
+<https://doi.org/10.1002/jqs.884>
 
 </div>
 
@@ -2131,6 +2468,16 @@ field station*. Zenodo. <https://doi.org/10.5281/ZENODO.3370053>
 
 </div>
 
+<div id="ref-Pegoraro_2020">
+
+Pegoraro, E. F., Mauritz, M. E., Ogle, K., Ebert, C. H., & Schuur, E. A.
+G. (2020). Lower soil moisture and deep soil temperatures in thermokarst
+features increase old soil carbon loss after 10 years of experimental
+permafrost warming. *Global Change Biology*, *27*(6), 1293–1308.
+<https://doi.org/10.1111/gcb.15481>
+
+</div>
+
 <div id="ref-Pegoraro_2019">
 
 Pegoraro, E., Mauritz, M., Bracho, R., Ebert, C., Dijkstra, P., Hungate,
@@ -2148,6 +2495,16 @@ Pessenda, L. C. R., Gouveia, S. E. M., & Aravena, R. (2001). Radiocarbon
 dating of total soil organic matter and humin fraction and its
 comparison with 14C ages of fossil charcoal. *Radiocarbon*, *43*(2B),
 595–601. <https://doi.org/10.1017/s0033822200041242>
+
+</div>
+
+<div id="ref-Pessenda_1997">
+
+Pessenda, L. C. R., Gouveia, S. E. M., Aravena, R., Gomes, B. M.,
+Boulet, R., & Ribeiro, A. S. (1997). 14C dating and stable carbon
+isotopes of soil organic matter in forestSavanna boundary areas in the
+southern brazilian amazon region. *Radiocarbon*, *40*(2), 1013–1022.
+<https://doi.org/10.1017/s0033822200018981>
 
 </div>
 
@@ -2200,16 +2557,6 @@ coastal subsidence. *Geological Society of America Bulletin*, *108*(7),
 
 </div>
 
-<div id="ref-Porras_2017">
-
-Porras, R. C., Pries, C. E. H., McFarlane, K. J., Hanson, P. J., & Torn,
-M. S. (2017). Association with pedogenic iron and aluminum: Effects on
-soil organic carbon storage and stability in four temperate forest
-soils. *Biogeochemistry*, *133*(3), 333–345.
-<https://doi.org/10.1007/s10533-017-0337-6>
-
-</div>
-
 <div id="ref-Posada_2011">
 
 Posada, J. M., & Schuur, E. A. G. (2011). Relationships among
@@ -2229,8 +2576,8 @@ whole-soil carbon flux in response to warming. *Science*, *355*(6332),
 
 <div id="ref-Hicks_Pries_2015">
 
-Pries, C. E. H., Logtestijn, R. S. P. van, Schuur, E. A. G., Natali, S.
-M., Cornelissen, J. H. C., Aerts, R., & Dorrepaal, E. (2015). Decadal
+Pries, C. E. H., Logtestijn, R. S. P., Schuur, E. A. G., Natali, S. M.,
+Cornelissen, J. H. C., Aerts, R., & Dorrepaal, E. (2015). Decadal
 warming causes a consistent and persistent shift from heterotrophic to
 autotrophic respiration in contrasting permafrost ecosystems. *Global
 Change Biology*, *21*(12), 4508–4519.
@@ -2251,9 +2598,8 @@ permafrost thaw. *Ecosystems*, *15*(1), 162–173.
 
 Pries, C. E. H., Schuur, E. A. G., & Crummer, K. G. (2012). Thawing
 permafrost increases old soil and autotrophic respiration in tundra:
-Partitioning ecosystem respiration using \(\updelta\)13C and ∆14C.
-*Global Change Biology*, *19*(2), 649–661.
-<https://doi.org/10.1111/gcb.12058>
+Partitioning ecosystem respiration using \(\delta\)13C and ∆14C. *Global
+Change Biology*, *19*(2), 649–661. <https://doi.org/10.1111/gcb.12058>
 
 </div>
 
@@ -2299,6 +2645,15 @@ and aggregates control carbon dynamics in a california conifer forest.
 Rasmussen, C., & White, D. A. (2010). Vegetation effects on soil organic
 carbon quality in an arid hyperthermic ecosystem. *Soil Science*,
 *175*(9), 438–446. <https://doi.org/10.1097/ss.0b013e3181f38400>
+
+</div>
+
+<div id="ref-Reichenbach_2021">
+
+Reichenbach, M., Fiener, P., Garland, G., Griepentrog, M., Six, J., &
+Doetterl, S. (2021). *The role of geochemistry in organic carbon
+stabilization in tropical rainforest soils*.
+<https://doi.org/10.5194/soil-2020-92>
 
 </div>
 
@@ -2366,6 +2721,15 @@ forest soils of different pedogenesis. *Organic Geochemistry*, *33*(10),
 
 </div>
 
+<div id="ref-Ruwaimana_2020">
+
+Ruwaimana, M., Anshari, G. Z., Silva, L. C. R., & Gavin, D. G. (2020).
+The oldest extant tropical peatland in the world: A major carbon
+reservoir for at least 470.167em000 years. *Environmental Research
+Letters*, *15*(11), 114027. <https://doi.org/10.1088/1748-9326/abb853>
+
+</div>
+
 <div id="ref-Saiz_2015">
 
 Saiz, G., Bird, M., Wurster, C., Quesada, C. A., Ascough, P., Domingues,
@@ -2390,12 +2754,39 @@ strait, northern québec, canada. *The Holocene*, *20*(4), 525–536.
 
 </div>
 
+<div id="ref-Sanaiotti_2002">
+
+Sanaiotti, T. M., Martinelli, L. A., Victoria, R. L., Trumbore, S. E., &
+Camargo, P. B. (2002). Past vegetation changes in amazon savannas
+determined using carbon isotopes of soil organic matter1. *Biotropica*,
+*34*(1), 2–16. <https://doi.org/10.1111/j.1744-7429.2002.tb00237.x>
+
+</div>
+
 <div id="ref-Sanderman_2017">
 
 Sanderman, J., Creamer, C., Baisden, W. T., Farrell, M., & Fallon, S.
 (2017). Greater soil carbon stocks and faster turnover rates with
 increasing agricultural productivity. *SOIL*, *3*(1), 1–16.
 <https://doi.org/10.5194/soil-3-1-2017>
+
+</div>
+
+<div id="ref-Sangok_2020">
+
+Sangok, F. E., Sugiura, Y., Maie, N., Melling, L., Nakamura, T., Ikeya,
+K., & Watanabe, A. (2020). Variations in the rate of accumulation and
+chemical structure of soil organic matter in a coastal peatland in
+sarawak, malaysia. *CATENA*, *184*, 104244.
+<https://doi.org/10.1016/j.catena.2019.104244>
+
+</div>
+
+<div id="ref-Sannel_2008">
+
+Sannel, A. B. K., & Kuhry, P. (2008). Long-term stability of permafrost
+in subarctic peat plateaus, west-central canada. *The Holocene*,
+*18*(4), 589–601. <https://doi.org/10.1177/0959683608089658>
 
 </div>
 
@@ -2471,9 +2862,9 @@ release and net carbon exchange from tundra. *Nature*, *459*(7246),
 
 </div>
 
-<div id="ref-Schuur_2006">
+<div id="ref-Schuur_2005">
 
-Schuur, E. A., & Trumbore, S. E. (2006). Partitioning sources of soil
+Schuur, E. A., & Trumbore, S. E. (2005). Partitioning sources of soil
 respiration in boreal black spruce forest using radiocarbon. *Global
 Change Biology*, *12*(2), 165–176.
 <https://doi.org/10.1111/j.1365-2486.2005.01066.x>
@@ -2564,6 +2955,32 @@ type-specific. *European Journal of Soil Science*, *59*(4), 674–692.
 
 </div>
 
+<div id="ref-Staub_1994">
+
+Staub, J. R., & Esterle, J. S. (1994). Peat-accumulating depositional
+systems of sarawak, east malaysia. *Sedimentary Geology*, *89*(1-2),
+91–106. <https://doi.org/10.1016/0037-0738(94)90085-x>
+
+</div>
+
+<div id="ref-Staub_1993">
+
+Staub, J. R., & Esterle, J. S. (1993). Provenance and sediment dispersal
+in the rajang river delta/coastal plain system, sarawak, east malaysia.
+*Sedimentary Geology*, *85*(1-4), 191–201.
+<https://doi.org/10.1016/0037-0738(93)90083-h>
+
+</div>
+
+<div id="ref-STAUB_2003">
+
+STAUB, J. R., & GASTALDO, R. A. (2003). LATE QUATERNARY SEDIMENTATION
+AND PEAT DEVELOPMENT IN THE RAJANG RIVER DELTA, SARAWAK, EAST MALAYSIA.
+In *Tropical deltas of southeast asia* (pp. 71–87). SEPM (Society for
+Sedimentary Geology). <https://doi.org/10.2110/pec.03.76.0071>
+
+</div>
+
 <div id="ref-Stephan_1983">
 
 Stephan, S., Berrier, J., Petre, A. D., Jeanson, C., Kooistra, M.,
@@ -2571,6 +2988,16 @@ Scharpenseel, H., & Schiffmann, H. (1983). Characterization of in situ
 organic matter constituents in vertisols from argentina, using
 submicroscopic and cytochemical methods first report. *Geoderma*,
 *30*(1-4), 21–34. <https://doi.org/10.1016/0016-7061(83)90054-x>
+
+</div>
+
+<div id="ref-Stoner_2021">
+
+Stoner, S. W., Hoyt, A. M., Trumbore, S., Sierra, C. A., Schrumpf, M.,
+Doetterl, S., Baisden, W. T., & Schipper, L. A. (2021). Soil organic
+matter turnover rates increase to match increased inputs in grazed
+grasslands. *Biogeochemistry*, *156*(1), 145–160.
+<https://doi.org/10.1007/s10533-021-00838-z>
 
 </div>
 
@@ -2588,6 +3015,17 @@ Striegl, R. G., Dornblaser, M. M., Aiken, G. R., Wickland, K. P., &
 Raymond, P. A. (2007). Carbon export and cycling by the yukon, tanana,
 and porcupine rivers, alaska, 2001-2005. *Water Resources Research*,
 *43*(2). <https://doi.org/10.1029/2006wr005201>
+
+</div>
+
+<div id="ref-Strobel_2019">
+
+Strobel, P., Kasper, T., Frenzel, P., Schittek, K., Quick, L., Meadows,
+M., Mäusbacher, R., & Haberzettl, T. (2019). Late quaternary
+palaeoenvironmental change in the year-round rainfall zone of south
+africa derived from peat sediments from vankervelsvlei. *Quaternary
+Science Reviews*, *218*, 200–214.
+<https://doi.org/10.1016/j.quascirev.2019.06.014>
 
 </div>
 
@@ -2688,6 +3126,16 @@ soil co2 and dissolved organic carbon (19871992). *Radiocarbon*,
 
 </div>
 
+<div id="ref-https://doi.org/10.3334/ornldaac/1025">
+
+TELLES, E., DE CAMARGO, P., MARTINELLI, L., TRUMBORE, S., DA COSTA, E.,
+SANTOS, J., HIGUCHI, N., OLIVEIRA, R., & MARKEWITZ, D. (2011). *LBA-eco
+cd-08 carbon isotopes in belowground carbon pools, amazonas and para,
+brazil*. ORNL Distributed Active Archive Center.
+<https://doi.org/10.3334/ORNLDAAC/1025>
+
+</div>
+
 <div id="ref-Tifafi_2018">
 
 Tifafi, M., Camino-Serrano, M., Hatté, C., Morras, H., Moretti, L.,
@@ -2738,8 +3186,8 @@ incubations and radiocarbon modeling. *Ecosystems*, *8*(4), 352–372.
 
 <div id="ref-https://doi.org/10.1594/pangaea.863689">
 
-Treat, C. C., Jones, M. C., Camill, P., Gallego-Sala, A., Garneau, M.,
-Harden, J. W., Hugelius, G., Klein, E. S., Kokfelt, U., Kuhry, P.,
+Treat, C. C., Jones, M. C., Camill, P., Gallego-Sala, A. V., Garneau,
+M., Harden, J. W., Hugelius, G., Klein, E. S., Kokfelt, U., Kuhry, P.,
 Loisel, J., Mathijssen, P. J. H., O’Donnell, J. A., Oksanen, P. O.,
 Ronkainen, T. M., Sannel, A. B. K., Talbot, J., Tarnocai, C., &
 Väliranta, M. (2016). *(Table s1) site locations of cores and
@@ -2801,6 +3249,14 @@ carbon in organic and mineral soils of the BOREAS northern study area.
 
 </div>
 
+<div id="ref-https://doi.org/10.5281/zenodo.5168031">
+
+Trumbore, S., Lawrence, C., & Khomo, L. (2021). *Radiocarbon in bulk and
+respired co2 from the cowlitz river chronosequence, washington, usa*.
+Zenodo. <https://doi.org/10.5281/ZENODO.5168031>
+
+</div>
+
 <div id="ref-Upton_2018">
 
 Upton, A., Vane, C. H., Girkin, N., Turner, B. L., & Sjögersten, S.
@@ -2844,15 +3300,22 @@ nunavut, canada. *The Holocene*, *10*(2), 273–280.
 
 </div>
 
-<div id="ref-https://doi.org/10.5440/1364062">
+<div id="ref-Vaughn_2019">
 
-Vaughn, L., Torn, M., Porras, R., Curtis, B., & Chafe, O. (2018).
-*Radiocarbon in ecosystem respiration and soil pore-space co2 with
-surface gas flux, air temperature, and soil temperature and moisture,
-barrow, alaska, 2012-2014*. Next Generation Ecosystems Experiment -
-Arctic, Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (US); NGEE
-Arctic, Oak Ridge National Laboratory (ORNL), Oak Ridge, TN (United
-States). <https://doi.org/10.5440/1364062>
+Vaughn, L. J. S., & Torn, M. S. (2019). 14C evidence that millennial and
+fast-cycling soil carbon are equally sensitive to warming. *Nature
+Climate Change*, *9*(6), 467–471.
+<https://doi.org/10.1038/s41558-019-0468-y>
+
+</div>
+
+<div id="ref-Vaughn_2018">
+
+Vaughn, L. J. S., & Torn, M. S. (2018). Radiocarbon measurements of
+ecosystem respiration and soil pore-space
+CO\&lt\(\mathsemicolon\)sub\&gt\(\mathsemicolon\)2\&lt\(\mathsemicolon\)/sub\&gt\(\mathsemicolon\)
+in utqiaġvik (barrow), alaska. *Earth System Science Data*, *10*(4),
+1943–1957. <https://doi.org/10.5194/essd-10-1943-2018>
 
 </div>
 
@@ -2885,13 +3348,23 @@ with and without sonication: Is allophanic soil different? *Geoderma*,
 
 </div>
 
-<div id="ref-WAHLEN_1989">
+<div id="ref-Wahlen_1989">
 
-WAHLEN, M., TANAKA, N., HENRY, R., DECK, B., ZEGLEN, J., VOGEL, J. S.,
-SOUTHON, J., SHEMESH, A., FAIRBANKS, R., & BROECKER, W. (1989).
+Wahlen, M., Tanaka, N., Henry, R., Deck, B., Zeglen, J., Vogel, J. S.,
+Southon, J., Shemesh, A., Fairbanks, R., & Broecker, W. (1989).
 Carbon-14 in methane sources and in atmospheric methane: The
 contribution from fossil carbon. *Science*, *245*(4915), 286–290.
 <https://doi.org/10.1126/science.245.4915.286>
+
+</div>
+
+<div id="ref-Waldron_2019">
+
+Waldron, S., Vihermaa, L., Evers, S., Garnett, M. H., Newton, J., &
+Henderson, A. C. G. (2019). C mobilisation in disturbed tropical peat
+swamps: Old DOC can fuel the fluvial efflux of old carbon dioxide, but
+site recovery can occur. *Scientific Reports*, *9*(1).
+<https://doi.org/10.1038/s41598-019-46534-9>
 
 </div>
 
@@ -2922,6 +3395,16 @@ Y.-Q. (2005). Soil organic matter dynamics along a vertical vegetation
 gradient in the gongga mountain on the tibetan plateau. *Journal of
 Integrative Plant Biology*, *47*(4), 411–420.
 <https://doi.org/10.1111/j.1744-7909.2005.00085.x>
+
+</div>
+
+<div id="ref-Wang_2018">
+
+Wang, X., Yoo, K., Mudd, S. M., Weinman, B., Gutknecht, J., & Gabet, E.
+J. (2018). Storage and export of soil carbon and mineral surface area
+along an erosional gradient in the sierra nevada, california.
+*Geoderma*, *321*, 151–163.
+<https://doi.org/10.1016/j.geoderma.2018.02.008>
 
 </div>
 
@@ -2990,6 +3473,25 @@ sensitive to holocene wet-dry climate cycles at millennial timescales.
 
 </div>
 
+<div id="ref-Yulianto_2005">
+
+Yulianto, E., Rahardjo, A., Noeradi, D., Siregar, D., & Hirakawa, K.
+(2005). A holocene pollen record of vegetation and coastal environmental
+changes in the coastal swamp forest at batulicin, south kalimantan,
+indonesia. *Journal of Asian Earth Sciences*, *25*(1), 1–8.
+<https://doi.org/10.1016/j.jseaes.2004.01.005>
+
+</div>
+
+<div id="ref-Zazovskaya_2016">
+
+Zazovskaya, E., Mergelov, N., Shishkov, V., Dolgikh, A., Miamin, V.,
+Cherkinsky, A., & Goryachkin, S. (2016). Radiocarbon age of soils in
+oases of east antarctica. *Radiocarbon*, *59*(2), 489–503.
+<https://doi.org/10.1017/rdc.2016.75>
+
+</div>
+
 <div id="ref-Zhang_2018">
 
 Zhang, H., Gallego-Sala, A. V., Amesbury, M. J., Charman, D. J., Piilo,
@@ -3004,10 +3506,9 @@ Biogeochemical Cycles*, *32*(10), 1605–1620.
 
 Zibulski, R., Herzschuh, U., Pestryakova, L. A., Wolter, J., Müller, S.,
 Schilling, N., Wetterich, S., Schirrmeister, L., & Tian, F. (2013).
-River flooding as a driver of polygon dynamics: Modern vegetation data
+*River flooding as a driver of polygon dynamics: Modern vegetation data
 and a millennial peat record from the anabar river lowlands (arctic
-siberia). *Biogeosciences Discussions*, *10*(3), 4067–4125.
-<https://doi.org/10.5194/bgd-10-4067-2013>
+siberia)*. <https://doi.org/10.5194/bgd-10-4067-2013>
 
 </div>
 
@@ -3021,7 +3522,9 @@ Earth Sciences*, *38*(6), 909–919. <https://doi.org/10.1139/e00-110>
 
 <div id="ref-Zimov_1997">
 
-Zimov, S. A. (1997). North siberian lakes: A methane source fueled by
+Zimov, S. A., Voropaev, Y. V., Semiletov, I. P., Davidov, S. P.,
+Prosiannikov, S. F., Chapin, F. S., Chapin, M. C., Trumbore, S., &
+Tyler, S. (1997). North siberian lakes: A methane source fueled by
 pleistocene carbon. *Science*, *277*(5327), 800–802.
 <https://doi.org/10.1126/science.277.5327.800>
 
