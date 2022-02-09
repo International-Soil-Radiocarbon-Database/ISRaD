@@ -16,8 +16,6 @@ Updated: 04-Feb-2022
      style="float: right; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
 </p>
 
-<src="../master/credits/credits.md">
-
 # Main compilations
 
 ISRaD has been built based on many individual studies and the following compilations:
