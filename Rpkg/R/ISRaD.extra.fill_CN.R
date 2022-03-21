@@ -15,22 +15,18 @@
 #' database.x <- ISRaD.extra.fill_CN(database)
 #' )
 #' }
-ISRaD.extra.fill_CN <- function(database, geodata_directory) {
+ISRaD.extra.fill_CN <- function(database) {
   stopifnot(is_israd_database(database))
 
   database$layer %>%
-    mutate(lyr_fill_c_to_n = ifelse(is.na(lyr_c_to_n), # If yes,
-                               ifelse(is.na(lyr_c_inorg), # then check if total C includes inorganic
-                                      lyr_c_tot / lyr_n_tot, # if not (is.na(c_inorg) == TRUE), use total C and N to calculate C:N
-                                        lyr_c_org / lyr_n_tot), # if inorganic C present (is.na(c_inorg) == FALSE), use organic C only to calculate C:N
-                               lyr_c_to_n)) -> database$layer # if c_to_n != NA, then use the existing value and save
+    dplyr::mutate(lyr_fill_c_to_n = ifelse(is.na(lyr_c_to_n), # If C:N is empty,
+                                                  lyr_c_tot / lyr_n_tot, # Use total C (as filled by extra.Cstocks) and N to calculate C:N
+                                           lyr_c_to_n)) -> database$layer # if c_to_n entered in template, then use the existing value and save
 
   database$fraction %>%
-    mutate(frc_fill_c_to_n = ifelse(is.na(frc_c_to_n), # If yes,
-                                    ifelse(is.na(frc_c_inorg), # then check if total C includes inorganic
-                                           frc_c_tot / frc_n_tot, # if not (is.na(c_inorg) == TRUE), use total C and N to calculate C:N
-                                           frc_c_org / frc_n_tot), # if inorganic C present (is.na(c_inorg) == FALSE), use organic C only to calculate C:N
-                                    frc_c_to_n)) -> database$fraction # if c_to_n != NA, then use the existing value and save
+    dplyr::mutate(frc_fill_c_to_n = ifelse(is.na(frc_c_to_n), # If C:N is empty,
+                                           frc_c_tot / frc_n_tot, # Use total C (as filled by extra.Cstocks) and N to calculate C:N
+                                           frc_c_to_n)) -> database$fraction # if c_to_n entered in template, then use the existing value and save
 
   return(database)
 }
