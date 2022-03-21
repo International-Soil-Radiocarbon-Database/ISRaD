@@ -3,6 +3,7 @@
 #' @description Checks for existing C:N ratios and simply calculates missing values
 #' @param database ISRaD dataset object
 #' @details If missing, C:N ratio is calculated from data provided, avoiding inorganic C if possible
+#' @author Shane Stoner
 #' @import From dplyr mutate
 #' @export
 #' @return ISRaD database object with gap-filled C:N ratios in a new column

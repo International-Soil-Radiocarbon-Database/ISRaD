@@ -28,6 +28,8 @@ ISRaD.extra <- function(database, geodata_directory) {
   database <- ISRaD.extra.delta_delta(database)
   message("\t filling cstocks \n")
   database <- ISRaD.extra.Cstocks(database)
+  # message("\t filling C:N ratios \n")
+  # database <- ISRaD.extra.fill_CN(database)
   message("\t filling geospatial data \n")
   ISRaD.extra.geospatial(database, geodata_directory = geodata_directory)
 }
