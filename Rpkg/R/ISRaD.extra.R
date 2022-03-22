@@ -24,6 +24,8 @@ ISRaD.extra <- function(database, geodata_directory) {
   database <- ISRaD.extra.fill_rc(database)
   message("\t filling coordinates \n")
   database <- ISRaD.extra.fill_coords(database)
+  # message("\t filling country names, and optional continent and region, from coordinates \n")
+  # database <- ISRaD.extra.fill_country(database)
   message("\t filling delta delta \n")
   database <- ISRaD.extra.delta_delta(database)
   message("\t filling cstocks \n")
