@@ -71,7 +71,7 @@ server = function(input, output){
   
   
   ### Access newest version of QAQC function
-  eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/R/QAQC.R',
+  QAQC <- eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/R/QAQC.R',
                   ssl.verifypeer = FALSE)))
   
   ### Generate and serve QAQC report
