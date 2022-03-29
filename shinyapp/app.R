@@ -1,6 +1,8 @@
 library(shiny)
 library(readxl)
-library(ISRaD)
+# library(ISRaD)
+library(RCurl)
+library(dplyr)
 
 # Define UI for data upload app ----
 ui <- fluidPage(
