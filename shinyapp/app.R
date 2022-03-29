@@ -67,6 +67,12 @@ server = function(input, output){
   #   df = read_xlsx(input$file1$datapath, sheet = input$sheet)
   # })
   
+  
+  ### Access newest version of QAQC function
+  eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/R/QAQC.R',
+                  ssl.verifypeer = FALSE)))
+  
+  ### Generate and serve QAQC report
   output$report <- downloadHandler(
     filename = function() {paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(input$file1$name)))},
     #file.path = paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(input$file1$name))),
