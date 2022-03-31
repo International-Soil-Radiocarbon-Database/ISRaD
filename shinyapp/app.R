@@ -70,6 +70,7 @@ server = function(input, output){
   #   df = read_xlsx(input$file1$datapath, sheet = input$sheet)
   # })
 
+  eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/R/utils.R')))
 
   ### Access newest version of QAQC function
   QAQC <- eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/R/QAQC.R',
@@ -80,8 +81,7 @@ server = function(input, output){
     filename = function() {paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(input$file1$name)))},
     #file.path = paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(input$file1$name))),
     content = function(file){
-      QAQC(input$file1$datapath, TRUE, file, local = FALSE)
-
+      QAQC(input$file1$datapath, writeQCreport = TRUE, outfile_QAQC = file, local = FALSE)
     }
   )
 
@@ -89,3 +89,11 @@ server = function(input, output){
 
 # Run the app ----
 shinyApp(ui, server)
+
+# rsconnect::deployApp(appDir = #'*/ISRaD/shinyapp',
+#                      appTitle = "ISRaD QAQC",
+#                      appId = 2578655,
+#                      account = 'soilradiocarbon',
+#                      server = 'shinyapps.io',
+#                      forceUpdate = TRUE)
+

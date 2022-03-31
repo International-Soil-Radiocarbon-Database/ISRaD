@@ -103,12 +103,19 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   check_template_info_columns(template, template_info, outfile_QAQC, verbose)
 
-  if (all(excel_sheets(file) %in% names(template))) {
-    vcat("\n Template format detected: ", basename(template_file))
-    vcat("\n Template info file to be used for QAQC: ", basename(template_info_file))
+  if(local == TRUE){
+    if (all(excel_sheets(file) %in% names(template))) {
+      vcat("\n Template format detected: ", basename(template_file))
+      vcat("\n Template info file to be used for QAQC: ", basename(template_info_file))
 
-    data <- lapply(excel_sheets(file)[1:8], function(s) data.frame(read_excel(file, sheet = s)))
-    names(data) <- excel_sheets(file)[1:8]
+      data <- lapply(excel_sheets(file)[1:8], function(s) data.frame(read_excel(file, sheet = s)))
+      names(data) <- excel_sheets(file)[1:8]
+      }
+    } else {
+      vcat("\n Template format detected: ISRaD_Master_Template.xlsx from GitHub")
+      vcat("\n Template info file to be used for QAQC: ISRaD_Template_Info.xlsx from GitHub")
+      data <- lapply(excel_sheets(file)[1:8], function(s) data.frame(read_excel(file, sheet = s)))
+      names(data) <- excel_sheets(file)[1:8]
   }
 
   ##### check for description rows #####
