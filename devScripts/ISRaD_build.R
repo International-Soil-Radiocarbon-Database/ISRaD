@@ -1,5 +1,5 @@
 # install latest version of ISRaD from github
-devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg", ref = "master", force = T)
+devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg", ref = "master")
 library(ISRaD)
 library(stringr)
 library(dplyr)

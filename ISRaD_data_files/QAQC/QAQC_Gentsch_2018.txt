@@ -29,13 +29,11 @@ Checking for extra or misspelled column names...
  metadata tab...
  site tab...
  profile tab...
-WARNING: Column name mismatch template: ...9 ...10
  flux tab...
  layer tab...
  interstitial tab...
  fraction tab...
  incubation tab...
-WARNING: Column name mismatch template: ...12 ...13 ...14 ...15 ...16 ...19 ...21 ...23 ...24 ...25 ...26 ...27 ...28 ...29 ...30 ...31
 
 Checking for missing values in required columns...
  metadata tab...
@@ -109,7 +107,7 @@ Summary statistics...
     pro_name : 24
     pro_lat : 24
     pro_long : 24
-    ...9 : 24
+    pro_treatment : 24
     pro_usda_soil_order : 24
     pro_soil_series : 24
     pro_soil_taxon_sys : 24
@@ -197,23 +195,22 @@ Summary statistics...
     frc_name : 94
     inc_name : 334
     inc_type : 334
-    ...12 : 334
-    ...13 : 334
-    ...14 : 334
-    ...15 : 334
-    ...16 : 334
+    inc_duration : 334
+    inc_duration_type : 334
+    inc_temp : 334
+    inc_moisture_type : 334
+    inc_moisture : 334
     inc_moisture_units : 334
-    ...19 : 331
+    inc_flux : 331
     inc_flux_units : 334
-    ...25 : 35
-    ...29 : 35
-    ...30 : 35
+    inc_rc_year : 35
+    inc_fraction_modern : 35
+    inc_fraction_modern_sigma : 35
  - - - - - - - - - - - - - - - - - - - -
 
 
  - - - - - - - - - - - - - - - - - - - -
- 2 WARNINGS need to be fixed
-
+PASSED. Nice work!
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to
