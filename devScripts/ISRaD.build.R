@@ -69,7 +69,7 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   message("\t filling coordinates \n")
   ISRaD_extra_compiled <- ISRaD.extra.fill_coords(ISRaD_extra_compiled)
   message("\t filling atmospheric 14c \n")
-  database <- ISRaD.extra.calc_atm14c(database)
+  ISRaD_extra_compiled <- ISRaD.extra.calc_atm14c(ISRaD_extra_compiled)
   message("\t filling delta delta \n")
   ISRaD_extra_compiled <- ISRaD.extra.delta_delta(ISRaD_extra_compiled)
   message("\t filling cstocks \n")
