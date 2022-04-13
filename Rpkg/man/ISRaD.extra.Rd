@@ -15,7 +15,7 @@ ISRaD.extra(database, geodata_directory)
 New ISRaD_extra object with derived, transformed, and filled columns.
 }
 \description{
-Fills in transformed and geospatial data where possible, generating an enhanced version of ISRaD.
+Fills transformed and geospatial data where possible to generate an enhanced version of ISRaD.
 }
 \details{
 Fills fraction modern, delta 14C, delta-delta, profile coordinates, bulk density, organic C concentration, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products

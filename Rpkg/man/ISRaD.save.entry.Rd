@@ -22,7 +22,8 @@ ISRaD.save.entry(
 Saves ISRaD data object to .xlsx file
 }
 \details{
-This function can be used to save a single entry (or a compiled database in the standard template format) to a .xlsx file. Replaces the function "ISRaD.save.xlsx" as that function depended on the package openxlsx, which was unstable at the time. This a simpler function and does not maintain the formatting of the template file. The code for the original function is available in the ISRaD github repository in the \href{https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/devScripts}{devScripts} directory.
+This function can be used to save a single entry (or a compiled database in the standard template format) to an .xlsx file.\cr\cr
+Note: Replaces the function "ISRaD.save.xlsx" as that function depended on the package openxlsx, which was unstable at the time. This a simpler function and does not maintain the formatting of the template file. The code for the original function is available in the ISRaD github repository in the \href{https://github.com/International-Soil-Radiocarbon-Database/ISRaD/tree/master/devScripts}{devScripts} directory.
 }
 \examples{
 \donttest{

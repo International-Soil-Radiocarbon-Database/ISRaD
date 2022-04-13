@@ -16,7 +16,7 @@ ISRaD_data object with filled frc_obs_date_y and inc_obs_date_y fields.
 Fills frc_obs_date_y and inc_obs_date_y columns from lyr_obs_date_y if not reported.
 }
 \details{
-QAQC does not require frc_obs_date_y or inc_obs_date_y fields to be filled in. Therefore it is recommended to run this function prior to running the functions ISRaD.extra.fill_14c, ISRaD.extra.fill_fm, and ISRaD.extra.delta_delta, which require xxx_obs_date_y data.
+QAQC does not require frc_obs_date_y or inc_obs_date_y fields to be filled in. Therefore it is recommended to run this function prior to running the functions "ISRaD.extra.fill_rc" and "ISRaD.extra.calc_atm14c", which require xxx_obs_date_y data.
 }
 \examples{
 # Load example dataset Gaudinski_2001

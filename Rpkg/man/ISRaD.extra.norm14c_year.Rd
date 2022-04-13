@@ -22,16 +22,21 @@ ISRaD.extra.norm14c_year(
 
 \item{atm_zone}{atmospheric zone for obs_d14c. Must be one of c("NHc14", "SHc14", "Tropicsc14"). "NHc14" = > 30 degrees latitude; "SHc14" = < -30 latitude; "Tropicsc14" = < 30 & > -30 degrees latitude.}
 
+\item{norm_year}{desired normalization year}
+
 \item{verbose}{Show progress bar? TRUE/FALSE (default = FALSE)}
 }
 \value{
-data frame with new column of normalized 14c values.
+data frame with normalized 14c values in new column.
 }
 \description{
 Normalizes delta 14c values to a given year (norm_year)
 }
 \details{
-Creates new column for normalized d14c in provided data frame. This function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by runnning the model forwards or backwards to the desired normalization year (norm_year). Note: there is no guarantee that the normalized 14c value will be meaningful as the model assumes a well-mixed homogenous system which is rarely the case in soils. See the example for information on how to run the function when the "df" argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc. Can be very slow for large datasets!
+Creates new column for normalized 14c in provided data frame. This function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year).\cr\cr
+See the example for information on how to run the function when the "df" argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc..\cr\cr
+Note: There is no guarantee that normalized 14c values will be meaningful as the model assumes a well-mixed homogenous system, and this is rarely the case in soils.
+Can be very slow for large datasets!
 }
 \examples{
 # Load example dataset Gaudinski_2001
@@ -45,7 +50,14 @@ database.x <- ISRaD.extra.fill_rc(database.x)
 # Fill atmospheric 14c
 database.x <- ISRaD.extra.calc_atm14c(database.x)
 # Run normalization function for the year 2010 with layer data
-database.x$layer <- ISRaD.extra.norm14c_year(df = database.x$layer, obs_d14c = "lyr_14c", obs_year = "lyr_obs_date_y", atm_zone = "pro_graven_zone", norm_year = 2010, verbose = TRUE)
+database.x$layer <- ISRaD.extra.norm14c_year(
+  df = database.x$layer,
+  obs_d14c = "lyr_14c",
+  obs_year = "lyr_obs_date_y",
+  atm_zone = "pro_graven_zone",
+  norm_year = 2010,
+  verbose = TRUE
+)
 }
 \author{
 J. Beem-Miller and J. Randerson

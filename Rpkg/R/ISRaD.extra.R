@@ -1,6 +1,6 @@
 #' ISRaD.extra
 #'
-#' @description Fills in transformed and geospatial data where possible, generating an enhanced version of ISRaD.
+#' @description Fills transformed and geospatial data where possible to generate an enhanced version of ISRaD.
 #' @param database ISRaD dataset object
 #' @param geodata_directory directory where geospatial data are found
 #' @details Fills fraction modern, delta 14C, delta-delta, profile coordinates, bulk density, organic C concentration, and SOC stocks from entered data; fills soil and climatic data from external geospatial data products
@@ -26,12 +26,14 @@ ISRaD.extra <- function(database, geodata_directory) {
   database <- ISRaD.extra.fill_coords(database)
   # message("\t filling country names, and optional continent and region, from coordinates \n")
   # database <- ISRaD.extra.fill_country(database)
+  message("\t filling atmospheric 14c \n")
+  database <- ISRaD.extra.calc_atm14c(database)
   message("\t filling delta delta \n")
   database <- ISRaD.extra.delta_delta(database)
   message("\t filling cstocks \n")
   database <- ISRaD.extra.Cstocks(database)
-  # message("\t filling C:N ratios \n")
+  message("\t filling C:N ratios \n")
   # database <- ISRaD.extra.fill_CN(database)
-  message("\t filling geospatial data \n")
+  # message("\t filling geospatial data \n")
   ISRaD.extra.geospatial(database, geodata_directory = geodata_directory)
 }

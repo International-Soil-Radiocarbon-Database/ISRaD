@@ -13,7 +13,7 @@ ISRaD.read.entry(
 \arguments{
 \item{entry}{ISRaD data object.}
 
-\item{template_file}{Directory path and name of template file to use (defaults to the ISRaD_Master_Template file built into the package). Not recommended to change this.}
+\item{template_file}{Directory path and name of template file to use (defaults to the ISRaD_Master_Template file built into the package).}
 }
 \description{
 Reads ISRaD data object from Excel file in standard template format

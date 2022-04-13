@@ -3,7 +3,7 @@
 \docType{data}
 \name{graven}
 \alias{graven}
-\title{Graven dataset for delta delta calculation}
+\title{Graven dataset for delta-delta calculation}
 \format{
 dataframe
 }

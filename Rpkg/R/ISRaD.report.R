@@ -3,7 +3,7 @@
 #' @description Generate basic summary reports of ISRaD data
 #'
 #' @param database ISRaD data object
-#' @param report Parameter to define which type of report you want. The default is "count.all" other options include "entry.stats", "count.frc", or "site.map".
+#' @param report Parameter to define which type of report is desired. The default is "count.all" other options include "entry.stats", "count.frc", or "site.map".
 #' @details Wrapper for the simple reporting functions ISRaD.rep.count.all, ISRaD.rep.count.frc, ISRaD.rep.entry.stats, ISRaD.rep.site.map
 #' @export
 #' @examples

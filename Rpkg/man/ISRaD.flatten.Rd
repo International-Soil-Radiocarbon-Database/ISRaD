@@ -12,13 +12,13 @@ ISRaD.flatten(database, table)
 \item{table}{ISRaD table of interest ("flux", "layer", "interstitial", "fraction", "incubation"). Must be entered with "".}
 }
 \value{
-A dataframe with nrow=nrow(table) and ncol=sum(ncol(meta),ncol(site),ncol(profile),...,ncol(table))
+A dataframe with nrow = nrow(table) and ncol = sum(ncol(meta), ncol(site), ncol(profile), ..., ncol(table))
 }
 \description{
-Joins tables in ISRaD based on linking variables and returns "flat" dataframe/s
+Joins tables in ISRaD based on linking variables and returns flat data frame/s
 }
 \details{
-ISRaD.extra.flatten generates flat files (2 dimensional matrices) for user-specified ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
+ISRaD.extra.flatten generates 2-dimensional matrices for user-specified ISRaD tables by joining higher level tables (metadata, site, profile, layer) to lower level tables (layer, fraction, incubation, flux, interstitial).
 }
 \examples{
 # Load example dataset Gaudinski_2001

@@ -9,18 +9,18 @@ ISRaD.extra.calc_atm14c(database, future = TRUE)
 \arguments{
 \item{database}{ISRaD object}
 
-\item{future}{Project atmospheric radiocarbon into the future? (default = TRUE)}
+\item{future}{Project atmospheric radiocarbon into the future?}
 }
 \value{
-ISRaD_data object with new atmospheric zone and atmospheric 14C columns in relevant tables.
+ISRaD_data object with new atmospheric zone and atmospheric 14c columns in relevant tables.
 }
 \description{
-Calculates atmospheric 14C in the year of sampling for each record in an ISRaD object
+Calculates atmospheric 14c in the year of sampling for each record in an ISRaD object
 }
 \details{
-Creates new column for atmospheric 14c (xxx_graven_atm). Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric d14c data (northern or southern hemisphere or tropics) are determined by profile coordinates.
-Projection for 2016 to 2021 uses the four quarter average projected atmospheric radiocarbon concentration for Central Europe as estimated in Sierra (2019).
-Notes: Central Europe projection used for northern hemisphere as these projections perform better against observations than northern hemisphere projection; southern hemisphere and tropic atmospheric radiocarbon projection are lagged by 2.5 per mille, as this is the mean lag observed from 2000 to 2015 in the Graven (2017) dataset.
+Creates new column for atmospheric 14c (xxx_atm14c). Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric 14c data (northern or southern hemisphere or tropics) are determined by profile coordinates.
+Projection for 2016 to 2021 uses the four quarter average projected atmospheric radiocarbon concentration for Central Europe as estimated in Sierra (2019).\cr\cr
+Notes: Central Europe projection (Sierra, 2019) used for northern hemisphere samples as these projections perform better against observations than northern hemisphere projection; southern hemisphere and tropic atmospheric radiocarbon projection are lagged by 2.5 per mille, as this is the mean lag observed from 2000 to 2015 in the Graven (2017) dataset.
 }
 \examples{
 # Load example dataset Gaudinski_2001

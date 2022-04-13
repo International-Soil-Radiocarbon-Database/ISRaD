@@ -10,7 +10,7 @@ ISRaD.rep.site.map(database)
 \item{database}{ISRaD data object}
 }
 \description{
-Generate a world map showing locations of all ISRaD sites
+Generates a world map showing locations of all ISRaD sites
 }
 \examples{
 \donttest{

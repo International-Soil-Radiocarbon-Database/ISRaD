@@ -10,13 +10,13 @@ ISRaD.extra.delta_delta(database)
 \item{database}{ISRaD dataset object}
 }
 \value{
-ISRaD_data object with new delta delta columns in relevant tables.
+ISRaD_data object with new delta-delta columns in relevant tables.
 }
 \description{
 Calculates the difference between sample delta 14c and the atmosphere for the year of collection (delta-delta)
 }
 \details{
-Creates new column for delta-delta value. Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric d14c data (northern or southern hemisphere or tropics) are determined by profile coordinates.
+Creates new column for delta-delta value. Function "ISRaD.extra.calc_atm14c" should be run first.
 }
 \examples{
 # Load example dataset Gaudinski_2001

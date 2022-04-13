@@ -2,7 +2,7 @@
 #'
 #' @description Calculates soil organic carbon stock
 #' @param database ISRaD dataset object.
-#' @details Function first fills lyr_bd_samp, lyr_c_org, lyr_c_org, lyr_coarse_tot. Notes: 1) SOC stocks can only be calculated if organic carbon concentration and bulk density data are available, 2) SOC stocks are calculated for the fine earth fraction (<2mm).
+#' @details Function first fills lyr_bd_samp, lyr_c_org, lyr_c_org, lyr_coarse_tot. Notes:\cr\cr 1) SOC stocks can only be calculated if organic carbon concentration and bulk density data are available\cr\cr 2) SOC stocks are calculated for the fine earth fraction (<2mm).
 #' @author J. Beem-Miller
 #' @return ISRaD_data object with filled columns "lyr_coarse_tot_filled", "lyr_bd_samp_filled", "lyr_c_inorg_filled", "lyr_c_org_filled", "lyr_soc_filled".
 #' @export

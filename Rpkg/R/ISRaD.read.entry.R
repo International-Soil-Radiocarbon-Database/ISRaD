@@ -2,7 +2,7 @@
 #'
 #' @description Reads ISRaD data object from Excel file in standard template format
 #' @param entry ISRaD data object.
-#' @param template_file Directory path and name of template file to use (defaults to the ISRaD_Master_Template file built into the package). Not recommended to change this.
+#' @param template_file Directory path and name of template file to use (defaults to the ISRaD_Master_Template file built into the package).
 #' @author J. Beem-Miller
 #' @export
 #' @importFrom readxl read_excel excel_sheets

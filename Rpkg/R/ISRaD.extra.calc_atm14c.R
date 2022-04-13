@@ -1,15 +1,15 @@
 #' ISRaD.extra.calc_atm14c
 #'
-#' @description Calculates atmospheric 14C in the year of sampling for each record in an ISRaD object
+#' @description Calculates atmospheric 14c in the year of sampling for each record in an ISRaD object
 #' @param database ISRaD object
-#' @param future Project atmospheric radiocarbon into the future? (default = TRUE)
-#' @details Creates new column for atmospheric 14c (xxx_graven_atm). Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric d14c data (northern or southern hemisphere or tropics) are determined by profile coordinates.
-#' Projection for 2016 to 2021 uses the four quarter average projected atmospheric radiocarbon concentration for Central Europe as estimated in Sierra (2019).
-#' Notes: Central Europe projection used for northern hemisphere as these projections perform better against observations than northern hemisphere projection; southern hemisphere and tropic atmospheric radiocarbon projection are lagged by 2.5 per mille, as this is the mean lag observed from 2000 to 2015 in the Graven (2017) dataset.
+#' @param future Project atmospheric radiocarbon into the future?
+#' @details Creates new column for atmospheric 14c (xxx_atm14c). Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric 14c data (northern or southern hemisphere or tropics) are determined by profile coordinates.
+#' Projection for 2016 to 2021 uses the four quarter average projected atmospheric radiocarbon concentration for Central Europe as estimated in Sierra (2019).\cr\cr
+#' Notes: Central Europe projection (Sierra, 2019) used for northern hemisphere samples as these projections perform better against observations than northern hemisphere projection; southern hemisphere and tropic atmospheric radiocarbon projection are lagged by 2.5 per mille, as this is the mean lag observed from 2000 to 2015 in the Graven (2017) dataset.
 #' @author J. Beem-Miller and C. Hicks-Pries
 #' @references Graven et al. 2017 <https://www.geosci-model-dev.net/10/4405/2017/gmd-10-4405-2017.pdf>;  Sierra, C. "Forecasting atmospheric radiocarbon decline to pre-bomb values", Radiocarbon, Vol 60, Nr 4, 2018, p 1055.1066 DOI:10.1017/RDC.2018.33
 #' @export
-#' @return ISRaD_data object with new atmospheric zone and atmospheric 14C columns in relevant tables.
+#' @return ISRaD_data object with new atmospheric zone and atmospheric 14c columns in relevant tables.
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
@@ -22,7 +22,7 @@
 #' # Fill atmospheric 14c
 #' database.x <- ISRaD.extra.calc_atm14c(database.x)
 ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
-  stopifnot(ISRaD:::is_israd_database(database))
+  stopifnot(is_israd_database(database))
 
   graven <- ISRaD::graven
 
@@ -48,8 +48,8 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
     # skip empty tables
     if (nrow(df) != 0) {
       df.pro <- cbind(df,
-                      pro_graven_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_graven_zone"],
-                      atm14c = NA
+        pro_graven_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_graven_zone"],
+        atm14c = NA
       )
 
       # get index of obs_date_y column if not specified
@@ -91,7 +91,8 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
   database[c(5, 7, 8)] <- lapply(seq_along(database[c(5, 7, 8)]), function(i) {
     df <- calc_atm14c(database[c(5, 7, 8)][[i]])
     names(df)[which(names(df) == "atm14c")] <- ifelse(i == 1, "lyr_atm14c",
-                                                      ifelse(i == 2, "frc_atm14c", "inc_atm14c"))
+      ifelse(i == 2, "frc_atm14c", "inc_atm14c")
+    )
     return(df)
   })
 

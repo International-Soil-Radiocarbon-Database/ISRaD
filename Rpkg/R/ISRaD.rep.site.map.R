@@ -1,6 +1,6 @@
 #' ISRaD.rep.site.map
 #'
-#' @description Generate a world map showing locations of all ISRaD sites
+#' @description Generates a world map showing locations of all ISRaD sites
 #' @param database ISRaD data object
 #' @import ggplot2
 #' @import maps

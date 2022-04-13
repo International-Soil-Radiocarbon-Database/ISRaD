@@ -9,7 +9,7 @@ ISRaD.report(database, report)
 \arguments{
 \item{database}{ISRaD data object}
 
-\item{report}{Parameter to define which type of report you want. The default is "count.all" other options include "entry.stats", "count.frc", or "site.map".}
+\item{report}{Parameter to define which type of report is desired. The default is "count.all" other options include "entry.stats", "count.frc", or "site.map".}
 }
 \description{
 Generate basic summary reports of ISRaD data

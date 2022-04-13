@@ -2,9 +2,8 @@
 #'
 #' @description Generates a report of counts of observations at each level of the database
 #' @param database ISRaD data object
-#' @return A \code{\link{tibble}} of observation counts, one column for each
-#' database table.
-#' @import dplyr
+#' @return A tibble of observation counts, one column for each database table.
+#' @importFrom dplyr pull n_distinct
 #' @export
 #' @examples
 #' # Load example dataset Gaudinski_2001

@@ -1,8 +1,8 @@
 #' convert_fm_d14c
 #'
 #' @description convert fraction modern to d14c and d14c to fraction modern
-#' @param fm fraction modern (default NA)
-#' @param d14c delta 14C in per mille (default NA)
+#' @param fm fraction modern
+#' @param d14c delta 14c in per mille
 #' @param obs_date_y year of observation/sample collection
 #' @param verbose prints message stating which conversion was performed
 #' @author J. Beem-Miller

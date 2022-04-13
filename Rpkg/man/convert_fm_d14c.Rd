@@ -7,9 +7,9 @@
 convert_fm_d14c(fm = NA, d14c = NA, obs_date_y, verbose = TRUE)
 }
 \arguments{
-\item{fm}{fraction modern (default NA)}
+\item{fm}{fraction modern}
 
-\item{d14c}{delta 14C in per mille (default NA)}
+\item{d14c}{delta 14c in per mille}
 
 \item{obs_date_y}{year of observation/sample collection}
 

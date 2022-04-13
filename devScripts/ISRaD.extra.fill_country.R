@@ -5,8 +5,8 @@
 #' @param continent Boolean noting whether a column should be added for extracted continent (6 continent model: "Eurasia")
 #' @param region Boolean noting whether a column should be added for extracted region (7 continent model: "Europe", "Asia")
 #' @author Shane Stoner
-#' @import from rworldmap getMap
-#' @import from sp over SpatialPoints
+#' @importFrom rworldmap getMap
+#' @importFrom sp over SpatialPoints
 #' @export
 #' @return ISRaD_data object with extracted country names.
 #' @examples
@@ -60,5 +60,3 @@ ISRaD.extra.fill_country = function(database, continent = FALSE, region = FALSE)
 
   return(database)
 }
-
-
