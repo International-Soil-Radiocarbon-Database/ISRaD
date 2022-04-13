@@ -21,7 +21,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( flux interstitial fraction )
+	NOTE: empty tabs detected ( flux interstitial fraction incubation )
 
 Not checking dataset doi because 'checkdoi is FALSE'...
 
@@ -102,35 +102,36 @@ Summary statistics...
     site_datum : 11
     site_elevation : 11
     site_note : 11
- profile tab...17 observations
-    entry_name : 17
-    site_name : 17
-    pro_name : 17
-    pro_note : 17
+ profile tab...11 observations
+    entry_name : 11
+    site_name : 11
+    pro_name : 11
     pro_lat : 11
     pro_long : 11
-    pro_treatment : 17
-    pro_MAT : 17
-    pro_MAP : 17
-    pro_soil_taxon_sys : 17
-    pro_soil_age : 17
-    pro_land_cover : 17
+    pro_treatment : 11
+    pro_MAT : 11
+    pro_MAP : 11
+    pro_usda_soil_order : 11
+    pro_soil_taxon : 11
+    pro_soil_taxon_sys : 11
+    pro_soil_age : 11
+    pro_land_cover : 11
     pro_veg_note : 11
-    pro_parent_material : 17
-    pro_parent_chem : 17
-    pro_parent_material_notes : 17
-    pro_2d_position : 17
-    pro_slope : 17
-    pro_slope_shape : 17
+    pro_parent_material : 11
+    pro_parent_chem : 11
+    pro_parent_material_notes : 11
+    pro_2d_position : 11
+    pro_slope : 11
+    pro_slope_shape : 11
  flux tab...0 observations
- layer tab...74 observations
-    entry_name : 74
-    site_name : 74
-    pro_name : 74
-    lyr_name : 74
-    lyr_obs_date_y : 74
-    lyr_top : 74
-    lyr_bot : 74
+ layer tab...62 observations
+    entry_name : 62
+    site_name : 62
+    pro_name : 62
+    lyr_name : 62
+    lyr_obs_date_y : 62
+    lyr_top : 62
+    lyr_bot : 62
     lyr_hzn : 62
     lyr_bd_tot : 62
     lyr_sand_tot_psa : 61
@@ -172,28 +173,7 @@ Summary statistics...
     lyr_fe_oxides : 53
  interstitial tab...0 observations
  fraction tab...0 observations
- incubation tab...12 observations
-    entry_name : 12
-    site_name : 12
-    pro_name : 12
-    lyr_name : 12
-    inc_name : 12
-    inc_type : 12
-    inc_duration : 12
-    inc_duration_type : 12
-    inc_temp : 12
-    inc_moisture_type : 12
-    inc_moisture : 12
-    inc_moisture_units : 12
-    inc_flux : 12
-    inc_flux_units : 12
-    inc_13c : 11
-    inc_rc_lab : 12
-    inc_rc_year : 12
-    inc_14c : 11
-    inc_14c_sigma : 11
-    inc_fraction_modern : 11
-    inc_fraction_modern_sigma : 11
+ incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
 

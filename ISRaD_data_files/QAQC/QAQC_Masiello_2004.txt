@@ -108,6 +108,7 @@ Summary statistics...
     pro_treatment : 7
     pro_MAT : 7
     pro_MAP : 7
+    pro_usda_soil_order : 7
     pro_soil_taxon : 7
     pro_soil_taxon_sys : 7
     pro_soil_age : 7

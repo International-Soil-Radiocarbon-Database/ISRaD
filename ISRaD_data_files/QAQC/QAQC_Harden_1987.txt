@@ -110,6 +110,9 @@ Summary statistics...
     pro_treatment : 39
     pro_MAT : 39
     pro_MAP : 39
+    pro_usda_soil_order : 39
+    pro_soil_taxon : 39
+    pro_soil_taxon_sys : 39
     pro_soil_age : 39
     pro_land_cover : 39
     pro_veg_note : 35

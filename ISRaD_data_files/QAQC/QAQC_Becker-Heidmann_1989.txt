@@ -104,6 +104,7 @@ Summary statistics...
     site_name : 4
     pro_name : 4
     pro_treatment : 4
+    pro_usda_soil_order : 4
     pro_soil_taxon : 4
     pro_soil_taxon_sys : 4
     pro_land_cover : 4

@@ -145,9 +145,12 @@ Summary statistics...
     lyr_14c : 50
     lyr_fe_py : 12
     lyr_al_py : 12
+    lyr_py_notes : 12
     lyr_fe_ox : 12
     lyr_al_ox : 12
+    lyr_ox_notes : 12
     lyr_fe_dith : 12
+    lyr_dith_notes : 12
  interstitial tab...0 observations
  fraction tab...238 observations
     entry_name : 238

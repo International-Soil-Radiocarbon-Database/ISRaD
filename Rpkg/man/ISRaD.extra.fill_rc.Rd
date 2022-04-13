@@ -16,7 +16,7 @@ ISRaD_data object with filled radiocarbon data columns in all tables
 Fills delta 14C or fraction modern data if either are missing
 }
 \details{
-Warning: xxx_obs_date_y columns must be filled for this to work! This function also fills standard deviation and sigma values.
+Warning: xxx_obs_date_y columns must be filled for this to work! This function also fills standard deviation and sigma values. Note that this function replaces two older functions ("ISRaD.extra.fill_fm" and "ISRaD.extra.fill_14c") from ISRaD v1.0 that did not work properly.
 }
 \examples{
 # Load example dataset Gaudinski_2001

@@ -106,6 +106,7 @@ Summary statistics...
     pro_treatment : 16
     pro_MAT : 16
     pro_MAP : 16
+    pro_usda_soil_order : 16
     pro_soil_taxon : 16
     pro_soil_taxon_sys : 16
     pro_land_cover : 16

@@ -105,6 +105,7 @@ Summary statistics...
     pro_treatment : 5
     pro_MAT : 5
     pro_MAP : 5
+    pro_usda_soil_order : 5
     pro_soil_taxon : 5
     pro_soil_taxon_sys : 5
     pro_land_cover : 5

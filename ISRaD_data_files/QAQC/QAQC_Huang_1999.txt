@@ -105,7 +105,8 @@ Summary statistics...
     plot_name : 9
     pro_name : 9
     pro_treatment : 9
-    pro_soil_taxon : 1
+    pro_usda_soil_order : 9
+    pro_soil_taxon : 9
     pro_soil_taxon_sys : 9
     pro_land_cover : 9
     pro_veg_note : 9

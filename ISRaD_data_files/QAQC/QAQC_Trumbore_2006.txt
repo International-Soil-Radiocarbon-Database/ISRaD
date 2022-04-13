@@ -111,6 +111,7 @@ Summary statistics...
     pro_treatment_note : 1
     pro_MAT : 14
     pro_MAP : 14
+    pro_usda_soil_order : 14
     pro_soil_taxon : 14
     pro_soil_age : 14
     pro_land_cover : 14

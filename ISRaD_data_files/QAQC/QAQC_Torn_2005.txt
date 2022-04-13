@@ -111,6 +111,7 @@ Summary statistics...
     pro_comp : 6
     pro_MAT : 6
     pro_MAP : 6
+    pro_usda_soil_order : 6
     pro_soil_taxon : 6
     pro_soil_age : 6
     pro_land_cover : 6

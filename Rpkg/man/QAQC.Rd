@@ -11,7 +11,8 @@ QAQC(
   summaryStats = TRUE,
   dataReport = FALSE,
   checkdoi = TRUE,
-  verbose = TRUE
+  verbose = TRUE,
+  local = TRUE
 )
 }
 \arguments{
@@ -28,6 +29,8 @@ QAQC(
 \item{checkdoi}{Set to FALSE if you do not want the QAQC check to validate DOIs (if TRUE this will be time consuming). Default is TRUE.}
 
 \item{verbose}{Set to TRUE to print results of function to console. Default is TRUE.}
+
+\item{local}{Set to FALSE to fetch most up-to-date template and template info files. If TRUE, the local files or files from CRAN package will be used. Default is TRUE.}
 }
 \description{
 Checks template files for data coherence, formatting, and data entry errors

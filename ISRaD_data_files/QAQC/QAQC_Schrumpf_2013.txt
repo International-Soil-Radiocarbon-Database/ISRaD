@@ -108,14 +108,14 @@ Summary statistics...
     pro_land_cover : 12
     pro_lc_phenology : 6
  flux tab...0 observations
- layer tab...78 observations
-    entry_name : 78
-    site_name : 78
-    pro_name : 78
-    lyr_name : 78
-    lyr_obs_date_y : 78
-    lyr_top : 78
-    lyr_bot : 78
+ layer tab...79 observations
+    entry_name : 79
+    site_name : 79
+    pro_name : 79
+    lyr_name : 79
+    lyr_obs_date_y : 79
+    lyr_top : 79
+    lyr_bot : 79
     lyr_bd_samp : 74
     lyr_sand_tot_psa : 73
     lyr_silt_tot_psa : 73
@@ -127,21 +127,27 @@ Summary statistics...
     lyr_soc_sigma : 75
     lyr_c_to_n : 75
  interstitial tab...0 observations
- fraction tab...225 observations
-    entry_name : 225
-    site_name : 225
-    pro_name : 225
-    lyr_name : 225
-    frc_name : 225
-    frc_input : 225
-    frc_aggregate_dis : 225
-    frc_scheme : 225
-    frc_agent : 225
-    frc_property : 225
-    frc_scheme_units : 225
-    frc_lower : 225
-    frc_upper : 225
-    frc_c_perc : 225
+ fraction tab...237 observations
+    entry_name : 237
+    site_name : 237
+    pro_name : 237
+    lyr_name : 237
+    frc_name : 237
+    frc_input : 237
+    frc_aggregate_dis : 237
+    frc_scheme : 237
+    frc_agent : 237
+    frc_property : 237
+    frc_scheme_units : 237
+    frc_lower : 237
+    frc_upper : 237
+    frc_c_perc : 234
+    frc_c_tot : 237
+    frc_c_org : 237
+    frc_c_inorg : 34
+    frc_n_tot : 237
+    frc_c_to_n : 237
+    frc_13c : 230
     frc_rc_year : 95
     frc_14c : 95
     frc_14c_sd : 94

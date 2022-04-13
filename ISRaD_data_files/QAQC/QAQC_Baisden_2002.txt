@@ -105,8 +105,9 @@ Summary statistics...
     pro_name : 8
     pro_note : 8
     pro_treatment : 8
-    pro_soil_taxon : 8
-    pro_soil_series : 8
+    pro_usda_soil_order : 8
+    pro_soil_series : 6
+    pro_soil_taxon_sys : 8
     pro_land_cover : 8
     pro_veg_note : 8
     pro_parent_material : 8
@@ -132,26 +133,34 @@ Summary statistics...
     lyr_clay_tot_psa : 12
     lyr_texture_class : 12
     lyr_ph_cacl : 11
+    lyr_c_org : 17
     lyr_soc : 25
     lyr_soc_sigma : 25
+    lyr_n_tot : 12
+    lyr_c_to_n : 12
     lyr_14c : 16
     lyr_14c_sigma : 16
  interstitial tab...0 observations
- fraction tab...90 observations
-    entry_name : 90
-    site_name : 90
-    pro_name : 90
-    lyr_name : 90
-    frc_name : 90
-    frc_input : 90
-    frc_aggregate_dis : 90
-    frc_scheme : 90
-    frc_agent : 90
-    frc_property : 90
-    frc_scheme_units : 90
-    frc_lower : 90
-    frc_upper : 90
-    frc_c_perc : 90
+ fraction tab...125 observations
+    entry_name : 125
+    site_name : 125
+    pro_name : 125
+    lyr_name : 125
+    frc_name : 125
+    frc_input : 125
+    frc_aggregate_dis : 125
+    frc_scheme : 125
+    frc_agent : 125
+    frc_property : 125
+    frc_scheme_units : 125
+    frc_lower : 125
+    frc_upper : 125
+    frc_c_perc : 123
+    frc_c_org : 82
+    frc_n_tot : 80
+    frc_c_to_n : 119
+    frc_15n : 40
+    frc_13c : 40
     frc_rc_year : 61
     frc_14c : 61
     frc_14c_sigma : 61

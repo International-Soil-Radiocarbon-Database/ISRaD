@@ -108,7 +108,9 @@ Summary statistics...
     pro_reps : 3
     pro_MAT : 18
     pro_MAP : 18
+    pro_usda_soil_order : 18
     pro_soil_taxon : 18
+    pro_soil_taxon_sys : 18
     pro_land_cover : 18
     pro_veg_note : 18
     pro_parent_material : 18
@@ -158,10 +160,10 @@ Summary statistics...
     frc_c_perc : 18
     frc_c_tot : 18
     frc_c_org : 48
+    frc_n_tot : 6
     frc_c_to_n : 6
-    frc_15n : 12
+    frc_15n : 24
     frc_13c : 24
-    frc_rc_lab : 18
     frc_rc_year : 30
     frc_14c : 30
     frc_fe_ox : 36

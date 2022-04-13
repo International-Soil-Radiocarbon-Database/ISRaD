@@ -104,6 +104,9 @@ Summary statistics...
     site_name : 1
     pro_name : 1
     pro_treatment : 1
+    pro_usda_soil_order : 1
+    pro_soil_series : 1
+    pro_soil_taxon_sys : 1
     pro_land_cover : 1
     pro_veg_note : 1
  flux tab...0 observations

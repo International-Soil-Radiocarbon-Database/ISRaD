@@ -105,7 +105,11 @@ Summary statistics...
     pro_note : 44
     pro_treatment : 44
     pro_MAP : 44
+    pro_usda_soil_order : 44
     pro_land_cover : 44
+    pro_parent_material : 44
+    pro_parent_chem : 44
+    pro_parent_material_notes : 44
  flux tab...0 observations
  layer tab...44 observations
     entry_name : 44

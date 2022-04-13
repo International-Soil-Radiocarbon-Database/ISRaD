@@ -135,7 +135,7 @@ Summary statistics...
     frc_agent : 88
     frc_note : 88
     frc_13c : 73
-    frc_fraction_modern : 25
+    frc_fraction_modern : 16
     frc_fraction_modern_sigma : 16
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -

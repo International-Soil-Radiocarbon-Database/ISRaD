@@ -108,6 +108,7 @@ Summary statistics...
     pro_comp : 1
     pro_MAT : 2
     pro_MAP : 2
+    pro_usda_soil_order : 4
     pro_soil_taxon : 4
     pro_soil_series : 2
     pro_soil_taxon_sys : 4
@@ -154,9 +155,11 @@ Summary statistics...
     lyr_fe_ox : 4
     lyr_al_ox : 4
     lyr_si_ox : 4
+    lyr_ox_notes : 4
     lyr_fe_dith : 4
     lyr_al_dith : 4
     lyr_si_dith : 4
+    lyr_dith_notes : 4
  interstitial tab...0 observations
  fraction tab...29 observations
     entry_name : 29
@@ -187,6 +190,7 @@ Summary statistics...
     frc_fe_ox : 28
     frc_al_ox : 28
     frc_si_ox : 28
+    frc_ox_notes : 29
     frc_quartz : 22
     frc_plag_feldspar : 6
     frc_mica_chlorite : 4

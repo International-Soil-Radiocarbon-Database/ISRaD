@@ -101,12 +101,16 @@ Summary statistics...
  profile tab...37 observations
     entry_name : 37
     site_name : 37
+    plot_name : 37
     pro_name : 37
     pro_treatment : 37
     pro_treatment_note : 37
     pro_comp : 37
     pro_MAT : 37
     pro_MAP : 37
+    pro_usda_soil_order : 37
+    pro_soil_taxon : 37
+    pro_soil_taxon_sys : 37
     pro_land_cover : 37
     pro_veg_note : 37
     pro_parent_material_notes : 37

@@ -106,7 +106,7 @@ Summary statistics...
     pro_long : 9
     pro_elevation : 9
     pro_treatment : 9
-    pro_usda_soil_order : 5
+    pro_usda_soil_order : 9
     pro_soil_taxon : 4
     pro_land_cover : 9
     pro_veg_note : 9

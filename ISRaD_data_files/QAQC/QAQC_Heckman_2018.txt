@@ -33,6 +33,7 @@ Checking for extra or misspelled column names...
  layer tab...
  interstitial tab...
  fraction tab...
+WARNING: Column name mismatch template: frc_dith_notes
  incubation tab...
 
 Checking for missing values in required columns...
@@ -170,15 +171,18 @@ Summary statistics...
     frc_al_hy : 15
     frc_si_hy : 15
     frc_c_hy : 15
+    frc_hy_notes : 16
     frc_fe_dith : 15
     frc_al_dith : 15
     frc_si_dith : 15
+    frc_dith_notes : 15
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
 
  - - - - - - - - - - - - - - - - - - - -
-PASSED. Nice work!
+ 1 WARNINGS need to be fixed
+
 
 Please email info.israd@gmail.com with concerns or suggestions
 If you think there is a error in the functioning of this code please post to

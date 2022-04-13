@@ -103,7 +103,9 @@ Summary statistics...
     site_name : 4
     pro_name : 4
     pro_treatment : 4
+    pro_usda_soil_order : 4
     pro_soil_taxon : 4
+    pro_soil_taxon_sys : 4
     pro_land_cover : 4
     pro_veg_note : 4
     pro_parent_material : 4
@@ -119,7 +121,6 @@ Summary statistics...
     lyr_top : 4
     lyr_bot : 4
     lyr_hzn : 4
-    lyr_note : 4
     lyr_c_org : 4
     lyr_n_tot : 4
     lyr_c_to_n : 4
@@ -147,6 +148,7 @@ Summary statistics...
     frc_13c : 14
     frc_fe_ox : 13
     frc_al_ox : 13
+    frc_ox_notes : 13
     frc_fe_dith : 13
     frc_quartz : 14
     frc_alkali_feldspar : 7

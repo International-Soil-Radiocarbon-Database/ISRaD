@@ -145,9 +145,12 @@ Summary statistics...
     lyr_fraction_modern : 42
     lyr_fraction_modern_sigma : 42
     lyr_al_py : 42
+    lyr_py_notes : 42
     lyr_fe_ox : 42
     lyr_al_ox : 42
+    lyr_ox_notes : 42
     lyr_fe_dith : 42
+    lyr_dith_notes : 42
     lyr_quartz : 42
     lyr_plag_feldspar : 39
  interstitial tab...0 observations

@@ -108,6 +108,7 @@ Summary statistics...
     pro_reps : 1
     pro_MAT : 1
     pro_MAP : 1
+    pro_usda_soil_order : 1
     pro_soil_taxon : 1
     pro_soil_taxon_sys : 1
     pro_land_cover : 1

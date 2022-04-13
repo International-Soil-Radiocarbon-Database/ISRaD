@@ -106,16 +106,17 @@ Summary statistics...
     pro_lat : 16
     pro_long : 16
     pro_treatment : 16
-    pro_MAT : 15
-    pro_MAP : 15
-    pro_soil_taxon : 14
-    pro_soil_taxon_sys : 15
+    pro_MAT : 16
+    pro_MAP : 16
+    pro_usda_soil_order : 16
+    pro_soil_taxon : 15
+    pro_soil_taxon_sys : 16
     pro_land_cover : 16
     pro_veg_note : 16
     pro_parent_material : 16
     pro_parent_chem : 16
     pro_parent_material_notes : 16
-    pro_2d_position : 15
+    pro_2d_position : 16
  flux tab...0 observations
  layer tab...107 observations
     entry_name : 107
@@ -149,7 +150,9 @@ Summary statistics...
     lyr_14c : 75
     lyr_fe_ox : 83
     lyr_al_ox : 83
+    lyr_ox_notes : 107
     lyr_fe_dith : 83
+    lyr_dith_notes : 107
     lyr_quartz : 36
     lyr_mica_chlorite : 36
     lyr_kaol_halloy : 36

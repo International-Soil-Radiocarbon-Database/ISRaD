@@ -104,6 +104,7 @@ Summary statistics...
     site_name : 6
     pro_name : 6
     pro_treatment : 6
+    pro_usda_soil_order : 5
     pro_soil_taxon : 5
     pro_soil_taxon_sys : 6
     pro_land_cover : 6

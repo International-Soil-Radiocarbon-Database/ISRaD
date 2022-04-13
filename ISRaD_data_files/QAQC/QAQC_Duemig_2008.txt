@@ -140,26 +140,30 @@ Summary statistics...
     lyr_c_to_n : 81
     lyr_fe_py : 71
     lyr_al_py : 71
+    lyr_py_notes : 81
     lyr_fe_ox : 71
     lyr_al_ox : 71
+    lyr_ox_notes : 81
     lyr_fe_dith : 71
     lyr_al_dith : 71
+    lyr_dith_notes : 81
  interstitial tab...0 observations
- fraction tab...24 observations
-    entry_name : 24
-    site_name : 24
-    pro_name : 24
-    lyr_name : 24
-    frc_name : 24
-    frc_input : 24
-    frc_aggregate_dis : 24
-    frc_property : 24
-    frc_scheme : 24
-    frc_scheme_units : 24
-    frc_lower : 24
-    frc_upper : 24
-    frc_agent : 24
-    frc_note : 24
+ fraction tab...47 observations
+    entry_name : 47
+    site_name : 47
+    pro_name : 47
+    lyr_name : 47
+    frc_name : 47
+    frc_input : 47
+    frc_aggregate_dis : 47
+    frc_property : 47
+    frc_scheme : 47
+    frc_scheme_units : 47
+    frc_lower : 47
+    frc_upper : 47
+    frc_agent : 47
+    frc_note : 47
+    frc_13c : 39
     frc_rc_lab : 24
     frc_fraction_modern : 24
  incubation tab...0 observations

@@ -110,6 +110,7 @@ Summary statistics...
     pro_treatment : 2
     pro_MAT : 2
     pro_MAP : 2
+    pro_usda_soil_order : 2
     pro_soil_taxon : 2
     pro_soil_taxon_sys : 2
     pro_land_cover : 2
@@ -134,6 +135,7 @@ Summary statistics...
     lyr_color : 11
     lyr_bd_samp : 11
     lyr_sand_tot_psa : 11
+    lyr_silt_tot_psa : 11
     lyr_clay_tot_psa : 11
     lyr_ph_cacl : 11
     lyr_ph_h2o : 11
@@ -145,11 +147,14 @@ Summary statistics...
     lyr_fe_py : 11
     lyr_al_py : 11
     lyr_c_py : 11
+    lyr_py_notes : 11
     lyr_fe_ox : 11
     lyr_al_ox : 11
     lyr_si_ox : 11
+    lyr_ox_notes : 11
     lyr_fe_dith : 11
     lyr_al_dith : 11
+    lyr_dith_notes : 11
  interstitial tab...0 observations
  fraction tab...18 observations
     entry_name : 18
@@ -170,7 +175,9 @@ Summary statistics...
     frc_obs_date_y : 18
     frc_c_perc : 18
     frc_c_org : 18
+    frc_n_tot : 18
     frc_c_to_n : 18
+    frc_15n : 18
     frc_13c : 18
     frc_rc_lab : 18
     frc_rc_lab_number : 18
@@ -178,6 +185,7 @@ Summary statistics...
     frc_14c : 18
     frc_al_py : 6
     frc_c_py : 6
+    frc_py_notes : 6
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

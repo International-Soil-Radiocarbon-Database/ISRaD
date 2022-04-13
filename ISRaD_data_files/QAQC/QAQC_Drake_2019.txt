@@ -108,6 +108,7 @@ Summary statistics...
     pro_long : 19
     pro_treatment : 20
     pro_MAP : 19
+    pro_usda_soil_order : 20
     pro_land_cover : 20
     pro_lc_phenology : 8
     pro_lc_leaf_type : 8
