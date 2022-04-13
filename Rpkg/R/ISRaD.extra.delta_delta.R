@@ -19,83 +19,24 @@
 #' # Fill dates
 #' database.x <- ISRaD.extra.fill_dates(database.x)
 #' # Fill delta 14C from fraction modern
-#' database.x <- ISRaD.extra.fill_14c(database.x)
+#' database.x <- ISRaD.extra.fill_rc(database.x)
 #' # Fill delta delta
 #' database.x <- ISRaD.extra.delta_delta(database.x)
-ISRaD.extra.delta_delta <- function(database, future = TRUE) {
+ISRaD.extra.delta_delta <- function(database) {
   stopifnot(is_israd_database(database))
 
-  graven <- ISRaD::graven
+  # run function for flux, layer, interstitial, fraction, and incubation tables
+  c(
+    database[1:3],
+    lapply(seq_along(database[4:8]), function(i) {
 
-  if (future) {
-    graven <- rbind(graven, ISRaD::future14C)
-  }
+      # get prefixes
+      pre.ls <- c("flx", "lyr", "ist", "frc", "inc")
 
-  atm14C.annual <- data.frame(
-    year = unique(floor(graven$Date)),
-    d14C.n = graven$NHc14,
-    d14C.s = graven$SHc14,
-    d14C.t = graven$Tropicsc14
+      # return
+      database[4:8][i][[paste0(pre.ls[i], "_dd14c")]] <- database[[i]][[paste0(pre.ls[i], "_14c")]] -
+      database[[i]][[paste0(pre.ls[i], "_graven_atm")]]
+      })
+    )
   )
-
-  # check for NA values in profile coordinates
-  if (any(is.na(database$profile$pro_lat), is.na(database$profile$pro_long))) {
-    database <- ISRaD.extra.fill_coords(database)
-  }
-
-  # add atm zone
-  database$profile$pro_graven_zone <- NA
-  database$profile$pro_graven_zone[database$profile$pro_lat > 30] <- "north"
-  database$profile$pro_graven_zone[database$profile$pro_lat < (-30)] <- "south"
-  database$profile$pro_graven_zone[database$profile$pro_lat < 30 & database$profile$pro_lat > -30] <- "tropic"
-
-  calc_atm14c <- function(df, obs_date_y) {
-
-    # skip empty tables
-    if (nrow(df) != 0) {
-      df.pro <- cbind(df,
-        pro_graven_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_graven_zone"],
-        atm14c = NA
-      )
-      # add in lyr_obs_date_y for calculating del del in inc and frc tables
-      if (obs_date_y == "lyr_obs_date_y" & is.null(df.pro$lyr_obs_date_y)) {
-        df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
-      }
-
-      # split by zone
-      north.obs <- which(df.pro$pro_graven_zone == "north")
-      south.obs <- which(df.pro$pro_graven_zone == "south")
-      tropic.obs <- which(df.pro$pro_graven_zone == "tropic")
-
-      if (length(north.obs) > 0) {
-        df.pro$atm14C[north.obs] <- atm14C.annual[match(df.pro[north.obs, obs_date_y], atm14C.annual$year), "d14C.n"]
-      }
-      if (length(south.obs) > 0) {
-        df.pro$atm14C[south.obs] <- atm14C.annual[match(df.pro[south.obs, obs_date_y], atm14C.annual$year), "d14C.s"]
-      }
-      if (length(tropic.obs) > 0) {
-        df.pro$atm14C[tropic.obs] <- atm14C.annual[match(df.pro[tropic.obs, obs_date_y], atm14C.annual$year), "d14C.t"]
-      }
-      return(df.pro$atm14C)
-    }
-  }
-
-  ## calculate del del 14C
-  # flux
-  database$flux$flx_graven_atm <- calc_atm14c(database$flux, "flx_obs_date_y")
-  database$flux$flx_dd14c <- database$flux$flx_14c - database$flux$flx_graven_atm
-  # layer
-  database$layer$lyr_graven_atm <- calc_atm14c(database$layer, "lyr_obs_date_y")
-  database$layer$lyr_dd14c <- database$layer$lyr_14c - database$layer$lyr_graven_atm
-  # interstitial
-  database$interstitial$ist_graven_atm <- calc_atm14c(database$interstitial, "ist_obs_date_y")
-  database$interstitial$ist_dd14c <- database$interstitial$ist_14c - database$interstitial$ist_graven_atm
-  # fraction
-  database$fraction$frc_graven_atm <- calc_atm14c(database$fraction, "lyr_obs_date_y")
-  database$fraction$frc_dd14c <- database$fraction$frc_14c - database$fraction$frc_graven_atm
-  # incubation
-  database$incubation$inc_graven_atm <- calc_atm14c(database$incubation, "lyr_obs_date_y")
-  database$incubation$inc_dd14c <- database$incubation$inc_14c - database$incubation$inc_graven_atm
-
-  return(database)
 }

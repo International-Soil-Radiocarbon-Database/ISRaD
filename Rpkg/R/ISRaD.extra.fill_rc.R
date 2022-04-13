@@ -2,7 +2,7 @@
 #'
 #' @description Fills delta 14C or fraction modern data if either are missing
 #' @param database ISRaD dataset object.
-#' @details Warning: xxx_obs_date_y columns must be filled for this to work! This function also fills standard deviation and sigma values.
+#' @details Warning: xxx_obs_date_y columns must be filled for this to work! This function also fills standard deviation and sigma values. Note that this function replaces two older functions ("ISRaD.extra.fill_fm" and "ISRaD.extra.fill_14c") from ISRaD v1.0 that did not work properly.
 #' @author J. Beem-Miller & A. Hoyt
 #' @references Stuiver and Polach, 1977
 #' @export
