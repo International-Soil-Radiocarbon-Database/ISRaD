@@ -5,24 +5,24 @@
 \title{ISRaD.extra.norm14c_year}
 \usage{
 ISRaD.extra.norm14c_year(
-  df,
   obs_d14c,
   obs_year,
   atm_zone,
   norm_year,
+  df,
   verbose = FALSE
 )
 }
 \arguments{
+\item{obs_d14c}{column name in df with observed delta 14c values to be normalized OR numeric value}
+
+\item{obs_year}{column name in df with year in which obs_d14c was observed (sample collection year) OR numeric value}
+
+\item{atm_zone}{column name in df with atmospheric zone for obs_d14c OR character string. Notes: column values/character string must be one of c("NHc14", "SHc14", "Tropicsc14"). "NHc14" = > 30 degrees latitude; "SHc14" = < -30 latitude; "Tropicsc14" = < 30 & > -30 degrees latitude.}
+
+\item{norm_year}{desired normalization year (numeric)}
+
 \item{df}{data frame with columns for observed d14c (obs_d14c), observation year (obs_year), and atmospheric zone (atm_zone)}
-
-\item{obs_d14c}{observed delta 14c value to be normalized}
-
-\item{obs_year}{year in which obs_d14c was observed (sample collection year)}
-
-\item{atm_zone}{atmospheric zone for obs_d14c. Must be one of c("NHc14", "SHc14", "Tropicsc14"). "NHc14" = > 30 degrees latitude; "SHc14" = < -30 latitude; "Tropicsc14" = < 30 & > -30 degrees latitude.}
-
-\item{norm_year}{desired normalization year}
 
 \item{verbose}{Show progress bar? TRUE/FALSE (default = FALSE)}
 }
@@ -33,8 +33,10 @@ data frame with normalized 14c values in new column.
 Normalizes delta 14c values to a given year (norm_year)
 }
 \details{
-Creates new column for normalized 14c in provided data frame. This function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year).\cr\cr
-See the example for information on how to run the function when the "df" argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc..\cr\cr
+This function can be run to return either a column of normalized 14c values in the supplied data frame, or a single normalized 14c value. For the data frame method, the inputs 'obs_d14c', 'obs_year', and 'atm_zone' should correspond to column names in the data frame (see Example 1). For the single value method, the inputs for 'obs_d14c', 'obs_year', and 'atm_zone' are single values (Example 2).\cr\cr
+The function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year).\cr\cr
+Example 1 shows how to run the function when the 'df' argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc.\cr
+Example 2 shows how to run the function when single values are supplied and 'df' is absent.\cr\cr
 Note: There is no guarantee that normalized 14c values will be meaningful as the model assumes a well-mixed homogenous system, and this is rarely the case in soils.
 Can be very slow for large datasets!
 }
@@ -50,13 +52,21 @@ database.x <- ISRaD.extra.fill_rc(database.x)
 # Fill atmospheric 14c
 database.x <- ISRaD.extra.calc_atm14c(database.x)
 # Run normalization function for the year 2010 with layer data
+# Example 1
 database.x$layer <- ISRaD.extra.norm14c_year(
-  df = database.x$layer,
   obs_d14c = "lyr_14c",
   obs_year = "lyr_obs_date_y",
   atm_zone = "pro_graven_zone",
   norm_year = 2010,
+  df = database.x$layer,
   verbose = TRUE
+)
+# Example 2
+ISRaD.extra.norm14c_year(
+  obs_d14c = 182.8958,
+  obs_year = 1996,
+  atm_zone = "NHc14",
+  norm_year = 2010
 )
 }
 \author{

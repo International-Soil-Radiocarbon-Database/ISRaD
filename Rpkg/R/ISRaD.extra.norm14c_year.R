@@ -2,13 +2,15 @@
 #'
 #' @description Normalizes delta 14c values to a given year (norm_year)
 #' @param df data frame with columns for observed d14c (obs_d14c), observation year (obs_year), and atmospheric zone (atm_zone)
-#' @param obs_d14c observed delta 14c value to be normalized
-#' @param obs_year year in which obs_d14c was observed (sample collection year)
-#' @param atm_zone atmospheric zone for obs_d14c. Must be one of c("NHc14", "SHc14", "Tropicsc14"). "NHc14" = > 30 degrees latitude; "SHc14" = < -30 latitude; "Tropicsc14" = < 30 & > -30 degrees latitude.
-#' @param norm_year desired normalization year
+#' @param obs_d14c column name in df with observed delta 14c values to be normalized OR numeric value
+#' @param obs_year column name in df with year in which obs_d14c was observed (sample collection year) OR numeric value
+#' @param atm_zone column name in df with atmospheric zone for obs_d14c OR character string. Notes: column values/character string must be one of c("NHc14", "SHc14", "Tropicsc14"). "NHc14" = > 30 degrees latitude; "SHc14" = < -30 latitude; "Tropicsc14" = < 30 & > -30 degrees latitude.
+#' @param norm_year desired normalization year (numeric)
 #' @param verbose Show progress bar? TRUE/FALSE (default = FALSE)
-#' @details Creates new column for normalized 14c in provided data frame. This function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year).\cr\cr
-#' See the example for information on how to run the function when the "df" argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc..\cr\cr
+#' @details This function can be run to return either a column of normalized 14c values in the supplied data frame, or a single normalized 14c value. For the data frame method, the inputs 'obs_d14c', 'obs_year', and 'atm_zone' should correspond to column names in the data frame (see Example 1). For the single value method, the inputs for 'obs_d14c', 'obs_year', and 'atm_zone' are single values (Example 2).\cr\cr
+#' The function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year).\cr\cr
+#' Example 1 shows how to run the function when the 'df' argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc.\cr
+#' Example 2 shows how to run the function when single values are supplied and 'df' is absent.\cr\cr
 #' Note: There is no guarantee that normalized 14c values will be meaningful as the model assumes a well-mixed homogenous system, and this is rarely the case in soils.
 #' Can be very slow for large datasets!
 #' @author J. Beem-Miller and J. Randerson
@@ -26,21 +28,29 @@
 #' # Fill atmospheric 14c
 #' database.x <- ISRaD.extra.calc_atm14c(database.x)
 #' # Run normalization function for the year 2010 with layer data
+#' # Example 1
 #' database.x$layer <- ISRaD.extra.norm14c_year(
-#'   df = database.x$layer,
 #'   obs_d14c = "lyr_14c",
 #'   obs_year = "lyr_obs_date_y",
 #'   atm_zone = "pro_graven_zone",
 #'   norm_year = 2010,
+#'   df = database.x$layer,
 #'   verbose = TRUE
 #' )
-ISRaD.extra.norm14c_year <- function(df, obs_d14c, obs_year, atm_zone, norm_year, verbose = FALSE) {
+#' # Example 2
+#' ISRaD.extra.norm14c_year(
+#'   obs_d14c = 182.8958,
+#'   obs_year = 1996,
+#'   atm_zone = "NHc14",
+#'   norm_year = 2010
+#' )
+ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df, verbose = FALSE) {
 
   # normalization function
-  norm14c.fx <- function(obs_d14c, obs_year, atm_zone) {
+  norm14c.fx <- function(OBS_D14C, OBS_YEAR, ATM_ZONE) {
 
     # get atm14c
-    atm14c <- rbind(ISRaD::graven, ISRaD::future14C)[, c("Date", atm_zone)]
+    atm14c <- rbind(ISRaD::graven, ISRaD::future14C)[, c("Date", ATM_ZONE)]
 
     # define constants
     tauradio <- 8267.0 # radioactive decay turnover time
@@ -78,36 +88,36 @@ ISRaD.extra.norm14c_year <- function(df, obs_d14c, obs_year, atm_zone, norm_year
     taudecomp <- 1 # decomposition loss turnover time
 
     # run model for predicted d14c, tau = 1
-    prd_d14c <- mod.fx(taudecomp)[obs_year - 1849]
+    PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
 
     # set fine-tune tau start
-    if (prd_d14c < obs_d14c) {
+    if (PRD_D14C < OBS_D14C) {
 
-      # start loop
-      while (prd_d14c < obs_d14c) {
+      # start loop (PRD_D14C < OBS_D14C)
+      while (PRD_D14C < OBS_D14C) {
 
         # speed up loop by jumping by 5 in beginning, then move to 1 year increments of tau
-        dif <- abs(prd_d14c - obs_d14c)
+        dif <- abs(PRD_D14C - OBS_D14C)
         if (dif > 50) {
           taudecomp <- taudecomp + 5
         } else {
           taudecomp <- taudecomp + 1
         }
-        prd_d14c <- mod.fx(taudecomp)[obs_year - 1849]
+        PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
       }
     } else {
 
-      # start loop
-      while (prd_d14c > obs_d14c) {
+      # start loop (PRD_D14C > OBS_D14C)
+      while (PRD_D14C > OBS_D14C) {
 
         # speed up loop by jumping by 5 in beginning, then move to 1 year increments of tau
-        dif <- abs(prd_d14c - obs_d14c)
+        dif <- abs(PRD_D14C - OBS_D14C)
         if (dif > 50) {
           taudecomp <- taudecomp + 5
         } else {
           taudecomp <- taudecomp + 1
         }
-        prd_d14c <- mod.fx(taudecomp)[obs_year - 1849]
+        PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
       }
     }
 
@@ -115,26 +125,39 @@ ISRaD.extra.norm14c_year <- function(df, obs_d14c, obs_year, atm_zone, norm_year
     mod.fx(taudecomp)[norm_year - 1849]
   }
 
-  # get index of NA obs_d14c
-  ix <- which(!is.na(df[[obs_d14c]]))
+  # run function for single values or df
+  if (missing(df)) {
+    norm14c.fx(
+      OBS_D14C = obs_d14c,
+      OBS_YEAR = obs_year,
+      ATM_ZONE = atm_zone
+    )
+  } else {
 
-  # set progress bar
-  pb <- txtProgressBar(min = min(ix), max = max(ix), style = 3)
+    # get index of NA obs_d14c
+    ix <- which(!is.na(df[[obs_d14c]]))
 
-  # run function
-  df[ix, "norm_14c"] <- unlist(lapply(ix, function(i) {
+    # set progress bar
+    pb <- txtProgressBar(min = min(ix), max = max(ix), style = 3)
 
     # run function
-    norm14c.fx(
-      obs_d14c = df[[obs_d14c]][i],
-      obs_year = df[[obs_year]][i],
-      atm_zone = as.character(df[[atm_zone]][[i]])
-    )
+    df[ix, "norm_14c"] <- unlist(lapply(ix, function(i) {
 
-    # start progress bar
-    if (verbose) setTxtProgressBar(pb, i)
-  }))
+      # run function
+      d14c_n <- norm14c.fx(
+        OBS_D14C = df[[obs_d14c]][i],
+        OBS_YEAR = df[[obs_year]][i],
+        ATM_ZONE = as.character(df[[atm_zone]][[i]])
+      )
 
-  # return df
-  return(df)
+      # start progress bar
+      if (verbose) setTxtProgressBar(pb, i)
+
+      # return norm d14c
+      return(d14c_n)
+    }))
+
+    # return df
+    return(df)
+  }
 }
