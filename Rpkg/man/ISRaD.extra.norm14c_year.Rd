@@ -27,7 +27,7 @@ ISRaD.extra.norm14c_year(
 \item{verbose}{Show progress bar? TRUE/FALSE (default = FALSE)}
 }
 \value{
-data frame with normalized 14c values in new column.
+data frame with normalized 14c values in new column OR single normalized 14c value
 }
 \description{
 Normalizes delta 14c values to a given year (norm_year)
