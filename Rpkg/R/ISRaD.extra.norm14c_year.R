@@ -48,83 +48,83 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
 
   # normalization function
   norm14c.fx <- function(OBS_D14C, OBS_YEAR, ATM_ZONE) {
-
-    # get atm14c
-    atm14c <- rbind(ISRaD::graven, ISRaD::future14C)[, c("Date", ATM_ZONE)]
-
-    # define constants
-    tauradio <- 8267.0 # radioactive decay turnover time
-    dt <- 1 # time step of integration 1 year
-    npplevel <- 1.0 # gc/m2/yr
-
-    # 1-pool model function
-    mod.fx <- function(taudecomp) {
-
-      # effective tau (decomp + radiodecay)
-      taueff <- 1.0 / (1.0 / taudecomp + 1.0 / tauradio)
-
-      # initialize list of variables
-      var.nms <- c("Rh", "Cb", "AtmRdivRstd", "CbRdivRstd")
-      var.ls <- lapply(vector(mode = "list", length = length(var.nms)), function(x) rep(0, nrow(atm14c)))
-      names(var.ls) <- var.nms
-      var.ls$AtmRdivRstd <- atm14c[, 2] / 1000.0 + 1.0
-
-      # set initial conditions
-      var.ls$Cb[1] <- npplevel * taudecomp
-      var.ls$CbRdivRstd[1] <- npplevel * taueff * ((atm14c[1, 2] / 1000.0) + 1.0)
-
-      for (i in 2:length(var.ls$Rh)) {
-        var.ls$Rh[i] <- var.ls$Cb[i - 1] / taudecomp
-        var.ls$Cb[i] <- var.ls$Cb[i - 1] + (npplevel - var.ls$Rh[i]) * dt
-        var.ls$CbRdivRstd[i] <- var.ls$CbRdivRstd[i - 1] +
-          (npplevel * var.ls$AtmRdivRstd[i] - var.ls$CbRdivRstd[i - 1] / taueff) * dt
-      }
-
-      # return predicted d14c
-      ((var.ls$CbRdivRstd / var.ls$Cb) - 1.0) * 1000.0
-    }
-
-    # set initial tau = 1
-    taudecomp <- 1 # decomposition loss turnover time
-
-    # run model for predicted d14c, tau = 1
-    PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
-
-    # set fine-tune tau start
-    if (PRD_D14C < OBS_D14C) {
-
-      # start loop (PRD_D14C < OBS_D14C)
-      while (PRD_D14C < OBS_D14C) {
-
-        # speed up loop by jumping by 5 in beginning, then move to 1 year increments of tau
-        dif <- abs(PRD_D14C - OBS_D14C)
-        if (dif > 50) {
-          taudecomp <- taudecomp + 5
-        } else {
-          taudecomp <- taudecomp + 1
+      
+      # get atm14c
+      atm14c <- rbind(ISRaD::graven, ISRaD::future14C)[, c("Date", ATM_ZONE)]
+      
+      # define constants
+      tauradio <- 8267.0 # radioactive decay turnover time
+      dt <- 1 # time step of integration 1 year
+      npplevel <- 1.0 # gc/m2/yr
+      
+      # 1-pool model function
+      mod.fx <- function(taudecomp) {
+        
+        # effective tau (decomp + radiodecay)
+        taueff <- 1.0 / (1.0 / taudecomp + 1.0 / tauradio)
+        
+        # initialize list of variables
+        var.nms <- c("Rh", "Cb", "AtmRdivRstd", "CbRdivRstd")
+        var.ls <- lapply(vector(mode = "list", length = length(var.nms)), function(x) rep(0, nrow(atm14c)))
+        names(var.ls) <- var.nms
+        var.ls$AtmRdivRstd <- atm14c[, 2] / 1000.0 + 1.0
+        
+        # set initial conditions
+        var.ls$Cb[1] <- npplevel * taudecomp
+        var.ls$CbRdivRstd[1] <- npplevel * taueff * ((atm14c[1, 2] / 1000.0) + 1.0)
+        
+        for (i in 2:length(var.ls$Rh)) {
+          var.ls$Rh[i] <- var.ls$Cb[i - 1] / taudecomp
+          var.ls$Cb[i] <- var.ls$Cb[i - 1] + (npplevel - var.ls$Rh[i]) * dt
+          var.ls$CbRdivRstd[i] <- var.ls$CbRdivRstd[i - 1] +
+            (npplevel * var.ls$AtmRdivRstd[i] - var.ls$CbRdivRstd[i - 1] / taueff) * dt
         }
-        PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
+        
+        # return predicted d14c
+        ((var.ls$CbRdivRstd / var.ls$Cb) - 1.0) * 1000.0
       }
-    } else {
-
-      # start loop (PRD_D14C > OBS_D14C)
-      while (PRD_D14C > OBS_D14C) {
-
-        # speed up loop by jumping by 5 in beginning, then move to 1 year increments of tau
-        dif <- abs(PRD_D14C - OBS_D14C)
-        if (dif > 50) {
-          taudecomp <- taudecomp + 5
-        } else {
-          taudecomp <- taudecomp + 1
+      
+      # set initial tau = 1
+      taudecomp <- 1 # decomposition loss turnover time
+      
+      # run model for predicted d14c, tau = 1
+      PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
+      
+      # set fine-tune tau start
+      if (PRD_D14C < OBS_D14C) {
+        
+        # start loop (PRD_D14C < OBS_D14C)
+        while (PRD_D14C < OBS_D14C & PRD_D14C > -100) {
+          
+          # speed up loop by jumping by 5 in beginning, then move to 1 year increments of tau
+          dif <- abs(PRD_D14C - OBS_D14C)
+          if (dif > 50) {
+            taudecomp <- taudecomp + 5
+          } else {
+            taudecomp <- taudecomp + 1
+          }
+          PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
         }
-        PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
+      } else {
+        
+        # start loop (PRD_D14C > OBS_D14C), stop if taudecomp returns d14c vals < -100
+        while (PRD_D14C > OBS_D14C & PRD_D14C > -100) {
+          
+          # speed up loop by jumping by 5 in beginning, then move to 1 year increments of tau
+          dif <- abs(PRD_D14C - OBS_D14C)
+          if (dif > 50) {
+            taudecomp <- taudecomp + 5
+          } else {
+            taudecomp <- taudecomp + 1
+          }
+          PRD_D14C <- mod.fx(taudecomp)[OBS_YEAR - 1849]
+        }
       }
-    }
-
-    # return normalized 14C in target year
-    mod.fx(taudecomp)[norm_year - 1849]
+      
+      # return normalized 14C in target year
+      mod.fx(taudecomp)[norm_year - 1849]
   }
-
+  
   # run function for single values or df
   if (missing(df)) {
     norm14c.fx(
@@ -134,8 +134,8 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
     )
   } else {
 
-    # get index of NA obs_d14c
-    ix <- which(!is.na(df[[obs_d14c]]))
+    # get index of NA obs_d14c and obs_14c > -100
+    ix <- which(!is.na(df[[obs_d14c]]) & df[[obs_d14c]] > -100)
 
     # set progress bar
     pb <- txtProgressBar(min = min(ix), max = max(ix), style = 3)
