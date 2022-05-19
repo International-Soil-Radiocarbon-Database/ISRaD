@@ -34,11 +34,10 @@ Normalizes delta 14c values to a given year (norm_year)
 }
 \details{
 This function can be run to return either a column of normalized 14c values in the supplied data frame, or a single normalized 14c value. For the data frame method, the inputs 'obs_d14c', 'obs_year', and 'atm_zone' should correspond to column names in the data frame (see Example 1). For the single value method, the inputs for 'obs_d14c', 'obs_year', and 'atm_zone' are single values (Example 2).\cr\cr
-The function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year).\cr\cr
+The function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year). Note that highly negative values of delta 14c (e.g. < -100) are unaffected by normalization.\cr\cr
 Example 1 shows how to run the function when the 'df' argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc.\cr
 Example 2 shows how to run the function when single values are supplied and 'df' is absent.\cr\cr
 Note: There is no guarantee that normalized 14c values will be meaningful as the model assumes a well-mixed homogenous system, and this is rarely the case in soils.
-Can be very slow for large datasets!
 }
 \examples{
 # Load example dataset Gaudinski_2001
