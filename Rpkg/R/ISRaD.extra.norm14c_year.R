@@ -15,7 +15,7 @@
 #' Can be very slow for large datasets!
 #' @author J. Beem-Miller and J. Randerson
 #' @export
-#' @return data frame with normalized 14c values in new column.
+#' @return data frame with normalized 14c values in new column OR single normalized 14c value
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
