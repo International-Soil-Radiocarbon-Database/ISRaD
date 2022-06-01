@@ -1,14 +1,19 @@
-# Updated release for CRAN, mid April 2022
+# Updated release for CRAN, early June 2022
 ISRaD 2.1.2
 
 ## Notes
 * deprecated functions "ISRaD.extra.fill_fm" and "ISRaD.extra.fill_14c" have been removed; function "ISRaD.extra.fill_rc" replaces them
 * function "ISRaD.extra.fill_deltadelta" has been split into two functions: "ISRaD.extra.calc_atm14c" and "ISRaD.extra.fill_deltadelta"
-* new function "ISRaD.extra.norm14c_year" returns 14c normalized to user-specified year
-* non-backwards compatible changes to master template file implemented in ISRaD v2.0.0
+* new functions "ISRaD.extra.norm14c_year" returns 14c normalized to user-specified year
+* new function "ISRaD.extra.fill_cn" fills missing CN ratios
+* new function "ISRaD.extra.fill_country" fills country (and optionally continent) from profile coords
+* function documentation updated
 
 # Updated release with fraction data overhaul, early February 2022
 ISRaD 2.0.0
+
+## Notes
+* backwards incompatible changes to master template file implemented in ISRaD v2.0.0
 
 # Updated release for CRAN, early January 2021
 ISRaD 1.7.8
