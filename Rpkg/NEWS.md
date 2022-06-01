@@ -1,5 +1,5 @@
 # Updated release for CRAN, early June 2022
-ISRaD 2.1.2
+ISRaD 2.2.4
 
 ## Notes
 * deprecated functions "ISRaD.extra.fill_fm" and "ISRaD.extra.fill_14c" have been removed; function "ISRaD.extra.fill_rc" replaces them

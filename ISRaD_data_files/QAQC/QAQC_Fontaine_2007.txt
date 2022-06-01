@@ -107,7 +107,6 @@ Summary statistics...
     pro_treatment : 1
     pro_comp : 1
     pro_reps : 1
-    pro_usda_soil_order : 1
     pro_soil_taxon : 1
     pro_soil_taxon_sys : 1
     pro_land_cover : 1

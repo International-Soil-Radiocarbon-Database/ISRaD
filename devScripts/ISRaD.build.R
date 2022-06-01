@@ -15,16 +15,12 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
                         geodata_directory = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_geodata",
                         geodata_keys = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_keys") {
 
-  # load fill_expert fx
-  source("./devScripts/ISRaD.extra.fill_expert.R")
-
   # Compile database --------------------------------------------------------
 
   if (is.null(geodata_directory) | is.null(geodata_keys)) {
     warning("geodata_directory, and geodata_keys directory must be specified.\n")
     stop()
   }
-
 
   message("Compiling the data files in ", paste0(ISRaD_directory, "/ISRaD_data_files\n"))
   message("You must review the compilation report log file when complete (ISRaD_data_files/database/ISRad_log.txt)... \n\n")
@@ -68,14 +64,16 @@ ISRaD.build <- function(ISRaD_directory = getwd(),
   ISRaD_extra_compiled <- ISRaD.extra.fill_rc(ISRaD_extra_compiled)
   message("\t filling coordinates \n")
   ISRaD_extra_compiled <- ISRaD.extra.fill_coords(ISRaD_extra_compiled)
+  message("\t filling country names \n")
+  ISRaD_extra_compiled <- ISRaD.extra.fill_country(ISRaD_extra_compiled)
   message("\t filling atmospheric 14c \n")
   ISRaD_extra_compiled <- ISRaD.extra.calc_atm14c(ISRaD_extra_compiled)
   message("\t filling delta delta \n")
   ISRaD_extra_compiled <- ISRaD.extra.delta_delta(ISRaD_extra_compiled)
   message("\t filling cstocks \n")
   ISRaD_extra_compiled <- ISRaD.extra.Cstocks(ISRaD_extra_compiled)
-  message("\t filling expert data \n")
-  ISRaD_extra_compiled <- ISRaD.extra.fill_expert(ISRaD_extra_compiled)
+  message("\t filling C:N ratios \n")
+  ISRaD_extra_compiled <- ISRaD.extra.fill_CN(ISRaD_extra_compiled)
   message("\t filling geospatial data \n")
   ISRaD_extra_compiled <- ISRaD.extra.geospatial(ISRaD_extra_compiled, geodata_directory = geodata_directory)
   message("\t recoding categorical spatial data  \n")

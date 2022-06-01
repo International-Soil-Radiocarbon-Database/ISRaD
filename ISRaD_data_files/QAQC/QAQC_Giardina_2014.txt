@@ -132,8 +132,8 @@ Summary statistics...
     lyr_rc_lab_number : 133
     lyr_fraction_modern : 133
     lyr_fraction_modern_sigma : 133
-    lyr_fe_py : 124
-    lyr_al_py : 124
+    lyr_fe_hy : 124
+    lyr_al_hy : 124
  interstitial tab...0 observations
  fraction tab...27 observations
     entry_name : 27

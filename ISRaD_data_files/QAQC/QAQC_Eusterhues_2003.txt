@@ -106,7 +106,7 @@ Summary statistics...
     pro_name : 2
     pro_treatment : 2
     pro_MAP : 2
-    pro_usda_soil_order : 2
+    pro_usda_soil_order : 1
     pro_soil_taxon : 2
     pro_soil_taxon_sys : 2
     pro_land_cover : 2

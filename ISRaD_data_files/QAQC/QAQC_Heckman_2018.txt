@@ -92,6 +92,7 @@ Summary statistics...
     contact_email : 1
     contact_orcid_id : 1
     bibliographical_reference : 1
+    metadata_note : 1
     template_version : 1
  site tab...4 observations
     entry_name : 4
@@ -133,10 +134,16 @@ Summary statistics...
     lyr_note : 16
     lyr_texture_class : 16
     lyr_c_org : 16
+    lyr_13c : 4
     lyr_rc_lab : 16
     lyr_rc_lab_number : 16
     lyr_14c : 16
     lyr_fraction_modern : 16
+    lyr_fe_ox : 4
+    lyr_ox_notes : 4
+    lyr_fe_hy : 4
+    lyr_al_hy : 4
+    lyr_hy_notes : 4
  interstitial tab...0 observations
  fraction tab...144 observations
     entry_name : 144
