@@ -7,12 +7,12 @@
 #' @param atm_zone column name in df with atmospheric zone for obs_d14c OR character string. Notes: column values/character string must be one of c("NHc14", "SHc14", "Tropicsc14"). "NHc14" = > 30 degrees latitude; "SHc14" = < -30 latitude; "Tropicsc14" = < 30 & > -30 degrees latitude.
 #' @param norm_year desired normalization year (numeric)
 #' @param slow if TRUE (default) normalized 14c value will be fit using the slower solution for tau
-#' @param tau if TRUE, the solution for tau will be returned along with the normalized 14c value (default = FALSE)
-#' @param verbose Show progress bar? TRUE/FALSE (default = FALSE)
-#' @details This function can be run to return either a column of normalized 14c values in the supplied data frame, or a single normalized 14c value. For the data frame method, the inputs 'obs_d14c', 'obs_year', and 'atm_zone' should correspond to column names in the data frame (see Example 1). For the single value method, the inputs for 'obs_d14c', 'obs_year', and 'atm_zone' are single values (Example 2).\cr\cr
-#' The function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time (tau^-1) is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year). Note that highly negative values of delta 14c (e.g. < -100) are unaffected by normalization.\cr\cr
-#' The curvature of the bomb peak can lead to two viable solutions for tau in a one pool model. Determining which  value is more appropriate depends on the carbon dynamics of the system, and cannot be determined a priori ( Trumbore 2000). The 'slow' parameter can be used to select which tau is used for calculating the normalized 14c value.\cr\cr
-#' In certain cases the algorithm used to determine tau will fail to find a solution. This situation arises when the observed radiocarbon value is too high relative to the year of observation. This problem is well documented (Gaudinski et al. 2000), and can be solved by introducing a time-lag for the carbon inputs to the system. However, this functionality is beyond the scope of this function. In order to prevent the algorithm from being caught in an infinite loop, the function terminates the search for tau when the predicted delta 14c value drops below -100 per mille. Accordingly, the values estimated for normalized 14c in these cases will be approximately -100 per mille. In general, samples where the algorithm failed to converge can be identified in a larger dataset by searching for records with observed 14c values > 0 and normalized 14c values < 0.\cr\cr
+#' @param tau if TRUE (default) the solution for tau will be returned along with the normalized 14c value
+#' @param verbose Show progress bar? TRUE/FALSE (default = TRUE)
+#' @details This function can be run on a data frame or with single value input. For the data frame method, the inputs 'obs_d14c', 'obs_year', and 'atm_zone' correspond to column names in the supplied data frame (see Example 1). For the single value method, the inputs for 'obs_d14c', 'obs_year', and 'atm_zone' are single values (Example 2).\cr\cr
+#' The function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time (tau^-1) is determined by fitting the model to the observed delta 14c (obs_d14c) in the given observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year). Note that highly negative values of delta 14c (e.g. < -100) are unaffected by normalization and are thus not returned unchanged by the function.\cr\cr
+#' The curvature of the bomb peak can lead to two viable solutions for tau in a one pool model. Determining which value is more appropriate depends on the carbon dynamics of the system and thus cannot be determined a priori (Trumbore 2000). The 'slow' parameter can be used to select which tau is used for calculating the normalized 14c value. If 'slow' = TRUE, and the algorithm is able to find two solutions for tau, the function will return normalized 14c values calculated with the slower of the two turnover time solutions. If "slow" = FALSE, the faster turnover time is used.\cr\cr
+#' In certain cases the algorithm used to determine tau fails to converge. This situation arises when observed radiocarbon values are too high relative to the year of observation. This problem is well documented (Gaudinski et al. 2000), and can be solved by introducing a time-lag for the carbon inputs to the system. However, this functionality is beyond the scope of this function. If the algorithm fails to converge, the function will select the tau value giving the closest match for observed 14c in the given observation year and return norm_error = "TRUE".\cr\cr
 #' Example 1 shows how to run the function when the 'df' argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc.\cr
 #' Example 2 shows how to run the function when single values are supplied and 'df' is absent.\cr\cr
 #' Note: There is no guarantee that normalized 14c values will be meaningful as the model assumes a well-mixed homogenous system, and this is rarely the case in soils.
@@ -20,7 +20,7 @@
 #' @references Gaudinski et al. 2000. Soil carbon cycling in a temperate forest: radiocarbon-based estimates of residence times, sequestration rates and partitioning of fluxes. Biogeochemistry 51: 33–69 \url{https://doi.org/10.1023/A:1006301010014}\cr\cr
 #' Trumbore, S. 2000. Age of Soil Organic Matter and Soil Respiration: Radiocarbon Constraints on Belowground C Dynamics. Ecological Applications, 10(2): 399–411 \url{http://dx.doi.org/10.2307/2641102}
 #' @export
-#' @return data frame with normalized 14c values in new column OR single normalized 14c value
+#' @return data frame with new columns: "norm_14c", "norm_error", and optionally "norm_tau"; OR list with length = 3: "norm_14c", "norm_tau", "norm_error"
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
@@ -39,6 +39,7 @@
 #'   obs_year = "lyr_obs_date_y",
 #'   atm_zone = "pro_graven_zone",
 #'   norm_year = 2010,
+#'   tau = TRUE,
 #'   df = database.x$layer,
 #'   verbose = TRUE
 #' )
@@ -49,10 +50,10 @@
 #'   atm_zone = "NHc14",
 #'   norm_year = 2010
 #' )
-ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df, slow = TRUE, tau = FALSE, verbose = FALSE) {
+ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df, slow = TRUE, tau = TRUE, verbose = TRUE) {
 
   # normalization function
-  norm14c.fx <- function(OBS_D14C, OBS_YEAR, ATM_ZONE, slow, tau) {
+  norm14c.fx <- function(OBS_D14C, OBS_YEAR, ATM_ZONE, slow, tau, i) {
 
     # get atm14c
     atm14c <- rbind(ISRaD::graven, ISRaD::future14C)[, c("Date", ATM_ZONE)]
@@ -78,6 +79,7 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
       var.ls$Cb[1] <- npplevel * taudecomp
       var.ls$CbRdivRstd[1] <- npplevel * taueff * ((atm14c[1, 2] / 1000.0) + 1.0)
 
+      # spin-up
       for (i in 2:length(var.ls$Rh)) {
         var.ls$Rh[i] <- var.ls$Cb[i - 1] / taudecomp
         var.ls$Cb[i] <- var.ls$Cb[i - 1] + (npplevel - var.ls$Rh[i]) * dt
@@ -98,8 +100,8 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
       # set fine-tune tau start
       if (PRD_D14C < OBS_D14C) {
 
-        # start loop (PRD_D14C < OBS_D14C)
-        while (PRD_D14C < OBS_D14C & PRD_D14C > -100) {
+        # start loop (PRD_D14C < OBS_D14C), stop if taudecomp returns d14c vals < -120
+        while (PRD_D14C < OBS_D14C & PRD_D14C > -120) {
 
           # speed up loop by jumping by 5 in beginning, then move to 1 year increments of tau
           dif <- abs(PRD_D14C - OBS_D14C)
@@ -112,8 +114,8 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
         }
       } else {
 
-        # start loop (PRD_D14C > OBS_D14C), stop if taudecomp returns d14c vals < -100
-        while (PRD_D14C > OBS_D14C & PRD_D14C > -100) {
+        # start loop (PRD_D14C > OBS_D14C), stop if taudecomp returns d14c vals < -120
+        while (PRD_D14C > OBS_D14C & PRD_D14C > -120) {
 
           # speed up loop by jumping by 5 in beginning, then move to 1 year increments of tau
           dif <- abs(PRD_D14C - OBS_D14C)
@@ -128,49 +130,71 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
       return(taudecomp)
     }
 
+    # failed convergence fx
+    unfit.fx <- function(OBS_D14C, OBS_YEAR) {
+      tau.ls <- 1:100
+      pred.14c.ls <- lapply(tau.ls, function(j) {
+        mod.fx(tau.ls[[j]])[OBS_YEAR - 1849]
+      })
+      difs <- abs(OBS_D14C - unlist(pred.14c.ls))
+      ix <- which(difs == min(difs))
+      list(tau = tau.ls[[ix]], norm_14c = pred.14c.ls[[ix]])
+    }
+
     # set initial tau = 1
     TAU_FAST <- tau.fx(1)
     PRD_D14C_FAST <- mod.fx(TAU_FAST)[norm_year - 1849]
+
+    # set error counter
+    norm_error <- FALSE
+
+    # fit failed convergence samples for fast tau
+    if (PRD_D14C_FAST < -101) {
+      norm_error <- TRUE
+      message <- paste("model failed to converge for sample ", i)
+      warning(message, call. = FALSE)
+      unfit <- unfit.fx(OBS_D14C, OBS_YEAR)
+      TAU_FAST <- unfit[[1]]
+      PRD_D14C_FAST <- unfit[[2]]
+    }
 
     # find slower solution
     if (slow) {
       TAU_SLOW <- tau.fx(TAU_FAST)
       PRD_D14C_SLOW <- mod.fx(TAU_SLOW)[norm_year - 1849]
-
-      # replace failed solutions
-      if (PRD_D14C_SLOW < -97 & PRD_D14C_SLOW > -101) {
+      # replace failed convergence samples with fast prd & tau
+      if (PRD_D14C_SLOW < -101) {
         PRD_D14C_SLOW <- PRD_D14C_FAST
+        TAU_SLOW <- TAU_FAST
       }
-    }
 
-    # return tau?
-    if (tau) {
-      if (slow) {
-        list(norm14c = PRD_D14C_SLOW, tau = TAU_SLOW)
-      } else {
-        list(norm14c = PRD_D14C_FAST, tau = TAU_FAST)
-      }
+      # return slow fit
+      list(norm_14c = PRD_D14C_SLOW, norm_tau = TAU_SLOW, norm_error = norm_error)
     } else {
-      if (slow) {
-        list(norm14c = PRD_D14C_SLOW)
-      } else {
-        list(norm14c = PRD_D14C_FAST)
-      }
+
+      # return fast fit
+      list(norm_14c = PRD_D14C_FAST, norm_tau = TAU_FAST, norm_error = norm_error)
     }
   }
 
   # run function for single values or df
   if (missing(df)) {
     if (obs_d14c < -100) {
-      cat("d14C values < -100 are unaffected by normalization")
+      warning("d14C values < -100 are unaffected by normalization", call. = FALSE)
     } else {
-      norm14c.fx(
+      i <- ""
+      norm <- norm14c.fx(
         OBS_D14C = obs_d14c,
         OBS_YEAR = obs_year,
         ATM_ZONE = atm_zone,
         slow = slow,
-        tau = tau
-      )
+        tau = tau,
+        i = i)
+      if (tau) {
+        norm
+      } else {
+        norm[c(1, 3)]
+      }
     }
   } else {
 
@@ -185,17 +209,18 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
 
       # run function
       d14c_n <- norm14c.fx(
-          OBS_D14C = df[[obs_d14c]][i],
-          OBS_YEAR = df[[obs_year]][i],
-          ATM_ZONE = as.character(df[[atm_zone]][[i]]),
-          slow = slow,
-          tau = tau
-        )
+        OBS_D14C = df[[obs_d14c]][i],
+        OBS_YEAR = df[[obs_year]][i],
+        ATM_ZONE = as.character(df[[atm_zone]][[i]]),
+        slow = slow,
+        tau = tau,
+        i = i)
 
       # start progress bar
       if (verbose) setTxtProgressBar(pb, i)
 
       # return norm d14c
+
       return(d14c_n)
     })
 
@@ -206,6 +231,8 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
     if (tau) {
       df[ix, "norm_tau"] <- unlist(lapply(norm, "[[", 2))
     }
+
+    df[ix, "norm_error"] <- unlist(lapply(norm, "[[", 3))
 
     # add values < -100 back into norm column
     df[which(df[[obs_d14c]] < -100), "norm_14c"] <- df[which(df[[obs_d14c]] < -100), obs_d14c]

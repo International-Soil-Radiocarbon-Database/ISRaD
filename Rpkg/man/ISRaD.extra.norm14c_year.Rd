@@ -11,8 +11,8 @@ ISRaD.extra.norm14c_year(
   norm_year,
   df,
   slow = TRUE,
-  tau = FALSE,
-  verbose = FALSE
+  tau = TRUE,
+  verbose = TRUE
 )
 }
 \arguments{
@@ -28,21 +28,21 @@ ISRaD.extra.norm14c_year(
 
 \item{slow}{if TRUE (default) normalized 14c value will be fit using the slower solution for tau}
 
-\item{tau}{if TRUE, the solution for tau will be returned along with the normalized 14c value (default = FALSE)}
+\item{tau}{if TRUE (default) the solution for tau will be returned along with the normalized 14c value}
 
-\item{verbose}{Show progress bar? TRUE/FALSE (default = FALSE)}
+\item{verbose}{Show progress bar? TRUE/FALSE (default = TRUE)}
 }
 \value{
-data frame with normalized 14c values in new column OR single normalized 14c value
+data frame with new columns: "norm_14c", "norm_error", and optionally "norm_tau"; OR list with length = 3: "norm_14c", "norm_tau", "norm_error"
 }
 \description{
 Normalizes delta 14c values to a given year (norm_year)
 }
 \details{
-This function can be run to return either a column of normalized 14c values in the supplied data frame, or a single normalized 14c value. For the data frame method, the inputs 'obs_d14c', 'obs_year', and 'atm_zone' should correspond to column names in the data frame (see Example 1). For the single value method, the inputs for 'obs_d14c', 'obs_year', and 'atm_zone' are single values (Example 2).\cr\cr
-The function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time (tau^-1) is determined by fitting the model to the observed delta 14c (obs_d14c) in the observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year). Note that highly negative values of delta 14c (e.g. < -100) are unaffected by normalization.\cr\cr
-The curvature of the bomb peak can lead to two viable solutions for tau in a one pool model. Determining which  value is more appropriate depends on the carbon dynamics of the system, and cannot be determined a priori ( Trumbore 2000). The 'slow' parameter can be used to select which tau is used for calculating the normalized 14c value.\cr\cr
-In certain cases the algorithm used to determine tau will fail to find a solution. This situation arises when the observed radiocarbon value is too high relative to the year of observation. This problem is well documented (Gaudinski et al. 2000), and can be solved by introducing a time-lag for the carbon inputs to the system. However, this functionality is beyond the scope of this function. In order to prevent the algorithm from being caught in an infinite loop, the function terminates the search for tau when the predicted delta 14c value drops below -100 per mille. Accordingly, the values estimated for normalized 14c in these cases will be approximately -100 per mille. In general, samples where the algorithm failed to converge can be identified in a larger dataset by searching for records with observed 14c values > 0 and normalized 14c values < 0.\cr\cr
+This function can be run on a data frame or with single value input. For the data frame method, the inputs 'obs_d14c', 'obs_year', and 'atm_zone' correspond to column names in the supplied data frame (see Example 1). For the single value method, the inputs for 'obs_d14c', 'obs_year', and 'atm_zone' are single values (Example 2).\cr\cr
+The function works by creating a one pool steady-state model using atmospheric 14c over the period 1850 to 2021. Turnover time (tau^-1) is determined by fitting the model to the observed delta 14c (obs_d14c) in the given observation year (obs_year), and the normalized 14c value is calculated by running the model forwards or backwards to the desired normalization year (norm_year). Note that highly negative values of delta 14c (e.g. < -100) are unaffected by normalization and are thus not returned unchanged by the function.\cr\cr
+The curvature of the bomb peak can lead to two viable solutions for tau in a one pool model. Determining which value is more appropriate depends on the carbon dynamics of the system and thus cannot be determined a priori (Trumbore 2000). The 'slow' parameter can be used to select which tau is used for calculating the normalized 14c value. If 'slow' = TRUE, and the algorithm is able to find two solutions for tau, the function will return normalized 14c values calculated with the slower of the two turnover time solutions. If "slow" = FALSE, the faster turnover time is used.\cr\cr
+In certain cases the algorithm used to determine tau fails to converge. This situation arises when observed radiocarbon values are too high relative to the year of observation. This problem is well documented (Gaudinski et al. 2000), and can be solved by introducing a time-lag for the carbon inputs to the system. However, this functionality is beyond the scope of this function. If the algorithm fails to converge, the function will select the tau value giving the closest match for observed 14c in the given observation year and return norm_error = "TRUE".\cr\cr
 Example 1 shows how to run the function when the 'df' argument corresponds to a table from an ISRaD object, e.g. "flux", "layer", etc.\cr
 Example 2 shows how to run the function when single values are supplied and 'df' is absent.\cr\cr
 Note: There is no guarantee that normalized 14c values will be meaningful as the model assumes a well-mixed homogenous system, and this is rarely the case in soils.
@@ -65,6 +65,7 @@ database.x$layer <- ISRaD.extra.norm14c_year(
   obs_year = "lyr_obs_date_y",
   atm_zone = "pro_graven_zone",
   norm_year = 2010,
+  tau = TRUE,
   df = database.x$layer,
   verbose = TRUE
 )
