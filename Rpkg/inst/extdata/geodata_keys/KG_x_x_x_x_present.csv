@@ -1,0 +1,31 @@
+pro_KG_present,pro_KG_present_long,pro_KG_present_short
+1,"Tropical, rainforest",Af
+2,"Tropical, monsoon",Am
+3,"Tropical, savannah",Aw
+4,"Arid, desert, hot",BWh
+5,"Arid, desert, cold",BWk
+6,"Arid, steppe, hot",BSh
+7,"Arid, steppe, cold",BSk
+8,"Temperate, dry summer, hot summer",Csa
+9,"Temperate, dry summer, warm summer",Csb
+10,"Temperate, dry summer, cold summer",Csc
+11,"Temperate, dry winter, hot summer",Cwa
+12,"Temperate, dry winter, warm summer",Cwb
+13,"Temperate, dry winter, cold summer",Cwc
+14,"Temperate, no dry season, hot summer",Cfa
+15,"Temperate, no dry season, warm summer",Cfb
+16,"Temperate, no dry season, cold summer",Cfc
+17,"Cold, dry summer, hot summer",Dsa
+18,"Cold, dry summer, warm summer",Dsb
+19,"Cold, dry summer, cold summer",Dsc
+20,"Cold, dry summer, very cold winter",Dsd
+21,"Cold, dry winter, hot summer",Dwa
+22,"Cold, dry winter, warm summer",Dwb
+23,"Cold, dry winter, cold summer",Dwc
+24,"Cold, dry winter, very cold winter",Dwd
+25,"Cold, no dry season, hot summer",Dfa
+26,"Cold, no dry season, warm summer",Dfb
+27,"Cold, no dry season, cold summer",Dfc
+28,"Cold, no dry season, very cold winter",Dfd
+29,"Polar, tundra",ET
+30,"Polar, frost",EF
