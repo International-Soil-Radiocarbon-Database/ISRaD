@@ -5,7 +5,7 @@
 #' @param geodata_keys directory where geospatial data are found
 #' @details Generic function that reads .csv files paired with categorical raster data and recodes extracted data in the ISRaD_extra object.
 #' For the function to work, the .csv filenames must be identical to the corresponding raster filenames (except for the file extension).
-#' Additionally, the first column of the .csv file must contain the numeric identifier and the second column the corresponding character value.
+#' Additionally, the first column of the .csv file must contain the numeric identifier and the remaining column/s the corresponding character value/s.
 #' @export
 #' @return Updated ISRaD_extra object with recoded columns.
 #' @examples
@@ -33,9 +33,13 @@ ISRaD.extra.geospatial.keys <- function(database, geodata_keys) {
     paste0("pro_", paste(unlist(strsplit(x, "_x")), collapse = ""))
   })
   key.dfs <- lapply(list.files(geodata_keys, full.names = TRUE), function(x) data.frame(utils::read.csv(x, stringsAsFactors = FALSE)))
-  proFactors <- database$profile[, match(unlist(varNames), colnames(database$profile))]
+  ix <- match(unlist(varNames), colnames(database$profile))
+  proFactors <- database$profile[, ix]
   for (i in seq_along(key.dfs)) {
-    database$profile[, colnames(proFactors)[i]] <- key.dfs[[i]][match(unlist(proFactors[i]), unlist(key.dfs[[i]][1])), 2]
+    database$profile <- data.frame(
+      database$profile,
+      key.dfs[[i]][match(unlist(proFactors[i]), unlist(key.dfs[[i]][1])), ][2:ncol(key.dfs[[i]])])
   }
+  database$profile[, ix] <- NULL
   return(database)
 }

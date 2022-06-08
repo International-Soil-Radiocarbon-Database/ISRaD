@@ -20,7 +20,7 @@ Recode numeric values from categorical geospatial data products
 \details{
 Generic function that reads .csv files paired with categorical raster data and recodes extracted data in the ISRaD_extra object.
 For the function to work, the .csv filenames must be identical to the corresponding raster filenames (except for the file extension).
-Additionally, the first column of the .csv file must contain the numeric identifier and the second column the corresponding character value.
+Additionally, the first column of the .csv file must contain the numeric identifier and the remaining column/s the corresponding character value/s.
 }
 \examples{
 \donttest{
