@@ -137,7 +137,7 @@ Summary statistics...
     lyr_ph : 127
     lyr_ph_method : 127
     lyr_c_inorg : 128
-    lyr_c_org : 125
+    lyr_c_org : 128
     lyr_soc : 127
     lyr_c_to_n : 116
     lyr_fraction_modern : 24

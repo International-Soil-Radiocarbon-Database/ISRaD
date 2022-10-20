@@ -98,6 +98,7 @@ Summary statistics...
     site_lat : 1
     site_long : 1
     site_elevation : 1
+    site_note : 1
  profile tab...3 observations
     entry_name : 3
     site_name : 3

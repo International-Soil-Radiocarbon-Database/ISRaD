@@ -97,23 +97,22 @@ Summary statistics...
     site_name : 1
     site_lat : 1
     site_long : 1
- profile tab...1 observations
-    entry_name : 1
-    site_name : 1
-    pro_name : 1
-    pro_note : 1
-    pro_treatment : 1
-    pro_comp : 1
-    pro_reps : 1
-    pro_MAT : 1
-    pro_MAP : 1
-    pro_soil_taxon : 1
-    pro_soil_series : 1
-    pro_usda_soil_order : 1
-    pro_soil_taxon_sys : 1
-    pro_land_cover : 1
-    pro_veg_note : 1
-    pro_parent_chem : 1
+ profile tab...9 observations
+    entry_name : 9
+    site_name : 9
+    plot_name : 9
+    pro_name : 9
+    pro_treatment : 9
+    pro_reps : 9
+    pro_MAT : 9
+    pro_MAP : 9
+    pro_soil_taxon : 9
+    pro_soil_series : 9
+    pro_usda_soil_order : 9
+    pro_soil_taxon_sys : 9
+    pro_land_cover : 9
+    pro_veg_note : 9
+    pro_parent_chem : 9
  flux tab...7 observations
     entry_name : 7
     site_name : 7
@@ -138,11 +137,12 @@ Summary statistics...
     lyr_top : 22
     lyr_bot : 22
     lyr_comp : 22
-    lyr_sand_tot_psa : 17
-    lyr_clay_tot_psa : 17
+    lyr_sand_tot_psa : 22
+    lyr_clay_tot_psa : 22
     lyr_c_tot : 18
     lyr_n_tot : 18
-    lyr_rc_year : 22
+    lyr_c_to_n : 18
+    lyr_rc_year : 21
     lyr_14c : 21
  interstitial tab...0 observations
  fraction tab...0 observations

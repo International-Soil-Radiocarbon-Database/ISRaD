@@ -99,20 +99,21 @@ Summary statistics...
     site_lat : 1
     site_long : 1
     site_elevation : 1
- profile tab...20 observations
-    entry_name : 20
-    site_name : 20
-    pro_name : 20
-    pro_note : 20
+ profile tab...26 observations
+    entry_name : 26
+    site_name : 26
+    plot_name : 7
+    pro_name : 26
+    pro_note : 26
     pro_lat : 19
     pro_long : 19
-    pro_treatment : 20
+    pro_treatment : 26
     pro_MAP : 19
-    pro_usda_soil_order : 20
-    pro_land_cover : 20
-    pro_lc_phenology : 8
-    pro_lc_leaf_type : 8
-    pro_veg_note : 20
+    pro_usda_soil_order : 26
+    pro_land_cover : 26
+    pro_lc_phenology : 14
+    pro_lc_leaf_type : 14
+    pro_veg_note : 26
     pro_catchment_area : 19
     pro_deforested : 19
     pro_water_body : 19
@@ -146,7 +147,7 @@ Summary statistics...
     lyr_clay_tot_psa : 6
     lyr_texture_class : 6
     lyr_ph : 6
-    lyr_c_tot : 20
+    lyr_c_tot : 21
     lyr_n_tot : 21
     lyr_15n : 21
     lyr_13c : 20

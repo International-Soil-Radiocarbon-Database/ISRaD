@@ -117,7 +117,7 @@ Summary statistics...
     lyr_top : 24
     lyr_bot : 24
     lyr_hzn : 24
-    lyr_c_tot : 24
+    lyr_c_org : 24
     lyr_fraction_modern : 24
     lyr_fraction_modern_sigma : 24
  interstitial tab...0 observations

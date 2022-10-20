@@ -97,21 +97,23 @@ Summary statistics...
     site_name : 1
     site_lat : 1
     site_long : 1
- profile tab...9 observations
-    entry_name : 9
-    site_name : 9
-    pro_name : 9
-    pro_note : 9
-    pro_lat : 9
-    pro_long : 9
-    pro_elevation : 9
-    pro_treatment : 9
-    pro_MAT : 9
-    pro_MAP : 9
-    pro_usda_soil_order : 9
-    pro_soil_taxon : 9
-    pro_land_cover : 9
-    pro_veg_note : 9
+ profile tab...40 observations
+    entry_name : 40
+    site_name : 40
+    plot_name : 40
+    pro_name : 40
+    pro_note : 40
+    pro_lat : 40
+    pro_long : 40
+    pro_elevation : 40
+    pro_treatment : 40
+    pro_comp : 9
+    pro_MAT : 40
+    pro_MAP : 40
+    pro_usda_soil_order : 40
+    pro_soil_taxon : 40
+    pro_land_cover : 40
+    pro_veg_note : 40
  flux tab...0 observations
  layer tab...133 observations
     entry_name : 133

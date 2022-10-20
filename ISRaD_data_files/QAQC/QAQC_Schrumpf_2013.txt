@@ -126,6 +126,11 @@ Summary statistics...
     lyr_soc : 75
     lyr_soc_sigma : 75
     lyr_c_to_n : 75
+    lyr_fe_ox : 12
+    lyr_al_ox : 12
+    lyr_ox_notes : 12
+    lyr_fe_dith : 13
+    lyr_dith_notes : 12
  interstitial tab...0 observations
  fraction tab...237 observations
     entry_name : 237

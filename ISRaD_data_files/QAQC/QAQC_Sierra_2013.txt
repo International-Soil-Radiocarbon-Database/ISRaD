@@ -99,26 +99,29 @@ Summary statistics...
     site_lat : 2
     site_long : 2
     site_elevation : 2
- profile tab...13 observations
-    entry_name : 13
-    site_name : 13
-    pro_name : 13
-    pro_treatment : 13
-    pro_MAT : 13
-    pro_MAP : 13
-    pro_usda_soil_order : 13
-    pro_land_cover : 13
-    pro_veg_note : 13
+ profile tab...12 observations
+    entry_name : 12
+    site_name : 12
+    pro_name : 12
+    pro_treatment : 12
+    pro_MAT : 12
+    pro_MAP : 12
+    pro_usda_soil_order : 12
+    pro_soil_taxon : 12
+    pro_soil_taxon_sys : 12
+    pro_land_cover : 12
+    pro_veg_note : 12
  flux tab...0 observations
- layer tab...39 observations
-    entry_name : 39
-    site_name : 39
-    pro_name : 39
-    lyr_name : 39
-    lyr_obs_date_y : 39
-    lyr_top : 39
-    lyr_bot : 39
-    lyr_hzn : 8
+ layer tab...37 observations
+    entry_name : 37
+    site_name : 37
+    pro_name : 37
+    lyr_name : 37
+    lyr_obs_date_y : 37
+    lyr_top : 37
+    lyr_bot : 37
+    lyr_hzn : 6
+    lyr_comp : 1
     lyr_note : 16
     lyr_bd_samp : 13
     lyr_sand_tot_psa : 15
@@ -131,13 +134,13 @@ Summary statistics...
     lyr_na_exch : 15
     lyr_mg_exch : 15
     lyr_k_exch : 15
-    lyr_c_tot : 23
-    lyr_n_tot : 23
-    lyr_c_to_n : 23
-    lyr_13c : 22
-    lyr_rc_lab : 22
-    lyr_fraction_modern : 22
-    lyr_fraction_modern_sigma : 22
+    lyr_c_tot : 21
+    lyr_n_tot : 21
+    lyr_c_to_n : 21
+    lyr_13c : 20
+    lyr_rc_lab : 20
+    lyr_fraction_modern : 20
+    lyr_fraction_modern_sigma : 20
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...24 observations

@@ -82,7 +82,6 @@ Summary statistics...
  metadata tab...1 observations
     entry_name : 1
     doi : 1
-    compilation_doi : 1
     curator_name : 1
     curator_organization : 1
     curator_email : 1
@@ -98,6 +97,7 @@ Summary statistics...
     site_name : 12
     site_lat : 12
     site_long : 12
+    site_datum : 12
     site_elevation : 12
  profile tab...12 observations
     entry_name : 12
@@ -105,10 +105,11 @@ Summary statistics...
     pro_name : 12
     pro_treatment : 12
     pro_usda_soil_order : 12
+    pro_soil_series : 12
     pro_soil_taxon : 12
-    pro_soil_taxon_sys : 12
+    pro_soil_taxon_sys : 1
     pro_land_cover : 12
-    pro_veg_note : 12
+    pro_parent_material_notes : 12
  flux tab...0 observations
  layer tab...109 observations
     entry_name : 109
@@ -119,10 +120,11 @@ Summary statistics...
     lyr_top : 109
     lyr_bot : 109
     lyr_hzn : 109
-    lyr_note : 11
+    lyr_ph : 109
+    lyr_c_org : 109
     lyr_c_tot : 109
-    lyr_fraction_modern : 97
-    lyr_fraction_modern_sigma : 97
+    lyr_fraction_modern : 104
+    lyr_fraction_modern_sigma : 104
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...0 observations

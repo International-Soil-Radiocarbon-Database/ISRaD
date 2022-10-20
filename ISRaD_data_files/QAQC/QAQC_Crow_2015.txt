@@ -100,16 +100,18 @@ Summary statistics...
     site_lat : 5
     site_long : 5
     site_note : 5
- profile tab...5 observations
-    entry_name : 5
-    site_name : 5
-    pro_name : 5
-    pro_treatment : 5
-    pro_comp : 5
-    pro_usda_soil_order : 5
-    pro_soil_series : 5
-    pro_soil_taxon_sys : 5
-    pro_land_cover : 5
+ profile tab...18 observations
+    entry_name : 18
+    site_name : 18
+    plot_name : 18
+    pro_name : 18
+    pro_note : 18
+    pro_treatment : 18
+    pro_comp : 18
+    pro_usda_soil_order : 18
+    pro_soil_series : 18
+    pro_soil_taxon_sys : 18
+    pro_land_cover : 18
  flux tab...0 observations
  layer tab...18 observations
     entry_name : 18

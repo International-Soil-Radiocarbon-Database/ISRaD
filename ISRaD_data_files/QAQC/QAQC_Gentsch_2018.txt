@@ -101,19 +101,21 @@ Summary statistics...
     site_long : 4
     site_datum : 4
     site_elevation : 4
- profile tab...24 observations
-    entry_name : 24
-    site_name : 24
-    pro_name : 24
-    pro_lat : 24
-    pro_long : 24
-    pro_treatment : 24
-    pro_usda_soil_order : 24
-    pro_soil_series : 24
-    pro_soil_taxon_sys : 24
-    pro_land_cover : 24
-    pro_veg_note : 24
-    pro_thaw_depth : 24
+ profile tab...54 observations
+    entry_name : 54
+    site_name : 54
+    plot_name : 54
+    pro_name : 54
+    pro_note : 54
+    pro_lat : 54
+    pro_long : 54
+    pro_treatment : 54
+    pro_usda_soil_order : 54
+    pro_soil_series : 54
+    pro_soil_taxon_sys : 54
+    pro_land_cover : 54
+    pro_veg_note : 54
+    pro_thaw_depth : 54
  flux tab...0 observations
  layer tab...128 observations
     entry_name : 128
@@ -127,6 +129,7 @@ Summary statistics...
     lyr_top : 128
     lyr_bot : 128
     lyr_hzn : 128
+    lyr_org_buried : 30
     lyr_note : 128
     lyr_sand_tot_psa : 98
     lyr_silt_tot_psa : 98
