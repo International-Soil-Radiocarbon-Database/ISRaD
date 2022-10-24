@@ -9,7 +9,7 @@ library(rio)
 ui <- fluidPage(
 
   # App title ----
-  titlePanel(title = div(img(src = "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/shinyapp/www/ISRaDlogoTextBelow_small2.png?raw=true",
+  titlePanel(title = div(img(src = "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/main/shinyapp/www/ISRaDlogoTextBelow_small2.png?raw=true",
                              height = 104, width = 177),
                          "QA/QC",
                          style = "font-family:Avenir Roman;font-size:64px;")),
@@ -70,10 +70,10 @@ server = function(input, output){
   #   df = read_xlsx(input$file1$datapath, sheet = input$sheet)
   # })
 
-  eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/R/utils.R')))
+  eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/main/Rpkg/R/utils.R')))
 
   ### Access newest version of QAQC function
-  QAQC <- eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/master/Rpkg/R/QAQC.R',
+  QAQC <- eval(parse(text = getURL('https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/main/Rpkg/R/QAQC.R',
                   ssl.verifypeer = FALSE)))
 
   ### Generate and serve QAQC report

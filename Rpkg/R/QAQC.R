@@ -82,7 +82,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     template <- list() # One sheet at a time, for now
     for (i in 1:9) {
       template[[i]] <- import(
-        file = "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/Rpkg/inst/extdata/ISRaD_Master_Template.xlsx?raw=true",
+        file = "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/main/Rpkg/inst/extdata/ISRaD_Master_Template.xlsx?raw=true",
         which = i
       )
       names(template)[i] <- c(
@@ -99,7 +99,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     template_info <- list() # One sheet at a time, for now
     for (i in 1:9) {
       template_info[[i]] <- import(
-        file = "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx?raw=true",
+        file = "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/main/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx?raw=true",
         which = i
       )
       names(template_info)[i] <- c(
