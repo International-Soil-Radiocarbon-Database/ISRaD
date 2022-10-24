@@ -12,7 +12,7 @@ ui <- fluidPage(
   titlePanel(title = div(img(src = "https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/main/shinyapp/www/ISRaDlogoTextBelow_small2.png?raw=true",
                              height = 104, width = 177),
                          "QA/QC",
-                         style = "font-family:Avenir Roman;font-size:64px;")),
+                         style = "font-family:Helvetica;font-size:64px;"), windowTitle = "ISRaD QA/QC"),
 
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
@@ -96,4 +96,3 @@ shinyApp(ui, server)
 #                      account = 'soilradiocarbon',
 #                      server = 'shinyapps.io',
 #                      forceUpdate = TRUE)
-
