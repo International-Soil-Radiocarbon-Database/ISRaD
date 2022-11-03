@@ -2,6 +2,8 @@
 layout: splash
 permalink: /contribute/
 title: <span style="color:white">**Contribute to ISRaD**</span>
+leafletmap: true
+always_allow_html: yes
 header:
   overlay_image: /assets/images/GradientSnip.jpg
 ---
