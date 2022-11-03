@@ -102,9 +102,7 @@ If you can't find an answer to your question in the FAQ or you have a speicific 
 
 You can also email us at *<a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>* and we will do our best to get back to you.
 
-## Test map, Nov 3 2022 2
+## Test map, Nov 3 2022 4
 <div id="map">
-<iframe src="https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/gh-pages/testmap.html" height="600px" width = "100%" style = "border:none" ></iframe>
+<iframe src="/testmap.html" height="600px" width = "100%" style = "border:none" ></iframe>
 </div>
-
-<object data="https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/gh-pages/ISRaDmap.html" width="500" height="200"></object>
