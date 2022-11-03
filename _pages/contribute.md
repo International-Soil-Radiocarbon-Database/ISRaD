@@ -101,3 +101,6 @@ If you have questions pertaining to template entry, please start by reviewing ou
 If you can't find an answer to your question in the FAQ or you have a speicific suggestion for improvement or there is a problem you would like to report: please post an issue in our [Github issues ](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) page. No special permissions are required to post, although you do need to create a Github account if you don't have one already.
 
 You can also email us at *<a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>* and we will do our best to get back to you.
+
+## Test map, Nov 3 2022
+<object data="https://raw.githubusercontent.com/International-Soil-Radiocarbon-Database/ISRaD/gh-pages/testmap.html" width="500" height="200"></object>
