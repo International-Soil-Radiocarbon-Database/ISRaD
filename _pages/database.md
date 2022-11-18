@@ -4,7 +4,6 @@ permalink: /database/
 title: <span style="color:white">**ISRaD Database**</span>
 header:
   overlay_image: /assets/images/GoodPhotos/Soilprofiles.jpg
-htmlwidgets: TRUE
 ---
 ## Accessing ISRaD Data
 *   Using R, the compiled database or individual ISRaD datasets can be downloaded (in .xlsx, .csv, and .rda format) and easily loaded into an R session following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website.
