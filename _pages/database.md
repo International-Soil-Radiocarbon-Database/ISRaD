@@ -62,7 +62,7 @@ In ISRaD we strive to incorporate radicoarbon data collected at many different s
 
 
 <figure>
-	<img src="/assets/images/structure_new.png" width = "500">
+	<img src="ISRaD/assets/images/structure_new.png" width = "500">
 </figure>
 
 ISRaD data tables (in descending hierarchical order):
