@@ -82,7 +82,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rexml (3.2.5)
     rouge (3.2.1)
     ruby-enum (0.7.2)
       i18n
@@ -99,13 +98,11 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    webrick (1.7.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.8)
   jekyll-commonmark-ghpages
   jekyll-feed
   jekyll-gist
@@ -115,9 +112,7 @@ DEPENDENCIES
   jemoji
   rb-fsevent
   rb-inotify
-  rexml (~> 3.2)
   rouge
-  webrick (~> 1.7)
 
 BUNDLED WITH
    1.16.4
