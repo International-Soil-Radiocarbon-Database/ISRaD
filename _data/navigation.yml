@@ -1,0 +1,16 @@
+# main links
+main:
+   - title: "About"
+     url: /about/
+   - title: "Database"
+     url: /database/
+   - title: "R Package"
+     url: /rpackage/
+   - title: "Contribute"
+     url: /contribute/
+   - title: "News"
+     url: /news/
+   - title: "FAQ"
+     url: /template_faq/
+   - title: "Credits"
+     url: /credits/
