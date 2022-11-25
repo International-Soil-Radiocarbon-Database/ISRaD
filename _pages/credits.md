@@ -4,17 +4,11 @@ permalink: /credits/
 title: <span style="color:white">**Credits**</span>
 header:
   overlay_image: /assets/images/GradientSnip.jpg
+map: isradleaflet.html
 ---
 
 # ISRaD Credits
 Updated: 04-Feb-2022
-
-<p align = "right">
-  <img src="/assets/images/ISRaD_Map_July2021.jpg"
-     alt="ISRaD Site Map 2021"
-     width ="400"
-     style="float: right; margin-right: 30px; margin-left: 30px; margin-bottom: 30" />
-</p>
 
 # Main compilations
 

@@ -4,6 +4,7 @@ permalink: /database/
 title: <span style="color:white">**ISRaD Database**</span>
 header:
   overlay_image: /assets/images/GoodPhotos/Soilprofiles.jpg
+htmlwidgets: TRUE
 ---
 ## Accessing ISRaD Data
 *   Using R, the compiled database or individual ISRaD datasets can be downloaded (in .xlsx, .csv, and .rda format) and easily loaded into an R session following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website.
@@ -60,10 +61,7 @@ The ISRaD database is compiled from individual template files, each of which des
 
 In ISRaD we strive to incorporate radicoarbon data collected at many different spatial and temporal scales: from laboratory fractionations to gaseous fluxes and dissolved organics observed in the field. The ISRaD database is structured accordingly as a list of hierarchically-linked tables designed for recording these different kinds of data.
 
-
-<figure>
-	<img src="ISRaD/assets/images/structure_new.png" width = "500">
-</figure>
+![ISRaDdataStructure]({{"/assets/images/structure_new.png"}})
 
 ISRaD data tables (in descending hierarchical order):
 * General information

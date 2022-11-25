@@ -20,8 +20,8 @@ By contributing to ISRaD you are joining an international community of researche
 1. [ISRaD Template File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Master_Template.xlsx)
 1. [ISRaD Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Template_Info.xlsx) and [ISRaD_extra Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/Rpkg/inst/extdata/ISRaD_Extra_Info.xlsx)
 1. [Frequenty Asked Questions (FAQ)](https://international-soil-radiocarbon-database.github.io/ISRaD/template_faq/)
-1. <a href="https://soilradiocarbon.shinyapps.io/shinyapp/" target="_blank"> Online QAQC Tool</a>
-1. Contact: <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>
+1. [Online QAQC Tool]({{"https://soilradiocarbon.shinyapps.io/shinyapp/"}})
+1. Contact: [info.israd@gmail.com]({{"mailto:info.israd@gmail.com"}})
 
 ## How to Add Data to ISRaD:
 
@@ -71,7 +71,7 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 
 ## 4. Using ISRaD online quality control tool
 
-1. <a href="https://soilradiocarbon.shinyapps.io/shinyapp/" target="_blank"> Open the online tool</a>
+1. [Open the online tool]({{"https://soilradiocarbon.shinyapps.io/shinyapp/"}})
 1. Upload your file
 1. Run check
 1. If the upload and check was successful, a link to the ISRaD quality control report file will be generated for viewing and download.
@@ -85,7 +85,7 @@ Adding new data is great! We also welcome additions, improvements & corrections 
 
 ## 5. Submitting your ISRaD Data File
 
-Email to <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>:
+Email to [info.israd@gmail.com]({{"mailto:info.israd@gmail.com"}}):
 1. Your ISRaD Data File (Required)
 1. ISRaD quality control report with no WARNINGS (Required)
 1. If data is from previously published work, include publication link or pdf.
@@ -98,6 +98,6 @@ We welcome and encourage your questions and/or suggestions.
 
 If you have questions pertaining to template entry, please start by reviewing our [Frequenty Asked Questions (FAQ)](https://international-soil-radiocarbon-database.github.io/ISRaD/template_faq/) page.
 
-If you can't find an answer to your question in the FAQ or you have a speicific suggestion for improvement or there is a problem you would like to report: please post an issue in our [Github issues ](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) page. No special permissions are required to post, although you do need to create a Github account if you don't have one already.
+If you can't find an answer to your question in the FAQ or you have a speicific suggestion for improvement or there is a problem you would like to report: please post an issue in our [Github issues](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues) page. No special permissions are required to post, although you do need to create a Github account if you don't have one already.
 
-You can also email us at *<a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>* and we will do our best to get back to you.
+You can also email us at *[send us an email]({{"mailto:info.israd@gmail.com"}})* and we will do our best to get back to you.

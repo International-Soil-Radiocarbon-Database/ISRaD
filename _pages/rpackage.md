@@ -35,7 +35,7 @@ Most up-to-date data can be retrieved:
 ISRaD.getdata(directory = "~", dataset = "full", force_download = "TRUE")
 ```
 
-Alternatively, for those users willing to risk working with beta code, you can install the development version of ISRaD from GitHub:
+Alternatively, for those users willing to risk working with beta code, you can install the development version of ISRaD. There are many additional functionalities but code is more likely to break. Install it from GitHub:
 ```
 devtools::install_github('International-Soil-Radiocarbon-Database/ISRaD/Rpkg')
 ```
@@ -43,4 +43,4 @@ devtools::install_github('International-Soil-Radiocarbon-Database/ISRaD/Rpkg')
 ### Looking for step-by-step instructions? [Tutorial here](/user_manual_Aug15_2019.html).
 
 ### Code or data-related questions, concerns, suggestions? [Post an issue here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues).
-### Or contact us at <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a> (slower).
+### Or contact us at [info.israd@gmail.com]({{"mailto:info.israd@gmail.com"}}) (slower).

@@ -24,35 +24,16 @@ feature_row:
     url: "/contribute/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
+map: isradleaflet.html
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <meta property="og:image" content="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/50e6434dffd7d0c3905238c66204633317e52046/assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png" />
-</head>
-</html>
 
+# Welcome to ISRaD
+The International Soil Radiocarbon Database (ISRaD) is a living repository for radiocarbon data collected in soil systems. ISRaD consists of a database, an R package, and an international scientific community.
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
+## ISRaD Version 1.0
+Our initial manuscript detailing the construction and utilization of ISRaD was published in [Earth System Science Data]({{"https://www.earth-system-science-data.net/"}}). Here we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript [here]({{"https://earth-syst-sci-data.net/12/61/2020/"}}).
 
-<h1 style="font-size:40px; text-align:center;">Welcome to ISRaD</h1>
-<h3 style="font-size:18px; text-align:center;">Version 1.14</h3>
-
-<p align = "center">
-<img src="/assets/images/ISRaD_Map_July2021.jpg"
-     alt="ISRaD Site Map 2021"
-     width ="900"
-     style="float: center; margin-right: 30px; margin-left: 30px; margin-bottom: 10px" />
-</p>
-
-## Introducing ISRaD Version 1.0
-A new manuscript detailing the construction and utilization of ISRaD was just published in <a href="https://www.earth-system-science-data.net/">Earth System Science Data</a>. Here we describe database fundamentals, and the application of radiocarbon data for describing the earth system. You can find the manuscript <a href="https://earth-syst-sci-data.net/12/61/2020/">here</a>.
-
-<p align = "center">
-<img src="assets/images/ManuscriptHeader.png"
-     style="float: center; margin-right: 10px; margin-left: 10px" />
-</p>
+![ISRaDManuscriptHeader]({{"/assets/images/ManuscriptHeader.png"}})
 
 [ISRaD news & technical updates](https://international-soil-radiocarbon-database.github.io/ISRaD/news/)
 
@@ -64,19 +45,13 @@ Our goals are:
 * To produce tools to make the repository useful
 
 ISRaD has been developed as a collaboration between the U.S. Geological Survey Powell Center and the Max Planck Institute for Biogeochemistry.
-### <p>See what people are <a href="https://essd.copernicus.org/articles/12/61/2020/essd-12-61-2020-metrics.html" target="_blank" rel="noopener noreferrer" >already doing</a> with ISRaD data!</p>
+### <p>See what people are [already doing]({{"https://essd.copernicus.org/articles/12/61/2020/essd-12-61-2020-metrics.html"}}) with ISRaD data!</p>
 
-<p align="center">
-  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/PowellCenter.jpg" width="300">|
-  <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/MPI-BGC_logo_EN.png" width="500">
- </p>
-
-<p align="center">
-  <a class="twitter-timeline" data-height="900" href="https://twitter.com/soilradiocarbon?ref_src=twsrc%5Etfw">Tweets by  soilradiocarbon</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</p>
+ ![PowellCenter]({{"/assets/images/PowellCenter.jpg"}})
+ ![MPI-BGC]({{"/assets/images/MPI-BGC_logo_EN.png"}})
 
 ## Contact
 
-Please direct comments, concerns and suggestions to <a href="mailto:info.israd@gmail.com">info.israd@gmail.com</a>.
+Please direct comments, concerns and suggestions to [info.israd@gmail.com]({{"mailto:info.israd@gmail.com"}}).
 
-<link rel="image_src" href="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/50e6434dffd7d0c3905238c66204633317e52046/assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png"/>
+![ISRaDLogo]({{"/assets/images/ISRaD_logos/ISRaD_logo_textbelow_white.png"}})
