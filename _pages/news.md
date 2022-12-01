@@ -9,7 +9,7 @@ header:
 ISRaD is an active community effort. Here are the latest updates!
 
 #### Comments, questions or concerns? [Post an issue](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/issues)
-#### If you'd like to receive period updates from ISRaD, such as features, workshops, or publications, [send us an email]({{"mailto:info.israd@gmail.com"}}).
+#### If you'd like to receive periodic updates from ISRaD, such as features, workshops, or publications, [send us an email]({{"mailto:info.israd@gmail.com"}}).
 
 ## News - Updates 2022
 * **8-11 December**: ISRaD Workshop in Chicago - future of database, gap-filling, R package, and new projects

@@ -40,7 +40,7 @@ If the data are unpublished but you expect them to be published in the future (t
 <b> Soil Order </b>
 </summary><p>
 
- * **_How do I convert WRB soil classification to USDA, to obtain a USDA soil order?_** <br>
+ * How do I convert WRB soil classification to USDA, to obtain a USDA soil order? <br>
  FAO, USDA and other soil classification systems are not readily interchangeable, so this can be tricky. These tables can help:
 (1) [FAO_USDA.pdf](https://www.researchgate.net/profile/Csaba_Csuzdi/post/How_to_convert_FAO_soil_class_into_USDA_soil_class/attachment/59d62fd079197b807798df0e/AS%3A359920387018752%401462823115202/download/FAO_USDA.pdf).  (2) [soil system conversion.pdf](https://www.researchgate.net/profile/Csaba_Csuzdi/post/How_to_convert_FAO_soil_class_into_USDA_soil_class/attachment/59d62fd079197b807798df10/AS%3A359920387018756%401462823115460/download/soil+system+conversion.pdf).
 The issue is also discussed [here](https://www.researchgate.net/post/How_to_convert_FAO_soil_class_into_USDA_soil_class).
