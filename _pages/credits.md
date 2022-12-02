@@ -44,10 +44,10 @@ line-spacing="2">
 
 <div id="ref-Abbott_1996" class="csl-entry">
 
-Abbott, M. B., & Stafford, T. W. (1996). Radiocarbon geochemistry of
-modern and ancient arctic lake systems, baffin island, canada.
-*Quaternary Research*, *45*(3), 300–311.
-<https://doi.org/10.1006/qres.1996.0031>
+  - Abbott, M. B., & Stafford, T. W. (1996). Radiocarbon geochemistry of
+    modern and ancient arctic lake systems, baffin island, canada.
+    *Quaternary Research*, *45*(3), 300–311.
+    <https://doi.org/10.1006/qres.1996.0031>
 
 </div>
 
@@ -315,7 +315,7 @@ holocene history of vegetation and climate in santa catarina (s brazil).
 Behling, H., & Pillar, V. D. (2006). Late quaternary vegetation,
 biodiversity and fire dynamics on the southern brazilian highland and
 their implication for conservation and management of modern
-$\less$i$\greater$araucaria$\less$/i$\greater$ forest and grassland
+Araucaria forest and grassland
 ecosystems. *Philosophical Transactions of the Royal Society B:
 Biological Sciences*, *362*(1478), 243–251.
 <https://doi.org/10.1098/rstb.2006.1984>
