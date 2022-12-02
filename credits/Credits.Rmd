@@ -42,41 +42,41 @@ load("../ISRaD_data_files/database/ISRaD_data.rda")
 dois <- ISRaD_data$metadata$doi
 cleandois <- as.character(dois[dois[] != "israd"])
 
-# # cf. <ttps://users.aalto.fi/~mkouhia/2016/bibtex-from-dx-doi-org/>
-# h <- new_handle()
-# handle_setheaders(h, "accept" = "application/x-bibtex")
-# 
-# # .bib fx
-# doi.bib <- function(doi, .bib) {
-#   url <- paste0("https://doi.org/", doi)
-#   try(
-#     walk(url, ~ {
-#       curl(., handle = h) %>%
-#         readLines(warn = FALSE, encoding = "UTF-8") %>%
-#         write(file = .bib, append = TRUE)
-#     }))
-# }
-# 
-# # remove old .bib
-# if(file.exists(file.path("./credits.bib"))) {
-#   file.remove(file.path("./credits.bib"))
-# }
-# 
-# # generate new .bib
-# lapply(seq_along(cleandois), function(i) {
-#   doi.bib(cleandois[i], .bib = "credits.bib")
-# })
-# 
-# # clean up .bib file
-# .bib <- readLines("credits.bib")
-# clean.bib <- gsub("\\{upDelta}", "upDelta", .bib)
-# 
-# # replace upgreek symbols with regular greek symbols
-# clean.bib <- gsub("upDelta", "Delta", clean.bib)
-# clean.bib <- gsub("updelta", "delta", clean.bib)
-# 
-# # save
-# cat(clean.bib, sep = "\n", file = "credits.bib") 
+# cf. <ttps://users.aalto.fi/~mkouhia/2016/bibtex-from-dx-doi-org/>
+h <- new_handle()
+handle_setheaders(h, "accept" = "application/x-bibtex")
+
+# .bib fx
+doi.bib <- function(doi, .bib) {
+  url <- paste0("https://doi.org/", doi)
+  try(
+    walk(url, ~ {
+      curl(., handle = h) %>%
+        readLines(warn = FALSE, encoding = "UTF-8") %>%
+        write(file = .bib, append = TRUE)
+    }))
+}
+
+# remove old .bib
+if(file.exists(file.path("./credits.bib"))) {
+  file.remove(file.path("./credits.bib"))
+}
+
+# generate new .bib
+lapply(seq_along(cleandois), function(i) {
+  doi.bib(cleandois[i], .bib = "credits.bib")
+})
+
+# clean up .bib file
+.bib <- readLines("credits.bib")
+clean.bib <- gsub("\\{upDelta}", "upDelta", .bib)
+
+# replace upgreek symbols with regular greek symbols
+clean.bib <- gsub("upDelta", "Delta", clean.bib)
+clean.bib <- gsub("updelta", "delta", clean.bib)
+
+# save
+cat(clean.bib, sep = "\n", file = "credits.bib")
 ```
 # Main compilations
 ISRaD has been built based on two main compilations: 
