@@ -42,24 +42,23 @@ publications:
 <div id="refs" class="references csl-bib-body hanging-indent"
 line-spacing="2">
 
-<div id="ref-Abbott_1996" class="csl-entry">
-
   - Abbott, M. B., & Stafford, T. W. (1996). Radiocarbon geochemistry of
     modern and ancient arctic lake systems, baffin island, canada.
     *Quaternary Research*, *45*(3), 300–311.
     <https://doi.org/10.1006/qres.1996.0031>
 
-</div>
+  - Treat, C. C., Jones, M.C., Camill, P., Gallego-Sala, A., et al. (2016).
+    Effects of permafrost aggradation on peat properties as determined
+    from a pan-Arctic synthesis of plant macrofossils, J. Geophys. Res.
+    Biogeosciences, 121, 78–94. <https://doi:10.1002/2015JG003061>
 
-<div id="ref-Agnelli_2002" class="csl-entry">
 
-Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The
+- Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The
 dynamics of organic matter in rock fragments in soil investigated by
 14C dating and measurements of 13C.
 *European Journal of Soil Science*, *53*(1), 147–159.
 <https://doi.org/10.1046/j.1365-2389.2002.00432.x>
 
-</div>
 
 <div id="ref-Aiken_2014" class="csl-entry">
 
