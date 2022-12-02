@@ -53,28 +53,18 @@ publications:
 - Agnelli, A., Trumbore, S. E., Corti, G., & Ugolini, F. C. (2002). The
 dynamics of organic matter in rock fragments in soil investigated by
 14C dating and measurements of 13C.
-*European Journal of Soil Science*, *53*(1), 147–159.
-<https://doi.org/10.1046/j.1365-2389.2002.00432.x>
+*European Journal of Soil Science*, *53*(1), 147–159. <https://doi.org/10.1046/j.1365-2389.2002.00432.x>
 
-
-<div id="ref-Aiken_2014" class="csl-entry">
-
-Aiken, G. R., Spencer, R. G. M., Striegl, R. G., Schuster, P. F., &
+-Aiken, G. R., Spencer, R. G. M., Striegl, R. G., Schuster, P. F., &
 Raymond, P. A. (2014). Influences of glacier melt and permafrost thaw on
 the age of dissolved organic carbon in the yukon river basin. *Global
 Biogeochemical Cycles*, *28*(5), 525–537.
 <https://doi.org/10.1002/2013gb004764>
 
-</div>
-
-<div id="ref-Allard_1987" class="csl-entry">
-
-Allard, M., & Seguin, M. K. (1987). The holocene evolution of permafrost
+-Allard, M., & Seguin, M. K. (1987). The holocene evolution of permafrost
 near the tree line, on the eastern coast of hudson bay (northern
 quebec). *Canadian Journal of Earth Sciences*, *24*(11), 2206–2222.
 <https://doi.org/10.1139/e87-209>
-
-</div>
 
 <div id="ref-Amon_2004" class="csl-entry">
 
