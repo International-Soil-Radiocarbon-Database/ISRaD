@@ -39,9 +39,6 @@ ISRaD has been built based on many individual studies and the following compilat
 Currently there are 432 entries in ISRaD, which are from the following
 publications:
 
-<div id="refs" class="references csl-bib-body hanging-indent"
-line-spacing="2">
-
   - Abbott, M. B., & Stafford, T. W. (1996). Radiocarbon geochemistry of
     modern and ancient arctic lake systems, baffin island, canada.
     *Quaternary Research*, *45*(3), 300–311.
@@ -3655,7 +3652,5 @@ Zuidhoff, F. S., & Kolstrup, E. (2000). Changes in palsa distribution in
 relation to climate change in laivadalen, northern sweden, especially
 1960-1997. *Permafrost and Periglacial Processes*, *11*(1), 55–69.
 [https://doi.org/10.1002/(sici)1099-1530(200001/03)11:1\<55::aid-ppp338\>3.0.co;2-t](https://doi.org/10.1002/(sici)1099-1530(200001/03)11:1<55::aid-ppp338>3.0.co;2-t)
-
-</div>
 
 </div>
