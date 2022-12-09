@@ -151,7 +151,7 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
     # fit failed convergence samples for fast tau
     if (PRD_D14C_FAST < -101) {
       norm_error <- TRUE
-      message <- paste("model failed to converge for sample ", i, "\n")
+      message <- paste("model failed to converge for sample ", i)
       warning(message, call. = FALSE)
       unfit <- unfit.fx(OBS_D14C, OBS_YEAR)
       TAU_FAST <- unfit[[1]]
