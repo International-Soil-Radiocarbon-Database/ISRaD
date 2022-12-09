@@ -1,0 +1,52 @@
+---
+title: Leaflet, <strong>R</strong>, Markdown, Jekyll and GitHub
+subtitle: Make it work in 6 steps - a short tutorial
+tags: [R,leaflet,Jekyll, html, maps]
+header_img:
+leafletmap: true
+always_allow_html: yes
+last_modified_at: 2022-11-24
+output: 
+  html_document:
+    self_contained: no
+---
+
+```{r setup, include=TRUE, echo=FALSE, results = 'markup'}
+library(leaflet)
+library(dplyr)
+library(knitr)
+library(readxl)
+#library(htmltools)
+#opts_chunk$set(fig.width=12, fig.height=12)
+
+#load('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/coordset.Rdata')
+
+read_xlsx(paste0('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/LeafletWork', '/ISRaD_database_files/ISRaD_extra_list_v 2.2.5.2022-10-20.xlsx'), sheet = "profile") %>% 
+  select("entry_name", "pro_lat", "pro_long") %>% 
+  distinct() %>% 
+  rename("lat" = "pro_lat") %>% 
+  rename("lng" = "pro_long") %>%
+  group_by(entry_name, lat, lng) %>%
+  mutate(entry_name = ifelse( length(unlist(strsplit(entry_name, "_"))) == 2, 
+         paste(unlist(strsplit(entry_name, "_"))[1], "et al.", unlist(strsplit(entry_name, "_"))[2]),
+         paste(unlist(strsplit(entry_name, "_"))[1], unlist(strsplit(entry_name, "_"))[2], "et al.", 
+               unlist(strsplit(entry_name, "_"))[length(unlist(strsplit(entry_name, "_")))]))) %>% 
+  ungroup() %>% 
+  mutate(lng = as.numeric(lng)) %>% 
+  mutate(lat = as.numeric(lat))-> coordset
+
+m <- leaflet(coordset)
+m <- addCircles(m, color = "#8269d7", opacity = 0.7, label = ~htmltools::htmlEscape(entry_name), labelOptions = labelOptions(noHide =FALSE, textOnly = TRUE, 
+                                                  direction = "bottom", offset = c(0,5)))
+m <- addTiles(m)
+m <- setMaxBounds(m, -160, -70, 160, 70)
+m <- flyToBounds(m, -160, -70, 160, 70)
+m <- setView(m, 0, 0, zoom = 1)
+m
+```
+
+```{r save widget, include=FALSE}
+
+#saveWidget(m, "/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/LeafletWork/isradleaflet.html")
+
+```
