@@ -33,7 +33,7 @@ ISRaD.extra.norm14c_year(
 \item{verbose}{Show progress bar? TRUE/FALSE (default = TRUE)}
 }
 \value{
-data frame with new columns: "norm_14c", "norm_error", and optionally "norm_tau"; OR list with length = 3: "norm_14c", "norm_tau", "norm_error"
+data frame with new columns: "norm_14c", "norm_error", and optionally "norm_tau"; OR list with length = 3: "norm_14c", "norm_tau", "norm_error". Note that if is parameter df is not NULL and obs_d14c contains an underscore, e.g. "lyr_14c", supplied names will take the form "lyr_norm_14c", "lyr_norm_error", etc.
 }
 \description{
 Normalizes delta 14c values to a given year (norm_year)

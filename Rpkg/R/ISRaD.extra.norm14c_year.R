@@ -1,11 +1,11 @@
 #' ISRaD.extra.norm14c_year
 #'
 #' @description Normalizes delta 14c values to a given year (norm_year)
-#' @param df data frame with columns for observed d14c (obs_d14c), observation year (obs_year), and atmospheric zone (atm_zone)
 #' @param obs_d14c column name in df with observed delta 14c values to be normalized OR numeric value
 #' @param obs_year column name in df with year in which obs_d14c was observed (sample collection year) OR numeric value
 #' @param atm_zone column name in df with atmospheric zone for obs_d14c OR character string. Notes: column values/character string must be one of c("NHc14", "SHc14", "Tropicsc14"). "NHc14" = > 30 degrees latitude; "SHc14" = < -30 latitude; "Tropicsc14" = < 30 & > -30 degrees latitude.
 #' @param norm_year desired normalization year (numeric)
+#' @param df data frame with columns for observed d14c (obs_d14c), observation year (obs_year), and atmospheric zone (atm_zone)
 #' @param slow if TRUE (default) normalized 14c value will be fit using the slower solution for tau
 #' @param tau if TRUE (default) the solution for tau will be returned along with the normalized 14c value
 #' @param verbose Show progress bar? TRUE/FALSE (default = TRUE)
@@ -20,7 +20,7 @@
 #' @references Gaudinski et al. 2000. Soil carbon cycling in a temperate forest: radiocarbon-based estimates of residence times, sequestration rates and partitioning of fluxes. Biogeochemistry 51: 33–69 \url{https://doi.org/10.1023/A:1006301010014}\cr\cr
 #' Trumbore, S. 2000. Age of Soil Organic Matter and Soil Respiration: Radiocarbon Constraints on Belowground C Dynamics. Ecological Applications, 10(2): 399–411 \url{http://dx.doi.org/10.2307/2641102}
 #' @export
-#' @return data frame with new columns: "norm_14c", "norm_error", and optionally "norm_tau"; OR list with length = 3: "norm_14c", "norm_tau", "norm_error"
+#' @return data frame with new columns: "norm_14c", "norm_error", and optionally "norm_tau"; OR list with length = 3: "norm_14c", "norm_tau", "norm_error". Note that if is parameter df is not NULL and obs_d14c contains an underscore, e.g. "lyr_14c", supplied names will take the form "lyr_norm_14c", "lyr_norm_error", etc.
 #' @examples
 #' # Load example dataset Gaudinski_2001
 #' database <- ISRaD::Gaudinski_2001
@@ -223,19 +223,26 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
 
       return(d14c_n)
     })
+    
+    # set prefix
+    if (grepl("_", obs_d14c)) {
+      PREFIX <- paste0(sapply(strsplit(obs_d14c, "_"), "[[", 1), "_")
+    } else {
+      PREFIX <- NULL
+    }
 
     # add normalized 14c vals to df
-    df[ix, "norm_14c"] <- unlist(lapply(norm, "[[", 1))
+    df[ix, paste0(PREFIX, "norm_14c")] <- unlist(lapply(norm, "[[", 1))
 
     # add tau?
     if (tau) {
-      df[ix, "norm_tau"] <- unlist(lapply(norm, "[[", 2))
+      df[ix, paste0(PREFIX, "norm_tau")] <- unlist(lapply(norm, "[[", 2))
     }
 
-    df[ix, "norm_error"] <- unlist(lapply(norm, "[[", 3))
+    df[ix, paste0(PREFIX, "norm_error")] <- unlist(lapply(norm, "[[", 3))
 
     # add values < -100 back into norm column
-    df[which(df[[obs_d14c]] < -100), "norm_14c"] <- df[which(df[[obs_d14c]] < -100), obs_d14c]
+    df[which(df[[obs_d14c]] < -100), paste0(PREFIX, "norm_14c")] <- df[which(df[[obs_d14c]] < -100), obs_d14c]
 
     # return
     return(df)
