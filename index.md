@@ -5,6 +5,26 @@ title: <span style="color:#6a59cd">**I**</span>nternational <span style="color:#
 header:
   overlay_image: /assets/images/GradientSnip.jpg
 map: isradleaflet.html
+feature_row:
+   - image_path: /assets/images/structure_new.png
+     title: "Database"
+     excerpt: "ISRaD data structure, current data summary, and latest database release"
+     url: "/database/"
+     btn_class: "btn--primary"
+     btn_label: "Learn More"
+   - image_path: /assets/images/About.png
+     title: "R Package"
+     excerpt: "Interact with database within the ISRaD package"
+     url: "/rpackage/"
+     btn_class: "btn--primary"
+     btn_label: "Learn More"
+   - image_path: /assets/images/Contribute.png
+     alt: "100% free"
+     title: "Contribute"
+     excerpt: "ISRaD template file, template information and user guide, and ISRaD data quality control webtool user gude"
+     url: "/contribute/"
+     btn_class: "btn--primary"
+     btn_label: "Learn More"
 ---
 
 # Welcome to ISRaD
