@@ -8,7 +8,7 @@ always_allow_html: yes
 last_modified_at: 2022-11-24
 output: 
   html_document:
-    self_contained: no
+    self_contained: yes
 ---
 
 ```{r setup, include=TRUE, echo=FALSE, results = 'markup'}
