@@ -50,7 +50,7 @@
 #'   atm_zone = "NHc14",
 #'   norm_year = 2010
 #' )
-ISRaD.extra.norm14c_year2 <- function(obs_d14c, obs_year, atm_zone, norm_year, df, slow = TRUE, tau = TRUE, verbose = TRUE) {
+ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df, slow = TRUE, tau = TRUE, verbose = TRUE) {
 
   # normalization function
   norm14c.fx <- function(OBS_D14C, OBS_YEAR, ATM_ZONE, slow, tau, i) {
