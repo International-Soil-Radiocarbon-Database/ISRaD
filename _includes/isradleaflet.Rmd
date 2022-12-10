@@ -20,17 +20,17 @@ library(leaflet)
 library(dplyr)
 library(knitr)
 library(readxl)
+library(leaflet.minicharts)
 #library(htmltools)
-#opts_chunk$set(fig.width=12, fig.height=12)
-#knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 
-#load('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/coordset.Rdata')
-
-read_xlsx(paste0('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/LeafletWork', '/ISRaD_database_files/ISRaD_extra_list_v 2.3.6.2022-12-10.xlsx'), sheet = "profile") %>% 
+#read_xlsx(paste0('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/LeafletWork', '/ISRaD_database_files/ISRaD_extra_list_v 2.3.6.2022-12-10.xlsx'), sheet = "profile") %>% 
+load('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/LeafletWork/ISRaD_database_files/ISRaD_extra_v 2.3.6.2022-12-10.rda')
+ISRaD_extra$profile %>% 
   dplyr::select("entry_name", "pro_lat", "pro_long") %>% #glimpse()
   dplyr::distinct() %>%# glimpse()
   dplyr::rename("lat" = "pro_lat") %>% 
   dplyr::rename("lng" = "pro_long") %>%
+  dplyr::mutate(entry_name = as.character(entry_name)) %>% 
   dplyr::group_by(entry_name, lat, lng) %>%
   dplyr::mutate(entry_name = ifelse( length(unlist(strsplit(entry_name, "_"))) == 2, 
          paste(unlist(strsplit(entry_name, "_"))[1], "et al.", unlist(strsplit(entry_name, "_"))[2]),
@@ -41,20 +41,15 @@ read_xlsx(paste0('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/
   dplyr::mutate(lat = as.numeric(lat))-> coordset
 
 
-m <- leaflet(coordset, width = "80%", height = NULL, options = leafletOptions(zoomSnap = 0.25, zoomDelta=0.25))
-m <- addCircles(m, color = "#8269d7", opacity = 0.7, label = ~htmltools::htmlEscape(entry_name), labelOptions = labelOptions(noHide =FALSE, textOnly = TRUE, 
-                                                  direction = "bottom", offset = c(0,5)))
+m <- leaflet(coordset, width = "80%", height = NULL, options = leafletOptions(zoomSnap = 0.25, zoomDelta=0.25, minZoom = 1.0))
+m <- addCircles(m, color = "#8269d7", opacity = 0.7, 
+                label = ~htmltools::htmlEscape(entry_name), 
+                labelOptions = labelOptions(noHide =FALSE, textOnly = TRUE, textsize = "14px", direction = "bottom", offset = c(0,5)))
 m <- addTiles(m)#, options = providerTileOptions(minZoom = 1.0, maxZoom = 4))
 m <- setMaxBounds(m, -180, -80, 180, 90)
 m <- flyToBounds(m, -160, -60, 160, 70)
 m <- setView(m, 0, 28, zoom = 1.25)
 m
-
-####
-# Delete code from error messages, so delete from 
-# " <div id="header"> "
-# until
-# " <pre><code>## Assuming &quot;lng&quot; and &quot;lat&quot; are longitude and latitude, respectively</code></pre> "
 
 ```
 
