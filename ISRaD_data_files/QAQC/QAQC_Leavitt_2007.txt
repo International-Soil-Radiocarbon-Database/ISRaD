@@ -123,8 +123,8 @@ Summary statistics...
     lyr_ph : 109
     lyr_c_org : 109
     lyr_c_tot : 109
-    lyr_fraction_modern : 104
-    lyr_fraction_modern_sigma : 104
+    lyr_fraction_modern : 108
+    lyr_fraction_modern_sigma : 108
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...0 observations

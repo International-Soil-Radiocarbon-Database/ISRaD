@@ -21,7 +21,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( flux interstitial fraction incubation )
+	NOTE: empty tabs detected ( flux interstitial incubation )
 
 Not checking dataset doi because 'checkdoi is FALSE'...
 
@@ -92,40 +92,59 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
-    template_version : 1
  site tab...1 observations
     entry_name : 1
     site_name : 1
     site_lat : 1
     site_long : 1
     site_elevation : 1
- profile tab...3 observations
-    entry_name : 3
-    site_name : 3
-    pro_name : 3
-    pro_treatment : 3
-    pro_soil_taxon_sys : 3
-    pro_land_cover : 3
-    pro_veg_note : 3
+ profile tab...1 observations
+    entry_name : 1
+    site_name : 1
+    pro_name : 1
+    pro_treatment : 1
+    pro_MAT : 1
+    pro_MAP : 1
+    pro_land_cover : 1
+    pro_veg_note : 1
  flux tab...0 observations
- layer tab...10 observations
-    entry_name : 10
-    site_name : 10
-    pro_name : 10
-    lyr_name : 10
-    lyr_obs_date_y : 10
-    lyr_top : 10
-    lyr_bot : 10
-    lyr_hzn : 2
-    lyr_c_tot : 10
-    lyr_soc : 10
-    lyr_13c : 10
-    lyr_14c : 10
-    lyr_14c_sigma : 10
-    lyr_fraction_modern : 10
-    lyr_fraction_modern_sigma : 10
+ layer tab...11 observations
+    entry_name : 11
+    site_name : 11
+    pro_name : 11
+    lyr_name : 11
+    lyr_obs_date_y : 11
+    lyr_top : 11
+    lyr_bot : 11
+    lyr_hzn : 3
+    lyr_c_tot : 11
+    lyr_n_tot : 11
+    lyr_c_to_n : 11
+    lyr_13c : 11
+    lyr_14c : 11
+    lyr_14c_sigma : 11
  interstitial tab...0 observations
- fraction tab...0 observations
+ fraction tab...16 observations
+    entry_name : 16
+    site_name : 16
+    pro_name : 16
+    lyr_name : 16
+    frc_name : 16
+    frc_input : 16
+    frc_aggregate_dis : 16
+    frc_scheme : 16
+    frc_scheme_units : 16
+    frc_lower : 16
+    frc_upper : 16
+    frc_agent : 16
+    frc_property : 16
+    frc_note : 16
+    frc_c_tot : 16
+    frc_n_tot : 14
+    frc_c_to_n : 14
+    frc_13c : 16
+    frc_14c : 16
+    frc_14c_sigma : 16
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 
