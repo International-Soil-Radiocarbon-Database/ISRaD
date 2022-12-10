@@ -199,7 +199,7 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
   } else {
 
     # get index of NA obs_d14c
-    ix <- which(!is.na(df[[obs_d14c]]) & df[[obs_d14c]] > -100 & df[[obs_year]] < max(atm14c$Date))
+    ix <- which(!is.na(df[[obs_d14c]]) & df[[obs_d14c]] > -100 & df[[obs_year]] < 2021)
 
     # set progress bar
     pb <- txtProgressBar(min = min(ix), max = max(ix), style = 3)

@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2022-12-10 05:31:40 
+ 2022-12-10 17:24:23 
  - - - - - - - - - - - - - - - 
 
 
@@ -524,7 +524,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  258 compiling Mikutta_2009.xlsx ... passed QAQC
 
- 259 checking Mills_2014.xlsx ...New data - failed QAQC. Check report in QAQC folder.
+ 259 checking Mills_2014.xlsx ...New data - passed QAQC
 
  260 compiling Milton_1998.xlsx ... passed QAQC
 
@@ -850,57 +850,57 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
 Summary statistics...
 
- metadata tab...435 observations
-    entry_name : 435
-    doi : 435
+ metadata tab...436 observations
+    entry_name : 436
+    doi : 436
     compilation_doi : 177
-    curator_name : 435
-    curator_organization : 435
-    curator_email : 435
-    modification_date_y : 435
-    modification_date_m : 435
-    modification_date_d : 435
-    contact_name : 435
-    contact_email : 435
+    curator_name : 436
+    curator_organization : 436
+    curator_email : 436
+    modification_date_y : 436
+    modification_date_m : 436
+    modification_date_d : 436
+    contact_name : 436
+    contact_email : 436
     contact_orcid_id : 55
-    bibliographical_reference : 435
-    metadata_note : 203
+    bibliographical_reference : 436
+    metadata_note : 204
     associated_datasets : 70
-    template_version : 323
- site tab...1216 observations
-    entry_name : 1216
-    site_name : 1216
-    site_lat : 1216
-    site_long : 1216
+    template_version : 324
+ site tab...1273 observations
+    entry_name : 1273
+    site_name : 1273
+    site_lat : 1273
+    site_long : 1273
     site_datum : 449
     site_elevation : 698
     site_note : 640
- profile tab...4271 observations
-    entry_name : 4271
-    site_name : 4271
-    plot_name : 1236
-    pro_name : 4271
-    pro_note : 1372
-    pro_lat : 2115
-    pro_long : 2115
-    pro_elevation : 674
-    pro_treatment : 4271
+ profile tab...4368 observations
+    entry_name : 4368
+    site_name : 4368
+    plot_name : 1333
+    pro_name : 4368
+    pro_note : 1461
+    pro_lat : 2212
+    pro_long : 2212
+    pro_elevation : 735
+    pro_treatment : 4368
     pro_treatment_note : 677
     pro_comp : 348
     pro_reps : 532
-    pro_MAT : 2358
-    pro_MAP : 2568
-    pro_peatland : 1233
+    pro_MAT : 2455
+    pro_MAP : 2665
+    pro_peatland : 1249
     pro_usda_soil_order : 2182
     pro_soil_series : 658
-    pro_soil_taxon : 1990
+    pro_soil_taxon : 2087
     pro_soil_taxon_sys : 1753
     pro_chrono_name : 27
     pro_soil_age : 214
     pro_soil_age_note : 40
     pro_MAST : 207
     pro_MASWC : 214
-    pro_land_cover : 3962
+    pro_land_cover : 4059
     pro_lc_phenology : 247
     pro_lc_leaf_type : 230
     pro_lc_photosyn_path : 220
@@ -972,17 +972,17 @@ Summary statistics...
     flx_14c_sd : 35
     flx_fraction_modern : 1130
     flx_fraction_modern_sigma : 72
- layer tab...35785 observations
-    entry_name : 35785
-    site_name : 35785
-    pro_name : 35785
-    lyr_name : 35785
-    lyr_obs_date_y : 35785
+ layer tab...35882 observations
+    entry_name : 35882
+    site_name : 35882
+    pro_name : 35882
+    lyr_name : 35882
+    lyr_obs_date_y : 35882
     lyr_obs_date_m : 8886
     lyr_obs_date_d : 4185
     lyr_all_org_neg : 24903
-    lyr_top : 35785
-    lyr_bot : 35785
+    lyr_top : 35882
+    lyr_bot : 35882
     lyr_hzn : 25112
     lyr_org_buried : 30
     lyr_comp : 931
@@ -991,7 +991,7 @@ Summary statistics...
     lyr_color : 1212
     lyr_color_dry : 19
     lyr_burn_ev : 283
-    lyr_bd_samp : 22881
+    lyr_bd_samp : 22978
     lyr_bd_tot : 2783
     lyr_bd_notes : 1152
     lyr_sand_tot_psa : 2450
@@ -1003,7 +1003,7 @@ Summary statistics...
     lyr_bet_surface_area : 294
     lyr_ph_cacl : 482
     lyr_ph_h2o : 1693
-    lyr_ph : 2030
+    lyr_ph : 2127
     lyr_ph_method : 1312
     lyr_cat_exch : 378
     lyr_base_sum : 65
@@ -1016,8 +1016,8 @@ Summary statistics...
     lyr_bs : 467
     lyr_c_inorg : 812
     lyr_c_org : 4020
-    lyr_c_tot : 8881
-    lyr_soc : 1945
+    lyr_c_tot : 8978
+    lyr_soc : 2042
     lyr_soc_sigma : 297
     lyr_n_tot : 7590
     lyr_son : 263
@@ -1031,7 +1031,7 @@ Summary statistics...
     lyr_14c : 4231
     lyr_14c_sigma : 2423
     lyr_14c_sd : 89
-    lyr_fraction_modern : 5210
+    lyr_fraction_modern : 5307
     lyr_fraction_modern_sigma : 4096
     lyr_fraction_modern_sd : 9
     lyr_mbc_method : 185
