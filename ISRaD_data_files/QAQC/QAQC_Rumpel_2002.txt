@@ -104,25 +104,25 @@ Summary statistics...
     site_name : 2
     pro_name : 2
     pro_treatment : 2
+    pro_MAP : 2
     pro_usda_soil_order : 2
+    pro_soil_taxon : 2
     pro_land_cover : 2
     pro_veg_note : 2
  flux tab...0 observations
- layer tab...11 observations
-    entry_name : 11
-    site_name : 11
-    pro_name : 11
-    lyr_name : 11
-    lyr_obs_date_y : 11
-    lyr_top : 11
-    lyr_bot : 11
-    lyr_hzn : 11
-    lyr_c_tot : 11
-    lyr_soc : 11
-    lyr_14c : 11
-    lyr_14c_sigma : 11
+ layer tab...18 observations
+    entry_name : 18
+    site_name : 18
+    pro_name : 18
+    lyr_name : 18
+    lyr_obs_date_y : 18
+    lyr_top : 18
+    lyr_bot : 18
+    lyr_hzn : 18
+    lyr_ph : 18
+    lyr_c_org : 18
+    lyr_soc : 18
     lyr_fraction_modern : 11
-    lyr_fraction_modern_sigma : 11
  interstitial tab...0 observations
  fraction tab...0 observations
  incubation tab...0 observations

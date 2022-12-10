@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Rogers_2014.xlsx
+File: Mayer_2008.xlsx
 
 Checking file type...
 
@@ -21,7 +21,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( flux interstitial fraction incubation )
+	NOTE: empty tabs detected ( flux interstitial incubation )
 
 Not checking dataset doi because 'checkdoi is FALSE'...
 
@@ -92,44 +92,59 @@ Summary statistics...
     contact_name : 1
     contact_email : 1
     bibliographical_reference : 1
-    template_version : 1
+    metadata_note : 1
  site tab...1 observations
     entry_name : 1
     site_name : 1
     site_lat : 1
     site_long : 1
-    site_elevation : 1
- profile tab...4 observations
-    entry_name : 4
-    site_name : 4
-    pro_name : 4
-    pro_lat : 4
-    pro_long : 4
-    pro_elevation : 4
-    pro_treatment : 4
-    pro_MAT : 4
-    pro_MAP : 4
-    pro_land_cover : 4
-    pro_veg_note : 4
+ profile tab...7 observations
+    entry_name : 7
+    site_name : 7
+    plot_name : 1
+    pro_name : 7
+    pro_lat : 7
+    pro_long : 7
+    pro_elevation : 7
+    pro_treatment : 7
+    pro_land_cover : 7
+    pro_veg_note : 7
+    pro_aspect_deg : 7
+    pro_slope : 7
  flux tab...0 observations
- layer tab...16 observations
-    entry_name : 16
-    site_name : 16
-    pro_name : 16
-    lyr_name : 16
-    lyr_obs_date_y : 16
-    lyr_top : 16
-    lyr_bot : 16
-    lyr_hzn : 16
-    lyr_bd_samp : 16
-    lyr_c_tot : 16
-    lyr_n_tot : 16
-    lyr_c_to_n : 16
-    lyr_rc_year : 16
-    lyr_14c : 16
-    lyr_14c_sigma : 16
+ layer tab...40 observations
+    entry_name : 40
+    site_name : 40
+    pro_name : 40
+    lyr_name : 40
+    lyr_obs_date_y : 40
+    lyr_top : 40
+    lyr_bot : 40
+    lyr_hzn : 40
+    lyr_sand_tot_psa : 15
+    lyr_silt_tot_psa : 15
+    lyr_clay_tot_psa : 15
+    lyr_c_org : 15
  interstitial tab...0 observations
- fraction tab...0 observations
+ fraction tab...34 observations
+    entry_name : 34
+    site_name : 34
+    pro_name : 34
+    lyr_name : 34
+    frc_name : 34
+    frc_input : 34
+    frc_aggregate_dis : 34
+    frc_scheme : 34
+    frc_scheme_units : 34
+    frc_lower : 34
+    frc_upper : 34
+    frc_agent : 34
+    frc_property : 34
+    frc_note : 34
+    frc_aba : 34
+    frc_13c : 34
+    frc_fraction_modern : 34
+    frc_fraction_modern_sigma : 34
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -
 

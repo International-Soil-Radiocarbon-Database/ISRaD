@@ -4,7 +4,7 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-File: Rogers_2014.xlsx
+File: Scheibe_2022.xlsx
 
 Checking file type...
 
@@ -21,7 +21,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( flux interstitial fraction incubation )
+	NOTE: empty tabs detected ( flux interstitial )
 
 Not checking dataset doi because 'checkdoi is FALSE'...
 
@@ -82,7 +82,6 @@ Summary statistics...
  metadata tab...1 observations
     entry_name : 1
     doi : 1
-    compilation_doi : 1
     curator_name : 1
     curator_organization : 1
     curator_email : 1
@@ -93,44 +92,76 @@ Summary statistics...
     contact_email : 1
     bibliographical_reference : 1
     template_version : 1
- site tab...1 observations
-    entry_name : 1
-    site_name : 1
-    site_lat : 1
-    site_long : 1
-    site_elevation : 1
- profile tab...4 observations
-    entry_name : 4
-    site_name : 4
-    pro_name : 4
-    pro_lat : 4
-    pro_long : 4
-    pro_elevation : 4
-    pro_treatment : 4
-    pro_MAT : 4
-    pro_MAP : 4
-    pro_land_cover : 4
-    pro_veg_note : 4
+ site tab...3 observations
+    entry_name : 3
+    site_name : 3
+    site_lat : 3
+    site_long : 3
+    site_datum : 3
+ profile tab...10 observations
+    entry_name : 10
+    site_name : 10
+    plot_name : 10
+    pro_name : 10
+    pro_lat : 10
+    pro_long : 10
+    pro_elevation : 10
+    pro_treatment : 10
+    pro_reps : 10
+    pro_MAT : 10
+    pro_MAP : 10
+    pro_soil_taxon : 10
+    pro_soil_taxon_sys : 10
+    pro_land_cover : 10
+    pro_veg_note : 3
  flux tab...0 observations
- layer tab...16 observations
-    entry_name : 16
-    site_name : 16
-    pro_name : 16
-    lyr_name : 16
-    lyr_obs_date_y : 16
-    lyr_top : 16
-    lyr_bot : 16
-    lyr_hzn : 16
-    lyr_bd_samp : 16
-    lyr_c_tot : 16
-    lyr_n_tot : 16
-    lyr_c_to_n : 16
-    lyr_rc_year : 16
-    lyr_14c : 16
-    lyr_14c_sigma : 16
+ layer tab...157 observations
+    entry_name : 157
+    site_name : 157
+    pro_name : 157
+    lyr_name : 157
+    lyr_obs_date_y : 157
+    lyr_obs_date_m : 157
+    lyr_top : 157
+    lyr_bot : 157
+    lyr_coarse_tot : 140
+    lyr_c_org : 144
+    lyr_13c : 144
+    lyr_14c : 93
  interstitial tab...0 observations
- fraction tab...0 observations
- incubation tab...0 observations
+ fraction tab...81 observations
+    entry_name : 81
+    site_name : 81
+    pro_name : 81
+    lyr_name : 81
+    frc_name : 81
+    frc_input : 81
+    frc_aggregate_dis : 81
+    frc_scheme : 81
+    frc_scheme_units : 81
+    frc_lower : 81
+    frc_upper : 81
+    frc_agent : 81
+    frc_property : 81
+    frc_comp : 12
+    frc_13c : 81
+ incubation tab...280 observations
+    entry_name : 280
+    site_name : 280
+    pro_name : 280
+    lyr_name : 280
+    inc_name : 280
+    inc_type : 280
+    inc_duration : 279
+    inc_duration_type : 279
+    inc_analyte : 280
+    inc_temp : 280
+    inc_moisture_type : 280
+    inc_moisture : 280
+    inc_moisture_units : 280
+    inc_flux : 139
+    inc_flux_units : 139
+    inc_14c : 137
  - - - - - - - - - - - - - - - - - - - -
 
 

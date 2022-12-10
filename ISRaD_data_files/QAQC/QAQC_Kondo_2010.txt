@@ -144,10 +144,10 @@ Summary statistics...
     frc_upper : 12
     frc_agent : 12
     frc_note : 12
-    frc_mass_perc : 12
-    frc_c_perc : 12
-    frc_c_org : 12
-    frc_c_to_n : 12
+    frc_mass_perc : 10
+    frc_c_perc : 10
+    frc_c_org : 10
+    frc_c_to_n : 10
     frc_rc_lab : 10
     frc_rc_year : 10
     frc_14c : 10
