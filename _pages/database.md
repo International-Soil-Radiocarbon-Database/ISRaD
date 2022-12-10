@@ -8,7 +8,7 @@ htmlwidgets: TRUE
 ---
 ## Accessing ISRaD Data
 *   Using R, the compiled database or individual ISRaD datasets can be downloaded (in .xlsx, .csv, and .rda format) and easily loaded into an R session following [this tutorial](/user_manual_Aug15_2019.html). For more information see the [R package](https://international-soil-radiocarbon-database.github.io/ISRaD/rpackage/) page of this website.
-*   For non-R users, ISRaD data is available in .xlsx and .csv formats. Download [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/database/ISRaD_database_files.zip) (contents of the zip archive are described in detail in the **Data Files** section below).
+*   For non-R users, ISRaD data is available in .xlsx and .csv formats. Download [here](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/database/ISRaD_database_files.zip) (contents of the zip archive are described in detail in the **Data Files** section below).
 
 ## Terms of Use and Citing ISRaD
 Anyone may share or adapt the ISRaD dataset, provided they do so in accordance with the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode), also referred to as CC BY. In addition, we strongly encourage ISRaD users to follow two simple guidelines for use:
@@ -25,7 +25,7 @@ There are two different versions of the compiled database:
 Descriptions of all ISRaD variables are available in the [ISRaD Template Information](https://soilradiocarbon.org/database_structure/) and [ISRaD_extra Information](https://soilradiocarbon.org/extra_structure/) files.
 
 ## Data Files
-The following files are included in the [ISRaD_database_files.zip](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/ISRaD_data_files/database/ISRaD_database_files.zip) archive
+The following files are included in the [ISRaD_database_files.zip](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/main/ISRaD_data_files/database/ISRaD_database_files.zip) archive
 ### Hierarchical data:
 *	*ISRaD_data_vX.date.xlsx* - Full hierarchical database compiled in a single .xlsx workbook
 *	*ISRaD_data_vX.date.rda* - Same but in (binary) R data format

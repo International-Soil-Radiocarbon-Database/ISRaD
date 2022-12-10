@@ -121,10 +121,10 @@ where F<sub>m</sub> is fraction modern.
   Leave the field blank and add a note that data is available but has to be mined for. Do *not* enter a fraction modern value of 1! This is misleading during data analysis!
 
  * **_What is the difference between the Radiocarbon Analysis Year (e.g., column “lyr_rc_year”) and Observation Year (e.g., column “lyr_obs_date_y“)?_**<br>
-    As explained in the [Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx), the Observation Date refers to the date at which the soil sample was collected whereas the Radiocarbon Analysis Year refers to the year at which the sample was actually analyzed for radiocarbon.
+    As explained in the [Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/inst/extdata/ISRaD_Template_Info.xlsx), the Observation Date refers to the date at which the soil sample was collected whereas the Radiocarbon Analysis Year refers to the year at which the sample was actually analyzed for radiocarbon.
 
 * **_What is the difference between the Δ<sup>14</sup>C Sigma (e.g., column „lyr_14c_sigma” suffix) and Δ<sup>14</sup>C SD (e.g., column „lyr_14c_sd”)?_**<br>
-    As explained in the [Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx), lyr_14c_sigma is the standard deviation reported by the AMS facility as analytical error estimate. This is the most common case and applicable where the author has reported individual measurements. In cases where only the mean values are reported, the lyr_14c_sd field should be used. This is the sample standard deviation calculated from multiple (replicated) measurements. When possible please report individual measurements.
+    As explained in the [Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/inst/extdata/ISRaD_Template_Info.xlsx), lyr_14c_sigma is the standard deviation reported by the AMS facility as analytical error estimate. This is the most common case and applicable where the author has reported individual measurements. In cases where only the mean values are reported, the lyr_14c_sd field should be used. This is the sample standard deviation calculated from multiple (replicated) measurements. When possible please report individual measurements.
 
 </p></details>
 
@@ -173,7 +173,7 @@ where F<sub>m</sub> is fraction modern.
    If paper has radiocarbon data but does not report the observation year, estimate it by subtracting 3 years from the year of publication and note in the **_lyr_note_** field or other relevant note field. (e.g.  “observation date estimated from year of publication”)
 
  * **_Do I have to fill in all the columns in the template?_**<br>
-   No, only some columns are required. The required columns are indicated in the [Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/inst/extdata/ISRaD_Template_Info.xlsx) (by “yes” in the “Required” column) and also using red font in the template. Although we encourage you to fill out as many fields as possible, it is perfectly ok if many columns are left empty and some columns are only partly filled in. Please leave the fields with missing data empty (i.e., do not fill in zeros or NAs).
+   No, only some columns are required. The required columns are indicated in the [Template Information File](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/inst/extdata/ISRaD_Template_Info.xlsx) (by “yes” in the “Required” column) and also using red font in the template. Although we encourage you to fill out as many fields as possible, it is perfectly ok if many columns are left empty and some columns are only partly filled in. Please leave the fields with missing data empty (i.e., do not fill in zeros or NAs).
 
 * **_Can I delete or hide columns in the template (e.g., because I do not plan to fill them in and they are distracting me) or change order of columns in the template?_**<br>
   Yes, deleting non-required columns (i.e., those not indicated in red) or changing order of any of the columns is fine and will not cause the template to fail QAQC.
@@ -212,7 +212,7 @@ where F<sub>m</sub> is fraction modern.
 
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/density_separation_diagram.png" width="375">
 
-Example template: [Swanston_2005](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Swanston_2005.xlsx)
+Example template: [Swanston_2005](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/Swanston_2005.xlsx)
 </p></details>
 
 <details><summary>
@@ -224,7 +224,7 @@ A heavy liquid is used to float off the "light-fraction" organics, thereby separ
 
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/sequential_density_separation_diagram.png" width="700">
 
-Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Sollins_2009.xlsx)
+Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/Sollins_2009.xlsx)
 </p></details>
 
 <details><summary>
@@ -236,7 +236,7 @@ A physcial fractionation method where wet- or dry-sieving is used to separate so
 
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/particle_size_separation_diagram.png" width="450">
 
- Example template: [Desjardines_1994](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Dejardins_1994.xlsx)
+ Example template: [Desjardines_1994](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/Dejardins_1994.xlsx)
 </p></details>
 
 <details><summary>
@@ -248,7 +248,7 @@ A fractionation procedure where wet sieving is used to separate aggregates by si
 
 <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/aggregate_fractionation_diagram.png" width="550">
 
- Example template: [Monreal_1997](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/master/ISRaD_data_files/Monreal_1997.xlsx)
+ Example template: [Monreal_1997](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/Monreal_1997.xlsx)
 
 </p></details>
 

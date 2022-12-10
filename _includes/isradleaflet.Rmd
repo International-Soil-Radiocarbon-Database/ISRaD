@@ -15,7 +15,7 @@ output:
 knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
 ```
 
-```{r setup, include=TRUE, echo=FALSE}
+```{r setup, include=TRUE, echo=FALSE, warning=FALSE, message=FALSE}
 library(leaflet)
 library(dplyr)
 library(knitr)
@@ -27,10 +27,10 @@ library(readxl)
 #load('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/coordset.Rdata')
 
 read_xlsx(paste0('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/ISRaD/LeafletWork', '/ISRaD_database_files/ISRaD_extra_list_v 2.2.5.2022-10-20.xlsx'), sheet = "profile") %>% 
-  select("entry_name", "pro_lat", "pro_long") %>% 
-  distinct() %>% 
-  rename("lat" = "pro_lat") %>% 
-  rename("lng" = "pro_long") %>%
+  select("entry_name", "pro_lat", "pro_long") %>% #glimpse()
+  distinct() %>%# glimpse()
+  dplyr::rename("lat" = "pro_lat") %>% #glimpse()
+  dplyr::rename("lng" = "pro_long") %>%
   group_by(entry_name, lat, lng) %>%
   mutate(entry_name = ifelse( length(unlist(strsplit(entry_name, "_"))) == 2, 
          paste(unlist(strsplit(entry_name, "_"))[1], "et al.", unlist(strsplit(entry_name, "_"))[2]),
@@ -40,7 +40,7 @@ read_xlsx(paste0('/Users/shane/14Constraint Dropbox/Shane Stoner/IMPRS/Database/
   mutate(lng = as.numeric(lng)) %>% 
   mutate(lat = as.numeric(lat))-> coordset
 
-m <- leaflet(coordset, width = "100%")
+m <- leaflet(coordset, width = "100%", height = NULL)
 m <- addCircles(m, color = "#8269d7", opacity = 0.7, label = ~htmltools::htmlEscape(entry_name), labelOptions = labelOptions(noHide =FALSE, textOnly = TRUE, 
                                                   direction = "bottom", offset = c(0,5)))
 m <- addTiles(m)
