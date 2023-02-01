@@ -14,3 +14,6 @@ source("./devScripts/ISRaD.build.R")
 ISRaD.build(getwd(),
             geodata_directory = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_geodata",
             geodata_keys = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_keys")
+
+# Release to CRAN
+

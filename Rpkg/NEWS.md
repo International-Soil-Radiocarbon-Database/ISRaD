@@ -1,10 +1,10 @@
-# Updated release for CRAN, early June 2022
-ISRaD 2.2.4
+# Updated release for CRAN, early February 2023
+ISRaD 2.4.7
 
 ## Notes
 * deprecated functions "ISRaD.extra.fill_fm" and "ISRaD.extra.fill_14c" have been removed; function "ISRaD.extra.fill_rc" replaces them
 * function "ISRaD.extra.fill_deltadelta" has been split into two functions: "ISRaD.extra.calc_atm14c" and "ISRaD.extra.fill_deltadelta"
-* new functions "ISRaD.extra.norm14c_year" returns 14c normalized to user-specified year
+* new functions "ISRaD.extra.norm14c_year" returns 14c normalized to user-specified year and optionally returns 1 pool model fits
 * new function "ISRaD.extra.fill_cn" fills missing CN ratios
 * new function "ISRaD.extra.fill_country" fills country (and optionally continent) from profile coords
 * function documentation updated
