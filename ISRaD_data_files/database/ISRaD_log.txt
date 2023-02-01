@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2022-12-10 17:24:23 
+ 2023-02-01 17:02:21 
  - - - - - - - - - - - - - - - 
 
 
@@ -94,7 +94,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  43 compiling Blyakharchuk_2003.xlsx ... passed QAQC
 
- 44 checking Bol_1996.xlsx ...New data - passed QAQC
+ 44 compiling Bol_1996.xlsx ... passed QAQC
 
  45 compiling Bol_2003.xlsx ... passed QAQC
 
@@ -190,7 +190,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  91 compiling Doetterl_2012.xlsx ... passed QAQC
 
- 92 checking Doetterl_2015.xlsx ...New data - passed QAQC
+ 92 compiling Doetterl_2015.xlsx ... passed QAQC
 
  93 checking Doetterl_2021_Bukombe_2021_Reichenbach_2021.xlsx ...New data - passed QAQC
 
@@ -242,7 +242,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  117 compiling Fontaine_2007.xlsx ... passed QAQC
 
- 118 checking Frank_2011.xlsx ...New data - passed QAQC
+ 118 compiling Frank_2011.xlsx ... passed QAQC
 
  119 compiling Gandois_2014.xlsx ... passed QAQC
 
@@ -270,7 +270,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  131 compiling Gonzalez-Dominguez_2019.xlsx ... passed QAQC
 
- 132 checking Grant_2019.xlsx ...New data - passed QAQC
+ 132 compiling Grant_2019.xlsx ... passed QAQC
 
  133 compiling Grant_2022.xlsx ... passed QAQC
 
@@ -396,7 +396,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  194 compiling Klein_2013.xlsx ... passed QAQC
 
- 195 checking Koarashi_2005.xlsx ...New data - passed QAQC
+ 195 compiling Koarashi_2005.xlsx ... passed QAQC
 
  196 compiling Koarashi_2009.xlsx ... passed QAQC
 
@@ -404,7 +404,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  198 compiling Kokfelt_2010.xlsx ... passed QAQC
 
- 199 checking Kondo_2010.xlsx ...New data - passed QAQC
+ 199 compiling Kondo_2010.xlsx ... passed QAQC
 
  200 compiling Kovda_2001.xlsx ... passed QAQC
 
@@ -420,7 +420,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  206 compiling Krull_2006.xlsx ... passed QAQC
 
- 207 compiling Kuhnen_2019.xlsx ... passed QAQC
+ 207 checking Kuhnen_2019.xlsx ...New data - passed QAQC
 
  208 compiling Kuhry_1996.xlsx ... passed QAQC
 
@@ -456,7 +456,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  224 compiling Lawrence_2021.xlsx ... passed QAQC
 
- 225 checking Leavitt_2007.xlsx ...New data - passed QAQC
+ 225 compiling Leavitt_2007.xlsx ... passed QAQC
 
  226 compiling Ledru_2001.xlsx ... passed QAQC
 
@@ -506,7 +506,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  249 compiling Massa_2021.xlsx ... passed QAQC
 
- 250 checking Mayer_2008.xlsx ...New data - passed QAQC
+ 250 compiling Mayer_2008.xlsx ... passed QAQC
 
  251 compiling Mayer_2018.xlsx ... passed QAQC
 
@@ -524,7 +524,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  258 compiling Mikutta_2009.xlsx ... passed QAQC
 
- 259 checking Mills_2014.xlsx ...New data - passed QAQC
+ 259 compiling Mills_2014.xlsx ... passed QAQC
 
  260 compiling Milton_1998.xlsx ... passed QAQC
 
@@ -550,7 +550,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  271 compiling Nave_2017.xlsx ... passed QAQC
 
- 272 checking Nave_2021.xlsx ...New data - passed QAQC
+ 272 compiling Nave_2021.xlsx ... passed QAQC
 
  273 compiling Neff_2006.xlsx ... passed QAQC
 
@@ -574,7 +574,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  283 compiling OBrien_1986.xlsx ... passed QAQC
 
- 284 checking OBrien_2013.xlsx ...New data - passed QAQC
+ 284 compiling OBrien_2013.xlsx ... passed QAQC
 
  285 compiling Ohno_2017.xlsx ... passed QAQC
 
@@ -644,9 +644,9 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  318 compiling Robinson_2006.xlsx ... passed QAQC
 
- 319 checking Rogers_2014.xlsx ...New data - passed QAQC
+ 319 compiling Rogers_2014.xlsx ... passed QAQC
 
- 320 checking Rumpel_2002.xlsx ...New data - passed QAQC
+ 320 compiling Rumpel_2002.xlsx ... passed QAQC
 
  321 compiling Rumpel_2008.xlsx ... passed QAQC
 
@@ -668,7 +668,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  330 compiling Scharpenseel_1973a.xlsx ... passed QAQC
 
- 331 checking Scheibe_2022.xlsx ...New data - passed QAQC
+ 331 compiling Scheibe_2022.xlsx ... passed QAQC
 
  332 compiling Schimel_2011.xlsx ... passed QAQC
 
@@ -708,7 +708,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  350 compiling Stoner_2021.xlsx ... passed QAQC
 
- 351 compiling Stout_1980.xlsx ... passed QAQC
+ 351 checking Stout_1980.xlsx ...New data - passed QAQC
 
  352 compiling Striegl_2007.xlsx ... passed QAQC
 
@@ -764,7 +764,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  378 compiling Trumbore_2006.xlsx ... passed QAQC
 
- 379 compiling Trumbore_2021.xlsx ... passed QAQC
+ 379 checking Trumbore_2021.xlsx ...New data - passed QAQC
 
  380 compiling Upton_2018.xlsx ... passed QAQC
 
@@ -900,7 +900,7 @@ Summary statistics...
     pro_soil_age_note : 40
     pro_MAST : 207
     pro_MASWC : 214
-    pro_land_cover : 4059
+    pro_land_cover : 4061
     pro_lc_phenology : 247
     pro_lc_leaf_type : 230
     pro_lc_photosyn_path : 220

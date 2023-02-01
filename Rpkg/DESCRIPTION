@@ -1,6 +1,6 @@
 Package: ISRaD
 Title: Tools and Data for the International Soil Radiocarbon Database
-Version: 2.3.6
+Version: 2.4.7
 Authors@R: c(person("Alison", "Hoyt", email = "ahoyt@bgc-jena.mpg.de", role = c("aut")),
     person("Jeffrey", "Beem-Miller", email = "jbeem@bgc-jena.mpg.de", role = c("aut", "cre")),
     person("Shane", "Stoner", email = "sstoner@bgc-jena.mpg.de", role = c("aut")),
@@ -34,5 +34,4 @@ RoxygenNote: 7.1.2
 Suggests:
     devtools,
     knitr,
-    rmarkdown,
-    rgdal
+    rmarkdown
