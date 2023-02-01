@@ -35,8 +35,8 @@ database.x <- ISRaD.extra.fill_rc(database.x)
 database.x <- ISRaD.extra.calc_atm14c(database.x)
 }
 \references{
-Graven et al. 2017. Compiled records of carbon isotopes in atmospheric CO2 for historical simulations in CMIP6. Geosci. Model Dev., 10: 4405–4417 \url{https://www.geosci-model-dev.net/10/4405/2017/gmd-10-4405-2017.pdf}\cr\cr
-Sierra, C. 2018. Forecasting atmospheric radiocarbon decline to pre-bomb values. Radiocarbon, 60(4): 1055-1066 \url{https://doi.org/10.1017/RDC.2018.33}
+Graven et al. 2017. Compiled records of carbon isotopes in atmospheric CO2 for historical simulations in CMIP6. Geosci. Model Dev., 10: 4405–4417 \doi{10.5194/gmd-10-4405-2017}
+Sierra, C. 2018. Forecasting atmospheric radiocarbon decline to pre-bomb values. Radiocarbon, 60(4): 1055-1066 \doi{10.1017/RDC.2018.33}
 }
 \author{
 J. Beem-Miller and C. Hicks-Pries

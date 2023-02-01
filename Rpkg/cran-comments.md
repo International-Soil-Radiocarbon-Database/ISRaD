@@ -3,15 +3,7 @@
 * Windows Server: x86_64-w64-mingw32 (64-bit)
 
 ## R CMD check results
-There were no ERRORs, WARNINGs
-
-# NOTES:
-1) CRAN incoming feasibility:
-  Found three (possibly) invalid URLs (Status without verification: OK)
-2) Non-standard file/directory found at top level:
-  ‘cran-comments.md’
-3) Examples with CPU or elapsed time > 5s
-  1 example (see below)
+There were no ERRORs, WARNINGs, or NOTEs
 
 # Examples
   Examples with CPU or elapsed time > 5s
@@ -22,3 +14,4 @@ There were no ERRORs, WARNINGs
 
 ## Additional notes:
   * R CMD check run with "run_dont_test" set to TRUE and passed with no issues
+  * Changed \url{} calls to \doi{} calls and fixed urls where needed

@@ -36,7 +36,7 @@ QAQC(
 Checks template files for data coherence, formatting, and data entry errors
 }
 \details{
-This function can also be called from the \href{http://soilradiocarbon.org}{ISRaD website}.
+This function can also be called from the \href{https://soilradiocarbon.org}{ISRaD website}.
 }
 \examples{
 \donttest{
