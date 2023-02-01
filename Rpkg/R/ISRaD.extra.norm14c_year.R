@@ -17,8 +17,8 @@
 #' Example 2 shows how to run the function when single values are supplied and 'df' is absent.\cr\cr
 #' Note: There is no guarantee that normalized 14c values will be meaningful as the model assumes a well-mixed homogenous system, and this is rarely the case in soils.
 #' @author J. Beem-Miller and J. Randerson
-#' @references Gaudinski et al. 2000. Soil carbon cycling in a temperate forest: radiocarbon-based estimates of residence times, sequestration rates and partitioning of fluxes. Biogeochemistry 51: 33–69 \url{https://doi.org/10.1023/A:1006301010014}\cr\cr
-#' Trumbore, S. 2000. Age of Soil Organic Matter and Soil Respiration: Radiocarbon Constraints on Belowground C Dynamics. Ecological Applications, 10(2): 399–411 \url{http://dx.doi.org/10.2307/2641102}
+#' @references Gaudinski et al. 2000. Soil carbon cycling in a temperate forest: radiocarbon-based estimates of residence times, sequestration rates and partitioning of fluxes. Biogeochemistry 51: 33–69 \doi{10.1023/A:1006301010014}\cr\cr
+#' Trumbore, S. 2000. Age of Soil Organic Matter and Soil Respiration: Radiocarbon Constraints on Belowground C Dynamics. Ecological Applications, 10(2): 399–411 \doi{10.2307/2641102}
 #' @export
 #' @return data frame with new columns: "norm_14c", "norm_error", and optionally "norm_tau"; OR list with length = 3: "norm_14c", "norm_tau", "norm_error". Note that if is parameter df is not NULL and obs_d14c contains an underscore, e.g. "lyr_14c", supplied names will take the form "lyr_norm_14c", "lyr_norm_error", etc.
 #' @examples
@@ -223,7 +223,7 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
 
       return(d14c_n)
     })
-    
+
     # set prefix
     if (grepl("_", obs_d14c)) {
       PREFIX <- paste0(sapply(strsplit(obs_d14c, "_"), "[[", 1), "_")

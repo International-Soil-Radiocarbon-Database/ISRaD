@@ -7,8 +7,8 @@
 #' Projection for 2016 to 2021 uses the four quarter average projected atmospheric radiocarbon concentration for Central Europe as estimated in Sierra (2018).\cr\cr
 #' Notes: Central Europe projection (Sierra, 2018) used for northern hemisphere samples as these projections perform better against observations than northern hemisphere projection; southern hemisphere and tropic atmospheric radiocarbon projection are lagged by 2.5 per mille, as this is the mean lag observed from 2000 to 2015 in the Graven (2017) dataset.
 #' @author J. Beem-Miller and C. Hicks-Pries
-#' @references Graven et al. 2017. Compiled records of carbon isotopes in atmospheric CO2 for historical simulations in CMIP6. Geosci. Model Dev., 10: 4405–4417 \url{https://www.geosci-model-dev.net/10/4405/2017/gmd-10-4405-2017.pdf}\cr\cr
-#' Sierra, C. 2018. Forecasting atmospheric radiocarbon decline to pre-bomb values. Radiocarbon, 60(4): 1055-1066 \url{https://doi.org/10.1017/RDC.2018.33}
+#' @references Graven et al. 2017. Compiled records of carbon isotopes in atmospheric CO2 for historical simulations in CMIP6. Geosci. Model Dev., 10: 4405–4417 \doi{10.5194/gmd-10-4405-2017}
+#' Sierra, C. 2018. Forecasting atmospheric radiocarbon decline to pre-bomb values. Radiocarbon, 60(4): 1055-1066 \doi{10.1017/RDC.2018.33}
 #' @export
 #' @return ISRaD_data object with new atmospheric zone and atmospheric 14c columns in relevant tables.
 #' @examples

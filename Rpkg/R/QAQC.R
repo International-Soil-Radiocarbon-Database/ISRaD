@@ -2,7 +2,7 @@
 #'
 #' @description Checks template files for data coherence, formatting, and data entry errors
 #'
-#' @details This function can also be called from the \href{http://soilradiocarbon.org}{ISRaD website}.
+#' @details This function can also be called from the \href{https://soilradiocarbon.org}{ISRaD website}.
 #' @param file File path for template file to be checked
 #' @param writeQCreport If TRUE, a text report of the QC output will be written to the outfile. Default is FALSE
 #' @param outfile_QAQC Filename of the output file (if writeQCreport is TRUE). Default is NULL, with the outfile being written to the directory where the template file is stored and named according to the file being checked.

@@ -16,4 +16,7 @@ ISRaD.build(getwd(),
             geodata_keys = "~/Seafile/ISRaD_geospatial_data/ISRaD_extra_keys")
 
 # Release to CRAN
+# 1) build (from command line: R CMD build /Rpkg)
+# 2) check on win.builder (upload .tar.gz file)
+# 3) upload on CRAN website
 
