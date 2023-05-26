@@ -1,7 +1,7 @@
 ISRaD Geospatial Data Information
 
 All files in current ISRaD build can be found using the following metadata. Building the current version of ISRaD requires renaming files according to this metadata and directing the build function to the folder containing said fields.
-File names follow conventions found here: https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/master/devScripts/Geospatial.naming.conventions.txt
+File names follow conventions found here: https://github.com/International-Soil-Radiocarbon-Database/ISRaD/blob/main/devScripts/Geospatial.naming.conventions.txt
 
 Bulk Density Data: https://zenodo.org/record/2525665#.XhM34BdKiL4
   1.
