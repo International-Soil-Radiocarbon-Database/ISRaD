@@ -49,7 +49,7 @@ ISRaD.read.entry <- function(entry,
   entryR <- lapply(entryR, function(x) lapply(x, as.character))
 
   # convert back to type values and reduce list back to dataframes
-  entryR <- lapply(entryR, function(x) lapply(x, type.convert))
+  entryR <- lapply(entryR, function(x) lapply(x, type.convert, as.is = FALSE))
   entryR <- lapply(entryR, as.data.frame)
 
   # put in list to name appropriately

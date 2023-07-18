@@ -21,4 +21,5 @@ ISRaD.build(getwd(),
 # 3) upload on CRAN website
 
 # Check build
-devtools::check(pkg = "./Rpkg")
+devtools::build(pkg = ".")
+devtools::check(pkg = "./Rpkg", remote = TRUE)

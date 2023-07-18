@@ -123,38 +123,35 @@ Summary statistics...
     pro_aspect : 6
     pro_slope : 6
  flux tab...0 observations
- layer tab...24 observations
-    entry_name : 24
-    site_name : 24
-    pro_name : 24
-    lyr_name : 24
-    lyr_obs_date_y : 24
-    lyr_top : 24
-    lyr_bot : 24
-    lyr_hzn : 24
-    lyr_note : 24
-    lyr_color : 24
-    lyr_ph : 24
-    lyr_ph_method : 24
-    lyr_c_org : 24
-    lyr_n_tot : 24
+ layer tab...12 observations
+    entry_name : 12
+    site_name : 12
+    pro_name : 12
+    lyr_name : 12
+    lyr_obs_date_y : 12
+    lyr_top : 12
+    lyr_bot : 12
+    lyr_hzn : 12
+    lyr_color : 12
  interstitial tab...0 observations
- fraction tab...72 observations
-    entry_name : 72
-    site_name : 72
-    pro_name : 72
-    lyr_name : 72
-    frc_name : 72
-    frc_input : 72
-    frc_scheme_units : 72
-    frc_lower : 72
-    frc_upper : 72
-    frc_scheme : 72
-    frc_agent : 72
-    frc_property : 72
-    frc_aggregate_dis : 72
+ fraction tab...96 observations
+    entry_name : 96
+    site_name : 96
+    pro_name : 96
+    lyr_name : 96
+    frc_name : 96
+    frc_input : 96
+    frc_aggregate_dis : 96
+    frc_scheme : 96
+    frc_scheme_units : 96
+    frc_lower : 96
+    frc_upper : 96
+    frc_agent : 96
+    frc_property : 96
+    frc_note : 24
     frc_mass_perc : 72
-    frc_c_org : 72
+    frc_c_org : 96
+    frc_n_tot : 24
     frc_13c : 72
     frc_rc_lab : 72
     frc_rc_year : 72

@@ -12,13 +12,13 @@ ISRaD.extra.calc_atm14c(database, future = TRUE)
 \item{future}{Project atmospheric radiocarbon into the future?}
 }
 \value{
-ISRaD_data object with new atmospheric zone and atmospheric 14c columns in relevant tables.
+ISRaD_data object with new atmospheric zone and atmospheric 14C columns in relevant tables.
 }
 \description{
 Calculates atmospheric 14c in the year of sampling for each record in an ISRaD object
 }
 \details{
-Creates new column for atmospheric 14c (xxx_atm14c). Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric 14c data (northern or southern hemisphere or tropics) are determined by profile coordinates.
+Creates new column for atmospheric 14c (xxx_atm14c). Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric 14C data (northern or southern hemisphere or tropics) are determined by profile coordinates.
 Projection for 2016 to 2021 uses the four quarter average projected atmospheric radiocarbon concentration for Central Europe as estimated in Sierra (2018).\cr\cr
 Notes: Central Europe projection (Sierra, 2018) used for northern hemisphere samples as these projections perform better against observations than northern hemisphere projection; southern hemisphere and tropic atmospheric radiocarbon projection are lagged by 2.5 per mille, as this is the mean lag observed from 2000 to 2015 in the Graven (2017) dataset.
 }
@@ -35,7 +35,7 @@ database.x <- ISRaD.extra.fill_rc(database.x)
 database.x <- ISRaD.extra.calc_atm14c(database.x)
 }
 \references{
-Graven et al. 2017. Compiled records of carbon isotopes in atmospheric CO2 for historical simulations in CMIP6. Geosci. Model Dev., 10: 4405–4417 \doi{10.5194/gmd-10-4405-2017}
+Graven et al. 2017. Compiled records of carbon isotopes in atmospheric CO2 for historical simulations in CMIP6. Geosci. Model Dev., 10: 4405-4417 \doi{10.5194/gmd-10-4405-2017}
 Sierra, C. 2018. Forecasting atmospheric radiocarbon decline to pre-bomb values. Radiocarbon, 60(4): 1055-1066 \doi{10.1017/RDC.2018.33}
 }
 \author{

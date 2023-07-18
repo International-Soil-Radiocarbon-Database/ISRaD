@@ -21,7 +21,7 @@ Checking file format compatibility with ISRaD templates...
  Template info file to be used for QAQC:  ISRaD_Template_Info.xlsx
 
 Checking for empty tabs...
-	NOTE: empty tabs detected ( layer interstitial fraction incubation )
+	NOTE: empty tabs detected ( flux layer fraction incubation )
 
 Not checking dataset doi because 'checkdoi is FALSE'...
 
@@ -97,34 +97,29 @@ Summary statistics...
     site_name : 5
     site_lat : 5
     site_long : 5
- profile tab...19 observations
-    entry_name : 19
-    site_name : 19
-    pro_name : 19
-    pro_note : 4
-    pro_lat : 19
-    pro_long : 19
-    pro_treatment : 19
-    pro_catchment_area : 2
-    pro_permafrost : 19
-    pro_water_body : 19
-    pro_water_body_name : 19
- flux tab...29 observations
-    entry_name : 29
-    site_name : 29
-    pro_name : 29
-    flx_name : 29
-    flx_obs_date_y : 29
-    flx_obs_date_m : 29
-    flx_obs_date_d : 29
-    flx_pathway : 29
-    flx_pathway_note : 29
-    flx_analyte : 29
-    flx_ecosystem_component : 29
-    flx_analyte_conc : 6
-    flx_fraction_modern : 23
+ profile tab...20 observations
+    entry_name : 20
+    site_name : 20
+    pro_name : 20
+    pro_lat : 20
+    pro_long : 20
+    pro_treatment : 20
+    pro_water_body : 20
+ flux tab...0 observations
  layer tab...0 observations
- interstitial tab...0 observations
+ interstitial tab...24 observations
+    entry_name : 24
+    site_name : 24
+    pro_name : 24
+    ist_name : 24
+    ist_obs_date_y : 24
+    ist_obs_date_m : 24
+    ist_obs_date_d : 24
+    ist_depth : 24
+    ist_notes : 23
+    ist_phase : 24
+    ist_analyte : 24
+    ist_14c : 23
  fraction tab...0 observations
  incubation tab...0 observations
  - - - - - - - - - - - - - - - - - - - -

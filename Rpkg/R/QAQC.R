@@ -16,6 +16,7 @@
 #' @importFrom readxl read_excel excel_sheets
 #' @importFrom httr HEAD
 #' @importFrom rio import
+#' @importFrom utils type.convert
 #' @export
 #' @examples
 #' \donttest{

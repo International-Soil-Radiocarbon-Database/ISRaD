@@ -6,8 +6,7 @@
 \usage{
 ISRaD.read.entry(
   entry,
-  template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package =
-    "ISRaD")
+  template_file = system.file("extdata", "ISRaD_Master_Template.xlsx", package = "ISRaD")
 )
 }
 \arguments{

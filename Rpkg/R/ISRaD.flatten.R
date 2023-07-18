@@ -62,5 +62,5 @@ ISRaD.flatten <- function(database, table) {
       }
     }
   }
-  utils::type.convert(ISRaD_flat)
+  utils::type.convert(ISRaD_flat, as.is = FALSE)
 }

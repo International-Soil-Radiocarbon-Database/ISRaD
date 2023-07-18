@@ -78,7 +78,7 @@ ISRaD.extra.norm14c_year(
 )
 }
 \references{
-Gaudinski et al. 2000. Soil carbon cycling in a temperate forest: radiocarbon-based estimates of residence times, sequestration rates and partitioning of fluxes. Biogeochemistry 51: 33–69 \doi{10.1023/A:1006301010014}\cr\cr
+Gaudinski et al. 2000. Soil carbon cycling in a temperate forest: radiocarbon-based estimates of residence times, sequestration rates and partitioning of fluxes. Biogeochemistry 51: 33-69 \doi{10.1023/A:1006301010014}\cr\cr
 Trumbore, S. 2000. Age of Soil Organic Matter and Soil Respiration: Radiocarbon Constraints on Belowground C Dynamics. Ecological Applications, 10(2): 399–411 \doi{10.2307/2641102}
 }
 \author{
