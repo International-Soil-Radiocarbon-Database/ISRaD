@@ -90,7 +90,7 @@ check_template_info_columns <- function(template, template_info, outfile, verbos
 check_numeric_minmax <- function(x, xname) {
   stopifnot(is.character(xname))
 
-  if (!is.numeric(type.convert(x))) {
+  if (!is.numeric(type.convert(x, as.is = FALSE))) {
     warning("Non-numeric values in ", xname, " column")
   }
 }

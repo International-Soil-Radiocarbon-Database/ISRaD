@@ -141,7 +141,7 @@ compile <- function(dataset_directory,
       soilcarbon_data <- lapply(soilcarbon_data, function(x) lapply(x, as.character))
 
       # convert back to type values and reduce list back to dataframes
-      soilcarbon_data <- lapply(soilcarbon_data, function(x) lapply(x, utils::type.convert))
+      soilcarbon_data <- lapply(soilcarbon_data, function(x) lapply(x, utils::type.convert, as.is = FALSE))
       soilcarbon_data <- lapply(soilcarbon_data, as.data.frame)
 
       # convert to character again to enable merging with ISRaD_database
@@ -221,7 +221,7 @@ compile <- function(dataset_directory,
 
   # convert data to correct data type and rename to "ISRaD_data"
   ISRaD_data <- lapply(ISRaD_database, function(x) lapply(x, as.character))
-  ISRaD_data <- lapply(ISRaD_data, function(x) lapply(x, utils::type.convert))
+  ISRaD_data <- lapply(ISRaD_data, function(x) lapply(x, utils::type.convert, as.is = FALSE))
   ISRaD_data <- lapply(ISRaD_data, as.data.frame)
 
   # Return database file, logs, and reports ---------------------------------

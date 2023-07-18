@@ -1,12 +1,12 @@
 # install latest version of ISRaD from github
-devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg", ref = "main")
+devtools::install_github("International-Soil-Radiocarbon-Database/ISRaD/Rpkg", ref = "main", force = TRUE)
 library(ISRaD)
 library(stringr)
 library(dplyr)
 library(writexl)
 
 # setwd to ISRaD root directory
-setwd("./ISRaD")
+setwd("./ISRaD/")
 
 # load and run build script
 # NB: must have access to Seafile server for geospatial data or modify code below
@@ -20,3 +20,5 @@ ISRaD.build(getwd(),
 # 2) check on win.builder (upload .tar.gz file)
 # 3) upload on CRAN website
 
+# Check build
+devtools::check(pkg = "./Rpkg")

@@ -146,7 +146,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   data <- lapply(data, function(x) lapply(x, as.character))
-  data <- lapply(data, function(x) lapply(x, utils::type.convert))
+  data <- lapply(data, function(x) lapply(x, utils::type.convert, as.is = FALSE))
   data <- lapply(data, as.data.frame)
 
   ##### check for empty tabs ####
