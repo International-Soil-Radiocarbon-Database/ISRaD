@@ -3,7 +3,22 @@
 * Windows Server: x86_64-w64-mingw32 (64-bit)
 
 ## R CMD check results
-There were no ERRORs, WARNINGs, or NOTEs
+There were no ERRORs, or WARNINGs
+
+There was 1 note: "Maintainer: 'Jeffrey Beem-Miller <jbeem@bgc-jena.mpg.de>'
+
+New submission
+
+Package was archived on CRAN
+
+Possibly misspelled words in DESCRIPTION:
+  Biogeochemistry (13:52)
+  ISRaD (12:6, 12:14, 14:42, 14:85, 15:66, 16:27)
+
+CRAN repository db overrides:
+  X-CRAN-Comment: Archived on 2023-04-02 as check issues were not
+    corrected in time."
+* The check issues have since been fixed, there are no spelling issues, package maintainer has not changed
 
 # Examples
   Examples with CPU or elapsed time > 5s
@@ -14,4 +29,4 @@ There were no ERRORs, WARNINGs, or NOTEs
 
 ## Additional notes:
   * R CMD check run with "run_dont_test" set to TRUE and passed with no issues
-  * Changed \url{} calls to \doi{} calls and fixed urls where needed
+  * fixed marked UTF-8 strings

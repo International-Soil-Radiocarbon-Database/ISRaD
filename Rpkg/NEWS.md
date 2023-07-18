@@ -1,3 +1,9 @@
+# Updated release for CRAN, mid July 2023
+ISRaD 2.4.8
+
+## Notes
+* ISRaD temporarily archived from CRAN on 2 June 2023 due to issues with marked UTF-8 strings
+
 # Updated release for CRAN, early February 2023
 ISRaD 2.4.7
 
