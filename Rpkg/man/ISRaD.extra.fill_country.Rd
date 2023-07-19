@@ -9,9 +9,9 @@ ISRaD.extra.fill_country(database, continent = FALSE, region = FALSE)
 \arguments{
 \item{database}{ISRaD dataset object.}
 
-\item{continent}{Boolean noting whether a column should be added for extracted continent (6 continent model: "Eurasia")}
+\item{continent}{Boolean noting whether a column should be added for extracted continent (8 continent model, including Oceania)}
 
-\item{region}{Boolean noting whether a column should be added for extracted region (7 continent model: "Europe", "Asia")}
+\item{region}{Boolean noting whether a column should be added for extracted subregion}
 }
 \value{
 ISRaD_data object with extracted country names.
