@@ -15,7 +15,7 @@
 #' 5) Data units (e.g. mmyr for mean annual precipitation)\cr
 #' 6) Any relevant notes\cr\cr
 #' Coordinate reference system can be specified with the "CRS" argument; default is WGS84. Note that all files in geodata_directory must use the same CRS.\cr\cr
-#' @importFrom terra rast crs
+#' @importFrom terra rast crs extract
 #' @importFrom dplyr bind_rows arrange
 #' @export
 #' @return Updated ISRaD_extra object with new columns at the profile level
@@ -62,7 +62,7 @@ ISRaD.extra.geospatial <- function(database,
     varName <- substr(shortx, 1, regexpr("\\.[^\\.]*$", shortx)[[1]] - 1)
     columnName <- paste0("pro_", paste(unlist(strsplit(varName, "_x")), collapse = ""))
     tifRaster <- rast(x)
-    crs(tifRaster) <- CRS
+    terra::crs(tifRaster) <- CRS
     database$profile <- cbind(database$profile, extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
     colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
   }
