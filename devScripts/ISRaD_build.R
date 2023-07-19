@@ -17,7 +17,7 @@ ISRaD.build(getwd(),
 
 # Release to CRAN
 # 1) build (from command line: R CMD build /Rpkg)
-# 2) check on win.builder (upload .tar.gz file)
+# 2) check on win.builder (upload .tar.gz file) & rhub
 # 3) upload on CRAN website
 
 # Check build
