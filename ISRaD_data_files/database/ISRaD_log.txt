@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2023-07-18 14:37:50 
+ 2023-07-19 15:17:06 
  - - - - - - - - - - - - - - - 
 
 
@@ -72,7 +72,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  32 compiling Benfield_2021.xlsx ... passed QAQC
 
- 33 checking Benner_2004.xlsx ...New data - passed QAQC
+ 33 compiling Benner_2004.xlsx ... passed QAQC
 
  34 compiling Berg_2004.xlsx ... passed QAQC
 
@@ -176,7 +176,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  84 compiling Dargie_2017.xlsx ... passed QAQC
 
- 85 checking De_Feudis_2019.xlsx ...New data - passed QAQC
+ 85 compiling De_Feudis_2019.xlsx ... passed QAQC
 
  86 compiling de_Freitas_2001.xlsx ... passed QAQC
 

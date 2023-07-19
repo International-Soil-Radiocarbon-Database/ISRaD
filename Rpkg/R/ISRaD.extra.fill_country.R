@@ -6,7 +6,7 @@
 #' @param region Boolean noting whether a column should be added for extracted subregion
 #' @author Shane Stoner & J. Beem-Miller
 #' @importFrom rnaturalearth ne_countries
-#' @importFrom sf sf_use_s2 st_as_sf st_crs st_intersection
+#' @importFrom sf sf_use_s2 st_as_sf st_crs st_intersects
 #' @export
 #' @return ISRaD_data object with extracted country names.
 #' @examples
@@ -35,7 +35,7 @@ ISRaD.extra.fill_country <- function(database, continent = FALSE, region = FALSE
                      crs = st_crs(countries_sf))
 
   # find intersections
-  pt_int <- suppressWarnings(suppressMessages(st_intersection(points, countries_sf)))  
+  pt_int <- suppressWarnings(suppressMessages(st_intersects(points, countries_sf)))  
 
   # return country, and continent/region as needed
   database$profile$pro_country <- pt_int$name
