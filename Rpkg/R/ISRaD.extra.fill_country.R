@@ -20,7 +20,7 @@ ISRaD.extra.fill_country <- function(database, continent = FALSE, region = FALSE
   stopifnot(is_israd_database(database))
 
   # turn off spherical geometry
-  sf_use_s2(FALSE)
+  suppressMessages(sf_use_s2(FALSE))
 
   # get world map
   countries_sf <- ne_countries(
@@ -41,6 +41,9 @@ ISRaD.extra.fill_country <- function(database, continent = FALSE, region = FALSE
   database$profile$pro_country <- pt_int$name
   if (continent) database$profile$pro_continent <- pt_int$continent # 8 continent model
   if (region) database$profile$pro_region <- pt_int$subregion # subregional model
+
+ # turn spherical geometry back on
+  suppressMessages(sf_use_s2(TRUE))
 
   # return
   return(database)
