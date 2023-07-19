@@ -69,6 +69,7 @@ ISRaD.extra.geospatial <- function(database,
       names(ext) <- paste0(columnName, "_", ext.nms)
       database$profile <- cbind(database$profile, ext)
     } else {
+      database$profile <- cbind(database$profile, ext)
       colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName) 
     }
   }
