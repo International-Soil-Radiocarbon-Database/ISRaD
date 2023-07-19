@@ -63,8 +63,14 @@ ISRaD.extra.geospatial <- function(database,
     columnName <- paste0("pro_", paste(unlist(strsplit(varName, "_x")), collapse = ""))
     tifRaster <- rast(x)
     terra::crs(tifRaster) <- CRS
-    database$profile <- cbind(database$profile, extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat)))
-    colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName)
+    ext <- extract(tifRaster, cbind(database$profile$pro_long, database$profile$pro_lat))
+    if (ncol(ext) > 1) {
+      ext.nms <- sapply(strsplit(names(ext), "_(?!.*_)", perl = TRUE), "[[", 2)
+      names(ext) <- paste0(columnName, "_", ext.nms)
+      database$profile <- cbind(database$profile, ext)
+    } else {
+      colnames(database$profile) <- replace(colnames(database$profile), length(colnames(database$profile)), columnName) 
+    }
   }
 
   return(database)
