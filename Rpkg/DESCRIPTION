@@ -17,7 +17,7 @@ Description: This is the central location for data and tools for the development
 Depends: R (>= 3.5.0)
 Imports: readxl,
     writexl,
-    raster,
+    terra,
     dplyr (>= 0.8),
     tidyr (>= 1.0),
     RCurl,
@@ -26,7 +26,7 @@ Imports: readxl,
     httr,
     rio,
     rnaturalearth,
-    sf,
+    sf
 License: GPL-2
 Encoding: UTF-8
 LazyData: true

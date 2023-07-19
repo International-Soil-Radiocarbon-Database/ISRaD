@@ -2,7 +2,11 @@
 ISRaD 2.4.8
 
 ## Notes
-* ISRaD temporarily archived from CRAN on 2 June 2023 due to issues with marked UTF-8 strings
+* Updated code to use sf package instead of sp
+* Updated code to use rnaturalearth in lieu of rworldmap
+* Updated code to use terra in lieu of raster
+* fixed marked UTF-8 strings
+* fixed errors from use of 'order' on data frames
 
 # Updated release for CRAN, early February 2023
 ISRaD 2.4.7
