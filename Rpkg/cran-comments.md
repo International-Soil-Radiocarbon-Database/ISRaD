@@ -35,7 +35,7 @@ checking for non-standard things in the check directory ... NOTE
 Found the following files/directories:
   ''NULL''
 
-* R-hub issue #560 notes this is an R-hub issue
+* R-hub issue #560 notes this is specfic to R-hub
 
 4. Found on Fedora Linux, R-devel, clang, gfortran and Ubuntu Linux 20.04.1 LTS, R-release, GCC
 
