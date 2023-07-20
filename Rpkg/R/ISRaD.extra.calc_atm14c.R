@@ -3,12 +3,11 @@
 #' @description Calculates atmospheric 14c in the year of sampling for each record in an ISRaD object
 #' @param database ISRaD object
 #' @param future Project atmospheric radiocarbon into the future?
-#' @details Creates new column for atmospheric 14c (xxx_atm14c). Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric 14C data (northern or southern hemisphere or tropics) are determined by profile coordinates.
-#' Projection for 2016 to 2021 uses the four quarter average projected atmospheric radiocarbon concentration for Central Europe as estimated in Sierra (2018).\cr\cr
-#' Notes: Central Europe projection (Sierra, 2018) used for northern hemisphere samples as these projections perform better against observations than northern hemisphere projection; southern hemisphere and tropic atmospheric radiocarbon projection are lagged by 2.5 per mille, as this is the mean lag observed from 2000 to 2015 in the Graven (2017) dataset.
+#' @details Creates new column for atmospheric 14c (xxx_atm14c). Observation year and profile coordinates must be filled (use ISRaD.extra.fill_dates, and ISRaD.extra.fill_coords functions). The relevant atmospheric 14C data (northern or southern hemisphere) are determined by profile coordinates.\cr\cr
+#' Atmospheric zones are limited to the northern or southern hemisphere, as differences in 14C in the source data (Hua et al., 2021) within either the northern or southern hemisphere are essentially zero after ~1980, and this is the period over which the majority of data in ISRaD were collected.\cr\cr
+#' Future atmospheric 14C predictions for the period 2020 to 2025 are projected using a time series  model trained on data covering the period 2000-2019 (cf. Sierra, 2018).\cr\cr
 #' @author J. Beem-Miller and C. Hicks-Pries
-#' @references Graven et al. 2017. Compiled records of carbon isotopes in atmospheric CO2 for historical simulations in CMIP6. Geosci. Model Dev., 10: 4405-4417 \doi{10.5194/gmd-10-4405-2017}
-#' Sierra, C. 2018. Forecasting atmospheric radiocarbon decline to pre-bomb values. Radiocarbon, 60(4): 1055-1066 \doi{10.1017/RDC.2018.33}
+#' @references Hua, Q., Turnbull, J., Santos, G., Rakowski, A., Ancapichún, S., De Pol-Holz, R., . . . Turney, C. (2022). ATMOSPHERIC RADIOCARBON FOR THE PERIOD 1950–2019. Radiocarbon, 64(4), 723-745. doi:10.1017/RDC.2021.95
 #' @export
 #' @return ISRaD_data object with new atmospheric zone and atmospheric 14C columns in relevant tables.
 #' @examples
@@ -25,31 +24,21 @@
 ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
   stopifnot(is_israd_database(database))
 
-  graven <- ISRaD::graven
+  Hua2021 <- ISRaD::Hua2021
 
   if (future) {
-    graven <- rbind(graven, ISRaD::future14C)
+    Hua2021 <- rbind(Hua2021, ISRaD::future14C)
   }
 
-  atm14c.annual <- data.frame(
-    year = unique(floor(graven$Date)),
-    d14c.n = graven$NHc14,
-    d14c.s = graven$SHc14,
-    d14c.t = graven$Tropicsc14
-  )
-
   # add atm zone
-  database$profile$pro_graven_zone <- NA
-  database$profile$pro_graven_zone[database$profile$pro_lat > 30] <- "NHc14"
-  database$profile$pro_graven_zone[database$profile$pro_lat < (-30)] <- "SHc14"
-  database$profile$pro_graven_zone[database$profile$pro_lat < 30 & database$profile$pro_lat > -30] <- "Tropicsc14"
-
+  database$profile$pro_atm_zone <- ifelse(database$profile$pro_lat > 30, "NHc14", "SHc14")
+  
   calc_atm14c <- function(df, obs_date_y = "lyr_obs_date_y") {
 
     # skip empty tables
     if (nrow(df) != 0) {
       df.pro <- cbind(df,
-        pro_graven_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_graven_zone"],
+        pro_atm_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_atm_zone"],
         atm14c = NA
       )
 
@@ -64,18 +53,14 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
       }
 
       # split by zone
-      north.obs <- which(df.pro$pro_graven_zone == "NHc14")
-      south.obs <- which(df.pro$pro_graven_zone == "SHc14")
-      tropic.obs <- which(df.pro$pro_graven_zone == "Tropicsc14")
+      north.obs <- which(df.pro$pro_atm_zone == "NHc14")
+      south.obs <- which(df.pro$pro_atm_zone == "SHc14")
 
       if (length(north.obs) > 0) {
         df.pro$atm14c[north.obs] <- atm14c.annual[match(df.pro[north.obs, obs_date_y], atm14c.annual$year), "d14c.n"]
       }
       if (length(south.obs) > 0) {
         df.pro$atm14c[south.obs] <- atm14c.annual[match(df.pro[south.obs, obs_date_y], atm14c.annual$year), "d14c.s"]
-      }
-      if (length(tropic.obs) > 0) {
-        df.pro$atm14c[tropic.obs] <- atm14c.annual[match(df.pro[tropic.obs, obs_date_y], atm14c.annual$year), "d14c.t"]
       }
       return(df.pro)
     }
