@@ -35,11 +35,11 @@ ISRaD.extra.geospatial.keys <- function(database, geodata_keys) {
   key.dfs <- lapply(list.files(geodata_keys, full.names = TRUE), function(x) data.frame(utils::read.csv(x, stringsAsFactors = FALSE)))
   ix <- match(unlist(varNames), colnames(database$profile))
   proFactors <- database$profile[, ix]
+  database$profile[, ix] <- NULL
   for (i in seq_along(key.dfs)) {
     database$profile <- data.frame(
       database$profile,
       key.dfs[[i]][match(unlist(proFactors[i]), unlist(key.dfs[[i]][1])), ][2:ncol(key.dfs[[i]])])
   }
-  database$profile[, ix] <- NULL
   return(database)
 }
