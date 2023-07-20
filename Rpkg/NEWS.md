@@ -8,6 +8,8 @@ ISRaD 2.5.1
 * fixed marked UTF-8 strings
 * fixed errors from use of 'order' on data frames
 * added monthly resolved soil moisture data to ISRaD_extra
+* replaced PET data with v3 of Global Aridity Index and PET database, and added aridity index from same source (Zomer et al., 2022, https://doi.org/10.1038/s41597-022-01493-1)
+* Updated ISRaD_Extra_Info.xlsx
 
 # Updated release for CRAN, early February 2023
 ISRaD 2.4.7
