@@ -7,6 +7,7 @@ ISRaD 2.5.1
 * Updated code to use terra in lieu of raster
 * fixed marked UTF-8 strings
 * fixed errors from use of 'order' on data frames
+* added monthly resolved soil moisture data to ISRaD_extra
 
 # Updated release for CRAN, early February 2023
 ISRaD 2.4.7
