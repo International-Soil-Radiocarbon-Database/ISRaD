@@ -57,10 +57,10 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
       south.obs <- which(df.pro$pro_atm_zone == "SHc14")
 
       if (length(north.obs) > 0) {
-        df.pro$atm14c[north.obs] <- atm14c.annual[match(df.pro[north.obs, obs_date_y], atm14c.annual$year), "d14c.n"]
+      df.pro$atm14c[north.obs] <- Hua2021[match(df.pro[north.obs, obs_date_y], Hua2021$Year.AD), "NH14C"]
       }
       if (length(south.obs) > 0) {
-        df.pro$atm14c[south.obs] <- atm14c.annual[match(df.pro[south.obs, obs_date_y], atm14c.annual$year), "d14c.s"]
+        df.pro$atm14c[south.obs] <- Hua2021[match(df.pro[south.obs, obs_date_y], Hua2021$Year.AD), "SH14C"]
       }
       return(df.pro)
     }
