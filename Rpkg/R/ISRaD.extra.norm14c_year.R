@@ -3,7 +3,7 @@
 #' @description Normalizes delta 14c values to a given year (norm_year)
 #' @param obs_d14c column name in df with observed delta 14c values to be normalized OR numeric value
 #' @param obs_year column name in df with year in which obs_d14c was observed (sample collection year) OR numeric value
-#' @param atm_zone column name in df with atmospheric zone for obs_d14c OR character string. Notes: column values/character string must be one of c("NHc14", "SHc14", "Tropicsc14"). "NHc14" = > 30 degrees latitude; "SHc14" = < -30 latitude; "Tropicsc14" = < 30 & > -30 degrees latitude.
+#' @param atm_zone column name in df with atmospheric zone for obs_d14c OR character string. Notes: column values/character string must be one of c("NH14C", "SH14C"). "NH14C" > 0 degrees latitude N; "SHC14" > 0 latitude S.
 #' @param norm_year desired normalization year (numeric)
 #' @param df data frame with columns for observed d14c (obs_d14c), observation year (obs_year), and atmospheric zone (atm_zone)
 #' @param slow if TRUE (default) normalized 14c value will be fit using the slower solution for tau
@@ -37,7 +37,7 @@
 #' database.x$layer <- ISRaD.extra.norm14c_year(
 #'   obs_d14c = "lyr_14c",
 #'   obs_year = "lyr_obs_date_y",
-#'   atm_zone = "pro_graven_zone",
+#'   atm_zone = "pro_atm_zone",
 #'   norm_year = 2010,
 #'   tau = TRUE,
 #'   df = database.x$layer,
@@ -47,7 +47,7 @@
 #' ISRaD.extra.norm14c_year(
 #'   obs_d14c = 182.8958,
 #'   obs_year = 1996,
-#'   atm_zone = "NHc14",
+#'   atm_zone = "NH14",
 #'   norm_year = 2010
 #' )
 ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df, slow = TRUE, tau = TRUE, verbose = TRUE) {
@@ -56,7 +56,9 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
   norm14c.fx <- function(OBS_D14C, OBS_YEAR, ATM_ZONE, slow, tau, i) {
 
     # get atm14c
-    atm14c <- rbind(ISRaD::graven, ISRaD::future14C)[, c("Date", ATM_ZONE)]
+    atm14c <- ISRaD::Graven_2017[ , c("Date", "NHc14", "SHc14")]
+    names(atm) <- c("Year.AD", "NH14C", "SH14C")
+    atm14c <- rbind(atm14c, ISRaD::future14C)[, c("Year.AD", ATM_ZONE)]
 
     # define constants
     tauradio <- 8267.0 # radioactive decay turnover time
