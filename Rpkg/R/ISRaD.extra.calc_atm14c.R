@@ -29,7 +29,7 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
   }
 
   # add atm zone
-  database$profile$pro_atm_zone <- ifelse(database$profile$pro_lat > 30, "NH14C", "SH14C")
+  database$profile$pro_atm_zone <- ifelse(database$profile$pro_lat > 0, "NH14C", "SH14C")
   
   calc_atm14c <- function(df, obs_date_y = "lyr_obs_date_y") {
 

@@ -8,7 +8,7 @@
 dataframe
 }
 \usage{
-future14C
+data(future14C)
 }
 \description{
 Predicted atmospheric 14C data for 2020-2025.

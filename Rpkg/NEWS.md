@@ -1,5 +1,5 @@
 # Updated release for CRAN, mid July 2023
-ISRaD 2.5.2
+ISRaD 2.5.3
 
 ## Notes
 * Updated code to use sf package instead of sp
@@ -10,6 +10,7 @@ ISRaD 2.5.2
 * added monthly resolved soil moisture data to ISRaD_extra
 * replaced PET data with v3 of Global Aridity Index and PET database, and added aridity index from same source (Zomer et al., 2022, https://doi.org/10.1038/s41597-022-01493-1)
 * Updated ISRaD_Extra_Info.xlsx
+* Added updated atmospheric 14C record from Hua et al. (2021): 'Hua_2021'. This dataset is now referenced for calculating atmospheric 14C, delta-delta 14C values, and for normalizing 14C data from samples collected after 1940. The older dataset from Graven et al. (2017) is still in the package, as the data from 1850-1940 are used for spinning up the model in the function 'ISRaD.extra.norm14c_year', but the data object has been renamed 'Graven_2017' (formerly 'graven').  
 
 # Updated release for CRAN, early February 2023
 ISRaD 2.4.7

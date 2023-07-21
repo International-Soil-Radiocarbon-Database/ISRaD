@@ -3,14 +3,20 @@
 \docType{data}
 \name{Gaudinski_2001}
 \alias{Gaudinski_2001}
-\title{Gaudinski Harvard Forest example dataset}
+\title{Gaudinski 2001 example dataset}
 \format{
 list
 }
 \usage{
-Gaudinski_2001
+data(Gaudinski_2001)
 }
 \description{
-Data from Gaudinski, J., 2001, Belowground carbon cycling in three temperate forests of the eastern United States, University of California Irvine, Ph.D. thesis
+Gaudinski_2001 data set
+}
+\details{
+Example of an ISRaD entry. Selected as an example dataset as it contains data in all 8 tables of the ISRaD data structure: metadata, site, profile, flux, layer, interstitial, fraction, incubation.
+}
+\references{
+Gaudinski, J., 2001, Belowground carbon cycling in three temperate forests of the eastern United States, University of California Irvine, Ph.D. thesis
 }
 \keyword{datasets}
