@@ -24,10 +24,8 @@
 ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
   stopifnot(is_israd_database(database))
 
-  Hua2021 <- ISRaD::Hua2021
-
   if (future) {
-    Hua2021 <- rbind(Hua2021, ISRaD::future14C)
+    Hua_2021 <- rbind(Hua_2021, ISRaD::future14C)
   }
 
   # add atm zone
@@ -57,10 +55,10 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
       south.obs <- which(df.pro$pro_atm_zone == "SHc14")
 
       if (length(north.obs) > 0) {
-      df.pro$atm14c[north.obs] <- Hua2021[match(df.pro[north.obs, obs_date_y], Hua2021$Year.AD), "NH14C"]
+      df.pro$atm14c[north.obs] <- Hua_2021[match(df.pro[north.obs, obs_date_y], Hua_2021$Year.AD), "NH14C"]
       }
       if (length(south.obs) > 0) {
-        df.pro$atm14c[south.obs] <- Hua2021[match(df.pro[south.obs, obs_date_y], Hua2021$Year.AD), "SH14C"]
+        df.pro$atm14c[south.obs] <- Hua_2021[match(df.pro[south.obs, obs_date_y], Hua_2021$Year.AD), "SH14C"]
       }
       return(df.pro)
     }
