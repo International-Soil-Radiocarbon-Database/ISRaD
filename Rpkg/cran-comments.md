@@ -1,6 +1,8 @@
 ## Test environments
 * local OS: x86_64-apple-darwin15.6.0 (64-bit)
 * Windows Server: x86_64-w64-mingw32 (64-bit)
+* Fedora Linux, R-devel, clang, gfortran
+* Ubuntu Linux 20.04.1 LTS, R-release, GCC
 
 ## R CMD check results
 There were no ERRORs, or WARNINGs
