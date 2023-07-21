@@ -8,7 +8,7 @@
 dataframe
 }
 \usage{
-data(IntCal20)
+data(Hua_2021)
 }
 \description{
 Atmospheric 14C data for the period 1941-2019.
