@@ -59,7 +59,7 @@ ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df
     atm14c <- ISRaD::Graven_2017[1:91, c("Date", "NHc14", "SHc14")]
     names(atm14c) <- c("Year.AD", "NH14C", "SH14C")
     atm14c$Year.AD <- floor(atm14c$Year.AD)
-    atm14c <- rbind(atm14c, Hua_2021, ISRaD::future14C)[, c("Year.AD", ATM_ZONE)]
+    atm14c <- rbind(atm14c, ISRaD::Hua_2021, ISRaD::future14C)[, c("Year.AD", ATM_ZONE)]
 
     # define constants
     tauradio <- 8267.0 # radioactive decay turnover time
