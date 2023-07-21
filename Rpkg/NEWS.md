@@ -1,5 +1,5 @@
 # Updated release for CRAN, mid July 2023
-ISRaD 2.5.3
+ISRaD 2.5.4
 
 ## Notes
 * Updated code to use sf package instead of sp
