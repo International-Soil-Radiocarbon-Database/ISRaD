@@ -47,7 +47,7 @@
 #' ISRaD.extra.norm14c_year(
 #'   obs_d14c = 182.8958,
 #'   obs_year = 1996,
-#'   atm_zone = "NH14",
+#'   atm_zone = "NH14C",
 #'   norm_year = 2010
 #' )
 ISRaD.extra.norm14c_year <- function(obs_d14c, obs_year, atm_zone, norm_year, df, slow = TRUE, tau = TRUE, verbose = TRUE) {
