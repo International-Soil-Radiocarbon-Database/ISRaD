@@ -29,7 +29,7 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
   }
 
   # add atm zone
-  database$profile$pro_atm_zone <- ifelse(database$profile$pro_lat > 30, "NHc14", "SHc14")
+  database$profile$pro_atm_zone <- ifelse(database$profile$pro_lat > 30, "NH14C", "SH14C")
   
   calc_atm14c <- function(df, obs_date_y = "lyr_obs_date_y") {
 
@@ -51,8 +51,8 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
       }
 
       # split by zone
-      north.obs <- which(df.pro$pro_atm_zone == "NHc14")
-      south.obs <- which(df.pro$pro_atm_zone == "SHc14")
+      north.obs <- which(df.pro$pro_atm_zone == "NH14C")
+      south.obs <- which(df.pro$pro_atm_zone == "SH14C")
 
       if (length(north.obs) > 0) {
       df.pro$atm14c[north.obs] <- Hua_2021[match(df.pro[north.obs, obs_date_y], Hua_2021$Year.AD), "NH14C"]
