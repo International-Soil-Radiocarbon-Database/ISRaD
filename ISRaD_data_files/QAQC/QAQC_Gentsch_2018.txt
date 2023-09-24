@@ -172,8 +172,8 @@ Summary statistics...
     frc_property : 72
     frc_aggregate_dis : 72
     frc_note : 1
-    frc_c_org : 59
-    frc_n_tot : 52
+    frc_c_org : 62
+    frc_n_tot : 62
     frc_15n : 46
     frc_13c : 46
     frc_14c : 31

@@ -22,7 +22,7 @@ ISRaD.build(getwd(),
 # 3) upload on CRAN website
 
 # Check build
-devtools::document(pkg = "./Rpkg")
+devtools::document(pkg = ".")
 devtools::check(pkg = "./Rpkg")
 devtools::check_win_devel(pkg = "./Rpkg")
 devtools::check_rhub(pkg = "./Rpkg", interactive = FALSE)

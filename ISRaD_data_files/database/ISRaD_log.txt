@@ -1,6 +1,6 @@
 ISRaD Compilation Log 
  
- 2023-07-21 15:41:32 
+ 2023-09-20 20:30:09 
  - - - - - - - - - - - - - - - 
 
 
@@ -256,7 +256,7 @@ Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files
 
  124 checking Gaudinski_2001_Trumbore_unpubl.xlsx ...New data - passed QAQC
 
- 125 compiling Gentsch_2018.xlsx ... passed QAQC
+ 125 checking Gentsch_2018.xlsx ...New data - passed QAQC
 
  126 compiling Giardina_2014.xlsx ... passed QAQC
 
@@ -1130,9 +1130,9 @@ Summary statistics...
     frc_bet_surface_area : 21
     frc_c_perc : 3087
     frc_c_tot : 1464
-    frc_c_org : 2700
+    frc_c_org : 2703
     frc_c_inorg : 155
-    frc_n_tot : 2018
+    frc_n_tot : 2028
     frc_c_to_n : 1928
     frc_15n : 949
     frc_13c : 2902
