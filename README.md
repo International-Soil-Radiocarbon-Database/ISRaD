@@ -22,7 +22,7 @@ library(ISRaD)
 ```
 
 # Technical notes 
-ISRaD data is stored here on github, rather than inside of the R package. You will always be able to access the latest data from (versions v1.0.0 or greater of) the ISRaD package using the "ISRaD.getdata" function. The version of ISRaD on CRAN is v1.7.8 (2021-01-04).
+ISRaD data is stored here on github, rather than inside of the R package. You will always be able to access the latest data from (versions v1.0.0 or greater of) the ISRaD package using the "ISRaD.getdata" function. The version of ISRaD on CRAN is v2.5.5 (2023-09-21).
 
 We are always working to improve the code and provide minor updates. If you're interested in using the latest (beta) version of the ISRaD R package you can download it directly from github. Open an R session and run the following code:
 
