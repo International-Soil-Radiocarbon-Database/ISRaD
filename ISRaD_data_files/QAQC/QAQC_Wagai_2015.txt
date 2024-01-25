@@ -117,6 +117,7 @@ Summary statistics...
     pro_MAP : 1
     pro_soil_taxon : 1
     pro_soil_taxon_sys : 1
+    pro_land_cover : 1
     pro_veg_note : 1
     pro_drainage_class : 1
  flux tab...1 observations
