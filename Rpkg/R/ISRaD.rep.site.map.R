@@ -13,6 +13,7 @@
 #' ISRaD.rep.site.map(database)
 #' }
 #'
+
 ISRaD.rep.site.map <- function(database) {
   stopifnot(is_israd_database(database))
 

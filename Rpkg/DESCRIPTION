@@ -1,8 +1,8 @@
 Package: ISRaD
 Title: Tools and Data for the International Soil Radiocarbon Database
 Version: 2.6.6
-Authors@R: c(person("Alison", "Hoyt", email = "ahoyt@bgc-jena.mpg.de", role = c("aut")),
-    person("Jeffrey", "Beem-Miller", email = "jbeem@bgc-jena.mpg.de", role = c("aut", "cre")),
+Authors@R: c(person("Jeffrey", "Beem-Miller", email = "jbeem@bgc-jena.mpg.de", role = c("aut", "cre")),
+    person("Alison", "Hoyt", email = "ahoyt@bgc-jena.mpg.de", role = c("aut")),
     person("Shane", "Stoner", email = "sstoner@bgc-jena.mpg.de", role = c("aut")),
     person("J. Grey", "Monroe", email = "greymonroe@gmail.com", role = c("aut")),
     person("Caitlin", "Hicks-Pries", email = "caitlin.pries@dartmouth.edu", role = c("aut")),
