@@ -51,6 +51,10 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
 
   if (writeQCreport) {
     if (outfile_QAQC == "") {
+      QAQC_dir <- file.path(dirname(file), "QAQC")
+      if (!dir.exists(QAQC_dir)) {
+        dir.create(QAQC_dir)
+      }
       outfile_QAQC <- file.path(dirname(file), "QAQC", paste0("QAQC_", gsub("\\.xlsx", ".txt", basename(file))))
     }
   }
@@ -234,7 +238,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   duplicates <- data$site %>%
-    dplyr::select(.data$entry_name, .data$site_lat, .data$site_long) %>%
+    dplyr::select("entry_name", "site_lat", "site_long") %>%
     duplicated() %>%
     which()
   if (length(duplicates) > 0) {
@@ -242,7 +246,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
     error <- error + 1
   }
   duplicates <- data$site %>%
-    dplyr::select(.data$entry_name, .data$site_name) %>%
+    dplyr::select("entry_name", "site_name") %>%
     duplicated() %>%
     which()
   if (length(duplicates) > 0) {
@@ -290,7 +294,7 @@ QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = 
   }
 
   duplicates <- data$profile %>%
-    dplyr::select(.data$entry_name, .data$site_name, .data$pro_name) %>%
+    dplyr::select("entry_name", "site_name", "pro_name") %>%
     duplicated() %>%
     which()
   if (length(duplicates) > 0) {
