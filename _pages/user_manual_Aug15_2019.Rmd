@@ -1,91 +1,111 @@
 ---
 title: "ISRaD user manual"
-author: "Alison Hoyt"
-date: "8/15/2019"
+author: "Alison Hoyt (updated July 2024 by J. Beem-Miller)"
+date: "24 July 2024"
 output: html_document
 permalink: /manual/
 ---
 
+# Introduction
+
+The primary goal of this tutorial is to outline the process for accessing data from the International Soil Radiocarbon Database (ISRaD). We will primarily focus on loading ISRaD data into R, and demonstrate a few simple workflows for querying the database and generating useful reports in the R environment. However, we also provide instructions for downloading ISRaD data outside of the R environment, e.g., in .xlsx or .csv format.  
+
+For more information about how ISRaD was developed, and the nitty-gritty details of the ISRaD data model, please see the database description paper (Lawrence et al., 2020). If you have other questions about the data, want to submit your own data to ISRaD, or simply wish to become more involved, please visit our website: soilradiocarbon.org. 
+
+The core of the ISRaD project is the database itself, but ISRaD is also a community of soil radiocarbon enthusiasts who welcomes and encourages your participation. The ISRaD R package is open source and under active development. You can ask questions or notify us of problems using the 'issues' feature on our github site (). Alternatively, you can get in touch with us by email: israd@gmail.com. 
+
+# Overview of ISRaD data
+## ISRaD data model
+
+ISRaD is a hierarchically organized relational database consisting of a series of nested tables linked by key identifiers (Fig. 1). The fundamental unit of ISRaD is the 'entry', which is defined as a dataset with a unique digital object identifier (DOI). This allows all data in ISRaD to be easily traced back to its source. Each table in ISRaD is defined by a unified spatial or conceptual domain. Detailed descriptions of the variables in each table can be found in 'ISRaD_Template_Info' file. 
+
+Briefly, in descending order, the tables in ISRaD are:
+- 'metadata': entry_name, DOI, data curator, etc.
+- 'site': site_name, geospatial coordinates
+- 'profile': environmental variables, including climate, vegetation, and geological data
+- 'flux': profile-scale flux data, e.g., chambers, etc.
+- 'layer': depth-resolved, bulk soil data
+- 'interstitial': depth-resolved soil gas or liquid measurements
+- 'fraction': data resulting from fractionation of bulk soils into operationally defined subcomponents
+- 'incubation': laboratory incubation data, e.g., of bulk soils or soil fractions
+
+## ISRaD_data and ISRaD_extra
+
+ISRaD consists of two versions of the data:
+
+1) **ISRaD_data**: The complete collection of data, reported from publications, compiled in one place 
+2) **ISRaD_extra**: An augmented dataset, with missing data filled from existing variables when possible, as well as additional variables filled from global datasets using geospatial coordinates
+
+## Accessing ISRaD data
+### 1) Install the data through the ISRaD R package:
+First, install the ISRaD package if you haven't already. The stable version of the package can be downloaded directly from CRAN by running 'install.packages('ISRaD'). If you would prefer to use the latest development version of ISRaD directly from github, you will first need to install the 'devtools' package, and then run 'devtools::install.github("").
+
+Once the ISRaD package is installed, you will need to load the package by running 'library(ISRaD)'. Use the 'ISRaD.get_data' function to download ISRaD data to a user-specified local directory. This function automatically retrieves the latest version of the data from github. Note that if you have previously downloaded a version of ISRaD to the specified directory, the 'ISRaD.getdata' function will detect this and prevent the existing files from being overwritten. You can use the "force_download = TRUE" option to override this default behavior.
+
+Using the default settings, this function will load the full ISRaD data object (as a list of data frames, i.e., the ISRaD object format) into your R session. Alternatively, you can choose a subset of data to be loaded as a flattened data frame using the 'dataset' argument. If you prefer to work with ISRaD_extra data, set 'extra = TRUE' (this is FALSE by default).
+
+### 2) Manually Download & load into R:
+1) Download from www.soilradiocarbon.org following the blue "Download" link [on this page](https://international-soil-radiocarbon-database.github.io/ISRaD/database/).
+2) Unzip the files
+3) Load the file of your choice into R. You can load all of the ISRaD data by running load("~/ISRaD_database_files/ISRaD_data_v 2.6.6.2024-01-25.rda"). Or, if you are only interested in a specific data table, use 'read.csv' to load the desired data subset: e.g., read.csv("~/ISRaD_database_files/ISRaD_data_flat_incubation_v 2.6.6.2024-01-25.csv") will load the flattened .csv containing incubation data and all tables above 'incubation' in the hierarchy (metadata, profile, layer). 
+
+(Note that "~" in the example file paths stands for upstream directories, i.e., where you downloaded the zip file)
+
+
 ### Helpful packages for this tutorial:
-```{r eval = FALSE}
-#Packages to install (you only need to do this once)
-#For data analysis:
-install.packages("tidyverse") #includes dplyr, ggplot2
+#### Install packages
+
+(Note that you only need to install packages once)
+
+```{r install-packages, eval=FALSE}
+# For data analysis:
+install.packages("tidyr")
+install.packages("ggplot2")
+install.packages("dplyr")
 install.packages("maps")
 install.packages("ggmap")
 
-#For loading the ISRaD package below:
+# For installing/updating to the latest (beta) version of the ISRaD package:
 install.packages("devtools")
-install.packages("rcrossref")
+```
 
-#Load these packages (you need to do this every time you restart R)
-library(tidyverse)
+##### Load packages
+
+You need to reload packages each time you start a new R session
+
+```{r load-packages, warning = FALSE, message = FALSE}
+library(tidyr)
+library(ggplot2)
+library(dplyr)
 library(maps)
 library(ggmap)
 library(devtools)
-library(rcrossref)
 ```
 
-```{r echo=FALSE, warning = FALSE, message = FALSE}
-#Load all libraries used in tutorial:
-#library(colorspace)
-#library(ISRaD)
-library(tidyr)
-library(dplyr)
-library(ggplot2)
-library(maps)
-library(ggmap)
-load("C:/Users/Alison/Dropbox (MIT)/14Constraint/Research/Incubation Synthesis/dataAug6_2019/ISRaD_extra_v1-2019-08-13.rda")
-load("C:/Users/Alison/Dropbox (MIT)/14Constraint/Research/Incubation Synthesis/dataAug6_2019/ISRaD_data_v1-2019-08-13.rda")
-
-
-```
-
-## Working with the database in R
-The ISRaD database includes:  
-1) **ISRaD_data**: The complete collection of data, reported from publications, compiled in one place  
-2) **ISRaD_extra**: An augmented dataset, with useful global variables and radiocarbon calculations completed for you  
-3) **Tools**: Options to compile your own dataset to compare to ISRaD, and functions to work with the data  
-
-## Two options to download ISRaD data:
-####Manually Download & load into R:
-1) Download from www.soilradiocarbon.org following the blue "Download" link [on this page](https://international-soil-radiocarbon-database.github.io/ISRaD/database/).
-2) Unzip the files
-3) Load the .rda files into R. Specify the folder.
-```{r eval=FALSE}
-
-load("C:/Users/YourPathHere/ISRaD_data_v1-2019-08-13.rda") #Loads ISRaD_data
-load("C:/Users/YourPathHere/ISRaD_data_v1-2019-08-13.rda") #Loads ISRaD_extra
-
-
-```
-
-####Install the data through the ISRaD R package:
-1) Install the ISRaD package from CRAN
-2) Use the 'get_data' function to download the latest version of the database to a local directory
 
 ```{r eval = FALSE}
 # 2) Install package 'ISRaD' from CRAN:
 install.packages("ISRaD")
 library(ISRaD) # load the package
-
+frc <- ISRaD.getdata(directory = "/Users/jeff/Desktop/", 
+                     dataset = "fraction", 
+                     extra = FALSE)
 ```
 
 ```{r eval = FALSE}
 # 3) Load data using the get_data function:
 mydir <- "C:/Users/YourPathHere/" # replace with local path to desired directory
-ISRaD_extra <-ISRaD.getdata(directory = mydir, dataset="full", extra = T, force_download = T)
+ISRaD_extra <- ISRaD.getdata(directory = mydir, dataset="full", extra = T, force_download = T)
 # note that force_download = T will replace any previous versions of the data you may have in the directory
-
-
 ```
 
-####Some other useful packages for working with the data:
+#### Some other useful packages for working with the data:
+
 Tidyverse and dplyr (part of tidyverse) are useful packages for exploration of ISRaD data. This is a [helpful cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf).
 
-We use packages `dplyr` for filtering data and `ggplot` for plotting. Both packages are included in the `tidyverse` library. 
-```{r eval=FALSE}
+We use packages `dplyr` for filtering data, `ggplot` for plotting, and `tidyr` for data manipulation. These packages are included in the `tidyverse` library, or you can install them individually.
 
+```{r eval=FALSE}
 install.packages("tidyverse")
 library(tidyverse)
 
