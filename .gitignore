@@ -10,3 +10,8 @@ ISRaD.Rproj
 # Folders
 _site/
 .sass-cache/
+
+# Other
+*.tar.gz
+devScripts/ISRaD.Rcheck/
+
