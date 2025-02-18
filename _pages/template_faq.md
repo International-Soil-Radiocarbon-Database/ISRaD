@@ -210,7 +210,7 @@ where F<sub>m</sub> is fraction modern.
  * **_What is a density separation?_**
  A physical fractionation scheme where heavy liquid is used to float off organics, thereby separating them from mineral material. This can be done with or without disruption of aggregates by sonicating or shaking.
 
-<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/density_separation_diagram.png" width="375">
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/Misc_Diagrams/density_separation_diagram.png" width="375">
 
 Example template: [Swanston_2005](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/Swanston_2005.xlsx)
 </p></details>
@@ -222,7 +222,7 @@ Example template: [Swanston_2005](https://github.com/International-Soil-Radiocar
  * **_What is a sequential density separation?_**
 A heavy liquid is used to float off the "light-fraction" organics, thereby separating them from mineral material. The remaining mineral material is then further partitioned into series of fractions isolated by incrementally increasing the density of the heavy liquid used for the separation.
 
-<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/sequential_density_separation_diagram.png" width="700">
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/Misc_Diagrams/sequential_density_separation_diagram.png" width="700">
 
 Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/Sollins_2009.xlsx)
 </p></details>
@@ -234,7 +234,7 @@ Example template: [Sollins_2009](https://github.com/International-Soil-Radiocarb
 * **_What is particle size separation?_**
 A physcial fractionation method where wet- or dry-sieving is used to separate soils into common particle size classes: sand, silt, clay.
 
-<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/particle_size_separation_diagram.png" width="450">
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/Misc_Diagrams/particle_size_separation_diagram.png" width="450">
 
  Example template: [Desjardines_1994](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/Dejardins_1994.xlsx)
 </p></details>
@@ -246,7 +246,7 @@ A physcial fractionation method where wet- or dry-sieving is used to separate so
  * **_What is aggregate fractionation?_**
 A fractionation procedure where wet sieving is used to separate aggregates by size and/or strength. Silt+clay sized fractions may be additionally isolated.
 
-<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/aggregate_fractionation_diagram.png" width="550">
+<img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/Misc_Diagrams/aggregate_fractionation_diagram.png" width="550">
 
  Example template: [Monreal_1997](https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/main/ISRaD_data_files/Monreal_1997.xlsx)
 
@@ -262,18 +262,18 @@ A fractionation procedure where wet sieving is used to separate aggregates by si
  **(a) All mass accounted for.**
  Here, all the fractions in level 2 are unique and add up to level 1 – no dummy fraction needed.
 
- <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_a.png" width="650">
+ <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/Misc_Diagrams/dummy_fractions_a.png" width="650">
 
 
  **(b) Well-known schemes.**
  Here, all the fractions in level 2 and 3 are unique and add up to level 1. If the “Golchin” density fractionation were not common knowledge, you’d probably want a dummy fraction, but we don’t need one because the 3 fraction density separation is simple and all the end users should have knowledge of it.
 
- <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_b.png" width="500">
+ <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/Misc_Diagrams/dummy_fractions_b.png" width="500">
 
 **(c) Intermediate-fractions.**
 Here, the silt and clay fraction from level 3 needs to be distinguished from the silt and clay fraction from level 2 in a way that lets the end user know what each fraction was derived from. No measurements were made on the 53-250 um aggregate fraction (red circle) prior to further fractionation, so we need a dummy fraction to represent what the level 3 fractions came from.
 
- <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/dummy_fractions_c.png" width="500">
+ <img src="https://github.com/International-Soil-Radiocarbon-Database/ISRaD/raw/gh-pages/assets/images/Misc_Diagrams/dummy_fractions_c.png" width="500">
 </p></details>
 
 
