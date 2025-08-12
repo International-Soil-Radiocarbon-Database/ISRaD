@@ -44,7 +44,8 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
       obs_date_y <- names(df)[grep("obs_date_y", names(df))]
       
       # add in lyr_obs_date_y for calculating del del in inc and frc tables
-      if (obs_date_y == "lyr_obs_date_y") {
+      if (obs_date_y == "frc_obs_date_y" | obs_date_y == "inc_obs_date_y") {
+        obs_date_y <- "lyr_obs_date_y"
         if (is.null(df.pro$lyr_obs_date_y)) {
           df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
         } 
@@ -60,7 +61,7 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
       if (length(south.obs) > 0) {
         df.pro$atm14c[south.obs] <- Hua_2021[match(df.pro[south.obs, obs_date_y], Hua_2021$Year.AD), "SH14C"]
       }
-      df.pro <- df.pro[ , -grep("pro_atm_zone", names(df.pro))]
+      # df.pro <- df.pro[ , -grep("pro_atm_zone", names(df.pro))]
       return(df.pro)
     }
   }
