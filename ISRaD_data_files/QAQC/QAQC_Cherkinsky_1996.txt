@@ -106,6 +106,7 @@ Summary statistics...
     pro_elevation : 5
     pro_treatment : 13
     pro_reps : 13
+    pro_peatland : 4
     pro_soil_taxon : 13
     pro_soil_taxon_sys : 13
     pro_land_cover : 13
@@ -141,7 +142,6 @@ Summary statistics...
     frc_scheme_units : 50
     frc_lower : 50
     frc_upper : 50
-    frc_scheme_conc : 35
     frc_note : 50
     frc_rc_lab : 50
     frc_rc_lab_number : 50

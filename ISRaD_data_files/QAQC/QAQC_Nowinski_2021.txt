@@ -109,7 +109,6 @@ Summary statistics...
     pro_treatment_note : 12
     pro_MAT : 22
     pro_MAP : 22
-    pro_usda_soil_order : 22
     pro_soil_series : 22
     pro_soil_taxon : 22
     pro_land_cover : 22
@@ -156,7 +155,6 @@ Summary statistics...
     inc_obs_date_d : 22
     inc_duration : 22
     inc_duration_type : 22
-    inc_analyte : 22
     inc_moisture_type : 22
     inc_moisture : 22
     inc_C_respired : 10

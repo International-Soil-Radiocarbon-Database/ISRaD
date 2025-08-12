@@ -97,6 +97,7 @@ Summary statistics...
     site_name : 1
     site_lat : 1
     site_long : 1
+    site_elevation : 1
     site_note : 1
  profile tab...1 observations
     entry_name : 1
@@ -104,6 +105,8 @@ Summary statistics...
     pro_name : 1
     pro_treatment : 1
     pro_treatment_note : 1
+    pro_MAT : 1
+    pro_MAP : 1
     pro_usda_soil_order : 1
     pro_land_cover : 1
     pro_permafrost : 1

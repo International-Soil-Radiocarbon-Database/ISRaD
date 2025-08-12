@@ -32,6 +32,7 @@
 #' QAQC(file.path(tempdir(), "Gaudinski_2001.xlsx"))
 #' }
 #'
+
 QAQC <- function(file, writeQCreport = FALSE, outfile_QAQC = "", summaryStats = TRUE,
                  dataReport = FALSE, checkdoi = TRUE, verbose = TRUE, local = TRUE) {
   stopifnot(is.character(file))

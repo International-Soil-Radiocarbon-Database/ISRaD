@@ -145,7 +145,6 @@ Summary statistics...
     frc_scheme_units : 56
     frc_lower : 56
     frc_upper : 56
-    frc_scheme_conc : 28
     frc_c_perc : 56
     frc_13c : 42
     frc_rc_year : 42

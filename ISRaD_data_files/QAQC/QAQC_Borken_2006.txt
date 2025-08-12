@@ -173,6 +173,8 @@ Summary statistics...
     lyr_name : 54
     inc_name : 54
     inc_type : 54
+    inc_obs_date_y : 54
+    inc_obs_date_m : 54
     inc_duration_type : 54
     inc_analyte : 54
     inc_moisture_type : 54

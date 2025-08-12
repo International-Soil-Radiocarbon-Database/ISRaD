@@ -82,7 +82,6 @@ Summary statistics...
  metadata tab...1 observations
     entry_name : 1
     doi : 1
-    compilation_doi : 1
     curator_name : 1
     curator_organization : 1
     curator_email : 1
