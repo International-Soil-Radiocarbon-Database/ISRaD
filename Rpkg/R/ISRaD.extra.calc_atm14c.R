@@ -31,52 +31,47 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
   # add atm zone
   database$profile$pro_atm_zone <- ifelse(database$profile$pro_lat > 0, "NH14C", "SH14C")
   
-  calc_atm14c <- function(df, obs_date_y = "lyr_obs_date_y") {
-
+  calc_atm14c <- function(df) {
+    
     # skip empty tables
     if (nrow(df) != 0) {
       df.pro <- cbind(df,
-        pro_atm_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_atm_zone"],
-        atm14c = NA
+                      pro_atm_zone = database$profile[match(df$pro_name, database$profile$pro_name), "pro_atm_zone"],
+                      atm14c = NA
       )
-
-      # get index of obs_date_y column if not specified
-      if (obs_date_y != "lyr_obs_date_y") {
-        obs_date_y <- grep("obs_date_y", names(df))
-      } else {
-        # add in lyr_obs_date_y for calculating del del in inc and frc tables
+      
+      # get index of obs_date_y column
+      obs_date_y <- names(df)[grep("obs_date_y", names(df))]
+      
+      # add in lyr_obs_date_y for calculating del del in inc and frc tables
+      if (obs_date_y == "lyr_obs_date_y") {
         if (is.null(df.pro$lyr_obs_date_y)) {
           df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
-        }
+        } 
       }
-
+      
       # split by zone
       north.obs <- which(df.pro$pro_atm_zone == "NH14C")
       south.obs <- which(df.pro$pro_atm_zone == "SH14C")
-
+      
       if (length(north.obs) > 0) {
-      df.pro$atm14c[north.obs] <- Hua_2021[match(df.pro[north.obs, obs_date_y], Hua_2021$Year.AD), "NH14C"]
+        df.pro$atm14c[north.obs] <- Hua_2021[match(df.pro[north.obs, obs_date_y], Hua_2021$Year.AD), "NH14C"]
       }
       if (length(south.obs) > 0) {
         df.pro$atm14c[south.obs] <- Hua_2021[match(df.pro[south.obs, obs_date_y], Hua_2021$Year.AD), "SH14C"]
       }
+      df.pro <- df.pro[ , -grep("pro_atm_zone", names(df.pro))]
       return(df.pro)
     }
   }
-
+  
+  # define prefixes
+  pre <- c("flx", "lyr", "ist", "frc", "inc")
+  
   # run function for flux and interstitial tables
-  database[c(4, 6)] <- lapply(seq_along(database[c(4, 6)]), function(i) {
-    df <- calc_atm14c(database[c(4, 6)][[i]], obs_date_y = "")
-    names(df)[which(names(df) == "atm14c")] <- ifelse(i == 1, "flx_atm14c", "ist_atm14c")
-    return(df)
-  })
-
-  # run function for layer, fraction, and incubation tables
-  database[c(5, 7, 8)] <- lapply(seq_along(database[c(5, 7, 8)]), function(i) {
-    df <- calc_atm14c(database[c(5, 7, 8)][[i]])
-    names(df)[which(names(df) == "atm14c")] <- ifelse(i == 1, "lyr_atm14c",
-      ifelse(i == 2, "frc_atm14c", "inc_atm14c")
-    )
+  database[4:8] <- lapply(seq_along(database[4:8]), function(i) {
+    df <- calc_atm14c(database[4:8][[i]])
+    names(df)[which(names(df) == "atm14c")] <- paste0(pre[i], "_atm14c")
     return(df)
   })
 
