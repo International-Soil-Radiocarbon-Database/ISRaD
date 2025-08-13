@@ -147,6 +147,9 @@ compile <- function(dataset_directory,
       # convert to character again to enable merging with ISRaD_database
       soilcarbon_data <- lapply(soilcarbon_data, function(x) lapply(x, as.character))
       soilcarbon_data <- lapply(soilcarbon_data, as.data.frame)
+      
+      # Reorder soilcarbon_data to ensure table names are in the same order
+      soilcarbon_data <- soilcarbon_data[names(template)]
 
       # merge with template (warnings suppressed b/c variable types will be converted later)
       suppressWarnings(entry <- mapply(bind_rows, template, soilcarbon_data))
