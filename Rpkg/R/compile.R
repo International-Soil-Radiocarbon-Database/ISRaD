@@ -51,7 +51,7 @@ compile <- function(dataset_directory,
       missing_cols <- setdiff(db_cols, entry_cols)
       if (length(extra_cols) > 0) {
         stop(sprintf(
-          "❌ Column bleed detected in entry '%s', table '%s'\nExtra columns: %s\nMissing columns: %s",
+          "column bleed detected in entry '%s', table '%s'\nExtra columns: %s\nMissing columns: %s",
           entry_name,
           names(db_list)[i],
           paste(extra_cols, collapse = ", "),
@@ -93,7 +93,7 @@ compile <- function(dataset_directory,
     )
   }
   
-  template <- ISRaD:::read_template_file()
+  template <- read_template_file()
   controlled_vocab <- template[["controlled vocabulary"]]
   template <- lapply(template[1:8], function(x) x[-c(1, 2, 3), ])
   template <- lapply(template, function(x) x %>% mutate_all(as.character))
