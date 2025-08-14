@@ -1,39 +1,8 @@
 ISRaD Compilation Log 
  
- 2025-08-14 14:35:39 
+ 2025-08-14 15:04:33 
  - - - - - - - - - - - - - - - 
 
 
 Compiling data files in /Users/jeff/ISRaD/ISRaD_data_files 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-
- 1 checking Abbot_1996.xlsx ...New data - passed QAQC
-
- 2 checking Agnelli_2002.xlsx ...New data - passed QAQC
-
- 3 checking Aiken_2014.xlsx ...New data - passed QAQC
-
- 4 compiling Allard_1987.xlsx ... passed QAQC
-
- 5 checking Amon_2004.xlsx ...New data - passed QAQC
-
- 6 checking Anderson_1975.xlsx ...New data - passed QAQC
-
- 7 checking Anderson_1984.xlsx ...New data - passed QAQC
-
- 8 checking Andersson_2011.xlsx ...New data - passed QAQC
-
- 9 checking Andreev_1997.xlsx ...New data - passed QAQC
-
- 10 compiling Andreev_2001.xlsx ... passed QAQC
-
- 11 compiling Andreev_2004.xlsx ... passed QAQC
-
- 12 checking Anshari_2004.xlsx ...New data - passed QAQC
-
- 13 checking Anshari_2010.xlsx ...New data - passed QAQC
-
- 14 checking Anuo_2024.xlsx ...New data - passed QAQC
-
- 15 checking Aravena_1993.xlsx ...
