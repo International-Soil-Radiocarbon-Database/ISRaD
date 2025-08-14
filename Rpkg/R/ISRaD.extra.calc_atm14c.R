@@ -22,12 +22,12 @@
 #' # Fill atmospheric 14c
 #' database.x <- ISRaD.extra.calc_atm14c(database.x)
 ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
-  stopifnot(is_israd_database(database))
-
+  stopifnot(ISRaD:::is_israd_database(database))
+  
   if (future) {
     Hua_2021 <- rbind(Hua_2021, ISRaD::future14C)
   }
-
+  
   # add atm zone
   database$profile$pro_atm_zone <- ifelse(database$profile$pro_lat > 0, "NH14C", "SH14C")
   
@@ -40,15 +40,18 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
                       atm14c = NA
       )
       
-      # get index of obs_date_y column
+      # get name of obs_date_y column
       obs_date_y <- names(df)[grep("obs_date_y", names(df))]
       
-      # add in lyr_obs_date_y for calculating del del in inc and frc tables
-      if (obs_date_y == "frc_obs_date_y" | obs_date_y == "inc_obs_date_y") {
+      # check for frc_obs_date_y or inc_obs_date_y
+      if (any(obs_date_y %in% c("frc_obs_date_y", "inc_obs_date_y"))) {
         obs_date_y <- "lyr_obs_date_y"
         if (is.null(df.pro$lyr_obs_date_y)) {
-          df.pro$lyr_obs_date_y <- database$layer[match(df.pro$lyr_name, database$layer$lyr_name), "lyr_obs_date_y"]
-        } 
+          df.pro$lyr_obs_date_y <- database$layer[
+            match(df.pro$lyr_name, database$layer$lyr_name),
+            "lyr_obs_date_y"
+          ]
+        }
       }
       
       # split by zone
@@ -61,7 +64,7 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
       if (length(south.obs) > 0) {
         df.pro$atm14c[south.obs] <- Hua_2021[match(df.pro[south.obs, obs_date_y], Hua_2021$Year.AD), "SH14C"]
       }
-      # df.pro <- df.pro[ , -grep("pro_atm_zone", names(df.pro))]
+      # df.pro <- df.pro[ , -grep("pro_atm_zone", names(df.pro))] # remove pro_atm_zone
       return(df.pro)
     }
   }
@@ -73,8 +76,12 @@ ISRaD.extra.calc_atm14c <- function(database, future = TRUE) {
   database[4:8] <- lapply(seq_along(database[4:8]), function(i) {
     df <- calc_atm14c(database[4:8][[i]])
     names(df)[which(names(df) == "atm14c")] <- paste0(pre[i], "_atm14c")
+    # # remove lyr_obs_date from frc and inc tables
+    # if (i > 3) {
+    #   df <- df[ , -grep("lyr_obs_date_y", names(df))]
+    # }
     return(df)
   })
-
+  
   return(database)
 }
