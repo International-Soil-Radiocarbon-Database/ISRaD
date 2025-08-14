@@ -78,7 +78,7 @@ compile <- function(dataset_directory,
   }
 
   # Get the tables stored in the template sheets
-  template <- read_template_file()
+  template <- ISRaD:::read_template_file()
   controlled_vocab <- template[["controlled vocabulary"]]
   template <- lapply(template[1:8], function(x) x[-c(1, 2, 3), ])
   template <- lapply(template, function(x) x %>% mutate_all(as.character))
@@ -121,8 +121,8 @@ compile <- function(dataset_directory,
     for (d in seq_along(data_files)) {
       if (verbose) setTxtProgressBar(pb, d)
       # compile template files into list
-      soilcarbon_data <- lapply(excel_sheets(data_files[d])[1:8], function(s) data.frame(read_excel(data_files[d], sheet = s)))
-      names(soilcarbon_data) <- excel_sheets(data_files[d])[1:8]
+      soilcarbon_data <- lapply(readxl::excel_sheets(data_files[d])[1:8], function(s) data.frame(readxl::read_excel(data_files[d], sheet = s)))
+      names(soilcarbon_data) <- readxl::excel_sheets(data_files[d])[1:8]
       
       # trim description rows
       soilcarbon_data <- lapply(soilcarbon_data, function(x) x <- x[-1:-2, ])
@@ -145,9 +145,66 @@ compile <- function(dataset_directory,
       soilcarbon_data <- soilcarbon_data[names(template)]
       
       # merge with template (warnings suppressed b/c variable types will be converted later)
-      suppressWarnings(entry <- mapply(bind_rows, template, soilcarbon_data))
+      suppressWarnings(
+        entry <- mapply(
+          function(tmp, new) {
+            new <- new[, intersect(names(new), names(tmp)), drop = FALSE]
+            bind_rows(tmp, new)
+          },
+          template,
+          soilcarbon_data,
+          SIMPLIFY = FALSE
+      ))
       entry <- lapply(entry, function(x) lapply(x, as.character))
       entry <- lapply(entry, as.data.frame, stringsAsFactors = FALSE)
+      
+      # check entry
+      check_entry_structure <- function(db_list, entry_list) {
+        stopifnot(length(db_list) == length(entry_list)) # sanity check
+        
+        # Precompute column sets for donor detection
+        entry_colsets <- lapply(entry_list, colnames)
+        
+        for (i in seq_along(db_list)) {
+          db_cols     <- colnames(db_list[[i]])
+          entry_cols  <- colnames(entry_list[[i]])
+          
+          extra_in_entry   <- setdiff(entry_cols, db_cols)
+          missing_in_entry <- setdiff(db_cols, entry_cols)
+          
+          if (length(extra_in_entry) > 0 || length(missing_in_entry) > 0) {
+            # Donor detection
+            likely_source <- NA
+            if (length(extra_in_entry) > 0) {
+              source_match_counts <- sapply(seq_along(entry_colsets), function(j) {
+                if (j == i) return(NA)
+                sum(extra_in_entry %in% entry_colsets[[j]])
+              })
+              likely_source <- which.max(source_match_counts)
+            }
+            
+            # Build message
+            msg <- sprintf(
+              "❌ Structural mismatch at entry index %d\nExtra columns: %s\nMissing columns: %s",
+              i,
+              ifelse(length(extra_in_entry) > 0, paste(extra_in_entry, collapse = ", "), "None"),
+              ifelse(length(missing_in_entry) > 0, paste(missing_in_entry, collapse = ", "), "None")
+            )
+            
+            if (!is.na(likely_source) && source_match_counts[likely_source] > 0) {
+              msg <- paste0(msg, sprintf(
+                "\nLikely source of extra columns: entry index %d (shares %d of these columns)",
+                likely_source, source_match_counts[likely_source]
+              ))
+            }
+            
+            stop(msg)
+          }
+        }
+      }
+      
+      entry_name <- unique(entry[["metadata"]][["entry_name"]])
+      check_entry_structure(ISRaD_database, entry, entry_name)
       
       # Compare entry against data in existing database, "ISRaD_old_list"
       diffs <- vector()
@@ -171,7 +228,7 @@ compile <- function(dataset_directory,
         if (verbose) cat("\n\n", d, "compiling", basename(data_files[d]), "...", "passed QAQC", file = outfile, append = TRUE)
         
         # merge with ISRaD_database (warnings suppressed b/c variable types will be converted later)
-        suppressWarnings(ISRaD_database <- mapply(bind_rows, ISRaD_database, entry))
+        suppressWarnings(ISRaD_database <- mapply(bind_rows, ISRaD_database, entry, SIMPLIFY = FALSE))
         
       } else {
         if (verbose) cat("\n\n", d, "checking", basename(data_files[d]), "...", file = outfile, append = TRUE)
@@ -182,7 +239,7 @@ compile <- function(dataset_directory,
         } else if (verbose) cat("New data - passed QAQC", file = outfile, append = TRUE)
         
         # merge with ISRaD_database (warnings suppressed b/c variable types will be converted later)
-        suppressWarnings(ISRaD_database <- mapply(bind_rows, ISRaD_database, entry))
+        suppressWarnings(ISRaD_database <- mapply(bind_rows, ISRaD_database, entry, SIMPLIFY = FALSE))
         
       }
     }
